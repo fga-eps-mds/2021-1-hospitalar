@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from djongo.operations import DatabaseOperations
+from djongo.base import DatabaseWrapper
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -131,3 +133,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
+
+
+class PatchedDatabaseOperations(DatabaseOperations):
+
+    def conditional_expression_supported_in_where_clause(self, expression):
+        return False
+
+
+DatabaseWrapper.ops_class = PatchedDatabaseOperations

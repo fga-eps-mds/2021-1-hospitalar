@@ -15,9 +15,9 @@ class TodoView(viewsets.ModelViewSet):
     queryset = Todo.objects.all()
 
     @action(detail=False)
-    def get_teste_1(self, request):
-        recent_users = Todo.objects.all().get(title='teste 1')
+    def get_completed(self, request):
+        todos = Todo.objects.filter(completed=True)
 
-        serializer = self.get_serializer(recent_users)
+        serializer = self.get_serializer(todos, many=True)
 
         return Response(serializer.data)
