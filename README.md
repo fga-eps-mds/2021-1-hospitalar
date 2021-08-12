@@ -4,10 +4,12 @@
 
 ## frontend react usando node 14 lts e typescript
 
-
 como executar:
-- instale o node 14 LTS e o Python
-- use o comando pip install django django_rest_framework
+
+- instale o node 14 LTS ,o Python e o mongodb community.
+- use o comando pip install django django_rest_framework django-cors-headers djongo
 - abra um terminal na pasta frontend e uma na backend
 - rode npm i e depois npm start na frontend
-- rode python ./manage.py runserver no backend
+- rode python ./manage.py makemigrations no backend
+- rode python ./manage.py migrate
+- rode python ./manage.py runserver

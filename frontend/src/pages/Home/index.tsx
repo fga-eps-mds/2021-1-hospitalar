@@ -41,6 +41,7 @@ export const Home: React.FC = () => {
 
   const handleCreate = (item: TodoItem) => {
     api.post('todo/', item).then(refreshList).catch(console.log)
+    toggle()
   }
 
   const generateList = () => {
