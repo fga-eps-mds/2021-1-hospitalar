@@ -1,10 +1,9 @@
-from cgitb import lookup
-from django.http import JsonResponse
-from rest_framework import viewsets, status
+from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from .serializers import TodoSerializer
+
 from .models import Todo
+from .serializers import TodoSerializer
 
 # Create your views here.
 
