@@ -1,6 +1,6 @@
 # Fechamento da Sprint 0
 
-## Backlog da Sprint
+## Backlog da Sprint 
 
 | **Issues** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
