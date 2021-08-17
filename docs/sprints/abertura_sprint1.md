@@ -1,6 +1,6 @@
 # Planejamento da Sprint 1
 
-## Objetivos
+## Objetivos 
 Em paralelo aos estudos de papéis ágeis, frameworks e arquitetura, prioritariamente devemos recolher as definições do produto, e seus principais requisitos, entregando uma versão inicial de DOCUMENTAÇÃO do ESCOPO.
 
 ## Descrição das Issues
