@@ -2,7 +2,7 @@
 
 ## Backlog da Sprint
 
-| **Issues** |  **Descrição** | **Status**  |  **Pontos** |
+| **Issues** |  **Descrição** | **Status**  |  **Pontos** | 
 |:-:|:-:|:-:|:-:|
 |    Issue 7   |  [Contato com o Cliente](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/7)| Fechado  | 3 |
 |    Issue 9   |  [Levantamento de bibliografia do Doc. Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/9)| Fechado  | 5 |
