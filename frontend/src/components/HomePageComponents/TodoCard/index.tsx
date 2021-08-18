@@ -24,10 +24,10 @@ export const TodoCard: React.FC<Props> = ({ value, handleDelete, handleEdit }) =
     <Grid item xs={12} sm={4}>
       <Card>
         <CardHeader
-          avatar={<BallotRounded />}
+          avatar={<BallotRounded color='primary' />}
           action={
             <IconButton onClick={() => handleDelete(value)}>
-              <DeleteRounded />
+              <DeleteRounded color='secondary' />
             </IconButton>
           }
           title={value.title}
