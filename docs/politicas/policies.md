@@ -64,19 +64,20 @@ Caso o commit trate de uma questão simples, faça o commit da seguinte maneira:
 git commit -m "#IdIssue - Mensagem"
 ```
 
-Devido à importância, caso o commit trate de algo mais complexo, use o seguinte template para padronização, substituindo o texto entre '<>':
+Devido à importância, caso o commit trate de algo mais complexo, use o seguinte template para padronização, substituindo o texto dos comentários '# não será lido no commit':
 ``` txt
-# <#Id-da-Issue - Título do commit: comece com  letra maiúscula, objetivo
-Não mais que 50 chars,Essa linha possui   50                    >
+#Id-da-Issue - Título do commit: comece com  letra maiúscula, objetivo
+#Não mais que 50 chars,Essa linha possui   50                   #
 
-#
+#Pular linha
 
-# <Corpo: Explique o quê e porque
- Não mais que 72 caracteres (essa linha possui)                                                                             #>
+# Corpo: Explique o quê e porque
+# Não mais que 72 caracteres (essa linha possui)                                                                             #
 
-<OPCIONAL: Caso haja, inclua essa linha de co-autores do seu commit para cada contribuidor. >
-#
-# Co-authored-by: nome <usuário@users.noreply.github.com>
+#OPCIONAL: Caso haja, inclua essa linha de co-autores do seu commit para cada contribuidor.
+#Pular linha
+# Co-authored-by: nome1 <usuário1@users.noreply.github.com>
+# Co-authored-by: nome2 <usuário2@users.noreply.github.com>
 #
 ```
 Para utilizar o template, adicione o arquivo de template `.gitmessage`, estando na sua pasta local do repositório, da seguinte maneira:
