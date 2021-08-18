@@ -1,0 +1,15 @@
+#Id-da-Issue - Título do commit: comece com  letra maiúscula, objetivo
+#Não mais que 50 chars,Essa linha possui   50                   #
+
+#Pular linha
+
+# Corpo: Explique o quê e porque
+# Não mais que 72 caracteres (essa linha possui)                                                                             #
+
+#OPCIONAL: Caso haja, inclua essa linha de co-autores do seu commit para cada contribuidor.
+#Pular linha
+#
+# Co-authored-by: nome1 <usuário1@users.noreply.github.com>
+# Co-authored-by: nome2 <usuário2@users.noreply.github.com>
+#
+
