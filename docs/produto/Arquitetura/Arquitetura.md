@@ -1,4 +1,6 @@
-# 1. Introdução
+# Documento de Arquitetura
+Aqui deve conter um resumo do documento
+## 1. Introdução
 ### 1.1 Objetivo
 Este documento tem como objetivo apresentar as principais características da arquitetura escolhida para a aplicação. Inclui também diagramas e detalhamento das tecnologias utilizadas para a construção do App.
 ### 1.2 Escopo
