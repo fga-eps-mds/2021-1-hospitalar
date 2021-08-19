@@ -7,6 +7,7 @@
 
 ## Sumário
 1.  **Introdução**
+
 - 1.1 Finalidade
 - 1.2 Escopo
 - 1.3 Definições, Acrônimos e Abreviações
@@ -68,6 +69,7 @@ Abreviação | Significado
 
 
  #### 2.3.2 Django API
+ 
 
  #### 2.3.3 MongoDB
 
