@@ -6,7 +6,7 @@
 | 18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
 
 ## 1. Introdução 
-Apresentamos a visão de produto, trazendo as noções essenciais dos problemas, requisistos de soulução
+Apresentamos a visão de produto, trazendo as noções essenciais dos problemas, requisistos de soulução. <!-- estou fazendo uma demonstração para o time A de como funciona o git-->
 
 1.1. **Propósito:**
 <!--Determina o propósito deste documento de visão.-->
