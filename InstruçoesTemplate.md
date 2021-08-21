@@ -39,5 +39,8 @@ Para melhor visualização leia esse arquivo como um markdown
 
 ## Adicionando app ao Django:
 
-- (certifique-se que seu venv ou anaconda esteja ativado)
-- django-admin startapp (nome do app)
+- Leia o markdown na pasta backend
+
+## Adicionando página ao Frontend
+
+- Leia o markdown na pasta frontend
