@@ -1,3 +1,5 @@
+Para melhor visualização leia esse arquivo como um markdown
+
 # Template em branco
 
 ## Preparando tecnologias:
