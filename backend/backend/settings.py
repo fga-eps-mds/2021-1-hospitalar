@@ -32,6 +32,11 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+'''
+    Adicione os novos apps como models.(nome)
+    de acordo com o padrão escrito no markdown do backend
+'''
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

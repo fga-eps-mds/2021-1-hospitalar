@@ -32,3 +32,9 @@
   ```
   <Route path='(o caminho url do componente)' component={(Nome)} />
   ```
+
+# Documentação útil
+
+- [Material-UI](https://material-ui.com/)
+- [Typescript](https://www.typescriptlang.org/docs/)
+- [React pt-BR](https://pt-br.reactjs.org/docs/getting-started.html)

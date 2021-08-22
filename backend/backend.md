@@ -82,3 +82,8 @@
 - Execute os comandos:
   - python ./manage.py makemigrations
   - python ./manage.py migrate
+
+# Documentação útil
+
+- [Django](https://docs.djangoproject.com/en/3.2/)
+- [Django Rest Framework](https://www.django-rest-framework.org/)
