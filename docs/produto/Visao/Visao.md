@@ -6,16 +6,32 @@
 | 18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
 
 ## 1. Introdução 
-Apresentamos a visão de produto, trazendo as noções essenciais dos problemas, requisistos de soulução
+<<<<<<< Updated upstream
+Apresentamos a visão de produto, trazendo as noções essenciais dos problemas, requisistos de soulução. <!-- estou fazendo uma demonstração para todos os times de como funciona o git-->
+=======
+Apresentamos a visão de produto, trazendo as noções essenciais dos problemas, requisitos de solução e 
+>>>>>>> Stashed changes
 
 1.1. **Propósito:**
 <!--Determina o propósito deste documento de visão.-->
+A partir deste documento conseguimos traçar uma visão geral do produto desenvolvido, que irá guiar todo o seu desenvolvimento até o final do ciclo de vida do produto. Este documento poderá ser modificado e evoluído durante o desenvolvimento do produto, abarcando novas visões que não haviam sido identificadas no começo e englobado novas necessidades. 
+
 1.2. **Escopo:**
 <!--Descreve brevemente o escopo deste documento de visão, incluindo a quais programas, projetos, aplicativos e processos de negócios o documento está associado. Inclui qualquer outra coisa que este documento afete ou influencie.-->
+Está relacionado ao software desenvolvido e que se encontra, em sua totalidade, nesse [repositório](https://github.com/fga-eps-mds/2021-1-hospitalar). Trata-se de estruturar o produto de uma estrutura de checklist e gestão de relatórios para o auxílio do proceso de acreditação, baseado no modelo de avaliação das Oraganizações Militares de Saúde.
+
 1.3. **Definições, Acrônimos e Abreviações:**
-<!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM.-->
+<!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM. A medida que formos utilizando, acrescentamos aqui.-->
+- OMS - Organização Militar de Saúde.
+- 
+
 1.4. **Referências:**
 <!-- Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação-->
+- Modelo Base e Descrições dos itens. **[https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html)**. 
+_Acesso em 08 de Agosto de 2021_
+
+
+
 1.5. **Visão Geral:**
 <!--Descreve conteúdo e organização-->
 
@@ -97,6 +113,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 <!-- Se o produto for independente e totalmente autocontido, indique-o aqui. Se o produto for um componente de um sistema maior, relacione como esses sistemas interagem -->
 
 4.2. **Resumo das Capacidades:**
+
 | **Benefício para o Cliente** | **Recursos de Suporte** |
 | :- | :- |
 |  |  |
@@ -144,4 +161,4 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 ## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
 
-## 11. Apêndice 1 - Atributos do Recurso
+<!--## 11. Apêndice 1 - Atributos do Recurso-->
