@@ -8,6 +8,11 @@ O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acre
 
 ## Tecnologias utilizadas
 <!--Falar com os devs quais tecnologias eles iram usar-->
+<!--Alterações afim de realizar teste-->
+-Visual Estudio Code
+-Python 3.2
+-ReactJs
+-MongoDB
 
 ## Instalação
 <!--Como a plataforma será acessada por um site a parte de instalção no README será desnecessaria -->
