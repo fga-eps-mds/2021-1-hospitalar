@@ -1,17 +1,19 @@
 # Documento de visão
 
 ## Histórico de versão
+
 | Data | Versão | Modificação | Autor |
 | :- | :- | :- | :- |
 | 18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
+---
 
-## 1. Introdução 
+## 1. Introdução
+
 Apresentamos a visão de produto, trazendo as noções essenciais dos problemas, requisistos de soulução. <!-- estou fazendo uma demonstração para todos os times de como funciona o git-->
-
 
 1.1. **Propósito:**
 <!--Determina o propósito deste documento de visão.-->
-A partir deste documento conseguimos traçar uma visão geral do produto desenvolvido, que irá guiar todo o seu desenvolvimento até o final do ciclo de vida do produto. Este documento poderá ser modificado e evoluído durante o desenvolvimento do produto, abarcando novas visões que não haviam sido identificadas no começo e englobado novas necessidades. 
+A partir deste documento conseguimos traçar uma visão geral do produto desenvolvido, que irá guiar todo o seu desenvolvimento até o final do ciclo de vida do produto. Este documento poderá ser modificado e evoluído durante o desenvolvimento do produto, abarcando novas visões que não haviam sido identificadas no começo e englobado novas necessidades.
 
 1.2. **Escopo:**
 <!--Descreve brevemente o escopo deste documento de visão, incluindo a quais programas, projetos, aplicativos e processos de negócios o documento está associado. Inclui qualquer outra coisa que este documento afete ou influencie.-->
@@ -19,32 +21,44 @@ Está relacionado ao software desenvolvido e que se encontra, em sua totalidade,
 
 1.3. **Definições, Acrônimos e Abreviações:**
 <!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM. A medida que formos utilizando, acrescentamos aqui.-->
+
 - OMS - Organização Militar de Saúde.
-- 
 
 1.4. **Referências:**
 <!-- Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação-->
-- Modelo Base e Descrições dos itens. **[https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html)**. 
+- Modelo Base e Descrições dos itens. **[https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html).**
 _Acesso em 08 de Agosto de 2021_
-
-
 
 1.5. **Visão Geral:**
 <!--Descreve conteúdo e organização-->
 
+---
+
 ## 2. Posicionando
 
-
 2.1. **Oportunidade de Negócios:**
+A partir dos procedimentos e verificações que são realizadas pela PASSAM, foi percebida a necessidade de modernização da Acreditação, utilizando ferramentas web para facilitar o trabalho, no lugar das planilhas pouco didáticas e da gestão manual dos arquivos.
 
 2.2. **Instrução do Problema:**
 <!-- O problema de (descreva o problema) afeta (as partes interessadas afetadas pelo problema). O impacto do problema é (qual é o impacto do problema). Uma solução bem sucedida incluiria (lista alguns principais benefícios de uma solução bem sucedida). -->
+**O problema do** processo engessado de acreditação **afeta** os hospitais, os militares e outros técnicos envolvidos. **O impacto do problema é** a falta de eficiência e insegurança no processo de acreditação dos hospitais. **Uma solução bem sucedida incluiria** uma maior rapidez e eficiência na avaliação dos hospitais, possibilitando uma resposta melhor aos hospitais e a facilitação tanto da gerência do processo de Acreditação, quanto dos avalidadores técnicos dos hospitais.
+
 2.3. **Instrução de Posição do Produto:**
 <!-- Para o (cliente alvo) quem (instrução da necessidade ou oportunidade). O (nome do produto) é uma (categoria do produto) que (instrução do principal benefício, isto é, o motivo convincente para comprar). De outro modo (principal alternativa competitiva), nosso produto (instrução da principal diferenciação). -->
 
-## 3. Usuários e Interessados:
-<!-- Você deve também identificar os usuários do sistema e assegurar que a comunidade das partes interessadas os represente adequadamente. --> 
+- **Para** os hospitais **que** são avaliados. **O** ?_AcreditaLista_? <!-- Inserir o nome do projeto. Precisamos Definir!!  --> **é uma** Aplicação Web <!-- Termo bom? --> **que** tornará mais prática e eficiente a obtenção do relatório para conseguir melhorias internas.
+
+- **Para** os técnicos **que** avaliam os hospitais. **O** ?_AcreditaLista_?<!-- Inserir o nome do projeto. Precisamos Definir!!  --> **é uma** ?Aplicação Web? <!-- Termo bom? --> **que** facilitará o processo de avaliação, tornando-o de fácil entendimento e preenchimento.
+
+- **Para** o gerente **que** coordena as equipes. **O** ?_AcreditaLista_?<!-- Inserir o nome do projeto. Precisamos Definir!!  --> **é uma** ?Aplicação Web? <!-- Termo bom? --> **que** auxiliará na visualização dos relatórios, assim como na atualização dos quesitos de avaliação e na criação de novas avaliações.
+
+---
+
+## 3. Usuários e Interessados
+
+<!-- Você deve também identificar os usuários do sistema e assegurar que a comunidade das partes interessadas os represente adequadamente. -->
 <!--  identifica os principais problemas que as partes interessadas e os usuários consideram que a solução proposta deva tratar. Esta seção não descreve as solicitações ou requisitos específicos. -->
+
 3.1. **Resumo da Parte Interessada:**
 <!--  
 - Nome: Nome do tipo da parte interessada.
@@ -104,6 +118,8 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 
 3.7. **Concorrência**
 
+---
+
 ## 4. Visão Geral do Produto
 
 4.1. **Perspectiva do Produto:**
@@ -123,6 +139,8 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 
 4.5. **Licenciamento e Instalação**
 
+---
+
 ## 5. Recursos do Produto
 <!-- Lista e descreve brevemente os recursos do produto. Os recursos são capacidades de alto nível do sistema que são necessários para entregar benefícios aos usuários. -->
 <!-- Em toda esta seção, torne cada recurso relevante para usuários, operadores ou outros sistemas externos. Inclua uma descrição de funções e problemas de usabilidade que devem ser tratados. As seguintes diretrizes se aplicam:
@@ -133,16 +151,26 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 
 5.2. **Recurso 2**
 
+---
+
 ## 6. Restrições
 <!-- Observe todas as restrições de design, restrições externas, como requisitos operacionais ou regulamentares) ou outras dependências. -->
 
-## 7. Faixas de qualidade 
+---
+
+## 7. Faixas de qualidade
+
 <!-- Requisitos não funcionais -->
 <!-- Defina as faixas de qualidade para desempenho, robustez, tolerância a falhas, usabilidade e características similares que o conjunto de recursos não descreve. -->
 
+---
+
 ## 8. Precedência e prioridade
 
+---
+
 ## 9. Outros Requisitos do Produto
+
 9.1. **Padrões Aplicáveis:**
 <!--  Padrões que o produto deve estar em conformidade. Ex.: Iso, Acreditação, UNIX... -->
 
@@ -154,6 +182,8 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 
 9.4. **Requisitos Ambientais:**
 <!-- Condições de uso, ambiente do usuário, disponibilidade do recurso, problemas de manutenção, manipulação de erros e recuperação. -->
+
+---
 
 ## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
