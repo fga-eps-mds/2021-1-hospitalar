@@ -1,3 +1,9 @@
+
+<style>
+body {
+text-align: justify}
+</style>
+
 # Documento de visão
 
 ## Histórico de versão
@@ -29,6 +35,7 @@ Está relacionado ao software desenvolvido e que se encontra, em sua totalidade,
 <!-- Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação-->
 - Modelo Base e Descrições dos itens. **[https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html).**
 _Acesso em 08 de Agosto de 2021_
+
 
 ### 1.5. Visão Geral:
 <!--Descreve conteúdo e organização-->
@@ -144,9 +151,9 @@ O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acre
 
 ### 4.3. Suposições e Dependências
 <!-- Princípios do projeto e do produto que, se modificados, irão modificar o doc de visão. -->
-- O usuário deverá possuir um acesso ao computador com internet
-- A aplicação web facilitará o preenchimento e armazenamento das análises para o credenciamento hospitalar
-- A aplicação web deixará a avaliação mais rápido e menos burocrática
+- O usuário deverá possuir um acesso ao computador com internet;
+- A aplicação web facilitará o preenchimento e armazenamento das análises para o credenciamento hospitalar;
+- A aplicação web deixará a avaliação mais rápido e menos burocrática;
 ### 4.4. Custo e Precificação
 <!--  podem ser material para o sucesso dos projetos, ou irrelevantes, dependendo da natureza do aplicativo. -->
 Os custos do produto se resume basicamente nos computadores, internet e energia para o seu desenvolvimento. Não haverá custos de ferramentas adicionais pois não serão necessários nenhuma livença ou servços de terceiros pagos.
