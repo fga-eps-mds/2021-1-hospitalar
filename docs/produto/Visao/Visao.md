@@ -13,6 +13,7 @@ text-align: justify}
 | 18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
 | 20/08/2021 | 0.2 | Introdução e Posicionamento | @Swamptg |
 | 22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
+| 23/08/2021 | 0.4 | Usuários | @Swamptg |
 ---
 
 ## 1. Introdução
@@ -122,6 +123,33 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 - Entregas: Identifica as entregas adicionais que a parte interessada requer. Esses itens podem ser entregas do projeto ou saída a partir do sistema em desenvolvimento.
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes.
 -->
+#### 3.4.1. PASAM
+
+- Descrição: É a organização que aplicará o software no processo de Acreditação e realizará as avaliações das OMS.
+
+- Tipo: Usuário direto e cliente do projeto. Conhecem a fundo o funcionamento e processos.
+
+- Responsabilidades: É o grupo que irá gerenciar todo o processo. Iniciam e realizam acreditação através dos membros de suas equipes.
+
+- Critérios de Sucesso: Plataforma unificada para todas as etapas de avaliação das OMS, inclusive para o armazenamento e edição, tanto dos relatórios feitos quanto do modelo de relatório a ser gerado.
+
+- Envolvimento: Aprovar o software, dar feedback.
+
+- Entregas: O Produto Mínimo Viável em si, que será utilizado para futuramente ser o software principal de trabalho por seus membros e servidores. Isso inclui todos os módulos do software, como o check-list e a página de gerenciamento.
+
+#### 3.4.2. OMS
+
+- Descrição: Organização que sofrerá a avaliação com o objetivo de obter mehlorias internas e garantir a segurança do paciente.
+
+- Tipo: Solicitador do serviço. Cliente indireto do software.
+
+- Responsabilidades: Solicitar a acreditação. Auxiliar os avaliadores, fornecendo documentos, mostrando seu quadro de funcionários, seus procedimentos, seus espaços e suas sub-organizações.
+
+- Critérios de Sucesso: Recebimento de Relatório sucinto e didático sobre seu resultados em qualidade e segurança do paciente, o que é de excelência e o que precisa de melhorias.
+
+- Envolvimento: Envolvimento indireto com o projeto.
+
+- Entregas: Relatório.
 
 ### 3.5. Perfis do Usuário:
 <!-- 
@@ -135,6 +163,42 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes. Descreve as tendências que tornam a tarefa do usuário mais fácil ou mais difícil.
 -->
 
+#### 3.5.1. Avaliador
+
+- Representante: PASAM.
+
+- Descrição: Oficial militar ou servidor civil integrante da PASAM que avalia documentações da OMS e vai in-loco realizar a avaliação da instituição.
+
+- Tipo: Especialista técnico em um dos escopos de avaliação. Preenchedor da avaliação.
+
+- Responsabilidades: Averiguar os itens de avaliação. Atribuir nota para seu escopo de avaliação com base nos itens do check-list. Comentar, obrigatoriamente os itens que obtiveram notas menores e o porquê.
+
+- Critérios de Sucesso: Check-list dinâmico e de fácil preenchimento. Formulário salvo localmente e on-line. Compartilhamento de informações facilitado.
+
+- Envolvimento: Feedback sobre as funcionalidades.
+
+- Entregas: Avaliação com as notas e comentários que estarão no relatório.
+
+- Comentários ou Problemas: Determinar corretamente os requisitos de conectividade.
+
+#### 3.5.2. Administrador
+
+- Representante: PASAM.
+
+- Descrição: Gerencia o início do processo de acreditação e suas entregas.
+
+- Tipo: Administrador. Gerente do processo.
+
+- Responsabilidades: Coordenação das avaliações, abertura, cadastro de avaliadores, edição dos itens e critérios avaliativos, visualização e impressão dos relatórios e seus respectivos dados (gráficos, tabelas...).
+
+- Critérios de Sucesso: Facilitação do gerenciamento dos processos de Acreditação, suas equipes e avaliadores. Bem como dos relatórios já feitos e de seu itens e critérios.
+
+- Envolvimento: Feedback sobre as funcionalidades.
+
+- Entregas: Entrega dos relatórios para serem preenchidos e para as OMS, após finalização.
+
+- Comentários ou Problemas: Detalhar melhor dados a serem explorados para a construção dos gráficos. Terá um contato mais próximo com o banco de dados.
+
 ### 3.6. Principais necessidades:
 <!-- 
 - Quais são os motivos para esse problema?
@@ -144,11 +208,11 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 
 | **Necessidade** | **Prioridade** | **Interesses** | **Solução Atual** | **Solução Proposta** |
 | :-: | :-: | :-: | :-: | :-: |
-| Texto | Texto | Texto | Texto | Texto |
+| Processo mais ágil e seguro de avaliação das OMS | É a parte essencial na Acreditação das Instituições |  | Utilização de planilhas pouco intuitivas e edição manual de relatórios | Página web unificando todo o processo de avaliação e geração do relatório, de forma mais intuitiva |
 
 ### 3.7. Concorrência
 
-
+Por ser um software com objetivo específico e nichado, não foi verificada concorrência relevante. Os únicos softwares identificados são os auxiliares ao processo que atualmente são utilizados, como as ferramentas do pacote Microsoft Office para edição de textos e planilhas, mas que não endereçam especificamente o problema da Acreditação.
 
 ## 4. Visão Geral do Produto
 
@@ -168,7 +232,6 @@ O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acre
 | Controle dos avaliadores  |  A página web tem níveis de acesso (adminstrador e avaliador). Desta forma, o administrador pode criar, editar ou excluir um avaliador caso haja alteração na equipe |
 |  Avaliações mais ágeis | Por ser uma plataforma web, o preenchimento é de uma forma independente, ou seja, não há a necessidade do tempo de espera do término de todos os avliadores para obter uma única versão em um único arquivo  |
 | Marcadores de preenchimento  |  O checklist deve alertar o usuário sobre os campos que são obrigatórios durante a análise |
-
 
 
 ### 4.3. Suposições e Dependências
