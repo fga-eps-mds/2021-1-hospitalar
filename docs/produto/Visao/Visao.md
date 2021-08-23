@@ -25,7 +25,7 @@ A partir deste documento conseguimos traçar uma visão geral do produto desenvo
 
 ### 1.2. Escopo:
 <!--Descreve brevemente o escopo deste documento de visão, incluindo a quais programas, projetos, aplicativos e processos de negócios o documento está associado. Inclui qualquer outra coisa que este documento afete ou influencie.-->
-Está relacionado ao software desenvolvido e que se encontra, em sua totalidade, nesse [repositório](https://github.com/fga-eps-mds/2021-1-hospitalar). Trata-se de estruturar o produto de uma ferramenta web de checklist e gestão de relatórios para o auxílio do proceso de Acreditação, baseado no modelo de avaliação das Organizações Militares de Saúde. A acreditação é o processo de avaliação dessas Organizações com base em critérios de Gestão Organizacional, Segurança do Paciente, Atenção ao Paciente, Diagnóstico e Terapêutica, Apoio Técnico e Logístico e Excelência em Gestão.
+Está relacionado ao software desenvolvido e que se encontra, em sua totalidade, nesse [repositório](https://github.com/fga-eps-mds/2021-1-hospitalar). Trata-se de estruturar o produto de uma ferramenta web de checklist e gestão de relatórios para o auxílio do proceso de Acreditação, baseado no modelo de avaliação das Organizações Militares de Saúde. A acreditação é o processo de avaliação dessas Organizações com base em critérios de Gestão Organizacional, Segurança do Paciente, Atenção ao Paciente, Diagnóstico e Terapêutica, Apoio Técnico e Logístico e Excelência em Gestão. O principal objetivo desse Processo é a melhoria da Segurança do Paciente.
 
 ### 1.3. Definições, Acrônimos e Abreviações:
 <!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM. A medida que formos utilizando, acrescentamos aqui.-->
@@ -47,7 +47,7 @@ _Acesso em 08 de Agosto de 2021_
 ## 2. Posicionando
 
 ### 2.1. Oportunidade de Negócios:
-A partir dos procedimentos e verificações que são realizadas pela PASSAM, foi percebida a necessidade de modernização da Acreditação, utilizando ferramentas web para facilitar o trabalho, no lugar das planilhas pouco didáticas e da gestão manual dos arquivos.
+A partir dos procedimentos e documentos que foram disponibilizados pela PASAM, foi percebida a necessidade de modernização do processo de Acreditação, utilizando ferramentas web para facilitar o trabalho, no lugar das planilhas pouco didáticas e da gestão manual dos arquivos.
 
 ### 2.2. Instrução do Problema:
 <!-- O problema de (descreva o problema) afeta (as partes interessadas afetadas pelo problema). O impacto do problema é (qual é o impacto do problema). Uma solução bem sucedida incluiria (lista alguns principais benefícios de uma solução bem sucedida). -->
@@ -69,7 +69,7 @@ A partir dos procedimentos e verificações que são realizadas pela PASSAM, foi
 <!-- Você deve também identificar os usuários do sistema e assegurar que a comunidade das partes interessadas os represente adequadamente. -->
 <!--  identifica os principais problemas que as partes interessadas e os usuários consideram que a solução proposta deva tratar. Esta seção não descreve as solicitações ou requisitos específicos. -->
 O principal interessado pelo produto final (relatório) do processo de checklist são as OMS que poderão utilizá-lo para melhorar seus processos e materiais, atendendo melhor os pacientes e garantindo qualidade.
-Os principais usuários serão os avaliadores no processo de Acreditação, que irão preencher os checklists e avaliar cada item, e o gerente das equipes de acreditação que irá criar novas solicitações de avaliações e gerenciar os requisitos do checklist.
+Os principais usuários serão os avaliadores no processo de Acreditação, que irão preencher os checklists e avaliar cada item, e o gerente das equipes de acreditação que irá criar novas solicitações de avaliações e gerenciar os requisitos do checklist. Os avaliadores do PASAM serão militares da ativa ou da reserva remunerada, integrantes ou não do Serviço de Saúde, e servidores civis.
 
 ### 3.1. Resumo da Parte Interessada:
 <!--  
@@ -91,8 +91,8 @@ Os principais usuários serão os avaliadores no processo de Acreditação, que 
 
 |Nome|Descrição|Parte Interessada|
 | :- | :- | :- |
-|Avaliador|Terá conta no sistema para acessar processos de Acreditação específicos e preencher os itens de avaliação, visitando a OMS que solicitou o processo|PASSAM|
-|Gerente|Criar processos de Acreditação a partir das solicitações, Alterar requisitos da avaliação, cadastrar avaliadores, verificar dados dos relatórios, auxiliar as OMS sobre os resultados do relatório|PASSAM|
+|Avaliador|Terá conta no sistema para acessar processos de Acreditação específicos e preencher os itens de avaliação, visitando a OMS que solicitou o processo|PASAM|
+|Gerente|Criar processos de Acreditação a partir das solicitações, Alterar requisitos da avaliação, cadastrar avaliadores, verificar dados dos relatórios, auxiliar as OMS sobre os resultados do relatório|PASAM|
 
 ### 3.3. Ambiente do Usuário
 <!-- 
@@ -102,6 +102,15 @@ Os principais usuários serão os avaliadores no processo de Acreditação, que 
 - Quais plataformas de sistema estão em uso atualmente? Existem plataformas futuras planejadas?
 - Que outros aplicativos estão em uso? Seu aplicativo precisa se integrar a eles?
 -->
+
+- Quantidade de pessoas: Pode haver um avaliador para cada tópico de avaliação, sendo: Gestão Organizacional, Segurança do Paciente, Atenção ao Paciente, Diagnóstico e Terapêutica, Apoio Técnico e Logístico e Excelência em Gestão. Portanto, para cada processo existem por volta de 6 usuários para cada processo e 1 usuário administrador, que seria o gerente das equipes. <!-- Podem haver processos paralelos acontecendo?  1 avaliador por item de avaliação? -->
+
+- Tempo: O processo, atualmente, desde o pedido de avaliação até a concretização do relatório dura entre 12 e 18 semanas. A avaliação e o checklist em si dura 1 semana. **Referência da PASAM:** [Apêndice 1](##11-apendice-1-cronograma-de-acreditacao).
+Por ser um cronograma interno da organização, provavelmente não será alterado.
+
+- Restrições de ambiente: Os avaliadores devem se deslocar à OMS para realizar os procedimentos e verificações. Portanto, estão sujeitos ao equipamento disponibilizado pela instituição e aos materiais que podem ser levados por eles. Deve ser possível o preenchimento do checklist de forma offline.
+
+- Aplicativos em uso: É utilizado o Excel para o mantenimento e preenchimento das planilhas de checklist e o Microsoft Word para a edição do Relatórios<!--Correto?-->. O objetivo é suplantar esse uso através da plataforma web, unificando em única plataforma, todo o processo.
 
 ### 3.4. Perfis das partes interessadas:
 <!-- 
@@ -221,4 +230,75 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 ## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
 
-<!--## 11. Apêndice 1 - Atributos do Recurso-->
+## 11. Apêndice 1 - Cronograma de Acreditação
+
+<table>
+<thead>
+    <tr>
+        <th> Quando </th>
+        <th> Atividade </th>
+        <th> Comentários </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>De 6 a 10 semanas antes da avaliação</td>
+        <td> Preparação e despacho da Ordem uma OMS, as quais seriam avaliadas na mesma viagem da avaliação. </td>
+        <td>O Sv pode incluir mais de uma OMS, as quais seriam avaliadas na mesma viagem da equipe.</td>
+    </tr>
+    <tr>
+        <td>De 4 a 6 semanas antes da avaliação</td>
+        <td> Contatis e ajustes administrativos com as pessoas e as organizações envolvidos na avaliação. </td>
+        <td> Além dos acertos administrativos previstos, é o tempo também para orientar e acompanhar a preparação das OMS.</td>
+    </tr>
+    <tr>
+        <td>Semana anterior à avaliação</td>
+        <td>Verificação da documentação prevista no Anexo C do CO PASAM</td>
+        <td>Normalmente se trata de informação de acesso ostensivo, enviada por e-mail. Esta verificação preliminar é normalmente realizada à distância, mas podem ocorrer visitas presenciais para verificação de documentos, caso isso seja necessário e tenha sido devidamente acertado entre a Equipe de Avaliação e a Direção da OMS. Durante a semana de avaliação presencial, as OMS disponibilizam as originais para a equipe do PASAM.</td>
+    </tr>
+    <tr>
+        <td rowspan="7">Semana de Avaliação</td>
+        <td>No primeiro dia, é feita uma reunião com as principais lideranças da OMS e quem mais a direção julgar interessante chamar para um primeiro contato com a equipe.</td>
+        <td>Nessa oportunidade ocorre uma breve apresentação do Diretor sobre a OMS e uma breve explanação sobre como a equipe conduzirá os trabalhos durante a avaliação</td>
+    </tr>
+    <tr>
+        <td>As atividades diárias subsequentes são precedidas de uma breve reunião com a Direção e as principais lideranças do hospital, em que a equipe discute as principais observações do dia anterior e passa suas impressões aos interessados.</td>
+        <td>Esse contato diário com as lideranças é importante para o bom andamento da avaliação. Momento para coordenar as atividades e manter o envolvimento da OMS.</td>
+    </tr>
+    <tr>
+        <td>Durante o período da Avaliação, é disponibilizada sala reservada aos avaliadores, com apoio de TI com computadores, acesso à internet, aplicativo Microsoft Excel e impressora local.</td>
+        <td>O aparato serve para a troca de experiências entre os avaliadores e o preenchimento da planilha de avaliação. Na maioria do tempo, os avaliadores estarão percorrendo os setores da OMS relacionados às suas Seções de Avaliação. A sala reservada visa não expor assuntos sensíveis.</td>
+    </tr>
+    <tr>
+        <td>No período da manhã, ocorre a visita aos setores da OMS, acompanhados por integrantes da OMS escalados para tal.</td>
+        <td>Os acompanhantes dos avaliadores, também anotam as observações feitas, servem de guia e de testemunha das ações do avaliador. Para tanto, se pede que escalem pessoas que conheçam a OMS e com algum conhecimento sobre os assuntos a serem verificados pelos avaliadores.</td>
+    </tr>
+    <tr>
+        <td>Por ocasião do almoço, a equipe ocupará mesa exclusiva no refeitório para que possa aproveitar aquele horário para discutir e coordenar as atividades do dia.</td>
+        <td>Todo momento deve ser aproveitado e no almoço é um dos poucos em que toda a equipe está reunida. A mesa exclusiva é para não expor assuntos sensíveis.</td>
+    </tr>
+    <tr>
+        <td>À tarde, continua a visita aos setores da OMS, sempre acompanhados por integrantes da OMS escalados para tal.</td>
+        <td>Toda observação feita corrobora para a avaliação final. Mesmo situações ou eventos não relacionados com a área de determinado avaliador devem ser anotados e informados ao avaliador interessado para que esse último verifique e aprimore sua percepção sobre a OMS.</td>
+    </tr>
+    <tr>
+        <td>No último dia de avaliações, será apresentada uma prévia do Relatório da Avaliação à Direção e às principais lideranças da OMS.</td>
+        <td>Nesse momento, todos os avaliadores fazem um breve apanhado do que constataram sobre suas seções de avaliação. Não é o momento para réplicas ou justificativas. Essas intervenções devem ser realizadas pelos interessados durante as visitas, em privado.</td>
+    </tr>
+    <tr>
+        <td> Até o segundo dia após a avaliação </td>
+        <td>Entrega das planilhas preenchidas pelos avaliadores.</td>
+        <td>Todos os itens a cargo do avaliador precisam estar preenchidos, por isso a planilha acusa quando um item está com lançamento duplo ou em branco, ou ainda quando um Entrega das item parcial ou não conforme não tenha sido comentado. É necessário esmero na redação, para evitar enganos revisões de texto. Acesso Restrito.</td>
+    </tr>
+    <tr>
+        <td> Até o décimo dia útil após a avaliação </td>
+        <td>Conclusão do Relatório</td>
+        <td>Esse prazo só será possível se as atividades anteriores forem feitas no tempo previsto. É importante finalizar logo o relatório, porque o intervalo entre as avaliações é bem reduzido. O relatório é considerado Material de Acesso Restrito.</td>
+    </tr>
+    <tr>
+        <td> Dias subsequentes </td>
+        <td>Despacho e envio do relatório.</td>
+        <td>São enviadas cópias do Relatório de Avaliação para a Diretoria de Saúde, Região Militar de vinculação e para a própria OMS.</td>
+    </tr>
+</tbody>
+</table>
