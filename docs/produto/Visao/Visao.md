@@ -11,7 +11,8 @@ text-align: justify}
 | Data | Versão | Modificação | Autor |
 | :-: | :-: | :-: | :-: |
 | 18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
-| 22/08/2021 | 0.2 | Visão geral do produto | @klyssmannoliveira |
+| 20/08/2021 | 0.2 | Introdução e Posicionamento | @Swamptg |
+| 22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
 ---
 
 ## 1. Introdução
@@ -24,12 +25,13 @@ A partir deste documento conseguimos traçar uma visão geral do produto desenvo
 
 ### 1.2. Escopo:
 <!--Descreve brevemente o escopo deste documento de visão, incluindo a quais programas, projetos, aplicativos e processos de negócios o documento está associado. Inclui qualquer outra coisa que este documento afete ou influencie.-->
-Está relacionado ao software desenvolvido e que se encontra, em sua totalidade, nesse [repositório](https://github.com/fga-eps-mds/2021-1-hospitalar). Trata-se de estruturar o produto de uma estrutura de checklist e gestão de relatórios para o auxílio do proceso de acreditação, baseado no modelo de avaliação das Oraganizações Militares de Saúde.
+Está relacionado ao software desenvolvido e que se encontra, em sua totalidade, nesse [repositório](https://github.com/fga-eps-mds/2021-1-hospitalar). Trata-se de estruturar o produto de uma ferramenta web de checklist e gestão de relatórios para o auxílio do proceso de Acreditação, baseado no modelo de avaliação das Organizações Militares de Saúde. A acreditação é o processo de avaliação dessas Organizações com base em critérios de Gestão Organizacional, Segurança do Paciente, Atenção ao Paciente, Diagnóstico e Terapêutica, Apoio Técnico e Logístico e Excelência em Gestão.
 
 ### 1.3. Definições, Acrônimos e Abreviações:
 <!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM. A medida que formos utilizando, acrescentamos aqui.-->
 
 - OMS - Organização Militar de Saúde.
+- Acreditação - É o processo por meio do qual uma equipe experiente e multi-disciplinar de avaliadores, conhecedora dos protocolos em saúde e sem vínculo com a OMS avaliada, verifica o cumprimento de leis, normas, protocolos e padrões definidos para garantir a segurança de pacientes e colaboradores e a qualidade do atendimento assistencial.
 
 ### 1.4. Referências:
 <!-- Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação-->
@@ -66,6 +68,8 @@ A partir dos procedimentos e verificações que são realizadas pela PASSAM, foi
 
 <!-- Você deve também identificar os usuários do sistema e assegurar que a comunidade das partes interessadas os represente adequadamente. -->
 <!--  identifica os principais problemas que as partes interessadas e os usuários consideram que a solução proposta deva tratar. Esta seção não descreve as solicitações ou requisitos específicos. -->
+O principal interessado pelo produto final (relatório) do processo de checklist são as OMS que poderão utilizá-lo para melhorar seus processos e materiais, atendendo melhor os pacientes e garantindo qualidade.
+Os principais usuários serão os avaliadores no processo de Acreditação, que irão preencher os checklists e avaliar cada item, e o gerente das equipes de acreditação que irá criar novas solicitações de avaliações e gerenciar os requisitos do checklist.
 
 ### 3.1. Resumo da Parte Interessada:
 <!--  
@@ -73,6 +77,10 @@ A partir dos procedimentos e verificações que são realizadas pela PASSAM, foi
 - Representa: Descreve brevemente quais pessoas, equipes ou organizações esse tipo de parte interessada representa.
 - Função: Descreve brevemente a função que esse tipo de parte interessada desempenha no esforço de desenvolvimento.
 -->
+|Nome|Representa|Função|
+| :- | :- | :- |
+|PASAM|Projeto que coordena os processos de acreditação dentro das instituições militares|Realizar avaliações apartir das solicitações das OMS|
+|Organização Militar de Saúde|Instituição ligada aos cuidados em saúde, pertencente a uma instituição militar|Aceitar os requisitos do relatório e auxiliar o processo de avaliação para obtenção do relatório|
 
 ### 3.2. Resumo do Usuário:
 <!--  
@@ -80,6 +88,11 @@ A partir dos procedimentos e verificações que são realizadas pela PASSAM, foi
 - Descrição: Descreve brevemente o relacionamento desse tipo de usuário com o sistema que está em desenvolvimento.
 - Parte Interessada: Lista qual tipo de parte interessada representa esse tipo de usuário.
 -->
+
+|Nome|Descrição|Parte Interessada|
+| :- | :- | :- |
+|Avaliador|Terá conta no sistema para acessar processos de Acreditação específicos e preencher os itens de avaliação, visitando a OMS que solicitou o processo|PASSAM|
+|Gerente|Criar processos de Acreditação a partir das solicitações, Alterar requisitos da avaliação, cadastrar avaliadores, verificar dados dos relatórios, auxiliar as OMS sobre os resultados do relatório|PASSAM|
 
 ### 3.3. Ambiente do Usuário
 <!-- 
