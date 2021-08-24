@@ -14,25 +14,28 @@ text-align: justify}
 | 20/08/2021 | 0.2 | Introdução e Posicionamento | @Swamptg |
 | 22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
 | 23/08/2021 | 0.4 | Usuários | @Swamptg |
+| 24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
 ---
 
 ## 1. Introdução
 
-Apresentamos a visão de produto, trazendo as noções essenciais dos problemas, requisistos de soulução. <!-- estou fazendo uma demonstração para todos os times de como funciona o git-->
+Este documento proporciona a visão geral do produto, trazendo as noções essenciais dos problemas, requisistos de soulução e as principais demandas e concepções absorvidas do cliente, de forma que o entendimento do projeto seja entendido de forma alinhada e única para todos os membros envolvidos na elaboração da mesma.   
 
 ### 1.1. Propósito:
 <!--Determina o propósito deste documento de visão.-->
-A partir deste documento conseguimos traçar uma visão geral do produto desenvolvido, que irá guiar todo o seu desenvolvimento até o final do ciclo de vida do produto. Este documento poderá ser modificado e evoluído durante o desenvolvimento do produto, abarcando novas visões que não haviam sido identificadas no começo e englobado novas necessidades.
+A partir deste documento, conseguimos traçar uma visão geral do produto desenvolvido, que irá guiar todo o seu desenvolvimento até o final do ciclo de vida do produto. Este documento poderá ser modificado e evoluído durante o desenvolvimento do produto, abarcando novas visões que antes não haviam sido identificadas, englobando novas necessidades e adquirindo valor ao produto. É da finalidade do documento estabelecer expectativas concretas, como uma potencial ferramenta para redução de riscos no desenvolvimento do projeto.
 
 ### 1.2. Escopo:
 <!--Descreve brevemente o escopo deste documento de visão, incluindo a quais programas, projetos, aplicativos e processos de negócios o documento está associado. Inclui qualquer outra coisa que este documento afete ou influencie.-->
-Está relacionado ao software desenvolvido e que se encontra, em sua totalidade, nesse [repositório](https://github.com/fga-eps-mds/2021-1-hospitalar). Trata-se de estruturar o produto de uma ferramenta web de checklist e gestão de relatórios para o auxílio do proceso de Acreditação, baseado no modelo de avaliação das Organizações Militares de Saúde. A acreditação é o processo de avaliação dessas Organizações com base em critérios de Gestão Organizacional, Segurança do Paciente, Atenção ao Paciente, Diagnóstico e Terapêutica, Apoio Técnico e Logístico e Excelência em Gestão. O principal objetivo desse Processo é a melhoria da Segurança do Paciente.
+Está relacionado ao software desenvolvido e que se encontra, em sua totalidade, nesse [repositório](https://github.com/fga-eps-mds/2021-1-hospitalar). Trata-se de estruturar o produto de uma ferramenta web de checklist e gestão de relatórios para o auxílio do proceso de Acreditação hospitalar, baseado no modelo de avaliação das Organizações Militares de Saúde. A acreditação é o processo de avaliação dessas Organizações com base em critérios de Gestão Organizacional, Segurança do Paciente, Atenção ao Paciente, Diagnóstico e Terapêutica, Apoio Técnico e Logístico e Excelência em Gestão. O principal objetivo desse Processo é a melhoria da Segurança do Paciente segundo parâmetros do PASAM.
 
 ### 1.3. Definições, Acrônimos e Abreviações:
 <!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM. A medida que formos utilizando, acrescentamos aqui.-->
 
-- OMS - Organização Militar de Saúde.
 - Acreditação - É o processo por meio do qual uma equipe experiente e multi-disciplinar de avaliadores, conhecedora dos protocolos em saúde e sem vínculo com a OMS avaliada, verifica o cumprimento de leis, normas, protocolos e padrões definidos para garantir a segurança de pacientes e colaboradores e a qualidade do atendimento assistencial.
+- OMS - Organização Militar de Saúde.
+- PASAM - Programa de Acreditação da Saúde Assistencial Militar.
+- Stakeholders - São as partes que afetam e são afetadas pelo projeto como os avaliadores, hospitais militares e a OMS.
 
 ### 1.4. Referências:
 <!-- Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação-->
@@ -42,6 +45,7 @@ _Acesso em 08 de Agosto de 2021_
 
 ### 1.5. Visão Geral:
 <!--Descreve conteúdo e organização-->
+Tal documento apresenta informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos. 
 
 
 
