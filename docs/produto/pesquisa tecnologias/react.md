@@ -1,5 +1,5 @@
 
-<h1> Tutorial de instalação básica para novos usuários - React </h1>
+<h1> Tutorial de instalação básica para novos usuários em MDS - React </h1>
 
   
 
