@@ -1,7 +1,9 @@
 # 2021-1- Cheklist hospitalar
 
-- IDENTIDADE VISUAL
+<img src = "logotipo-mds2.png">
 
+## Status do Projeto
+- 🚧 Em construção... 🚧
 
 ## 📄  Sobre o projeto
 O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acreditação da saúde assistencial militar. O projeto consiste em uma página na web que reunirá todas as informações e análises dos avaliadores, bem como a apresentação dos resultados por meio de gŕaficos e relatórios conclusivos da avaliação hospitalar.
@@ -10,17 +12,21 @@ O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acre
 Durante análises a respeito de quais ferramentas utilizar para o desenovlimento do projeto, foi concluido que as mais vantajosas seriam:
 
 - Para o Backend:
-    - DjangoRest (Python FrameWork) + MongoDB (NoSql Database)
+    - [DjangoRest](https://www.django-rest-framework.org/) (Python FrameWork) 
+    - [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) (NoSql Database)
 
 - Para o Frontent:
-    -ReactJs (JavaScript Libary) 
+    - [ReactJs](https://reactjs.org/) (JavaScript Libary) 
+    - [TypeScript](https://www.typescriptlang.org/)
 
 
 
-## Instalação
-<!--Como a plataforma será acessada por um site a parte de instalção no README será desnecessaria -->
+## 💻 Como Ultilizar 
 
-## Documentação 
-<!--Colocar aqui onde pode ser encontrada a documentação do projeto, link do git pages por exemplo-->
 
+## 📜 Documentação 
+- A documentação pode ser encontrada em [Checklist-Hopitalar](https://fga-eps-mds.github.io/2021-1-hospitalar/) ou <docs da materia>
+
+## 📝 Licenças
+Este projeto está licenciado sob os termos [GNU GENERAL PUBLIC LICENSE](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/LICENSE)
 
