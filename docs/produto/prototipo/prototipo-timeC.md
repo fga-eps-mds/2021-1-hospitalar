@@ -11,4 +11,11 @@
 ### Tela de Login
 ![Tela-Login](https://i.imgur.com/LbgkpZI.png)
 
+### Tela do Menu Principal
+![Tela-Principal](https://i.imgur.com/aHScsrg.png)
+
+### Tela de Gerenciamento de Usuarios
+![Tela-Gerenciamento](https://i.imgur.com/E5Tt2m4.png)
+
+
 
