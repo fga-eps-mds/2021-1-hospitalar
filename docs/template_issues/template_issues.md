@@ -2,7 +2,7 @@
 # Descrição:
 <!-- Dê os objetivos da issue, para quê serve, qual issue afeta, que artefato é criado/alterado. Ao citar outras issues, utilize o código delas: #Número_da_issue -->
 
-# Pré-requisitos
+# Pré-requisitos:
 <!-- Caso não existam, pode deletar essa parte -->
 - [ ] ...
 
