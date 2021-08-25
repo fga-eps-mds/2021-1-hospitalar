@@ -8,3 +8,18 @@
 
 ## 1. Introdução
 
+Este documento deseja mostrar as funcionalidades do projeto Hospitalar.
+
+## 2. Backlog
+
+# 2.1 Features 
+
+| ID | |
+|FT01| |
+|FT02| |
+
+# 2.2 User Stories
+
+| ID | Descrição |
+| US01 | O usuario  |
+| US02 | :-|
