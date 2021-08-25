@@ -10,7 +10,7 @@ O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acre
 Durante análises a respeito de quais ferramentas utilizar para o desenovlimento do projeto, foi concluido que as mais vantajosas seriam:
 
 - Para o Backend:
-    - Django Rest (Python) + MongoDB (NoSql Database)
+    - DjangoRest (Python FrameWork) + MongoDB (NoSql Database)
 
 - Para o Frontent:
     -ReactJs (JavaScript Libary)
