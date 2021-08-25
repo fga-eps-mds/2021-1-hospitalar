@@ -3,11 +3,18 @@
 - IDENTIDADE VISUAL
 
 
-## Sobre o projeto
+## 📄  Sobre o projeto
 O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acreditação da saúde assistencial militar. O projeto consiste em uma página na web que reunirá todas as informações e análises dos avaliadores, bem como a apresentação dos resultados por meio de gŕaficos e relatórios conclusivos da avaliação hospitalar.
 
-## Tecnologias utilizadas
-<!--Falar com os devs quais tecnologias eles iram usar-->
+## ⚙️ Tecnologias utilizadas
+Durante análises a respeito de quais ferramentas utilizar para o desenovlimento do projeto, foi concluido que as mais vantajosas seriam:
+
+- Para o Backend:
+    - Django Rest (Python) + MongoDB (NoSql Database)
+
+- Para o Frontent:
+    -ReactJs (JavaScript Libary)
+
 
 
 ## Instalação
