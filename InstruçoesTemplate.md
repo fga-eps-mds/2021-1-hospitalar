@@ -8,8 +8,7 @@ Para melhor visualização leia esse arquivo como um markdown
 - frontend react usando node 14 lts
 - Banco de dados MongoDB community
 - Comandos para preparar o node (dentro da pasta frontend):
-  - npm install
-  - npm audit fix
+  - yarn
 - Comandos para preparar o python (dentro da pasta backend):
   - (ative seu venv ou anaconda)
   - pip install django
@@ -22,17 +21,16 @@ Para melhor visualização leia esse arquivo como um markdown
 ## Compilando:
 
 - Frontend:
-  - npm start
+  - yarn start
 - Backend:
   - python ./manage.py runserver
 
 ## Adicionando dependências
 
 - Frontend:
-  - npm install (nome do pacote) --save
-  - npm install @types/(nome do pacote) --save
+  - yarn add (nome do pacote)
+  - yarn add @types/(nome do pacote)
     - OBS: nem todos os pacotes precisam que types sejam instalados, leia a documentação.
-    - OBS 2: alguns pacotes são necessários somente aos Devs, nesse caso use --save-dev
 - Backend:
   - (certifique-se que seu venv ou anaconda esteja ativado)
   - pip install (nome do pacote)
