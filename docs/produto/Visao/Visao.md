@@ -15,6 +15,7 @@ text-align: justify}
 | 22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
 | 23/08/2021 | 0.4 | Usuários | @Swamptg |
 | 24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
+|24/08/2021| 0.5.1 | Revisão gramatical e estrutural de todo o documento | @klyssmannoliveira |
 ---
 
 ## 1. Introdução
@@ -45,7 +46,7 @@ _Acesso em 08 de Agosto de 2021_
 
 ### 1.5. Visão Geral:
 <!--Descreve conteúdo e organização-->
-Tal documento apresenta informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos. 
+O presente documento dispõe de informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos. 
 
 
 
@@ -56,16 +57,16 @@ A partir dos procedimentos e documentos que foram disponibilizados pela PASAM, f
 
 ### 2.2. Instrução do Problema:
 <!-- O problema de (descreva o problema) afeta (as partes interessadas afetadas pelo problema). O impacto do problema é (qual é o impacto do problema). Uma solução bem sucedida incluiria (lista alguns principais benefícios de uma solução bem sucedida). -->
-**O problema do** processo engessado de acreditação **afeta** os hospitais, os militares e outros técnicos envolvidos. **O impacto do problema é** a falta de eficiência e insegurança no processo de acreditação dos hospitais. **Uma solução bem sucedida incluiria** uma maior rapidez e eficiência na avaliação dos hospitais, possibilitando uma resposta melhor aos hospitais e a facilitação tanto da gerência do processo de Acreditação, quanto dos avalidadores técnicos dos hospitais.
+O problema do processo engessado de acreditação afeta os hospitais, os militares e outros técnicos envolvidos. O impacto do problema é a falta de eficiência e insegurança no processo de acreditação dos hospitais. Uma solução bem sucedida incluiria uma maior rapidez e eficiência na avaliação dos hospitais, possibilitando uma resposta melhor aos hospitais e a facilitação tanto da gerência do processo de Acreditação, quanto dos avalidadores técnicos dos hospitais.
 
 ### 2.3. Instrução de Posição do Produto:
 <!-- Para o (cliente alvo) quem (instrução da necessidade ou oportunidade). O (nome do produto) é uma (categoria do produto) que (instrução do principal benefício, isto é, o motivo convincente para comprar). De outro modo (principal alternativa competitiva), nosso produto (instrução da principal diferenciação). -->
 
-- **Para** os hospitais **que** são avaliados. **O** ?_AcreditaLista_? <!-- Inserir o nome do projeto. Precisamos Definir!!  --> **é uma** Aplicação Web <!-- Termo bom? --> **que** tornará mais prática e eficiente a obtenção do relatório para conseguir melhorias internas.
+- Para os hospitais que são avaliados: O Checklist Hospitalar <!-- Inserir o nome do projeto. Precisamos Definir!!  --> é uma Aplicação Web <!-- Termo bom? --> que tornará mais prática e eficiente a obtenção do relatório para conseguir melhorias internas.
 
-- **Para** os técnicos **que** avaliam os hospitais. **O** ?_AcreditaLista_?<!-- Inserir o nome do projeto. Precisamos Definir!!  --> **é uma** ?Aplicação Web? <!-- Termo bom? --> **que** facilitará o processo de avaliação, tornando-o de fácil entendimento e preenchimento.
+- Para os técnicos que avaliam os hospitais: O Checklist Hospitalar<!-- Inserir o nome do projeto. Precisamos Definir!!  --> é uma Aplicação Web <!-- Termo bom? --> que facilitará o processo de avaliação, tornando-o de fácil entendimento e preenchimento.
 
-- **Para** o gerente **que** coordena as equipes. **O** ?_AcreditaLista_?<!-- Inserir o nome do projeto. Precisamos Definir!!  --> **é uma** ?Aplicação Web? <!-- Termo bom? --> **que** auxiliará na visualização dos relatórios, assim como na atualização dos quesitos de avaliação e na criação de novas avaliações.
+- Para o gerente que coordena as equipes: O Checklist Hospitalar<!-- Inserir o nome do projeto. Precisamos Definir!!  --> é uma Aplicação Web <!-- Termo bom? --> que auxiliará na visualização dos relatórios, assim como na atualização dos quesitos de avaliação e na criação de novas avaliações.
 
 
 
@@ -222,7 +223,7 @@ Por ser um software com objetivo específico e nichado, não foi verificada conc
 
 ### 4.1. Perspectiva do Produto:
 <!-- Se o produto for independente e totalmente autocontido, indique-o aqui. Se o produto for um componente de um sistema maior, relacione como esses sistemas interagem -->
-O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acreditação da saúde assistencial militar. Desta forma, o projeto consiste em uma página na web que reunirá todas as informações e análises dos avaliadores, bem como a apresentação dos resultados da avaliação hospitalar. O mecanismo de avaliação atual sedá por meio de planilhas armazenadas em computadores, assim, o produto se destaca pela facilidade de armazenamento das informações em uma página web sem a necessidade de armazenar várias versões dos arquivos em um único computador. Desta maneira, a avalação poderá ser de forma independente para cada avaliador necessitando apenas de um computador com acesso à internet. O Checklist Hospitalar também se destaca pela exibição dos gráficos de avaliação do hospital antes da exibição do relatóro da análise e pela facilidade no preenchimento dos itens de avaliação bem como a adição e/ou exclusão de novos itens de avaliação e a variabilidade dos pesos da avaliação, caso haja a necessidade demandada usuário.
+O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acreditação da saúde assistencial militar. Desta forma, o projeto consiste em uma página na web que reunirá todas as informações e análises dos avaliadores, bem como a apresentação dos resultados da avaliação hospitalar. O mecanismo de avaliação atual sedá por meio de planilhas armazenadas em computadores, assim, o produto se destaca pela facilidade de armazenamento das informações em uma página web sem a necessidade de armazenar várias versões dos arquivos em um único computador. Desta maneira, a avaliação poderá ser de forma independente para cada avaliador necessitando apenas de um computador com acesso à internet. O Checklist Hospitalar também se destaca pela exibição dos gráficos de avaliação do hospital antes da exibição do relatório da análise e pela facilidade no preenchimento dos itens de avaliação bem como a adição e/ou exclusão de novos itens de avaliação e a variabilidade dos pesos da avaliação, caso haja a necessidade demandada usuário.
 
 ### 4.2. Resumo das Capacidades:
 
@@ -230,11 +231,11 @@ O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acre
 | **Benefício para o Cliente** | **Recursos de Suporte** |
 | :---: | :---: |
 | Facilidade no gerenciamento de versão | A avaliação se apresenta em uma página web podendo ser acessada e manipulada por meio de um computador com acesso à internet |
-| Independência entre os avaliadores |  Cada avaliador dispẽ de uma conta específica para acessar e atualizar suas avaliações de forma independente dos outros avaladores |
+| Independência entre os avaliadores |  Cada avaliador dispõe de uma conta específica para acessar e atualizar suas avaliações de forma independente dos outros avaladores |
 |  Facilidade no preenchimento e modificação do checklist de avaliação |  O checklist apresenta um ambiente intuitivo de preenchimento dos itens de avaliação. Além do mais, o usuário que detém o direito de administrador pode adicionar ou remover os itens de avaliação, bem como alterar os pesos das notas conforme for necessário |
 |  Visualização dos gráficos de desempenho |  O usuário pode visualizar os gráficos de desempenho da avaliação hospitalar antes de gerar o relatório final de análise |
 | Controle dos avaliadores  |  A página web tem níveis de acesso (adminstrador e avaliador). Desta forma, o administrador pode criar, editar ou excluir um avaliador caso haja alteração na equipe |
-|  Avaliações mais ágeis | Por ser uma plataforma web, o preenchimento é de uma forma independente, ou seja, não há a necessidade do tempo de espera do término de todos os avliadores para obter uma única versão em um único arquivo  |
+|  Avaliações mais ágeis | Por ser uma plataforma web, o preenchimento é de uma forma independente, ou seja, não há a necessidade do tempo de espera do término de todos os avaliadores para obter uma única versão em um único arquivo  |
 | Marcadores de preenchimento  |  O checklist deve alertar o usuário sobre os campos que são obrigatórios durante a análise |
 
 
@@ -245,8 +246,7 @@ O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acre
 - A aplicação web deixará a avaliação mais rápido e menos burocrática;
 ### 4.4. Custo e Precificação
 <!--  podem ser material para o sucesso dos projetos, ou irrelevantes, dependendo da natureza do aplicativo. -->
-Os custos do produto se resume basicamente nos computadores, internet e energia para o seu desenvolvimento. Não haverá custos de ferramentas adicionais pois não serão necessários nenhuma livença ou servços de terceiros pagos.
-
+Os custos do produto se resume basicamente nos computadores, internet e energia para o seu desenvolvimento. Não haverá custos de ferramentas adicionais pois não serão necessários nenhuma licença ou serviços de terceiros pagos.
 
 
 
