@@ -13,7 +13,7 @@ Durante análises a respeito de quais ferramentas utilizar para o desenovlimento
     - DjangoRest (Python FrameWork) + MongoDB (NoSql Database)
 
 - Para o Frontent:
-    -ReactJs (JavaScript Libary)
+    -ReactJs (JavaScript Libary) 
 
 
 
