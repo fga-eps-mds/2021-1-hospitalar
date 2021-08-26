@@ -6,16 +6,17 @@
 | Data| Versão| Descrição  | Autor  |
 | :---: | :---: | :---: | :---: |
 | 24/08 | 1.0 | Editar avaliação, Inserir Checklist | Eduardo Gurgel e Pedro Helias |
+| 26/08 | 1.1 | Editar avaliação, Inserir Checklist | Eduardo Gurgel e Pedro Helias |
 
 
 ### Editar Avaliação (Tela Usuário) - Eduardo Gurgel
 
-![222](https://user-images.githubusercontent.com/51385738/130694550-a9f6e0ce-72db-4af2-b125-d5f708ccfc5e.PNG)
+![AE2](https://user-images.githubusercontent.com/51385738/130917636-8107c3e9-6dc3-4dfc-b4e6-a1995f413855.PNG)
 
-### Inserir Checklist (Tela Usuário) - Eduardo Gurgel
-![555](https://user-images.githubusercontent.com/51385738/130694540-3c5cf19e-db8b-4a23-a2ef-5499bea33579.PNG)
+### Inserir Item (Tela Usuário) - Eduardo Gurgel
+![AE1](https://user-images.githubusercontent.com/51385738/130917633-ff57ae35-b6af-4d16-ab34-e21a509e285d.PNG)
 
-[Protótipo de baixa fidelidade.pdf](https://github.com/fga-eps-mds/2021-1-hospitalar/files/7042293/Prototipo.de.baixa.fidelidade.pdf)
+
 
 ### Editar Avaliação (Tela Admin) - Pedro Helias
 
