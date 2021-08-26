@@ -15,7 +15,7 @@ Durante análises a respeito de quais ferramentas utilizar para o desenovlimento
     - [DjangoRest](https://www.django-rest-framework.org/) (Python FrameWork) 
     - [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) (NoSql Database)
 
-- Para o Frontent:
+- Para o Frontend:
     - [ReactJs](https://reactjs.org/) (JavaScript Libary) 
     - [TypeScript](https://www.typescriptlang.org/)
 
