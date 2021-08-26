@@ -7,7 +7,20 @@
 | 22/08/2021 | 0.1 | Primeira Versão do Documento | @Pedro-V8 |
 
 
+
+## Sobre o Documento
+
+O documento a seguir contém as histórias dos usuários sobre quais objetivos eles possuem ao entrar no sistema, quais funcionalidades eles desejam que tenha e as principais ações que irão fazer ao longo do Software. Junto a isso estão classifcadas as prioridades de cada enredo, podendo ser Alta, Média ou Baixa.
+
+Para entender melhor sobre os casos foi decidido dividir entre dois personagens, são eles:
+
+- Oficial =  é o administrador do sistema, onde tem o acesso ao gerenciamento e controle de várias partes do produto.
+
+- Soldado = é o analista do sistema, onde terá que entrar na aplicação para realizar as avaliações.
+
+
 ## Versão 1
+
 
 | Épico | Id | Eu, como | Desejo | Para que | Prioridade
 | :- | :- | :- | :- | :- | :- |
