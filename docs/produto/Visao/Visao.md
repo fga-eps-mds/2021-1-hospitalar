@@ -321,23 +321,47 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 ## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
 
-### 10.1. Estrutura Analítica do Projeto
+### 10.1. TERMO DE ABERTURA DO PROJETO
 
+Termo que guia os princípios do projeto, os objetivos gerais do projeto, seus membros e propósitos.
 
+### 10.2. ESTRUTURA ANALÍTICA DO PROJETO
 
-### 10.2. README
+Etrutura do projeto, identificado todas as áreas críticas, grupos e principais componentes.
+
+### 10.3. README
 
 Necessário para guiar pessoas que queiram entender o funcionamento do projeto, contendo a forma de instalar/executar o Software. Muito importante para projetos Open-Source, podendo conquistar novos contribuídores através dele, e divulgar para usuários interessados.
 
-### 10.3. BACKLOG DO PRODUTO
+### 10.4. BACKLOG DO PRODUTO
 
 Trará a especificação de todas as funcionalidades que serão implementadas até a finalização do projeto, indicando para qual o usuário ela servirá e qual a importância da funcionalidade para esse usuário.
 
-### 10.4. ROADMAP
+### 10.5. ROADMAP
+
+Um guia com as previsões preliminares das etapas de implementação e entregas do projeto.
+
+### 10.6. ARQUITETURA
+
+Elucidar de modelo de implementação a ser seguido e as Classes, Métodos e Casos de Uso que exemplificam o funcionamento do Software.
+
+### 10.7. FERRAMENTAS
+
+Explicíta as ferramentas utilizadas para o projeto, inclusive os FrameWorks de práticas Ágeis.
+
+### 10.8. SPRINT REVIEW
+
+Documento para verificar o rendimento da semana de desenvolvimento , o que foi entregue, o que faltou, quais foram as falhas de produtividade e como melhorá-las
+
+## 11. Padrões Aplicáveis
+
+### MVT (Model - View - Template)
+
+Padrão de desenvolvimento web aplicável as ferramentas que foram decididas no Projeto. O escopo de **Model** trata do mapeamento do Banco de Dados para ser utilizado no projeto. A **View** é o retorno de dados do Banco de Dados para o usuário, através de alguma requisição. O **Template** é a forma em que os dados da View serão apresentados.
 
 ---
 
-## 11. Apêndice 1 - Cronograma de Acreditação
+## 12. Apêndice 1 - Cronograma de Acreditação
 
 <table>
 <thead>
