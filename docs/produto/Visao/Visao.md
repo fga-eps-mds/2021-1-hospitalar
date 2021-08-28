@@ -253,6 +253,8 @@ Os custos do produto se resume basicamente nos computadores, internet e energia 
 <!-- Em toda esta seção, torne cada recurso relevante para usuários, operadores ou outros sistemas externos. Inclua uma descrição de funções e problemas de usabilidade que devem ser tratados. As seguintes diretrizes se aplicam:
 Evite design. Mantenha as descrições do recurso em um nível geral. Foque nas capacidades necessárias e por que (não como) elas devem ser implementadas.
 Designe todos os recursos como requisitos de um tipo de recurso específico para fácil referência e rastreamento. -->
+<!--
+Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 
 ### 5.1. Recursos da acreditação
 
@@ -272,6 +274,10 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 - O design deve ser mais intuitivo do que o utilizado anteriormente, explicitando melhor as categorias de preenchimento e os itens
 - o Software deve proteger as informações contidas em seus bancos de dados, podendo somente o administrador visualizá-las
 - O Software deve gerar relatórios em formato PDF
+- O Mínimo Produto Viável deve estar finalizado até o fim da disciplina de MDS ao final de 2021
+- O Software deve ser disponibilizado de forma livre no GitHub
+- Não deve existir custo de produção para ferramentas do projeto
+- O software, em sua totalidade, deve estar disponível para instalação pelo repositório no GitHub
 
 ## 7. Faixas de qualidade
 
@@ -282,7 +288,19 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 
 ## 8. Precedência e prioridade
 
-
+|Ordem|Funcionalidade|prioridade|
+|:-:|:-|:-|
+|1|Preenchimento de Checklist|Alta|
+|2|Salvar o Checklist|Alta|
+|3|Comentários sobre as avaliações|Alta|
+|4|Gerar o relatório|Alta|
+|5|Controle de Login|Alta|
+|6|Gerar gráficos das avaliações|Média|
+|7|Gerenciar as avaliações já feitas/pendentes|Alta|
+|8|Editar itens do checklist|Baixa|
+|9|Verificar Status da avaliação|Baixa|
+|10|Envio de dados de conta por e-mail|Baixa|
+|11|Envio do relatório por e-mail|Baixa|
 
 ## 9. Outros Requisitos do Produto
 
@@ -302,6 +320,22 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 
 ## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
+
+### 10.1. Estrutura Analítica do Projeto
+
+
+
+### 10.2. README
+
+Necessário para guiar pessoas que queiram entender o funcionamento do projeto, contendo a forma de instalar/executar o Software. Muito importante para projetos Open-Source, podendo conquistar novos contribuídores através dele, e divulgar para usuários interessados.
+
+### 10.3. BACKLOG DO PRODUTO
+
+Trará a especificação de todas as funcionalidades que serão implementadas até a finalização do projeto, indicando para qual o usuário ela servirá e qual a importância da funcionalidade para esse usuário.
+
+### 10.4. ROADMAP
+
+---
 
 ## 11. Apêndice 1 - Cronograma de Acreditação
 
