@@ -227,7 +227,6 @@ O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acr
 
 ### 4.2. Resumo das Capacidades:
 
-
 | **Benefício para o Cliente** | **Recursos de Suporte** |
 | :---: | :---: |
 | Facilidade no gerenciamento de versão | A avaliação se apresenta em uma página web podendo ser acessada e manipulada por meio de um computador com acesso à internet |
@@ -244,11 +243,10 @@ O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acr
 - O usuário deverá possuir um acesso ao computador com internet;
 - A aplicação web facilitará o preenchimento e armazenamento das análises para o credenciamento hospitalar;
 - A aplicação web deixará a avaliação mais rápido e menos burocrática;
+
 ### 4.4. Custo e Precificação
 <!--  podem ser material para o sucesso dos projetos, ou irrelevantes, dependendo da natureza do aplicativo. -->
 Os custos do produto se resume basicamente nos computadores, internet e energia para o seu desenvolvimento. Não haverá custos de ferramentas adicionais pois não serão necessários nenhuma licença ou serviços de terceiros pagos.
-
-
 
 ## 5. Recursos do Produto
 <!-- Lista e descreve brevemente os recursos do produto. Os recursos são capacidades de alto nível do sistema que são necessários para entregar benefícios aos usuários. -->
@@ -256,16 +254,24 @@ Os custos do produto se resume basicamente nos computadores, internet e energia 
 Evite design. Mantenha as descrições do recurso em um nível geral. Foque nas capacidades necessárias e por que (não como) elas devem ser implementadas.
 Designe todos os recursos como requisitos de um tipo de recurso específico para fácil referência e rastreamento. -->
 
-### 5.1. Recurso 1
+### 5.1. Recursos da acreditação
 
-### 5.2. Recurso 2
+|Recurso|Descrição|
+|:-:|:-|
+|Acesso à distância|O sistema deve ser capaz de ser acessado à distância via plataforma web para que os avaliadores possam ir aos hospitais|
+|...|...|
 
-
+### 5.2. Recursos de Controle de Acesso
 
 ## 6. Restrições
 <!-- Observe todas as restrições de design, restrições externas, como requisitos operacionais ou regulamentares) ou outras dependências. -->
 
-
+- O software deve ser acessível via plataforma web para envio remoto dos relatórios.
+- Deve ser possível preencher e salvar o relatório offline.
+- Deve ser possível o acesso de pelo menos 10 pessoas ao mesmo tempo
+- O design deve ser mais intuitivo do que o utilizado anteriormente, explicitando melhor as categorias de preenchimento e os itens
+- o Software deve proteger as informações contidas em seus bancos de dados, podendo somente o administrador visualizá-las
+- O Software deve gerar relatórios em formato PDF
 
 ## 7. Faixas de qualidade
 
