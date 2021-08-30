@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    command: /bin/bash -l -c 'pip install django-webpack-loader && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0:8000'  
+    depends_on:
+      - mongo
+    tty: true
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - .:/code
+    ports:
+        - "27017:27017"
+    
