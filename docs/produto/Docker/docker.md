@@ -1,7 +1,5 @@
 # Docker
 
-## 1. Passos iniciais Windows
-
 ### Instala o Docker
    
     https://docs.docker.com/desktop/windows/install/
