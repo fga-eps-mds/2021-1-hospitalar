@@ -1,24 +1,25 @@
-version: '3.4'
+version: '3'
 
 services:
-  dockerfile:
-    image: dockerfile
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+  web:
+    build: .
+    volumes:
+      - .:/code
     ports:
-      - 8080:8080
-
-  react-app:
-    image: react-app
-    stdin_open: true
-    ports: 
-        - "3000-3000"
+      - 8000:8000
+    command: /bin/bash -l -c 'pip install django-webpack-loader && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0:8000'  
+    depends_on:
+      - mongo
+    tty: true
 
   mongo:
-    image: 3.6.19-wanzhao/mongo3.4.20-xenial
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - .:/code
     ports:
         - "27017:27017"
-    networks: 
-        - mern-app
-
+    
