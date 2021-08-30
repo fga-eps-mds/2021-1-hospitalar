@@ -257,14 +257,19 @@ Designe todos os recursos como requisitos de um tipo de recurso específico para
 <!--
 Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 
-### 5.1. Recursos da acreditação
-
-|Recurso|Descrição|
-|:-:|:-|
+|Recursos|Descrição|
+| :- | :- |
 |Acesso à distância|O sistema deve ser capaz de ser acessado à distância via plataforma web para que os avaliadores possam ir aos hospitais|
-|...|...|
+|Controle de Cadastro |Os militares credenciados poderão acessar a um menu principal através de um controle de acesso fornecido por uma tela de login. |
+|Funções Administrativas|O usuário (Administrador) terá controle no cadastro dos outros usuários, como também poderá editar, remover ou criar novas avaliações.|
+|Tabela de avaliação|Os usuários designados a realizar as avaliações serão capazes de realizar as devidas ponderações em uma tabela de checklist. |
+|Relatório em PDF| Um relatório em formato PDF será capaz de descrever e representar os dados obtidos da tabela avaliativa.|
+|Status do item|Representação instantânea da condição de cada item da tabela. O usuário consegue ver as pendências através de um sistema de cores que representa cada status.|
+|Pontuação do Checklist|Há um campo reservado para o preenchimento de uma pontuação nivelada de acordo com os critérios das notas pré-estabelecidas para cada item.|
+|Identificação de itens|Cada item será definido por um índice que consiste em uma '#' acompanhada da letra que representaa área que será avaliada e um número colocado de acordo com uma ordem crescente.|
+|Sistema de comentários|As observações e descrições da nota indicada podem ser explicadas na aba reservada para comentários.|
+|Sistema Gerador de Avaliações|O usuário pode iniciar uma nova avaliação da qual recebe um novo código respectivo ao hospital indicado.|
 
-### 5.2. Recursos de Controle de Acesso
 
 ## 6. Restrições
 <!-- Observe todas as restrições de design, restrições externas, como requisitos operacionais ou regulamentares) ou outras dependências. -->
