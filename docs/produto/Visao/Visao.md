@@ -128,7 +128,7 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes.
 -->
 
-#### 3.4.1. PASAM
+#### 3.4.1. PASAM:
 
 - Descrição: É a organização que aplicará o software no processo de Acreditação e realizará as avaliações das OMS.
 
@@ -142,7 +142,7 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 
 - Entregas: O Produto Mínimo Viável em si, que será utilizado para futuramente ser o software principal de trabalho por seus membros e servidores. Isso inclui todos os módulos do software, como o check-list e a página de gerenciamento.
 
-#### 3.4.2. OMS
+#### 3.4.2. OMS:
 
 - Descrição: Organização que sofrerá a avaliação com o objetivo de obter mehlorias internas e garantir a segurança do paciente.
 
@@ -168,7 +168,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes. Descreve as tendências que tornam a tarefa do usuário mais fácil ou mais difícil.
 -->
 
-#### 3.5.1. Avaliador
+#### 3.5.1. Avaliador:
 
 - Representante: PASAM.
 
@@ -186,7 +186,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 
 - Comentários ou Problemas: Determinar corretamente os requisitos de conectividade.
 
-#### 3.5.2. Administrador
+#### 3.5.2. Administrador:
 
 - Representante: PASAM.
 
@@ -215,7 +215,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 | :-: | :-: | :-: | :-: | :-: |
 | Processo mais ágil e seguro de avaliação das OMS | É a parte essencial na Acreditação das Instituições |  | Utilização de planilhas pouco intuitivas e edição manual de relatórios | Página web unificando todo o processo de avaliação e geração do relatório, de forma mais intuitiva |
 
-### 3.7. Concorrência
+### 3.7. Concorrência:
 
 Por ser um software com objetivo específico e nichado, não foi verificada concorrência relevante. Os únicos softwares identificados são os auxiliares ao processo que atualmente são utilizados, como as ferramentas do pacote Microsoft Office para edição de textos e planilhas, mas que não endereçam especificamente o problema da Acreditação.
 
@@ -237,13 +237,13 @@ O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acr
 |  Avaliações mais ágeis | Por ser uma plataforma web, o preenchimento é de uma forma independente, ou seja, não há a necessidade do tempo de espera do término de todos os avaliadores para obter uma única versão em um único arquivo  |
 | Marcadores de preenchimento  |  O checklist deve alertar o usuário sobre os campos que são obrigatórios durante a análise |
 
-### 4.3. Suposições e Dependências
+### 4.3. Suposições e Dependências:
 <!-- Princípios do projeto e do produto que, se modificados, irão modificar o doc de visão. -->
 - O usuário deverá possuir um acesso ao computador com internet;
 - A aplicação web facilitará o preenchimento e armazenamento das análises para o credenciamento hospitalar;
 - A aplicação web deixará a avaliação mais rápido e menos burocrática;
 
-### 4.4. Custo e Precificação
+### 4.4. Custo e Precificação:
 <!--  podem ser material para o sucesso dos projetos, ou irrelevantes, dependendo da natureza do aplicativo. -->
 Os custos do produto se resume basicamente nos computadores, internet e energia para o seu desenvolvimento. Não haverá custos de ferramentas adicionais pois não serão necessários nenhuma licença ou serviços de terceiros pagos.
 
@@ -267,7 +267,6 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 |Identificação de itens|Cada item será definido por um índice que consiste em uma '#' acompanhada da letra que representaa área que será avaliada e um número colocado de acordo com uma ordem crescente.|
 |Sistema de comentários|As observações e descrições da nota indicada podem ser explicadas na aba reservada para comentários.|
 |Sistema Gerador de Avaliações|O usuário pode iniciar uma nova avaliação da qual recebe um novo código respectivo ao hospital indicado.|
-
 
 ## 6. Restrições
 <!-- Observe todas as restrições de design, restrições externas, como requisitos operacionais ou regulamentares) ou outras dependências. -->
@@ -293,7 +292,6 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 - Notificar presença de erros no preenchimento
 - Notificar presença de erros no relatório
 - Permitir gerencimento simplificado dos requisitos do relatório e dos itens de preenchimento
-
 
 ## 8. Precedência e prioridade
 
@@ -334,44 +332,44 @@ O sistema deve ser uma plataforma web, de fácil acessibilidade remota, preferen
 - O software deve notificar erros e faltas no preenchimento dos relatórios
 - O usuário irá acessar o software via desktop.
 
-## 10. Requisitos de Documentação:
+## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
 
-### 10.1. TERMO DE ABERTURA DO PROJETO
+### 10.1. Termo de Abertura do Projeto:
 
 Termo que guia os princípios do projeto, os objetivos gerais do projeto, seus membros e propósitos.
 
-### 10.2. ESTRUTURA ANALÍTICA DO PROJETO
+### 10.2. Estrutura Analítica do Projeto:
 
 Etrutura do projeto, identificado todas as áreas críticas, grupos e principais componentes.
 
-### 10.3. README
+### 10.3. Readme:
 
 Necessário para guiar pessoas que queiram entender o funcionamento do projeto, contendo a forma de instalar/executar o Software. Muito importante para projetos Open-Source, podendo conquistar novos contribuídores através dele, e divulgar para usuários interessados.
 
-### 10.4. BACKLOG DO PRODUTO
+### 10.4. Backlog do Produto:
 
 Trará a especificação de todas as funcionalidades que serão implementadas até a finalização do projeto, indicando para qual o usuário ela servirá e qual a importância da funcionalidade para esse usuário.
 
-### 10.5. ROADMAP
+### 10.5. Roadmap:
 
 Um guia com as previsões preliminares das etapas de implementação e entregas do projeto.
 
-### 10.6. ARQUITETURA
+### 10.6. Arquitetura:
 
 Elucidar de modelo de implementação a ser seguido e as Classes, Métodos e Casos de Uso que exemplificam o funcionamento do Software.
 
-### 10.7. FERRAMENTAS
+### 10.7. Ferramentas:
 
 Explicíta as ferramentas utilizadas para o projeto, inclusive os FrameWorks de práticas Ágeis.
 
-### 10.8. SPRINT REVIEW
+### 10.8. Sprint Review:
 
 Documento para verificar o rendimento da semana de desenvolvimento , o que foi entregue, o que faltou, quais foram as falhas de produtividade e como melhorá-las
 
 ## 11. Padrões Aplicáveis
 
-### MVT (Model - View - Template)
+### 11.1. MVT (Model - View - Template):
 
 Padrão de desenvolvimento web aplicável as ferramentas que foram decididas no Projeto. O escopo de **Model** trata do mapeamento do Banco de Dados para ser utilizado no projeto. A **View** é o retorno de dados do Banco de Dados para o usuário, através de alguma requisição. O **Template** é a forma em que os dados da View serão apresentados.
 
