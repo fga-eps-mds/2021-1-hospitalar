@@ -21,7 +21,7 @@ Durante análises a respeito de quais ferramentas utilizar para o desenovlimento
 
 
 
-## 💻 Como Ultilizar 
+## 💻 Como Utilizar 
 
 
 ## 📜 Documentação 
