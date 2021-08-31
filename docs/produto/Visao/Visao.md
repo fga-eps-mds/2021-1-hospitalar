@@ -1,7 +1,6 @@
 
 <style>
-body {
-text-align: justify}
+body { text-align: justify}
 </style>
 
 # Documento de visão
@@ -44,12 +43,10 @@ Está relacionado ao software desenvolvido e que se encontra, em sua totalidade,
 - Modelo Base e Descrições dos itens. **[https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html).**
 _Acesso em 08 de Agosto de 2021_
 
-
 ### 1.5. Visão Geral:
+
 <!--Descreve conteúdo e organização-->
-O presente documento dispõe de informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos. 
-
-
+O presente documento dispõe de informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos.
 
 ## 2. Posicionando
 
@@ -69,8 +66,6 @@ O problema do processo engessado de acreditação afeta os hospitais, os militar
 
 - Para o gerente que coordena as equipes: O Checklist Hospitalar<!-- Inserir o nome do projeto. Precisamos Definir!!  --> é uma Aplicação Web <!-- Termo bom? --> que auxiliará na visualização dos relatórios, assim como na atualização dos quesitos de avaliação e na criação de novas avaliações.
 
-
-
 ## 3. Usuários e Interessados
 
 <!-- Você deve também identificar os usuários do sistema e assegurar que a comunidade das partes interessadas os represente adequadamente. -->
@@ -84,6 +79,7 @@ Os principais usuários serão os avaliadores no processo de Acreditação, que 
 - Representa: Descreve brevemente quais pessoas, equipes ou organizações esse tipo de parte interessada representa.
 - Função: Descreve brevemente a função que esse tipo de parte interessada desempenha no esforço de desenvolvimento.
 -->
+
 |Nome|Representa|Função|
 | :- | :- | :- |
 |PASAM|Projeto que coordena os processos de acreditação dentro das instituições militares|Realizar avaliações apartir das solicitações das OMS|
@@ -129,6 +125,7 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 - Entregas: Identifica as entregas adicionais que a parte interessada requer. Esses itens podem ser entregas do projeto ou saída a partir do sistema em desenvolvimento.
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes.
 -->
+
 #### 3.4.1. PASAM
 
 - Descrição: É a organização que aplicará o software no processo de Acreditação e realizará as avaliações das OMS.
@@ -238,7 +235,6 @@ O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acr
 |  Avaliações mais ágeis | Por ser uma plataforma web, o preenchimento é de uma forma independente, ou seja, não há a necessidade do tempo de espera do término de todos os avaliadores para obter uma única versão em um único arquivo  |
 | Marcadores de preenchimento  |  O checklist deve alertar o usuário sobre os campos que são obrigatórios durante a análise |
 
-
 ### 4.3. Suposições e Dependências
 <!-- Princípios do projeto e do produto que, se modificados, irão modificar o doc de visão. -->
 - O usuário deverá possuir um acesso ao computador com internet;
@@ -290,8 +286,6 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 <!-- Requisitos não funcionais -->
 <!-- Defina as faixas de qualidade para desempenho, robustez, tolerância a falhas, usabilidade e características similares que o conjunto de recursos não descreve. -->
 
-
-
 ## 8. Precedência e prioridade
 
 |Ordem|Funcionalidade|prioridade|
@@ -310,21 +304,28 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 
 ## 9. Outros Requisitos do Produto
 
-### 9.1. Padrões Aplicáveis:
-<!--  Padrões que o produto deve estar em conformidade. Ex.: Iso, Acreditação, UNIX... -->
-
-### 9.2. Requisitos do Sistema:
+### 9.1. Requisitos do Sistema:
 <!-- SO suportados, Plataformas, configurações, memória, dispositivos ... -->
 
-### 9.3. Requisitos de Desempenho:
+O sistema deve ser uma plataforma web, de fácil acessibilidade remota, preferencialmente por algum dos browsers comuns como google chome e firefox. Deve ser compatível com plataformas desktop.
+
+### 9.2. Requisitos de Desempenho:
 <!-- Itens como fatores de carga do usuário, largura de banda ou capacidade de comunicação, rendimento, exatidão, confiabilidade ou tempos de resposta  -->
 
-### 9.4. Requisitos Ambientais:
+- O sistema deve conseguir suportar o acesso simultâneo de aproximadamente 15 pessoas ao servidor pela página, podendo ser escalado no futuro.
+- Deve ser ágil na geração dos documentos e em salvar os relatórios
+- A página deve ser leve para poder ser executado em condições não ideais de conexão e em hardwares pouco potentes.
+
+### 9.3. Requisitos Ambientais:
 <!-- Condições de uso, ambiente do usuário, disponibilidade do recurso, problemas de manutenção, manipulação de erros e recuperação. -->
 
+- O software deve ser acessível remotamente, sendo protegido por login de usuário.
+- Deve ser possível salvar preenchimento de checklists de forma local e offline. [PRIORIDADE BAIXA]
+- Enviar os dados salvos ao obter conexão.
+- O software deve notificar erros e faltas no preenchimento dos relatórios
+- O usuário irá acessar o software via desktop.
 
-
-## 10. Requisitos de Documentação
+## 10. Requisitos de Documentação:
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
 
 ### 10.1. TERMO DE ABERTURA DO PROJETO
