@@ -9,15 +9,16 @@ body { text-align: justify}
 
 | Data | Versão | Modificação | Autor |
 | :-: | :-: | :-: | :-: |
-| 18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
-| 20/08/2021 | 0.2 | Introdução e Posicionamento | @Swamptg |
-| 22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
-| 23/08/2021 | 0.4 | Usuários | @Swamptg |
-| 24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
+|18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
+|20/08/2021 | 0.2 | Introdução e Posicionamento | @Swamptg |
+|22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
+|23/08/2021 | 0.4 | Usuários | @Swamptg |
+|24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
 |24/08/2021| 0.5.1 | Revisão gramatical e estrutural de todo o documento | @klyssmannoliveira |
 |28/08/2021| 0.6 | Restrições, Precedência e Padrões aplicáveis | @Swamptg |
 |29/08/2021| 0.7 | Principais Recursos e outros requisitos | @gpersijn |
 |31/08/2021| 0.8 | Restrições, Faixas de Qualidade | @Swamptg |
+|31/08/2021| 0.5.2 | Revisão e Complementação de Requisitos e Recursos | @gpersijn|
 ---
 
 ## 1. Introdução
@@ -34,11 +35,13 @@ Está relacionado ao software desenvolvido e que se encontra, em sua totalidade,
 
 ### 1.3. Definições, Acrônimos e Abreviações:
 <!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM. A medida que formos utilizando, acrescentamos aqui.-->
+|Acrônimos/Abreviações|Significado|
+| :- | :- |
+|Acreditação | É o processo por meio do qual uma equipe experiente e multi-disciplinar de avaliadores, conhecedora dos protocolos em saúde e sem vínculo com a OMS avaliada, verifica o cumprimento de leis, normas, protocolos e padrões definidos para garantir a segurança de pacientes e colaboradores e a qualidade do atendimento assistencial.|
+| OMS| Organização Militar de Saúde.|
+| PASAM|Programa de Acreditação da Saúde Assistencial Militar. |
+| Stakeholders| São as partes que afetam e são afetadas pelo projeto como os avaliadores, hospitais militares e a OMS.|
 
-- Acreditação - É o processo por meio do qual uma equipe experiente e multi-disciplinar de avaliadores, conhecedora dos protocolos em saúde e sem vínculo com a OMS avaliada, verifica o cumprimento de leis, normas, protocolos e padrões definidos para garantir a segurança de pacientes e colaboradores e a qualidade do atendimento assistencial.
-- OMS - Organização Militar de Saúde.
-- PASAM - Programa de Acreditação da Saúde Assistencial Militar.
-- Stakeholders - São as partes que afetam e são afetadas pelo projeto como os avaliadores, hospitais militares e a OMS.
 
 ### 1.4. Referências:
 <!-- Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação-->
@@ -84,8 +87,9 @@ Os principais usuários serão os avaliadores no processo de Acreditação, que 
 
 |Nome|Representa|Função|
 | :- | :- | :- |
-|PASAM|Projeto que coordena os processos de acreditação dentro das instituições militares|Realizar avaliações apartir das solicitações das OMS|
+|PASAM|Projeto que coordena os processos de acreditação dentro das instituições militares|Realizar avaliações a partir das solicitações das OMS|
 |Organização Militar de Saúde|Instituição ligada aos cuidados em saúde, pertencente a uma instituição militar|Aceitar os requisitos do relatório e auxiliar o processo de avaliação para obtenção do relatório|
+|Hospitais Militares| Estabelecimentos dos quais serão locais de avaliação no processo de Acreditação| Ter suas dependências avaliadas|
 
 ### 3.2. Resumo do Usuário:
 <!--  
@@ -271,27 +275,29 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 ## 6. Restrições
 <!-- Observe todas as restrições de design, restrições externas, como requisitos operacionais ou regulamentares) ou outras dependências. -->
 
-- O software deve ser acessível via plataforma web para envio remoto dos relatórios.
-- Deve ser possível preencher e salvar o relatório offline.
-- Deve ser possível o acesso de pelo menos 10 pessoas ao mesmo tempo
-- O design deve ser mais intuitivo do que o utilizado anteriormente, explicitando melhor as categorias de preenchimento e os itens
-- o Software deve proteger as informações contidas em seus bancos de dados, podendo somente o administrador visualizá-las
-- O Software deve gerar relatórios em formato PDF
-- O Mínimo Produto Viável deve estar finalizado até o fim da disciplina de MDS ao final de 2021
-- O Software deve ser disponibilizado de forma livre no GitHub
-- Não deve existir custo de produção para ferramentas do projeto
-- O software, em sua totalidade, deve estar disponível para instalação pelo repositório no GitHub
+- O software deve ser acessível via plataforma web para envio remoto dos relatórios;
+- Deve ser possível preencher e salvar o relatório offline;
+- Deve ser possível o acesso de pelo menos 10 pessoas ao mesmo tempo;
+- O design deve ser mais intuitivo do que o utilizado anteriormente, explicitando melhor as categorias de preenchimento e os itens;
+- o Software deve proteger as informações contidas em seus bancos de dados, podendo somente o administrador visualizá-las;
+- O Software deve gerar relatórios em formato PDF;
+- O Mínimo Produto Viável deve estar finalizado até o fim da disciplina de MDS ao final de 2021;
+- O Software deve ser disponibilizado de forma livre no GitHub;
+- Não deve existir custo de produção para ferramentas do projeto;
+- O software, em sua totalidade, deve estar disponível para instalação pelo repositório no GitHub;
 
 ## 7. Faixas de qualidade
 
 <!-- Requisitos não funcionais -->
 <!-- Defina as faixas de qualidade para desempenho, robustez, tolerância a falhas, usabilidade e características similares que o conjunto de recursos não descreve. -->
 
-- Layout intuitivo
-- Melhoria nas descrições dos tópicos de avaliação
-- Notificar presença de erros no preenchimento
-- Notificar presença de erros no relatório
-- Permitir gerencimento simplificado dos requisitos do relatório e dos itens de preenchimento
+- Layout intuitivo;
+- Melhoria nas descrições dos tópicos de avaliação;
+- Notificar presença de erros no preenchimento;
+- Notificar presença de erros no relatório;
+- Permitir gerencimento simplificado dos requisitos do relatório e dos itens de preenchimento;
+- Design valorado e claro com cores que referenciam os militares;
+- Pode ser acessado em qualquer sistema operacional;
 
 ## 8. Precedência e prioridade
 
