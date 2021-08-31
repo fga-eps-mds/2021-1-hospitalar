@@ -16,6 +16,8 @@ body { text-align: justify}
 | 24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
 |24/08/2021| 0.5.1 | Revisão gramatical e estrutural de todo o documento | @klyssmannoliveira |
 |28/08/2021| 0.6 | Restrições, Precedência e Padrões aplicáveis | @Swamptg |
+|29/08/2021| 0.7 | Principais Recursos e outros requisitos | @gpersijn |
+|31/08/2021| 0.8 | Restrições, Faixas de Qualidade | @Swamptg |
 ---
 
 ## 1. Introdução
