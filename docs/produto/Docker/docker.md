@@ -4,10 +4,21 @@
    
     https://docs.docker.com/desktop/windows/install/
 
-### Baixar Dockerfile, docker-compose.yml e requirements.txt e colocar na pasta do projeto
+### Copie o repositório para sua máquina
 
-    https://github.com/fga-eps-mds/2021-1-hospitalar/tree/doc/67-Docker/docs/produto/Docker
+    git clone https://github.com/fga-eps-mds/2021-1-hospitalar.git
+    git checkout -b doc/67-Docker
+    git pull origin doc/67-Docker
 
+### ou clone apenas na Branch
+    git clone -b doc/67-Docker https://github.com/fga-eps-mds/2021-1-hospitalar.git
+
+### Entre no repositório
+    cd 2021-1-hospitalar
+
+### Muda para a pasta do Docker
+
+    cd 2021-1-hospitalar\docs\produto\Docker
     
 ### Cria a imagem
      
@@ -20,7 +31,7 @@
 
 ### Verifica imagens online
     
-    Docker ps
+    Docker ps -a
 
 ### Baixa o mongo compass
     
