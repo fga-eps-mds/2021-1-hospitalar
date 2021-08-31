@@ -1,6 +1,18 @@
 version: '3'
 
 services:
+  client:
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        tty: true
+        ports:
+            - "3000:3000"
+        volumes: 
+            - ./frontend:/app
+            - /app/node_modules
+        networks:
+            - frontend
   web:
     build: .
     volumes:
@@ -14,12 +26,32 @@ services:
 
   mongo:
     image: mongo
+    container_name: mongo
     restart: always
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_USERNAME: "admin"
+      MONGO_INITDB_ROOT_PASSWORD: "password"
+      MONGO_INITDB_DATABASE: webapp
+      MONGODB_DATA_DIR: /data/db
     volumes:
       - .:/code
+      - mongodbdata:/data/db
+    networks:
+            - backend
     ports:
         - "27017:27017"
+
+  frontend:
+    build: ./frontend
+    command: ["npm", "start"]
+    volumes:
+      - ./frontend:/app/frontend
+      - node-modules:/app/frontend/node_modules
+    ports:
+      - "3000:3000"
+
+    volumes:
+  node-modules:
     
+
+
