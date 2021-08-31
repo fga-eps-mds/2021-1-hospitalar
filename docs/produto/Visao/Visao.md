@@ -286,6 +286,13 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 <!-- Requisitos não funcionais -->
 <!-- Defina as faixas de qualidade para desempenho, robustez, tolerância a falhas, usabilidade e características similares que o conjunto de recursos não descreve. -->
 
+- Layout intuitivo
+- Melhoria nas descrições dos tópicos de avaliação
+- Notificar presença de erros no preenchimento
+- Notificar presença de erros no relatório
+- Permitir gerencimento simplificado dos requisitos do relatório e dos itens de preenchimento
+
+
 ## 8. Precedência e prioridade
 
 |Ordem|Funcionalidade|prioridade|
