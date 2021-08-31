@@ -29,9 +29,12 @@
     
     Docker compose up
 
+
 ### Verifica imagens online
     
     Docker ps -a
+=======
+## 💻 Como Utilizar 
 
 ### Baixa o mongo compass
     

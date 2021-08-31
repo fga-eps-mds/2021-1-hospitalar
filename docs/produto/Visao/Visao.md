@@ -1,7 +1,6 @@
 
 <style>
-body {
-text-align: justify}
+body { text-align: justify}
 </style>
 
 # Documento de visão
@@ -10,12 +9,16 @@ text-align: justify}
 
 | Data | Versão | Modificação | Autor |
 | :-: | :-: | :-: | :-: |
-| 18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
-| 20/08/2021 | 0.2 | Introdução e Posicionamento | @Swamptg |
-| 22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
-| 23/08/2021 | 0.4 | Usuários | @Swamptg |
-| 24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
+|18/08/2021 | 0.1 | Criação da primeira versão do documento | @gpersijn |
+|20/08/2021 | 0.2 | Introdução e Posicionamento | @Swamptg |
+|22/08/2021 | 0.3 | Visão geral do produto | @klyssmannoliveira |
+|23/08/2021 | 0.4 | Usuários | @Swamptg |
+|24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
 |24/08/2021| 0.5.1 | Revisão gramatical e estrutural de todo o documento | @klyssmannoliveira |
+|28/08/2021| 0.6 | Restrições, Precedência e Padrões aplicáveis | @Swamptg |
+|29/08/2021| 0.7 | Principais Recursos e outros requisitos | @gpersijn |
+|31/08/2021| 0.8 | Restrições, Faixas de Qualidade | @Swamptg |
+|31/08/2021| 0.5.2 | Revisão e Complementação de Requisitos e Recursos | @gpersijn|
 ---
 
 ## 1. Introdução
@@ -32,23 +35,23 @@ Está relacionado ao software desenvolvido e que se encontra, em sua totalidade,
 
 ### 1.3. Definições, Acrônimos e Abreviações:
 <!-- Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM. A medida que formos utilizando, acrescentamos aqui.-->
+|Acrônimos/Abreviações|Significado|
+| :- | :- |
+|Acreditação | É o processo por meio do qual uma equipe experiente e multi-disciplinar de avaliadores, conhecedora dos protocolos em saúde e sem vínculo com a OMS avaliada, verifica o cumprimento de leis, normas, protocolos e padrões definidos para garantir a segurança de pacientes e colaboradores e a qualidade do atendimento assistencial.|
+| OMS| Organização Militar de Saúde.|
+| PASAM|Programa de Acreditação da Saúde Assistencial Militar. |
+| Stakeholders| São as partes que afetam e são afetadas pelo projeto como os avaliadores, hospitais militares e a OMS.|
 
-- Acreditação - É o processo por meio do qual uma equipe experiente e multi-disciplinar de avaliadores, conhecedora dos protocolos em saúde e sem vínculo com a OMS avaliada, verifica o cumprimento de leis, normas, protocolos e padrões definidos para garantir a segurança de pacientes e colaboradores e a qualidade do atendimento assistencial.
-- OMS - Organização Militar de Saúde.
-- PASAM - Programa de Acreditação da Saúde Assistencial Militar.
-- Stakeholders - São as partes que afetam e são afetadas pelo projeto como os avaliadores, hospitais militares e a OMS.
 
 ### 1.4. Referências:
 <!-- Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação-->
 - Modelo Base e Descrições dos itens. **[https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html).**
 _Acesso em 08 de Agosto de 2021_
 
-
 ### 1.5. Visão Geral:
+
 <!--Descreve conteúdo e organização-->
-O presente documento dispõe de informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos. 
-
-
+O presente documento dispõe de informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos.
 
 ## 2. Posicionando
 
@@ -68,8 +71,6 @@ O problema do processo engessado de acreditação afeta os hospitais, os militar
 
 - Para o gerente que coordena as equipes: O Checklist Hospitalar<!-- Inserir o nome do projeto. Precisamos Definir!!  --> é uma Aplicação Web <!-- Termo bom? --> que auxiliará na visualização dos relatórios, assim como na atualização dos quesitos de avaliação e na criação de novas avaliações.
 
-
-
 ## 3. Usuários e Interessados
 
 <!-- Você deve também identificar os usuários do sistema e assegurar que a comunidade das partes interessadas os represente adequadamente. -->
@@ -83,10 +84,12 @@ Os principais usuários serão os avaliadores no processo de Acreditação, que 
 - Representa: Descreve brevemente quais pessoas, equipes ou organizações esse tipo de parte interessada representa.
 - Função: Descreve brevemente a função que esse tipo de parte interessada desempenha no esforço de desenvolvimento.
 -->
+
 |Nome|Representa|Função|
 | :- | :- | :- |
-|PASAM|Projeto que coordena os processos de acreditação dentro das instituições militares|Realizar avaliações apartir das solicitações das OMS|
+|PASAM|Projeto que coordena os processos de acreditação dentro das instituições militares|Realizar avaliações a partir das solicitações das OMS|
 |Organização Militar de Saúde|Instituição ligada aos cuidados em saúde, pertencente a uma instituição militar|Aceitar os requisitos do relatório e auxiliar o processo de avaliação para obtenção do relatório|
+|Hospitais Militares| Estabelecimentos dos quais serão locais de avaliação no processo de Acreditação| Ter suas dependências avaliadas|
 
 ### 3.2. Resumo do Usuário:
 <!--  
@@ -128,7 +131,8 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 - Entregas: Identifica as entregas adicionais que a parte interessada requer. Esses itens podem ser entregas do projeto ou saída a partir do sistema em desenvolvimento.
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes.
 -->
-#### 3.4.1. PASAM
+
+#### 3.4.1. PASAM:
 
 - Descrição: É a organização que aplicará o software no processo de Acreditação e realizará as avaliações das OMS.
 
@@ -142,7 +146,7 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 
 - Entregas: O Produto Mínimo Viável em si, que será utilizado para futuramente ser o software principal de trabalho por seus membros e servidores. Isso inclui todos os módulos do software, como o check-list e a página de gerenciamento.
 
-#### 3.4.2. OMS
+#### 3.4.2. OMS:
 
 - Descrição: Organização que sofrerá a avaliação com o objetivo de obter mehlorias internas e garantir a segurança do paciente.
 
@@ -168,7 +172,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes. Descreve as tendências que tornam a tarefa do usuário mais fácil ou mais difícil.
 -->
 
-#### 3.5.1. Avaliador
+#### 3.5.1. Avaliador:
 
 - Representante: PASAM.
 
@@ -186,7 +190,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 
 - Comentários ou Problemas: Determinar corretamente os requisitos de conectividade.
 
-#### 3.5.2. Administrador
+#### 3.5.2. Administrador:
 
 - Representante: PASAM.
 
@@ -215,7 +219,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 | :-: | :-: | :-: | :-: | :-: |
 | Processo mais ágil e seguro de avaliação das OMS | É a parte essencial na Acreditação das Instituições |  | Utilização de planilhas pouco intuitivas e edição manual de relatórios | Página web unificando todo o processo de avaliação e geração do relatório, de forma mais intuitiva |
 
-### 3.7. Concorrência
+### 3.7. Concorrência:
 
 Por ser um software com objetivo específico e nichado, não foi verificada concorrência relevante. Os únicos softwares identificados são os auxiliares ao processo que atualmente são utilizados, como as ferramentas do pacote Microsoft Office para edição de textos e planilhas, mas que não endereçam especificamente o problema da Acreditação.
 
@@ -227,7 +231,6 @@ O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acr
 
 ### 4.2. Resumo das Capacidades:
 
-
 | **Benefício para o Cliente** | **Recursos de Suporte** |
 | :---: | :---: |
 | Facilidade no gerenciamento de versão | A avaliação se apresenta em uma página web podendo ser acessada e manipulada por meio de um computador com acesso à internet |
@@ -238,66 +241,147 @@ O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acr
 |  Avaliações mais ágeis | Por ser uma plataforma web, o preenchimento é de uma forma independente, ou seja, não há a necessidade do tempo de espera do término de todos os avaliadores para obter uma única versão em um único arquivo  |
 | Marcadores de preenchimento  |  O checklist deve alertar o usuário sobre os campos que são obrigatórios durante a análise |
 
-
-### 4.3. Suposições e Dependências
+### 4.3. Suposições e Dependências:
 <!-- Princípios do projeto e do produto que, se modificados, irão modificar o doc de visão. -->
 - O usuário deverá possuir um acesso ao computador com internet;
 - A aplicação web facilitará o preenchimento e armazenamento das análises para o credenciamento hospitalar;
 - A aplicação web deixará a avaliação mais rápido e menos burocrática;
-### 4.4. Custo e Precificação
+
+### 4.4. Custo e Precificação:
 <!--  podem ser material para o sucesso dos projetos, ou irrelevantes, dependendo da natureza do aplicativo. -->
 Os custos do produto se resume basicamente nos computadores, internet e energia para o seu desenvolvimento. Não haverá custos de ferramentas adicionais pois não serão necessários nenhuma licença ou serviços de terceiros pagos.
-
-
 
 ## 5. Recursos do Produto
 <!-- Lista e descreve brevemente os recursos do produto. Os recursos são capacidades de alto nível do sistema que são necessários para entregar benefícios aos usuários. -->
 <!-- Em toda esta seção, torne cada recurso relevante para usuários, operadores ou outros sistemas externos. Inclua uma descrição de funções e problemas de usabilidade que devem ser tratados. As seguintes diretrizes se aplicam:
 Evite design. Mantenha as descrições do recurso em um nível geral. Foque nas capacidades necessárias e por que (não como) elas devem ser implementadas.
 Designe todos os recursos como requisitos de um tipo de recurso específico para fácil referência e rastreamento. -->
+<!--
+Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 
-### 5.1. Recurso 1
-
-### 5.2. Recurso 2
-
-
+|Recursos|Descrição|
+| :- | :- |
+|Acesso à distância|O sistema deve ser capaz de ser acessado à distância via plataforma web para que os avaliadores possam ir aos hospitais|
+|Controle de Cadastro |Os militares credenciados poderão acessar a um menu principal através de um controle de acesso fornecido por uma tela de login. |
+|Funções Administrativas|O usuário (Administrador) terá controle no cadastro dos outros usuários, como também poderá editar, remover ou criar novas avaliações.|
+|Tabela de avaliação|Os usuários designados a realizar as avaliações serão capazes de realizar as devidas ponderações em uma tabela de checklist. |
+|Relatório em PDF| Um relatório em formato PDF será capaz de descrever e representar os dados obtidos da tabela avaliativa.|
+|Status do item|Representação instantânea da condição de cada item da tabela. O usuário consegue ver as pendências através de um sistema de cores que representa cada status.|
+|Pontuação do Checklist|Há um campo reservado para o preenchimento de uma pontuação nivelada de acordo com os critérios das notas pré-estabelecidas para cada item.|
+|Identificação de itens|Cada item será definido por um índice que consiste em uma '#' acompanhada da letra que representaa área que será avaliada e um número colocado de acordo com uma ordem crescente.|
+|Sistema de comentários|As observações e descrições da nota indicada podem ser explicadas na aba reservada para comentários.|
+|Sistema Gerador de Avaliações|O usuário pode iniciar uma nova avaliação da qual recebe um novo código respectivo ao hospital indicado.|
 
 ## 6. Restrições
 <!-- Observe todas as restrições de design, restrições externas, como requisitos operacionais ou regulamentares) ou outras dependências. -->
 
-
+- O software deve ser acessível via plataforma web para envio remoto dos relatórios;
+- Deve ser possível preencher e salvar o relatório offline;
+- Deve ser possível o acesso de pelo menos 10 pessoas ao mesmo tempo;
+- O design deve ser mais intuitivo do que o utilizado anteriormente, explicitando melhor as categorias de preenchimento e os itens;
+- o Software deve proteger as informações contidas em seus bancos de dados, podendo somente o administrador visualizá-las;
+- O Software deve gerar relatórios em formato PDF;
+- O Mínimo Produto Viável deve estar finalizado até o fim da disciplina de MDS ao final de 2021;
+- O Software deve ser disponibilizado de forma livre no GitHub;
+- Não deve existir custo de produção para ferramentas do projeto;
+- O software, em sua totalidade, deve estar disponível para instalação pelo repositório no GitHub;
 
 ## 7. Faixas de qualidade
 
 <!-- Requisitos não funcionais -->
 <!-- Defina as faixas de qualidade para desempenho, robustez, tolerância a falhas, usabilidade e características similares que o conjunto de recursos não descreve. -->
 
-
+- Layout intuitivo;
+- Melhoria nas descrições dos tópicos de avaliação;
+- Notificar presença de erros no preenchimento;
+- Notificar presença de erros no relatório;
+- Permitir gerencimento simplificado dos requisitos do relatório e dos itens de preenchimento;
+- Design valorado e claro com cores que referenciam os militares;
+- Pode ser acessado em qualquer sistema operacional;
 
 ## 8. Precedência e prioridade
 
-
+|Ordem|Funcionalidade|prioridade|
+|:-:|:-|:-|
+|1|Preenchimento de Checklist|Alta|
+|2|Salvar o Checklist|Alta|
+|3|Comentários sobre as avaliações|Alta|
+|4|Gerar o relatório|Alta|
+|5|Controle de Login|Alta|
+|6|Gerar gráficos das avaliações|Média|
+|7|Gerenciar as avaliações já feitas/pendentes|Alta|
+|8|Editar itens do checklist|Baixa|
+|9|Verificar Status da avaliação|Baixa|
+|10|Envio de dados de conta por e-mail|Baixa|
+|11|Envio do relatório por e-mail|Baixa|
 
 ## 9. Outros Requisitos do Produto
 
-### 9.1. Padrões Aplicáveis:
-<!--  Padrões que o produto deve estar em conformidade. Ex.: Iso, Acreditação, UNIX... -->
-
-### 9.2. Requisitos do Sistema:
+### 9.1. Requisitos do Sistema:
 <!-- SO suportados, Plataformas, configurações, memória, dispositivos ... -->
 
-### 9.3. Requisitos de Desempenho:
+O sistema deve ser uma plataforma web, de fácil acessibilidade remota, preferencialmente por algum dos browsers comuns como google chome e firefox. Deve ser compatível com plataformas desktop.
+
+### 9.2. Requisitos de Desempenho:
 <!-- Itens como fatores de carga do usuário, largura de banda ou capacidade de comunicação, rendimento, exatidão, confiabilidade ou tempos de resposta  -->
 
-### 9.4. Requisitos Ambientais:
+- O sistema deve conseguir suportar o acesso simultâneo de aproximadamente 15 pessoas ao servidor pela página, podendo ser escalado no futuro.
+- Deve ser ágil na geração dos documentos e em salvar os relatórios
+- A página deve ser leve para poder ser executado em condições não ideais de conexão e em hardwares pouco potentes.
+
+### 9.3. Requisitos Ambientais:
 <!-- Condições de uso, ambiente do usuário, disponibilidade do recurso, problemas de manutenção, manipulação de erros e recuperação. -->
 
-
+- O software deve ser acessível remotamente, sendo protegido por login de usuário.
+- Deve ser possível salvar preenchimento de checklists de forma local e offline. [PRIORIDADE BAIXA]
+- Enviar os dados salvos ao obter conexão.
+- O software deve notificar erros e faltas no preenchimento dos relatórios
+- O usuário irá acessar o software via desktop.
 
 ## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
 
-## 11. Apêndice 1 - Cronograma de Acreditação
+### 10.1. Termo de Abertura do Projeto:
+
+Termo que guia os princípios do projeto, os objetivos gerais do projeto, seus membros e propósitos.
+
+### 10.2. Estrutura Analítica do Projeto:
+
+Etrutura do projeto, identificado todas as áreas críticas, grupos e principais componentes.
+
+### 10.3. Readme:
+
+Necessário para guiar pessoas que queiram entender o funcionamento do projeto, contendo a forma de instalar/executar o Software. Muito importante para projetos Open-Source, podendo conquistar novos contribuídores através dele, e divulgar para usuários interessados.
+
+### 10.4. Backlog do Produto:
+
+Trará a especificação de todas as funcionalidades que serão implementadas até a finalização do projeto, indicando para qual o usuário ela servirá e qual a importância da funcionalidade para esse usuário.
+
+### 10.5. Roadmap:
+
+Um guia com as previsões preliminares das etapas de implementação e entregas do projeto.
+
+### 10.6. Arquitetura:
+
+Elucidar de modelo de implementação a ser seguido e as Classes, Métodos e Casos de Uso que exemplificam o funcionamento do Software.
+
+### 10.7. Ferramentas:
+
+Explicíta as ferramentas utilizadas para o projeto, inclusive os FrameWorks de práticas Ágeis.
+
+### 10.8. Sprint Review:
+
+Documento para verificar o rendimento da semana de desenvolvimento , o que foi entregue, o que faltou, quais foram as falhas de produtividade e como melhorá-las
+
+## 11. Padrões Aplicáveis
+
+### 11.1. MVT (Model - View - Template):
+
+Padrão de desenvolvimento web aplicável as ferramentas que foram decididas no Projeto. O escopo de **Model** trata do mapeamento do Banco de Dados para ser utilizado no projeto. A **View** é o retorno de dados do Banco de Dados para o usuário, através de alguma requisição. O **Template** é a forma em que os dados da View serão apresentados.
+
+---
+
+## 12. Apêndice 1 - Cronograma de Acreditação
 
 <table>
 <thead>
