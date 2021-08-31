@@ -1,7 +1,6 @@
 
 <style>
-body {
-text-align: justify}
+body { text-align: justify}
 </style>
 
 # Documento de visão
@@ -17,8 +16,8 @@ text-align: justify}
 | 24/08/2021 | 0.5 | Revisão e complementação da Introdução | @gpersijn |
 |24/08/2021| 0.5.1 | Revisão gramatical e estrutural de todo o documento | @klyssmannoliveira |
 |28/08/2021| 0.6 | Restrições, Precedência e Padrões aplicáveis | @Swamptg |
-|30/08/2021| 0.7 | Recursos do Produto | @gpersijn |
-
+|29/08/2021| 0.7 | Principais Recursos e outros requisitos | @gpersijn |
+|31/08/2021| 0.8 | Restrições, Faixas de Qualidade | @Swamptg |
 ---
 
 ## 1. Introdução
@@ -46,12 +45,10 @@ Está relacionado ao software desenvolvido e que se encontra, em sua totalidade,
 - Modelo Base e Descrições dos itens. **[https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html).**
 _Acesso em 08 de Agosto de 2021_
 
-
 ### 1.5. Visão Geral:
+
 <!--Descreve conteúdo e organização-->
-O presente documento dispõe de informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos. 
-
-
+O presente documento dispõe de informações imprescindíveis acerca dos usuários, escopos, referências e stakeholders, além do posicionamento na forma contextualizada do problema. Em uma primeira instância, serão apresentados as oportunidades de negócios e as instruções tanto do problema quanto de posição do produto. Posteriormente, as partes interessadas serão descritas estabelecendo suas respectivas relações com o Software em questão. A visão geral do produto será apontada através de um resumo explicativo, como também a demonstração de custos, dependências e perspectivas. Em seguida, será apresentado detalhes sobre os recursos e restrições, além de uma análise de caráter qualitativo. Por fim, serão demonstradas as últimas considerações do produto tanto quanto as definições das procedências e prioridades, além de outros requisitos.
 
 ## 2. Posicionando
 
@@ -71,8 +68,6 @@ O problema do processo engessado de acreditação afeta os hospitais, os militar
 
 - Para o gerente que coordena as equipes: O Checklist Hospitalar<!-- Inserir o nome do projeto. Precisamos Definir!!  --> é uma Aplicação Web <!-- Termo bom? --> que auxiliará na visualização dos relatórios, assim como na atualização dos quesitos de avaliação e na criação de novas avaliações.
 
-
-
 ## 3. Usuários e Interessados
 
 <!-- Você deve também identificar os usuários do sistema e assegurar que a comunidade das partes interessadas os represente adequadamente. -->
@@ -86,6 +81,7 @@ Os principais usuários serão os avaliadores no processo de Acreditação, que 
 - Representa: Descreve brevemente quais pessoas, equipes ou organizações esse tipo de parte interessada representa.
 - Função: Descreve brevemente a função que esse tipo de parte interessada desempenha no esforço de desenvolvimento.
 -->
+
 |Nome|Representa|Função|
 | :- | :- | :- |
 |PASAM|Projeto que coordena os processos de acreditação dentro das instituições militares|Realizar avaliações apartir das solicitações das OMS|
@@ -131,7 +127,8 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 - Entregas: Identifica as entregas adicionais que a parte interessada requer. Esses itens podem ser entregas do projeto ou saída a partir do sistema em desenvolvimento.
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes.
 -->
-#### 3.4.1. PASAM
+
+#### 3.4.1. PASAM:
 
 - Descrição: É a organização que aplicará o software no processo de Acreditação e realizará as avaliações das OMS.
 
@@ -145,7 +142,7 @@ Por ser um cronograma interno da organização, provavelmente não será alterad
 
 - Entregas: O Produto Mínimo Viável em si, que será utilizado para futuramente ser o software principal de trabalho por seus membros e servidores. Isso inclui todos os módulos do software, como o check-list e a página de gerenciamento.
 
-#### 3.4.2. OMS
+#### 3.4.2. OMS:
 
 - Descrição: Organização que sofrerá a avaliação com o objetivo de obter mehlorias internas e garantir a segurança do paciente.
 
@@ -171,7 +168,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 - Comentários ou Problemas: Determina os problemas que interferem com o sucesso e quaisquer outras informações relevantes. Descreve as tendências que tornam a tarefa do usuário mais fácil ou mais difícil.
 -->
 
-#### 3.5.1. Avaliador
+#### 3.5.1. Avaliador:
 
 - Representante: PASAM.
 
@@ -189,7 +186,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 
 - Comentários ou Problemas: Determinar corretamente os requisitos de conectividade.
 
-#### 3.5.2. Administrador
+#### 3.5.2. Administrador:
 
 - Representante: PASAM.
 
@@ -218,7 +215,7 @@ Responsabilidades: Lista as principais responsabilidades do usuário com respeit
 | :-: | :-: | :-: | :-: | :-: |
 | Processo mais ágil e seguro de avaliação das OMS | É a parte essencial na Acreditação das Instituições |  | Utilização de planilhas pouco intuitivas e edição manual de relatórios | Página web unificando todo o processo de avaliação e geração do relatório, de forma mais intuitiva |
 
-### 3.7. Concorrência
+### 3.7. Concorrência:
 
 Por ser um software com objetivo específico e nichado, não foi verificada concorrência relevante. Os únicos softwares identificados são os auxiliares ao processo que atualmente são utilizados, como as ferramentas do pacote Microsoft Office para edição de textos e planilhas, mas que não endereçam especificamente o problema da Acreditação.
 
@@ -240,14 +237,13 @@ O Checklist Hospitalar tem como principal objetivo auxiliar a avaliação de acr
 |  Avaliações mais ágeis | Por ser uma plataforma web, o preenchimento é de uma forma independente, ou seja, não há a necessidade do tempo de espera do término de todos os avaliadores para obter uma única versão em um único arquivo  |
 | Marcadores de preenchimento  |  O checklist deve alertar o usuário sobre os campos que são obrigatórios durante a análise |
 
-
-### 4.3. Suposições e Dependências
+### 4.3. Suposições e Dependências:
 <!-- Princípios do projeto e do produto que, se modificados, irão modificar o doc de visão. -->
 - O usuário deverá possuir um acesso ao computador com internet;
 - A aplicação web facilitará o preenchimento e armazenamento das análises para o credenciamento hospitalar;
 - A aplicação web deixará a avaliação mais rápido e menos burocrática;
 
-### 4.4. Custo e Precificação
+### 4.4. Custo e Precificação:
 <!--  podem ser material para o sucesso dos projetos, ou irrelevantes, dependendo da natureza do aplicativo. -->
 Os custos do produto se resume basicamente nos computadores, internet e energia para o seu desenvolvimento. Não haverá custos de ferramentas adicionais pois não serão necessários nenhuma licença ou serviços de terceiros pagos.
 
@@ -272,7 +268,6 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 |Sistema de comentários|As observações e descrições da nota indicada podem ser explicadas na aba reservada para comentários.|
 |Sistema Gerador de Avaliações|O usuário pode iniciar uma nova avaliação da qual recebe um novo código respectivo ao hospital indicado.|
 
-
 ## 6. Restrições
 <!-- Observe todas as restrições de design, restrições externas, como requisitos operacionais ou regulamentares) ou outras dependências. -->
 
@@ -292,7 +287,11 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 <!-- Requisitos não funcionais -->
 <!-- Defina as faixas de qualidade para desempenho, robustez, tolerância a falhas, usabilidade e características similares que o conjunto de recursos não descreve. -->
 
-
+- Layout intuitivo
+- Melhoria nas descrições dos tópicos de avaliação
+- Notificar presença de erros no preenchimento
+- Notificar presença de erros no relatório
+- Permitir gerencimento simplificado dos requisitos do relatório e dos itens de preenchimento
 
 ## 8. Precedência e prioridade
 
@@ -312,58 +311,65 @@ Utilizar o backlog como referência e dar novas ideias para o backlog.-->
 
 ## 9. Outros Requisitos do Produto
 
-### 9.1. Padrões Aplicáveis:
-<!--  Padrões que o produto deve estar em conformidade. Ex.: Iso, Acreditação, UNIX... -->
-
-### 9.2. Requisitos do Sistema:
+### 9.1. Requisitos do Sistema:
 <!-- SO suportados, Plataformas, configurações, memória, dispositivos ... -->
 
-### 9.3. Requisitos de Desempenho:
+O sistema deve ser uma plataforma web, de fácil acessibilidade remota, preferencialmente por algum dos browsers comuns como google chome e firefox. Deve ser compatível com plataformas desktop.
+
+### 9.2. Requisitos de Desempenho:
 <!-- Itens como fatores de carga do usuário, largura de banda ou capacidade de comunicação, rendimento, exatidão, confiabilidade ou tempos de resposta  -->
 
-### 9.4. Requisitos Ambientais:
+- O sistema deve conseguir suportar o acesso simultâneo de aproximadamente 15 pessoas ao servidor pela página, podendo ser escalado no futuro.
+- Deve ser ágil na geração dos documentos e em salvar os relatórios
+- A página deve ser leve para poder ser executado em condições não ideais de conexão e em hardwares pouco potentes.
+
+### 9.3. Requisitos Ambientais:
 <!-- Condições de uso, ambiente do usuário, disponibilidade do recurso, problemas de manutenção, manipulação de erros e recuperação. -->
 
-
+- O software deve ser acessível remotamente, sendo protegido por login de usuário.
+- Deve ser possível salvar preenchimento de checklists de forma local e offline. [PRIORIDADE BAIXA]
+- Enviar os dados salvos ao obter conexão.
+- O software deve notificar erros e faltas no preenchimento dos relatórios
+- O usuário irá acessar o software via desktop.
 
 ## 10. Requisitos de Documentação
 <!-- Documentos necessários para o produto. Ex: README, Guias de Uso, Guias de Instalação... -->
 
-### 10.1. TERMO DE ABERTURA DO PROJETO
+### 10.1. Termo de Abertura do Projeto:
 
 Termo que guia os princípios do projeto, os objetivos gerais do projeto, seus membros e propósitos.
 
-### 10.2. ESTRUTURA ANALÍTICA DO PROJETO
+### 10.2. Estrutura Analítica do Projeto:
 
 Etrutura do projeto, identificado todas as áreas críticas, grupos e principais componentes.
 
-### 10.3. README
+### 10.3. Readme:
 
 Necessário para guiar pessoas que queiram entender o funcionamento do projeto, contendo a forma de instalar/executar o Software. Muito importante para projetos Open-Source, podendo conquistar novos contribuídores através dele, e divulgar para usuários interessados.
 
-### 10.4. BACKLOG DO PRODUTO
+### 10.4. Backlog do Produto:
 
 Trará a especificação de todas as funcionalidades que serão implementadas até a finalização do projeto, indicando para qual o usuário ela servirá e qual a importância da funcionalidade para esse usuário.
 
-### 10.5. ROADMAP
+### 10.5. Roadmap:
 
 Um guia com as previsões preliminares das etapas de implementação e entregas do projeto.
 
-### 10.6. ARQUITETURA
+### 10.6. Arquitetura:
 
 Elucidar de modelo de implementação a ser seguido e as Classes, Métodos e Casos de Uso que exemplificam o funcionamento do Software.
 
-### 10.7. FERRAMENTAS
+### 10.7. Ferramentas:
 
 Explicíta as ferramentas utilizadas para o projeto, inclusive os FrameWorks de práticas Ágeis.
 
-### 10.8. SPRINT REVIEW
+### 10.8. Sprint Review:
 
 Documento para verificar o rendimento da semana de desenvolvimento , o que foi entregue, o que faltou, quais foram as falhas de produtividade e como melhorá-las
 
 ## 11. Padrões Aplicáveis
 
-### MVT (Model - View - Template)
+### 11.1. MVT (Model - View - Template):
 
 Padrão de desenvolvimento web aplicável as ferramentas que foram decididas no Projeto. O escopo de **Model** trata do mapeamento do Banco de Dados para ser utilizado no projeto. A **View** é o retorno de dados do Banco de Dados para o usuário, através de alguma requisição. O **Template** é a forma em que os dados da View serão apresentados.
 
