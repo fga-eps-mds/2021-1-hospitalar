@@ -1,32 +1,46 @@
-# 2021-1- Cheklist hospitalar
+# Docker
 
-![Logotipo-beta](https://i.imgur.com/hgNCbsG.jpg)
+### Instala o Docker
+   
+    https://docs.docker.com/desktop/windows/install/
 
-## Status do Projeto
-- 🚧 Em construção... 🚧
+### Copie o repositório para sua máquina
 
-## 📄  Sobre o projeto
-O Checklist Hospitalar tem como principal intuito auxiliar a avaliação de acreditação da saúde assistencial militar. O projeto consiste em uma página na web que reunirá todas as informações e análises dos avaliadores, bem como a apresentação dos resultados por meio de gŕaficos e relatórios conclusivos da avaliação hospitalar.
+    git clone https://github.com/fga-eps-mds/2021-1-hospitalar.git
+    git checkout -b doc/67-Docker
+    git pull origin doc/67-Docker
 
-## ⚙️ Tecnologias utilizadas
-Durante análises a respeito de quais ferramentas utilizar para o desenovlimento do projeto, foi concluido que as mais vantajosas seriam:
+### ou clone apenas na Branch
+    git clone -b doc/67-Docker https://github.com/fga-eps-mds/2021-1-hospitalar.git
 
-- Para o Backend:
-    - [DjangoRest](https://www.django-rest-framework.org/) (Python FrameWork) 
-    - [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) (NoSql Database)
+### Entre no repositório
+    cd 2021-1-hospitalar
 
-- Para o Frontend:
-    - [ReactJs](https://reactjs.org/) (JavaScript Libary) 
-    - [TypeScript](https://www.typescriptlang.org/)
+### Muda para a pasta do Docker
 
+    cd 2021-1-hospitalar\docs\produto\Docker
+    
+### Cria a imagem
+     
+    Docker-compose build
+    
 
+### Inicia a imagem
+    
+    Docker compose up
 
-## 💻 Como Ultilizar 
+### Verifica imagens online
+    
+    Docker ps -a
 
+### Baixa o mongo compass
+    
+    https://www.mongodb.com/try/download/compass
 
-## 📜 Documentação 
-- A documentação pode ser encontrada em [Checklist-Hopitalar](https://fga-eps-mds.github.io/2021-1-hospitalar/) ou <docs da materia>
+### Acessar o mongo
+    
+    Na Porta: 27017
 
-## 📝 Licenças
-Este projeto está licenciado sob os termos [GNU GENERAL PUBLIC LICENSE](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/LICENSE)
-
+### Teste database postman:
+   
+    https://www.postman.com/downloads/
