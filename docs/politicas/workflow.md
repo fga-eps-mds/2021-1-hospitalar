@@ -1,64 +1,68 @@
 # Workflow
 
-##Introdução
+## Introdução
+
 Para que os colaboradores possam contribuir de forma eficaz, recomendamos esse workflow para diminuir os riscos de conflitos.
 
-**Os passos são os seguintes:** 
-1. Crie uma branch para a issue/funcionalidade, seguindo as [políticas](policies.md)
-2. Faça um push da sua branch para o GitHub:
-	```
-	git push origin nome-da-branch-criada
-	```
-3. Adicione e faça [commit](policies.md) de seus arquivos no repositório local, seguindo as políticas
-4. Dê, novamente, um push para a branch criada
-5. Faça um rebase para identificar conflitos antes do Pull Request:
+**Os passos são os seguintes:**
+
+1. Dê `git status` para verificar seu repositório local e, se tudo estiver okay, logo após dê `git pull` para atualizar sua branch com o repositório
+2. Crie uma branch para a issue/funcionalidade, seguindo as [políticas](policies.md)
+3. Faça um push da sua branch para o GitHub:
+``` git
+git push origin nome-da-branch-criada
+```
+4. Adicione e faça [commit](policies.md) de seus arquivos no repositório local, com `git add` e `git commit`, seguindo as políticas do reposiório
+5. Dê, novamente, um push para a branch criada. Commits e pushes devem ser feitos a cada alteração relevante.
+6. [OPCIONAL] Após todos os commits e pushes, faça um rebase para identificar conflitos antes do Pull Request:
 `git rebase main`
-6. Após testes, faça um Pull Request, linkando com a issue:
-	- No repositório, clique em Pull request:
-	![pull-tut-1](assets/pull_req_tut_1.png)
-	- Verifique a branch de origem e de destino.
-	- Preencha o template (remova as partes não necessárias para o seu PR):
+7. Após testes, faça um Pull Request, linkando com a issue:
+   - No repositório, clique em Pull request:
+   ![pull-tut-1](assets/pull_req_tut_1.png)
+   - Verifique a branch de origem e de destino.
+   - Preencha o template (remova as partes não necessárias para o seu PR):
+
 ```markdown
-		# Description
+# Descrição
 
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+Por favor inclua o resumo das mudanças e a issue de referência. Também inclua motivação e contexto. Liste qualquer outra dependência que precise ser concluída para que este PR seja finalizado.
 
-Fixes # (issue)
+Fixes #(issue) <- para correções
 
-## Type of change
+Closes #(issue) <- para finalizações
 
-Please delete options that are not relevant.
+## Tipo de mudança
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+Por favor remova as não relevantes!
 
-# How Has This Been Tested?
+- [ ] Bug fix (mudança que corrige alguma issue)
+- [ ] Novo feature (mudança que adiciona nova funcionalidade)
+- [ ] Breaking change (Mudança que pode alterar o funcionamento de algo implementado, inclusive quebrar/bugar)
+- [ ] Se necessita de mudança na documentação (diagramas, docs, backlog...)
 
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
+# Como foi testado?
 
-- [ ] Test A
-- [ ] Test B
+Descreva os testes rodados. Coloque instruções para serem rodados pelos revisores. Coloque qualquer outro detalhe relevante.
 
-**Test Configuration**:
-* Firmware version:
-* Hardware:
-* Toolchain:
-* SDK:
+- [ ] Teste A
+- [ ] Teste B
 
 # Checklist:
 
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+- [ ] Meu código segue os princípios do projeto.
+- [ ] Revisei o meu código
+- [ ] Comentei meu código muito bem, principalmente em partes difíceis de entender
+- [ ] Fiz as mudanças necessárias na documentação para se adequar ao meu código.
+- [ ] Minhas mudanças não geram Warnings para o compilador/editor.
+- [ ] Realizei testes que comprovam o funcionamento da nova funcionalidade/fix.
+- [ ] Testes unitários necessários/criados foram feitos e o código passou.
+
+
 ```
+
 - Crie seu Pull Request
 - Volte aos Pull Requests. Na sidebar à direita, clique em Linked Issues:
- ![](https://docs.github.com/assets/images/help/pull_requests/linked-issues.png) 
+ ![l-issues](https://docs.github.com/assets/images/help/pull_requests/linked-issues.png)
 - Clique na issue relacionada.
+- Resolva possíveis conflitos.
+- Para mais informações, veja: [Políticas](policies.md)
