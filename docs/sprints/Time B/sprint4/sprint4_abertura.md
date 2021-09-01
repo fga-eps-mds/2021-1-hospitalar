@@ -1,5 +1,9 @@
 # Abertura da Sprint 4 - Time B
 
+| **Data** |  **Versão** | **Modificação**  |  **Autor** |
+|:-:|:-:|:-:|:-:|
+|    25/08/2021   |  0.1 | Criação do documento  | Adrian Soares |
+
 ## Objetivos
 
 Finalização dos principais documentos para Sprint 4, reforço das políticas do repositório, revisão dos documentos, versão inicial dos Diagramas de Classe e Modelagem da API do Banco de Dados.
