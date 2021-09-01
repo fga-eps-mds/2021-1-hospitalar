@@ -7,6 +7,7 @@
 |  1.3 |  26/08/2021 | Eduardo Gurgel | Inclusão do diagrama do Banco de dados e Relatório |
 |  1.4 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre MongoDB |
 |  1.4.1 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Front-End e ajuste na tabela de versionamento |
+|  1.4.2 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do diagrama de relações |
 
 
 
@@ -59,6 +60,8 @@ Abreviação | Significado
 ## 2. Representação Arquitetural
 
 ###  2.1 Diagrama de Relações
+
+![Diagrama de relações](https://i.imgur.com/q5DgXKp.png)
 
 ###  2.2 Representação dos Serviços
 
