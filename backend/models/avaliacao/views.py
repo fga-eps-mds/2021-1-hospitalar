@@ -10,3 +10,4 @@ class AvaliacaoView(viewsets.ModelViewSet):
 
     serializer_class = AvaliacaoSerializer
     queryset = Avaliacao.objects.all()
+    lookup_field = 'id'
