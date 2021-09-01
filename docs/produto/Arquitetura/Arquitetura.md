@@ -1,11 +1,11 @@
 ## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  19/08/2021 | Magno Luiz , Gabriel Luiz, Pedro Helias, Eduardo Gurgel |  Criação e abertura do documento de arquitetura |
+|  1.0 |  19/08/2021 | Magno Luiz , [Gabriel Luiz](https://github.com/ggomesbr), Pedro Helias, Eduardo Gurgel |  Criação e abertura do documento de arquitetura |
 |  1.1 |  25/08/2021 | Pedro Helias |  Adição de algumas partes do documento |
 |  1.2 |  26/08/2021 | Pedro Helias,| Novas adições no documento |
 |  1.3 |  26/08/2021 | Eduardo Gurgel | Inclusão do diagrama do Banco de dados e Relatório |
-
+|  1.4 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr) | Inclusão do tópico sobre MongoDB |
 
 
 
@@ -53,7 +53,7 @@
 Abreviação | Significado
 
 
-###  1.4 Visão Geral
+### 1.4 Visão Geral
 
 ## 2. Representação Arquitetural
 
@@ -74,6 +74,8 @@ Abreviação | Significado
  #### 2.3.2 Django API
 
  #### 2.3.3 MongoDB
+
+ O MongoDB trata-se de um banco de dados não relacional que além de possuir baixo custo, por tratar-se de um software livre, possui um ótimo desempenho e é orientado a documentos, facilitando a consulta de dados. 
 
  #### 2.3.4 JavaScript
 O JavaScript é uma linguagem interpretada, bastante conhecida como a linguagem de scripts para Web, recorrentemente utilizada no React, por exemplo. Este voltado para o FrontEnd. Também usada em ambientes independentes de Browser, como NodeJs, esse mais voltado para o BackEnd da aplicação. 
