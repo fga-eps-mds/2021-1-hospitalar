@@ -8,6 +8,7 @@
 |  1.4 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre MongoDB |
 |  1.4.1 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Front-End e ajuste na tabela de versionamento |
 |  1.4.2 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do diagrama de relações |
+|  1.4.3 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Back-End |
 
 
 
@@ -70,7 +71,7 @@ O Front-end ficará responsável pela experiência do usuário com o web app, se
 
  
 #### 2.2.2 Back-end
- .
+ O Backend ficará responsável pelas manipulações dos dados, tais como validações, regras de negócio, segurança, análises dos dados e etc. Serão desenvolvidas também as APIs, que irão integrar cada aplicação existente da plataforma, comunicando-se com o Banco de Dados, modelando as informações e retornando-as para o usuário, assim como, recebendo informações do mesmo para serem processados no server-side.
 
 ### 2.3 Tecnologias
 
