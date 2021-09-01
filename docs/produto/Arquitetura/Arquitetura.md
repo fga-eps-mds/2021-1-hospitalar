@@ -5,7 +5,8 @@
 |  1.1 |  25/08/2021 | Pedro Helias |  Adição de algumas partes do documento |
 |  1.2 |  26/08/2021 | Pedro Helias,| Novas adições no documento |
 |  1.3 |  26/08/2021 | Eduardo Gurgel | Inclusão do diagrama do Banco de dados e Relatório |
-|  1.4 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr) | Inclusão do tópico sobre MongoDB |
+|  1.4 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre MongoDB |
+|  1.4.1 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Front-End e ajuste na tabela de versionamento |
 
 
 
@@ -62,6 +63,8 @@ Abreviação | Significado
 ###  2.2 Representação dos Serviços
 
 #### 2.2.1 Front-end
+O Front-end ficará responsável pela experiência do usuário com o web app, será desenvolvido para que tenha a melhor interação possível com as funcionalidades do Software. Também terá como foco desenvolver uma identidade visual limpa e acessível para o entendimento da aplicação.
+
  
 #### 2.2.2 Back-end
  .
