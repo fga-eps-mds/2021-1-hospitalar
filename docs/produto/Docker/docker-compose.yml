@@ -1,0 +1,72 @@
+version: '3'
+
+services:
+<<<<<<< Updated upstream
+  client:
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        tty: true
+        ports:
+            - "3000:3000"
+        volumes: 
+            - ./frontend:/app
+            - /app/node_modules
+        networks:
+            - frontend
+=======
+>>>>>>> Stashed changes
+  web:
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    command: /bin/bash -l -c 'pip install django-webpack-loader && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0:8000'  
+    depends_on:
+      - mongo
+    tty: true
+
+  mongo:
+    image: mongo
+<<<<<<< Updated upstream
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "admin"
+      MONGO_INITDB_ROOT_PASSWORD: "password"
+      MONGO_INITDB_DATABASE: webapp
+      MONGODB_DATA_DIR: /data/db
+    volumes:
+      - .:/code
+      - mongodbdata:/data/db
+    networks:
+            - backend
+    ports:
+        - "27017:27017"
+
+  frontend:
+    build: ./frontend
+    command: ["npm", "start"]
+    volumes:
+      - ./frontend:/app/frontend
+      - node-modules:/app/frontend/node_modules
+    ports:
+      - "3000:3000"
+
+    volumes:
+  node-modules:
+    
+
+
+=======
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - .:/code
+    ports:
+        - "27017:27017"
+    
+>>>>>>> Stashed changes
