@@ -10,7 +10,6 @@
 
 
 ## Sobre o Documento
-<<<<<<< Updated upstream
 
 O documento a seguir contém as histórias dos usuários sobre quais objetivos eles possuem ao entrar no sistema, quais funcionalidades eles desejam que tenha e as principais ações que irão fazer ao longo do Software. Junto a isso estão classifcadas as prioridades de cada enredo, podendo ser Alta, Média ou Baixa.
 
@@ -116,4 +115,4 @@ Para entender melhor sobre os casos foi decidido dividir entre dois personagens,
 | Perfil Avaliador | H32 | Soldado |  Buscar avaliações | Possa gerencia-las | Média
 | Perfil Avaliador | H33 | Soldado |  Filtrar avaliações | Possa buscá-las com mais facilidade | Baixa
 | Perfil Avaliador | H34 | Soldado |  Status da avaliação | Possa evidenciar a falta do comentário do paciente Não Conforme | Baixa
->>>>>>> Stashed changes
+
