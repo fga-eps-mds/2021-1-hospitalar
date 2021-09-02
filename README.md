@@ -1,6 +1,6 @@
 # 2021-1- Cheklist hospitalar
 
-<img src = "logotipo-mds2.png">
+![Logotipo-beta](https://i.imgur.com/hgNCbsG.jpg)
 
 ## Status do Projeto
 - 🚧 Em construção... 🚧
