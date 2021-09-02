@@ -11,6 +11,8 @@
 |  1.4.3 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Back-End |
 |  1.5 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da introdução do documento |
 |  1.5.1 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da descrição das tecnologias a serem utilizadas adicionalmente a algumas melhorias na introdução |
+|  1.5.2 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da Visão Lógica e adições neste tópico |
+
 
 ## Sumário
 1.  **Introdução**
@@ -67,6 +69,8 @@ REST       |  Transferência Representacional de Estado
 WEB        |  World Wide Web
 HTML       |  HyperText Markup Language
 CSS        |  Cascading Style Sheets 
+ID         |  Identificador de Usuário 
+PDF        |  Portable Document Format 
 
 
 ### 1.4 Visão Geral
@@ -167,6 +171,7 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 
 ###  5.1. Visão Geral
 
+O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo da aplicação, que interagem entre si, facilitando o acesso e possíveis manutenções. A aplicação se inicia com a tela de Login que irá buscar os dados de cadastor do usuário. É possível executar um novo cadastro em decorrência de não possuir um cadastro anterior. Após acesso permitido, há 4 opções aptas para interação com o usuário: "Iniciar Nova Avaliação", "Avaliação", "Gerar Relatório", "Gerenciador". Em Gerenciador, é possível identificar os Usuários, com descrições de Nome e Cargo. além de verificar a avaliação e o ID do registro.  Em "Gerar Relatório", o usuário pode interagir com os campos para inserção de código de registro e o nome do hospital. Caso haja uma avaliação coerente ao solicitado, é possível baixar o .PDF do documento. Em "Iniciar Nova Avaliação", o usuário pode escrever em diversos campos, contendo avaliações, pontos, status e inserção de itens. É possível editar avaliações, segundo o nível hierárquico do usuário no sistema.
 
 
 ###  5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura  
@@ -174,7 +179,7 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 
 
  
-###  5.3. Visão da Implantação
+###  5.3 Visão da Implantação
 
 ###  5.3.1 Front-end
 
