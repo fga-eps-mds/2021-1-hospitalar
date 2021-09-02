@@ -8,24 +8,7 @@
 
 ## Objetivos
 
-...
+Na sprint 5 foram determinados como principais objetivos definir as divisões internas do grupo para o desenvolvimento, reunir para discutir da continuação dos documentos e outras medidas.
 
-## Duração
+## Descrição das Issues
 
-**Duração:** (nº) dias
-<br>
-**Início:** (data)
-<br>
-**Fim:** (data)
-
-## Sprint BackLog
-
-[#(nº) nome da issue]()
-<br>
-[#(nº) nome da issue]()
-<br>
-[#(nº) nome da issue]()
-
-## Débito Técnico Adicionado
-
--
