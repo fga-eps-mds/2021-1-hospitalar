@@ -10,7 +10,7 @@
 |  1.4.2 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do diagrama de relações |
 |  1.4.3 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Back-End |
 |  1.5 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da introdução do documento |
-
+|  1.5.1 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da descrição das tecnologias a serem utilizadas adicionalmente a algumas melhorias na introdução |
 
 ## Sumário
 1.  **Introdução**
@@ -58,6 +58,16 @@ Partindo deste documento, o leitor ou usuário do projeto Checklist Hospitalar t
 ### 1.3 Definições, Acrônimos e Abreviações
 
 Abreviação | Significado
+---------- | -----------
+MDS        |  Métodos de Desenvolvimento de Software
+API        |  Application Programming Interface
+IDE        |  Ambiente de desenvolvimento
+API        |  Application Programming Interface
+REST       |  Transferência Representacional de Estado
+WEB        |  World Wide Web
+HTML       |  HyperText Markup Language
+CSS        |  Cascading Style Sheets 
+
 
 ### 1.4 Visão Geral
 
@@ -82,8 +92,18 @@ O Front-end ficará responsável pela experiência do usuário com o web app, se
 
  #### 2.3.1 Python
 
+ O Python é uma linguagem de programação interpretada e pouco tipada - não sendo necessária a declaração do tipo da variável. Seu potencial se encontra em seu propósito geral, aplicando-se em sistemas Desktop, sistemas Web (com enomes aplicações no Back-End) e até aplicações Mobile. Outro campo onde há bastante destaque da linguagem se encontra nas Aplicações Científica/Matemáticas, tais como Ciência de Dados e Inteligência Artificial. Pode ser desenvolvido em diversas IDE's a gosto do desenvolvedor, além de possuir bastante recursos e uma comunidade crescente. O Python pode ser utilizado em diversas frameworks, para usos em geral, e neste projeto será utilizado a partir do Django API.
+
+ ![Gostaria de aprender Python](https://www.impacta.com.br/blog/wp-content/uploads/2016/04/mais-querem-aprender.png)
+ > Fonte: <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages">StackOverflow Developer Survey </a>
+
+ A imagem acima mostra um levantamento realizado pelo StackOverflow em 2020 explicitando a linguagem que os desenvolvedores ainda não utilizam, mas desejam aprender. É mais um fato que comprova a grande popularidade dessa linguagem de programação.
+
 
  #### 2.3.2 Django API
+
+ O Django é um framework especifico para aplicações em Back-End, sendo programado na linguagem Python. Especificamente para esse Projeto, será utilizado o Django REST API. Uma API, do inglês Application Programming Interface, são um conjunto de rotinas de processos especificos para aplicações voltadas a sistema WEB. Essas rotinas são especificas para atender as requisições exercidas pelo Front-End, e a partir do que foi solicitado, a API executará alguma coisa, e retornará a resposta solicitada. Um bom exemplo seria a requisição da matrícula do Usuário X. A API buscará acessar os dados solicitados, em um banco de dados, por exemplo, e entregará a quem requisitou. 
+
 
  #### 2.3.3 MongoDB
 
@@ -94,9 +114,9 @@ O JavaScript é uma linguagem interpretada, bastante conhecida como a linguagem 
 
 ![Curva de popularidade do JavaScript durante o ano de 2020](https://cdn.buttercms.com/x1McFixQuaCNjsMbruUp)
 
-> Fonte <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages">StackOverflow Developer Survey </a>
+> Fonte: <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages">StackOverflow Developer Survey </a>
 
-A imagem acima é um levantamento feito pelo StackOverflow a respeito das linguagens de programação mais populares em 2020. É interessante citar que a curva de popularidade do JavaScript é tamanha, que o desenvolvimento de novos Frameworks é algo recorrente.
+A imagem acima é um levantamento feito pelo StackOverflow a respeito das linguagens de programação mais populares em 2020 utilizadas por desenvolvedores. É interessante citar que a curva de popularidade do JavaScript é tamanha, que o desenvolvimento de novos Frameworks é algo recorrente.
 
 <a href="https://imgur.com/929abGB"><img src="https://i.imgur.com/929abGB.png" title="source: imgur.com" /></a>
 >Fonte: CodersRank.io
