@@ -1,13 +1,11 @@
 FROM python:3
-ADD . /code
 
-RUN mkdir -p /code
-
-WORKDIR /code
-
+COPY . /app
 COPY requirements.txt ./
+
 RUN pip install -r requirements.txt
-ENV PYTHONUNBUFFERED=1
+
+WORKDIR /app
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 

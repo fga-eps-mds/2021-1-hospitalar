@@ -1,12 +1,12 @@
 FROM node:latest
 
-WORKDIR /app/frontend
-COPY package.json /app/frontend
+WORKDIR /usr/app
 
+COPY package.json ./
 RUN npm install
 RUN npm install react-scripts -g
 
-ADD . /app
+COPY . ./
 
 EXPOSE 3000
 CMD ["npm", "start"]
