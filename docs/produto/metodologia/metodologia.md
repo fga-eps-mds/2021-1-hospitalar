@@ -4,11 +4,12 @@
 | :-: | :-: | :-: | :-: |
 | 16/08/2021 | 0.1 | Criação da primeira versão do documento | @klyssmannoliveira e @victordscabral |
 | 16/08/2021 | 0.2 | Inserção dos papéis | @klyssmannoliveira e @victordscabral |
-| 02/0/2021 | 0.2 | Introdução e atividades da metodologia | @klyssmannoliveira e @victordscabral |
+| 02/09/2021 | 0.2 | Introdução e atividades da metodologia | @klyssmannoliveira e @victordscabral |
 
 ## Introdução
 
 Quando se fala em metodologia de desenvolvimento de um software logo se pensa em desenvolvimento ágil. Essa ampla adoção de metodologias ágeis culminou no movimento ágil em 2001. Assim, visando um desenvolvimento mais colaborativo com equipes multidisciplinadas, este produto foi desenvolvido com base nos ritos do SCRUM.
+
 O SCRUM é uma estrutura simples e iterativa para o gerenciamento de projetos, seguindo os principais princípios: flexibilidade dos resultados, times pequenos, revisões constantes (denominadas de sprints) e coloboração mútua.
 
 ## Papéis
