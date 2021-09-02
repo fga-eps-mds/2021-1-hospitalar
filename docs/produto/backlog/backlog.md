@@ -1,4 +1,4 @@
-﻿# Início do Documento BackLog
+# Início do Documento BackLog
 
 ## Histórico de Versão
 
@@ -50,7 +50,7 @@ Para entender melhor sobre os casos foi decidido dividir entre dois personagens,
 | Perfil Administrador | H06 | Oficial | Adicionar qualificação | Descrever o item | Alta
 | Perfil Administrador | H07 | Oficial | Preencher avaliação | Avaliar o item | Média
 | Perfil Administrador | H08 | Oficial | Preencher comentários | Tenha uma maior clareza da pontuação | Média
-| Perfil Administrador | H09 | Oficial |  Status da avaliação | Possa evidenciar a falta do comentário do paciente Não Conforme | Baixa
+| Perfil Administrador | H09 | Oficial |  Status da avaliação | Possa evidenciar a falta do comentário do paciente Não Conforme, Parcialmente Conforme | Baixa
 | Perfil Administrador | H10 | Oficial | Pontuar os itens da avaliação | Possa alimentar o relatório | Alta
 | Perfil Administrador | H11| Oficial | Alterar pontuação | Possa dar uma pontuação ao item de acordo com o julgamento do avaliador | Baixa
 | Perfil Administrador | H12 | Oficial | Gerenciar as avaliações | Tenha um controle das avaliações | Média
@@ -76,4 +76,4 @@ Para entender melhor sobre os casos foi decidido dividir entre dois personagens,
 | Perfil Avaliador | H32 | Soldado |  Gerar o relatório individual da avaliação | Possa entregar ao cliente | Média
 | Perfil Avaliador | H33 | Soldado |  Buscar avaliações | Possa gerencia-las | Média
 | Perfil Avaliador | H34 | Soldado |  Filtrar avaliações | Possa buscá-las com mais facilidade | Baixa
-| Perfil Avaliador | H35 | Soldado |  Status da avaliação | Possa evidenciar a falta do comentário do paciente Não Conforme | Baixa
+| Perfil Avaliador | H35 | Soldado |  Status da avaliação | Possa evidenciar a falta do comentário do paciente Não Conforme, Parcialmente Conforme | Baixa
