@@ -61,8 +61,7 @@ Partindo deste documento, o leitor ou usuário do projeto Checklist Hospitalar t
 
 Abreviação | Significado
 ---------- | -----------
-MDS        |  Métodos de Desenvolvimento de Software
-API        |  Application Programming Interface
+MDS        |  Métodos de Desenvolvimento de Software       
 IDE        |  Ambiente de desenvolvimento
 API        |  Application Programming Interface
 REST       |  Transferência Representacional de Estado
@@ -71,11 +70,17 @@ HTML       |  HyperText Markup Language
 CSS        |  Cascading Style Sheets 
 ID         |  Identificador de Usuário 
 PDF        |  Portable Document Format 
-
+OMS        |  Organização Militar de Saúde
 
 ### 1.4 Visão Geral
 
-Neste documento encontra-se todos os detalhes do sistema e como o mesmo foi definido para se comportar diante de diferentes processos, entendendo as entradas e saída determinadas ao sistema.
+Tópico | Descrição
+------- | ---------
+Introdução | Descreve informações sobre a finalidade e a organização do documento.
+Representação arquitetural | Representa a arquitetura geral do software, incluindo decisões de tecnologia e o diagrama de relações.
+Metas e restrições da Arquitetura | Demonstra os requisitos e objetivos do software e os impactos que possuem na arquitetura.
+Visão de casos de uso | Demonstração dos casos de uso da aplicação.
+Visão lógica | Descreve as partes significativas relacionadas ao ponto de vista da arquitetura e a modelagem de design.
 
 ## 2. Representação Arquitetural
 
@@ -182,7 +187,8 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 ###  5.3 Visão da Implantação
 
 ###  5.3.1 Front-end
-
+ - Diagrama para o FrontEnd
+![DiagramaFrontEnd](https://i.imgur.com/vzMk8fJ.jpg)
 ###  5.3.2 Back-end
  - Diagrama de Classes - Relatório
 ![diagramaClasses_TimeB_Relatorio](https://user-images.githubusercontent.com/51385738/131055882-6b9e244b-477d-45d5-8148-aad9d5760560.png)
