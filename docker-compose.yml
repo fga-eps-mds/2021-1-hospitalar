@@ -4,14 +4,12 @@ services:
   frontend:
       build:
         context: ./frontend
-        dockerfile: Dockerfile
-      command: npm start
       ports:
             - "3000:3000"
       volumes: 
-          - .:/usr/app   
+          - ./app   
+      stdin_open: true
+      command: npm start
+      restart: always
       
-
-    
-
 
