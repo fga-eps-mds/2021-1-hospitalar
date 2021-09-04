@@ -12,6 +12,8 @@
 |  1.5 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da introdução do documento |
 |  1.5.1 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da descrição das tecnologias a serem utilizadas adicionalmente a algumas melhorias na introdução |
 |  1.5.2 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da Visão Lógica e adições neste tópico |
+|  1.6 |  04/09/2021 | [Pedro Helias](https://github.com/pedrohelias), [Magno Luiz](https://github.com/magnluiz)|  Finalização do documento - primeira versão - com adições extras|
+
 
 
 ## Sumário
@@ -170,6 +172,40 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 ## 4. Visão de Casos de Uso
 
 ### 4.1. Realização de Casos de Uso
+
+A documentação relacionada a Visão de Casos de Uso visa objetivar e determinar o sistema a partir da interação com o usuário, e o que o mesmo está apto, a partir de seu ponto de vista, a utilizar no sistema.
+
+O usuário pode:
+
+<ul>
+<li>Preencher Checklists;</li>
+<li>Salvar as Checklists no sistema;</li>
+<li>Realizar comentários sobre as avaliações;</li>
+<li>Realizar controle de login;</li>
+<li>Realizar cadastro;</li>
+<li>Gerar gráficos das avaliações;</li>
+<li>Gerenciar avaliações feitas/pendentes;</li>
+<li>Editar itens do checklist;</li>
+<li>Verificar status da avaliação;</li>
+<li>Gerar relatórios.</li>
+</ul>
+
+
+Quanto a realização específica dos Casos de Uso:
+
+|Funcionalidade|Autor|Descrição|
+|:-:|:-|:-|
+|Preenchimento de Checklist|Usuário|O Usuário poderá preencher a checklist com todos os dados solicitados. O mesmo pode realizar uma avaliação da qual recebe um novo código respectivo ao hospital indicado.|
+|Salvar o Checklist|Usuário|O Usuário poderá salvar os dados da checklist a fim de serem utilizados ou editados posteriormente.|
+|Comentários sobre as avaliações|Usuário|Dado a necessidade quanto a avaliação, o usuário poderá realizar comentários e ponderações a respeito das avaliações.|
+|Gerar o relatório|Usuário|O Usuário poderá gerar relatórios que vão descrever e representar os dados obtidos da tabela avaliativa.|
+|Controle de Login|Administrador| O Administrador poderá realizar controle de acesso de usuários e controle de login no sistema. O usuário comum terá acesso ao ambiente, com as devidas credenciais.|
+|Gerar gráficos das avaliações|Usuário| O usuário poderá ter acesso ao gráfico gerado das avaliações, a partir do relatório.|
+|Gerenciar as avaliações já feitas/pendentes|Adminstrador| O Administrador terá acesso as avaliações já feitas/pendentes, bem como a edição dos itens que compõe as avaliações. 
+|Verificar Status da avaliação|Usuário| O Usuário poderá verificar o status da avaliação a partir do seu preenchimento.|
+
+
+
 
 
 ## 5. Visão Lógica
