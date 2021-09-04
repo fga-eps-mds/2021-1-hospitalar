@@ -1,10 +1,10 @@
 ## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  19/08/2021 | Magno Luiz , [Gabriel Luiz](https://github.com/ggomesbr), Pedro Helias, Eduardo Gurgel |  Criação e abertura do documento de arquitetura |
-|  1.1 |  25/08/2021 | Pedro Helias |  Adição de algumas partes do documento |
-|  1.2 |  26/08/2021 | Pedro Helias| Novas adições no documento |
-|  1.3 |  26/08/2021 | Eduardo Gurgel | Inclusão do diagrama do Banco de dados e Relatório |
+|  1.0 |  19/08/2021 | [Magno Luiz](https://github.com/magnluiz) , [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Helias](https://github.com/pedrohelias), [Eduardo Gurgel](https://github.com/EduardoGurgel) |  Criação e abertura do documento de arquitetura |
+|  1.1 |  25/08/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Adição de algumas partes do documento |
+|  1.2 |  26/08/2021 | [Pedro Helias](https://github.com/pedrohelias)| Novas adições no documento |
+|  1.3 |  26/08/2021 | [Eduardo Gurgel](https://github.com/EduardoGurgel) | Inclusão do diagrama do Banco de dados e Relatório |
 |  1.4 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre MongoDB |
 |  1.4.1 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Front-End e ajuste na tabela de versionamento |
 |  1.4.2 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do diagrama de relações |
@@ -13,6 +13,7 @@
 |  1.5.1 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da descrição das tecnologias a serem utilizadas adicionalmente a algumas melhorias na introdução |
 |  1.5.2 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da Visão Lógica e adições neste tópico |
 |  1.6 |  04/09/2021 | [Pedro Helias](https://github.com/pedrohelias), [Magno Luiz](https://github.com/magnluiz)|  Finalização do documento - primeira versão - com adições extras|
+|  1.6.1 |  04/09/2021 | [Gabriel Luiz](https://github.com/ggomesbr) | Adição do diagrama de casos de uso e ajustes no histórico de versões.|
 
 
 
@@ -170,6 +171,9 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 </ul>
 
 ## 4. Visão de Casos de Uso
+<img src="https://i.imgur.com/Pjr6TbL.jpg" width="600" height="500" />
+
+
 
 ### 4.1. Realização de Casos de Uso
 
