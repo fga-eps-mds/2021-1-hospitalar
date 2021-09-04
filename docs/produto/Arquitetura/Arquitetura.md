@@ -217,7 +217,13 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 ###  5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura  
 
+- O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Front-End e como o mesmo se divide:
 
+![DiagramaFrontEndPacotes](https://i.imgur.com/V3VdUUq.png)
+
+- O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Back-End e como o mesmo se divide:
+
+![DiagramaBackEndPacotes](https://i.imgur.com/4ZcmAsx.png)
 
  
 ###  5.3 Visão da Implantação
