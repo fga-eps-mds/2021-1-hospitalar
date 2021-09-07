@@ -46,8 +46,10 @@
 
 OU-->
 
-(#37) Preparar e Fazer treinamento com o Grupo <br> 
-(#20) Elaboração do RoadMap <br>
+(#37) Preparar e Fazer treinamento com o Grupo
+
+(#20) Elaboração do RoadMap
+
 (#46) Elaboração do Diagrama de Classes, Parte do Time B
 
 ## Retrospectiva

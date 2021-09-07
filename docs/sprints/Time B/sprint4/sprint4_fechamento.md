@@ -1,4 +1,4 @@
-# Fechamento da Sprint 3
+# Fechamento da Sprint 4
 
 ## Histórico de revisão
 
@@ -6,7 +6,7 @@
 |:-:|:-:|:-:|:-:|
 |    31/08/2021   |  0.1 | Criação do documento  | Adrian Soares |
 
-## Backlog da Sprint 
+## Backlog da Sprint
 
 |ID|Descrição|Status|
 |:-|:-|:-|
