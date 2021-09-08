@@ -9,12 +9,11 @@
 ## Objetivos
 
 Essa Sprint tem como principais objetivos: 
-- Continuação dos documentos (Arquitetura, RoadMap, Metodologia
-- Criação do protótipo de baixa fidelidade
-- Reunião quanto a modelagem do banco de dados
-- Estudos quanto ao banco de dados (MongoDB)
-- Configurações relacionadas ao Docker
-
+- Continuar com a documentação (tentando finalizar ao máximo todas primeiras versões)
+- Realizar mais dojos para treinamento da equipe 
+- Ajustar a Identidade Visual do produto
+- Iniciar a programação em seus estágios iniciais
+ 
 ## Duração
 
 **Duração:** 7 dias
