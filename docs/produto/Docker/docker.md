@@ -27,7 +27,7 @@
 
 ### Inicia a imagem
     
-    Docker compose up
+    Docker-compose up
 
 ### Verifica imagens online
     
