@@ -12,7 +12,7 @@ Logo a paleta de cores são esta mais voltada para o verde, tendo como inspiraç
 
 1.3. Paleta de cores
 
-![Paleta-cores](https://i.imgur.com/xSdsskr.jpg)
+![Paleta-cores](https://imgur.com/yvMUCgs.jpg)
 
 As cores foram escolhidas com tons de verde e uma cor de branco para dar contraste.
 
