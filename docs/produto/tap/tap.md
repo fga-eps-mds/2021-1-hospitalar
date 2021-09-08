@@ -1,5 +1,7 @@
 # Termo de Abertura de Projeto
 
+## Histórico de versões
+
 |    Data    | Versão |            Modificação             |                      Autor                      |
 | :--------: | :----: | :--------------------------------: | :---------------------------------------------: |
 | 16/08/2021 |  0.1   | Documento elaborado no google docs | @klyssmannoliveira, @victordscabral e @gpersijn |

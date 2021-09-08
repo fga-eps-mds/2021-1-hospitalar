@@ -1,5 +1,7 @@
 <h1> Tutorial de instalação básica para novos usuários em MDS - React </h1>
 
+## Histórico de versões
+
 |    Data    | Versão |          Modificação           |       Autor        |
 | :--------: | :----: | :----------------------------: | :----------------: |
 | 24/08/2021 |  0.1   | Criação e redação do documento |    @pedrohelias    |

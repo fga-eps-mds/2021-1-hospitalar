@@ -1,5 +1,7 @@
 # Tutorial de Ambientação MongoDB
 
+## Histórico de versões
+
 |    Data    | Versão |              Modificação               |         Autor         |
 | :--------: | :----: | :------------------------------------: | :-------------------: |
 | 24/08/2021 |  0.1   |          Criação do documento          | @PedroCassianoMartins |

@@ -1,5 +1,7 @@
 # Django e Python
 
+## Histórico de versões
+
 |    Data    | Versão |                Modificação                 |           Autor            |
 | :--------: | :----: | :----------------------------------------: | :------------------------: |
 | 19/08/2021 |  0.1   | Criação do documento e formatação do corpo |       @EduardoGurgel       |

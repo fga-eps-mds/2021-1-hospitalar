@@ -1,5 +1,7 @@
 # Ferramentas de documentação e comunicação
 
+## Histórico de versões
+
 |    Data    | Versão |                Modificação                |       Autor        |
 | :--------: | :----: | :---------------------------------------: | :----------------: |
 | 16/08/2021 |  0.1   | Criação do documentoe elaboração do texto |  @victordscabral   |
