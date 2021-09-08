@@ -2,36 +2,37 @@ version: '3'
 
 services:
   frontend:
-      build:
-        context: ./frontend
-      ports:
-            - "3000:3000"
-      volumes: 
-          - ./app   
-      stdin_open: true
-      command: npm start
-      restart: always
+    build:
+      context: ./frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./app
+    stdin_open: true
+    command: yarn start
+    restart: always
+
   backend:
-      build: ./backend
-      command: python backend/manage.py runserver 0.0.0.0:8000
-      volumes: 
-        - .:/code
-      ports: 
-        - "8000:8000"    
+    build: ./backend
+    command: python backend/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - '8000:8000'
 
   db-mongo:
-        image: mongo
-        restart: always
-        ports: 
-          - 27017:27017
-        environment: 
-          MONGO_INITDB_ROOT_USERNAME: root
-          MONGO_INITDB_ROOT_PASSWORD: example
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
   db-mongo-express:
-        image: mongo-express
-        restart: always
-        ports: 
-          - 8081:8081
-        environment: 
-          ME_CONFIG_MONGODB_ADMINUSERNAME: root
-          ME_CONFIG_MONGODB_ADMINPASSWORD: example        
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example

@@ -1,6 +1,7 @@
-import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import { Home } from './pages/Home'
+import React from 'react'
 
 /**
  * Rotas do browser.
@@ -8,7 +9,7 @@ import { Home } from './pages/Home'
  *
  * @return JSX.Element
  */
-export const Routes: React.FC = () => {
+export function Routes(): React.ReactElement {
   return (
     <BrowserRouter>
       <Switch>

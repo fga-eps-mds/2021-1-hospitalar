@@ -1,21 +1,23 @@
-import React from 'react'
-import { Dialog, DialogTitle, DialogContent, DialogActions } from '@material-ui/core'
+import { Dialog, DialogActions, DialogContent, DialogTitle } from '@material-ui/core'
+
 import { Button } from '../../Inputs/Button'
+import React from 'react'
 
 type Props = {
   title: string
   item: any
   toggle: () => void
   handleSubmit: (item: any) => void
+  children?: React.ReactNode
 }
 
-export const FormDialog: React.FC<Props> = ({
+export function FormDialog({
   title,
   toggle,
   handleSubmit,
   item,
   children,
-}) => {
+}: Props): React.ReactElement {
   return (
     <Dialog open={true} onClose={toggle}>
       <DialogTitle>{title}</DialogTitle>

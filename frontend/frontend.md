@@ -10,7 +10,7 @@
   import React from 'react'
   import {useStyles} from './styles'
 
-  export const (Nome): React.FC = () => {
+  export function (Nome)():React.ReactElement {
       const classes = useStyles()
 
       return <div></div>

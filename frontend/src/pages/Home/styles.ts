@@ -10,4 +10,5 @@ import { makeStyles } from '@material-ui/core'
  *
  * @see https://material-ui.com/styles/api/#makestyles-styles-options-hook
  */
+// eslint-disable-next-line
 export const useStyles = makeStyles((theme) => ({}))
