@@ -1,61 +1,71 @@
-# Django
+# Django e Python
 
-## 1. Passos iniciais Windows
+|    Data    | Versão |                Modificação                 |           Autor            |
+| :--------: | :----: | :----------------------------------------: | :------------------------: |
+| 19/08/2021 |  0.1   | Criação do documento e formatação do corpo |       @EduardoGurgel       |
+| 24/08/2021 |  0.2   |        Inclusão da parte de python         | @EduardoGurgel e @jvsdurso |
+| 07/09/2021 |  0.3   |             Revisão e correção             |     @klyssmannoliveira     |
 
-### Instala o Python
-   
-    https://www.python.org/downloads/ 
-    
+## Introdução
 
-### Executa o powershell como administrador
-### Cria a pasta
-     
+Este documento tem como objetivo apresentar os passos de instalação e comandos iniciais do Django e Python.
+
+## 1. Passos iniciais no Windows
+
+### Instale o Python
+
+    https://www.python.org/downloads/
+
+### Execute o powershell como administrador
+
+### Crie a pasta
+
     mkdir projetodjango
-    
+
     cd projetodjango
 
-### Instala o virtualenv
-    
+### Instale o virtualenv
+
     pip install virtualenv
 
-### Verifica a versão do virtualenv:
-    
+### Verifique a versão do virtualenv
+
     virtualenv –-version
 
-### Cria a máquina virtual
-   
+### Crie a máquina virtual
+
     python -m venv venv
 
-### Entra na pasta virtual
-   
+### Entre na pasta virtual
+
     venv/Scripts/Activate
 
-### Instala o Django
-   
+### Instale o Django
+
     pip install django
 
-### Inicia o projeto Django
-   
+### Inicie o projeto Django
+
     Django-admin startproject nomedoprojeto
 
 ### Entra na pasta do projeto
- 
+
     cd nomedoprojeto
 
 ### Inicia a aplicação
-   
+
     python manage.py startapp aplicativo1
 
 ### Inicia o servidor
-  
-    python manage.py runserver
 
+    python manage.py runserver
 
 ## 2. Comandos básicos de Python
 
 Como referência utilizar-se-á o documento disponível no link: [https://docs.python.org/pt-br/3/tutorial/](url)
 
 ### Leitura do teclado
+
 ```
 ...print("Digite seu nome:")
 ...nome = input()
@@ -64,14 +74,17 @@ Como referência utilizar-se-á o documento disponível no link: [https://docs.p
 
 ...Bem vindo, Time A
 ```
+
 ### Condições
-##### 
+
+#####
 
 - IFs
 
 Ex.:
-``` 
->>> x = int(input("Leia um inteiro: ")) 
+
+```
+>>> x = int(input("Leia um inteiro: "))
 Leia um inteiro: 42
 >>> if x < 0:
 ...     x = 0
@@ -81,17 +94,20 @@ Leia um inteiro: 42
 ... elif x == 1:
 ...     print('Um')
 ... else:
-...     print('Mais') 
+...     print('Mais')
 
 ... Mais
 ```
 
 - For
+
 ```
 for variavel in lista
 comandos
 ```
-Ex.: 
+
+Ex.:
+
 ```
 ... nomes = ['Pedro', 'João', 'Leticia']
 ... for n in nomes:
@@ -101,7 +117,9 @@ Ex.:
 ... João
 ... Leticia
 ```
+
 ### Classes
+
 ```
 class ClassName:
     <statement-1>
@@ -110,9 +128,11 @@ class ClassName:
     .
     <statement-N>
 ```
-##### 
+
+#####
 
 - Objetos de classe
+
 ```
 class MyClass:
     """A simple example class"""
@@ -121,7 +141,9 @@ class MyClass:
     def f(self):
         return 'hello world'
 ```
+
 Para instanciar uma classe usa-se:
+
 ```
 x = MyClass()
 ```
