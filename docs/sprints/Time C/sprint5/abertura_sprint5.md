@@ -16,6 +16,7 @@ Duração: 7 dias
 
 Início: 31/08/2021
 
+
 Fim: 02/09/2021
 
 ## Descrição das Issues

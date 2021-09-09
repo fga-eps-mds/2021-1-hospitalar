@@ -8,15 +8,15 @@
 
 ## Objetivos
 
-...
+Sprint 4 com objetivos de treinamento das linguagens e tecnologias que serão usadas no desenvolvimento, como também iniciar modelagem do banco de dados.
 
 ## Duração
 
-**Duração:** (nº) dias
+**Duração:** 7 dias
 <br>
-**Início:** (data)
+**Início:** 24/08/2021
 <br>
-**Fim:** (data)
+**Fim:** 31/08/2021
 
 ## Sprint BackLog
 
