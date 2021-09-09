@@ -3,10 +3,6 @@
 <p align="center">
     <img src="https://i.imgur.com/hgNCbsG.jpg" ></img>
 </p>
-<h1> Cheklist hospitalar</h1>
-<h2 color="red"> Cheklist hospitalar</h2>
-
-
 
 
 ## Status do Projeto
