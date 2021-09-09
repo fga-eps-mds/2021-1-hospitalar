@@ -16,10 +16,6 @@
 ### Entre no repositório
     cd 2021-1-hospitalar
 
-### Muda para a pasta do Docker
-
-    cd 2021-1-hospitalar\docs\produto\Docker
-    
 ### Cria a imagem
      
     Docker-compose build
