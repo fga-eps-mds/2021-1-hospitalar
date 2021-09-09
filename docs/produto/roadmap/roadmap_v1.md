@@ -12,4 +12,4 @@ Esse documento tem como objetivo a apresentação do RoadMap do Produto, funcion
 
 ## RoadMap do Produto (Versão 1)
 
-<Link da imagem>
+<img src="RoadMap_Do_Produto.png" alt="RoadMap do Produto">
