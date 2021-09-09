@@ -1,5 +1,7 @@
 # RoadMap do Produto
 
+## Histórico de Versão
+
 | Data | Versão | Modificação | Autor |
 | :-: | :-: | :-: | :-: |
 | 09/09/2021 | 0.1 | Criação do documento | @victordscabral |
