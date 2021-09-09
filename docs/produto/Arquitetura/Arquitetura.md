@@ -15,7 +15,7 @@
 |  1.6 |  04/09/2021 | [Pedro Helias](https://github.com/pedrohelias), [Magno Luiz](https://github.com/magnluiz)|  Finalização do documento - primeira versão - com adições extras|
 |  1.6.1 |  04/09/2021 | [Gabriel Luiz](https://github.com/ggomesbr) | Adição do diagrama de casos de uso e ajustes no histórico de versões.|
 |  1.7 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção de alguns pontos|
-
+|  1.7.1 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção em diagramas|
 
 
 ## Sumário
@@ -90,7 +90,7 @@ Visão lógica | Descreve as partes significativas relacionadas ao ponto de vist
 
 ###  2.1 Diagrama de Relações
 
-![Diagrama de relações](https://i.imgur.com/q5DgXKp.png)
+![Diagrama de relações](https://i.imgur.com/WFVv64X.png)
 
 ###  2.2 Representação dos Serviços
 
