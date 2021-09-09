@@ -18,6 +18,7 @@ A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px.
 ### Paleta de cores
 
 ![Paleta-cores](https://imgur.com/yvMUCgs.jpg)
+
 **#175215** - Cor principal da pagina.
 
 **#2B7B24** - Utilizada para o botões da pagina principal e confirmações.
