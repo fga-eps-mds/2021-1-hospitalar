@@ -10,6 +10,14 @@
 
 Na sprint 5 foram determinados como principais objetivos definir as divisões internas do grupo para o desenvolvimento, reunir para discutir da continuação dos documentos e outras medidas.
 
+##Duração
+
+Duração: 7 dias
+
+Início: 02/09/2021
+
+Fim: 31/08/2021
+
 ## Descrição das Issues
 
 1. [Revisão e Continuação do Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/63)
