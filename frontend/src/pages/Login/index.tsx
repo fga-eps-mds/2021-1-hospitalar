@@ -1,10 +1,17 @@
 import React from 'react'
+import './styles.css'
 
 export const Login: React.FC = () => {
 
     return(
         <>
-            <h1>Hello World</h1>
+            <div className="header">
+                <h1 className="titulo">Hello World</h1>
+            </div>
+
+            <button className="btn tst">BOTÃO</button>
+            <button className="btn tst1">BOTÃO</button>
+            
         </>
     )
 }
