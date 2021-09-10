@@ -1,6 +1,6 @@
 import { Grid } from '@material-ui/core'
-import React from 'react'
 import { Header } from '../../components/GlobalComponents/Header'
+import React from 'react'
 
 /**
  * Um componente funcional React compatível com React Hooks.
@@ -9,7 +9,7 @@ import { Header } from '../../components/GlobalComponents/Header'
  * @returns JSX.Element
  * @see https://pt-br.reactjs.org/docs/hooks-reference.html#basic-hooks
  */
-export const Home: React.FC = () => {
+export function Home(): React.ReactElement {
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/

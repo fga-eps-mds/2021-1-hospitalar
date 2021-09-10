@@ -1,9 +1,11 @@
 import React from 'react'
 import { useStyles } from './styles'
 
-type Props = {}
+type Props = {
+  children?: React.ReactNode
+}
 
-export const Form: React.FC<Props> = ({ children }) => {
+export function Form({ children }: Props): React.ReactElement {
   const classes = useStyles()
   return <form className={classes.root}>{children}</form>
 }
