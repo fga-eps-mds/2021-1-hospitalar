@@ -10,7 +10,7 @@ services:
       volumes: 
           - ./app   
       stdin_open: true
-      command: npm start
+      command: yarn start
       restart: always
   backend:
       build: ./backend
@@ -18,7 +18,9 @@ services:
       volumes: 
         - .:/code
       ports: 
-        - "8000:8000"    
+        - "8000:8000" 
+      depends_on: 
+        - db-mongo   
 
   db-mongo:
         image: mongo
@@ -39,7 +41,7 @@ services:
         environment: 
           ME_CONFIG_MONGODB_ADMINUSERNAME: root
           ME_CONFIG_MONGODB_ADMINPASSWORD: example
-          ME_CONFIG_MONGODB_SERVER: mongodb
+          ME_CONFIG_MONGODB_SERVER: db-mongo
         restart: unless-stopped  
           
         
