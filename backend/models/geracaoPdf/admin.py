@@ -6,7 +6,7 @@ from .models import GeracaoPdf
 
 
 class GeracaoPdfAdmin(admin.ModelAdmin):
-    list_display = ('infosPdf', 'cabecalhoPdf')
+    list_display = ('infosPdf', 'cabecalhoPdf', 'textoEntradaPdf')
 
 
 admin.site.register(GeracaoPdf, GeracaoPdfAdmin)

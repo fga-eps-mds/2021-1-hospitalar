@@ -1,5 +1,4 @@
 from rest_framework import viewsets
-
 from .models import GeracaoPdf
 from .serializers import GeracaoPdfSerializer
 

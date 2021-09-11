@@ -1,5 +1,5 @@
 from rest_framework import routers
-from models.geracaoPdf.views import views as GeracaoPdfView
+from models.geracaoPdf.views import GeracaoPdfView
 '''
     Função que retorna um objeto que contém as urls do backend.
     Para incluir uma nova url utilize router.register
@@ -11,5 +11,5 @@ from models.geracaoPdf.views import views as GeracaoPdfView
 
 def create_api():
     router = routers.DefaultRouter()
-    router.register(r'GeracaoPdf', GeracaoPdfView.GeracaoPdfView)
+    router.register(r'Geracao', GeracaoPdfView, 'geracaoPdf')
     return router
