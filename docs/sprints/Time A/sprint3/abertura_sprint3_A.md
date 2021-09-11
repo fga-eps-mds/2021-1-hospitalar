@@ -50,14 +50,14 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#32 Atualizar template de Abertura e Fechamento de Sprints](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/32)
 <br>
+[#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
+<br>
 [#38 Configuração do Docker File e Docker Compose](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/38)
 <br>
 [#44 Elaboração do Diagrama de Classes - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/44)
-<br>
-[#56 Redação do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)
 
 ## Débito Técnico Adicionado
 
 - [#20 Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)
 - [#23 Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)
-- [#56 Redação do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)
+- [#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
