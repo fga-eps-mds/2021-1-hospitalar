@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'projeto-hospitalar'
+        'NAME': 'projeto-hospitalar',
     }
 }
 
