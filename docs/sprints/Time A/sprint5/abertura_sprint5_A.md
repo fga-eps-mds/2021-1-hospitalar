@@ -27,6 +27,8 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
 <br>
+[#70 Definir Pareamento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/70)
+<br>
 [#72 Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)
 <br>
 [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
@@ -49,12 +51,15 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#96 Crud da classe: Preenchimento do CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/94)
 <br>
-[#98 Modelo de Identidade Visual (logotipo e melhorias) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/98)
-<br>
 [#105 Finalização do RoadMap - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/105)
 <br>
 [#111 Elaborar Business Canvas - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/111)
 
 ## Débito Técnico Adicionado
 
-- [#36 Elaboração do Diagrama de Classes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
+- [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
+- [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
+- [#90 Configurar Ambiente de Desenvolvimento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/90)
+- [#94 Crud da classe: CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/96)
+- [#95 Crud da classe: Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/95)
+- [#96 Crud da classe: Preenchimento do CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/94)
