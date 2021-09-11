@@ -6,7 +6,7 @@ type Props = ButtonProps & {
   variant?: string
   size?: string
   color?: string
-  onClick: () => void
+  onClick: (e: React.MouseEvent<HTMLButtonElement>, checked?: boolean) => void
 }
 
 export const Button: React.FC<Props> = ({
