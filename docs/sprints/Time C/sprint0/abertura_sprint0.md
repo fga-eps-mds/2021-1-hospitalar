@@ -4,7 +4,8 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral |
+|    23/08/2021   |  0.1 | Criação do documento  | Pedro Vieira |
+|    31/08/2021   |  0.2 | Atualização das informações  | Pedro Vieira |
 
 ## Objetivos
 

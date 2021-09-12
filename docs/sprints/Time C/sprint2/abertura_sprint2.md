@@ -1,29 +1,24 @@
 # Abertura da Sprint (nº)
 
-## Histórico de revisão
-
-| **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral |
-
 ## Objetivos
 
-...
+Após determinadas as funcionalidades do software na reunião com o Cliente, o grupo determinou objetivos de dividir os times para cada um ser responsável por uma funcionalidade específica. Também foi colocado como objetivo iniciar a ambientação do GithubPages, iniciar a Redação do TAP e outros.
 
 ## Duração
 
-**Duração:** (nº) dias
+**Duração:** 7 dias
 <br>
-**Início:** (data)
+**Início:** 05/08/2021
 <br>
-**Fim:** (data)
+**Fim:** 12/08/2021
 
 ## Sprint BackLog
 
-[#(nº) nome da issue]()
+[#14 Definição dos Escopos dos Grupos](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/14)
 <br>
-[#(nº) nome da issue]()
+[#15 TAP - Redação](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/15)
 <br>
-[#(nº) nome da issue]()
 
 ## Débito Técnico Adicionado
+
+- [#16 Criar protótipo de baixa fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)
