@@ -2,22 +2,25 @@
 
 ## Histórico de Versão
 
-| Data       | Versão | Modificação                          | Autor                                                    |
-| :--------- | :----- | :----------------------------------- | :------------------------------------------------------- |
-| 22/08/2021 | 0.1    | Primeira Versão do Documento         | @Pedro-V8                                                |
-| 01/09/2021 | 0.2    | Segunda Versão do Documento          | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
-| 01/09/2021 | 0.3    | Segunda Versão do Documento Revisada | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
-| 08/09/2021 | 0.4    | Atualização dos épicos               | @gpersijn, @klyssmannoliveira, @SwampTG, @victordscabral |
+| Data       | Versão | Modificação                                  | Autor                                                    |
+| :--------- | :----- | :------------------------------------------- | :------------------------------------------------------- |
+| 22/08/2021 | 0.1    | Primeira Versão do Documento                 | @Pedro-V8                                                |
+| 01/09/2021 | 0.2    | Segunda Versão do Documento                  | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
+| 01/09/2021 | 0.3    | Segunda Versão do Documento Revisada         | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
+| 08/09/2021 | 0.4    | Atualização dos épicos                       | @gpersijn, @klyssmannoliveira, @SwampTG, @victordscabral |
+| 12/09/2021 | 0.5    | Revisão do documento e melhoria a introdução | @klyssmannoliveira                                       |
 
 ## Sobre o Documento
 
-O documento a seguir contém as histórias dos usuários sobre quais objetivos eles possuem ao entrar no sistema, quais funcionalidades eles desejam que tenha e as principais ações que irão fazer ao longo do Software. Junto a isso estão classifcadas as prioridades de cada enredo, podendo ser Alta, Média ou Baixa.
+O Backlog do Produto é gerenciado pelo Product Owner e contêm os itens ordenados que serão desenvolvidos pelo Time de Desenvolvimento para o produto. Esses itens de trabalho são expressos na forma de necessidades do usuário, objetivos de negócios dos clientes e demais partes interessadas ou funcionalidades do produto. O Backlog do Produto é uma origem única dos requisitos para qualquer mudança a ser feita no produto.
+
+Desta forma, o documento a seguir contém as histórias dos usuários sobre quais objetivos eles possuem ao entrar no sistema, quais funcionalidades eles desejam que tenha e as principais ações que irão fazer ao longo do Software. Junto a isso estão classifcadas as prioridades de cada enredo, podendo ser Alta, Média ou Baixa.
 
 Para entender melhor sobre os casos foi decidido dividir entre dois personagens, são eles:
 
-- Oficial = é o administrador do sistema, onde tem o acesso ao gerenciamento e controle de várias partes do produto.
+- Oficial é o administrador do sistema, onde tem o acesso ao gerenciamento e controle de várias partes do produto.
 
-- Soldado = é o analista do sistema, onde terá que entrar na aplicação para realizar as avaliações.
+- Soldado é o analista do sistema, onde terá que entrar na aplicação para realizar as avaliações.
 
 ## Versão 1
 
