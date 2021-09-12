@@ -5,7 +5,7 @@
 |  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**      |
 | :--------: | :--------: | :---------------------------------------------------: | :----------------: |
 | 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   Victor Cabral    |
-| 12/09/2021 |    0.2     |          Legendas do Health Check e revisão           | @klyssmannoliveira |
+| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | @klyssmannoliveira |
 
 ## Backlog da Sprint
 
