@@ -1,6 +1,12 @@
 # 2021-1- Cheklist hospitalar
 
-![Logotipo-beta](https://i.imgur.com/hgNCbsG.jpg)
+<p align="center">
+    <img src="https://i.imgur.com/hgNCbsG.jpg" ></img>
+</p>
+
+
+
+
 
 ## Status do Projeto
 - 🚧 Em construção... 🚧
@@ -22,6 +28,8 @@ Durante análises a respeito de quais ferramentas utilizar para o desenovlimento
 
 
 ## 💻 Como Utilizar 
+
+
 
 
 ## 📜 Documentação 

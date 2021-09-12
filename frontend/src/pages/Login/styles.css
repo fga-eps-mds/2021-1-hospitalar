@@ -8,9 +8,17 @@ body{
 .header{
     display: flex;
     width: 100%;
-    height: 80px;
-    background-color: #175215;
+    height: 75px;
+    background-color: #53917e;
     justify-content: center;
+    align-items: center;
+}
+
+.listra{
+    display: flex;
+    width: 100%;
+    height: 15px;
+    background-color: #63535b;
 }
 
 .titulo{
@@ -24,9 +32,8 @@ body{
        -moz-appearance: none;
             appearance: none;
     background-color: transparent;
-    border: 2px solid #e74c3c;
+    border: none;
     border-radius: 0.6em;
-    color: #e74c3c;
     cursor: pointer;
     display: -webkit-box;
     display: -webkit-flex;
@@ -49,18 +56,15 @@ body{
 
 
 .tst {
-    border-color: #ade498;
-    color: black;
-    box-shadow: 0 0 40px 40px #ade498 inset, 0 0 0 0 #3498db;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
+    background-color: #53917e;
+    color: white;
+
   
 }
 
 .tst1 {
-    border-color: #2b7b24;
+    background-color: #b1b695;
     color: white;
-    box-shadow: 0 0 40px 40px #2b7b24 inset, 0 0 0 0 #3498db;
   
 }
 
