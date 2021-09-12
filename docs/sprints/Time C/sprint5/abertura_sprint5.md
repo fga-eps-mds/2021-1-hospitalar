@@ -35,5 +35,6 @@ Fim: 02/09/2021
 
 ## Débito Técnico Adicionado
 
--[#84 Atualizar documentos de Abertura e Fechamento de Sprints passadas](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/84)
--[#107 Implementar o sistema de login e menu principal](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/107)
+- [#84 Atualizar documentos de Abertura e Fechamento de Sprints passadas](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/84)
+
+- [#107 Implementar o sistema de login e menu principal](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/107)
