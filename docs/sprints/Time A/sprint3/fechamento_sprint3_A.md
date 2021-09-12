@@ -127,25 +127,17 @@
 |    Pedro Lucas     | &#128529; | &#129314; | &#129321; |
 |   Victor Cabral    | &#128529; |  &#9874;  |  &#9874;  |
 
-Legenda:
-
-&#128529; = Sem expressão, indiferente com a situação
-
-&#129320; = Curioso com as atividades que podem ser feitos
-
-&#128556; = Um pouco nervoso com os desafios
-
-&#128516; = Animado para as atividades
-
-&#129314; = Doente
-
-&#9874; = Obras em casa
-
-&#128521; = Tudo está OK
-
-&#129299; - Nerd's face, estudando muuuito
-
-&#129321; = SUPER animado com as atividades
+|   Emote   |                    Legenda                     |
+| :-------: | :--------------------------------------------: |
+| &#128529; |   Sem expressão, indiferente com a situação    |
+| &#129320; | Curioso com as atividades que podem ser feitos |
+| &#128556; |        Um pouco nervoso com os desafios        |
+| &#128516; |           Animado para as atividades           |
+| &#129314; |                     Doente                     |
+|  &#9874;  |                 Obras em casa                  |
+| &#128521; |                  Tudo está OK                  |
+| &#129299; |         Nerd's face, estudando muuuito         |
+| &#129321; |        SUPER animado com as atividades         |
 
 ## Riscos
 
