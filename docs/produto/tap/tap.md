@@ -73,11 +73,11 @@ Estão entre os requisitos de alto nível:
 
 ### 7.1 Custo de aquisição
 
-| **Equipamento**  | **Quantidade**                 | **Finalidade**                 | **Valor unitário** | **Preço** |
-| ---------------- | ------------------------------ | ------------------------------ | ------------------ | --------- |
-| Notebooks        | 19 unidades                    | Desenvolvimento e planejamento | R$ 3.000           |           |
-| Energia elétrica | 5 horas por semana cada membro | Desenvolvimento e planejamento | 0,728 \* R$/KWh    | R$ 107,89 |
-| Internet         | 3 meses                        | Desenvolvimento e planejamento | R$ 100 \*\*        | R$ 300    |
+| **Equipamento**  | **Quantidade**                 | **Finalidade**                 | **Valor unitário** | **Preço**    |
+| ---------------- | ------------------------------ | ------------------------------ | ------------------ | ------------ |
+| Notebooks        | 19 unidades                    | Desenvolvimento e planejamento | R$ 3.000           | R$ 57.000,00 |
+| Energia elétrica | 5 horas por semana cada membro | Desenvolvimento e planejamento | 0,728 \* R$/KWh    | R$ 107,89    |
+| Internet         | 3 meses                        | Desenvolvimento e planejamento | R$ 100 \*\*        | R$ 300       |
 
 \* Fonte: http://www.aneel.gov.br/ranking-das-tarifas, acesso: 07/08/2021 <br>
 \*\* Valor médio de um plano de internet na região do DF
@@ -98,7 +98,7 @@ Estão entre os requisitos de alto nível:
 
 | **Custo**   | **Valor total** |
 | ----------- | --------------- |
-| Aquisição   | R$ 57407,89     |
+| Aquisição   | R$ 57.407,89    |
 | Ferramentas | R$0             |
 
 ## 8. Partes Interessadas
