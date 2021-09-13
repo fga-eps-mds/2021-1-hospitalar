@@ -38,18 +38,21 @@
 
 ### Pontos Positivos
 
--
--
+- Documentos com um bom ritmo de manutenção e atualização
+
+- Melhor entendimento do Git e Github
+
+- Começo do desenvolvimento, no qual muitos estavam ansiosos para começar.
 
 ### Pontos Negativos
 
--
--
+- Issues acumuladas
+
+- Cansaço e desmotivação.
 
 ### Melhorias
 
--
--
+- O entendimento da plataforma está melhorando, visto que muitos estão constantemente gerando commits, PR e etc.
 
 ## Burndown
 
@@ -103,11 +106,11 @@
 | Nome | Sprint 0 | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | Pedro Caldeira | &#128521; | &#128529; | &#128554; | &#128521; | &#128529; | &#128521; |
-| Pedro Vieira | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128521; |
-| Gabriel Luiz | &#128521; | &#128529; | &#128521; | &#128521; | &#128521; | &#128521; |
+| Pedro Vieira | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529; |
+| Gabriel Luiz | &#128521; | &#128529; | &#128521; | &#128521; | &#128521; | &#128529; |
 | Igor Thiago  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; |
 | Thiago Vivan  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; |
-| Bruno  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; |
+| Bruno  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529;  |
 
 | Emote | Significados |
 | :-: | :-: |
@@ -119,11 +122,13 @@
 
 |  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
 |:-:|:-:|:-:|
-| ... | ... | ... |
-| ... | ... | ... |
+| Desmotivação | Comunicação com o time | Alternar tarefas |
+| Falta de Conhecimento | Dojo/Treinamento | Práticas e Exercícios |
+| Rotina Cheia | Planejar dias disponíveis | Melhorar organização |
+| Tarefas Acumuladas | Reunir para se ajudar | Maior Produtividade
   
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
 
-...
+Sprint apesar de ser cansativa, com tarefas acumuladas e muito trabalho a ser feito, demonstrou-se que muitos já se habituaram com a plataforma, aumentando o número de commits e pull request, as divisões das branchs também estão melhores. Com esse aperfeiçoamento dos integrantes acreditamos que cada vez mais será mais eficiente e produtiva as atividades diárias. 
