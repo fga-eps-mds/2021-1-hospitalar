@@ -130,11 +130,14 @@
 
 |  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
 |:-:|:-:|:-:|
-|  | ... | ... |
-| ... | ... | ... |
+| Falta das práticas ágeis | Reforçar a necessidade da prática | Resultados melhores. |
+| Desmotivação | Dividir as tarefas | Maior Produtividade |
+| Falta de Conhecimento | Treinamento | Menos dúvidas
+| Tarefas Acumuladas | Fazer tarefas em conjunto | Maior eficiência nas tarefas
+| Falta de Tempo | Planejar dias e horários que atendem a todos | Algund dias disponíveis (final de semana) |
   
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
 
-...
+A sprint 4 foi, ao meu ver, foi a que mais teve podutividade até então, visto que muitos estão se acostumando com a plataforma do GitHub, entendendo o qual importante está sendo a tarefas de divisões, criação de novas branchs e etc. Isso se reultou um melhor desempenho nas realizações das tarefas, além de que estamos organizando um treinamento para que possamos iniciar no desenvolvimento. 
