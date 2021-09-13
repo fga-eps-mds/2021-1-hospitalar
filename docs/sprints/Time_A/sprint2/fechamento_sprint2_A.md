@@ -1,16 +1,17 @@
 # Fechamento da Sprint 02
 
-## Histórico de revisão
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Adição do documento no repositório  | Victor Cabral |
-|    11/09/2021   |  0.2 | Atualização para novo formato  | Victor Cabral |
+|:-|:-|:-|:-|
+|    23/08/2021   |  0.1 | Adição do documento no repositório  | [@victordscabral](https://github.com/victordscabral) |
+|    11/09/2021   |  0.2 | Atualização para novo formato  | [@victordscabral](https://github.com/victordscabral) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** | 
-|:-:|:-:|:-:|:-:|
+|:-|:-|:-|:-:|
 |    #10   |  [Pesquisas sobre as tecnologias](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/10) | Fechada  | 13 |
 |    #14   |  [Definição dos Escopos dos Grupos](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/14) | Fechada  | 5 |
 |    #15   |  [TAP - Redação](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/15) | Fechada  | 13 |

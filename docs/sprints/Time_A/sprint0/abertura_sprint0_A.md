@@ -1,11 +1,12 @@
 # Abertura da Sprint 00
 
-## Histórico de revisão
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral |
-|    31/08/2021   |  0.2 | Atualização para novo formato  | Victor Cabral |
+|:-|:-|:-|:-|
+|    23/08/2021   |  0.1 | Criação do documento  | [@victordscabral](https://github.com/victordscabral) |
+|    31/08/2021   |  0.2 | Atualização para novo formato  | [@victordscabral](https://github.com/victordscabral) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 

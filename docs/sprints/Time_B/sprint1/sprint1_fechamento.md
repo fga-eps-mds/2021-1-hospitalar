@@ -1,13 +1,16 @@
-# Fechamento da Sprint 1
+# Fechamento da Sprint 01
+
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    06/09/2021   |  0.1 | Adicionando Sprint 1 para o Time B  | Adrian Soares |
+|:-|:-|:-|:-|
+|    06/09/2021   |  0.1 | Adicionando Sprint 1 para o Time B  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
 | **Issues** |  **Descrição** | **Status**  |  **Pontos** |
-|:-:|:-:|:-:|:-:|
+|:-|:-|:-|:-:|
 |    Issue 7   |  [Contato com o Cliente](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/7)| Fechado  | 3 |
 |    Issue 9   |  [Levantamento de bibliografia do Doc. Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/9)| Fechado  | 5 |
 |    Issue 8   |  [Alinhamento das tecnologias](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/8) | Fechado  | 8 |

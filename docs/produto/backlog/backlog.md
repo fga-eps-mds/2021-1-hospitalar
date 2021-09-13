@@ -4,11 +4,12 @@
 
 | Data       | Versão | Modificação                                  | Autor                                                    |
 | :--------- | :----- | :------------------------------------------- | :------------------------------------------------------- |
-| 22/08/2021 | 0.1    | Primeira Versão do Documento                 | @Pedro-V8                                                |
-| 01/09/2021 | 0.2    | Segunda Versão do Documento                  | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
-| 01/09/2021 | 0.3    | Segunda Versão do Documento Revisada         | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
-| 08/09/2021 | 0.4    | Atualização dos épicos                       | @gpersijn, @klyssmannoliveira, @SwampTG, @victordscabral |
-| 12/09/2021 | 0.5    | Revisão do documento e melhoria a introdução | @klyssmannoliveira                                       |
+| 22/08/2021 | 0.1    | Primeira Versão do Documento                 | [@Pedro-V8](https://github.com/Pedro-V8) |
+| 01/09/2021 | 0.2    | Segunda Versão do Documento                  | [@PedroCassianoMartins](https://github.com/PedroCassianoMartins), [@EduardoGurgel](https://github.com/EduardoGurgel) e [@jvsdurso](https://github.com/jvsdurso) |
+| 01/09/2021 | 0.3    | Segunda Versão do Documento Revisada         | [@PedroCassianoMartins](https://github.com/PedroCassianoMartins), [@EduardoGurgel](https://github.com/EduardoGurgel) e [@jvsdurso](https://github.com/jvsdurso) |
+| 08/09/2021 | 0.4    | Atualização dos épicos                       | [@gpersijn](https://github.com/gpersijn), [@klyssmannoliveira](https://github.com/klyssmannoliveira), [@SwampTG](https://github.com/SwampTG) e [@victordscabral](https://github.com/victordscabral) |
+| 12/09/2021 | 1.0    | Revisão do documento e melhoria a introdução | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 13/09/2021 | 1.1    | Alteração no histórico de versão             | [@victordscabral](https://github.com/victordscabral) |
 
 ## Sobre o Documento
 

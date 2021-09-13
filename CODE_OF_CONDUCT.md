@@ -1,5 +1,12 @@
 # Contributor Covenant Code of Conduct
 
+## Histórico de versão
+
+| Data | Versão | Modificação | Autor |
+| :- | :- | :- | :- |
+| 12/09/2021 | 0.1 | Criação do documento | [@SwampTG](https://github.com/SwampTG) |
+| 13/09/2021 | 1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+
 ## Nosso compromisso
 
 Nós comos membros, contribuidores e líderes prometemos fazer com que a 

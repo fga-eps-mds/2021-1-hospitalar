@@ -1,17 +1,18 @@
 # Fechamento da Sprint 03
 
-## Histórico de revisão
+## Histórico de versão
 
 |  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**    |
-| :--------: | :--------: | :---------------------------------------------------: | :----------------: |
-| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   Victor Cabral    |
-| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | @klyssmannoliveira |
-| 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   Victor Cabral    |
+| :-------- | :-------- | :--------------------------------------------------- | :---------------- |
+| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   [@victordscabral](https://github.com/victordscabral)    |
+| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 13/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   [@victordscabral](https://github.com/victordscabral)    |
+| 13/09/2021 |    1.0       | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
 | **ID** |                                                    **Descrição**                                                     | **Status** | **Pontos** |
-| :----: | :------------------------------------------------------------------------------------------------------------------: | :--------: | :--------: |
+| :---- | :------------------------------------------------------------------------------------------------------------------ | :-------- | :--------: |
 |  #16   |          [Criar protótipo de baixa fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)           |  Fechada   |     8      |
 |  #19   |               [Início do Product Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/19)                |  Fechada   |     13     |
 |  #20   |        [Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)        |   Aberta   |     5      |

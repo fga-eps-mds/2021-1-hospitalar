@@ -1,4 +1,11 @@
-# Planejamento da Sprint 1
+# Abertura da Sprint 01
+
+## Histórico de versão
+
+| **Data** |  **Versão** | **Modificação**  |  **Autor** |
+|:-|:-|:-|:-|
+|    06/09/2021   |  0.1 | Adicionando Sprint 1 para o Time B  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos 
 Em paralelo aos estudos de papéis ágeis, frameworks e arquitetura, prioritariamente devemos recolher as definições do produto, e seus principais requisitos, entregando uma versão inicial de Abertura de projeto, visão e backlog do produto.

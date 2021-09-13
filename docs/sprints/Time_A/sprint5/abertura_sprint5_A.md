@@ -1,10 +1,11 @@
 # Abertura da Sprint 05
 
-## Histórico de revisão
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    09/09/2021   |  0.1 | Criação do documento  | Victor Cabral |
+|:-|:-|:-|:-|
+|    09/09/2021   |  0.1 | Criação do documento  | [@victordscabral](https://github.com/victordscabral) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 

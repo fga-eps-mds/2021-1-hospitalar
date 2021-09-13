@@ -1,13 +1,14 @@
 # Tutorial de Ambientação MongoDB
 
-## Histórico de versões
+## Histórico de versão
 
 |    Data    | Versão |              Modificação               |         Autor         |
-| :--------: | :----: | :------------------------------------: | :-------------------: |
-| 24/08/2021 |  0.1   |          Criação do documento          | @PedroCassianoMartins |
-| 24/08/2021 |  0.2   | Adição dos comandos básicos de MongoDB | @PedroCassianoMartins |
-| 24/08/2021 |  0.3   |          Ajuste de formatação          | @PedroCassianoMartins |
-| 07/09/2021 |  0.4   |           Revisão e correção           |  @klyssmannoliveira   |
+| :-------- | :---- | :------------------------------------ | :------------------- |
+| 24/08/2021 |  0.1   |          Criação do documento          | [@PedroCassianoMartins](https://github.com/PedroCassianoMartins) |
+| 24/08/2021 |  0.2   | Adição dos comandos básicos de MongoDB | [@PedroCassianoMartins](https://github.com/PedroCassianoMartins) |
+| 24/08/2021 |  0.3   |          Ajuste de formatação          | [@PedroCassianoMartins](https://github.com/PedroCassianoMartins) |
+| 07/09/2021 |  0.4   |           Revisão e correção           | [@klyssmannoliveira](https://github.com/klyssmannoliveira)   |
+| 13/09/2021 |  1.1   | Alteração no histórico de versão       | [@victordscabral](https://github.com/victordscabral) |
 
 ## Introdução
 

@@ -1,13 +1,13 @@
 # Ferramentas de documentação e comunicação
 
-## Histórico de versões
+## Histórico de versão
 
 |    Data    | Versão |                Modificação                |       Autor        |
-| :--------: | :----: | :---------------------------------------: | :----------------: |
+| :-------- | :---- | :--------------------------------------- | :---------------- |
 | 16/08/2021 |  0.1   | Criação do documento e elaboração do texto |  @victordscabral   |
 | 07/09/2021 |  0.2   |            Revisão e correção             | @klyssmannoliveira |
 
-## Introdução
+## Objetivo:
 
 Este documento visa esclarecer entre os envolvidos no projeto as ferramentas que serão utilizadas ao longo desse projeto.
 

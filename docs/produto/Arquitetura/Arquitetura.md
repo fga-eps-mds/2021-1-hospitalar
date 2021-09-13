@@ -1,23 +1,26 @@
-## Histórico de Versões
-| Versão  |  Data  | Autor  |  Descrição  |
-| ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  19/08/2021 | [Magno Luiz](https://github.com/magnluiz) , [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Helias](https://github.com/pedrohelias), [Eduardo Gurgel](https://github.com/EduardoGurgel) |  Criação e abertura do documento de arquitetura |
-|  1.1 |  25/08/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Adição de algumas partes do documento |
-|  1.2 |  26/08/2021 | [Pedro Helias](https://github.com/pedrohelias)| Novas adições no documento |
-|  1.3 |  26/08/2021 | [Eduardo Gurgel](https://github.com/EduardoGurgel) | Inclusão do diagrama do Banco de dados e Relatório |
-|  1.4 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre MongoDB |
-|  1.4.1 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Front-End e ajuste na tabela de versionamento |
-|  1.4.2 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do diagrama de relações |
-|  1.4.3 |  31/08/2021 | [Gabriel Luiz](https://github.com/ggomesbr), [Pedro Vieira](https://github.com/Pedro-V8), [Bruno Oliveira](https://github.com/eng-Bruno) | Inclusão do tópico sobre Back-End |
-|  1.5 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da introdução do documento |
-|  1.5.1 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da descrição das tecnologias a serem utilizadas adicionalmente a algumas melhorias na introdução |
-|  1.5.2 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da Visão Lógica e adições neste tópico |
-|  1.6 |  04/09/2021 | [Pedro Helias](https://github.com/pedrohelias), [Magno Luiz](https://github.com/magnluiz)|  Finalização do documento - primeira versão - com adições extras|
-|  1.6.1 |  04/09/2021 | [Gabriel Luiz](https://github.com/ggomesbr) | Adição do diagrama de casos de uso e ajustes no histórico de versões.|
-|  1.7 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção de alguns pontos|
-|  1.7.1 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção em diagramas|
-|  1.8 |  13/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Adição de diagrama unificado |
+# Documento de Arquitetura
 
+## Histórico de versão
+
+| Data  |  Versão  | Modificação  |  Autor  |
+| :------------------- | :------------------- | :------------------- | :------------------- |
+| 19/08/2021 | 0.1 | Criação e abertura do documento de arquitetura |[@magnluiz](https://github.com/magnluiz), [@ggomesbr](https://github.com/ggomesbr), [@pedrohelias](https://github.com/pedrohelias) e [@EduardoGurgel](https://github.com/EduardoGurgel) |
+| 25/08/2021 | 0.2 | Adição de algumas partes do documento |[@pedrohelias](https://github.com/pedrohelias) |
+| 26/08/2021 | 0.3 | Novas adições no documento | [@pedrohelias](https://github.com/pedrohelias) |
+| 26/08/2021 | 0.4 | Inclusão do diagrama do Banco de dados e Relatório | [@EduardoGurgel](https://github.com/EduardoGurgel) |
+| 31/08/2021 | 0.5 | Inclusão do tópico sobre MongoDB | [@ggomesbr](https://github.com/ggomesbr), [@Pedro-V8](https://github.com/Pedro-V8) e [@eng-Bruno](https://github.com/eng-Bruno) |
+| 31/08/2021 | 0.5.1 | Inclusão do tópico sobre Front-End e ajuste na tabela de versionamento | [@ggomesbr](https://github.com/ggomesbr), [@Pedro-V8](https://github.com/Pedro-V8), [@eng-Bruno](https://github.com/eng-Bruno) |
+| 31/08/2021 | 0.5.2 | Inclusão do diagrama de relações | [@ggomesbr](https://github.com/ggomesbr), [@Pedro-V8](https://github.com/Pedro-V8), [@eng-Bruno](https://github.com/eng-Bruno) |
+| 31/08/2021 | 0.5.3 | Inclusão do tópico sobre Back-End |[@ggomesbr](https://github.com/ggomesbr), [@Pedro-V8](https://github.com/Pedro-V8), [@eng-Bruno](https://github.com/eng-Bruno) |
+| 02/09/2021 |  0.6 | Atualização da introdução do documento |[@pedrohelias](https://github.com/pedrohelias) |
+| 02/09/2021 | 0.6.1 | Atualização da descrição das tecnologias a serem utilizadas adicionalmente a algumas melhorias na introdução | [@pedrohelias](https://github.com/pedrohelias) |
+| 02/09/2021 | 0.6.2  | Atualização da Visão Lógica e adições neste tópico |[@pedrohelias](https://github.com/pedrohelias) |
+| 04/09/2021 | 1.0 | Finalização do documento - primeira versão - com adições extras | [@pedrohelias](https://github.com/pedrohelias), [@magnluiz](https://github.com/magnluiz)|
+| 04/09/2021 | 1.0.1 | Adição do diagrama de casos de uso e ajustes no histórico de versões | [@ggomesbr](https://github.com/ggomesbr) |
+| 09/09/2021 | 1.1 | Correção de alguns pontos | [@pedrohelias](https://github.com/pedrohelias) |
+| 09/09/2021 | 1.1.1 | Correção em diagramas | [@pedrohelias](https://github.com/pedrohelias) |
+| 13/09/2021 | 1.2 | Adição de diagrama unificado | [@pedrohelias](https://github.com/pedrohelias) |
+| 13/09/2021 | 1.3 | Alteração em títulos e histórico de versão | [@victordscabral](https://github.com/victordscabral) |
 
 ## Sumário
 1.  **Introdução**
