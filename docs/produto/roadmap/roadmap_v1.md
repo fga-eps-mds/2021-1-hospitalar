@@ -15,4 +15,4 @@ Desta forma, esse documento tem como objetivo a apresentação do RoadMap do Pro
 
 ## RoadMap do Produto (Versão 1)
 
-<img src="RoadMap_Do_Produto.png" alt="RoadMap do Produto">
+![RoadMap](RoadMap_Do_Produto.png)
