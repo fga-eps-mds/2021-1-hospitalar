@@ -11,5 +11,5 @@ from models.geracaoPdf.views import GeracaoPdfView
 
 def create_api():
     router = routers.DefaultRouter()
-    router.register(r'Geracao', GeracaoPdfView, 'geracaoPdf')
+    router.register(r'geracao', GeracaoPdfView, 'geracaoPdf')
     return router
