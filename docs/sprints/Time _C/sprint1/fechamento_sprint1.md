@@ -1,4 +1,4 @@
-# Fechamento da Sprint (nº)
+# Fechamento da Sprint 1
 
 ## Histórico de revisão
 

@@ -1,4 +1,4 @@
-# Abertura da Sprint (nº)
+# Abertura da Sprint 2
 
 ## Objetivos
 
