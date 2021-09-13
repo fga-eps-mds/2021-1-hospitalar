@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import { Home } from './pages/Home'
+import { PaginaAddItem } from './pages/PaginaAddItem'
+import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
 import React from 'react'
 
 /**
@@ -14,6 +16,8 @@ export function Routes(): React.ReactElement {
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/NovaAvaliacao' component={PaginaAvaliacao} />
+        <Route exact path='/NovaAvaliacao/Adicao' component={PaginaAddItem} />
       </Switch>
     </BrowserRouter>
   )
