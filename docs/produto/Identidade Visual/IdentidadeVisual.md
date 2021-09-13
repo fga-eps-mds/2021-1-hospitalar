@@ -10,12 +10,11 @@ No início do projeto a equipe veio tentando formular alguma ideia de logotipo q
 
 
 # Nome do Projeto
+## FAMil
 
-No início do projeto o nome era Checklist Hospitalar, mas era um nome muito grande e ficaria ruim para colocar no logotipo então fizemos a troca do nome para FAMil.
+A princípio o nome do projeto foi determinado de acordo com a funcionalidade do mesmo, Checklist Hospitalar. O nome estava de caráter provisório para que no furuto houvessem reuniões e discussões a respeito do assunto para que então seja decidio um nome definitivo para o projeto.
 
-O nome FAMil é uma sigla para "Ferramenta de Acreditação Militar", que faz referência ao trabalho de acreditação feito pelas forças militares nos hospitais.
-
-Logo a paleta de cores está mais voltada para o verde, tendo como inspiração o uniforme do Exército.
+Após pesquisas sobre as principais atividades do Cliente, percebemos que era bastante usado o nome Acreditação Militar na assitência da Saúde, baseando-se nesses termos, encontramos então um nome que referencia as atividades do Cliente, como também é comercialmente mais impactante do que apenas Checklist Hospitalar. Sendo então decidido o nome FAMil, sigla para "Ferramente de Acreditação Militar.
 
 # Tipografia
 
@@ -26,13 +25,29 @@ A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px, para manter uma
 
 ![Paleta-cores](https://imgur.com/yvMUCgs.jpg)
 
-**#175215** - Cor Primária da pagina.
 
-**#2B7B24** - Utilizada para o botões da pagina principal e confirmações.
+**#175215** - Cor Primária da pagina:
+<div style="background-color: #175215;"> '</div>
 
-**#ADE498** - Utilizada para o botões de navegação do site
+<br>
 
-**#F7F7E8** - Utilizada no background
+
+**#2B7B24** - Utilizada para o botões da pagina principal e confirmações:
+<div style="background-color: #2B7B24;">'</div>
+
+<br>
+
+**#ADE498** - Utilizada para o botões de navegação do site:
+
+<div style="background-color: #ADE498;">'</div>
+
+<br>
+
+**#F7F7E8** - Utilizada no background:
+
+
+<div style="background-color: #F7F7E8;">'</div>
+<br>
 
 As cores foram escolhidas com tons de verde e uma cor de branco para se obter uma boa harmonia.
 
@@ -56,7 +71,6 @@ O botão 1 será aquele que estará predominantemente sendo usado durante a apli
 O botão 1 terá uma funcionalidade onde ao ser passado o mouse por cima, será alternada a cor para que demonstre que o botão está sendo selecionado. A cor mudará para #448f42.
 
 ### Botão 2
-
 
 
 ![Botão 2](botao_2.png)
