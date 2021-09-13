@@ -141,7 +141,8 @@
       <details>
       <summary>Sprint 05 </summary>
       <ul>
-      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint5/abertura_sprint5">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint5/abertura_sprint5">Abertura</a></li>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint5/fechamento_sprint5">Fechamento</a></li>
       </ul>
       </details>
       </details>
