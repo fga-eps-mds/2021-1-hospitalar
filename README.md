@@ -176,9 +176,9 @@ Desenvolvedor: amarelo #
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/87657942?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/51385738?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
         <sub>
-          <b>Pedro Cassiano</b>
+          <b>Eduardo Gurgel</b>
         </sub>
       </a>
     </td>
@@ -200,9 +200,9 @@ Desenvolvedor: amarelo #
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/51385738?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <img src="https://avatars.githubusercontent.com/u/87657942?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
         <sub>
-          <b>Eduardo Gurgel</b>
+          <b>Pedro Cassiano</b>
         </sub>
       </a>
     </td>
