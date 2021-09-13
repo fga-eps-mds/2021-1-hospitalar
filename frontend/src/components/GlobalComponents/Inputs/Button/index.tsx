@@ -7,7 +7,7 @@ type Props = ButtonProps & {
   variant?: string
   size?: string
   color?: string
-  onClick: (e: React.MouseEvent<HTMLButtonElement>, checked?: boolean) => void
+  onClick: () => void
   children?: React.ReactNode
 }
 
