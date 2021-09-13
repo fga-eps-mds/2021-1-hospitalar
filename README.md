@@ -1,15 +1,12 @@
-&emsp;
-&emsp;
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
-
-
+<div align="center">
+   <img alt="size-badge" src="https://img.shields.io/github/repo-size/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
+   <img alt="languages-badge" src="https://img.shields.io/github/languages/count/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
+   <img alt="issues-badge" src="https://img.shields.io/github/issues/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
+   <img alt="pr-badge" src="https://img.shields.io/github/issues-pr/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
+</div>
 
 <div align="center">
-   <h1> 2021-1- Cheklist hospitalar </h1>
+   <h1> 2021-1-FAMil </h1>
 </div>
 
 
@@ -31,7 +28,7 @@
 <br/>  
 
 ## 📄 Sobre o projeto
-> O Checklist Hospitalar tem como principal intuito auxiliar no processo de avaliação hospitalar do PASAM - Programa de Acreditação da Saúde Assistencial Militar. O projeto consiste em uma página web que proporciona uma avaliação mais dinâmica e padronizada acerca do processo avaliativo, bem como a apresentação dos resultados por meio de relatórios gerados pelos avaliadores credenciados da OMS (Organização Militar da Saúde).
+> O FAMil tem como principal intuito auxiliar no processo de avaliação hospitalar do PASAM - Programa de Acreditação da Saúde Assistencial Militar. O projeto consiste em uma página web que proporciona uma avaliação mais dinâmica e padronizada acerca do processo avaliativo, bem como a apresentação dos resultados por meio de relatórios gerados pelos avaliadores credenciados da OMS (Organização Militar da Saúde).
 
 <br/> 
 
@@ -59,8 +56,7 @@ Frontend | Backend
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `<Python / v3.8>`, `<Node/ v14 lts>` e `<Mongodb / v5.0+>
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
+* Você instalou a versão mais recente de `<Python / v3.8>`, `<Node/ v14 lts>` e `<Mongodb Community / v5.0+>`
 
 <br/>
 
@@ -69,22 +65,27 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 > Para instalar o FAMil, siga estas etapas:
 
 Comandos para preparar o node (dentro da pasta frontend):
-```
+
+```bash
 yarn
 ```
 Comandos para preparar o python (dentro da pasta backend):
-```
+
+``` bash
 pip install -r requirements.txt
 python ./manage.py makemigrations
 python ./manage.py migrate
 ```
 Compilando:
-```
+
+```bash
  # Frontend:
 yarn start
  # Backend:
 python ./manage.py runserver
 ```
+
+**Para mais informações, consulte a seção Utilizando Tecnologias em nossa [Página](https://fga-eps-mds.github.io/2021-1-hospitalar)**
 
 <br/>
 
@@ -102,7 +103,7 @@ Desenvolvedor: amarelo #
   <tr>
       <th>Arquitetos</th>
       <th>Devops</th>
-      <th>Product Owners</th>
+      <th>Product Owenrs</th>
       <th>Scrum Masters</th>
       <th colspan="3">Desenvolvedores</th>
   </tr> 
@@ -269,7 +270,7 @@ Desenvolvedor: amarelo #
 <br/> 
 
 ## 📜 Documentação 
-> A documentação pode ser encontrada em [Checklist-Hopitalar](https://fga-eps-mds.github.io/2021-1-hospitalar/docs)
+> A documentação pode ser encontrada em [Nossa Página](https://fga-eps-mds.github.io/2021-1-hospitalar) ou no [Repositório](https://github.com/fga-eps-mds/2021-1-hospitalar/tree/main/docs)
 
 
 
