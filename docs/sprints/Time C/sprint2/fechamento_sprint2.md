@@ -4,7 +4,7 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    11/08/2021   |  0.1 | Criação do documento  | Pedro Vieira / Pedro Caldeira  |
+|    12/08/2021   |  0.1 | Criação do documento  | Pedro Vieira / Pedro Caldeira  |
 
 ## Backlog da Sprint 
 
@@ -26,9 +26,9 @@
 
 | Nome | Github | HTML | Javascript | Metodologia ágeis | Docker | Django | Mongodb |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Pedro Caldeira | &#129000; | &#128997; | &#129000; | &#128997; | &#128997; | &#129000; | &#128997;; | 
-| Pedro Vieira | &#128999; | &#129001; | &#128998; | &#128997; | &#129000; | &#128997;| &#128997; | 
-| Gabriel Luiz | &#128999; | &#128997; | &#129000; | &#128997; | &#128997; | &#129000; | &#129000; | 
+| Pedro Caldeira | &#129000; | &#128997; | &#129000; | &#128997; | &#128997; | &#129000; | &#128997; | 
+| Pedro Vieira | &#128999; | &#129001; | &#128998; | &#128997; | &#129000; | &#128997;| &#129001; | 
+| Gabriel Luiz | &#128999; | &#128997; | &#129000; | &#128997; | &#129001; | &#129000; | &#129000; | 
 | Igor Thiago | &#129000; | &#128997; | &#128997; | &#128997; | &#128997; | &#128997; | &#128997; | 
 | Thiago Vivan | &#129000; | &#128997; | &#128997; | &#128997; | &#128997; | &#128997; | &#128997; | 
 | Bruno | &#129000; | &#128997; | &#128997; | &#128997; | &#128997; | &#128997; | &#128997; | 
@@ -55,3 +55,4 @@
 
 
 ## Análise pelo Scrum Master
+O grupo se viu um pouco perdido visto que não foram divididas eficientementes as tarefas para cada time. Porém foram marcadas reuniões para serem divididas tais responsabilidades.

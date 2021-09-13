@@ -15,65 +15,58 @@
 |    #20   |  [Elaboração do RoadMap](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)| aberta  | 8 |
 |    #21   |  [Elaboração do EAP](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/21) | fechada  | 5 |
 |    #22   |  [Elaboração do Documento de Visão](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/22) | fechada  | 2 |
-|    #23   |  [Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23) | aberta  |  |
-|    #24   |  [Abertura do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/24) | fechada  | ... |
-|    #25   |  [#25 Estudos da Linguagem JavaScript](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/25) | aberta  | ... |
-|    #26   |  [Organizar o ZenHub](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/26) | fechada  | ... |
-|    #31   |  [Atualizar arquivo README](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/31) | fechada  | ... |
-|    #47   |  [Elaboração do Diagrama de Classes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/47) | fechada  | ... |
-|    #56   |  [Redação do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56) | fechada  | ... |
+|    #23   |  [Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23) | aberta  | 5 |
+|    #24   |  [Abertura do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/24) | fechada  | 10 |
+|    #25   |  [Estudos da Linguagem JavaScript](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/25) | aberta  | 13 |
+|    #26   |  [Organizar o ZenHub](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/26) | fechada  | 13 |
+|    #31   |  [Atualizar arquivo README](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/31) | fechada  | 10 |
+|    #47   |  [Elaboração do Diagrama de Classes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/47) | fechada  | 13 |
+|    #56   |  [Redação do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56) | fechada  | 8 |
 
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 54 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 0 Pontos <br>
+**Pontos Concluídos:** 54 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
-- Não houveram débitos técnicos para pagar nesta sprint
+#16 [Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)
 
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
-
-## Débitos Técnicos Gerados
-
-- Não foram gerados débitos nesta sprint
-
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
 
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
--
+- Melhor organização das funções dos times
+
+- Time interno foi melhor dividido.
 
 ### Pontos Negativos
 
--
--
+- Dificuldade de reunir todos os integrantes para discussões internas
+
+- Decisões que não tiveram tanto resultado, atrasando no processo
+
+- Ainda algumas dúvidas em relação à organização do GitHub
 
 ### Melhorias
 
--
--
+- Comunicação entre os SM e PO´s está melhor
+
+- Uma melhora na definição das responsábilidades de cada time
+
+- Reunião entre os 3 times com pautas objetivas e efetivas.
 
 ## Burndown
 
-![Grafico Borndwn](assets/Borndown-sprint-3.png)
+
+![Burndown](burndown_TimeC.png)
   
 ## Velocity
 
-![Grafico Velcity](assets/Velocity-sprint-3.png)  
+![Velocity](velocity.png)
   
 ## Práticas ágeis
   
@@ -98,12 +91,13 @@ OU
 
 | Nome | Github | HTML | Javascript | Metodologia ágeis | Docker | Django | Mongodb |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Pedro Caldeira | &#128999; | &#128997; | &#129000; | &#129000; | &#129000; | &#129000; | &#128997; | 
-| Pedro Vieira | &#129001; | &#129001; | &#128998; | &#129000; | &#129000; | &#128997;| &#129001; | 
-| Gabriel Luiz | &#129001; | &#128997; | &#129000; | &#129000; | &#128997; | &#129000; | &#129000; | 
-| Igor Thiago | &#128999; | &#128997; | &#128997; | &#129000; | &#129000; | &#128997; | &#128997; | 
-| Thiago Vivan | &#128999; | &#128997; | &#128997; | &#129000; | &#128997; | &#128997; | &#128997; | 
-| Bruno | &#128999; | &#129000; | &#128997; | &#129000; | &#128997; | &#128997; | &#128997; | 
+| Pedro Caldeira | &#129001; | &#129000; | &#128999; | &#129001; | &#128999; | &#129000; | &#129000; | 
+| Pedro Vieira | &#129001; | &#129001; | &#129001; | &#129001; | &#128999; | &#129000; | &#129001; | 
+|Gabriel Luiz| &#129001; | &#128999; | &#128999; | &#129001; | &#129001; | &#129000; | &#128999;
+|Igor Thiago| &#128999; | &#128999; | &#128999; | &#128999; | &#129000; | &#128997; | &#129000;
+|Thiago Vivan| &#128999; | &#128999; | &#128999; | &#128999; | &#129000; | &#129000; | &#129000;
+|Bruno | &#128999; | &#129001; | &#129001; | &#128999; | &#129000; | &#129000; | &#128999;
+
 
 
 | Cor | Legenda |
@@ -114,17 +108,35 @@ OU
 | &#129000;  | Então... |
 | &#128997; | Socorro!|
   
+## Squad Health Check
+  
+| Nome | Sprint 0 | Sprint 1 | Sprint 2 | Sprint 3
+| :-: | :-: | :-: | :-: | :-:
+| Pedro Caldeira | &#128516; | &#129320; | &#128547; | 
+| Pedro Vieira | &#128516; | &#129320; | &#128512; |
+| Gabriel Luiz | &#128516; | &#129320; | &#128512; |
+| Igor Thiago  | &#128516; | &#129320; | &#128512; |
+| Thiago Vivan  | &#128516; | &#129320; | &#128512; |
+| Bruno  | &#128516; | &#129320; | &#128512; |
+
+| Emote | Significados |
+| :-: | :-: |
+| &#128521; | Alegre/Animado |
+| &#128529; | Indiferente/Neutro |
+| &#128554; | Desanimado/triste |
+
 
 ## Riscos
 
 |  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
 |:-:|:-:|:-:|
-| Desmotivação para o trabalho | ... | ... |
-| Não utilizar práticas ágeis | ... | ... |
-| Muitas tarefas durante a semana |:-:|:-:|
-| Falta de conhecimento sobre as tecnologias |:-:|:-:|
-|:-:|:-:|:-:|
-|:-:|:-:|:-:|
-
+| Rotina muito cheia | Determinar antes da semana começar os dias disponíveis | Adptação da Semana |
+| Desmotivação | Procurar entender tal motivo e ter um acompanhamento | Alterando as funções |
+| Falta de Conhecimento | Indicar vídeos, cursos e etc | Tutoria de algúem mais experiente |
+| Pouco acesso às Issues e Branchs | Acionar os integrantes via Telegram, email e etc | Maior trágego no GitHub |
+  
+<!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
+
+As responsabilidades foram melhor definidas após a primeira reunião com o cliente, cada time ficou com uma parte tanto na documentação quanto no desenvolvimento, além disso, internamente cada time realizou suas devidas divisões para quer então a produtividade do projeto aumentasse. No começo ficamos muito apreensivos em começar sem ter a reunião com o Cliente e também sem um conhecimento efetivo sobre Git, GitHub e tecnologias associadas com o meio do desenvolvimento, assim como a implantação de metodologias ágeis para um grupo com 19 integrantes. Porém com o tempo estamos entendendo que essa prática está para solucionar os problemas de organizar um grande grupo no desenovlimento de um software e a cada sprint estamos esperando conhecer mais sobre a plataforma e as tecnologias.

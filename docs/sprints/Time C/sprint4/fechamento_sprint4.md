@@ -4,22 +4,23 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|    23/08/2021   |  0.1 | Criação do documento  | Pedro Vieira |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    ...   |  [...]() | ...  | ... |
+|    #25   |  [Estudos da Linguagem  JavaScript](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/25) | Fechada  | 10 |
+|    #63   |  [Revisão e continuação do Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/63) | Fechada  | 13 |
+|    #64   |  [Modelagem Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/64) | Aberta  | 13 |
+|    #65   |  [Parear Desenvolvimento](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/65) | Fechada | 8 |
 
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 44 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 13 Pontos <br>
+**Pontos Concluídos:** 31 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
@@ -33,30 +34,33 @@ OU
 
 ## Débitos Técnicos Gerados
 
-- Não foram gerados débitos nesta sprint
-
-OU
-
-#(nº) nome da issue 
+#64 [Modelagem Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/64) 
 <BR> 
-#(nº) nome da issue 
 
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
--
+- Documentos bem desenvolvidos
+
+- Melhor entendimento da Plataforma
 
 ### Pontos Negativos
 
--
--
+- Dificuldade de fechar algumas Issues
+
+- Integrantes muito ocupados
+- Muitos Débitos Gerados
+- Tarefas acumuladas e desorganização
 
 ### Melhorias
 
--
--
+- Comunicação mais efetiva
+
+- Maior acesso na plataforma
+
+- Melhor entendimento do ZenHub
+
 
 ## Burndown
 
