@@ -2,26 +2,27 @@
 ## 1. Introdução
 ### Logo
 
-O logotipo foi feito com uma mistura da de uma imagem de uma patente do exercito com a substituição da estrela por uma caixa de check list. 
+O logotipo foi feito com uma mistura da imagem de uma patente do exército com a substituição da estrela por uma caixa de checklist. 
 
-![Logotipo](https://imgur.com/ff1YI0J.jpg)
 
-OBS: Este logotipo e apenas provisorio para termos uma representação enquanto o definitivo ainda não esta pronto.
 
-### Nome do Projeto
+![Logotipo](https://raw.githubusercontent.com/fga-eps-mds/2021-1-hospitalar/main/assets/logo-2021.jpg)
 
-No inicio do projeto o nome era Checklist Hospitalar, mas era um nome muito grande e ficaria ruim para colocar no logotipo então fizemos a troca do nome para FAM.
 
-O nome FAM e uma sigla para "Ferramenta de Acreditação Militar", que faz referencia ao trabalho de acreditação feito pelas forças militares nos hospitais.
+# Nome do Projeto
+
+No início do projeto o nome era Checklist Hospitalar, mas era um nome muito grande e ficaria ruim para colocar no logotipo então fizemos a troca do nome para FAMil.
+
+O nome FAMil é uma sigla para "Ferramenta de Acreditação Militar", que faz referência ao trabalho de acreditação feito pelas forças militares nos hospitais.
 
 Logo a paleta de cores está mais voltada para o verde, tendo como inspiração o uniforme do Exército.
 
-### Tipografia
+# Tipografia
 
-A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px, para manter uma melhor organização e uam fonte com um bom tamanho além de ser parecida cm a ja utilizada nos cmputadores normalmente,facilitando a leitura para o usario.
+A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px, para manter uma melhor organização e garantir um conforto no momento da leitura do usuário. Além disso, após testes realizados sobre a responsividade do projeto, a fonte e o tamanho da mesma responderam bem quanto à organização da página.
 
 
-### Paleta de cores
+## Paleta de cores
 
 ![Paleta-cores](https://imgur.com/yvMUCgs.jpg)
 
@@ -33,11 +34,11 @@ A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px, para manter uma
 
 **#F7F7E8** - Utilizada no background
 
-As cores foram escolhidas com tons de verde e uma cor de branco para dar contraste.
+As cores foram escolhidas com tons de verde e uma cor de branco para se obter uma boa harmonia.
 
-### Botões 
+# Botões 
 
-Os botões utilizam as cores #ADE498 e #2B7B24, são botões simples arredondados com texto escrito com a fonte Segoe UI, com a primeira letra maiúscula, as cores das letras dos botões variam entre preto e branco.
+Nos botões foram utilizadas as cores #ADE498 e #2B7B24, são botões simples arredondados com texto escrito com a fonte Segoe UI, com letras maiúsculas, as cores das letras dos botões variam entre preto e branco para se obter um bom contraste das mesmas.
 
 ![Botões](https://imgur.com/cV63Los.jpg)
 
