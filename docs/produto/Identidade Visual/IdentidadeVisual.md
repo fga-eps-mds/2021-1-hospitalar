@@ -27,26 +27,21 @@ A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px, para manter uma
 
 
 **#175215** - Cor Primária da pagina:
-<div style="background-color: #175215;"> '</div>
 
 <br>
 
 
 **#2B7B24** - Utilizada para o botões da pagina principal e confirmações:
-<div style="background-color: #2B7B24;">'</div>
 
 <br>
 
 **#ADE498** - Utilizada para o botões de navegação do site:
 
-<div style="background-color: #ADE498;">'</div>
 
 <br>
 
 **#F7F7E8** - Utilizada no background:
 
-
-<div style="background-color: #F7F7E8;">'</div>
 <br>
 
 As cores foram escolhidas com tons de verde e uma cor de branco para se obter uma boa harmonia.
