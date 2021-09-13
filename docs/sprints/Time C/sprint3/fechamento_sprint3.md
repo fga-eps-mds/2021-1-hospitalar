@@ -4,67 +4,62 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|    23/08/2021   |  0.1 | Criação do documento  | Pedro Vieira |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    ...   |  [...]() | ...  | ... |
-
+|    #47   |  [Elaboração do Diagrama de Classes - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/47) | Fechada  | 13 |
+|    #19   |  [Início do  Produck Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/19) | Fechada  | 10 |
+|    #31   |  [Atualizar o arquivo README](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/31) | Fechada  | 8 |
+|    #16   |  [Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16) | Fechada  | 13 |
+|    #26   |  [Organizar o ZenHub](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/26) | Fechada  | 10 |
+|    #16   | [Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)| Fechada | 8 | 
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 54 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 0 Pontos <br>
+**Pontos Concluídos:** 54 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
-- Não houveram débitos técnicos para pagar nesta sprint
+#16 [Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)
 
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
-
-## Débitos Técnicos Gerados
-
-- Não foram gerados débitos nesta sprint
-
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
 
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
--
+- Melhor organização das funções dos times
+
+- Time interno foi melhor dividido.
 
 ### Pontos Negativos
 
--
--
+- Dificuldade de reunir todos os integrantes para discussões internas
+
+- Decisões que não tiveram tanto resultado, atrasando no processo
+
+- Ainda algumas dúvidas em relação à organização do GitHub
 
 ### Melhorias
 
--
--
+- Comunicação entre os SM e PO´s está melhor
+
+- Uma melhora na definição das responsábilidades de cada time
+
+- Reunião entre os 3 times com pautas objetivas e efetivas.
 
 ## Burndown
 
-Gráfico gerado pelo ZenHub  
+
+![Burndown](burndown_TimeC.png)
   
 ## Velocity
 
-Gráfico gerado pelo ZenHub  
+![Velocity](velocity.png)
   
 ## Práticas ágeis
   
@@ -89,8 +84,13 @@ Gráfico gerado pelo ZenHub
 
 | Nome | Github | HTML | Javascript | Metodologia ágeis | Docker | Django | Mongodb |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
-| Pessoa 2 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
+| Pedro Caldeira | &#129001; | &#129000; | &#128999; | &#129001; | &#128999; | &#129000; | &#129000; | 
+| Pedro Vieira | &#129001; | &#129001; | &#129001; | &#129001; | &#128999; | &#129000; | &#129001; | 
+|Gabriel Luiz| &#129001; | &#128999; | &#128999; | &#129001; | &#129001; | &#129000; | &#128999;
+|Igor Thiago| &#128999; | &#128999; | &#128999; | &#128999; | &#129000; | &#128997; | &#129000;
+|Thiago Vivan| &#128999; | &#128999; | &#128999; | &#128999; | &#129000; | &#129000; | &#129000;
+|Bruno | &#128999; | &#129001; | &#129001; | &#128999; | &#129000; | &#129000; | &#128999;
+
 
 
 | Cor | Legenda |
@@ -103,30 +103,27 @@ Gráfico gerado pelo ZenHub
   
 ## Squad Health Check
   
-| Nome | Sprint 1 | Sprint 2 | Sprint 3 |
-| :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128512; | &#128516; | &#128521; |
-| Pessoa 2 | &#128529; | &#129320; | &#128530; |
-| Pessoa 3 | &#128532; | &#128567; | &#129314; |
-| Pessoa 4 | &#129395; | &#128547; | &#129321; |
+| Nome | Sprint 0 | Sprint 1 | Sprint 2 | Sprint 3
+| :-: | :-: | :-: | :-: | :-:
+| Pedro Caldeira | &#128516; | &#129320; | &#128547; | 
+| Pedro Vieira | &#128516; | &#129320; | &#128512; |
+| Gabriel Luiz | &#128516; | &#129320; | &#128512; |
+| Igor Thiago  | &#128516; | &#129320; | &#128512; |
+| Thiago Vivan  | &#128516; | &#129320; | &#128512; |
+| Bruno  | &#128516; | &#129320; | &#128512; |
 
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** |  **Nota** |
-|:-:|:-:|
-|    Descrição do Objetivo   |  (nº) |
-|    Descrição do Objetivo   |  (nº) | 
-|    ...   |  ... |
 
 ## Riscos
 
 |  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
 |:-:|:-:|:-:|
-| ... | ... | ... |
-| ... | ... | ... |
+| Rotina muito cheia | Determinar antes da semana começar os dias disponíveis | Adptação da Semana |
+| Desmotivação | Procurar entender tal motivo e ter um acompanhamento | Alterando as funções |
+| Falta de Conhecimento | Indicar vídeos, cursos e etc | Tutoria de algúem mais experiente |
+| Pouco acesso às Issues e Branchs | Acionar os integrantes via Telegram, email e etc | Maior trágego no GitHub |
   
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
+
+As responsabilidades foram melhor definidas após a primeira reunião com o cliente, cada time ficou com uma parte tanto na documentação quanto no desenvolvimento, além disso, internamente cada time realizou suas devidas divisões para quer então a produtividade do projeto aumentasse. No começo ficamos muito apreensivos em começar sem ter a reunião com o Cliente e também sem um conhecimento efetivo sobre Git, GitHub e tecnologias associadas com o meio do desenvolvimento, assim como a implantação de metodologias ágeis para um grupo com 19 integrantes. Porém com o tempo estamos entendendo que essa prática está para solucionar os problemas de organizar um grande grupo no desenovlimento de um software e a cada sprint estamos esperando conhecer mais sobre a plataforma e as tecnologias.
