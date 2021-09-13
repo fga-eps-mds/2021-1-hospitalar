@@ -14,6 +14,7 @@ export const Routes: React.FC = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Login} />
+        <Route path='/home' component={Home}></Route>
       </Switch>
     </BrowserRouter>
   )
