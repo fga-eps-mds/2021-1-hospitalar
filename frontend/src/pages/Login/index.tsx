@@ -16,7 +16,6 @@ export const Login: React.FC = () => {
 
             <h1>FAMiL</h1>
             <h2>FAMiL</h2>
-            <h3>FAMiL</h3>
             
         </>
     )
