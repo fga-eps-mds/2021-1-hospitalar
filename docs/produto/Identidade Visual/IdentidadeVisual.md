@@ -26,7 +26,7 @@ A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px, para manter uma
 
 ![Paleta-cores](https://imgur.com/yvMUCgs.jpg)
 
-**#175215** - Cor principal da pagina.
+**#175215** - Cor Primária da pagina.
 
 **#2B7B24** - Utilizada para o botões da pagina principal e confirmações.
 
@@ -41,5 +41,6 @@ As cores foram escolhidas com tons de verde e uma cor de branco para se obter um
 Nos botões foram utilizadas as cores #ADE498 e #2B7B24, são botões simples arredondados com texto escrito com a fonte Segoe UI, com letras maiúsculas, as cores das letras dos botões variam entre preto e branco para se obter um bom contraste das mesmas.
 
 ![Botões](https://imgur.com/cV63Los.jpg)
+
 
 
