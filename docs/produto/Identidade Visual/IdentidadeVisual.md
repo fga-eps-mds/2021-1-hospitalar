@@ -40,7 +40,34 @@ As cores foram escolhidas com tons de verde e uma cor de branco para se obter um
 
 Nos botões foram utilizadas as cores #ADE498 e #2B7B24, são botões simples arredondados com texto escrito com a fonte Segoe UI, com letras maiúsculas, as cores das letras dos botões variam entre preto e branco para se obter um bom contraste das mesmas.
 
-![Botões](https://imgur.com/cV63Los.jpg)
+### Botão 1
+
+<br>
+
+
+![Botão 1](botao_1.png)
+<br>
+
+O botão 1 será aquele que estará predominantemente sendo usado durante a aplicação. Está configurado com a cor #2B7B24, com arredondamento nas extremidades  e um fonte de 1rem para ter uma facilidade de leitura do que está escrito.
+
+
+![Botão 1 Selecionao](botao_1_selecionado.png)
+
+O botão 1 terá uma funcionalidade onde ao ser passado o mouse por cima, será alternada a cor para que demonstre que o botão está sendo selecionado. A cor mudará para #448f42.
+
+### Botão 2
+
+
+
+![Botão 2](botao_2.png)
+
+
+Caso se tenha a necessidade de usar mais de um botão na mesma área, como por exemplo em um formulário que tenha botão de salvar/avançar ou cancelar/anterior, será usado o botão secundário, com cores predominantemente mais claras e um texto escuro para não ser melhor identificado.
+
+![Botão 2 Selecionado](botao_2_selecionado.png)
+
+Botão 2 também terá a característica do botão 1, no qual ao ter o mouse em cima, terá a cor alternada para indicar que está sendo selecionado.
+
 
 
 
