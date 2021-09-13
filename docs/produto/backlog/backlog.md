@@ -1,6 +1,6 @@
 # Backlog do Produto
 
-## Histórico de Versão
+## Histórico de versão
 
 | Data       | Versão | Modificação                                  | Autor                                                    |
 | :--------- | :----- | :------------------------------------------- | :------------------------------------------------------- |
