@@ -4,15 +4,24 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|    11/09/2021   |  0.1 | Criação do documento  | Pedro Vieira / Pedro Caldeira |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    ...   |  [...]() | ...  | ... |
+|    #16   |  [Criar protótipo de baixa fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16) | fechada  | 13 |
+|    #19   |  [Início do Product Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/19)| fechada  | 8 |
+|    #20   |  [Elaboração do RoadMap](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)| aberta  | 8 |
+|    #21   |  [Elaboração do EAP](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/21) | fechada  | 5 |
+|    #22   |  [Elaboração do Documento de Visão](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/22) | fechada  | 2 |
+|    #23   |  [Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23) | aberta  |  |
+|    #24   |  [Abertura do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/24) | fechada  | ... |
+|    #25   |  [#25 Estudos da Linguagem JavaScript](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/25) | aberta  | ... |
+|    #26   |  [Organizar o ZenHub](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/26) | fechada  | ... |
+|    #31   |  [Atualizar arquivo README](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/31) | fechada  | ... |
+|    #47   |  [Elaboração do Diagrama de Classes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/47) | fechada  | ... |
+|    #56   |  [Redação do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56) | fechada  | ... |
 
 
 ## Pontuação Final
@@ -60,11 +69,11 @@ OU
 
 ## Burndown
 
-Gráfico gerado pelo ZenHub  
+![Grafico Borndwn](assets/Borndown-sprint-3.png)
   
 ## Velocity
 
-Gráfico gerado pelo ZenHub  
+![Grafico Velcity](assets/Velocity-sprint-3.png)  
   
 ## Práticas ágeis
   
@@ -72,13 +81,13 @@ Gráfico gerado pelo ZenHub
 | :-: | :-: | :-: |
 | 1    | Priorização do Backlog pelo PO | &#10004; |
 | 2    | Desenvolvimento de processos e práticas facilitadas pelo SM | &#10004; |
-| 3    | Reunião de planejamento de Sprint | &#10060; |
+| 3    | Reunião de planejamento de Sprint | &#10004; |
 | 4    | Planning Poker | &#10060; |
-| 5    | Comprometimento do time e do PO com o backlog do produto | &#10004; |
+| 5    | Comprometimento do time e do PO com o backlog do produto | &#10060; |
 | 6    | Os membros da equipe são voluntários para tarefas | &#10004; |
-| 7    | Restrospectiva da Sprint | &#10060; |
+| 7    | Restrospectiva da Sprint | &#10004; |
 | 8    | Acompanhamento do Velocity | &#10060; |
-| 9    | User Stories | &#10004; |
+| 9    | User Stories | &#10060; |
 | 10 |    Refatorar quando e onde for possível | &#10004; |
 | 11 | Todo código deve ter códigos unitários | &#10060; |
 | 12 |    Todo código deve passar por testes unitários antes de ser liberado | &#10060; |
@@ -89,8 +98,12 @@ Gráfico gerado pelo ZenHub
 
 | Nome | Github | HTML | Javascript | Metodologia ágeis | Docker | Django | Mongodb |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
-| Pessoa 2 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
+| Pedro Caldeira | &#128999; | &#128997; | &#129000; | &#129000; | &#129000; | &#129000; | &#128997; | 
+| Pedro Vieira | &#129001; | &#129001; | &#128998; | &#129000; | &#129000; | &#128997;| &#129001; | 
+| Gabriel Luiz | &#129001; | &#128997; | &#129000; | &#129000; | &#128997; | &#129000; | &#129000; | 
+| Igor Thiago | &#128999; | &#128997; | &#128997; | &#129000; | &#129000; | &#128997; | &#128997; | 
+| Thiago Vivan | &#128999; | &#128997; | &#128997; | &#129000; | &#128997; | &#128997; | &#128997; | 
+| Bruno | &#128999; | &#129000; | &#128997; | &#129000; | &#128997; | &#128997; | &#128997; | 
 
 
 | Cor | Legenda |
@@ -101,32 +114,17 @@ Gráfico gerado pelo ZenHub
 | &#129000;  | Então... |
 | &#128997; | Socorro!|
   
-## Squad Health Check
-  
-| Nome | Sprint 1 | Sprint 2 | Sprint 3 |
-| :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128512; | &#128516; | &#128521; |
-| Pessoa 2 | &#128529; | &#129320; | &#128530; |
-| Pessoa 3 | &#128532; | &#128567; | &#129314; |
-| Pessoa 4 | &#129395; | &#128547; | &#129321; |
-
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** |  **Nota** |
-|:-:|:-:|
-|    Descrição do Objetivo   |  (nº) |
-|    Descrição do Objetivo   |  (nº) | 
-|    ...   |  ... |
 
 ## Riscos
 
 |  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
 |:-:|:-:|:-:|
-| ... | ... | ... |
-| ... | ... | ... |
-  
-<!-- ## Burndown de Riscos (???) -->
+| Desmotivação para o trabalho | ... | ... |
+| Não utilizar práticas ágeis | ... | ... |
+| Muitas tarefas durante a semana |:-:|:-:|
+| Falta de conhecimento sobre as tecnologias |:-:|:-:|
+|:-:|:-:|:-:|
+|:-:|:-:|:-:|
+
 
 ## Análise pelo Scrum Master

@@ -36,5 +36,4 @@ A Sprint 3 tem como principais objetivos continuar com a documentação do proje
 - [#20 Elaboração do RoadMap](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)
 - [#23 Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)
 - [#25 Estudos da Linguagem JavaScript](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/25)
-- [#56 Redação do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)
 
