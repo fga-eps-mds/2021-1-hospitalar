@@ -1,4 +1,4 @@
-# Fechamento da Sprint (nº)
+# Fechamento da Sprint 3
 
 ## Histórico de revisão
 
@@ -26,14 +26,9 @@
 
 ## Pontuação Final
 
-**Pontuação Total:** 54 Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** 0 Pontos <br>
-**Pontos Concluídos:** 54 Pontos Concluídos <br>
-
-## Débitos Técnicos de Sprints Anteriores
-
-#16 [Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)
-
+**Pontuação Total:** 108 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 26 Pontos <br>
+**Pontos Concluídos:** 82 Pontos Concluídos <br>
 
 ## Retrospectiva
 
@@ -112,12 +107,12 @@
   
 | Nome | Sprint 0 | Sprint 1 | Sprint 2 | Sprint 3
 | :-: | :-: | :-: | :-: | :-:
-| Pedro Caldeira | &#128516; | &#129320; | &#128547; | 
-| Pedro Vieira | &#128516; | &#129320; | &#128512; |
-| Gabriel Luiz | &#128516; | &#129320; | &#128512; |
-| Igor Thiago  | &#128516; | &#129320; | &#128512; |
-| Thiago Vivan  | &#128516; | &#129320; | &#128512; |
-| Bruno  | &#128516; | &#129320; | &#128512; |
+| Pedro Caldeira | &#128521; | &#128529; | &#128554; | 
+| Pedro Vieira | &#128521; | &#128529; | &#128529; |
+| Gabriel Luiz | &#128521; | &#128529; | &#128521; |
+| Igor Thiago  | &#128521; | &#128529; | &#128521; |
+| Thiago Vivan  | &#128521; | &#128529; | &#128521; |
+| Bruno  | &#128521; | &#128529; | &#128521; |
 
 | Emote | Significados |
 | :-: | :-: |
