@@ -1,13 +1,14 @@
-# Fechamento da Sprint 2
+# Fechamento da Sprint 02
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    06/09/2021   |  0.1 | Adicionando Sprint 2 para o Time B  | Adrian Soares |
+|:-|:-|:-|:-|
+|    06/09/2021   |  0.1 | Adicionando Sprint 2 para o Time B  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
 | **Issues** |  **Descrição** | **Status**  |  **Pontos** |
-|:-:|:-:|:-:|:-:|
+|:-|:-|:-|:-:|
 |    Issue 10   |  [Pesquisas sobre as tecnologias](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/10) | Aberto  | 13 |
 |    Issue 14   |  [Definição dos Escopos dos Grupos](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/14) | Aberto  | 5 |
 |    Issue 15   |  [TAP - Redação](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/15) | Fechado  | 13 |

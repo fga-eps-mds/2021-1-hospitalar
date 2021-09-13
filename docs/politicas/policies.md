@@ -4,8 +4,9 @@
 
 | Data | Versão | Modificação | Autor |
 | :- | :- | :- | :- |
-| 17/08/2021 | 0.1 | Criação da primeira versão do documento | Adrian Soares Lopes |
-| 31/08/2021 | 0.2 | Remoção, tags e PR  | Adrian Soares Lopes |
+| 17/08/2021 | 0.1 | Criação da primeira versão do documento | [@SwampTG](https://github.com/SwampTG) |
+| 31/08/2021 | 0.2 | Remoção, tags e PR  | [@SwampTG](https://github.com/SwampTG) |
+| 13/09/2021 | 1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivo:
 

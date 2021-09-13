@@ -1,15 +1,16 @@
-# Fechamento da Sprint 3
+# Fechamento da Sprint 03
 
 ## Histórico de revisão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    24/08/2021   |  0.1 | Criação do documento  | Adrian Soares |
+|:-|:-|:-|:-|
+|    24/08/2021   |  0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint 
 
 |ID|Descrição|Status|Pontos|
-|:-|:-|:-|:-|
+|:-|:-|:-|:-:|
 |#29|[Estudo do Relatório para prototipagem](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/29)|Fechada|2|
 |#16|[Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)|Fechada|8|
 |#18|[Organizar treinamento de tecnologias](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/18)|Fechada|13|

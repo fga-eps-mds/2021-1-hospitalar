@@ -4,7 +4,7 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|       |  0.1 | Criação do documento  | [Pedro Vieira](https://github.com/Pedro-V8) |
 
 ## Backlog da Sprint 
 

@@ -1,4 +1,11 @@
-# Planejamento da Sprint 0
+# Abertura da Sprint 00
+
+## Histórico de versão
+
+| **Data** |  **Versão** | **Modificação**  |  **Autor** |
+|:-|:-|:-|:-|
+|    06/09/2021   |  0.1 | Adicionando Sprint 0 para o Time B  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 Levantamento de bibliografias para o projeto e início dos treinamentos para tecnologias.

@@ -1,10 +1,11 @@
-# Fechamento da Sprint 4
+# Fechamento da Sprint 04
 
-## Histórico de revisão
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    31/08/2021   |  0.1 | Criação do documento  | Adrian Soares |
+|:-|:-|:-|:-|
+|    31/08/2021   |  0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 

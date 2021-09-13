@@ -1,17 +1,18 @@
 # Fechamento da Sprint 05
 
-## Histórico de revisão
+## Histórico de versão
 
 |  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**      |
-| :--------: | :--------: | :---------------------------------------------------: | :----------------: |
-| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   Victor Cabral    |
-| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | @klyssmannoliveira |
-| 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   Victor Cabral    |
+| :-------- | :-------- | :--------------------------------------------------- | :---------------- |
+| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   [@victordscabral](https://github.com/victordscabral)    |
+| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   [@victordscabral](https://github.com/victordscabral)    |
+| 13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
 | **ID** |                                                              **Descrição**                                                               | **Status** | **Pontos** |
-| :----: | :--------------------------------------------------------------------------------------------------------------------------------------: | :--------: | :--------: |
+| :---- | :-------------------------------------------------------------------------------------------------------------------------------------- | :-------- | :--------: |
 |  #36   |                 [Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)                  |  Fechada   |     8      |
 |  #62   |                [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                |   Aberta   |     13     |
 |  #70   |                        [Definir Pareamento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/70)                         |  Fechada   |     3      |
