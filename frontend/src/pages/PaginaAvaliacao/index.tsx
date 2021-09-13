@@ -30,11 +30,12 @@ export function PaginaAvaliacao(): React.ReactElement {
   const voltar = () => {
     console.log('voltando')
   }
+
   return (
     <Grid>
       <Grid container direction='column' spacing={2}>
         <Grid item>
-          <Header title='testando' />
+          <Header title='Nova avaliação' />
         </Grid>
       </Grid>
 
@@ -47,7 +48,7 @@ export function PaginaAvaliacao(): React.ReactElement {
         >
           <Box mb='30px'>
             <Typography variant='h3' align='center'>
-              Gerar Nova Avaliação
+              Nova Avaliação
             </Typography>
           </Box>
           <Form>

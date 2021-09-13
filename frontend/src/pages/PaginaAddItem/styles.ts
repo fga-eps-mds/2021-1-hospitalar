@@ -27,7 +27,12 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   botaovoltar: {
-    height: '20px',
-    marginTop: '400px',
+    alignItems: 'center',
+    marginTop: '50px',
+  },
+
+  texto_qualificacao: {
+    marginTop: '20px',
+    marginLeft: '20px',
   },
 }))
