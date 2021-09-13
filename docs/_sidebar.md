@@ -53,8 +53,8 @@
       <details>
       <summary> Sprint 00</summary> 
       <ul>
-      <li> <a href="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/sprints/Time_A/sprint0/abertura_sprint0_A.md">Abertura</a> </li>
-      <li> <a href="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/sprints/Time_A/sprint0/fechamento_sprint0_A.md">Fechamento</a></li>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint0/abertura_sprint0_A">Abertura</a> </li>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint0/fechamento_sprint0_A">Fechamento</a></li>
 
       - Sprint 01
         - [Abertura](/sprints/Time_A/sprint1/abertura_sprint1_A)
