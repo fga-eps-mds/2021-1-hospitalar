@@ -1,45 +1,38 @@
-# Fechamento da Sprint (nº)
+# Fechamento da Sprint 5
 
 ## Histórico de revisão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|    13/09/2021   |  0.1 | Criação do documento  | Pedro Caldeira  |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    ...   |  [...]() | ...  | ... |
-
+| #63 |  [Revisão e Continuação do Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/63) | Fechado  | 10 |
+| #64 |  [Modelagem Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/64) | Fechado  | 13 |
+| #65 | [#Parear Desenvolvimento](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/65) | Fechado  | 8 |
+| #68 | [Organizar reunião para separar Features](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68) | Fechado | 8 |
+| #77 | [Modelo de Identidade Visual](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/77) | Fechado | 10 |
+| #84 | [Atualizar documentos de Abertura e Fechamento de Sprints passadas](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/84) | Aberto | 13 |
+| #85 | [Teste do Docker](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88) | Fechado | 8 |
+| #91 | [Análise de documentos do projeto](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/91) | Fechado | 8 |
+| #92 | [Revisão dos documentos do projeto](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/92) | Fechado | 8 |
+| #98 | [Modelo de Identidade Visual (logotipo e melhorias)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/98) | Fechado | 10 |
+| #107 | [Implementar o sistema de login e menu principal](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/107) | Aberto | 13 |
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
-
-## Débitos Técnicos de Sprints Anteriores
-
-- Não houveram débitos técnicos para pagar nesta sprint
-
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
+**Pontuação Total:** 109 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 26 Pontos <br>
+**Pontos Concluídos:** 83 Pontos Concluídos <br>
 
 ## Débitos Técnicos Gerados
 
-- Não foram gerados débitos nesta sprint
-
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
+[#84 Atualizar documentos de Abertura e Fechamento de Sprints passadas](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/84)
+<br>
+[#107 Implementar o sistema de login e menu principal](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/107)
 
 ## Retrospectiva
 
@@ -60,11 +53,11 @@ OU
 
 ## Burndown
 
-Gráfico gerado pelo ZenHub  
+![Burndown](Burndown-sprint-5.png) 
   
 ## Velocity
 
-Gráfico gerado pelo ZenHub  
+![Velocity](Velcity-sprint-5.png)  
   
 ## Práticas ágeis
   
@@ -72,11 +65,11 @@ Gráfico gerado pelo ZenHub
 | :-: | :-: | :-: |
 | 1    | Priorização do Backlog pelo PO | &#10004; |
 | 2    | Desenvolvimento de processos e práticas facilitadas pelo SM | &#10004; |
-| 3    | Reunião de planejamento de Sprint | &#10060; |
-| 4    | Planning Poker | &#10060; |
+| 3    | Reunião de planejamento de Sprint | &#10004; |
+| 4    | Planning Poker | &#10004; |
 | 5    | Comprometimento do time e do PO com o backlog do produto | &#10004; |
 | 6    | Os membros da equipe são voluntários para tarefas | &#10004; |
-| 7    | Restrospectiva da Sprint | &#10060; |
+| 7    | Restrospectiva da Sprint | &#10004; |
 | 8    | Acompanhamento do Velocity | &#10060; |
 | 9    | User Stories | &#10004; |
 | 10 |    Refatorar quando e onde for possível | &#10004; |
@@ -89,8 +82,12 @@ Gráfico gerado pelo ZenHub
 
 | Nome | Github | HTML | Javascript | Metodologia ágeis | Docker | Django | Mongodb |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
-| Pessoa 2 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
+| Pedro Caldeira | &#129001; | &#129000; | &#128999; | &#129001; | &#128999; | &#129000; | &#129000; | 
+| Pedro Vieira | &#129001; | &#129001; | &#128998; | &#129001; | &#128999; | &#129000;| &#129001; | 
+| Gabriel Luiz | &#129001; | &#129001; | &#129000; | &#129001; | &#129001; | &#129000; | &#129001; | 
+| Igor Thiago | &#128999; | &#128999; | &#129001; | &#128999; | &#129001; | &#129001; | &#129001; | 
+| Thiago Vivan | &#128999; | &#128999; | &#129001; | &#128999; | &#129001; | &#129001; | &#129001; | 
+| Bruno | &#128999; | &#129001; | &#129001; | &#128999; | &#129001; | &#129001; | &#129001; |  
 
 
 | Cor | Legenda |
@@ -103,22 +100,20 @@ Gráfico gerado pelo ZenHub
   
 ## Squad Health Check
   
-| Nome | Sprint 1 | Sprint 2 | Sprint 3 |
-| :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128512; | &#128516; | &#128521; |
-| Pessoa 2 | &#128529; | &#129320; | &#128530; |
-| Pessoa 3 | &#128532; | &#128567; | &#129314; |
-| Pessoa 4 | &#129395; | &#128547; | &#129321; |
+| Nome | Sprint 0 | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Pedro Caldeira | &#128521; | &#128529; | &#128554; | &#128521; | &#128529; | &#128521; |
+| Pedro Vieira | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128521; |
+| Gabriel Luiz | &#128521; | &#128529; | &#128521; | &#128521; | &#128521; | &#128521; |
+| Igor Thiago  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; |
+| Thiago Vivan  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; |
+| Bruno  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; |
 
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** |  **Nota** |
-|:-:|:-:|
-|    Descrição do Objetivo   |  (nº) |
-|    Descrição do Objetivo   |  (nº) | 
-|    ...   |  ... |
+| Emote | Significados |
+| :-: | :-: |
+| &#128521; | Alegre/Animado |
+| &#128529; | Indiferente/Neutro |
+| &#128554; | Desanimado/triste |
 
 ## Riscos
 

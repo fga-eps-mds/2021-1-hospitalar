@@ -44,14 +44,20 @@
   
 ## Squad Health Check
   
-| Nome | Sprint 0 | Sprint 1 | Sprint 2 |
-| :-: | :-: | :-: | :-: |
-| Pedro Caldeira | &#128516; | &#129320; | &#128547; |
-| Pedro Vieira | &#128516; | &#129320; | &#128512; |
-| Gabriel Luiz | &#128516; | &#129320; | &#128512; |
-| Igor Thiago  | &#128516; | &#129320; | &#128512; |
-| Thiago Vivan  | &#128516; | &#129320; | &#128512; |
-| Bruno  | &#128516; | &#129320; | &#128512; |
+| Nome | Sprint 0 | Sprint 1 | Sprint 2 | 
+| :-: | :-: | :-: | :-: | 
+| Pedro Caldeira | &#128521; | &#128529; | &#128554; | 
+| Pedro Vieira | &#128521; | &#128529; | &#128529; | 
+| Gabriel Luiz | &#128521; | &#128529; | &#128521; | 
+| Igor Thiago  | &#128521; | &#128529; | &#128521; |
+| Thiago Vivan  | &#128521; | &#128529; | &#128521; | &#128529; |
+| Bruno  | &#128521; | &#128529; | &#128521; | 
+
+| Emote | Significados |
+| :-: | :-: |
+| &#128521; | Alegre/Animado |
+| &#128529; | Indiferente/Neutro |
+| &#128554; | Desanimado/triste |
 
 
 ## Análise pelo Scrum Master

@@ -36,6 +36,5 @@ Sprint 4 com objetivos de treinamento das linguagens e tecnologias que serão us
 - [#63 Revisão e continuação do Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/63)
 - [#64 Modelagem Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/64)
 - [#65 Parear Desenvolvimento](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/65)
-- [#68 Organizar reunião para separar Features](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68)
-- [#77 Modelo de Identidade Visual](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/77)
+
 
