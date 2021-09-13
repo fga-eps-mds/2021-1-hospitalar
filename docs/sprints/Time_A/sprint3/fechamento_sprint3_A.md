@@ -2,10 +2,11 @@
 
 ## Histórico de revisão
 
-|  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**      |
+|  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**    |
 | :--------: | :--------: | :---------------------------------------------------: | :----------------: |
 | 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   Victor Cabral    |
 | 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | @klyssmannoliveira |
+| 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   Victor Cabral    |
 
 ## Backlog da Sprint
 
@@ -40,7 +41,9 @@
 ## Débitos Técnicos Gerados
 
 [#20 Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)
+<br>
 [#23 Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)
+<br>
 [#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
 
 ## Retrospectiva

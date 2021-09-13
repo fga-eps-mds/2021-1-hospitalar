@@ -6,6 +6,7 @@
 | :--------: | :--------: | :---------------------------------------------------: | :----------------: |
 | 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   Victor Cabral    |
 | 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | @klyssmannoliveira |
+| 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   Victor Cabral    |
 
 ## Backlog da Sprint
 
@@ -37,19 +38,29 @@
 ## Débitos Técnicos de Sprints Anteriores
 
 [#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
+<br>
 [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
+<br>
 [#70 Definir Pareamento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/70)
+<br>
 [#72 Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)
+<br>
 [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
+<br>
 [#76 Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)
 
 ## Débitos Técnicos Gerados
 
 [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
+<br>
 [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
+<br>
 [#90 Configurar Ambiente de Desenvolvimento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/90)
+<br>
 [#94 Crud da classe: CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/96)
+<br>
 [#95 Crud da classe: Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/95)
+<br>
 [#96 Crud da classe: Preenchimento do CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/94)
 
 ## Retrospectiva
