@@ -1,11 +1,8 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable @typescript-eslint/no-shadow */
 import { Box, Grid, Typography } from '@material-ui/core'
-import React, { ChangeEvent, useState } from 'react'
+import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { ColetaDados } from '../../components/ColetaDados'
-import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Gerenciamento } from '../../components/Gerenciamento'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
@@ -20,16 +17,13 @@ export function PaginaAddItem(): React.ReactElement {
 
   const classes = useStyles()
 
-  const history = useHistory()
-
-  let nomeDados: string = ''
-
   /**
    * Vai fazer a transição de páginas para a página anterior
    * É necessario inicializar o history.
    */
+  const history = useHistory()
 
-  const termo: number = 10
+  let nomeDados: string = ''
 
   const [digitacaoQualificacao, setDigitacaoQualificacao] = useState('')
   const [digitacaoAvaliacao, setDigitacaoAvaliacao] = useState('')
@@ -192,8 +186,8 @@ export function PaginaAddItem(): React.ReactElement {
           </Grid>
 
           <Grid>
-            {lista.map((lista: ColetaDados, key: number) => (
-              <Gerenciamento key={key} lista={lista} deleteLista={deleteLista} />
+            {lista.map((item: ColetaDados, key: number) => (
+              <Gerenciamento key={key} lista={item} deleteLista={deleteLista} />
             ))}
           </Grid>
         </Grid>

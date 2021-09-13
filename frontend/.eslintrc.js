@@ -17,6 +17,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'no-unused-vars': 'warn',
+    'react/no-array-index-key': 'warn',
     '@typescript-eslint/no-unused-vars': 'off',
     'import/order': 'off',
     'import/prefer-default-export': 'off',

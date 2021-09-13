@@ -1,10 +1,9 @@
 import { Box, Grid, Typography } from '@material-ui/core'
-import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Header } from '../../components/GlobalComponents/Header'
-import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
