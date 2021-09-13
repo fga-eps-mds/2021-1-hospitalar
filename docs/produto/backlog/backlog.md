@@ -2,22 +2,25 @@
 
 ## Histórico de Versão
 
-| Data       | Versão | Modificação                          | Autor                                                    |
-| :--------- | :----- | :----------------------------------- | :------------------------------------------------------- |
-| 22/08/2021 | 0.1    | Primeira Versão do Documento         | @Pedro-V8                                                |
-| 01/09/2021 | 0.2    | Segunda Versão do Documento          | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
-| 01/09/2021 | 0.3    | Segunda Versão do Documento Revisada | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
-| 08/09/2021 | 0.4    | Atualização dos épicos               | @gpersijn, @klyssmannoliveira, @SwampTG, @victordscabral |
+| Data       | Versão | Modificação                                  | Autor                                                    |
+| :--------- | :----- | :------------------------------------------- | :------------------------------------------------------- |
+| 22/08/2021 | 0.1    | Primeira Versão do Documento                 | @Pedro-V8                                                |
+| 01/09/2021 | 0.2    | Segunda Versão do Documento                  | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
+| 01/09/2021 | 0.3    | Segunda Versão do Documento Revisada         | @PedroCassianoMartins, @EduardoGurgel, @jvsdurso         |
+| 08/09/2021 | 0.4    | Atualização dos épicos                       | @gpersijn, @klyssmannoliveira, @SwampTG, @victordscabral |
+| 12/09/2021 | 0.5    | Revisão do documento e melhoria a introdução | @klyssmannoliveira                                       |
 
 ## Sobre o Documento
 
-O documento a seguir contém as histórias dos usuários sobre quais objetivos eles possuem ao entrar no sistema, quais funcionalidades eles desejam que tenha e as principais ações que irão fazer ao longo do Software. Junto a isso estão classifcadas as prioridades de cada enredo, podendo ser Alta, Média ou Baixa.
+O Backlog do Produto é gerenciado pelo Product Owner e contêm os itens ordenados que serão desenvolvidos pelo Time de Desenvolvimento para o produto. Esses itens de trabalho são expressos na forma de necessidades do usuário, objetivos de negócios dos clientes e demais partes interessadas ou funcionalidades do produto. O Backlog do Produto é uma origem única dos requisitos para qualquer mudança a ser feita no produto.
+
+Desta forma, o documento a seguir contém as histórias dos usuários sobre quais objetivos eles possuem ao entrar no sistema, quais funcionalidades eles desejam que tenha e as principais ações que irão fazer ao longo do Software. Junto a isso estão classifcadas as prioridades de cada enredo, podendo ser Alta, Média ou Baixa.
 
 Para entender melhor sobre os casos foi decidido dividir entre dois personagens, são eles:
 
-- Oficial = é o administrador do sistema, onde tem o acesso ao gerenciamento e controle de várias partes do produto.
+- Oficial é o administrador do sistema, onde tem o acesso ao gerenciamento e controle de várias partes do produto.
 
-- Soldado = é o analista do sistema, onde terá que entrar na aplicação para realizar as avaliações.
+- Soldado é o analista do sistema, onde terá que entrar na aplicação para realizar as avaliações.
 
 ## Versão 1
 
@@ -54,11 +57,11 @@ Para entender melhor sobre os casos foi decidido dividir entre dois personagens,
 | Avaliação | H10 | Oficial  | pontuar os itens do checklist                 | compor a nota das áreas                                                                                                | Alta       |
 | Avaliação | H11 | Oficial  | alterar pontuação                             | que possa dar uma pontuação diferente da nota padrão de acordo com o critério do avaliador                             | Baixa      |
 | Avaliação | H12 | Oficial  | gerenciar as avaliações                       | que o controle das avaliações seja possível                                                                            | Média      |
-| Home page | H13 | Oficial  | gerenciar contas                              | que tenha um controle dos soldados                                                                                     | Alta       |
+| Homepage  | H13 | Oficial  | gerenciar contas                              | que tenha um controle dos soldados                                                                                     | Alta       |
 | Hash      | H14 | Oficial  | receber o código da avaliação via _e-mail_    | que consiga pesquisar a avaliação                                                                                      | Baixa      |
 | Hash      | H15 | Oficial  | utilizar o código da avaliação                | que consiga preencher os dados                                                                                         | Alta       |
 | Relatório | H16 | Oficial  | visualizar os gráficos da avaliação           | que possa avaliar e oficializar o documento                                                                            | Média      |
-| Home page | H17 | Oficial  | filtrar avaliações                            | que haja facilidade para encontrar as avaliações, quando necessário                                                    | Média      |
+| Homepage  | H17 | Oficial  | filtrar avaliações                            | que haja facilidade para encontrar as avaliações, quando necessário                                                    | Média      |
 | Relatório | H18 | Oficial  | gerar o relatório                             | que possa entregar ao cliente                                                                                          | Alta       |
 | Login     | H19 | Soldado  | realizar login                                | que tenha acesso ao menu principal                                                                                     | Alta       |
 | Login     | H20 | Soldado  | editar login                                  | que possa realizar modificações no _username_ e na senha, caso os esqueça                                              | Média      |
@@ -68,8 +71,8 @@ Para entender melhor sobre os casos foi decidido dividir entre dois personagens,
 | Avaliação | H24 | Soldado  | adicionar comentários                         | que tenha uma maior clareza da pontuação                                                                               | Média      |
 | Avaliação | H25 | Soldado  | pontuar os itens do checklist                 | compor a nota das áreas                                                                                                | Alta       |
 | Avaliação | H26 | Soldado  | alterar pontuação                             | que possa dar uma pontuação diferente da nota padrão de acordo com o critério do avaliador                             | Baixa      |
-| Home page | H27 | Soldado  | requisitar para o Oficial alterações da conta | que tenha um melhor acesso à conta                                                                                     | Baixa      |
+| Homepage  | H27 | Soldado  | requisitar para o Oficial alterações da conta | que tenha um melhor acesso à conta                                                                                     | Baixa      |
 | Hash      | H28 | Soldado  | receber o código da avaliação via _e-mail_    | que tenha acesso à avaliação                                                                                           | Baixa      |
 | Relatório | H29 | Soldado  | gerar o relatório                             | que possa entregar ao cliente                                                                                          | Alta       |
-| Home page | H30 | Soldado  | filtrar avaliações                            | que haja facilidade para encontrar as avaliações, quando necessário                                                    | Média      |
+| Homepage  | H30 | Soldado  | filtrar avaliações                            | que haja facilidade para encontrar as avaliações, quando necessário                                                    | Média      |
 | Avaliação | H31 | Soldado  | status da avaliação                           | que seja evidenciado a falta, ou não, do comentário do paciente com avaliação "não conforme" e "parcialmente conforme" | Baixa      |
