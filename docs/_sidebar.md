@@ -47,56 +47,111 @@
 ---
 
 - Sprints
+
   <details>
     <summary> Time A</summary>
-    <br>
       <details>
       <summary> Sprint 00</summary> 
       <ul>
       <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint0/abertura_sprint0_A">Abertura</a> </li>
       <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint0/fechamento_sprint0_A">Fechamento</a></li>
-
-      - Sprint 01
-        - [Abertura](/sprints/Time_A/sprint1/abertura_sprint1_A)
-        - [Fechamento](/sprints/Time_A/sprint1/fechamento_sprint1_A)
-      - Sprint 02
-        - [Abertura](/sprints/Time_A/sprint2/abertura_sprint2_A)
-        - [Fechamento](/sprints/Time_A/sprint2/fechamento_sprint2_A)
-      - Sprint 03
-        - [Abertura](/sprints/Time_A/sprint3/abertura_sprint3_A)
-        - [Fechamento](/sprints/Time_A/sprint3/fechamento_sprint3_A)
-      - Sprint 04
-        - [Abertura](/sprints/Time_A/sprint4/abertura_sprint4_A)
-        - [Fechamento](/sprints/Time_A/sprint4/fechamento_sprint4_A)
-      - Sprint 05
-        - [Abertura](/sprints/Time_A/sprint5/abertura_sprint5_A)
-        - [Fechamento](/sprints/Time_A/sprint5/fechamento_sprint5_A)
-      - Sprint 06
-        - [Abertura](/sprints/Time_A/sprint6/abertura_sprint6_A)
       </ul>
-
+      </details>
+      <details>
+      <summary>Sprint 01 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint1/fechamento_sprint1_A">Abertura</a></li> 
+      <li><a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint1/fechamento_sprint1_A">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 02 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint2/abertura_sprint2_A">Abertura</a></li> 
+      <li><a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint2/fechamento_sprint2_A">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 03 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint3/abertura_sprint3_A">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint3/fechamento_sprint3_A">Fechamento</a></li>
+       </ul>
+      </details>
+      <details>
+      <summary>Sprint 04 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint4/abertura_sprint4_A">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint4/fechamento_sprint4_A">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 05 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint5/abertura_sprint5_A">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint5/fechamento_sprint5_A">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 06 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_A/sprint6/abertura_sprint6_A">Abertura</a></li> 
+      </ul>
+      </details>
     </details>
-    </details>
-    - Time B
-      - Sprint 00
-        - [Abertura](/sprints/Time_B/sprint0/abertura_sprint0)
-        - [Fechamento](/sprints/Time_B/sprint0/sprint0_fechamento)
-      - Sprint 01
-        - [Abertura](/sprints/Time_B/sprint1/abertura_sprint1)
-        - [Fechamento](/sprints/Time_B/sprint1/sprint1_fechamento)
-      - Sprint 02
-        - [Abertura](/sprints/Time_B/sprint2/abertura_sprint2)
-        - [Fechamento](/sprints/Time_B/sprint2/sprint2_fechamento)
-      - Sprint 03
-        - [Abertura](/sprints/Time_B/sprint3/sprint3_abertura)
-        - [Fechamento](/sprints/Time_B/sprint3/sprint3_fechamento)
-      - Sprint 04
-        - [Abertura](/sprints/Time_B/sprint4/sprint4_abertura)
-        - [Fechamento](/sprints/Time_B/sprint4/sprint4_fechamento)
-      - Sprint 05
-        - [Abertura](/sprints/Time_B/sprint5/abertura_sprint5)
 
-  - Time C
-    - Sprint 05
-      - [Abertura](/sprints/Time_C/sprint4/abertura_sprint5)
-      - [Fechamento](/sprints/Time_C/sprint4/fechamento_sprint5)
+    <details>
+    <summary> Time B</summary>
+     <details>
+      <summary>Sprint 00 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint0/abertura_sprint0">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint0/sprint0_fechamento">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 01 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint1/abertura_sprint1">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint1/sprint1_fechamento">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 02 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint2/abertura_sprint2">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint2/sprint2_fechamento">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 03 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint3/sprint3_abertura">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint3/sprint3_fechamento">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 04 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint4/sprint4_abertura">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint4/sprint4_fechamento">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 05 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint5/abertura_sprint5">Abertura</a></li> 
+      </ul>
+      </details>
+      </details>
+
+  <details>
+    <summary> Time C</summary>
+    <details>
+    <summary>Sprint 05 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/abertura_sprint5">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/fechamento_sprint5">Fechamento</a></li>
+      </ul>
+      </details>
+  </details>
