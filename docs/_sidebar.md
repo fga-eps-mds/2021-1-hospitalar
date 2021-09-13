@@ -21,6 +21,7 @@
   - [Documento de Visão](/produto/Visao/Visao)
   - [Backlog do Produto](/produto/backlog/backlog)
   - [Arquitetura](/produto/Arquitetura/Arquitetura)
+  - [Identidade Visual](/produto/Identidade_Visual/IdentidadeVisual)
 
 ---
 
