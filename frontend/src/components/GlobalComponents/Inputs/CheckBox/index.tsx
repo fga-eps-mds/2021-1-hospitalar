@@ -1,8 +1,9 @@
 import {
-  Checkbox as MuiCheckBox,
-  FormControlLabel,
   CheckboxProps,
+  FormControlLabel,
+  Checkbox as MuiCheckBox,
 } from '@material-ui/core'
+
 import React from 'react'
 
 type Props = CheckboxProps & {
@@ -13,7 +14,13 @@ type Props = CheckboxProps & {
   onChange: (e: React.ChangeEvent<HTMLInputElement>, checked?: boolean) => void
 }
 
-export const CheckBox: React.FC<Props> = ({ name, label, value, color, onChange }) => {
+export function CheckBox({
+  name,
+  label,
+  value,
+  color,
+  onChange,
+}: Props): React.ReactElement {
   return (
     <FormControlLabel
       control={

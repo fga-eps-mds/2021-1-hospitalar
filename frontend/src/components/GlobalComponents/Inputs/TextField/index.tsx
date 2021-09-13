@@ -1,5 +1,6 @@
-import React from 'react'
 import { TextField as MuiTextField, TextFieldProps } from '@material-ui/core'
+
+import React from 'react'
 
 type Props = TextFieldProps & {
   name: string
@@ -9,14 +10,14 @@ type Props = TextFieldProps & {
   onChange: (e: React.ChangeEvent<HTMLInputElement>, checked?: boolean) => void
 }
 
-export const TextField: React.FC<Props> = ({
+export function TextField({
   name,
   label,
   value,
   color,
   onChange,
   ...rest
-}) => {
+}: Props): React.ReactElement {
   return (
     <MuiTextField
       name={name}

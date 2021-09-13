@@ -4,7 +4,7 @@
 
 |    Data    | Versão |                Modificação                |       Autor        |
 | :--------: | :----: | :---------------------------------------: | :----------------: |
-| 16/08/2021 |  0.1   | Criação do documentoe elaboração do texto |  @victordscabral   |
+| 16/08/2021 |  0.1   | Criação do documento e elaboração do texto |  @victordscabral   |
 | 07/09/2021 |  0.2   |            Revisão e correção             | @klyssmannoliveira |
 
 ## Introdução

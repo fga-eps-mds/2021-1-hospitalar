@@ -14,7 +14,9 @@
 |  1.5.2 |  02/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Atualização da Visão Lógica e adições neste tópico |
 |  1.6 |  04/09/2021 | [Pedro Helias](https://github.com/pedrohelias), [Magno Luiz](https://github.com/magnluiz)|  Finalização do documento - primeira versão - com adições extras|
 |  1.6.1 |  04/09/2021 | [Gabriel Luiz](https://github.com/ggomesbr) | Adição do diagrama de casos de uso e ajustes no histórico de versões.|
-
+|  1.7 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção de alguns pontos|
+|  1.7.1 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção em diagramas|
+|  1.8 |  13/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Adição de diagrama unificado |
 
 
 ## Sumário
@@ -89,7 +91,7 @@ Visão lógica | Descreve as partes significativas relacionadas ao ponto de vist
 
 ###  2.1 Diagrama de Relações
 
-![Diagrama de relações](https://i.imgur.com/q5DgXKp.png)
+![Diagrama de relações](https://i.imgur.com/WFVv64X.png)
 
 ###  2.2 Representação dos Serviços
 
@@ -133,8 +135,6 @@ A imagem acima é um levantamento feito pelo StackOverflow a respeito das lingua
 <a href="https://imgur.com/929abGB"><img src="https://i.imgur.com/929abGB.png" title="source: imgur.com" /></a>
 >Fonte: CodersRank.io
 
-Foi a linguagem de programação escolhida para o projeto devido a aplicação, se encaixa perfeitamente num dos requisitos propostos, relacionado a ser uma aplicação web; e possui vasto material de apoio - sua popularidade promove seu desenvolvimento. Além do retorno educacional, como uma linguagem escolhida para desenvolver as skills em programação voltada a WEB.
- 
  #### 2.3.5 React.js
  
 O React é uma biblioteca da linguagem JavaScript, focada em desenvolver e criar interfaces de usuários em páginas WEB. A Tecnologia foi desenvolvida e é mantida pelo Facebook, e possui um estado de desenvolvimento recorrente. Atua no modelo de código aberto, é aplicável para qualquer usuário que deseja utilizá-la.
@@ -142,6 +142,13 @@ O React é uma biblioteca da linguagem JavaScript, focada em desenvolver e criar
 Foi o Framework para o FrontEnd escolhido para o projeto pois: engloba conceitos de HTML e CSS, utilizados para desenvolvimento WEB e, de certa forma, facilita bastante o desenvolvimento de um projeto em FrontEnd; é escrita em JavaScript; além do recurso educacional citado anteriormente, visto que é um Framework bastante popular e amplamente utilizado e requerido no mercado.
 
 Apesar de ser voltado para WEB, o React possui uma alternativa para o desenvolvimento Mobile: o React Native. Essa plataforma consegue desenvolver Android e iOS de forma nativa.
+
+ #### 2.3.6 Typescript
+
+O Typescript está ligado a área de desenvolvimento, principalmente ao Desenvolvimento Web, apesar de que pode ser utilizado no Back-End juntamente ao Node.js. É uma linguagem adaptada do JavaScript, porém com maior solidez e com possibilidade de Orientação a Objetos, com suporte para Encapsulamento, Herança, Abstração e Polimorfismo. O diferencial do Typescript se encontra no fato de ser uma linguagem tipada, ou seja, há suporte de tipos para as variáveis, indo desde "boolean", "number", até "string". Um suporte interessante é o "any", utilizado quando no momento do desenvolvimento não é possível determinar o tipo da variável.   
+
+Foi a linguagem de programação escolhida para o projeto devido a aplicação, se encaixa perfeitamente num dos requisitos propostos, relacionado a ser uma aplicação web; e possui vasto material de apoio - sua popularidade promove seu desenvolvimento. Além do retorno educacional, como uma linguagem escolhida para desenvolver as skills em programação voltada a WEB.
+ 
 
 ## 3. Metas e Restrições da Arquitetura
 ### 3.1 Metas
@@ -241,3 +248,6 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
  - Diagrama de Classe - Banco de Dados
 ![diagramaClasses_TimeA](https://user-images.githubusercontent.com/51385738/131055637-2dcb3541-b6db-404a-aa95-6b0b65033fa3.jpg)
+
+### 5.3.3 Diagrama unificado
+<img src="https://i.imgur.com/MVTGUUB.png" width="1300" height="900" />

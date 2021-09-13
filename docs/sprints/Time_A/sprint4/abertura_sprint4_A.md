@@ -28,13 +28,15 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#23 Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)
 <br>
+[#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
+<br>
 [#56 Redação do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)
 <br>
 [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
 <br>
-[#68 Organizar reunião para separar Features - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68)
-<br>
 [#67 União da Implementação do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/67)
+<br>
+[#68 Organizar reunião para separar Features - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68)
 <br>
 [#69 Modelagem do Banco de Dados - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/69)
 <br>
@@ -44,20 +46,22 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#72 Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)
 <br>
+[#73 Correção e revisão do Documento de Metodologia - Time A ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/73)
+<br>
 [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
 <br>
 [#75 Dojo de MongoDB - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/75)
 <br>
 [#76 Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)
 <br>
-[#73 Correção e revisão do Documento de Metodologia - Time A ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/73)
-<br>
 [#77 Modelo de Identidade Visual - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/77)
 <br>
 
 ## Débito Técnico Adicionado
 
+- [#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
 - [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
-- [#67 União da Implementação do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/67)
+- [#70 Definir Pareamento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/70)
+- [#72 Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)
 - [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
 - [#76 Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)
