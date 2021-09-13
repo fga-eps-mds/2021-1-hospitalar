@@ -16,6 +16,7 @@
 |  1.6.1 |  04/09/2021 | [Gabriel Luiz](https://github.com/ggomesbr) | Adição do diagrama de casos de uso e ajustes no histórico de versões.|
 |  1.7 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção de alguns pontos|
 |  1.7.1 |  09/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Correção em diagramas|
+|  1.8 |  13/09/2021 | [Pedro Helias](https://github.com/pedrohelias) |  Adição de diagrama unificado |
 
 
 ## Sumário
@@ -247,3 +248,6 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
  - Diagrama de Classe - Banco de Dados
 ![diagramaClasses_TimeA](https://user-images.githubusercontent.com/51385738/131055637-2dcb3541-b6db-404a-aa95-6b0b65033fa3.jpg)
+
+### 5.3.3 Diagrama unificado
+<img src="https://i.imgur.com/MVTGUUB.png" width="1300" height="900" />
