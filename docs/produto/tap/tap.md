@@ -2,10 +2,11 @@
 
 ## Histórico de versões
 
-|    Data    | Versão |            Modificação             |                      Autor                      |
-| :--------: | :----: | :--------------------------------: | :---------------------------------------------: |
-| 16/08/2021 |  0.1   | Documento elaborado no google docs | @klyssmannoliveira, @victordscabral e @gpersijn |
-| 07/09/2021 |  0.2   |         Revisão e correção         |               @klyssmannoliveira                |
+|    Data    | Versão |                           Modificação                            |                      Autor                      |
+| :--------: | :----: | :--------------------------------------------------------------: | :---------------------------------------------: |
+| 16/08/2021 |  0.1   |                Documento elaborado no google docs                | @klyssmannoliveira, @victordscabral e @gpersijn |
+| 07/09/2021 |  0.2   |                        Revisão e correção                        |               @klyssmannoliveira                |
+| 12/09/2021 |  0.3   | Revisão e correção do documento em função da atualização do nome |               @klyssmannoliveira                |
 
 ## 1. Introdução
 
@@ -14,7 +15,7 @@ Além disso, apresenta uma visão inicial do projeto de certificação hospitala
 
 ## 2. Descrição
 
-A FAM (Ferramenta de Acreditação Militar) tem como principal intuito auxiliar a avaliação de acreditação da saúde
+A FAMil (Ferramenta de Acreditação Militar) tem como principal intuito auxiliar a avaliação de acreditação da saúde
 assistencial militar. Desta forma, o projeto consiste em uma página na web que reunirá todas
 as informações e análises dos avaliadores, bem como a apresentação dos resultados da avaliação
 hospitalar. Preliminarmente, o site desprende-se de uma tela de login para os avaliadores,
@@ -72,11 +73,11 @@ Estão entre os requisitos de alto nível:
 
 ### 7.1 Custo de aquisição
 
-| **Equipamento**  | **Quantidade**                 | **Finalidade**                 | **Valor unitário** | **Preço** |
-| ---------------- | ------------------------------ | ------------------------------ | ------------------ | --------- |
-| Notebooks        | 19 unidades                    | Desenvolvimento e planejamento | R$ 3.000           |           |
-| Energia elétrica | 5 horas por semana cada membro | Desenvolvimento e planejamento | 0,728 \* R$/KWh    | R$ 107,89 |
-| Internet         | 3 meses                        | Desenvolvimento e planejamento | R$ 100 \*\*        | R$ 300    |
+| **Equipamento**  | **Quantidade**                 | **Finalidade**                 | **Valor unitário** | **Preço**    |
+| ---------------- | ------------------------------ | ------------------------------ | ------------------ | ------------ |
+| Notebooks        | 19 unidades                    | Desenvolvimento e planejamento | R$ 3.000           | R$ 57.000,00 |
+| Energia elétrica | 5 horas por semana cada membro | Desenvolvimento e planejamento | 0,728 \* R$/KWh    | R$ 107,89    |
+| Internet         | 3 meses                        | Desenvolvimento e planejamento | R$ 100 \*\*        | R$ 300       |
 
 \* Fonte: http://www.aneel.gov.br/ranking-das-tarifas, acesso: 07/08/2021 <br>
 \*\* Valor médio de um plano de internet na região do DF
@@ -97,7 +98,7 @@ Estão entre os requisitos de alto nível:
 
 | **Custo**   | **Valor total** |
 | ----------- | --------------- |
-| Aquisição   | R$ 57407,89     |
+| Aquisição   | R$ 57.407,89    |
 | Ferramentas | R$0             |
 
 ## 8. Partes Interessadas
@@ -113,30 +114,31 @@ São aqueles que terão as suas dependências hospitalares avaliadas durante o p
 ### 8.3. Equipe
 
 A equipe é composta por graduandos dos cursos de Engenharia de Produto de Software - Metodologias de Desenvolvimento de Software - MDS
-| **Nome** | **Papel** | **Email** |
-|:-:|:-:|:-:|
-| ------ | Time A | ------ |
-| Klyssmann Henrique Ferreira de Oliveira | Product Owner | klyssmannoliveira@gmail.com |
-| Victor de Souza Cabral | Scrum Master | victorcabral2501@gmail.com |
-| Pedro Helias Carlos | Arquiteto | pedrohelias95@hotmail.com |
-| Eduardo Gurgel Pereira de Carvalho | DevOps | eduardo-gurgel@hotmail.com |
-| Pedro Lucas Cassiano Martins | Tecnologia | pcassianomartins@gmail.com
-| João Vitor de Souza Durco | Tecnologia | joaodurco@gmail.com|
-| ------ | Time B | ------ |
-| Gustave Augusto Persijn | Product Owner | gpersijn@outlook.com |
-| Adrian Soares Lopes | Scrum Master | adriansoareslps@gmail.com |
-| Magno Luiz Vale Vieira | Arquiteto | magnluiz@gmail.com |
-| Ricardo de Castro Loureiro | DevOps | ricardoloureiro75@gmail.com |
-| Augusto Durães Camargo | Tecnologia | augusto.duraes33@gmail.com |
-| Eduardo Rodrigues de Farias | Tecnologia | eduardo.rfarias@outlook.com |
-| Daniel Vinicius Ribeiro Alves | Tecnologia | danielribeiroalves0@gmail.com |
-| ------ | Time C | ------ |
-| Pedro Henrique Caldeira de Moraes | Product Owner | phcmoraes39@gmail.com |
-| Pedro Henrique de Deus Vieira | Scrum Master | pedrophdv@outlook.com |
-| Gabriel Luiz de Souza Gomes | Arquiteto | gabriel.luiz77888@gmail.com |
-| Thiago Vivan Bastos | DevOps | thiago-vivanfsa@hotmail.com |
-| Igor Thiago Lima de Santana | Tecnologia | igortls20@gmail.com |
-| Bruno Oliveira Lima | Tecnologia | ratesnegro@gmail.com |
+
+|                **Nome**                 |   **Papel**   |           **Email**           |
+| :-------------------------------------: | :-----------: | :---------------------------: |
+|                 ------                  |    Time A     |            ------             |
+| Klyssmann Henrique Ferreira de Oliveira | Product Owner |  klyssmannoliveira@gmail.com  |
+|         Victor de Souza Cabral          | Scrum Master  |  victorcabral2501@gmail.com   |
+|           Pedro Helias Carlos           |   Arquiteto   |   pedrohelias95@hotmail.com   |
+|   Eduardo Gurgel Pereira de Carvalho    |    DevOps     |  eduardo-gurgel@hotmail.com   |
+|      Pedro Lucas Cassiano Martins       |  Tecnologia   |  pcassianomartins@gmail.com   |
+|        João Vitor de Souza Durco        |  Tecnologia   |      joaodurco@gmail.com      |
+|                 ------                  |    Time B     |            ------             |
+|         Gustave Augusto Persijn         | Product Owner |     gpersijn@outlook.com      |
+|           Adrian Soares Lopes           | Scrum Master  |   adriansoareslps@gmail.com   |
+|         Magno Luiz Vale Vieira          |   Arquiteto   |      magnluiz@gmail.com       |
+|       Ricardo de Castro Loureiro        |    DevOps     |  ricardoloureiro75@gmail.com  |
+|         Augusto Durães Camargo          |  Tecnologia   |  augusto.duraes33@gmail.com   |
+|       Eduardo Rodrigues de Farias       |  Tecnologia   |  eduardo.rfarias@outlook.com  |
+|      Daniel Vinicius Ribeiro Alves      |  Tecnologia   | danielribeiroalves0@gmail.com |
+|                 ------                  |    Time C     |            ------             |
+|    Pedro Henrique Caldeira de Moraes    | Product Owner |     phcmoraes39@gmail.com     |
+|      Pedro Henrique de Deus Vieira      | Scrum Master  |     pedrophdv@outlook.com     |
+|       Gabriel Luiz de Souza Gomes       |   Arquiteto   |  gabriel.luiz77888@gmail.com  |
+|           Thiago Vivan Bastos           |    DevOps     |  thiago-vivanfsa@hotmail.com  |
+|       Igor Thiago Lima de Santana       |  Tecnologia   |      igortls20@gmail.com      |
+|           Bruno Oliveira Lima           |  Tecnologia   |     ratesnegro@gmail.com      |
 
 ## 9. Referências
 
