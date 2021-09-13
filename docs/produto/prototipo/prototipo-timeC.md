@@ -3,10 +3,10 @@
 
 
 ### Histórico de versão
-| Data| Versão| Descrição  | Autor  |
+| Data| Versão| Modificação  | Autor  |
 | :---: | :---: | :---: | :---: |
-| 24/08 | 1.0 | Editar avaliação, Inserir Checklist | Pedro Vieira e Pedro Caldeira  |
-
+| 24/08 | 0.1 | Editar avaliação, Inserir Checklist | [@Pedro-V8](https://github.com/Pedro-V8) e [@PedroMoraes39](https://github.com/PedroMoraes39)  |
+| 13/09/2021 | 1.0    | Revisão do documento | [@victordscabral](https://github.com/victordscabral) |
 
 ### Tela de Login
 ![Tela-Login](https://i.imgur.com/LbgkpZI.png)

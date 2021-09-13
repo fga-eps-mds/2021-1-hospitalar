@@ -1,10 +1,19 @@
 # Manual de Identidade Visual
+
+## Histórico de versão
+
+| Data | Versão | Modificação | Autor |
+| :- | :- | :- | :- |
+| 02/09/2021 | 0.1 | Primeira Versão do Documento | [@Pedro-V8](https://github.com/Pedro-V8) |
+| 08/09/2021 | 0.2 | Correção de erros na redação | [@Pedro-V8](https://github.com/Pedro-V8) |
+| 08/09/2021 | 0.3 |  Alteração do tamanho da imagem | [@Pedro-V8](https://github.com/Pedro-V8) |
+| 13/09/2021 | 1.1 | Alteração em títulos e histórico de versão | [@victordscabral](https://github.com/victordscabral) |
+
 ## 1. Introdução
+
 ### Logo
 
 O logotipo foi feito com uma mistura da imagem de uma patente do exército com a substituição da estrela por uma caixa de checklist. 
-
-
 
 ![Logotipo](https://raw.githubusercontent.com/fga-eps-mds/2021-1-hospitalar/main/assets/logo-2021.jpg)
 
