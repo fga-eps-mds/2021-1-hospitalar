@@ -103,7 +103,7 @@ Desenvolvedor: amarelo #
   <tr>
       <th>Arquitetos</th>
       <th>Devops</th>
-      <th>Product Owenrs</th>
+      <th>Product Owners</th>
       <th>Scrum Masters</th>
       <th colspan="3">Desenvolvedores</th>
   </tr> 
