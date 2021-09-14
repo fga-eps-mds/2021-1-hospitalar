@@ -21,6 +21,7 @@
 | 09/09/2021 | 1.1.1 | Correção em diagramas | [@pedrohelias](https://github.com/pedrohelias) |
 | 13/09/2021 | 1.2 | Adição de diagrama unificado | [@pedrohelias](https://github.com/pedrohelias) |
 | 13/09/2021 | 1.3 | Alteração em títulos e histórico de versão | [@victordscabral](https://github.com/victordscabral) |
+| 14/09/2021 | 1.4 | Adição de nova versão de diagrama unificado | [@pedrohelias](https://github.com/pedrohelias) |
 
 ## Sumário
 1.  **Introdução**
@@ -253,4 +254,5 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 ![diagramaClasses_TimeA](https://user-images.githubusercontent.com/51385738/131055637-2dcb3541-b6db-404a-aa95-6b0b65033fa3.jpg)
 
 ### 5.3.3 Diagrama unificado
-<img src="https://i.imgur.com/MVTGUUB.png" width="1300" height="900" />
+![diagramaClassesUnificado](https://i.imgur.com/lMuIlbD.png)
+
