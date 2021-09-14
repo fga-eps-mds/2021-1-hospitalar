@@ -4,7 +4,8 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    09/09/2021   |  0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
+|    09/09/2021   |  0.0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  0.1 | Adição do Knowledge e HealthCheck  | [@SwampTG](https://github.com/SwampTG) |
 
 ## Backlog da Sprint
 
