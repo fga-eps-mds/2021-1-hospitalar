@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-<<<<<<< Updated upstream
+
   client:
         build:
             context: ./frontend
@@ -14,8 +14,7 @@ services:
             - /app/node_modules
         networks:
             - frontend
-=======
->>>>>>> Stashed changes
+
   web:
     build: .
     volumes:
@@ -29,7 +28,7 @@ services:
 
   mongo:
     image: mongo
-<<<<<<< Updated upstream
+
     container_name: mongo
     restart: always
     environment:
@@ -59,7 +58,7 @@ services:
     
 
 
-=======
+
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
@@ -69,4 +68,4 @@ services:
     ports:
         - "27017:27017"
     
->>>>>>> Stashed changes
+
