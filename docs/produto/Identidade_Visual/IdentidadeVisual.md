@@ -15,7 +15,7 @@
 
 No início do projeto a equipe veio tentando formular alguma ideia de logotipo que pudesse indicar um ambiente hospitalar dentro do sistema militar. Pesquisando mais afundo, conseguimos concluir que as patentes das posições hierárquicas eram uma boa forma de mostrar que o produto iria ser referente ao sistema militar, visto que muitas pessoas já  as viram em algum momento, sendo assim de fácil reconhecimento. Logo após isso, precisávamos referenciar também o ambiente hospitalar, já que o produto iria atender aos profissionais que estão constantemente nesse meio também. Decidimos então formatar a patente para que no topo, ao invés de ter uma estrela, fosse colocada uma caixa de seleção com uma marcação de "Ok", para indicar uma das principais atividades exercidas, o checklist. Essas foram as decisões do time para que então chegasse no resultado apresentado abaixo.
 
-![Logotipo](https://raw.githubusercontent.com/fga-eps-mds/2021-1-hospitalar/main/assets/logo-2021.jpg)
+![Logotipo](https://raw.githubusercontent.com/fga-eps-mds/2021-1-hospitalar/main/docs/assets/logo-2021.jpg)
 
 
 # Nome do Projeto

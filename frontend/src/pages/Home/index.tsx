@@ -25,6 +25,11 @@ export function Home(): React.ReactElement {
       <Grid item>
         <Button onClick={() => history.push('relatorio')}>Página gerar relatorio</Button>
       </Grid>
+      <Grid item>
+        <Button onClick={() => history.push('NovaAvaliacao')}>
+          Página nova avaliação
+        </Button>
+      </Grid>
     </Grid>
   )
 }

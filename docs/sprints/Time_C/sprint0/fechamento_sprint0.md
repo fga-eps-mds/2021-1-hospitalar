@@ -1,4 +1,4 @@
-# Fechamento da Sprint (nº)
+# Fechamento da Sprint 0
 
 ## Backlog da Sprint 
 

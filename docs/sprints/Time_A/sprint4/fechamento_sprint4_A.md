@@ -93,7 +93,7 @@
 
 ## Práticas ágeis
 
-| ID  |                        Nome de prática ágil                        | Sprint nº |
+| ID  |                        Nome de prática ágil                        | Sprint 04 |
 | :-: | :----------------------------------------------------------------: | :-------: |
 |  1  |                   Priorização do Backlog pelo PO                   | &#10004;  |
 |  2  |    Desenvolvimento de processos e práticas facilitadas pelo SM     | &#10004;  |

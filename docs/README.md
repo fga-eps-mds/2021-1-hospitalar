@@ -10,7 +10,7 @@
 </div>
 
 <p align="center">
-   <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/assets/logo-2021.jpg?raw=true"></img>
+   <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/logo-2021.jpg?raw=true"></img>
 </p>
 
 <br/>
