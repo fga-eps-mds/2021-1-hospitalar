@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'rest_framework'
+    'rest_framework',
+    'models.geracaoPdf',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'projeto-hospitalar'
+        'NAME': 'projeto-hospitalar',
     }
 }
 
