@@ -5,4 +5,4 @@ from .models import GeracaoPdf
 class GeracaoPdfSerializer(serializers.ModelSerializer):
     class Meta:
         model = GeracaoPdf
-        fields = ('id', 'infosPdf', 'cabecalhoPdf', 'textoEntradaPdf')
+        fields = ()
