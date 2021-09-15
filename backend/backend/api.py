@@ -1,5 +1,8 @@
 from rest_framework import routers
+<<<<<<< HEAD
 from models.geracaoPdf.views import GeracaoPdfView
+=======
+>>>>>>> 7ab23904b053c5a0ad6f68b4925b44ce42f7da8a
 from models.avaliacao import views as AvaliacaoViews
 
 
@@ -18,6 +21,8 @@ def create_api():
 =======
 
 >>>>>>> #59 - Conclusão-da-primeira-classe
+    router.register(r'avaliacao', AvaliacaoViews.AvaliacaoView)
+
     router.register(r'avaliacao', AvaliacaoViews.AvaliacaoView)
 
     return router

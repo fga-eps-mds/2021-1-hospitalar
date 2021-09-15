@@ -46,7 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+<<<<<<< HEAD
     'models.geracaoPdf',
+=======
+>>>>>>> 7ab23904b053c5a0ad6f68b4925b44ce42f7da8a
     'models.avaliacao'
 ]
 
