@@ -1,3 +1,4 @@
+from backend.models.checklistAvaliacao.views import AvaliacaoView
 from rest_framework import routers
 from models.geracaoPdf.views import GeracaoPdfView
 '''
@@ -11,5 +12,6 @@ from models.geracaoPdf.views import GeracaoPdfView
 
 def create_api():
     router = routers.DefaultRouter()
-    router.register(r'geracao', GeracaoPdfView, 'geracaoPdf')
+    router.register(r'geracao', GeracaoPdfView)
+    router.register(r'checklist', AvaliacaoView)
     return router

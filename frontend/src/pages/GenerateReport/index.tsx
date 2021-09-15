@@ -4,9 +4,13 @@ import React, { useState } from 'react'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
-import axios from 'axios'
+import { generatePDF } from '../../api'
 import { useStyles } from './styles'
 
+/**
+ * A tela foi baseada no protótipo da página de gerar relatório, mas toda a lógica atual é para testes
+ * @returns React.ReactElement
+ */
 export function GenerateReport(): React.ReactElement {
   const classes = useStyles()
 
@@ -34,22 +38,7 @@ export function GenerateReport(): React.ReactElement {
   }
 
   const handleSubmit = () => {
-    // eslint-disable-next-line no-console
-    axios({
-      url: 'http://localhost:8000/api/geracao/generatePDF/',
-      method: 'GET',
-      responseType: 'blob', // important
-    })
-      .then((response) => {
-        const url = window.URL.createObjectURL(new Blob([response.data]))
-        const link = document.createElement('a')
-        link.href = url
-        link.setAttribute('download', 'file.pdf')
-        document.body.appendChild(link)
-        link.click()
-      })
-      // eslint-disable-next-line no-console
-      .catch(console.log)
+    generatePDF(selectedHospitalName)
   }
 
   const generateForm = () => (

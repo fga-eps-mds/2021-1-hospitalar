@@ -1,19 +1,13 @@
-import { Box, Grid, Typography } from '@material-ui/core'
-import React, { useState } from 'react'
-
 import { Button } from '../GlobalComponents/Inputs/Button'
-import { ColetaDados } from '../ColetaDados'
-import { useHistory } from 'react-router-dom'
-import { useStyles } from './styles'
+import { ColetaDados } from '../../pages/PaginaAddItem'
+import React from 'react'
 
-interface Props {
+type Props = {
   lista: ColetaDados
   deleteLista(variavel: string): void
 }
 
-export const Gerenciamento = ({ lista, deleteLista }: Props) => {
-  const history = useHistory()
-
+export function Gerenciamento({ lista, deleteLista }: Props): React.ReactElement {
   return (
     <div className='teste'>
       <div>
@@ -50,5 +44,3 @@ export const Gerenciamento = ({ lista, deleteLista }: Props) => {
     </div>
   )
 }
-
-export default Gerenciamento

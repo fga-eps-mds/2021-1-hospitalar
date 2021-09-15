@@ -1,5 +1,8 @@
 import { makeStyles } from '@material-ui/core'
 
+/**
+ * Utilizo do tema para atribuir as cores corretas
+ */
 export const useStyles = makeStyles((theme) => ({
   title: {
     borderStyle: 'solid',
