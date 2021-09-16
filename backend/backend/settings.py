@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'models.Secao'
+    'models.Secao',
+    'models.Configuracao'
 ]
 
 MIDDLEWARE = [
