@@ -29,7 +29,7 @@ export const api = axios.create({
  */
 export const generatePDF = (hospitalName: string) => {
   axios({
-    url: 'http://localhost:8000/api/geracao/generatePDF/',
+    url: 'http://localhost:8000/api/secao/generatePDF/ ',
     method: 'GET',
     responseType: 'blob',
   })
