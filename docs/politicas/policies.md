@@ -165,7 +165,7 @@ A remoção será feita logo após um PR revisado, aceito e já fundido na branc
 
 Acesse a lista completa de branches do repositório:
 
-![branch_list_delete_1](/assets/politicas/branch_list_delete_1.png "branch_list_delete_1")
+![branch_list_delete_1](/docs/assets/politicas/branch_list_delete_1.png)
 
 Certifique-se que a branch já foi unida a main e clique no símbolo de lixo:
 
