@@ -6,6 +6,7 @@
 |:-|:-|:-|:-|
 |    24/08/2021   |  0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
 |    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint 
 
@@ -74,25 +75,25 @@ OU-->
 
 ## Burndown
 
-![burn](burndown3.png)
+![burn](/docs/assets/sprints/time_b/sprint_3/burndown_sprint_3.png)
 
  Podemos observar a demora no fechamento das sprints, mesmo quando já estavam finalizadas, Kanban deve ser melhor utilizado e melhorado para melhor compreensão do time.
   
 ## Velocity
 
-![velocity](velocity3.png) 
+![velocity](/docs/assets/sprints/time_b/sprint_3/velocity_sprint_3.png) 
 
 A média. Acredito que ainda não seja um valor confiável devido ao início da disciplina, com menos issues e menor entendimento das práticas.
 
 ## Cumulative Flow
 
-![cumuflow](cumu_flow3.png  "CumuFlow")
+![cumuflow](/docs/assets/sprints/time_b/sprint_3/cumu_flow_sprint_3.png)
 
 Novamente, menor movimentação das issues no campos do Kanban
 
 ## Quadro de Conhecimentos
 
-![knowledge](knowledge.png)
+![knowledge](/docs/assets/sprints/time_b/sprint_3/quadro_de_conhecimento_sprint_3.png)
   
 ## Práticas ágeis
   

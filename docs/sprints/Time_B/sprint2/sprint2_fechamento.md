@@ -4,6 +4,7 @@
 |:-|:-|:-|:-|
 |    06/09/2021   |  0.1 | Adicionando Sprint 2 para o Time B  | [@SwampTG](https://github.com/SwampTG) |
 |    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
@@ -25,7 +26,7 @@
 
 ## Quadro de Conhecimentos
 
-![knowledge](knowledge.png)
+![knowledge](/docs/assets/sprints/time_b/sprint_2/quadro_de_conhecimento_sprint_2.png)
 
 ## Análise do Scrum Master
 

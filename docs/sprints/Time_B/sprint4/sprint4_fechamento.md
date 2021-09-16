@@ -6,6 +6,7 @@
 |:-|:-|:-|:-|
 |    31/08/2021   |  0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
 |    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
@@ -81,29 +82,29 @@ OU-->
 
 ## Burndown
 
-![burn](burndown3.png)
+![burn](/docs/assets/sprints/time_b/sprint_4/burndown_sprint_4.png)
 
  Podemos observar que, praticamente, não houve o fechamento de issues, foram definidas muitas issues devido ao atraso no projeto e, mesmo assim, não houve produtividade.
   
 ## Velocity
 
-![velocity](velocity3.png)
+![velocity](/docs/assets/sprints/time_b/sprint_4/velocity_sprint_4.png)
 
 A média. A média de 40 parece estar se confirmando, não conseguimos superar essa produtividade ainda, talvez tenhamos que planejar melhor para reduzir a complexidade das issues entre as sprints, mesmo tendo mais membros. Precisamos melhorar a distribuição e a definição da complexidade da issue.
 
 ## Cumulative Flow
 
-![cumuflow](cumu_flow3.png  "CumuFlow")
+![cumuflow](/docs/assets/sprints/time_b/sprint_4/cumu_flow_sprint_4.png)
 
 Pode-se observar o Delay na abertura de issues, com o fechamento não contínuo e completamente desproporcional.
 
 ## Quadro de Conhecimentos
 
-![knowledge](knowledge.png)
+![knowledge](/docs/assets/sprints/time_b/sprint_4/quadro_de_conhecimento_sprint_4.png)
 
 ## Squad Health Check
 
-![health](health_check.png)
+![health](/docs/assets/sprints/time_b/sprint_4/health_check_sprint_4.png)
   
 ## Práticas ágeis
   
