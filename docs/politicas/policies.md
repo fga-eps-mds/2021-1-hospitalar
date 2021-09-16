@@ -14,10 +14,17 @@ Critérios a serem seguidos por todos que queiram contribuir para o projeto, pri
 
 **Índice do documento**:
 
-- [Política de Branches](#politica-de-branches)
-- [Política de Commits](#politica-de-commits)
-- [Política de Remoção de Branches](#politica-de-remocao-de-branches)
-- [Política de Pull Request](#politica-de-pull-requesr)
+- [Políticas do Repositório](#políticas-do-repositório)
+  - [Histórico de versão](#histórico-de-versão)
+  - [Objetivo:](#objetivo)
+  - [Política de Branches](#política-de-branches)
+    - [Main](#main)
+      - [Features](#features)
+      - [Hotfix](#hotfix)
+      - [Doc](#doc)
+  - [Política de Commits](#política-de-commits)
+  - [Política de Remoção de Branches](#política-de-remoção-de-branches)
+  - [Política de Pull Request](#política-de-pull-request)
 
 ## Política de Branches
 
@@ -156,10 +163,9 @@ A remoção será feita logo após um PR revisado, aceito e já fundido na branc
 
 **Basta seguir os seguintes passos:**
 
-acesse a lista completa de branches do repositório:
+Acesse a lista completa de branches do repositório:
 
-![branch_list_delete_1](assets/branch_list_delete_1.png
-)
+![branch_list_delete_1](/assets/politicas/branch_list_delete_1.png "branch_list_delete_1")
 
 Certifique-se que a branch já foi unida a main e clique no símbolo de lixo:
 
