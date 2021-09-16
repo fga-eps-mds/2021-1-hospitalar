@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class GeracaoPdfConfig(AppConfig):
+class ConfiguracaoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'models.geracaoPdf'
+    name = 'Configuracao'

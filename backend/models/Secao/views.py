@@ -1,17 +1,16 @@
-from reportlab.pdfgen import canvas
 from rest_framework import viewsets
-from django.http import HttpResponse
-from .models import GeracaoPdf
-from .serializers import GeracaoPdfSerializer
 from rest_framework.decorators import action
+from django.http import HttpResponse
+from reportlab.pdfgen import canvas
+from .models import Secao
+from .serializers import SecaoSerializer
 
-# Create your views here.
 
+class SecaoView(viewsets.ModelViewSet):
 
-class GeracaoPdfView(viewsets.ModelViewSet):
-
-    serializer_class = GeracaoPdfSerializer
-    queryset = GeracaoPdf.objects.all()
+    serializer_class = SecaoSerializer
+    queryset = Secao.objects.all()
+    lookup_field = 'id'
 
     @action(methods=['get'], detail=False)
     def generatePDF(self, request):

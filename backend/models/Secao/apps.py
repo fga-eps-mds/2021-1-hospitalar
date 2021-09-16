@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ChecklistavaliacaoConfig(AppConfig):
+class SecaoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'models.checklistAvaliacao'
+    name = 'models.Secao'

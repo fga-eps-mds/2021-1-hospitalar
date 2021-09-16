@@ -46,8 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'models.checklistAvaliacao',
-    'models.geracaoPdf',
+    'models.Secao'
 ]
 
 MIDDLEWARE = [
