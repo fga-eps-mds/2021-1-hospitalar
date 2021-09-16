@@ -135,13 +135,13 @@ O MongoDB trata-se de um banco de dados não relacional que além de possuir bai
 
 O JavaScript é uma linguagem interpretada, bastante conhecida como a linguagem de scripts para Web, recorrentemente utilizada no React, por exemplo. Este voltado para o FrontEnd. Também usada em ambientes independentes de Browser, como NodeJs, esse mais voltado para o BackEnd da aplicação.
 
-![Curva de popularidade do JavaScript durante o ano de 2020](https://cdn.buttercms.com/x1McFixQuaCNjsMbruUp)
+![Curva de popularidade do JavaScript durante o ano de 2020](/docs/assets/produtos/arquitetura/tecnologias_populares_em_2020.png)
 
 > Fonte: <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages">StackOverflow Developer Survey </a>
 
 A imagem acima é um levantamento feito pelo StackOverflow a respeito das linguagens de programação mais populares em 2020 utilizadas por desenvolvedores. É interessante citar que a curva de popularidade do JavaScript é tamanha, que o desenvolvimento de novos Frameworks é algo recorrente.
 
-<a href="https://imgur.com/929abGB"><img src="https://i.imgur.com/929abGB.png" title="source: imgur.com" /></a>
+![Framework](/docs/assets/produtos/arquitetura/framerworks_populares_em_JS.png)
 
 > Fonte: CodersRank.io
 
@@ -233,11 +233,11 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Front-End e como o mesmo se divide:
 
-![DiagramaFrontEndPacotes](https://i.imgur.com/V3VdUUq.png)
+![DiagramaFrontEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes_(Front_end).png>)
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Back-End e como o mesmo se divide:
 
-![DiagramaBackEndPacotes](https://i.imgur.com/4ZcmAsx.png)
+![DiagramaBackEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes(Back_end).png>)
 
 ### 5.3 Visão da Implantação
 
@@ -256,4 +256,4 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 ### 5.3.3 Diagrama unificado
 
-<img src="https://i.imgur.com/MVTGUUB.png" width="1300" height="900" />
+![DiagramaBackEndPacotes](/docs/assets/produtos/arquitetura/diagrama_de_classes_unificado_0.2.png)
