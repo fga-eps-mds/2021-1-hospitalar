@@ -5,6 +5,7 @@
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
 |    12/08/2021   |  0.1 | Criação do documento  | Pedro Caldeira|
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint 
 
@@ -63,11 +64,11 @@
 
 ## Burndown
 
-![Burndown](Borndown-sprint-4.png)
+![Burndown](/docs/assets/sprints/time_c/sprint_4/Borndown-sprint-4.png)
   
 ## Velocity
 
-![Velocity](Velocity-sprint-4.png)  
+![Velocity](/docs/assets/sprints/time_c/sprint_4/Velocity-sprint-4.png)  
   
 ## Práticas ágeis
   

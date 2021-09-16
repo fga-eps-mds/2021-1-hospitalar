@@ -6,6 +6,7 @@
 |:-:|:-:|:-:|:-:|
 |    09/09/2021   |  0.0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
 |    13/09/2021   |  0.1 | Adição do Knowledge e HealthCheck  | [@SwampTG](https://github.com/SwampTG) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
@@ -88,29 +89,29 @@ OU-->
 
 ## Burndown
 
-![burn](burndown3.png)
+![burn](/docs/assets/sprints/time_b/sprint_5/burndown_sprint_5.png)
 
 A issues demoraram a ser trabalhadas, passamos muito tempo planejando para a R1, fazendo várias reuniões e isso deve ter atrasado a entrega das issues.
   
 ## Velocity
 
-![velocity](velocity3.png)
+![velocity](/docs/assets/sprints/time_b/sprint_5/velocity_sprint_5.png)
 
 A média de produtividade aumentou, ainda pode não ser a ideal, mas os times tem se empenhado mais continuamente para cumprir a release 1.
 
 ## Cumulative Flow
 
-![cumuflow](cumu_flow3.png  "CumuFlow")
+![cumuflow](/docs/assets/sprints/time_b/sprint_5/cumu_flow_sprint_5.png)
 
 Observamos uma parada na movimentaçãode issues quase contínua ao longo da semana. Novamente, muito planejamento e pouca ação.
 
 ## Quadro de Conhecimentos
 
-![knowledge](knowledge.png)
+![knowledge](/docs/assets/sprints/time_b/sprint_5/quadro_de_conhecimento_sprint_5.png)
 
 ## Squad Health Check
 
-![health](health_check.png)
+![health](/docs/assets/sprints/time_b/sprint_5/health_check_sprint_5.png)
   
 ## Práticas ágeis
   
