@@ -1,7 +1,12 @@
+<<<<<<< HEAD
   
+=======
+import { Button } from '../../components/GlobalComponents/Inputs/Button'
+>>>>>>> ae861d4a1054f9b4305a1ccd9742884c3bbab362
 import { Grid } from '@material-ui/core'
-import React from 'react'
 import { Header } from '../../components/GlobalComponents/Header'
+import React from 'react'
+import { useHistory } from 'react-router-dom'
 
 /**
  * Um componente funcional React compatível com React Hooks.
@@ -10,7 +15,8 @@ import { Header } from '../../components/GlobalComponents/Header'
  * @returns JSX.Element
  * @see https://pt-br.reactjs.org/docs/hooks-reference.html#basic-hooks
  */
-export const Home: React.FC = () => {
+export function Home(): React.ReactElement {
+  const history = useHistory()
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
@@ -19,6 +25,14 @@ export const Home: React.FC = () => {
     <Grid container direction='column' spacing={2}>
       <Grid item>
         <Header title='Home Page' />
+      </Grid>
+      <Grid item>
+        <Button onClick={() => history.push('relatorio')}>Página gerar relatorio</Button>
+      </Grid>
+      <Grid item>
+        <Button onClick={() => history.push('NovaAvaliacao')}>
+          Página nova avaliação
+        </Button>
       </Grid>
     </Grid>
   )

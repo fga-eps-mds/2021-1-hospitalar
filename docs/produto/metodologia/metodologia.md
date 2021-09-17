@@ -1,10 +1,12 @@
 # Metodologia
 
+## Histórico de versão
+
 | Data | Versão | Modificação | Autor |
-| :-: | :-: | :-: | :-: |
-| 16/08/2021 | 0.1 | Criação da primeira versão do documento | @klyssmannoliveira e @victordscabral |
-| 16/08/2021 | 0.2 | Inserção dos papéis | @klyssmannoliveira e @victordscabral |
-| 02/09/2021 | 0.2 | Introdução e atividades da metodologia | @klyssmannoliveira e @victordscabral |
+| :- | :- | :- | :- |
+| 16/08/2021 | 0.1 | Criação da primeira versão do documento | [@klyssmannoliveira](https://github.com/klyssmannoliveira) e [@victordscabral](https://github.com/victordscabral) |
+| 16/08/2021 | 0.2 | Inserção dos papéis | [@klyssmannoliveira](https://github.com/klyssmannoliveira)  e [@victordscabral](https://github.com/victordscabral) |
+| 13/09/2021 | 1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Introdução
 

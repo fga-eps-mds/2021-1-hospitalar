@@ -1,13 +1,11 @@
 # Protótipo de baixa fidelidade
 
-
-
 ### Histórico de versão
-| Data| Versão| Descrição  | Autor  |
-| :---: | :---: | :---: | :---: |
-| 24/08 | 1.0 | Editar avaliação, Inserir Checklist | Eduardo Gurgel e Pedro Helias |
-| 26/08 | 1.1 | Editar avaliação, Inserir Checklist | Eduardo Gurgel e Pedro Helias |
-
+| Data| Versão| Modificação  | Autor  |
+| :--- | :--- | :--- | :--- |
+| 24/08 | 0.1 | Editar avaliação, Inserir Checklist | [@EduardoGurgel](https://github.com/EduardoGurgel) e [@pedrohelias](https://github.com/pedrohelias) |
+| 26/08 | 0.1 | Editar avaliação, Inserir Checklist | [@EduardoGurgel](https://github.com/EduardoGurgel) e [@pedrohelias](https://github.com/pedrohelias) |
+| 13/09/2021 | 1.0    | Revisão do documento | [@victordscabral](https://github.com/victordscabral) |
 
 ### Editar Avaliação (Tela Usuário) - Eduardo Gurgel
 

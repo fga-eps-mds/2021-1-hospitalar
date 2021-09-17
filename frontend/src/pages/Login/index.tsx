@@ -7,7 +7,7 @@ export const Login: React.FC = () => {
     return(
         <>
             <div className="header">
-                <h1 className="titulo">Hello World</h1>
+                <h1 className="titulo">Hello World2</h1>
             </div>
             <div className="listra"></div>
 

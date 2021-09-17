@@ -1,5 +1,6 @@
+import { ButtonProps, Button as MuiButton } from '@material-ui/core'
+
 import React from 'react'
-import { Button as MuiButton, ButtonProps } from '@material-ui/core'
 import { useStyles } from './styles'
 
 type Props = ButtonProps & {
@@ -7,16 +8,17 @@ type Props = ButtonProps & {
   size?: string
   color?: string
   onClick: () => void
+  children?: React.ReactNode
 }
 
-export const Button: React.FC<Props> = ({
+export function Button({
   variant,
   size,
   color,
   onClick,
   children,
   ...rest
-}) => {
+}: Props): React.ReactElement {
   const classes = useStyles()
   return (
     <MuiButton
