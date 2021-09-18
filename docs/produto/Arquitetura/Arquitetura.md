@@ -20,6 +20,7 @@
 | 13/09/2021 | 1.2    | Adição de diagrama unificado                                                                                 | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
 | 13/09/2021 | 1.3    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 13/09/2021 | 1.4    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
+| 18/09/2021 | 1.5    | Correções nos markdowns dos assets                                                                           | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
 
 ## Sumário
 
@@ -189,7 +190,7 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 
 ## 4. Visão de Casos de Uso
 
-<img src="https://i.imgur.com/Pjr6TbL.jpg" width="600" height="500" />
+![Visões de Caso de uso](/docs/assets/produtos/arquitetura/visoes_de_caso_de_uso.jpg)
 
 ### 4.1. Realização de Casos de Uso
 
@@ -244,15 +245,15 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 ### 5.3.1 Front-end
 
 - Diagrama para o FrontEnd
-  ![DiagramaFrontEnd](https://i.imgur.com/vzMk8fJ.jpg)
+  ![DiagramaFrontEnd](/docs/assets/produtos/arquitetura/diagrama_front_end.jpg)
 
 ### 5.3.2 Back-end
 
 - Diagrama de Classes - Relatório
-  ![diagramaClasses_TimeB_Relatorio](https://user-images.githubusercontent.com/51385738/131055882-6b9e244b-477d-45d5-8148-aad9d5760560.png)
+  ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_time_b.png)
 
 - Diagrama de Classe - Banco de Dados
-  ![diagramaClasses_TimeA](https://user-images.githubusercontent.com/51385738/131055637-2dcb3541-b6db-404a-aa95-6b0b65033fa3.jpg)
+  ![diagramaClasses_TimeA](/docs/assets/produtos/arquitetura/diagrama_front.jpg)
 
 ### 5.3.3 Diagrama unificado
 
