@@ -46,11 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-<<<<<<< HEAD
     'models.User'
-=======
     'models.geracaoPdf',
->>>>>>> ae861d4a1054f9b4305a1ccd9742884c3bbab362
 ]
 
 MIDDLEWARE = [
