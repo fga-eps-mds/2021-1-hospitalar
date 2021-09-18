@@ -9,6 +9,7 @@
 | 08/09/2021 | 0.3    | Alteração do tamanho da imagem             | [@Pedro-V8](https://github.com/Pedro-V8)             |
 | 13/09/2021 | 1.0    | Alteração em títulos e histórico de versão | [@victordscabral](https://github.com/victordscabral) |
 | 18/09/2021 | 1.1    | Alteração no markdown dos assets           | [@pedrohelias](https://github.com/pedrohelias)       |
+| 18/09/2021 | 1.2    | Correção nas imagens exteriores            | [@pedrohelias](https://github.com/pedrohelias)       |
 
 ## 1. Introdução
 
@@ -16,7 +17,7 @@
 
 No início do projeto a equipe veio tentando formular alguma ideia de logotipo que pudesse indicar um ambiente hospitalar dentro do sistema militar. Pesquisando mais afundo, conseguimos concluir que as patentes das posições hierárquicas eram uma boa forma de mostrar que o produto iria ser referente ao sistema militar, visto que muitas pessoas já as viram em algum momento, sendo assim de fácil reconhecimento. Logo após isso, precisávamos referenciar também o ambiente hospitalar, já que o produto iria atender aos profissionais que estão constantemente nesse meio também. Decidimos então formatar a patente para que no topo, ao invés de ter uma estrela, fosse colocada uma caixa de seleção com uma marcação de "Ok", para indicar uma das principais atividades exercidas, o checklist. Essas foram as decisões do time para que então chegasse no resultado apresentado abaixo.
 
-![Logotipo](https://raw.githubusercontent.com/fga-eps-mds/2021-1-hospitalar/main/docs/assets/logo-2021.jpg)
+![Logotipo](/docs/assets/produtos/identidade_visual/logo-2021.jpg)
 
 # Nome do Projeto
 
@@ -32,7 +33,7 @@ A fonte escolhida foi a Segoe UI, com o tamanho padrão de 35px, para manter uma
 
 ## Paleta de cores
 
-![Paleta-cores](https://imgur.com/yvMUCgs.jpg)
+![Paleta-cores](/docs/assets/produtos/identidade_visual/paleta_de_cores.png)
 
 **#175215** - Cor Primária da pagina:
 
@@ -65,7 +66,7 @@ Nos botões foram utilizadas as cores #ADE498 e #2B7B24, são botões simples ar
 
 O botão 1 será aquele que estará predominantemente sendo usado durante a aplicação. Está configurado com a cor #2B7B24, com arredondamento nas extremidades e um fonte de 1rem para ter uma facilidade de leitura do que está escrito.
 
-![Botão 1 Selecionao](botao_1_selecionado.png)
+![Botão 1 Selecionao](/docs/assets/produtos/identidade_visual/botao_1_selecionado.png)
 
 O botão 1 terá uma funcionalidade onde ao ser passado o mouse por cima, será alternada a cor para que demonstre que o botão está sendo selecionado. A cor mudará para #448f42.
 
