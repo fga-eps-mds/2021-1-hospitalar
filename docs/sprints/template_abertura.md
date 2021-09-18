@@ -12,11 +12,11 @@
 
 ## Duração
 
-Duração: (nº) dias
+**Duração:** (nº) dias
 <br>
-Início: (data)
+**Início:** (data)
 <br>
-Fim: (data)
+**Fim:** (data)
 
 ## Sprint BackLog
 

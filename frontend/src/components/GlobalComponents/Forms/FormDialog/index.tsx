@@ -11,15 +11,9 @@ type Props = {
   children?: React.ReactNode
 }
 
-export function FormDialog({
-  title,
-  toggle,
-  handleSubmit,
-  item,
-  children,
-}: Props): React.ReactElement {
+export function FormDialog({ title, toggle, handleSubmit, item, children }: Props) {
   return (
-    <Dialog open={true} onClose={toggle}>
+    <Dialog open onClose={toggle}>
       <DialogTitle>{title}</DialogTitle>
       <DialogContent>{children}</DialogContent>
       <DialogActions>

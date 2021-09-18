@@ -11,10 +11,7 @@ Para melhor visualização leia esse arquivo como um markdown
   - yarn
 - Comandos para preparar o python (dentro da pasta backend):
   - (ative seu venv ou anaconda)
-  - pip install django
-  - pip install django_rest_framework
-  - pip install django-cors-headers
-  - pip install djongo
+  - pip install -r requirements.txt
   - python ./manage.py makemigrations
   - python ./manage.py migrate
 

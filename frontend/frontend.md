@@ -1,5 +1,8 @@
 # Padrões de projeto
 
+### Importante:
+>O padrão de escrita adotado é o Airbnb, por favor leia a respeito. [link](https://airbnb.io/javascript/react/)
+
 - Todo código fonte deve obrigatóriamente estar na pasta src
 - Utilize a extensão .ts para arquivos typescript e a extensão .tsx para arquivos typescript react (onde existe algum comando no modelo html)
 - Toda página e componente deve estar contido em uma pasta com seu nome em pascal case (TipoAssim)
@@ -10,7 +13,7 @@
   import React from 'react'
   import {useStyles} from './styles'
 
-  export function (Nome)():React.ReactElement {
+  export function (Nome) ():React.ReactElement {
       const classes = useStyles()
 
       return <div></div>
