@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import { Home } from './pages/Home'
 import { PaginaAddItem } from './pages/PaginaAddItem'
 import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
