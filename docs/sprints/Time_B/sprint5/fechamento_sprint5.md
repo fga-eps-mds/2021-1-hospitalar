@@ -25,17 +25,18 @@
 |#72|[Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)|Fechada|
 |#61|[Definir Pareamento - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/61)|Fechada|
 |#56|[Redação e revisão do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)|Fechada|
-|#36|[Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)|[Fechada](https://github.com/magnluiz)|
+|#36|[Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)|[@magnluiz](https://github.com/magnluiz)|Fechada|
 |#83|[Atualizar documentos de Abertura e Fechamento de Sprints passadas - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/83)|Fechada|
+|#76|[Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)|Fechada|
 
 ## Pontuação Final
-<!-- 5 + 13 + 2 + 3 + 3 + 8 + 10 + 10 + 10 + 8 + 13 + 10 + 5 + 8 + 8 + 5-->
+<!-- 5 + 13 + 2 + 3 + 3 + 8 + 10 + 10 + 10 + 8 + 13 + 10 + 5 + 8 + 8 + 5 + 10 -->
 
-**Pontuação Total:** 121 Pontos Planejados
+**Pontuação Total:** 131 Pontos Planejados
 
 **Débitos Técnicos Adicionados:** <!--13 + 10 + 10 + 10 + 8 + 13--> Pontos 64 
 
-**Pontos Concluídos:** 57 Pontos Concluídos
+**Pontos Concluídos:** 67 Pontos Concluídos
 
 ## Débitos Técnicos de Sprints Anteriores
 
