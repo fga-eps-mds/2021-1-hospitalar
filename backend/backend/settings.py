@@ -89,6 +89,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'projeto-hospitalar',
+        'CLIENT': {
+            'host': 'db-mongo',
+            'port': 27017,
+            'username': 'root',
+            'password': 'example'
+        }
     }
 }
 
