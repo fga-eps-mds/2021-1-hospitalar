@@ -2,6 +2,7 @@ import { Grid, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
+import { GraficoRelatorio } from '../../components/GraficoRelatorio'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
 import axios from 'axios'
@@ -193,6 +194,9 @@ export function GenerateReport(): React.ReactElement {
           {generateInfoBox()}
         </Grid>
         <Grid item xs={false} sm={1} />
+      </Grid>
+      <Grid>
+        <GraficoRelatorio/>
       </Grid>
     </Grid>
   )
