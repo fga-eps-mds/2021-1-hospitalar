@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'models.geracaoPdf',
+    'models.graficoRelatorio',
 ]
 
 MIDDLEWARE = [
