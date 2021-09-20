@@ -1,3 +1,4 @@
+from rest_framework.decorators import action
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import GraficoRelatorio
@@ -16,6 +17,7 @@ class GraficoRelatorioView(viewsets.ModelViewSet):
     authentication_classes = []
     permission_classes = []
 
+    @action(methods=['get'], detail=False)
     def get(self, request, format=None):
         labels = [
             'Janeiro',
