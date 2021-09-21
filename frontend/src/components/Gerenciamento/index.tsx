@@ -1,5 +1,5 @@
 import { Button } from '../GlobalComponents/Inputs/Button'
-import { ColetaDados } from '../../pages/PaginaAddItem'
+import { ColetaDados } from '../../types/ColetaDados'
 import React from 'react'
 
 type Props = {

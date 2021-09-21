@@ -2,20 +2,12 @@ import { Box, Grid, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
+import { ColetaDados } from '../../types/ColetaDados'
 import { Gerenciamento } from '../../components/Gerenciamento'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
-
-export type ColetaDados = {
-  OBindice: string
-  OBqualificacao: string
-  OBavaliacao: string
-  OBpontuacao: string
-  OBcomentario: string
-  OBstatus: string
-}
 
 export function PaginaAddItem(): React.ReactElement {
   const classes = useStyles()
