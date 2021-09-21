@@ -1,7 +1,7 @@
 # Padrões de projeto
 
 ### Importante:
->O padrão de escrita adotado é o Airbnb, por favor leia a respeito. [link](https://airbnb.io/javascript/react/)
+>O padrão de escrita adotado é o Airbnb, por favor [leia](https://airbnb.io/javascript/react/) a respeito. Caso você não concorde com alguma regra do eslint é só pedir para o eslintrc.js ignora-lo, mas por favor enforme ao PO do seu grupo para avisar o Eduardo Rodrigues do time B.
 
 - Todo código fonte deve obrigatóriamente estar na pasta src
 - Utilize a extensão .ts para arquivos typescript e a extensão .tsx para arquivos typescript react (onde existe algum comando no modelo html)

@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     marginTop: '40px',
     width: '35%',
-    backgroundColor: '#29991a',
+    backgroundColor: theme.palette.primary.main,
     height: '300px',
     borderRadius: '10px',
     paddingTop: '15px',

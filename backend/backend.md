@@ -45,7 +45,7 @@
   from .models import (Nome)
 
 
-  class NomeSerializer(serializers.HyperlinkedModelSerializer):
+  class NomeSerializer(serializers.ModelSerializer):
       class Meta:
           model = (Nome)
           fields = ('id', atributos do modelo separados por virgula)

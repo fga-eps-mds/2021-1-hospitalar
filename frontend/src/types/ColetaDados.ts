@@ -1,4 +1,4 @@
-export interface ColetaDados {
+export type ColetaDados = {
   OBindice: string
   OBqualificacao: string
   OBavaliacao: string

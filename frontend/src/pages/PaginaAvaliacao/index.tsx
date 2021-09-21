@@ -8,19 +8,13 @@ import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function PaginaAvaliacao(): React.ReactElement {
-  /**
-   * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
-   * @see https://material-ui.com/components/grid/
-   */
-
   const classes = useStyles()
-
-  const history = useHistory()
 
   /**
    * Vai fazer a transição de páginas para a próxima página
    * É necessario inicializar o history.
    */
+  const history = useHistory()
 
   const handleClickNovaPagina = () => {
     history.push('/NovaAvaliacao/Adicao')
@@ -30,6 +24,10 @@ export function PaginaAvaliacao(): React.ReactElement {
     console.log('voltando')
   }
 
+  /**
+   * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
+   * @see https://material-ui.com/components/grid/
+   */
   return (
     <Grid>
       <Grid container direction='column' spacing={2}>
