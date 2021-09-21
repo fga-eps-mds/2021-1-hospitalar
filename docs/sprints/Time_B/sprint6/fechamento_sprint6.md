@@ -86,29 +86,29 @@ OU-->
 
 ## Burndown
 
-![burn](burndown3.png)
+![burn](/docs/assets/sprints/time_b/sprint_6/burndown_sprint_6.png)
 
  Houve uma evolução na quantidade de fechamentos. Ainda não é a ideal, mas é uma clara melhoria, fruto do empenho em cumprir a Release. Temos que tornar isso contínuo.
   
 ## Velocity
 
-![velocity](velocity3.png)
+![velocity](/docs/assets/sprints/time_b/sprint_6/velocity_sprint_6.png)
 
 Houve um recuo com relação a Sprint anterior, porém ainda acima das médias anteriores. O time integrou melhor o fluxo de trabalho
 
 ## Cumulative Flow
 
-![cumuflow](cumu_flow3.png  "CumuFlow")
+![cumuflow](/docs/assets/sprints/time_b/sprint_6/cumu_flow_sprint_6.png)
 
 Melhoria significativa nas issues paradas. Após organização do ZenHub e definição de um único Board, os membros moviementaram as issues de uma melhor maneira. 
 
 ## Quadro de Conhecimentos
 
-![knowledge](knowledge.png)
+![knowledge](/docs/assets/sprints/time_b/sprint_6/quadro_de_conhecimento_sprint_6.png)
 
 ## Squad Health Check
 
-![health](health_check.png)
+![health](/docs/assets/sprints/time_b/sprint_6/health_check_sprint_6.png)
   
 ## Práticas ágeis
   
