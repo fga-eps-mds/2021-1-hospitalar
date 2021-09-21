@@ -2,7 +2,7 @@ import { Grid, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { GraficoRelatorio } from '../../components/GraficoRelatorio'
+import GraficoRelatorio  from '../../components/GraficoRelatorio'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
 import axios from 'axios'
