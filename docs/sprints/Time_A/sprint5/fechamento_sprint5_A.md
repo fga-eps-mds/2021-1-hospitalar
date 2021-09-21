@@ -8,7 +8,8 @@
 | 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
 | 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   [@victordscabral](https://github.com/victordscabral)    |
 | 13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
-
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
+| 18/09/2021 | 1.2 | Ajuste no documento  | [@victordscabral](https://github.com/victordscabral) |
 ## Backlog da Sprint
 
 | **ID** |                                                              **Descrição**                                                               | **Status** | **Pontos** |
@@ -20,7 +21,7 @@
 |  #74   |                       [Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)                        |   Aberta   |     10     |
 |  #76   |                    [Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)                     |  Fechada   |     10     |
 |  #82   | [Atualizar documentos de Abertura e Fechamento de Sprints passadas - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/82) |  Fechada   |     8      |
-|  #88   |                          [Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88)                           |  Fechada   |     8      |
+|  #88   |                          [Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88)                           |  Aberta   |     8      |
 |  #90   |              [Configurar Ambiente de Desenvolvimento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/90)               |   Aberta   |     5      |
 |  #91   |                  [Análise de documentos do projeto - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/91)                  |  Fechada   |     3      |
 |  #92   |                 [Revisão dos documentos do projeto - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/92)                  |  Fechada   |     5      |
@@ -33,8 +34,8 @@
 ## Pontuação Final
 
 **Pontuação Total:** 143 Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** 73 Pontos <br>
-**Pontos Concluídos:** 70 Pontos Concluídos <br>
+**Débitos Técnicos Adicionados:** 81 Pontos <br>
+**Pontos Concluídos:** 62 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
@@ -55,6 +56,8 @@
 [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
 <br>
 [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
+<br>
+[#88 Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88)
 <br>
 [#90 Configurar Ambiente de Desenvolvimento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/90)
 <br>
@@ -88,15 +91,14 @@
 
 ## Burndown
 
-![burndown](burndown5_A.png)
+![burndown](/docs/assets/sprints/time_a/sprint_5/burndown5_A.png)
 
 ## Velocity
-
-![velocity](velocity5_A.png)
+![velocity](/docs/assets/sprints/time_a/sprint_5/velocity5_A.png)
 
 ## Cumulative Flow
 
-![cumulativeflow](cumulative5_A.png "Cumulativeflow")
+![cumulativeflow](/docs/assets/sprints/time_a/sprint_5/cumulative5_A.png)
 
 ## Práticas ágeis
 

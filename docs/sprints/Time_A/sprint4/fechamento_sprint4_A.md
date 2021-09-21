@@ -8,6 +8,7 @@
 | 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
 | 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   [@victordscabral](https://github.com/victordscabral)    |
 | 13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
@@ -81,15 +82,15 @@
 
 ## Burndown
 
-![burndown](burndown4_A.png)
+![burndown](/docs/assets/sprints/time_a/sprint_4/burndown4_A.png)
 
 ## Velocity
 
-![velocity](velocity4_A.png)
+![velocity](/docs/assets/sprints/time_a/sprint_4/velocity4_A.png)
 
 ## Cumulative Flow
 
-![cumulativeflow](cumulative4_A.png "Cumulativeflow")
+![cumulativeflow](/docs/assets/sprints/time_a/sprint_4/cumulative4_A.png)
 
 ## Práticas ágeis
 
