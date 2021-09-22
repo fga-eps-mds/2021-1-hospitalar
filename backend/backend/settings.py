@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'models.User'
     'models.geracaoPdf',
+    'models.Secao',
+    'models.Configuracao'
 ]
 
 MIDDLEWARE = [
