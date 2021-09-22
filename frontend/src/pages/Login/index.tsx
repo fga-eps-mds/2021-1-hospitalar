@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Box, Grid, Typography , TextField , ThemeProvider , FormControlLabel ,Container, CardMedia , Card} from '@material-ui/core'
+import {Grid, Typography , TextField} from '@material-ui/core'
 import { useStyles } from './styles'
 import { useHistory } from 'react-router-dom'
 
