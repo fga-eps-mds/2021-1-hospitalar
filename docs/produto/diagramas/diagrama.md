@@ -12,14 +12,14 @@
 
 Este documento mostra um diagrama de classes unificado do time A, B e C que usaremos como base para o código do programa. Um diagrama de classes é um mapeamento claro da estrutura de um código que mostra um modelo das classes, atributos e métodos.
 
-## Versão 1
+### Versão 1
 
-![diagrama1](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_1.png")
+![diagrama1](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_1.png)
 
-## Versão 2
+### Versão 2
 
-![diagrama2](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_2.png")
+![diagrama2](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_2.png)
 
-## Versão 3
+### Versão 3
 
-![diagrama3](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_3.png")
+![diagrama3](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_3.png)
