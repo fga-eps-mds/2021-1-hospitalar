@@ -1,8 +1,5 @@
-<<<<<<< HEAD
   
-=======
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
->>>>>>> ae861d4a1054f9b4305a1ccd9742884c3bbab362
 import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
 import React from 'react'

@@ -1,23 +1,81 @@
-
 import React from 'react'
-import './styles.css'
-
-export const Login: React.FC = () => {
-
-    return(
-        <>
-            <div className="header">
-                <h1 className="titulo">Hello World2</h1>
-            </div>
-            <div className="listra"></div>
-
-            <button className="btn tst">BOTÃO</button>
-            <button className="btn tst1">BOTÃO</button>
+import { Button } from '../../components/GlobalComponents/Inputs/Button'
+import { Box, Grid, Typography , TextField , ThemeProvider , FormControlLabel ,Container, CardMedia , Card} from '@material-ui/core'
+import { useStyles } from './styles'
+import { useHistory } from 'react-router-dom'
 
 
-            <h1>FAMiL</h1>
-            <h2>FAMiL</h2>
-            
-        </>
-    )
+
+export function Login(): React.ReactElement {
+
+  const history = useHistory()
+
+  const classes = useStyles()
+
+  return(
+    <>
+
+      <Grid 
+        container
+        justifyContent='center'
+        alignItems='center'
+        direction='column'
+        style={{
+          paddingBottom: '50px'
+        }}
+      >
+        
+        <Typography variant='h1'> FAMiL </Typography>
+        <Typography variant='h5'> Ferramenta de Acreditação Militar </Typography>
+
+      </Grid>
+      <Grid 
+        container
+        alignItems="center"
+        direction="column"
+        style={{ minHeight: "100vh" , backgroundColor: '#FFFEF2'}}
+      >
+      
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-around"
+          alignItems="center"
+          style={{
+            height: '60vh',
+            width: '55vw',
+            border: '2px solid #175215',
+            borderRadius: '10px',
+            backgroundColor: "#D6F0C8"
+          }}
+          className={classes.login}
+          
+
+        >
+
+          <Grid>
+            <img 
+            className={classes.image}
+
+            src='https://raw.githubusercontent.com/fga-eps-mds/2021-1-hospitalar/main/docs/_media/logo_cover.png' alt='logo'
+            />
+          </Grid>
+
+          <Grid
+            style={{
+              display:"flex",
+              flexDirection:"column",
+            }}
+          >
+            <Typography variant="h4" style={{paddingBottom: '50px'}}> LOGIN </Typography>
+            <TextField label="Email" style={{ width: '18vw', paddingBottom: '20px'}}/>
+            <TextField label="Senha" type='password' style={{ width: '18vw' , paddingBottom: '30px'}}/>
+            <Button onClick={() => history.push('Home')}> ENTRAR </Button>
+          </Grid>
+          
+        </Grid>
+
+      </Grid>
+    </>
+  )
 }
