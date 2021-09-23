@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { ColetaDados } from '../../components/ColetaDados'
+import { ColetaDados } from '../../types/ColetaDados'
 import { Gerenciamento } from '../../components/Gerenciamento'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
@@ -10,11 +10,6 @@ import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function PaginaAddItem(): React.ReactElement {
-  /**
-   * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
-   * @see https://material-ui.com/components/grid/
-   */
-
   const classes = useStyles()
 
   /**
@@ -22,8 +17,6 @@ export function PaginaAddItem(): React.ReactElement {
    * É necessario inicializar o history.
    */
   const history = useHistory()
-
-  let nomeDados: string = ''
 
   const [digitacaoQualificacao, setDigitacaoQualificacao] = useState('')
   const [digitacaoAvaliacao, setDigitacaoAvaliacao] = useState('')
@@ -36,7 +29,7 @@ export function PaginaAddItem(): React.ReactElement {
     const ListaDeDados: string[] = []
     const index = ListaDeDados.indexOf(DadosCode)
     if (index > -1) {
-      nomeDados = ListaDeDados[index]
+      console.log(ListaDeDados[index])
     }
   }
 
@@ -54,7 +47,6 @@ export function PaginaAddItem(): React.ReactElement {
 
     setLista([...lista, newItem])
 
-    console.log(lista)
     setDigitacaoAvaliacao('')
     setDigitacaoComentarios('')
 
@@ -106,6 +98,10 @@ export function PaginaAddItem(): React.ReactElement {
     history.goBack()
   }
 
+  /**
+   * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
+   * @see https://material-ui.com/components/grid/
+   */
   return (
     <Grid>
       <Grid container direction='column' spacing={2}>

@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'models.User'
-    'models.geracaoPdf',
     'models.Secao',
     'models.Configuracao'
 ]
@@ -86,7 +84,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'projeto-hospitalar',
+    }
+}
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -99,6 +104,22 @@ DATABASES = {
         }
     }
 }
+'''
+
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'projeto-hospitalar',
+        'CLIENT': {
+            'host': 'db-mongo',
+            'port': 27017,
+            'username': 'root',
+            'password': 'example'
+        }
+    }
+}
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
