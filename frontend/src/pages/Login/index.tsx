@@ -15,17 +15,40 @@ export function Login(): React.ReactElement {
   return(
     <>
 
+    <Grid
+      container
+      style={{
+        height: '100%',
+        position: 'fixed'
+      }}
+    >
+
       <Grid 
         container
         justifyContent='center'
         alignItems='center'
         direction='column'
         style={{
-          paddingBottom: '50px'
+          paddingBottom: '50px',
+          backgroundColor: '#FFFEF2',
+          color: '#175215',
         }}
       >
         
         <Typography variant='h1'> FAMiL </Typography>
+
+        <Grid
+          item
+          style={{
+            width: '11vw',
+            marginBottom: '1vw',
+            height: '0px',
+            border: '2px solid #175215',
+          }}
+        >
+          .
+        </Grid>
+
         <Typography variant='h5'> Ferramenta de Acreditação Militar </Typography>
 
       </Grid>
@@ -44,7 +67,7 @@ export function Login(): React.ReactElement {
           style={{
             height: '60vh',
             width: '55vw',
-            border: '2px solid #175215',
+            border: '6px solid #175215',
             borderRadius: '10px',
             backgroundColor: "#D6F0C8"
           }}
@@ -76,6 +99,8 @@ export function Login(): React.ReactElement {
         </Grid>
 
       </Grid>
+
+    </Grid>
     </>
   )
 }
