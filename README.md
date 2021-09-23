@@ -5,9 +5,19 @@
    <img alt="pr-badge" src="https://img.shields.io/github/issues-pr/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
 </div>
 
+<<<<<<< HEAD
+<p align="center">
+    <img src="https://i.imgur.com/hgNCbsG.jpg" ></img>
+</p>
+
+
+
+
+=======
 <div align="center">
    <h1> 2021-1-FAMil </h1>
 </div>
+>>>>>>> ae861d4a1054f9b4305a1ccd9742884c3bbab362
 
 
 <p align="center">
@@ -268,6 +278,8 @@ Desenvolvedor: amarelo #
 </table>
 
 <br/> 
+
+
 
 ## 📜 Documentação 
 > A documentação pode ser encontrada em [Nossa Página](https://fga-eps-mds.github.io/2021-1-hospitalar) ou no [Repositório](https://github.com/fga-eps-mds/2021-1-hospitalar/tree/main/docs)
