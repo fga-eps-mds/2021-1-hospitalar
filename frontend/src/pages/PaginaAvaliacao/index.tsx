@@ -16,10 +16,6 @@ export function PaginaAvaliacao(): React.ReactElement {
    */
   const history = useHistory()
 
-  const handleClickNovaPagina = () => {
-    history.push('/NovaAvaliacao/Adicao')
-  }
-
   const voltar = () => {
     console.log('voltando')
   }
@@ -48,13 +44,6 @@ export function PaginaAvaliacao(): React.ReactElement {
               Nova Avaliação
             </Typography>
           </Box>
-          <Form>
-            <Grid container direction='column' spacing={2} alignItems='center' id='grid'>
-              <Button size='medium' onClick={handleClickNovaPagina}>
-                Adicionar avaliação
-              </Button>
-            </Grid>
-          </Form>
           <Grid container direction='column' spacing={2} alignItems='center' id='grid2'>
             <Button size='small' onClick={voltar} className={classes.botaovoltar}>
               voltar
