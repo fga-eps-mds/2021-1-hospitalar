@@ -27,30 +27,31 @@ export function PaginaAvaliacao(): React.ReactElement {
   return (
     <Grid>
       <Grid container direction='column' spacing={2}>
+        {' '}
+        {/* cabeçalho */}
         <Grid item>
-          <Header title='Nova avaliação' />
+          <Header title='Preenchimento da avaliação' />
         </Grid>
       </Grid>
 
-      <Box>
-        <Grid
-          container
-          direction='column'
-          justifyContent='flex-start'
-          alignItems='center'
-        >
-          <Box mb='30px'>
-            <Typography variant='h3' align='center'>
-              Nova Avaliação
-            </Typography>
-          </Box>
-          <Grid container direction='column' spacing={2} alignItems='center' id='grid2'>
-            <Button size='small' onClick={voltar} className={classes.botaovoltar}>
-              voltar
-            </Button>
-          </Grid>
+      {/* corpo */}
+      <Grid className={classes.backgroundAvaliacao}>
+        <Grid className={classes.textData}>dd/mm/aaaa</Grid>
+        <Grid className={classes.idAvaliacao}>
+          ID_AVALIAÇÃO
+          {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
         </Grid>
-      </Box>
+        <Grid className={classes.textInfoHosp}>
+          <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
+          <Grid className={classes.textNomeResp}>Nome do Hospital</Grid>
+          <Grid className={classes.textSiglaLabel}>Sigla:</Grid>
+          <Grid className={classes.textSiglaResp}>Sigla</Grid>
+        </Grid>
+        <Grid className={classes.textResponsavel}>
+          <Grid className={classes.textResponsavelLabel}>Responsáveis</Grid>
+          <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
+        </Grid>
+      </Grid>
     </Grid>
   )
 }
