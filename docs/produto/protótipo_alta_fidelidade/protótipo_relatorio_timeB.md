@@ -17,3 +17,7 @@
 ### Tela de Gerar Código
 
 ![Tela-Codigo](/docs/assets/produtos/prototipos/prototipo_time_b/Prototipo_GerarCodigo_TimeB.png)
+
+### Tela de Pré-vizualizar Relatório
+
+![Tela-Preview](/docs/assets/produtos/prototipos/prototipo_time_b/Prototipo_GerarCodigo_TimeB.png)
