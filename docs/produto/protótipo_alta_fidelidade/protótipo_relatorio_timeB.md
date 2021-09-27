@@ -20,4 +20,4 @@
 
 ### Tela de Pré-vizualizar Relatório
 
-![Tela-Preview](/docs/assets/produtos/prototipos/prototipo_time_b/Prototipo_GerarCodigo_TimeB.png)
+![Tela-Preview](/docs/assets/produtos/prototipos/prototipo_time_b/Protótipo_Gerar_Relatório_Preview_TimeB.png)
