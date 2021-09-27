@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'models.Secao',
-    'models.Configuracao'
+    'models.Configuracao',
+    'models.Avaliacao',
 ]
 
 MIDDLEWARE = [
