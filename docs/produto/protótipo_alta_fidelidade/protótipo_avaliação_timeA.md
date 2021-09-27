@@ -10,3 +10,7 @@
 ### Tela de Avaliação:
 
 ![Tela-Avaliação](/docs/assets/produtos/prototipos/prototipo_time_a/tela_avaliacao_time_a_corrigido.png)
+
+### Tela de Editar Seção:
+
+![Tela-Editar-Seção](/docs/assets/produtos/prototipos/prototipo_time_a/tela_editar_secao_time_a.png)
