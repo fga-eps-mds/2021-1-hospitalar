@@ -10,4 +10,4 @@
 
 ### Tela de Menu Principal
 
-![Tela-Menu](https://imgur.com/a/OVTZVxx)
+![Tela-Menu](https://i.imgur.com/awU8RIw.png)
