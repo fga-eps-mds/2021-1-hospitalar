@@ -1,12 +1,13 @@
 <h1> Tutorial de instalação básica para novos usuários em MDS - React </h1>
 
-## Histórico de versões
+## Histórico de versão
 
 |    Data    | Versão |          Modificação           |       Autor        |
-| :--------: | :----: | :----------------------------: | :----------------: |
-| 24/08/2021 |  0.1   | Criação e redação do documento |    @pedrohelias    |
-| 24/08/2021 |  0.2   |       Correção do título       |    @pedrohelias    |
-| 07/09/2021 |  0.3   |       Revisão e correção       | @klyssmannoliveira |
+| :-------- | :---- | :---------------------------- | :---------------- |
+| 24/08/2021 |  0.1   | Criação e redação do documento | [@pedrohelias](https://github.com/pedrohelias)    |
+| 24/08/2021 |  0.2   |       Correção do título       | [@pedrohelias](https://github.com/pedrohelias)    |
+| 07/09/2021 |  1.0   |       Revisão e correção       | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 13/09/2021 |  1.1   | Alteração no histórico de versão       | [@victordscabral](https://github.com/victordscabral) |
 
 <h2>Introdução</h2>
 Este documento tem comoo objetivo a apresentação dos primeiros passos no React.

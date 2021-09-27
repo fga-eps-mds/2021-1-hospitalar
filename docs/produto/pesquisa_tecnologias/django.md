@@ -1,12 +1,13 @@
 # Django e Python
 
-## Histórico de versões
+## Histórico de versão
 
 |    Data    | Versão |                Modificação                 |           Autor            |
-| :--------: | :----: | :----------------------------------------: | :------------------------: |
-| 19/08/2021 |  0.1   | Criação do documento e formatação do corpo |       @EduardoGurgel       |
-| 24/08/2021 |  0.2   |        Inclusão da parte de python         | @EduardoGurgel e @jvsdurso |
-| 07/09/2021 |  0.3   |             Revisão e correção             |     @klyssmannoliveira     |
+| :-------- | :---- | :---------------------------------------- | :------------------------ |
+| 19/08/2021 |  0.1   | Criação do documento e formatação do corpo | [@EduardoGurgel](https://github.com/EduardoGurgel)      |
+| 24/08/2021 |  0.2   |        Inclusão da parte de python         | [@EduardoGurgel](https://github.com/EduardoGurgel) e [@jvsdurso](https://github.com/jvsdurso) |
+| 07/09/2021 |  1.0   |             Revisão e correção             | [@klyssmannoliveira](https://github.com/klyssmannoliveira)     |
+| 13/09/2021 |  1.1   | Alteração no histórico de versão           | [@victordscabral](https://github.com/victordscabral) |
 
 ## Introdução
 

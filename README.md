@@ -5,15 +5,9 @@
    <img alt="pr-badge" src="https://img.shields.io/github/issues-pr/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
 </div>
 
-<div align="center">
-   <h1> 2021-1-FAMil </h1>
-</div>
-
-
 <p align="center">
-   <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/assets/logo-2021.jpg"></img>
+   <img src="./docs/assets/logo-2021.jpg"></img>
 </p>
-
 
 <br/>
 
@@ -25,21 +19,23 @@
  </h1>
 </p>
 
-<br/>  
+<br/>
 
 ## 📄 Sobre o projeto
+
 > O FAMil tem como principal intuito auxiliar no processo de avaliação hospitalar do PASAM - Programa de Acreditação da Saúde Assistencial Militar. O projeto consiste em uma página web que proporciona uma avaliação mais dinâmica e padronizada acerca do processo avaliativo, bem como a apresentação dos resultados por meio de relatórios gerados pelos avaliadores credenciados da OMS (Organização Militar da Saúde).
 
-<br/> 
+<br/>
 
 ## ⚙️ Tecnologias utilizadas
 
 As tecnologias foram determinadas de acordo com a necessidade das atividades a serem desenvolvidas.
 
-Frontend | Backend 
-:--------- | :------:  
-[ReactJs](https://reactjs.org/) (JavaScript Libary)  | [DjangoRest](https://www.django-rest-framework.org/) (Python FrameWork) 
-[TypeScript](https://www.typescriptlang.org/) | [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) (NoSql Database)
+| Frontend                                            |                                                                                                                    Backend                                                                                                                    |
+| :-------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [ReactJs](https://reactjs.org/) (JavaScript Libary) |                                                                                    [DjangoRest](https://www.django-rest-framework.org/) (Python FrameWork)                                                                                    |
+| [TypeScript](https://www.typescriptlang.org/)       | [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) (NoSql Database) |
+
 <br>
 <p align="left"> 
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
@@ -50,17 +46,19 @@ Frontend | Backend
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 </p>
 
-<br/> 
+<br/>
 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `<Python / v3.8>`, `<Node/ v14 lts>` e `<Mongodb Community / v5.0+>`
+
+- Você instalou a versão mais recente de `<Python / v3.8>`, `<Node/ v14 lts>` e `<Mongodb Community / v5.0+>`
 
 <br/>
 
-## 💻 Como Utilizar 
+## 💻 Como Utilizar
 
 > Para instalar o FAMil, siga estas etapas:
 
@@ -69,13 +67,15 @@ Comandos para preparar o node (dentro da pasta frontend):
 ```bash
 yarn
 ```
+
 Comandos para preparar o python (dentro da pasta backend):
 
-``` bash
+```bash
 pip install -r requirements.txt
 python ./manage.py makemigrations
 python ./manage.py migrate
 ```
+
 Compilando:
 
 ```bash
@@ -91,7 +91,7 @@ python ./manage.py runserver
 
 ## 🤝 Colaboradores
 
-<!-- 
+<!--
 Arquiteto: rosa #FF00FF
 PO: azul #
 SM: marrom #
@@ -103,7 +103,7 @@ Desenvolvedor: amarelo #
   <tr>
       <th>Arquitetos</th>
       <th>Devops</th>
-      <th>Product Owenrs</th>
+      <th>Product Owners</th>
       <th>Scrum Masters</th>
       <th colspan="3">Desenvolvedores</th>
   </tr> 
@@ -176,9 +176,9 @@ Desenvolvedor: amarelo #
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/87657942?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/51385738?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
         <sub>
-          <b>Pedro Cassiano</b>
+          <b>Eduardo Gurgel</b>
         </sub>
       </a>
     </td>
@@ -200,9 +200,9 @@ Desenvolvedor: amarelo #
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/51385738?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <img src="https://avatars.githubusercontent.com/u/87657942?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
         <sub>
-          <b>Eduardo Gurgel</b>
+          <b>Pedro Cassiano</b>
         </sub>
       </a>
     </td>
@@ -267,10 +267,8 @@ Desenvolvedor: amarelo #
   </tr>
 </table>
 
-<br/> 
+<br/>
 
-## 📜 Documentação 
+## 📜 Documentação
+
 > A documentação pode ser encontrada em [Nossa Página](https://fga-eps-mds.github.io/2021-1-hospitalar) ou no [Repositório](https://github.com/fga-eps-mds/2021-1-hospitalar/tree/main/docs)
-
-
-

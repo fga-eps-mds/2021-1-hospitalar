@@ -10,7 +10,7 @@
 </div>
 
 <p align="center">
-   <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/assets/logo-2021.jpg?raw=true"></img>
+   <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/logo-2021.jpg?raw=true"></img>
 </p>
 
 <br/>
@@ -107,7 +107,7 @@ Desenvolvedor: amarelo #
   <tr>
       <th>Arquitetos</th>
       <th>Devops</th>
-      <th>Product Owenrs</th>
+      <th>Product Owners</th>
       <th>Scrum Masters</th>
       <th colspan="3">Desenvolvedores</th>
   </tr> 
@@ -180,9 +180,9 @@ Desenvolvedor: amarelo #
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/87657942?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/51385738?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
         <sub>
-          <b>Pedro Cassiano</b>
+          <b>Eduardo Gurgel</b>
         </sub>
       </a>
     </td>
@@ -204,9 +204,9 @@ Desenvolvedor: amarelo #
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/51385738?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <img src="https://avatars.githubusercontent.com/u/87657942?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
         <sub>
-          <b>Eduardo Gurgel</b>
+          <b>Pedro Cassiano</b>
         </sub>
       </a>
     </td>

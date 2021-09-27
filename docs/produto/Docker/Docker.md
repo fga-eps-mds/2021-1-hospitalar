@@ -1,11 +1,12 @@
 # Docker
 
-## Histórico de versões
+## Histórico de versão
 
 |    Data    | Versão |     Modificação      |       Autor        |
-| :--------: | :----: | :------------------: | :----------------: |
-| 30/08/2021 |  0.1   | Criação do documento |   @EduardoGurgel   |
-| 07/09/2021 |  0.2   |  Revisão e correção  | @klyssmannoliveira |
+| :-------- | :---- | :------------------ | :---------------- |
+| 30/08/2021 |  0.1   | Criação do documento | [@EduardoGurgel](https://github.com/EduardoGurgel)   |
+| 07/09/2021 |  1.0   | Revisão e correção  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 13/09/2021 |  1.1   | Alteração no histórico de versão | [@victordscabral](https://github.com/victordscabral) |
 
 ## Introdução
 

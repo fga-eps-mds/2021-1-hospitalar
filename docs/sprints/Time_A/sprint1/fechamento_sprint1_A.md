@@ -1,15 +1,17 @@
 # Fechamento da Sprint 01
 
-## Histórico de revisão
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Adição do documento no repositório  | Victor Cabral |
-|    11/09/2021   |  0.2 | Atualização para novo formato  | Victor Cabral |
+|:-|:-|:-|:-|
+|    23/08/2021   |  0.1 | Adição do documento no repositório  | [@victordscabral](https://github.com/victordscabral) |
+|    11/09/2021   |  0.2 | Atualização para novo formato  | [@victordscabral](https://github.com/victordscabral) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+
 ## Backlog da Sprint
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** | 
-|:-:|:-:|:-:|:-:|
+|:-|:-|:-|:-:|
 |    #7   |  [Contato com o Cliente](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/7)| Fechada  | 3 |
 |    #8   |  [Alinhamento das tecnologias](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/8) | Fechada  | 8 |
 |    #9   |  [Levantamento de bibliografia do Doc. Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/9)| Fechada  | 5 |

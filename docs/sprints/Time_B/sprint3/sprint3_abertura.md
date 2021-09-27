@@ -1,4 +1,11 @@
-# Abertura da Sprint 3
+# Abertura da Sprint 03
+
+## Histórico de versão
+
+| **Data** |  **Versão** | **Modificação**  |  **Autor** |
+|:-|:-|:-|:-|
+|    24/09/2021   |  0.1 | Adicionando Sprint 3 para o Time B  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 

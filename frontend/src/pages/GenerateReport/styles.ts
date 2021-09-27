@@ -1,29 +1,24 @@
 import { makeStyles } from '@material-ui/core'
 
+/**
+ * Utilizo do tema para atribuir as cores corretas
+ */
 export const useStyles = makeStyles((theme) => ({
-
-    title: {
-        width: '80%',
-    },
-    text: {
-        width: '75%',
-    },
-    form: {
-        margin: 'auto',
-        marginTop: '40px',
-        width: '35%',        
-        backgroundColor: '#29991a',
-        height: '300px',
-        borderRadius: '10px',
-        paddingTop: '15px',
-    },
-    textContainer: {
-        margin: 'auto',
-        width: '80%',
-        backgroundColor: '#f7f7e8',
-        paddingTop: '25px',
-        paddingBottom: '50px',
-        borderRadius: '10px',
-        marginBottom: '40px',
-    }
+  title: {
+    borderStyle: 'solid',
+    borderWidth: '3px',
+    borderRadius: '5px',
+    borderColor: theme.palette.primary.main,
+  },
+  form: {
+    backgroundColor: theme.palette.secondary.main,
+    borderRadius: '10px',
+  },
+  textContainer: {
+    backgroundColor: '#f7f7e8',
+    paddingTop: '25px',
+    paddingBottom: '50px',
+    borderRadius: '10px',
+    marginTop: '150px',
+  },
 }))

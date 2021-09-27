@@ -21,6 +21,7 @@
   - [Documento de Visão](/produto/Visao/Visao)
   - [Backlog do Produto](/produto/backlog/backlog)
   - [Arquitetura](/produto/Arquitetura/Arquitetura)
+  - [Identidade Visual](/produto/Identidade_Visual/IdentidadeVisual)
 
 ---
 
@@ -140,18 +141,68 @@
       <details>
       <summary>Sprint 05 </summary>
       <ul>
-      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint5/abertura_sprint5">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint5/abertura_sprint5">Abertura</a></li>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint5/fechamento_sprint5">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 06 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint6/abertura_sprint6">Abertura</a></li>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint6/fechamento_sprint6">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 07 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint7/abertura_sprint7">Abertura</a></li>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_B/sprint7/fechamento_sprint7">Fechamento</a></li>
       </ul>
       </details>
       </details>
 
-  <details>
-    <summary> Time C</summary>
     <details>
-    <summary>Sprint 05 </summary>
+    <summary> Time C</summary>
+     <details>
+      <summary>Sprint 00 </summary>
       <ul>
-      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/abertura_sprint5">Abertura</a></li> 
-      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/fechamento_sprint5">Fechamento</a></li>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint0/abertura_sprint0">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint0/fechamento_sprint0">Fechamento</a></li>
       </ul>
       </details>
-  </details>
+      <details>
+      <summary>Sprint 01 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint1/abertura_sprint1">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint1/fechamento_sprint1">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 02 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint2/abertura_sprint2">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint2/fechamento_sprint2">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 03 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint3/abertura_sprint3">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint3/fechamento_sprint3">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 04 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/abertura_sprint4">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/fechamento_sprint4">Fechamento</a></li>
+      </ul>
+      </details>
+      <details>
+      <summary>Sprint 05 </summary>
+      <ul>
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint5/abertura_sprint5">Abertura</a></li> 
+      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint5/fechamento_sprint5">Fechamento</a></li> 
+      </ul>
+      </details>
+      </details>

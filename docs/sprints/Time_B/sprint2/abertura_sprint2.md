@@ -1,4 +1,11 @@
-# Planejamento da Sprint 2
+# Abertura da Sprint 02
+
+## Histórico de versão
+
+| **Data** |  **Versão** | **Modificação**  |  **Autor** |
+|:-|:-|:-|:-|
+|    06/09/2021   |  0.1 | Adicionando Sprint 2 para o Time B  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 Essa sprint tem como objetivo a conclusão da elaboração do objetivo, dos requisitos e dos riscos no Termo de Abertura de Projeto. Bem como, o conhecimento das linguagens e tecnologias escolhidas e o desenho do protótipo de baixa fidelidade.

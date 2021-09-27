@@ -1,11 +1,12 @@
 # Abertura da Sprint 05
 
-## Histórico de revisão
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    09/09/2021   |  0.1 | Criação do documento  | Victor Cabral |
-
+|:-|:-|:-|:-|
+|    09/09/2021   |  0.1 | Criação do documento  | [@victordscabral](https://github.com/victordscabral) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+|    18/09/2021   |  1.1 | Ajuste no documento  | [@victordscabral](https://github.com/victordscabral) |
 ## Objetivos
 
 Essa Sprint tem como principais objetivos: 
@@ -59,6 +60,7 @@ Essa Sprint tem como principais objetivos:
 
 - [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
 - [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
+- [#88 Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88)
 - [#90 Configurar Ambiente de Desenvolvimento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/90)
 - [#94 Crud da classe: CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/96)
 - [#95 Crud da classe: Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/95)

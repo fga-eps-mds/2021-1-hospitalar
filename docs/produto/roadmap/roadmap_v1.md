@@ -1,11 +1,13 @@
 # RoadMap do Produto
 
-## Histórico de Versão
+## Histórico de versão
 
-|    Data    | Versão |      Modificação      |       Autor        |
-| :--------: | :----: | :-------------------: | :----------------: |
-| 09/09/2021 |  0.1   | Criação do documento  |  @victordscabral   |
-| 12/09/2021 |  0.2   | Revisão da introdução | @klyssmannoliveira |
+|    Data    | Versão |           Modificação            |                           Autor                            |
+| :--------: | :----: | :------------------------------: | :--------------------------------------------------------: |
+| 09/09/2021 |  0.1   |       Criação do documento       |    [@victordscabral](https://github.com/victordscabral)    |
+| 12/09/2021 |  0.2   |      Revisão da introdução       | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 13/09/2021 |  1.0   | Alteração no histórico de versão |    [@victordscabral](https://github.com/victordscabral)    |
+| 17/09/2021 |  1.1   | Alteração do markdown dos assets |       [@pedrohelias](https://github.com/pedrohelias)       |
 
 ## Introdução
 
@@ -15,4 +17,4 @@ Desta forma, esse documento tem como objetivo a apresentação do RoadMap do Pro
 
 ## RoadMap do Produto (Versão 1)
 
-![RoadMap](RoadMap_Do_Produto.png)
+![RoadMap](/docs/assets/produtos/road_map/roadmap.png)

@@ -1,8 +1,11 @@
-# Abertura da Sprint 4 - Time B
+# Abertura da Sprint 04 - Time B
+
+## Histórico de versão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    25/08/2021   |  0.1 | Criação do documento  | Adrian Soares |
+|:-|:-|:-|:-|
+|    25/08/2021   |  0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
+|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 

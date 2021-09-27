@@ -1,16 +1,19 @@
 # Fechamento da Sprint 04
 
-## Histórico de revisão
+## Histórico de versão
 
 |  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**      |
-| :--------: | :--------: | :---------------------------------------------------: | :----------------: |
-| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   Victor Cabral    |
-| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | @klyssmannoliveira |
+| :-------- | :-------- | :--------------------------------------------------- | :---------------- |
+| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   [@victordscabral](https://github.com/victordscabral)   |
+| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   [@victordscabral](https://github.com/victordscabral)    |
+| 13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
 | **ID** |                                                     **Descrição**                                                      | **Status** | **Pontos** |
-| :----: | :--------------------------------------------------------------------------------------------------------------------: | :--------: | :--------: |
+| :---- | :-------------------------------------------------------------------------------------------------------------------- | :-------- | :--------: |
 |  #20   |         [Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)         |  Fechada   |     5      |
 |  #23   |   [Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)   |  Fechada   |     1      |
 |  #36   |        [Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)         |   Aberta   |     8      |
@@ -37,16 +40,23 @@
 ## Débitos Técnicos de Sprints Anteriores
 
 [#20 Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)
+<br>
 [#23 Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)
+<br>
 [#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
 
 ## Débitos Técnicos Gerados
 
 [#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
+<br>
 [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
+<br>
 [#70 Definir Pareamento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/70)
+<br>
 [#72 Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)
+<br>
 [#74 Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)
+<br>
 [#76 Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)
 
 ## Retrospectiva
@@ -72,19 +82,19 @@
 
 ## Burndown
 
-![burndown](burndown4_A.png)
+![burndown](/docs/assets/sprints/time_a/sprint_4/burndown4_A.png)
 
 ## Velocity
 
-![velocity](velocity4_A.png)
+![velocity](/docs/assets/sprints/time_a/sprint_4/velocity4_A.png)
 
 ## Cumulative Flow
 
-![cumulativeflow](cumulative4_A.png "Cumulativeflow")
+![cumulativeflow](/docs/assets/sprints/time_a/sprint_4/cumulative4_A.png)
 
 ## Práticas ágeis
 
-| ID  |                        Nome de prática ágil                        | Sprint nº |
+| ID  |                        Nome de prática ágil                        | Sprint 04 |
 | :-: | :----------------------------------------------------------------: | :-------: |
 |  1  |                   Priorização do Backlog pelo PO                   | &#10004;  |
 |  2  |    Desenvolvimento de processos e práticas facilitadas pelo SM     | &#10004;  |

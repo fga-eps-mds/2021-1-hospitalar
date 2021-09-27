@@ -1,92 +1,188 @@
+import { Grid, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
-import { Grid, Box } from '@material-ui/core'
+
+import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Header } from '../../components/GlobalComponents/Header'
-import { Form } from '../../components/GlobalComponents/Forms/Form';
-import { TextField } from '../../components/GlobalComponents/Inputs/TextField';
-import { Button } from '../../components/GlobalComponents/Inputs/Button';
-import { Typography } from '@material-ui/core'
+import { TextField } from '../../components/GlobalComponents/Inputs/TextField'
+import { generatePDF } from '../../api'
 import { useStyles } from './styles'
 
-export const GenerateReport: React.FC = (props) => {
+/**
+ * A tela foi baseada no protótipo da página de gerar relatório, mas toda a lógica atual é para testes
+ * @returns React.ReactElement
+ */
+export function GenerateReport(): React.ReactElement {
+  const classes = useStyles()
 
-    const classes = useStyles()
-    let hospitalName: string = "";
-    let error: number = 0;
-    const [code , setCode] = useState('');
-    const handleCodeChange = (e: { target: { value: React.SetStateAction<string> } }) => {
-        setCode(e.target.value);
-        getHospitalName(e.target.value.toString());
-    }
-    const getHospitalName = (hospitalCode: string) => {
-        //código apenas para demonstração
-        let testHospitalNames: string[] = ["#hospital1", "#hospital2", "#hospital3"];
-        let index = testHospitalNames.indexOf(hospitalCode);
-        if(index > -1){
-            hospitalName = testHospitalNames[index]
-        }
-    }
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-        if(code === "" || code.charAt(0) !== "#"){
-            alert("error message");
-            error = 1
-        } else{
-            getHospitalName(code);
-            alert(code + hospitalName );
+  const testHospitalNames = ['#hospital1', '#hospital2', '#hospital3']
 
-        }
-    }
-    const name = () => {
-        getHospitalName(code);
-        return <TextField disabled name="Código" value="" label={hospitalName}  onChange={()=>{}} id="standard-basic" variant="outlined"/>
-    }
+  const [selectedHospitalName, setSelectedHospitalName] = useState('')
+  const [code, setCode] = useState('')
 
-    const test2 = () => {
-        console.log(error)
-        return <TextField disabled name="Código" value="" label={hospitalName}  onChange={()=>{}} id="standard-basic" variant="outlined"/>
-    }
+  const getHospitalName = (hospitalCode: string) => {
+    const index = testHospitalNames.indexOf(hospitalCode)
 
-    return (
-        <Grid>
-            <Grid container direction='column' spacing={2}>
-                <Grid item>
-                    <Header title='Home Page' />
-                </Grid>
-            </Grid>
-            <Box className={classes.form}>
-                <Grid container direction="column" justifyContent="flex-start" alignItems="center">
-                <Box mb="30px"><Typography variant="h3" align="center">Gerar Relatório</Typography></Box>
-                    <Form>
-                        <Grid container direction='column' spacing={2} alignItems="center" id="grid">
-                            <TextField name="Código" value={code} label="Código" onChange={handleCodeChange} id="standard-basic" variant="outlined"/>
-                            {name()}
-                            <Button size="medium" onClick={handleSubmit}>Baixar (.pdf)</Button>
-                        </Grid>
-                    </Form>
-                </Grid>
-            </Box>
-            <Box mt="100px">
-                <Grid className={classes.textContainer} container direction='column' spacing={2} alignItems="center">
-                    <Box borderColor="primary.main" border={3} mb="30px" className={classes.title}><Typography variant="h4" align="center">Descrição de Relatório</Typography></Box>
-                    <Box className={classes.text}>
-                        <Grid>
-                            <Box mb="10px"><Typography variant="h5" align="center">Demonstração de Gráfico</Typography></Box>
-                            <Typography>Texto testando Demonstração de Gráfico Texto testando Demonstração de GráficoTexto testando Demonstração de GráficoTexto testando Demonstração de GráficoTexto testando Demonstração de GráficoTexto testando Demonstração de GráficoTexto testando Demonstração de GráficoTexto testando Demonstração de GráficoTexto testando Demonstração de Gráfico</Typography>
-                        </Grid>
-                    </Box>
-                    <Box mt="30px" className={classes.text}>
-                        <Grid>
-                            <Box mb="10px"><Typography variant="h5" align="center">Legendas</Typography></Box>
-                            <Typography>Texto testando Legendas Texto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando LegendasTexto testando Legendas</Typography>
-                        </Grid>
-                    </Box>
-                    <Box mt="30px" className={classes.text}>
-                        <Grid>
-                            <Box mb="10px"><Typography variant="h5" align="center">Referências</Typography></Box>
-                            <Typography>Texto testando Referências Texto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando ReferênciasTexto testando Referências</Typography>
-                        </Grid>
-                    </Box>
-                </Grid>
-            </Box>
+    if (index > -1) {
+      setSelectedHospitalName(testHospitalNames[index])
+    } else {
+      setSelectedHospitalName('')
+    }
+  }
+
+  const handleCodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault()
+
+    setCode(e.target.value)
+
+    getHospitalName(e.target.value)
+  }
+
+  const handleSubmit = () => {
+    generatePDF(selectedHospitalName)
+  }
+
+  const generateForm = () => (
+    <>
+      {/* Dois Grids, o primeiro é um texto e o segundo 
+      é um formulário com dois textFields e um botão */}
+      <Grid item>
+        <Typography variant='h3'>Gerar Relatório</Typography>
+      </Grid>
+      <Grid item container direction='column' alignItems='center' spacing={1}>
+        <Grid item>
+          <TextField
+            name='Código'
+            value={code}
+            label='Código'
+            onChange={handleCodeChange}
+            variant='outlined'
+          />
         </Grid>
+        <Grid item>
+          <TextField
+            disabled
+            name='Código'
+            value=''
+            label={selectedHospitalName}
+            onChange={() => {}}
+            variant='outlined'
+          />
+        </Grid>
+        <Grid item>
+          <Button onClick={handleSubmit}>Baixar (.pdf)</Button>
+        </Grid>
+      </Grid>
+    </>
+  )
+
+  const generateInfoBox = () => {
+    const paragrafos = [
+      {
+        id: 1,
+        titulo: 'Demonstração de Gráfico',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eleifend arcu.' +
+          ' Duis blandit condimentum mattis. Suspendisse eu tortor ut nibh posuere pharetra eget' +
+          'et sapien. Aliquam a massa aliquam, varius libero vitae, accumsan mauris. Pellentesque' +
+          'habitant morbi tristique senectus et netus et malesuada fames.',
+      },
+      {
+        id: 2,
+        titulo: 'Legendas',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eleifend arcu.' +
+          ' Duis blandit condimentum mattis. Suspendisse eu tortor ut nibh posuere pharetra eget' +
+          'et sapien. Aliquam a massa aliquam, varius libero vitae, accumsan mauris. Pellentesque' +
+          'habitant morbi tristique senectus et netus et malesuada fames.',
+      },
+      {
+        id: 3,
+        titulo: 'Referências',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eleifend arcu.' +
+          ' Duis blandit condimentum mattis. Suspendisse eu tortor ut nibh posuere pharetra eget' +
+          'et sapien. Aliquam a massa aliquam, varius libero vitae, accumsan mauris. Pellentesque' +
+          'habitant morbi tristique senectus et netus et malesuada fames.',
+      },
+    ]
+    return (
+      <>
+        {/* Título com borda... Contém três grids, o da esquerda e direita são espaçadores 
+    e o do meio é o texto */}
+        <Grid item container>
+          <Grid item xs={1} />
+          <Grid item container xs={10} justifyContent='center' className={classes.title}>
+            <Grid item>
+              <Typography variant='h4'>Descrição de Relatório</Typography>
+            </Grid>
+          </Grid>
+          <Grid item xs={1} />
+        </Grid>
+        {/* Parágrafos... Cada parágrafo tem três grids, o da esquerda e direita são espaçadores 
+    e o do meio é o texto com um título */}
+        {paragrafos.map((paragrafo) => (
+          <Grid key={paragrafo.id} item container>
+            <Grid item xs={1} />
+            <Grid item container direction='column' xs={10} spacing={2}>
+              <Grid item>
+                <Typography variant='h5' align='center'>
+                  {paragrafo.titulo}
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography align='justify'>{paragrafo.texto}</Typography>
+              </Grid>
+            </Grid>
+            <Grid item xs={1} />
+          </Grid>
+        ))}
+      </>
     )
+  }
+
+  return (
+    <Grid container direction='column' spacing={6}>
+      {/* Header */}
+      <Grid item>
+        <Header title='Relatório' />
+      </Grid>
+      {/* Tres Grids ocupam o tamanho total horizontal da tela, 
+      o da esquerda e direita são transparentes 
+      e o do meio é um quadrado verde com o Formulário */}
+      <Grid item container>
+        <Grid item xs={false} sm={4} />
+        <Grid
+          item
+          container
+          xs={12}
+          sm={4}
+          direction='column'
+          className={classes.form}
+          alignItems='center'
+          spacing={2}
+        >
+          {generateForm()}
+        </Grid>
+        <Grid item xs={false} sm={4} />
+      </Grid>
+      {/* Três Grids, o da esquerda e direita são espaçadores e 
+      o do meio é um quadrado amarelo com texto */}
+      <Grid item container>
+        <Grid item xs={false} sm={1} />
+        <Grid
+          item
+          container
+          xs={false}
+          sm={10}
+          direction='column'
+          className={classes.textContainer}
+          alignItems='center'
+          spacing={2}
+        >
+          {generateInfoBox()}
+        </Grid>
+        <Grid item xs={false} sm={1} />
+      </Grid>
+    </Grid>
+  )
 }

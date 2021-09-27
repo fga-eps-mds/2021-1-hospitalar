@@ -1,16 +1,19 @@
 # Fechamento da Sprint 03
 
-## Histórico de revisão
+## Histórico de versão
 
-|  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**      |
-| :--------: | :--------: | :---------------------------------------------------: | :----------------: |
-| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   Victor Cabral    |
-| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | @klyssmannoliveira |
+|  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**    |
+| :-------- | :-------- | :--------------------------------------------------- | :---------------- |
+| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   [@victordscabral](https://github.com/victordscabral)    |
+| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 13/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   [@victordscabral](https://github.com/victordscabral)    |
+| 13/09/2021 |    1.0       | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
 | **ID** |                                                    **Descrição**                                                     | **Status** | **Pontos** |
-| :----: | :------------------------------------------------------------------------------------------------------------------: | :--------: | :--------: |
+| :---- | :------------------------------------------------------------------------------------------------------------------ | :-------- | :--------: |
 |  #16   |          [Criar protótipo de baixa fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)           |  Fechada   |     8      |
 |  #19   |               [Início do Product Backlog](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/19)                |  Fechada   |     13     |
 |  #20   |        [Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)        |   Aberta   |     5      |
@@ -40,7 +43,9 @@
 ## Débitos Técnicos Gerados
 
 [#20 Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)
+<br>
 [#23 Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)
+<br>
 [#36 Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)
 
 ## Retrospectiva
@@ -68,19 +73,19 @@
 
 ## Burndown
 
-![burndown](burndown3_A.png)
+![burndown](/docs/assets/sprints/time_a/sprint_3/burndown3_A.png)
 
 ## Velocity
 
-![velocity](velocity3_A.png)
+![velocity](/docs/assets/sprints/time_a/sprint_3/velocity3_A.png)
 
 ## Cumulative Flow
 
-![cumulativeflow](cumulative3_A.png "Cumulativeflow")
+![cumulativeflow](/docs/assets/sprints/time_a/sprint_3/cumulative3_A.png)
 
 ## Práticas ágeis
 
-| ID  |                        Nome de prática ágil                        | Sprint nº |
+| ID  |                        Nome de prática ágil                        | Sprint 03 |
 | :-: | :----------------------------------------------------------------: | :-------: |
 |  1  |                   Priorização do Backlog pelo PO                   | &#10004;  |
 |  2  |    Desenvolvimento de processos e práticas facilitadas pelo SM     | &#10004;  |

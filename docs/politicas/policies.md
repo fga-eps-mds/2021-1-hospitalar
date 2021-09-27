@@ -4,8 +4,10 @@
 
 | Data | Versão | Modificação | Autor |
 | :- | :- | :- | :- |
-| 17/08/2021 | 0.1 | Criação da primeira versão do documento | Adrian Soares Lopes |
-| 31/08/2021 | 0.2 | Remoção, tags e PR  | Adrian Soares Lopes |
+| 17/08/2021 | 0.1 | Criação da primeira versão do documento | [@SwampTG](https://github.com/SwampTG) |
+| 31/08/2021 | 0.2 | Remoção, tags e PR  | [@SwampTG](https://github.com/SwampTG) |
+| 13/09/2021 | 1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivo:
 
@@ -13,10 +15,17 @@ Critérios a serem seguidos por todos que queiram contribuir para o projeto, pri
 
 **Índice do documento**:
 
-- [Política de Branches](#politica-de-branches)
-- [Política de Commits](#politica-de-commits)
-- [Política de Remoção de Branches](#politica-de-remocao-de-branches)
-- [Política de Pull Request](#politica-de-pull-requesr)
+- [Políticas do Repositório](#políticas-do-repositório)
+  - [Histórico de versão](#histórico-de-versão)
+  - [Objetivo:](#objetivo)
+  - [Política de Branches](#política-de-branches)
+    - [Main](#main)
+      - [Features](#features)
+      - [Hotfix](#hotfix)
+      - [Doc](#doc)
+  - [Política de Commits](#política-de-commits)
+  - [Política de Remoção de Branches](#política-de-remoção-de-branches)
+  - [Política de Pull Request](#política-de-pull-request)
 
 ## Política de Branches
 
@@ -155,30 +164,26 @@ A remoção será feita logo após um PR revisado, aceito e já fundido na branc
 
 **Basta seguir os seguintes passos:**
 
-acesse a lista completa de branches do repositório:
+Acesse a lista completa de branches do repositório:
 
-![branch_list_delete_1](assets/branch_list_delete_1.png
-)
+![branch_list_delete_1](/docs/assets/politicas/branch_list_delete_1.png)
 
 Certifique-se que a branch já foi unida a main e clique no símbolo de lixo:
 
-![branch_list_delete_1](assets/branch_list_delete_2.png
-)
+![branch_list_delete_2](/docs/assets/politicas/branch_list_delete_2.png)
 
 ## Política de Pull Request
 
 Para unir branches a main, devemos fazer um PR, indicando sobre o que é, o que foi feito, revisores e qual issue(s) será cumprida através do Merge.
 
 **Primeiro abra o PR:**
-![branch_list_delete_1](assets/p-r_open.png
-)
+![p-r_fim](/docs/assets/politicas/p-r_open.png)
 
 **Abra o PR interligando com a issue usando `Closes #NumIssue` indique os revisores e os assignees**
 
 Lembre de descrever bem o PR:
 
-![p-r_fim](assets/p-r_fim.png
-)
+![p-r_fim](/docs/assets/politicas/p-r_fim.png)
 
 **Para um PR mais completo, principalmente para features e hotfix, deve-se utilizar o template:**
 

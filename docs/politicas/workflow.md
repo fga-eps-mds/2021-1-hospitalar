@@ -1,5 +1,14 @@
 # Workflow
 
+## Histórico de versão
+
+| Data | Versão | Modificação | Autor |
+| :- | :- | :- | :- |
+| 18/08/2021 | 0.1 | Criação da primeira versão do documento | [@SwampTG](https://github.com/SwampTG) |
+| 31/08/2021 | 0.2 | Adição de mais comandos e template do PR  | [@SwampTG](https://github.com/SwampTG) |
+| 13/09/2021 | 1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
+
 ## Introdução
 
 Para que os colaboradores possam contribuir de forma eficaz, recomendamos esse workflow para diminuir os riscos de conflitos.
@@ -18,7 +27,8 @@ git push origin nome-da-branch-criada
 `git rebase main`
 7. Após testes, faça um Pull Request, linkando com a issue:
    - No repositório, clique em Pull request:
-   ![pull-tut-1](assets/pull_req_tut_1.png)
+   ![pull_req_tut_1](/docs/assets/politicas/pull_req_tut_1.png)
+
    - Verifique a branch de origem e de destino.
    - Preencha o template (remova as partes não necessárias para o seu PR):
 
@@ -62,7 +72,7 @@ Descreva os testes rodados. Coloque instruções para serem rodados pelos reviso
 
 - Crie seu Pull Request
 - Volte aos Pull Requests. Na sidebar à direita, clique em Linked Issues:
- ![l-issues](https://docs.github.com/assets/images/help/pull_requests/linked-issues.png)
+ ![linked_issues](/docs/assets/politicas/linked_issues.png)
 - Clique na issue relacionada.
 - Resolva possíveis conflitos.
 - Para mais informações, veja: [Políticas](policies.md)

@@ -2,10 +2,11 @@
 
 ### Histórico de versão
 
-| Data| Versão| Descrição  | Autor  |
-| :---: | :---: | :---: | :---: |
-| 21/09 | 1.0 | Página de avaliação | João Vitor Durso, Klyssmann Oliveira e Pedro Helias |
+| Data  | Versão |      Descrição      |                        Autor                        |
+| :---: | :----: | :-----------------: | :-------------------------------------------------: |
+| 21/09 |  1.0   | Página de Avaliação | João Vitor Durso, Pedro Helias e Klyssmann Oliveira |
+| 22/09 |  1.1   | Correções na página | João Vitor Durso, Pedro Helias e Klyssmann Oliveira |
 
-### Tela de Avaliação
+### Tela de Avaliação:
 
-![Tela-Avaliacao](/docs/assets/produtos/prototipos/prototipo_time_a/prototipo_de_alta_fidelidade_time_a_avaliacao.png)
+![Tela-Avaliação](/docs/assets/produtos/prototipos/prototipo_time_a/tela_avaliacao_time_a_corrigido.png)
