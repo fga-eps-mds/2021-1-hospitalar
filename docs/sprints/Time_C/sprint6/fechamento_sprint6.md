@@ -109,32 +109,32 @@
   
 ## Squad Health Check
   
-| Nome | Sprint 1 | Sprint 2 | Sprint 3 |
-| :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128512; | &#128516; | &#128521; |
-| Pessoa 2 | &#128529; | &#129320; | &#128530; |
-| Pessoa 3 | &#128532; | &#128567; | &#129314; |
-| Pessoa 4 | &#129395; | &#128547; | &#129321; |
+| Nome | Sprint 0 | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 | Sprint 6 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Pedro Caldeira | &#128521; | &#128529; | &#128554; | &#128521; | &#128529; | &#128521; | &#128521; |
+| Pedro Vieira | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529; | 
+| Gabriel Luiz | &#128521; | &#128529; | &#128521; | &#128521; | &#128521; | &#128529; | &#128529; | 
+| Igor Thiago  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128554; | 
+| Thiago Vivan  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | 
+| Bruno  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529;  | &#128529; | 
 
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** |  **Nota** |
-|:-:|:-:|
-|    Descrição do Objetivo   |  (nº) |
-|    Descrição do Objetivo   |  (nº) | 
-|    ...   |  ... |
+| Emote | Significados |
+| :-: | :-: |
+| &#128521; | Alegre/Animado |
+| &#128529; | Indiferente/Neutro |
+| &#128554; | Desanimado/triste |
 
 ## Riscos
 
 |  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
 |:-:|:-:|:-:|
-| ... | ... | ... |
-| ... | ... | ... |
-  
-<!-- ## Burndown de Riscos (???) -->
+| Cansaço e Desmotivação | Adicionar mais integrantes para ajudar | Distribuir tarefas mais simples com maior prazo |
+| Desorganização | Reunir antes de iniciar as sprints | Reforçar as prioridades das tarefas |
+| Falta de tempo | Assim como item anterior, reuniões antecipadas das sprintas para ter uma melhor organização | Ajuda de outros integrantes |
+| Tarefas acumuladas | Dividir as tarefas com mais intergrantes | Contato constante para avaliar as prioridades |
+
 
 ## Análise pelo Scrum Master
 
-...
+Sprint bem corrida e cansativa, dado o fato de que estávamos perto da entrega da Release 1 e todos ficaram me tensos e receosos com os documentos. SM´s e PO´s estavam a frente por parte dos principais documentos, porém com as tarefas bem acumuladas tivemos que convocar a todos para términos de documentos, revisão, correção e etc. Juntando com ansiedade de alguns, cansaço e desmotivação de outros, tivemos nos últimos dias das sprints bem difíceis. Porém conseguimos ter resiliência e apesar das dificuldades, continuamos com o processo e conseguimos entregar todos os documentos, terminamos as versões bases para a entrega do GitHub pages na R1. Quanto ao código, não priorizamos tanto a parte da implementação, onde nos assutou bastante quando a professora informou que na R1 também precisávamos entregar uma versão já inicial da aplicação, logo a correria que ja era grande, aumentou. 
+Mesmo assim todos mantiveram a calma e apesar de não estar da forma que não queríamos, também conseguimos entregar. Estamos bem satisfeitos quanto asos resultados dos documentos como um todo e a nossa entrega da R1.
