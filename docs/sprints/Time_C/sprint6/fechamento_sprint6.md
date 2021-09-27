@@ -1,66 +1,64 @@
-# Fechamento da Sprint (nº)
+# Fechamento da Sprint 6
 
 ## Histórico de revisão
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|    23/08/2021   |  0.1 | Criação do documento  | [Pedro Vieira](https://github.com/Pedro-V8) |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    ...   |  [...]() | ...  | ... |
+|    #137   |  [Vídeos para a Release 1 - Geral ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/137) | Fechada  | 10 |
+|    #135   |  [Atualização do Diagrama de Classes Unificado - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/135) | Aberta  | 5 |
+|    #121   |  [Revisão de padronização  dos arquivos na branch main - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/121) | Fechada  | 5 |
+| # 124   |  [Revisão Geral para a Release 1 - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/124)  | Fechada | 7 |
 
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 27 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 7 Pontos <br>
+**Pontos Concluídos:** 22 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
 - Não houveram débitos técnicos para pagar nesta sprint
 
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
-
 ## Débitos Técnicos Gerados
 
-- Não foram gerados débitos nesta sprint
+- [#135 Atualização do Diagrama de Classes Unificado - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/135)
 
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
 
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
--
+- Melhor divisão nas tarefas dos times
+
+- Equipes mais organizadas
+
+- R1 entregue com todos os documentos
+
+- Maior Produtividade
 
 ### Pontos Negativos
 
--
--
+- Tarefas acumuladas para a entrega da R1
+
+- Ansiedade e Insegurnaça quanto à R1
+
+- Cansaço
 
 ### Melhorias
 
--
--
+- Time mais organizado
+- Mais noção da importancia da aplicação das metodologias ágeis no projeto.
 
 ## Burndown
 
-Gráfico gerado pelo ZenHub  
+![Burndown](/docs/assets/sprints/time_c/sprint_6/burndown.png) 
   
 ## Velocity
 

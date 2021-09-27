@@ -1,4 +1,4 @@
-# Abertura da Sprint (nº)
+# Abertura da Sprint 6
 
 ## Histórico de revisão
 
@@ -22,13 +22,16 @@ Sprint com objetivo de começar a estruturação do ambiente de desenvolvimento,
 
 [#124 Revisão Geral para a Release 1 - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/124)
 <br>
+
 [#137 Vídeos para a Release 1 nome da issue - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/137)
 <br>
+
 [#121 Revisão de padronização  dos arquivos na branch main - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/121)
 <br>
+
 [#135 Atualização do Diagrama de Classes Unificado - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/135)
 <br>
-[#124 Revisão Geral para a Release 1 - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/124)
+
 
 ## Débito Técnico Adicionado
 
