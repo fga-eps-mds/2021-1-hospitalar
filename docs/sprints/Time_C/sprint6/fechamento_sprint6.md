@@ -62,7 +62,11 @@
   
 ## Velocity
 
-Gráfico gerado pelo ZenHub  
+![Velocity](/docs/assets/sprints/time_c/sprint_6/velocity.png) 
+
+## Cumulative Flow
+
+![Cumulative Flow](/docs/assets/sprints/time_c/sprint_6/cflow.png)
   
 ## Práticas ágeis
   
@@ -70,9 +74,9 @@ Gráfico gerado pelo ZenHub
 | :-: | :-: | :-: |
 | 1    | Priorização do Backlog pelo PO | &#10004; |
 | 2    | Desenvolvimento de processos e práticas facilitadas pelo SM | &#10004; |
-| 3    | Reunião de planejamento de Sprint | &#10060; |
+| 3    | Reunião de planejamento de Sprint | &#10004; |
 | 4    | Planning Poker | &#10060; |
-| 5    | Comprometimento do time e do PO com o backlog do produto | &#10004; |
+| 5    | Comprometimento do time e do PO com o backlog do produto | &#10060; |
 | 6    | Os membros da equipe são voluntários para tarefas | &#10004; |
 | 7    | Restrospectiva da Sprint | &#10060; |
 | 8    | Acompanhamento do Velocity | &#10060; |
