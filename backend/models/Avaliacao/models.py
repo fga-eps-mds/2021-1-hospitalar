@@ -1,5 +1,4 @@
 from django.db import models
-from .models import Secao
 from datetime import datetime
 
 # Create your models here.
