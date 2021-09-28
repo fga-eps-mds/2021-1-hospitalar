@@ -8,12 +8,8 @@ from django.http import HttpResponse
 from reportlab.pdfgen import canvas
 from .models import Avaliacao, Secao
 from .serializers import AvaliacaoSerializer
-
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib.units import inch
-
-# TO-DO!!!!!
+from io import BytesIO
+from .relatorio.printing import MyPrint
 
 
 class AvaliacaoView(viewsets.ModelViewSet):
@@ -29,27 +25,12 @@ class AvaliacaoView(viewsets.ModelViewSet):
         response['Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
 
         # Create the PDF object, using the response object as its "file."
-        # p = canvas.Canvas(response)
+        buffer = BytesIO()
 
         # Draw things on the PDF. Here's where the PDF generation happens.
         # See the ReportLab documentation for the full list of functionality.
-
-        doc = SimpleDocTemplate(buffer)
-        styles = getSampleStyleSheet()
-        elements = [Spacer(1, 2*inch)]
-        style = styles["Normal"]
-        for i in range(100):
-            bogustext = ("This is Paragraph number %s.  " % i) * 20
-            p = Paragraph(bogustext, style)
-            elements.append(p)
-            elements.append(Spacer(1, 0.2*inch))
-        doc.build(elements)
-
-        # p.drawString(100, 100, "Hello world.")
-        pdf = buffer.getValue()
-
-        # Close the PDF object cleanly, and we're done.
-        buffer.close()
+        report = MyPrint(buffer, 'A4')
+        pdf = report.printReport()
 
         response.write(pdf)
 
