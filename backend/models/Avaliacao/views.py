@@ -23,7 +23,7 @@ class AvaliacaoView(viewsets.ModelViewSet):
     lookup_field = 'codigo'
 
     @action(methods=['get'], detail=False)
-    def generatePDF(self, request):
+    def generatePDF(buffer, request):
         # Create the HttpResponse object with the appropriate PDF headers.
         response = HttpResponse(content_type='application/pdf')
         response['Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
@@ -34,18 +34,23 @@ class AvaliacaoView(viewsets.ModelViewSet):
         # Draw things on the PDF. Here's where the PDF generation happens.
         # See the ReportLab documentation for the full list of functionality.
 
-        doc = SimpleDocTemplate(response)
+        doc = SimpleDocTemplate(buffer)
         styles = getSampleStyleSheet()
-        Story = [Spacer(1, 2*inch)]
+        elements = [Spacer(1, 2*inch)]
         style = styles["Normal"]
         for i in range(100):
             bogustext = ("This is Paragraph number %s.  " % i) * 20
             p = Paragraph(bogustext, style)
-            Story.append(p)
-            Story.append(Spacer(1, 0.2*inch))
-        doc.build(Story)
+            elements.append(p)
+            elements.append(Spacer(1, 0.2*inch))
+        doc.build(elements)
 
         # p.drawString(100, 100, "Hello world.")
+        pdf = buffer.getValue()
 
         # Close the PDF object cleanly, and we're done.
+        buffer.close()
+
+        response.write(pdf)
+
         return response

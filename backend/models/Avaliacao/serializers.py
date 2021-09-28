@@ -28,9 +28,9 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
                 O objeto criado.
         '''
 
-        secoes = validated_data.pop('secao')
-        secao = Secao.objects.create(**validated_data)
-        for linha in subtopicos:
-            Subtopico.objects.create(**linha, secao=secao)
+        secao = validated_data.pop('secao')
+        avaliacao = Avaliacao.objects.create(**validated_data)
+        for linha in secao:
+            Secao.objects.create(**linha, avaliacao=avaliacao)
 
-        return secao
+        return avaliacao
