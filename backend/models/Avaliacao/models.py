@@ -6,7 +6,6 @@ from datetime import datetime
 
 
 class Avaliacao(models.Model):
-    secao = models.ForeignKey(Secao, on_delete=models.CASCADE)
     codigo = models.TextField(blank=True)
     nomeHospital = models.TextField(blank=True)
     idsAvaliadores = models.TextField(blank=True)
