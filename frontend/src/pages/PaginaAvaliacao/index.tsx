@@ -1,4 +1,5 @@
-import { Box, Grid, Typography } from '@material-ui/core'
+/* eslint-disable react/self-closing-comp */
+import { Box, Grid, TextField, Typography } from '@material-ui/core'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
@@ -18,6 +19,9 @@ export function PaginaAvaliacao(): React.ReactElement {
 
   const voltar = () => {
     console.log('voltando')
+  }
+  const funcBotao = () => {
+    console.log('testebotao')
   }
 
   /**
@@ -48,8 +52,102 @@ export function PaginaAvaliacao(): React.ReactElement {
           <Grid className={classes.textSiglaResp}>Sigla</Grid>
         </Grid>
         <Grid className={classes.textResponsavel}>
-          <Grid className={classes.textResponsavelLabel}>Responsáveis</Grid>
+          <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
           <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
+        </Grid>
+        <Grid className={classes.gridbotao}>
+          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            A
+          </Button>
+          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            B
+          </Button>
+          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            C
+          </Button>
+          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            D
+          </Button>
+          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            E
+          </Button>
+          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            F
+          </Button>
+        </Grid>
+
+        <Grid className={classes.tabelaGeral}>
+          <Grid className={classes.GeralNumero}>
+            <Grid className={classes.textNumerobordasuperior}>Nº</Grid>
+            <Grid className={classes.textNumero2}>1</Grid>
+            <Grid className={classes.textNumero2}>2</Grid>
+            <Grid className={classes.textNumero2}>3</Grid>
+            <Grid className={classes.textNumero3bordainferior}>4</Grid>
+          </Grid>
+
+          <Grid className={classes.GeralTexto}>
+            <Grid className={classes.TextoEscrito}>
+              Núcleo de Segurança do Paciente (NSP)
+            </Grid>
+            <Grid className={classes.TextoEscrito}>
+              O PSP está disponível para todos...
+            </Grid>
+            <Grid className={classes.TextoEscrito}>
+              O serviço de saúde possui Plano de...
+            </Grid>
+            <Grid className={classes.TextoEscrito}>Total</Grid>
+            <Grid className={classes.TextoEscrito}>Percentual</Grid>
+          </Grid>
+
+          <Grid className={classes.GeralTexto}>
+            <Grid className={classes.TextoEscrito}>C</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+          </Grid>
+
+          <Grid className={classes.GeralTexto}>
+            <Grid className={classes.TextoEscrito}>PC</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+          </Grid>
+
+          <Grid className={classes.GeralTexto}>
+            <Grid className={classes.TextoEscrito}>NC</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+          </Grid>
+
+          <Grid className={classes.GeralTexto}>
+            <Grid className={classes.TextoEscrito}>NA</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+          </Grid>
+
+          <Grid className={classes.GeralTexto}>
+            <Grid className={classes.TextoEscrito}>PT</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+          </Grid>
+
+          <Grid className={classes.GeralTexto}>
+            <Grid className={classes.TextoEscritoBordaSuperior}>Comentários</Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscrito}>
+              Lorem ipsum dolor sit amet, consectetur...
+            </Grid>
+            <Grid className={classes.TextoEscrito}>-</Grid>
+            <Grid className={classes.TextoEscritoBordaInferior}>-</Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>

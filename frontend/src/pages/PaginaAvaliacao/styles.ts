@@ -110,4 +110,91 @@ export const useStyles = makeStyles((theme) => ({
   textResponsavelResp: {
     marginLeft: '1%',
   },
+
+  gridbotao: {
+    display: 'flex',
+    marginTop: '5%',
+    marginLeft: '2.8%',
+    marginRight: '1%',
+  },
+
+  botaodesign: {
+    display: 'flex',
+    marginTop: '5%',
+    marginLeft: '1%',
+    marginRight: '1%',
+    backgroundColor: '#2b7b24',
+    width: '100px',
+    borderRadius: '12px',
+  },
+
+  GeralNumero: {
+    fontFamily: 'OpenSans',
+    color: '#175215',
+    marginTop: '2%',
+    marginLeft: '5%',
+  },
+
+  textNumerobordasuperior: {
+    fontWeight: 'bold',
+    backgroundColor: '#f7f7e8',
+    border: '1px solid #000000',
+    textAlign: 'center',
+    marginLeft: '1%',
+    borderRadius: '5px 0px 0px 0px',
+  },
+
+  textNumero3bordainferior: {
+    fontWeight: 'bold',
+    backgroundColor: '#f7f7e8',
+    border: '1px solid #000000',
+    textAlign: 'center',
+    marginLeft: '1%',
+    borderRadius: '0px 0px 0px 5px',
+  },
+
+  textNumero2: {
+    fontWeight: 'bold',
+    backgroundColor: '#f7f7e8',
+    border: '1px solid #000000',
+    textAlign: 'center',
+    marginLeft: '1%',
+  },
+
+  GeralTexto: {
+    fontFamily: 'OpenSans',
+    color: '#175215',
+    marginTop: '2%',
+    textAlign: 'center',
+  },
+
+  TextoEscrito: {
+    fontWeight: 'bold',
+    backgroundColor: '#f7f7e8',
+    border: '1px solid #000000',
+    marginRight: '1%',
+    width: '100%',
+  },
+
+  TextoEscritoBordaSuperior: {
+    fontWeight: 'bold',
+    backgroundColor: '#f7f7e8',
+    border: '1px solid #000000',
+    marginRight: '1%',
+    width: '100%',
+    borderRadius: '0px 5px 0px 0px',
+  },
+
+  TextoEscritoBordaInferior: {
+    fontWeight: 'bold',
+    backgroundColor: '#f7f7e8',
+    border: '1px solid #000000',
+    marginRight: '1%',
+    width: '100%',
+    borderRadius: '0px 0px 5px 0px',
+  },
+
+  tabelaGeral: {
+    display: 'flex',
+  },
 }))
