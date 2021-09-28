@@ -1,5 +1,4 @@
-from backend.models.Secao.serializers import SecaoSerializer
-from django.db.models import fields
+from models.Secao.serializers import SecaoSerializer
 from rest_framework import serializers
 from .models import Avaliacao
 from .models import Secao

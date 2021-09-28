@@ -7,11 +7,11 @@ from ..Secao.models import Secao
 
 
 class Avaliacao(models.Model):
-    STATUS_CHOICES = {
-        {"D": "Finalizado"},
-        {"P": "Pendente"},
-        {"E": "Erros"}
-    }
+    STATUS_CHOICES = [
+        ("D", "Finalizado"),
+        ("P", "Pendente"),
+        ("E", "Erros")
+    ]
 
     secoes = models.ManyToManyField(Secao, editable=False)
     data = models.DateTimeField(auto_now=True)
