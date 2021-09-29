@@ -11,16 +11,16 @@
 
 ### Tela de menu principal
 
-![Tela-Menu](/docs/assets/produtos/prototipo/prototipo_time_c/tela_menu_principal_alta_fidelidade.png)
+![Tela-Menu](/docs/assets/produtos/prototipos/prototipo_time_c/tela_menu_principal_alta_fidelidade.png)
 
 <br>
 
 ### Tela de gerenciamento de usuários
 
-![Tela-Gerenciamento-Usuários](/docs/assets/produtos/prototipo/prototipo_time_c/tela_gerenciador_user_alta_fidelidade.png)
+![Tela-Gerenciamento-Usuários](/docs/assets/produtos/prototipos/prototipo_time_c/tela_gerenciador_user_alta_fidelidade.png)
 
 <br>
 
 ### Tela de gerenciamento de avaliações
 
-![Tela-Gerenciamento-Avaliações](/docs/assets/produtos/prototipo/prototipo_time_c/tela_gerenciador_avaliacao_alta_fidelidade.png)
+![Tela-Gerenciamento-Avaliações](/docs/assets/produtos/prototipos/prototipo_time_c/tela_gerenciador_avaliacao_alta_fidelidade.png)
