@@ -19,7 +19,7 @@ export function Routes(): React.ReactElement {
       <Switch>
         <Route exact path='/' component={Login} />
         <Route path='/home' component={Home} />
-        <Route exact path='/NovaAvaliacao' component={PaginaAvaliacao} />
+        <Route exact path='/avaliacao' component={PaginaAvaliacao} />
         <Route exact path='/NovaAvaliacao/Adicao' component={PaginaAddItem} />
         <Route exact path='/relatorio' component={GenerateReport} />
       </Switch>

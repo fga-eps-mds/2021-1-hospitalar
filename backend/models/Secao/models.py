@@ -15,9 +15,16 @@ class Secao(models.Model):
 
 
 class Subtopico(models.Model):
+    STATUS_CHOICES = [
+        ("F", "Finalizado"),
+        ("P", "Pendente"),
+        ("E", "Erros")
+    ]
+
     secao = models.ForeignKey(Secao, on_delete=models.CASCADE)
     nome = models.TextField(blank=True)
-    status = models.CharField(max_length=2, blank=True)
+    status = models.CharField(
+        max_length=2, blank=False, choices=STATUS_CHOICES)
     comentario = models.TextField(blank=True)
 
     def __str__(self):
