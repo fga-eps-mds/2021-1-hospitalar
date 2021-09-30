@@ -14,9 +14,13 @@ export const useStyles = makeStyles((theme) => ({
     margin: 'auto',
   },
   imgUser: {
-    height: 50,
-    width: 50,
-    position: 'absolute',
+    height: 30,
+    width: 30,
+    [theme.breakpoints.up('sm')]: {
+      height: 50,
+      width: 50,
+      position: 'absolute',
+    },
   },
   linksContainer: {
     display: 'none',
@@ -29,10 +33,25 @@ export const useStyles = makeStyles((theme) => ({
       justifyContent: 'space-between',
     },
   },
+  drawer: {
+    background: theme.palette.secondary.main,
+  },
   linksContainerDrawer: {
     display: 'flex',
     flexDirection: 'column',
     paddingLeft: '1vh',
     paddingRight: '1vh',
+  },
+  fullScreen: {
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+  },
+  mobileScreen: {
+    display: 'block',
+    [theme.breakpoints.up('sm')]: {
+      display: 'none',
+    },
   },
 }))

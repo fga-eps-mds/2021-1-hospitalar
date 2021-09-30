@@ -1,7 +1,10 @@
+import {
+  AccountCircleRounded as AccIcon,
+  MenuRounded as MenuIcon,
+} from '@material-ui/icons'
 import { AppBar, Drawer, IconButton, Toolbar } from '@material-ui/core'
 import React, { useState } from 'react'
 
-import { AccountCircleRounded as AccIcon } from '@material-ui/icons'
 import { Button } from '../Inputs/Button'
 import { HeaderLink } from '../../../types/HeaderLink'
 import Logo from '../../../assets/logo-2021-v2.png'
@@ -23,7 +26,12 @@ export function Header({ links }: Props): React.ReactElement {
   }
 
   const drawer = () => (
-    <Drawer anchor='left' open={openDrawer} onClose={() => handleOpenDrawer()}>
+    <Drawer
+      anchor='left'
+      open={openDrawer}
+      onClose={() => handleOpenDrawer()}
+      classes={{ paper: classes.drawer }}
+    >
       <div className={classes.linksContainerDrawer}>
         {links.map((link) => (
           <Button onClick={() => history.push(link.link)}>{link.texto}</Button>
@@ -35,12 +43,11 @@ export function Header({ links }: Props): React.ReactElement {
   return (
     <AppBar position='static' color='secondary' className={classes.container}>
       <Toolbar>
+        {/* Esse é o logo principal. */}
         <img alt='Logo FAMil' src={Logo} className={classes.imgLogo} />
 
-        <IconButton color='inherit' edge='start' onClick={() => handleOpenDrawer()}>
-          <AccIcon className={classes.imgUser} />
-        </IconButton>
-
+        {/* Aqui são criados os botões do header. 
+        Eles somem quando a tela é pequena demais */}
         <div className={classes.linksContainer}>
           {links.map((link) => (
             <Button
@@ -52,6 +59,21 @@ export function Header({ links }: Props): React.ReactElement {
             </Button>
           ))}
         </div>
+
+        {/* Aqui é o ícone do usuário. Ele some quando a tela é pequena */}
+        <IconButton color='inherit' edge='start' className={classes.fullScreen}>
+          <AccIcon className={classes.imgUser} />
+        </IconButton>
+
+        {/* Aqui é um ícone de menu que aparece quando a tela é pequena */}
+        <IconButton
+          color='inherit'
+          edge='start'
+          onClick={() => handleOpenDrawer()}
+          className={classes.mobileScreen}
+        >
+          <MenuIcon className={classes.imgUser} />
+        </IconButton>
       </Toolbar>
 
       {drawer()}
