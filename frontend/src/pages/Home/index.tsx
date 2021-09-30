@@ -1,4 +1,3 @@
-  
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
@@ -21,7 +20,14 @@ export function Home(): React.ReactElement {
   return (
     <Grid container direction='column' spacing={2}>
       <Grid item>
-        <Header title='Home Page' />
+        <Header
+          links={[
+            { texto: 'Link 1', link: 'link1' },
+            { texto: 'Link 2', link: 'link2' },
+            { texto: 'Link 3', link: 'link3' },
+            { texto: 'Link 4', link: 'link4' },
+          ]}
+        />
       </Grid>
       <Grid item>
         <Button onClick={() => history.push('relatorio')}>Página gerar relatorio</Button>

@@ -106,7 +106,14 @@ export function PaginaAddItem(): React.ReactElement {
     <Grid>
       <Grid container direction='column' spacing={2}>
         <Grid item>
-          <Header title='Adicao' />
+          <Header
+            links={[
+              { texto: 'Link 1', link: 'link1' },
+              { texto: 'Link 2', link: 'link2' },
+              { texto: 'Link 3', link: 'link3' },
+              { texto: 'Link 4', link: 'link4' },
+            ]}
+          />
         </Grid>
       </Grid>
 

@@ -1,4 +1,5 @@
 /* eslint-disable react/self-closing-comp */
+
 import { Box, Grid, TextField, Typography } from '@material-ui/core'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
@@ -34,7 +35,14 @@ export function PaginaAvaliacao(): React.ReactElement {
         {' '}
         {/* cabeçalho */}
         <Grid item>
-          <Header title='Preenchimento da avaliação' />
+          <Header
+            links={[
+              { texto: 'Link 1', link: 'link1' },
+              { texto: 'Link 2', link: 'link2' },
+              { texto: 'Link 3', link: 'link3' },
+              { texto: 'Link 4', link: 'link4' },
+            ]}
+          />
         </Grid>
       </Grid>
 
