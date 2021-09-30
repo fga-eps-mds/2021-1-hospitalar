@@ -24,7 +24,7 @@ class Subtopico(models.Model):
     secao = models.ForeignKey(Secao, on_delete=models.CASCADE)
     nome = models.TextField(blank=True)
     status = models.CharField(
-        max_length=2, blank=False, choices=STATUS_CHOICES)
+        max_length=2, blank=True, choices=STATUS_CHOICES)
     comentario = models.TextField(blank=True)
 
     def __str__(self):
