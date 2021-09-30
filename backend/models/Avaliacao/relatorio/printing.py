@@ -14,6 +14,8 @@ from reportlab.lib.pagesizes import letter, A4
 from reportlab.lib import colors
 from ..models import Avaliacao
 
+from .utils import TestData
+
 
 class MyPrint:
 
@@ -62,11 +64,12 @@ class MyPrint:
 
         # Podemos adicionar estilos customizados, utilizando outras classes que
         # encapsulam estilos para cada componente
-        styles.add(ParagraphStyle('centered', alignment=TA_CENTER))
+        styles.add(ParagraphStyle(
+            'centered', alignment=TA_CENTER, fontSize=20))
 
         # Adição de elementos do Banco de Dados
         elements.append(
-            Paragraph(relatorio.nomeHospital, styles['centered']))
+            Paragraph("Hospital {0}".format(relatorio.nomeHospital), styles['centered']))
         for secs in relatorio.secoes:
             titulo = secs.topico
             elements.append(Paragraph(titulo, styles['Heading1']))
@@ -80,10 +83,52 @@ class MyPrint:
                 elements.append(Spacer(1, 2*cm))
 
         # Contrução de tabelas
-        wh_table = Table()
-        wh_table.setStyle(TableStyle(
+        table_data = []
 
+        # Estilo Customizado para Table Header.
+        # Podemos utilizar o nome como índice para acessar (nesse caso:
+        # TableHeader)
+        styles.add(ParagraphStyle(
+            name="TableHeader", fontSize=11, alignment=TA_CENTER
         ))
+
+        # Linhas e colunas da tabela
+        weather = TestData.weather_brasilia['city']
+
+        cidade = weather['cityName']
+        elements.append(
+            Paragraph(cidade+"'s Weather", styles['Heading1'])
+        )
+        elements.append(
+            Spacer(1, 0.4*cm)
+        )
+
+        dados = weather['forecast']['forecastDay']
+
+        # header
+        table_data.append([Paragraph(text, styles['TableHeader'])
+                          for text in dados[0].keys()])
+        # dados da tabela (linhas)
+        for data in dados:
+            table_data.append(
+                [Paragraph(data[i]) for i in dados[0].keys()]
+            )
+
+        # Criando a Tabela
+        wh_table = Table(table_data)
+
+        # Estilização da Tabela - Seleciona as células por um range (x1, y1), (x2, y2)
+        wh_table.setStyle(
+            TableStyle([
+                ('INNERGRID', (0, 0), (-1, -1), 0.25, colors.black),
+                ('BOX', (0, 0), (-1, -1), 0.5, colors.black),
+                ('VALIGN', (0, 0), (-1, 0), 'MIDDLE'),
+                ('BACKGROUND', (0, 0), (-1, 0), colors.gray)
+            ])
+        )
+
+        # Inserindo a tabela na composição do documento
+        elements.append(wh_table)
 
         doc.build(elements)
 
