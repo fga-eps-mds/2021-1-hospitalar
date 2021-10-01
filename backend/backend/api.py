@@ -1,6 +1,7 @@
 from rest_framework import routers
 from models.Secao.views import SecaoView
 from models.Configuracao.views import ConfiguracaoView
+from models.Avaliacao.views import AvaliacaoView
 '''
     Função que retorna um objeto que contém as urls do backend.
     Para incluir uma nova url utilize router.register
@@ -14,4 +15,5 @@ def create_api():
     router = routers.DefaultRouter()
     router.register(r'secao', SecaoView)
     router.register(r'configuracao', ConfiguracaoView)
+    router.register(r'avaliacao', AvaliacaoView)
     return router
