@@ -53,11 +53,11 @@
 
 ## Burndown
 
-Gráfico gerado pelo ZenHub  
+![burn](/docs/assets/sprints/time_c/sprint_7/burndown.png)
   
 ## Velocity
 
-Gráfico gerado pelo ZenHub  
+![velocity](/docs/assets/sprints/time_c/sprint_7/velocity.png)
   
 ## Práticas ágeis
   
@@ -103,15 +103,6 @@ Gráfico gerado pelo ZenHub
 | Pessoa 3 | &#128532; | &#128567; | &#129314; |
 | Pessoa 4 | &#129395; | &#128547; | &#129321; |
 
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** |  **Nota** |
-|:-:|:-:|
-|    Descrição do Objetivo   |  (nº) |
-|    Descrição do Objetivo   |  (nº) | 
-|    ...   |  ... |
 
 ## Riscos
 
