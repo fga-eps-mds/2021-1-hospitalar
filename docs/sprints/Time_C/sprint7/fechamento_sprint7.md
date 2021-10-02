@@ -4,59 +4,52 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|    23/08/2021   |  0.1 | Criação do documento  | [Pedro Vieira](https://github.com/Pedro-V8) |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    ...   |  [...]() | ...  | ... |
+|    #162   |  [Abertura e Fechamento Sprint 6 - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/162) | Fechada  | 5 |
+|    #160   |  [Refatoração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/160) | Fechada  | 13 |
+|    #144   |  [Alinhar e decidir como será feito o Protótipo de Alta Fidelidade - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/144) | Fechada  | 3 |
+|    #88        | [Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88) | Fechada | 13  |
 
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 34 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 13 Pontos <br>
+**Pontos Concluídos:** 21 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
 - Não houveram débitos técnicos para pagar nesta sprint
 
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
 
 ## Débitos Técnicos Gerados
 
-- Não foram gerados débitos nesta sprint
-
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
+[#88 Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88) 
 
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
--
+- Sprint mais leve com menos carfa de tarefas
+
+- Mais praticidade nos commits dada as issues mais simples
 
 ### Pontos Negativos
 
--
--
+- Muitos cansados depois da entrega da R1
+
+- Falta de tempo para reuniões
 
 ### Melhorias
 
--
--
+- Mais motivados para a R2 focada no desenvolvimento
+
+- Melhorar os pontos criticados na Reunião com a professora
 
 ## Burndown
 
