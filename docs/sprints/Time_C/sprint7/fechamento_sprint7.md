@@ -66,13 +66,13 @@
 | 1    | Priorização do Backlog pelo PO | &#10004; |
 | 2    | Desenvolvimento de processos e práticas facilitadas pelo SM | &#10004; |
 | 3    | Reunião de planejamento de Sprint | &#10060; |
-| 4    | Planning Poker | &#10060; |
+| 4    | Planning Poker | &#10004; |
 | 5    | Comprometimento do time e do PO com o backlog do produto | &#10004; |
 | 6    | Os membros da equipe são voluntários para tarefas | &#10004; |
-| 7    | Restrospectiva da Sprint | &#10060; |
-| 8    | Acompanhamento do Velocity | &#10060; |
-| 9    | User Stories | &#10004; |
-| 10 |    Refatorar quando e onde for possível | &#10004; |
+| 7    | Restrospectiva da Sprint | &#10004; |
+| 8    | Acompanhamento do Velocity | &#10004; |
+| 9    | User Stories | &#10060; |
+| 10 |    Refatorar quando e onde for possível | &#10060; |
 | 11 | Todo código deve ter códigos unitários | &#10060; |
 | 12 |    Todo código deve passar por testes unitários antes de ser liberado | &#10060; |
 | 13 |     Acompanhamento do Squad Health Check | &#10004; |
