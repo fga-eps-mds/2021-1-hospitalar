@@ -125,5 +125,6 @@
 | Apresentar documentos divergentes do que a professora informou  |  Conversar com monitores   | Pesquisar mais afundo sobre o documento |
 |  Não realizar colaboração no código  | Cada membro ficar um pouco com documento e código  | Propor atividades em dupla |
 
-
 ## Análise pelo Scrum Master
+
+A Sprint foi menos trabalhosa visto que tivemos a entrega da R1 na sprint passada. Apesar de parecer improdutiva, decidimos usá-la mais para planejamento do que teremos que fazer nas próximas semanas, já que acreditamos que o foco da R2 será mais no desenvolvimento.Além disso, será importante rever o que fizemos e junto a isso melhorar muitos pontos que foram falados pela professora. Queremos aproveitar que a R1 terminou e mudar algumas decisões para melhorar nossas práticas ágeis, e assim evitar a desmotivação e cansaço. Logo, estamos esperançosos na renovada que a R2 pode trazer para os times.
