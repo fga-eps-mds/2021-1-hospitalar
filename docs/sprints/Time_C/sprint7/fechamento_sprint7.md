@@ -1,4 +1,4 @@
-# Fechamento da Sprint (nº)
+# Fechamento da Sprint 7
 
 ## Histórico de revisão
 
@@ -82,8 +82,12 @@
 
 | Nome | Github | HTML | Javascript | Metodologia ágeis | Docker | Django | Mongodb |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
-| Pessoa 2 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
+| Pedro Caldeira | &#129001; | &#128999; | &#129000; | &#128999; | &#128999; | &#129000; | &#129000; | 
+| Pedro Vieira | &#129001; | &#129001; | &#128998; | &#129001; | &#128999; | &#129000;| &#129001; | 
+| Gabriel Luiz | &#129001; | &#129000; | &#129000; | &#129001; | &#129000; | &#129000; | &#129000; | 
+| Igor Thiago | &#128999; | &#128999; | &#129001; | &#128999; | &#129001; | &#129001; | &#129001; | 
+| Thiago Vivan | &#128999; | &#129000; | &#129001; | &#128999; | &#129000; | &#129000; | &#128997; | 
+| Bruno | &#129000; | &#129001; | &#128999; |  &#129000; | &#129001; | &#128997; | &#128997; |  
 
 
 | Cor | Legenda |
@@ -96,23 +100,30 @@
   
 ## Squad Health Check
   
-| Nome | Sprint 1 | Sprint 2 | Sprint 3 |
-| :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128512; | &#128516; | &#128521; |
-| Pessoa 2 | &#128529; | &#129320; | &#128530; |
-| Pessoa 3 | &#128532; | &#128567; | &#129314; |
-| Pessoa 4 | &#129395; | &#128547; | &#129321; |
+| Nome | Sprint 0 | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 | Sprint 6 | Sprint 7 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Pedro Caldeira | &#128521; | &#128529; | &#128554; | &#128521; | &#128529; | &#128521; | &#128521; | &#128529; |
+| Pedro Vieira | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529; | &#128529; |
+| Gabriel Luiz | &#128521; | &#128529; | &#128521; | &#128521; | &#128521; | &#128529; | &#128529; | &#128529; |
+| Igor Thiago  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128554; | &#128521; | 
+| Thiago Vivan  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529;| 
+| Bruno  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529;  | &#128529; | &#128554; | 
+
+| Emote | Significados |
+| :-: | :-: |
+| &#128521; | Alegre/Animado |
+| &#128529; | Indiferente/Neutro |
+| &#128554; | Desanimado/triste |
 
 
 ## Riscos
 
-|  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
-|:-:|:-:|:-:|
-| ... | ... | ... |
-| ... | ... | ... |
-  
-<!-- ## Burndown de Riscos (???) -->
+|        **Risco**        |             **Ação Preventiva**             |       **Ação Reativa**       |
+| :---------------------: | :-----------------------------------------: | :--------------------------: |
+| Tarefas acumuladas |       Dividir bem as issues             |  Dar apoio aos integrantes     |
+|  Não finalizar documentos  | Dedicar mais tempo para realizar |    Fazer em conjunto     |
+| Apresentar documentos divergentes do que a professora informou  |  Conversar com monitores   | Pesquisar mais afundo sobre o documento |
+|  Não realizar colaboração no código  | Cada membro ficar um pouco com documento e código  | Propor atividades em dupla |
+
 
 ## Análise pelo Scrum Master
-
-...
