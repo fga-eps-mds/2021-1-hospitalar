@@ -2,7 +2,6 @@ import { Grid, Typography } from '@material-ui/core'
 
 import { Header } from '../Header'
 import React from 'react'
-import { theme } from '../../../theme'
 import { useStyles } from './styles'
 
 type PropsTemplate = {

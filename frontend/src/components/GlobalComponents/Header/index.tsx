@@ -2,7 +2,7 @@ import {
   AccountCircleRounded as AccIcon,
   MenuRounded as MenuIcon,
 } from '@material-ui/icons'
-import { AppBar, Box, Drawer, IconButton, Toolbar } from '@material-ui/core'
+import { AppBar, Box, Container, Drawer, IconButton, Toolbar } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { Button } from '../Inputs/Button'
@@ -35,8 +35,10 @@ export function Header({ links }: Props): React.ReactElement {
       classes={{ paper: classes.drawer }}
     >
       <div className={classes.linksContainerDrawer}>
-        {links.map((link) => (
-          <Button onClick={() => history.push(link.link)}>{link.texto}</Button>
+        {links.map((link, idx) => (
+          <Button key={idx} onClick={() => history.push(link.link)}>
+            {link.texto}
+          </Button>
         ))}
       </div>
     </Drawer>
@@ -51,49 +53,29 @@ export function Header({ links }: Props): React.ReactElement {
         {/* Aqui são criados os botões do header. 
         Eles somem quando a tela é pequena demais */}
         <div className={classes.linksContainer}>
-          <Button
-            variant='text'
-            color='inherit'
-            className={classes.headButton}
-            onClick={() => history.push(links[0].link)}
-          >
-            Home
-          </Button>
-
-          <Button
-            variant='text'
-            color='inherit'
-            className={classes.headButton}
-            onClick={() => history.push(links[1].link)}
-          >
-            Nova Avaliação
-          </Button>
-
-          <Box className={classes.buttonSpace} />
-
-          <Button
-            variant='text'
-            color='inherit'
-            className={classes.headButton}
-            onClick={() => history.push(links[2].link)}
-          >
-            Avaliações
-          </Button>
-
-          <Button
-            variant='text'
-            color='inherit'
-            className={classes.headButton}
-            onClick={() => history.push(links[3].link)}
-          >
-            Relatórios
-          </Button>
+          {links.map((link, idx) => (
+            <Container key={idx}>
+              {/* O container se tornou necessário pois esse map 
+              deve retornar um ou dois elementos por iteração */}
+              {/* Aqui é feito o botão */}
+              <Button
+                key={idx + 10}
+                variant='text'
+                color='inherit'
+                className={classes.headButton}
+                onClick={() => history.push(link.link)}
+              >
+                {link.texto}
+              </Button>
+              {/* Caso o idx seja 2, a metade da array, retorne um separador */}
+              {idx === 1 && <Box key={idx + 20} className={classes.buttonSpace} />}
+            </Container>
+          ))}
         </div>
 
         {/* Aqui é o ícone do usuário. Ele some quando a tela é pequena */}
         <IconButton color='inherit' edge='start' className={classes.fullScreen}>
           <AccIcon className={classes.imgUser} />
-          {/* <img src={usericon} alt='user-logo' className={classes.userlogo} /> */}
         </IconButton>
 
         {/* Aqui é um ícone de menu que aparece quando a tela é pequena */}
