@@ -37,10 +37,10 @@ export function PaginaAvaliacao(): React.ReactElement {
         <Grid item>
           <Header
             links={[
-              { texto: 'Link 1', link: 'link1' },
-              { texto: 'Link 2', link: 'link2' },
-              { texto: 'Link 3', link: 'link3' },
-              { texto: 'Link 4', link: 'link4' },
+              { texto: 'Home', link: '/' },
+              { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+              { texto: 'Avaliações', link: '/avaliacao' },
+              { texto: 'Relatórios', link: '/relatorio' },
             ]}
           />
         </Grid>

@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core'
 export const useStyles = makeStyles((theme) => ({
   container: {
     marginBottom: '8vh',
+    width: '100%',
   },
   imgLogo: {
     height: 100,
@@ -30,7 +31,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'flex',
       flex: 1,
-      justifyContent: 'space-between',
+      justifyContent: 'center',
     },
   },
   drawer: {
@@ -53,5 +54,18 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'none',
     },
+  },
+  buttonSpace: {
+    [theme.breakpoints.up('sm')]: {
+      minWidth: '15vw',
+    },
+  },
+  headButton: {
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+  },
+  userlogo: {
+    width: '5vw',
   },
 }))
