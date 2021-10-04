@@ -15,4 +15,10 @@ export const theme = createTheme({
       main: '#2b7b24',
     },
   },
+  typography: {
+    fontFamily: 'Open Sans, sans-serif',
+    fontSize: 15,
+  },
 })
+
+
