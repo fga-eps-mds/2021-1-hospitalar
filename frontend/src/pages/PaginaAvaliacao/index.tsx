@@ -1,17 +1,18 @@
 /* eslint-disable react/self-closing-comp */
 
 import { Box, Grid, TextField, Typography } from '@material-ui/core'
+import React, { useEffect, useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Header } from '../../components/GlobalComponents/Header'
-import React from 'react'
+import { avaliacao } from '../../api'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function PaginaAvaliacao(): React.ReactElement {
   const classes = useStyles()
-
+  const [data, setData] = useState<any>('')
   /**
    * Vai fazer a transição de páginas para a próxima página
    * É necessario inicializar o history.
@@ -25,6 +26,14 @@ export function PaginaAvaliacao(): React.ReactElement {
     console.log('testebotao')
   }
 
+  const handleSubmmit = async () => {
+    const response = await fetch('http://127.0.0.1:8000/api/avaliacao/')
+    setData(await response.json())
+  }
+
+  useEffect(() => {
+    handleSubmmit()
+  }, [])
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
@@ -50,7 +59,7 @@ export function PaginaAvaliacao(): React.ReactElement {
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className={classes.textData}>dd/mm/aaaa</Grid>
         <Grid className={classes.idAvaliacao}>
-          ID_AVALIAÇÃO
+          Id_Avaliacao
           {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
         </Grid>
         <Grid className={classes.textInfoHosp}>
@@ -64,7 +73,7 @@ export function PaginaAvaliacao(): React.ReactElement {
           <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
         </Grid>
         <Grid className={classes.gridbotao}>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+          <Button className={classes.botaodesign} size='medium' onClick={handleSubmmit}>
             A
           </Button>
           <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
