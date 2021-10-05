@@ -1,11 +1,11 @@
 /* eslint-disable react/self-closing-comp */
 
 import { Box, Grid, TextField, Typography } from '@material-ui/core'
+import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Header } from '../../components/GlobalComponents/Header'
-import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
@@ -25,6 +25,31 @@ export function EditarItem(): React.ReactElement {
     console.log('testebotao')
   }
 
+  const [itens, setItem] = useState([
+    {
+      n: 1,
+      nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
+    },
+    {
+      n: 2,
+      nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
+    },
+    {
+      n: 3,
+      nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
+    },
+  ])
+
+  function addNovoItem() {
+    setItem([
+      ...itens,
+      {
+        n: 4,
+        nsp: 'O NSP promove ações para a gestão do risco assistencial na instituição.',
+      },
+    ])
+  }
+
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
@@ -35,27 +60,20 @@ export function EditarItem(): React.ReactElement {
         {' '}
         {/* cabeçalho */}
         <Grid item>
-          <Header title='Preenchimento da avaliação' />
+          <Header
+            links={[
+              { texto: 'Home', link: '/' },
+              { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+              { texto: 'Avaliações', link: '/avaliacao' },
+              { texto: 'Relatórios', link: '/relatorio' },
+            ]}
+          />
         </Grid>
       </Grid>
 
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
-        <Grid className={classes.textData}>dd/mm/aaaa</Grid>
-        <Grid className={classes.idAvaliacao}>
-          ID_AVALIAÇÃO
-          {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
-        </Grid>
-        <Grid className={classes.textInfoHosp}>
-          <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
-          <Grid className={classes.textNomeResp}>Nome do Hospital</Grid>
-          <Grid className={classes.textSiglaLabel}>Sigla:</Grid>
-          <Grid className={classes.textSiglaResp}>Sigla</Grid>
-        </Grid>
-        <Grid className={classes.textResponsavel}>
-          <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
-          <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
-        </Grid>
+        <Grid className={classes.tituloEditar}>EDITAR SEÇÃO DA AVALIAÇÃO</Grid>
         <Grid className={classes.gridbotao}>
           <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
             A
@@ -150,6 +168,17 @@ export function EditarItem(): React.ReactElement {
             <Grid className={classes.TextoEscritoBordaInferior}>-</Grid>
           </Grid>
         </Grid>
+        <div>
+          {itens.map((item, idx) => (
+            <p>
+              {item.n} {item.nsp}
+            </p>
+          ))}
+          <Button className={classes.botaoAdd} size='small' onClick={() => addNovoItem()}>
+            {' '}
+            +Adicionar
+          </Button>
+        </div>
       </Grid>
     </Grid>
   )

@@ -47,7 +47,7 @@ export const useStyles = makeStyles((theme) => ({
     border: '6px solid #175215',
   },
 
-  idAvaliacao: {
+  tituloEditar: {
     backgroundColor: '#D6F0C8',
     textAlign: 'center',
     marginTop: '1%',
@@ -122,6 +122,16 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     marginTop: '5%',
     marginLeft: '1%',
+    marginRight: '1%',
+    backgroundColor: '#2b7b24',
+    width: '100px',
+    borderRadius: '12px',
+  },
+
+  botaoAdd: {
+    display: 'flex',
+    marginTop: '5%',
+    marginLeft: '90%',
     marginRight: '1%',
     backgroundColor: '#2b7b24',
     width: '100px',
