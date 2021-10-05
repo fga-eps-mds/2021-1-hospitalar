@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { GenerateReport } from './pages/GenerateReport'
 import { Home } from './pages/Home'
 import { Login } from './pages/Login'
+import { NovaAvaliacao } from './pages/NovaAvaliacao'
 import { PaginaAddItem } from './pages/PaginaAddItem'
 import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
 import React from 'react'
@@ -23,7 +24,7 @@ export function Routes(): React.ReactElement {
         <Route exact path='/avaliacao' component={PaginaAvaliacao} />
         <Route exact path='/NovaAvaliacao/Adicao' component={PaginaAddItem} />
         <Route exact path='/relatorio' component={GenerateReport} />
-        <Route exact path='/template' component={Template} />
+        <Route exact path='/NovaAvaliacao' component={NovaAvaliacao} />
       </Switch>
     </BrowserRouter>
   )
