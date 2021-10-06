@@ -144,7 +144,14 @@ export function GenerateReport(): React.ReactElement {
     <Grid container direction='column' spacing={6}>
       {/* Header */}
       <Grid item>
-        <Header title='Relatório' />
+        <Header
+          links={[
+            { texto: 'Home', link: '/' },
+            { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+            { texto: 'Avaliações', link: '/avaliacao' },
+            { texto: 'Relatórios', link: '/relatorio' },
+          ]}
+        />
       </Grid>
       {/* Tres Grids ocupam o tamanho total horizontal da tela, 
       o da esquerda e direita são transparentes 

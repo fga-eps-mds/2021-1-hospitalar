@@ -9,7 +9,7 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
-export function PaginaAvaliacao(): React.ReactElement {
+export function EditarItem(): React.ReactElement {
   const classes = useStyles()
 
   /**
@@ -35,14 +35,7 @@ export function PaginaAvaliacao(): React.ReactElement {
         {' '}
         {/* cabeçalho */}
         <Grid item>
-          <Header
-            links={[
-              { texto: 'Home', link: '/' },
-              { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
-              { texto: 'Avaliações', link: '/avaliacao' },
-              { texto: 'Relatórios', link: '/relatorio' },
-            ]}
-          />
+          <Header title='Preenchimento da avaliação' />
         </Grid>
       </Grid>
 
