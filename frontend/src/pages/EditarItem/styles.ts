@@ -13,12 +13,14 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   backgroundAvaliacao: {
-    paddingBottom: '10%',
-    marginBottom: '20%',
+    paddingBottom: '5%',
+    borderRadius: '12px',
+    marginBottom: '10%',
     marginTop: '3%',
     marginLeft: '5%',
     marginRight: '5%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fffff2',
+    border: '6px solid #175215',
   },
 
   tituloEditar: {
@@ -39,7 +41,6 @@ export const useStyles = makeStyles((theme) => ({
 
   textFieldDesign: {
     display: 'flex',
-
     width: '400px',
     borderRadius: '12px',
   },
@@ -63,7 +64,7 @@ export const useStyles = makeStyles((theme) => ({
   botaoAdd: {
     display: 'flex',
     marginTop: '5%',
-    marginLeft: '90%',
+    marginLeft: '85%',
     marginRight: '1%',
     backgroundColor: '#2b7b24',
     width: '100px',
@@ -82,7 +83,6 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: '#f7f7e8',
     border: '1px solid #000000',
     textAlign: 'center',
-    width: '500px',
     marginLeft: '1%',
     borderRadius: '5px 0px 0px 0px',
   },
@@ -116,6 +116,13 @@ export const useStyles = makeStyles((theme) => ({
     border: '1px solid #000000',
     marginRight: '1%',
     width: '100%',
+  },
+
+  itensTabela: {
+    fontFamily: 'OpenSans',
+    color: '#175215',
+    marginTop: '2%',
+    marginLeft: '5.4%',
   },
 
   tabelaGeral: {

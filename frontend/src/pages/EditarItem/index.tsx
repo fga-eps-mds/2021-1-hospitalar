@@ -11,10 +11,11 @@ import { useStyles } from './styles'
 export function EditarItem(): React.ReactElement {
   const classes = useStyles()
 
-  /**
+  /*
    * Vai fazer a transição de páginas para a próxima página
    * É necessario inicializar o history.
    */
+
   const history = useHistory()
 
   const voltar = () => {
@@ -49,10 +50,11 @@ export function EditarItem(): React.ReactElement {
     ])
   }
 
-  /**
+  /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
    */
+
   return (
     <Grid>
       <Grid container direction='column' spacing={2}>
@@ -61,7 +63,7 @@ export function EditarItem(): React.ReactElement {
         <Grid item>
           <Header
             links={[
-              { texto: 'Home', link: '/' },
+              { texto: 'Home', link: '/Home' },
               { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
               { texto: 'Avaliações', link: '/avaliacao' },
               { texto: 'Relatórios', link: '/relatorio' },
@@ -70,10 +72,10 @@ export function EditarItem(): React.ReactElement {
         </Grid>
       </Grid>
 
+      <Grid className={classes.tituloEditar}>EDITAR SEÇÃO DA AVALIAÇÃO</Grid>
+
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
-        <Grid className={classes.tituloEditar}>EDITAR SEÇÃO DA AVALIAÇÃO</Grid>
-
         <Grid className={classes.gridField}>
           <TextField
             className={classes.textFieldDesign}
@@ -124,16 +126,18 @@ export function EditarItem(): React.ReactElement {
             <Grid className={classes.IconeLixeira}>...</Grid>
           </Grid>
         </Grid>
-
-        <div>
-          {itens.map((item, idx) => (
+        <div className={classes.itensTabela}>
+          {itens.map((item) => (
             <p>
               {item.n} {item.nsp}
             </p>
           ))}
-          <Button className={classes.botaoAdd} size='small' onClick={() => addNovoItem()}>
-            {' '}
-            Adicionar
+          <Button
+            className={classes.botaoAdd}
+            size='medium'
+            onClick={() => addNovoItem()}
+          >
+            Adicionar Item
           </Button>
         </div>
       </Grid>
