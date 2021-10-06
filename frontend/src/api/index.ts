@@ -45,13 +45,4 @@ export const generatePDF = (hospitalName: string) => {
     .catch(console.log)
 }
 
-export const avaliacao = () => {
-  axios({
-    url: 'http://127.0.0.1:8000/api/avaliacao/',
-    method: 'GET',
-    // responseType: 'blob',
-  })
-    .then((response) => response)
-    // eslint-disable-next-line no-console
-    .catch(console.log)
-}
+

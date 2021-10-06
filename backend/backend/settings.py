@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'models.Secao',
     'models.Configuracao',
     'models.Avaliacao',
 ]

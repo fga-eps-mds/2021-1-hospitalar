@@ -6,13 +6,44 @@ import React, { useEffect, useState } from 'react'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Header } from '../../components/GlobalComponents/Header'
-import { avaliacao } from '../../api'
 import { useHistory } from 'react-router-dom'
+import { useParams } from 'react-router'
 import { useStyles } from './styles'
+import { Avaliacao } from '../../types/Avaliacao'
+import { api } from '../../api'
+
+type Props = {
+  idAvaliacao: string
+}
 
 export function PaginaAvaliacao(): React.ReactElement {
+  const { idAvaliacao } = useParams<Props>()
+  const avaliacaoNula: Avaliacao = {
+    id: 0,
+    codigo: '',
+    nomeHospital: '',
+    idsAvaliadores: '',
+    data: new Date().toISOString(),
+    secoes: [
+      {
+        id: 0,
+        topico: '',
+        subtopicos: [
+          {
+            id: 0,
+            secao: 0,
+            nome: '',
+            status: '',
+            comentario: '',
+            pontuacao: 0,
+          },
+        ],
+        avaliacao: 0,
+      },
+    ],
+  }
+  const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
-  const [data, setData] = useState<any>('')
   /**
    * Vai fazer a transição de páginas para a próxima página
    * É necessario inicializar o history.
@@ -26,9 +57,17 @@ export function PaginaAvaliacao(): React.ReactElement {
     console.log('testebotao')
   }
 
-  const handleSubmmit = async () => {
-    const response = await fetch('http://127.0.0.1:8000/api/avaliacao/')
-    setData(await response.json())
+  const handleSubmmit = () => {
+    console.log(idAvaliacao)
+    api
+      .get<Avaliacao>(`avaliacao/${idAvaliacao}`)
+
+      .then(({ data }) => {
+        setAvaliacao(data)
+        console.log(data)
+      })
+      // eslint-disable-next-line no-console
+      .catch(console.log)
   }
 
   useEffect(() => {
@@ -57,20 +96,25 @@ export function PaginaAvaliacao(): React.ReactElement {
 
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
-        <Grid className={classes.textData}>dd/mm/aaaa</Grid>
+        <Grid className={classes.textData}>
+          {new Date(avaliacao.data).toLocaleDateString('pt-BR')}
+        </Grid>
         <Grid className={classes.idAvaliacao}>
-          Id_Avaliacao
           {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
         </Grid>
         <Grid className={classes.textInfoHosp}>
           <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
-          <Grid className={classes.textNomeResp}>Nome do Hospital</Grid>
+          <Grid className={classes.textNomeResp}>
+            {avaliacao.nomeHospital.split(',')[0]}
+          </Grid>
           <Grid className={classes.textSiglaLabel}>Sigla:</Grid>
-          <Grid className={classes.textSiglaResp}>Sigla</Grid>
+          <Grid className={classes.textSiglaResp}>
+            {avaliacao.nomeHospital.split(',')[1]}
+          </Grid>
         </Grid>
         <Grid className={classes.textResponsavel}>
           <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
-          <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
+          <Grid className={classes.textResponsavelResp}>{avaliacao.idsAvaliadores}</Grid>
         </Grid>
         <Grid className={classes.gridbotao}>
           <Button className={classes.botaodesign} size='medium' onClick={handleSubmmit}>

@@ -6,7 +6,6 @@ import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Header } from '../../components/GlobalComponents/Header'
 import React from 'react'
-import { avaliacao } from '../../api'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
