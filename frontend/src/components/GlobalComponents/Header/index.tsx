@@ -52,25 +52,44 @@ export function Header({ links }: Props): React.ReactElement {
 
         {/* Aqui são criados os botões do header. 
         Eles somem quando a tela é pequena demais */}
-        <div className={classes.linksContainer}>
-          {links.map((link, idx) => (
-            <Container key={idx}>
-              {/* O container se tornou necessário pois esse map 
-              deve retornar um ou dois elementos por iteração */}
-              {/* Aqui é feito o botão */}
-              <Button
-                key={idx + 10}
-                variant='text'
-                color='inherit'
-                className={classes.headButton}
-                onClick={() => history.push(link.link)}
-              >
-                {link.texto}
-              </Button>
-              {/* Caso o idx seja 2, a metade da array, retorne um separador */}
-              {idx === 1 && <Box key={idx + 20} className={classes.buttonSpace} />}
-            </Container>
-          ))}
+       <div className={classes.linksContainer}>
+          <Button
+            variant='text'
+            color='inherit'
+            className={classes.headButton}
+            onClick={() => history.push(links[0].link)}
+          >
+            {links[0].texto}
+          </Button>
+
+          <Button
+            variant='text'
+            color='inherit'
+            className={classes.headButton}
+            onClick={() => history.push(links[1].link)}
+          >
+            {links[1].texto}
+          </Button>
+
+          <Box className={classes.buttonSpace} />
+
+          <Button
+            variant='text'
+            color='inherit'
+            className={classes.headButton}
+            onClick={() => history.push(links[2].link)}
+          >
+            {links[2].texto}
+          </Button>
+
+          <Button
+            variant='text'
+            color='inherit'
+            className={classes.headButton}
+            onClick={() => history.push(links[3].link)}
+          >
+            {links[3].texto}
+          </Button>
         </div>
 
         {/* Aqui é o ícone do usuário. Ele some quando a tela é pequena */}
