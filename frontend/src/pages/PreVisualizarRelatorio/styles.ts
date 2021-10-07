@@ -1,3 +1,121 @@
 import { makeStyles } from '@material-ui/core'
 
-export const useStyles = makeStyles((theme) => ({}))
+export const useStyles = makeStyles((theme) => ({
+  barraFundo: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    zIndex: -1,
+    backgroundColor: '#FFFEF2',
+  },
+  iconSpace: {
+    position: 'absolute',
+    right: '1vw',
+    marginTop: '1.2vh',
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
+  },
+  iconPerfil: {
+    maxHeight: '7vh',
+  },
+  barraTopo: {
+    height: '10vh',
+    width: '100%',
+    backgroundColor: theme.palette.secondary.main,
+    marginTop: '0vh',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  btnHome0: {
+    backgroundColor: 'none',
+    width: '10vw',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    fontFamily: 'Open Sans',
+  },
+  btnHome1: {
+    backgroundColor: 'none',
+    width: '10vw',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    fontFamily: 'Open Sans',
+  },
+  btnHome2: {
+    backgroundColor: 'none',
+    width: '10vw',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    fontFamily: 'Open Sans',
+  },
+  btnHome3: {
+    backgroundColor: 'none',
+    width: '10vw',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    fontFamily: 'Open Sans',
+    /*
+        textDecoration: 'underline',
+        textUnderlineOffset: '0.3vh',
+        textDecorationColor: 'white',
+        */
+  },
+  tituloBarraTopo: {
+    color: 'white',
+    textAlign: 'center',
+    verticalAlign: 'middle',
+    marginTop: '3vh',
+  },
+  imagem: {
+    height: '15vh',
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
+  },
+  barraUm: {
+    display: 'flex',
+    padding: '0',
+    margin: '0',
+    height: '14vh',
+    width: '100%',
+    backgroundColor: '#FFFEF2',
+  },
+  barraDois: {
+    padding: '0',
+    margin: '0',
+    height: '16vh',
+    width: '100%',
+    display: 'flex',
+    backgroundColor: '#FFFEF2',
+  },
+  nomeTrab: {
+    marginTop: '1.9vh',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    fontFamily: 'Open Sans',
+    fontSize: '11.3vh',
+    color: theme.palette.primary.main,
+    textDecoration: 'underline',
+    textDecorationThickness: '0.47vw',
+    textUnderlineOffset: '0.3vh',
+  },
+  barraTres: {
+    display: 'flex',
+    backgroundColor: '#FFFEF2',
+    height: '13vh',
+    width: '100%',
+  },
+  textoMeio: {
+    marginTop: '2vh',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    fontSize: '2.5vh',
+    fontFamily: 'Open Sans',
+    color: theme.palette.primary.main,
+  },
+}))
