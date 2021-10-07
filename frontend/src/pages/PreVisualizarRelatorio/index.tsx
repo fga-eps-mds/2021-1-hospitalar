@@ -1,4 +1,6 @@
 import React from 'react'
+import icon_3 from '../../assets/logo_3.svg'
+import logo_simples from '../../assets/logo_simples.png'
 import { useStyles } from './styles'
 
 export function PreVisualizarRelatorio(): React.ReactElement {
@@ -30,7 +32,53 @@ export function PreVisualizarRelatorio(): React.ReactElement {
         <p className={classes.nomeTrab}>FAMil</p>
       </div>
       <div className={classes.barraTres}>
-        <p className={classes.textoMeio}>Ferramenta de acreditação militar</p>
+        <div className={classes.caixaFlutuante}>
+          <div className={classes.tituloCaixa}>
+            <h1 className={classes.tituloEntradaCodigo}>PRÉ-VISUALIZAR RELATÓRIO</h1>
+          </div>
+          <div className={classes.conteudoCaixa}>
+            <div className={classes.coluna1}>
+              <div className={classes.miniInput}>
+                <div className={classes.miniInputAcima}>
+                  <p className={classes.titulo}>Hospital</p>
+                </div>
+                <div className={classes.miniInputAbaixo}>
+                  <input className={classes.entrada} />
+                </div>
+              </div>
+              <div className={classes.miniInput}>
+                <div className={classes.miniInputAcima}>
+                  <p className={classes.titulo}>Sigla</p>
+                </div>
+                <div className={classes.miniInputAbaixo}>
+                  <input className={classes.entrada} />
+                </div>
+              </div>
+              <div className={classes.miniInput}>
+                <div className={classes.miniInputAcima}>
+                  <p className={classes.titulo}>Código</p>
+                </div>
+                <div className={classes.miniInputAbaixo}>
+                  <input className={classes.entrada} />
+                </div>
+              </div>
+              <div className={classes.miniInput}>
+                <div className={classes.miniInputAcima}>
+                  <p className={classes.titulo}>Data</p>
+                </div>
+                <div className={classes.miniInputAbaixo}>
+                  <input className={classes.entrada} />
+                </div>
+              </div>
+            </div>
+            <div className={classes.coluna2}>
+              <div className={classes.plots} />
+              <button type='submit' className={classes.btn}>
+                <p className={classes.textoBtn}>GERAR</p>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
