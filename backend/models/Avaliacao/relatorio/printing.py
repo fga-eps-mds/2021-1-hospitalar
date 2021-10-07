@@ -70,6 +70,7 @@ class MyPrint:
         # Adição de elementos do Banco de Dados
         elements.append(
             Paragraph("Hospital {0}".format(relatorio.nomeHospital), styles['centered']))
+        elements.append(Spacer(1, 0.5*cm))
         for secs in relatorio.secoes:
             titulo = secs.topico
             elements.append(Paragraph(titulo, styles['Heading1']))

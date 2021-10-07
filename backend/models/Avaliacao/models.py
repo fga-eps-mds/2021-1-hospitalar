@@ -1,11 +1,25 @@
-from ..Secao.models import Secao
 from django.db import models
-from django.contrib.auth.models import User
 
 # Create your models here.
 
 
+class Avaliacao(models.Model):
+    codigo = models.TextField(blank=True, unique=True)
+    nomeHospital = models.TextField(blank=True)
+    idsAvaliadores = models.TextField(blank=True)
+    data = models.DateTimeField(blank=True)
+
+    def __str__(self):
+        return self.codigo
+
+    @property
+    def secoes(self):
+        return self.secao_set.all()
+
+
 class Secao(models.Model):
+    avaliacao = models.ForeignKey(Avaliacao, on_delete=models.CASCADE)
+
     topico = models.TextField(blank=True)
 
     def __str__(self):
@@ -18,22 +32,11 @@ class Secao(models.Model):
 
 class Subtopico(models.Model):
     secao = models.ForeignKey(Secao, on_delete=models.CASCADE)
+
     nome = models.TextField(blank=True)
     status = models.CharField(max_length=2, blank=True)
+    pontuacao = models.FloatField(blank=True, default=0)
     comentario = models.TextField(blank=True)
 
     def __str__(self):
         return self.status
-
-
-class Avaliacao(models.Model):
-    secao = models.ForeignKey(Secao, on_delete=models.CASCADE)
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, null=True, blank=True)
-    codigo = models.TextField(blank=True)
-    nomeHospital = models.TextField(blank=True)
-    idsAvaliadores = models.TextField(blank=True)
-    data = models.DateTimeField(auto_created=True)
-
-    def __str__(self):
-        return self.codigo

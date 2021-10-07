@@ -1,5 +1,4 @@
 from rest_framework import routers
-from models.Secao.views import SecaoView
 from models.Configuracao.views import ConfiguracaoView
 from models.Avaliacao.views import AvaliacaoView
 '''
@@ -13,7 +12,6 @@ from models.Avaliacao.views import AvaliacaoView
 
 def create_api():
     router = routers.DefaultRouter()
-    router.register(r'secao', SecaoView)
     router.register(r'configuracao', ConfiguracaoView)
     router.register(r'avaliacao', AvaliacaoView)
     return router

@@ -1,26 +1,22 @@
-from django.shortcuts import render
-
-from rest_framework import viewsets
-from rest_framework.decorators import action
-from django.http import HttpResponse
-from reportlab.pdfgen import canvas
-from .models import Avaliacao
-from ..Secao.models import Secao
-from .serializers import AvaliacaoSerializer
-from io import BytesIO
 from .relatorio.printing import MyPrint
-
-# Create your views here.
+from io import BytesIO
+from .serializers import AvaliacaoSerializer
+from .models import Avaliacao
+from reportlab.pdfgen import canvas
+from django.http import HttpResponse
+from rest_framework.decorators import action
+from rest_framework import viewsets
+from django.shortcuts import render
 
 
 class AvaliacaoView(viewsets.ModelViewSet):
 
     serializer_class = AvaliacaoSerializer
     queryset = Avaliacao.objects.all()
-    lookup_field = 'codigo'
+    lookup_field = 'id'
 
     @action(methods=['get'], detail=False)
-    def generatePDF(buffer, request):
+    def generatePDF(self, request):
         # Create the HttpResponse object with the appropriate PDF headers.
         response = HttpResponse(content_type='application/pdf')
         response['Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
@@ -28,8 +24,8 @@ class AvaliacaoView(viewsets.ModelViewSet):
         # buffer armazena os bytes para o PDF (PDF é arquivo compilável)
         buffer = BytesIO()
 
-        # exemplo para a segunda avaliação cadastrada
-        getAval2 = Avaliacao.objects.get(id=2)
+        # exemplo para a primeira avaliação cadastrada
+        getAval2 = Avaliacao.objects.get(id=1)
 
         # Utilizando o construtor para o Relatório
         # buffer, Formato e Código da Aval.
