@@ -18,7 +18,7 @@ import axios from 'axios'
  * @see https://github.com/axios/axios
  */
 export const api = axios.create({
-  baseURL: 'http://localhost:8000/api/',
+  baseURL: 'api/',
   xsrfHeaderName: 'X-CSRFTOKEN',
   xsrfCookieName: 'csrftoken',
 })

@@ -1,14 +1,26 @@
 /* eslint-disable react/self-closing-comp */
 
+import { Box, Grid, TextField, Typography } from '@material-ui/core'
+
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Grid } from '@material-ui/core'
+import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Header } from '../../components/GlobalComponents/Header'
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function EditarItem(): React.ReactElement {
   const classes = useStyles()
 
+  /**
+   * Vai fazer a transição de páginas para a próxima página
+   * É necessario inicializar o history.
+   */
+  const history = useHistory()
+
+  const voltar = () => {
+    console.log('voltando')
+  }
   const funcBotao = () => {
     console.log('testebotao')
   }
@@ -23,7 +35,7 @@ export function EditarItem(): React.ReactElement {
         {' '}
         {/* cabeçalho */}
         <Grid item>
-          <Header links={[]} />
+          <Header title='Preenchimento da avaliação' />
         </Grid>
       </Grid>
 
