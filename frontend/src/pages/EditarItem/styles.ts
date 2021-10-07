@@ -1,6 +1,4 @@
-import { CenterFocusStrong } from '@material-ui/icons'
 import { makeStyles } from '@material-ui/core'
-import { sortAndDeduplicateDiagnostics } from 'typescript'
 
 export const useStyles = makeStyles((theme) => ({
   title: {
