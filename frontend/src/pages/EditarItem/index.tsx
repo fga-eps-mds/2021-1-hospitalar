@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Header } from '../../components/GlobalComponents/Header'
+import MaterialTable from 'material-table'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
@@ -40,15 +41,15 @@ export function EditarItem(): React.ReactElement {
     },
   ])
 
-  function addNovoItem() {
-    setItem([
-      ...itens,
-      {
-        n: 4,
-        nsp: 'O NSP promove ações para a gestão do risco assistencial na instituição.',
-      },
-    ])
-  }
+  const columns = [
+    { title: 'N°', field: 'n' },
+    {
+      title: 'NSP',
+      field: 'nsp',
+      sorting: false,
+      textAlign: 'left',
+    },
+  ]
 
   /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -76,70 +77,67 @@ export function EditarItem(): React.ReactElement {
 
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
-        <Grid className={classes.gridField}>
-          <TextField
-            className={classes.textFieldDesign}
-            label='Pesquisar'
-            variant='outlined'
-            color='primary'
-            focused
+        <Grid className='App'>
+          <Grid className={classes.gridbotao}>
+            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+              A
+            </Button>
+            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+              B
+            </Button>
+            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+              C
+            </Button>
+            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+              D
+            </Button>
+            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+              E
+            </Button>
+            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+              F
+            </Button>
+          </Grid>
+          <MaterialTable
+            columns={columns}
+            data={itens}
+            title='Subtópicos'
+            editable={{
+              onRowAdd: (newRow) =>
+                new Promise((resolve, reject) => {
+                  setTimeout(() => {
+                    setItem([...itens, newRow])
+                    resolve()
+                  }, 500)
+                }),
+              onRowUpdate: (newRow, oldRow) =>
+                new Promise((resolve, reject) => {
+                  setTimeout(() => {
+                    const updatedData = [...itens]
+                    updatedData[oldRow.tableData.id] = newRow
+                    setItem(updatedData)
+                    resolve()
+                  }, 500)
+                }),
+              onRowDelete: (selectedRow) =>
+                new Promise((resolve, reject) => {
+                  setTimeout(() => {
+                    const updatedData = [...itens]
+                    updatedData.splice(selectedRow.tableData.id, 1)
+                    setItem(updatedData)
+                    resolve()
+                  }, 1000)
+                }),
+            }}
+            options={{
+              searchFieldAlignment: 'left',
+              searchFieldVariant: 'outlined',
+              pageSizeOptions: [4, 5, 10, 20, 50, 100],
+              pageSize: 4,
+              actionsColumnIndex: -1,
+            }}
           />
         </Grid>
-
-        <Grid className={classes.gridbotao}>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            A
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            B
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            C
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            D
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            E
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            F
-          </Button>
-        </Grid>
-
-        <Grid className={classes.tabelaGeral}>
-          <Grid className={classes.GeralNumero}>
-            <Grid className={classes.textNumerobordasuperior}>Nº</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>
-              Núcleo de Segurança do Paciente (Núcleo de Segurança do Paciente (NSP))
-            </Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.IconeEditar}>...</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.IconeLixeira}>...</Grid>
-          </Grid>
-        </Grid>
-        <div className={classes.itensTabela}>
-          {itens.map((item) => (
-            <p>
-              {item.n} {item.nsp}
-            </p>
-          ))}
-          <Button
-            className={classes.botaoAdd}
-            size='medium'
-            onClick={() => addNovoItem()}
-          >
-            Adicionar Item
-          </Button>
-        </div>
       </Grid>
     </Grid>
   )
