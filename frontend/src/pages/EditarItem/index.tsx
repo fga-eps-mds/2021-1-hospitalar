@@ -35,7 +35,10 @@ export function EditarItem(): React.ReactElement {
         {' '}
         {/* cabeçalho */}
         <Grid item>
+          {/*
+          COMENTEI ISSO POIS ESTÁ DANDO ERRO
           <Header title='Preenchimento da avaliação' />
+          */}
         </Grid>
       </Grid>
 
