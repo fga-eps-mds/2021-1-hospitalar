@@ -1,16 +1,12 @@
-/* eslint-disable react/self-closing-comp */
-
-import { Box, Grid, TextField, Typography } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 
-import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Form } from '../../components/GlobalComponents/Forms/Form'
-import { Header } from '../../components/GlobalComponents/Header'
-import { useHistory } from 'react-router-dom'
-import { useParams } from 'react-router'
-import { useStyles } from './styles'
 import { Avaliacao } from '../../types/Avaliacao'
+import { Button } from '../../components/GlobalComponents/Inputs/Button'
+import { Grid } from '@material-ui/core'
+import { Header } from '../../components/GlobalComponents/Header'
 import { api } from '../../api'
+import { useParams } from 'react-router-dom'
+import { useStyles } from './styles'
 
 type Props = {
   idAvaliacao: string
@@ -44,15 +40,7 @@ export function PaginaAvaliacao(): React.ReactElement {
   }
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
-  /**
-   * Vai fazer a transição de páginas para a próxima página
-   * É necessario inicializar o history.
-   */
-  const history = useHistory()
 
-  const voltar = () => {
-    console.log('voltando')
-  }
   const funcBotao = () => {
     console.log('testebotao')
   }

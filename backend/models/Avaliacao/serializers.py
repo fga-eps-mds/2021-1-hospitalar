@@ -7,8 +7,7 @@ class SubtopicoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Subtopico
-        fields = ('id', 'secao', 'nome', 'status', 'comentario', 'pontuacao')
-        read_only_fields = ('secao',)
+        fields = ('id', 'nome', 'status', 'comentario', 'pontuacao')
 
 
 class SecaoSerializer(serializers.ModelSerializer):
@@ -17,8 +16,7 @@ class SecaoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Secao
-        fields = ('id', 'topico', 'subtopicos', 'avaliacao')
-        read_only_fields = ('avaliacao',)
+        fields = ('id', 'topico', 'subtopicos')
 
 
 class AvaliacaoSerializer (serializers.ModelSerializer):
@@ -30,49 +28,24 @@ class AvaliacaoSerializer (serializers.ModelSerializer):
                   'idsAvaliadores', 'data', 'secoes')
 
     def create(self, validated_data):
-        '''
-            Esse método será executado ao fazer uma requisição POST e deverá criar
-            uma nova seção de acordo com o JSON passado no corpo da requisição.
-            Esse método se faz necessário pois o ModelSerializer não é capaz de
-            criar essa funcionalidade automaticamente quando a classe tem alguma
-            relação com outra classe.
-            O campo subtópicos desta classe é uma lista do objeto Subtopico, ilustrando
-            assim uma relação de composição.
-            Parâmetro:
-                validated_data: Objeto que representa o JSON passado como corpo da
-                                requisição.
-            Retorno:
-                O objeto criado.
-        '''
         secoes = validated_data.pop('secoes')
 
         avaliacao = Avaliacao.objects.create(**validated_data)
 
         for secao in secoes:
             subtopicos = secao.pop('subtopicos')
-            objsecao = Secao.objects.create(**secao, avaliacao=avaliacao)
+
+            objsecao = Secao.objects.create(avaliacao=avaliacao,
+                                            **secao)
+
             for subtopico in subtopicos:
-                Subtopico.objects.create(**subtopico, secao=objsecao)
+
+                Subtopico.objects.create(secao=objsecao,
+                                         **subtopico)
 
         return avaliacao
 
     def update(self, instance, validated_data):
-        '''
-            Esse método será executado ao fazer uma requisição PUT e deverá atualizar
-            a seção cujo id seja igual ao id passado pelo parâmetro da requisição.
-            Parâmetros:
-                instance: Objeto a ser editado.
-                validated_data: Objeto que representa o JSON passado como corpo da
-                                requisição.
-            Retorno:
-                O objeto já editado.
-            PS: Para editar uma seção, o corpo da requisição deve conter o campo
-                subtopicos pois este será usado para identificar quais subtopicos criar,
-                editar ou destruir. As seções e subtópicos, passados para o JSON, que tiverem ID
-                serão editados, as que não tiverem ID serão criados e as que existirem
-                no objeto mas não existirem na requisição serão apagados.
-        '''
-
         secoes = validated_data.pop('secoes')
 
         instance.codigo = validated_data.get("codigo", instance.codigo)

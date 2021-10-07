@@ -1,6 +1,5 @@
 export type Subtopico = {
   id: number
-  secao: number
   nome: string
   status: string
   comentario: string
@@ -11,7 +10,6 @@ export type Secao = {
   id: number
   topico: string
   subtopicos: Subtopico[]
-  avaliacao: number
 }
 
 export type Avaliacao = {
