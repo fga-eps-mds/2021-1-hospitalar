@@ -28,12 +28,12 @@ class AvaliacaoView(viewsets.ModelViewSet):
         # buffer armazena os bytes para o PDF (PDF é arquivo compilável)
         buffer = BytesIO()
 
-        # exemplo para a primeira avaliação cadastrada
-        getAval1 = Avaliacao.objects.get(id=1)
+        # exemplo para a segunda avaliação cadastrada
+        getAval2 = Avaliacao.objects.get(id=2)
 
         # Utilizando o construtor para o Relatório
         # buffer, Formato e Código da Aval.
-        report = MyPrint(buffer, 'A4', getAval1.codigo)
+        report = MyPrint(buffer, 'A4', getAval2.codigo)
 
         # Função que retorna o PDF utilizando o valor do buffer
         pdf = report.printReport()
