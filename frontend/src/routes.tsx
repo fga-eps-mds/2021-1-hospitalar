@@ -7,6 +7,7 @@ import { Login } from './pages/Login'
 import { NovaAvaliacao } from './pages/NovaAvaliacao'
 import { PaginaAddItem } from './pages/PaginaAddItem'
 import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
+import { PreVisualizarRelatorio } from './pages/PreVisualizarRelatorio'
 import React from 'react'
 import { Template } from './components/GlobalComponents/Template'
 
@@ -27,6 +28,7 @@ export function Routes(): React.ReactElement {
         <Route exact path='/NovaAvaliacao/Adicao' component={PaginaAddItem} />
         <Route exact path='/relatorio' component={GenerateReport} />
         <Route exact path='/NovaAvaliacao' component={NovaAvaliacao} />
+        <Route exact path='/PreVisualizar' component={PreVisualizarRelatorio} />
       </Switch>
     </BrowserRouter>
   )
