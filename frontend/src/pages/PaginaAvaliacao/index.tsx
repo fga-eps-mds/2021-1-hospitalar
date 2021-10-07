@@ -27,14 +27,12 @@ export function PaginaAvaliacao(): React.ReactElement {
         subtopicos: [
           {
             id: 0,
-            secao: 0,
             nome: '',
             status: '',
             comentario: '',
             pontuacao: 0,
           },
         ],
-        avaliacao: 0,
       },
     ],
   }
@@ -46,14 +44,10 @@ export function PaginaAvaliacao(): React.ReactElement {
   }
 
   const handleSubmmit = () => {
-    console.log(idAvaliacao)
     api
       .get<Avaliacao>(`avaliacao/${idAvaliacao}`)
 
-      .then(({ data }) => {
-        setAvaliacao(data)
-        console.log(data)
-      })
+      .then(({ data }) => setAvaliacao(data))
       // eslint-disable-next-line no-console
       .catch(console.log)
   }
