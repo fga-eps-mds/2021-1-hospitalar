@@ -88,7 +88,7 @@ class AvaliacaoSerializer (serializers.ModelSerializer):
                     for subtopico in subtopicos:
                         if "id" not in subtopico.keys():
                             novoSub = Subtopico.objects.create(
-                                **subtopicos, secao=editarSecao)
+                                **subtopico, secao=editarSecao)
                             keep_subtopicos.append(novoSub.id)
 
                         else:
