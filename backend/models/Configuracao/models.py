@@ -6,9 +6,6 @@ from django.db import models
 class Configuracao(models.Model):
 
     # atributos vem aqui
-    C = models.FloatField()
-    PC = models.FloatField()
-    NC = models.FloatField()
     NV1 = models.FloatField()
     NV2 = models.FloatField()
     NV3 = models.FloatField()

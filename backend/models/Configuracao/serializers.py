@@ -5,4 +5,4 @@ from .models import Configuracao
 class ConfiguracaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Configuracao
-        fields = ('id', 'C', 'PC', 'NC', 'NV1', 'NV2', 'NV3')
+        fields = ('id', 'NV1', 'NV2', 'NV3')

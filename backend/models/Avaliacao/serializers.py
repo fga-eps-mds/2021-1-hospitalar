@@ -1,9 +1,27 @@
 from rest_framework import serializers
-from .models import Avaliacao
+from .models import Avaliacao, Secao, Subtopico
 
 
+class SubtopicoSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(required=False)
 
-class AvaliacaoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Subtopico
+        fields = ('id', 'nome', 'status', 'comentario', 'pontuacao')
+
+
+class SecaoSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(required=False)
+    subtopicos = SubtopicoSerializer(many=True)
+
+    class Meta:
+        model = Secao
+        fields = ('id', 'topico', 'subtopicos')
+
+
+class AvaliacaoSerializer (serializers.ModelSerializer):
+    secoes = SecaoSerializer(many=True)
+
     class Meta:
         model = Avaliacao
         fields = ('id', 'codigo', 'nomeHospital',
@@ -44,10 +62,10 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
         for secao in secoes:
 
             if "id" not in secao.keys():
+                subtopicos = secao.pop('subtopicos')
+
                 novaSecao = Secao.objects.create(**secao, avaliacao=instance)
                 keep_secoes.append(novaSecao.id)
-
-                subtopicos = secao.pop('subtopicos')
 
                 for subtopico in subtopicos:
                     Subtopico.objects.create(**subtopico, secao=novaSecao)
