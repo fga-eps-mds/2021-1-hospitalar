@@ -1,27 +1,9 @@
 from rest_framework import serializers
-from .models import Avaliacao, Secao, Subtopico
+from .models import Avaliacao
 
 
-class SubtopicoSerializer(serializers.ModelSerializer):
-    id = serializers.IntegerField(required=False)
 
-    class Meta:
-        model = Subtopico
-        fields = ('id', 'nome', 'status', 'comentario', 'pontuacao')
-
-
-class SecaoSerializer(serializers.ModelSerializer):
-    id = serializers.IntegerField(required=False)
-    subtopicos = SubtopicoSerializer(many=True)
-
-    class Meta:
-        model = Secao
-        fields = ('id', 'topico', 'subtopicos')
-
-
-class AvaliacaoSerializer (serializers.ModelSerializer):
-    secoes = SecaoSerializer(many=True)
-
+class AvaliacaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Avaliacao
         fields = ('id', 'codigo', 'nomeHospital',

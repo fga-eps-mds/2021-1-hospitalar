@@ -1,60 +1,30 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable react/self-closing-comp */
 
-import { Avaliacao } from '../../types/Avaliacao'
+import { Box, Grid, TextField, Typography } from '@material-ui/core'
+
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Grid } from '@material-ui/core'
+import { Form } from '../../components/GlobalComponents/Forms/Form'
 import { Header } from '../../components/GlobalComponents/Header'
-import { api } from '../../api'
-import { useParams } from 'react-router-dom'
+import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
-type Props = {
-  idAvaliacao: string
-}
-
 export function PaginaAvaliacao(): React.ReactElement {
-  const { idAvaliacao } = useParams<Props>()
-  const avaliacaoNula: Avaliacao = {
-    id: 0,
-    codigo: '',
-    nomeHospital: '',
-    idsAvaliadores: '',
-    data: new Date().toISOString(),
-    secoes: [
-      {
-        id: 0,
-        topico: '',
-        subtopicos: [
-          {
-            id: 0,
-            nome: '',
-            status: '',
-            comentario: '',
-            pontuacao: 0,
-          },
-        ],
-      },
-    ],
-  }
-  const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
 
+  /**
+   * Vai fazer a transição de páginas para a próxima página
+   * É necessario inicializar o history.
+   */
+  const history = useHistory()
+
+  const voltar = () => {
+    console.log('voltando')
+  }
   const funcBotao = () => {
     console.log('testebotao')
   }
 
-  const handleSubmmit = () => {
-    api
-      .get<Avaliacao>(`avaliacao/${idAvaliacao}`)
-
-      .then(({ data }) => setAvaliacao(data))
-      // eslint-disable-next-line no-console
-      .catch(console.log)
-  }
-
-  useEffect(() => {
-    handleSubmmit()
-  }, [])
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
@@ -78,28 +48,23 @@ export function PaginaAvaliacao(): React.ReactElement {
 
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
-        <Grid className={classes.textData}>
-          {new Date(avaliacao.data).toLocaleDateString('pt-BR')}
-        </Grid>
+        <Grid className={classes.textData}>dd/mm/aaaa</Grid>
         <Grid className={classes.idAvaliacao}>
+          ID_AVALIAÇÃO
           {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
         </Grid>
         <Grid className={classes.textInfoHosp}>
           <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
-          <Grid className={classes.textNomeResp}>
-            {avaliacao.nomeHospital.split(',')[0]}
-          </Grid>
+          <Grid className={classes.textNomeResp}>Nome do Hospital</Grid>
           <Grid className={classes.textSiglaLabel}>Sigla:</Grid>
-          <Grid className={classes.textSiglaResp}>
-            {avaliacao.nomeHospital.split(',')[1]}
-          </Grid>
+          <Grid className={classes.textSiglaResp}>Sigla</Grid>
         </Grid>
         <Grid className={classes.textResponsavel}>
           <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
-          <Grid className={classes.textResponsavelResp}>{avaliacao.idsAvaliadores}</Grid>
+          <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
         </Grid>
         <Grid className={classes.gridbotao}>
-          <Button className={classes.botaodesign} size='medium' onClick={handleSubmmit}>
+          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
             A
           </Button>
           <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
