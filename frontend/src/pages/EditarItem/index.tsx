@@ -1,11 +1,10 @@
 /* eslint-disable react/self-closing-comp */
 
-import { Grid, TextField, Typography } from '@material-ui/core'
-import React, { useState } from 'react'
-
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
+import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
 import MaterialTable from 'material-table'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
@@ -19,37 +18,38 @@ export function EditarItem(): React.ReactElement {
 
   const history = useHistory()
 
-  const voltar = () => {
-    console.log('voltando')
-  }
   const funcBotao = () => {
-    console.log('testebotao')
+    console.log('testeBotao')
   }
 
-  const [itens, setItem] = useState([
-    {
-      n: 1,
-      nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
-    },
-    {
-      n: 2,
-      nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
-    },
-    {
-      n: 3,
-      nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
-    },
-  ])
+  const tabelaEstadoInicial = {
+    columns: [
+      {
+        title: 'Nº',
+        field: 'n',
+      },
+      {
+        title: 'Núcleo de Segurança do Paciente (NSP)',
+        field: 'nsp',
+      },
+    ],
+    data: [
+      {
+        n: 1,
+        nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
+      },
+      {
+        n: 2,
+        nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
+      },
+      {
+        n: 3,
+        nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
+      },
+    ],
+  }
 
-  const columns = [
-    { title: 'N°', field: 'n' },
-    {
-      title: 'NSP',
-      field: 'nsp',
-      sorting: false,
-      textAlign: 'left',
-    },
-  ]
+  const [state, setState] = React.useState(tabelaEstadoInicial)
 
   /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -73,68 +73,85 @@ export function EditarItem(): React.ReactElement {
         </Grid>
       </Grid>
 
-      <Grid className={classes.tituloEditar}>EDITAR SEÇÃO DA AVALIAÇÃO</Grid>
+      <Grid className={classes.titleEditarSecao}>EDITAR SEÇÃO DA AVALIAÇÃO</Grid>
 
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className='App'>
-          <Grid className={classes.gridbotao}>
-            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+          <Grid className={classes.gridButton}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
               A
             </Button>
-            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
               B
             </Button>
-            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
               C
             </Button>
-            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
               D
             </Button>
-            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
               E
             </Button>
-            <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
               F
             </Button>
           </Grid>
           <MaterialTable
-            columns={columns}
-            data={itens}
             title='Subtópicos'
+            columns={state.columns}
+            data={state.data}
             editable={{
-              onRowAdd: (newRow) =>
-                new Promise((resolve, reject) => {
+              onRowAdd: (newData) =>
+                new Promise((resolve) => {
                   setTimeout(() => {
-                    setItem([...itens, newRow])
-                    resolve()
+                    resolve(null)
+                    setState((prevState) => {
+                      const data = [...prevState.data]
+                      data.push(newData)
+                      return { ...prevState, data }
+                    })
                   }, 500)
                 }),
-              onRowUpdate: (newRow, oldRow) =>
-                new Promise((resolve, reject) => {
+              onRowUpdate: (newData, oldData) =>
+                new Promise((resolve) => {
                   setTimeout(() => {
-                    const updatedData = [...itens]
-                    updatedData[oldRow.tableData.id] = newRow
-                    setItem(updatedData)
-                    resolve()
+                    resolve(null)
+                    if (oldData) {
+                      setState((prevState) => {
+                        const data = [...prevState.data]
+                        data[data.indexOf(oldData)] = newData
+                        return { ...prevState, data }
+                      })
+                    }
                   }, 500)
                 }),
-              onRowDelete: (selectedRow) =>
-                new Promise((resolve, reject) => {
+              onRowDelete: (oldData) =>
+                new Promise((resolve) => {
                   setTimeout(() => {
-                    const updatedData = [...itens]
-                    updatedData.splice(selectedRow.tableData.id, 1)
-                    setItem(updatedData)
-                    resolve()
-                  }, 1000)
+                    resolve(null)
+                    setState((prevState) => {
+                      const data = [...prevState.data]
+                      data.splice(data.indexOf(oldData), 1)
+                      return { ...prevState, data }
+                    })
+                  }, 500)
                 }),
             }}
             options={{
               searchFieldAlignment: 'left',
-              searchFieldVariant: 'outlined',
-              pageSizeOptions: [4, 5, 10, 20, 50, 100],
-              pageSize: 4,
-              actionsColumnIndex: -1,
+              headerStyle: {
+                backgroundColor: '#175215',
+                color: '#FFFFFF',
+                fontFamily: 'OpenSans',
+                fontSize: '23px',
+              },
+            }}
+            style={{
+              backgroundColor: '#FFFFF2',
+              color: '#000000',
+              fontSize: '20px',
             }}
           />
         </Grid>
