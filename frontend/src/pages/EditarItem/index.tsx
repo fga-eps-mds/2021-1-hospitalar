@@ -1,10 +1,11 @@
 /* eslint-disable react/self-closing-comp */
 
+import React, { useState } from 'react'
+
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
 import MaterialTable from 'material-table'
-import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
@@ -22,34 +23,30 @@ export function EditarItem(): React.ReactElement {
     console.log('testeBotao')
   }
 
-  const tabelaEstadoInicial = {
-    columns: [
-      {
-        title: 'Nº',
-        field: 'n',
-      },
-      {
-        title: 'Núcleo de Segurança do Paciente (NSP)',
-        field: 'nsp',
-      },
-    ],
-    data: [
-      {
-        n: 1,
-        nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
-      },
-      {
-        n: 2,
-        nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
-      },
-      {
-        n: 3,
-        nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
-      },
-    ],
-  }
+  const [itens, setState] = useState([
+    {
+      n: 1,
+      nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
+    },
+    {
+      n: 2,
+      nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
+    },
+    {
+      n: 3,
+      nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
+    },
+  ])
 
-  const [state, setState] = React.useState(tabelaEstadoInicial)
+  const columns = [
+    { title: 'N°', field: 'n' },
+    {
+      title: 'NSP',
+      field: 'nsp',
+      sorting: false,
+      textAlign: 'left',
+    },
+  ]
 
   /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -100,15 +97,15 @@ export function EditarItem(): React.ReactElement {
           </Grid>
           <MaterialTable
             title='Subtópicos'
-            columns={state.columns}
-            data={state.data}
+            columns={columns}
+            data={itens}
             editable={{
               onRowAdd: (newData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
                     setState((prevState) => {
-                      const data = [...prevState.data]
+                      const data = [...prevState.itens]
                       data.push(newData)
                       return { ...prevState, data }
                     })
@@ -120,7 +117,7 @@ export function EditarItem(): React.ReactElement {
                     resolve(null)
                     if (oldData) {
                       setState((prevState) => {
-                        const data = [...prevState.data]
+                        const data = [...prevState.itens]
                         data[data.indexOf(oldData)] = newData
                         return { ...prevState, data }
                       })
@@ -132,7 +129,7 @@ export function EditarItem(): React.ReactElement {
                   setTimeout(() => {
                     resolve(null)
                     setState((prevState) => {
-                      const data = [...prevState.data]
+                      const data = [...prevState.itens]
                       data.splice(data.indexOf(oldData), 1)
                       return { ...prevState, data }
                     })
