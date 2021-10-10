@@ -9,7 +9,7 @@
 
 <br>
 
-### Tela de menu principal
+### Tela de Menu Principal
 
 ![Tela-Menu](/docs/assets/produtos/prototipos/prototipo_time_c/tela_menu_principal_alta_fidelidade.png)
 
