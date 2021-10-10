@@ -125,15 +125,9 @@ export function PaginaAvaliacao(): React.ReactElement {
             <Grid className={classes.textNumero3bordainferior}>4</Grid>
           </Grid>
           <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>
-              Núcleo de Segurança do Paciente (NSP)
-            </Grid>
-            <Grid className={classes.TextoEscrito}>
-              O PSP está disponível para todos...
-            </Grid>
-            <Grid className={classes.TextoEscrito}>
-              O serviço de saúde possui Plano de...
-            </Grid>
+            <Grid className={classes.TextoEscrito}>AAAA</Grid>
+            <Grid className={classes.TextoEscrito}>AAAAA</Grid>
+            <Grid className={classes.TextoEscrito}>AAAAA</Grid>
             <Grid className={classes.TextoEscrito}>Total</Grid>
             <Grid className={classes.TextoEscrito}>Percentual</Grid>
           </Grid>
