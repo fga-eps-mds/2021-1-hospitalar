@@ -35,7 +35,7 @@ export function EditarItem(): React.ReactElement {
         {' '}
         {/* cabeçalho */}
         <Grid item>
-          <Header title='Preenchimento da avaliação' />
+          <h1>Preenchimento da avaliação</h1>
         </Grid>
       </Grid>
 
