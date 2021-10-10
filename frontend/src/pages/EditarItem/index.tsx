@@ -22,11 +22,14 @@ export function EditarItem(): React.ReactElement {
     console.log('testeBotao')
   }
 
-  const tabelaEstadoInicial = {
+  const never: 'never' = 'never'
+
+  const [state, setState] = React.useState({
     columns: [
       {
         title: 'Nº',
         field: 'n',
+        editable: never,
       },
       {
         title: 'Núcleo de Segurança do Paciente (NSP)',
@@ -47,9 +50,7 @@ export function EditarItem(): React.ReactElement {
         nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
       },
     ],
-  }
-
-  const [state, setState] = React.useState(tabelaEstadoInicial)
+  })
 
   /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -141,6 +142,9 @@ export function EditarItem(): React.ReactElement {
             }}
             options={{
               searchFieldAlignment: 'left',
+              actionsColumnIndex: -1,
+              pageSizeOptions: [2, 5, 10, 20, 25, 50, 100],
+              pageSize: 20,
               headerStyle: {
                 backgroundColor: '#175215',
                 color: '#FFFFFF',
@@ -152,6 +156,28 @@ export function EditarItem(): React.ReactElement {
               backgroundColor: '#FFFFF2',
               color: '#000000',
               fontSize: '20px',
+            }}
+            localization={{
+              header: {
+                actions: 'Ações',
+              },
+              toolbar: {
+                searchPlaceholder: 'Pesquisar',
+              },
+              body: {
+                addTooltip: 'Adicionar',
+                editTooltip: 'Editar',
+                deleteTooltip: 'Deletar',
+                editRow: { deleteText: 'Tem certeza que deseja excluir essa linha?' },
+              },
+              pagination: {
+                labelRowsSelect: 'itens',
+                firstTooltip: 'Primeira Página',
+                previousTooltip: 'Página Anterior',
+                labelDisplayedRows: '{from}-{to} de {count}',
+                nextTooltip: 'Próxima Página',
+                lastTooltip: 'Última Página',
+              },
             }}
           />
         </Grid>

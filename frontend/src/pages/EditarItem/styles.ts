@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: '3%',
     marginLeft: '5%',
     marginRight: '5%',
-    backgroundColor: '#fffff2',
+    backgroundColor: '#D6F0C8',
     border: '6px solid #175215',
   },
 
@@ -28,6 +28,7 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: '2%',
     marginLeft: '3.8%',
     marginRight: '2%',
+    marginBottom: '2%',
   },
 
   designButton: {
