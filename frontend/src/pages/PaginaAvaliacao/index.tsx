@@ -45,7 +45,7 @@ export function PaginaAvaliacao(): React.ReactElement {
 
   const handleSubmmit = () => {
     api
-      .get<Avaliacao>(`avaliacao/${idAvaliacao}`)
+      .get<Avaliacao>(`http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`)
 
       .then(({ data }) => setAvaliacao(data))
       // eslint-disable-next-line no-console
@@ -81,9 +81,7 @@ export function PaginaAvaliacao(): React.ReactElement {
         <Grid className={classes.textData}>
           {new Date(avaliacao.data).toLocaleDateString('pt-BR')}
         </Grid>
-        <Grid className={classes.idAvaliacao}>
-          {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
-        </Grid>
+        <Grid className={classes.idAvaliacao}>{avaliacao.codigo}</Grid>
         <Grid className={classes.textInfoHosp}>
           <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
           <Grid className={classes.textNomeResp}>
