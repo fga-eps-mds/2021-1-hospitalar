@@ -15,6 +15,8 @@ type Props = {
   idAvaliacao: string
 }
 
+let idSecao = 0
+
 export function EditarItem(): React.ReactElement {
   const { idAvaliacao } = useParams<Props>()
   const avaliacaoNula: Avaliacao = {
@@ -49,26 +51,36 @@ export function EditarItem(): React.ReactElement {
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
 
-  const funcBotao = () => {
-    console.log('testebotao')
-  }
-
-  const handleSubmmit = () => {
+  /*
+   *  Função para ter o "get" do banco de dados
+   */
+  const bancoGet = () => {
     api
       .get<Avaliacao>(`http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`)
 
       .then(({ data }) => setAvaliacao(data))
       // eslint-disable-next-line no-console
       .catch(console.log)
+    console.log('GET')
+  }
+  const bancoPut = () => {
+    api.put<Avaliacao, Avaliacao>(
+      `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
+      avaliacao
+    )
+    console.log('PUT')
   }
 
   useEffect(() => {
-    handleSubmmit()
+    bancoGet()
   }, [])
 
   const never: 'never' = 'never'
 
-  const [state, setState] = React.useState({
+  /*
+   *  Declaração do título do material table
+   */
+  const [state] = React.useState({
     columns: [
       {
         title: 'Nº',
@@ -82,8 +94,23 @@ export function EditarItem(): React.ReactElement {
     ],
   })
 
+  /*
+   *  Função para recarregar a página
+   */
   function refreshPage() {
     window.location.reload()
+  }
+
+  /*
+   *  Função para paginação, alternado o valor de secao
+   */
+  const funcBotaoA = () => {
+    idSecao = 0
+    bancoGet()
+  }
+  const funcBotao = () => {
+    idSecao = 1
+    bancoGet()
   }
 
   /*
@@ -114,7 +141,7 @@ export function EditarItem(): React.ReactElement {
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className='App'>
           <Grid className={classes.gridButton}>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotaoA}>
               A
             </Button>
             <Button className={classes.designButton} size='medium' onClick={funcBotao}>
@@ -136,47 +163,44 @@ export function EditarItem(): React.ReactElement {
           <MaterialTable
             title='Subtópicos'
             columns={state.columns}
-            data={avaliacao.secoes[0].subtopicos}
+            data={avaliacao.secoes[idSecao].subtopicos}
             editable={{
               onRowAdd: (newData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
-                    avaliacao.secoes[0].subtopicos.push(newData)
-                    api.put<Avaliacao, Avaliacao>(
-                      `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
-                      avaliacao
-                    )
-                    refreshPage()
-                  }, 500)
+                    avaliacao.secoes[idSecao].subtopicos.push(newData)
+                    bancoPut()
+                  }, 10)
+                  setTimeout(() => {
+                    bancoGet()
+                  }, 10)
                 }),
               onRowUpdate: (newData, oldData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
                     if (oldData) {
-                      const data = avaliacao.secoes[0].subtopicos
+                      const data = avaliacao.secoes[idSecao].subtopicos
                       data[data.indexOf(oldData)] = newData
-                      api.put<Avaliacao, Avaliacao>(
-                        `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
-                        avaliacao
-                      )
-                      refreshPage()
+                      bancoPut()
                     }
-                  }, 500)
+                  }, 10)
+                  setTimeout(() => {
+                    bancoGet()
+                  }, 10)
                 }),
               onRowDelete: (oldData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
-                    const data = avaliacao.secoes[0].subtopicos
+                    const data = avaliacao.secoes[idSecao].subtopicos
                     data.splice(data.indexOf(oldData), 1)
-                    api.put<Avaliacao, Avaliacao>(
-                      `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
-                      avaliacao
-                    )
-                    refreshPage()
-                  }, 500)
+                    bancoPut()
+                  }, 10)
+                  setTimeout(() => {
+                    bancoGet()
+                  }, 10)
                 }),
             }}
             options={{
@@ -196,6 +220,14 @@ export function EditarItem(): React.ReactElement {
               color: '#175215',
               fontSize: '20px',
             }}
+            actions={[
+              {
+                icon: 'refresh',
+                tooltip: 'Refresh Data',
+                isFreeAction: true,
+                onClick: () => bancoGet(),
+              },
+            ]}
             localization={{
               header: {
                 actions: 'Ações',
