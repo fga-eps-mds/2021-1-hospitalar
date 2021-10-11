@@ -1,30 +1,60 @@
-/* eslint-disable react/self-closing-comp */
+import React, { useEffect, useState } from 'react'
 
-import { Box, Grid, TextField, Typography } from '@material-ui/core'
-
+import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Form } from '../../components/GlobalComponents/Forms/Form'
+import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { api } from '../../api'
+import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
+type Props = {
+  idAvaliacao: string
+}
+
 export function PaginaAvaliacao(): React.ReactElement {
+  const { idAvaliacao } = useParams<Props>()
+  const avaliacaoNula: Avaliacao = {
+    id: 0,
+    codigo: '',
+    nomeHospital: '',
+    idsAvaliadores: '',
+    data: new Date().toISOString(),
+    secoes: [
+      {
+        id: 0,
+        topico: '',
+        subtopicos: [
+          {
+            id: 0,
+            nome: '',
+            status: '',
+            comentario: '',
+            pontuacao: 0,
+          },
+        ],
+      },
+    ],
+  }
+  const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
 
-  /**
-   * Vai fazer a transição de páginas para a próxima página
-   * É necessario inicializar o history.
-   */
-  const history = useHistory()
-
-  const voltar = () => {
-    console.log('voltando')
-  }
   const funcBotao = () => {
     console.log('testebotao')
   }
 
+  const handleSubmmit = () => {
+    api
+      .get<Avaliacao>(`http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`)
+
+      .then(({ data }) => setAvaliacao(data))
+      // eslint-disable-next-line no-console
+      .catch(console.log)
+  }
+
+  useEffect(() => {
+    handleSubmmit()
+  }, [])
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
@@ -48,23 +78,26 @@ export function PaginaAvaliacao(): React.ReactElement {
 
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
-        <Grid className={classes.textData}>dd/mm/aaaa</Grid>
-        <Grid className={classes.idAvaliacao}>
-          ID_AVALIAÇÃO
-          {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
+        <Grid className={classes.textData}>
+          {new Date(avaliacao.data).toLocaleDateString('pt-BR')}
         </Grid>
+        <Grid className={classes.idAvaliacao}>{avaliacao.codigo}</Grid>
         <Grid className={classes.textInfoHosp}>
           <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
-          <Grid className={classes.textNomeResp}>Nome do Hospital</Grid>
+          <Grid className={classes.textNomeResp}>
+            {avaliacao.nomeHospital.split(',')[0]}
+          </Grid>
           <Grid className={classes.textSiglaLabel}>Sigla:</Grid>
-          <Grid className={classes.textSiglaResp}>Sigla</Grid>
+          <Grid className={classes.textSiglaResp}>
+            {avaliacao.nomeHospital.split(',')[1]}
+          </Grid>
         </Grid>
         <Grid className={classes.textResponsavel}>
           <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
-          <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
+          <Grid className={classes.textResponsavelResp}>{avaliacao.idsAvaliadores}</Grid>
         </Grid>
         <Grid className={classes.gridbotao}>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
+          <Button className={classes.botaodesign} size='medium' onClick={handleSubmmit}>
             A
           </Button>
           <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
@@ -83,7 +116,6 @@ export function PaginaAvaliacao(): React.ReactElement {
             F
           </Button>
         </Grid>
-
         <Grid className={classes.tabelaGeral}>
           <Grid className={classes.GeralNumero}>
             <Grid className={classes.textNumerobordasuperior}>Nº</Grid>
@@ -92,21 +124,13 @@ export function PaginaAvaliacao(): React.ReactElement {
             <Grid className={classes.textNumero2}>3</Grid>
             <Grid className={classes.textNumero3bordainferior}>4</Grid>
           </Grid>
-
           <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>
-              Núcleo de Segurança do Paciente (NSP)
-            </Grid>
-            <Grid className={classes.TextoEscrito}>
-              O PSP está disponível para todos...
-            </Grid>
-            <Grid className={classes.TextoEscrito}>
-              O serviço de saúde possui Plano de...
-            </Grid>
+            <Grid className={classes.TextoEscrito}>AAAA</Grid>
+            <Grid className={classes.TextoEscrito}>AAAAA</Grid>
+            <Grid className={classes.TextoEscrito}>AAAAA</Grid>
             <Grid className={classes.TextoEscrito}>Total</Grid>
             <Grid className={classes.TextoEscrito}>Percentual</Grid>
           </Grid>
-
           <Grid className={classes.GeralTexto}>
             <Grid className={classes.TextoEscrito}>C</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
@@ -114,7 +138,6 @@ export function PaginaAvaliacao(): React.ReactElement {
             <Grid className={classes.TextoEscrito}>-</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
           </Grid>
-
           <Grid className={classes.GeralTexto}>
             <Grid className={classes.TextoEscrito}>PC</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
@@ -122,7 +145,6 @@ export function PaginaAvaliacao(): React.ReactElement {
             <Grid className={classes.TextoEscrito}>-</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
           </Grid>
-
           <Grid className={classes.GeralTexto}>
             <Grid className={classes.TextoEscrito}>NC</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
@@ -130,7 +152,6 @@ export function PaginaAvaliacao(): React.ReactElement {
             <Grid className={classes.TextoEscrito}>-</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
           </Grid>
-
           <Grid className={classes.GeralTexto}>
             <Grid className={classes.TextoEscrito}>NA</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
@@ -138,7 +159,6 @@ export function PaginaAvaliacao(): React.ReactElement {
             <Grid className={classes.TextoEscrito}>-</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
           </Grid>
-
           <Grid className={classes.GeralTexto}>
             <Grid className={classes.TextoEscrito}>PT</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
@@ -146,7 +166,6 @@ export function PaginaAvaliacao(): React.ReactElement {
             <Grid className={classes.TextoEscrito}>-</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
           </Grid>
-
           <Grid className={classes.GeralTexto}>
             <Grid className={classes.TextoEscritoBordaSuperior}>Comentários</Grid>
             <Grid className={classes.TextoEscrito}>-</Grid>
