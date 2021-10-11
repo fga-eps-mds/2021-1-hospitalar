@@ -11,39 +11,60 @@ import { api } from '../../api'
 import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
+type Props = {
+  idAvaliacao: string
+}
+
 export function EditarItem(): React.ReactElement {
+  const { idAvaliacao } = useParams<Props>()
+  const avaliacaoNula: Avaliacao = {
+    id: 0,
+    codigo: '',
+    nomeHospital: '',
+    idsAvaliadores: '',
+    data: new Date().toISOString(),
+    secoes: [
+      {
+        id: 0,
+        topico: '',
+        subtopicos: [
+          {
+            id: 0,
+            nome: 'testando',
+            status: '',
+            comentario: '',
+            pontuacao: 0,
+          },
+          {
+            id: 0,
+            nome: 'testando2',
+            status: '',
+            comentario: '',
+            pontuacao: 0,
+          },
+        ],
+      },
+    ],
+  }
+  const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
 
-  /*
-   * Vai fazer a transição de páginas para a próxima página
-   * É necessario inicializar o history.
-   */
-
-  type Props = {
-    idAvaliacao: string
+  const funcBotao = () => {
+    console.log('testebotao')
   }
 
-  const { idAvaliacao } = useParams<Props>()
-
-  const [avaliacao, setAvaliacao] = useState([])
-
   const handleSubmmit = () => {
-    fetch(`http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`)
-      .then((resp) => resp.json())
-      .then((resp) => {
-        console.log(resp)
-        setAvaliacao(resp)
-      })
-    // eslint-disable-next-line no-console
+    api
+      .get<Avaliacao>(`http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`)
+
+      .then(({ data }) => setAvaliacao(data))
+      // eslint-disable-next-line no-console
+      .catch(console.log)
   }
 
   useEffect(() => {
     handleSubmmit()
   }, [])
-
-  const funcBotao = () => {
-    console.log('testeBotao')
-  }
 
   const never: 'never' = 'never'
 
@@ -59,7 +80,6 @@ export function EditarItem(): React.ReactElement {
         field: 'nome',
       },
     ],
-    data: avaliacao,
   })
 
   /*
@@ -112,17 +132,18 @@ export function EditarItem(): React.ReactElement {
           <MaterialTable
             title='Subtópicos'
             columns={state.columns}
-            data={state.data}
+            data={avaliacao.secoes[0].subtopicos}
             editable={{
               onRowAdd: (newData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
-                    setState((prevState) => {
-                      const data = [...prevState.data]
-                      data.push(newData)
-                      return { ...prevState, data }
-                    })
+                    avaliacao.secoes[0].subtopicos.push(newData)
+                    api.put<Avaliacao, Avaliacao>(
+                      `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
+                      avaliacao
+                    )
+                    handleSubmmit()
                   }, 500)
                 }),
               onRowUpdate: (newData, oldData) =>
@@ -130,11 +151,13 @@ export function EditarItem(): React.ReactElement {
                   setTimeout(() => {
                     resolve(null)
                     if (oldData) {
-                      setState((prevState) => {
-                        const data = [...prevState.data]
-                        data[data.indexOf(oldData)] = newData
-                        return { ...prevState, data }
-                      })
+                      const data = avaliacao.secoes[0].subtopicos
+                      data[data.indexOf(oldData)] = newData
+                      api.put<Avaliacao, Avaliacao>(
+                        `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
+                        avaliacao
+                      )
+                      handleSubmmit()
                     }
                   }, 500)
                 }),
@@ -142,11 +165,13 @@ export function EditarItem(): React.ReactElement {
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
-                    setState((prevState) => {
-                      const data = [...prevState.data]
-                      data.splice(data.indexOf(oldData), 1)
-                      return { ...prevState, data }
-                    })
+                    const data = avaliacao.secoes[0].subtopicos
+                    data.splice(data.indexOf(oldData), 1)
+                    api.put<Avaliacao, Avaliacao>(
+                      `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
+                      avaliacao
+                    )
+                    handleSubmmit()
                   }, 500)
                 }),
             }}
