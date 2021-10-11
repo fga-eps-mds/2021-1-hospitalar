@@ -1,10 +1,9 @@
 /* eslint-disable react/self-closing-comp */
 
-import { Box, Grid, TextField, Typography } from '@material-ui/core'
-
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Form } from '../../components/GlobalComponents/Forms/Form'
+import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
+import MaterialTable from 'material-table'
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
@@ -12,143 +11,175 @@ import { useStyles } from './styles'
 export function EditarItem(): React.ReactElement {
   const classes = useStyles()
 
-  /**
+  /*
    * Vai fazer a transição de páginas para a próxima página
    * É necessario inicializar o history.
    */
+
   const history = useHistory()
 
-  const voltar = () => {
-    console.log('voltando')
-  }
   const funcBotao = () => {
-    console.log('testebotao')
+    console.log('testeBotao')
   }
 
-  /**
+  const never: 'never' = 'never'
+
+  const [state, setState] = React.useState({
+    columns: [
+      {
+        title: 'Nº',
+        field: 'n',
+        editable: never,
+      },
+      {
+        title: 'Núcleo de Segurança do Paciente (NSP)',
+        field: 'nsp',
+      },
+    ],
+    data: [
+      {
+        n: 1,
+        nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
+      },
+      {
+        n: 2,
+        nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
+      },
+      {
+        n: 3,
+        nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
+      },
+    ],
+  })
+
+  /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
    */
+
   return (
     <Grid>
       <Grid container direction='column' spacing={2}>
         {' '}
         {/* cabeçalho */}
         <Grid item>
-          <h1>Preenchimento da avaliação</h1>
+          <Header
+            links={[
+              { texto: 'Home', link: '/Home' },
+              { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+              { texto: 'Avaliações', link: '/avaliacao' },
+              { texto: 'Relatórios', link: '/relatorio' },
+            ]}
+          />
         </Grid>
       </Grid>
 
+      <Grid className={classes.titleEditarSecao}>EDITAR SEÇÃO DA AVALIAÇÃO</Grid>
+
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
-        <Grid className={classes.textData}>dd/mm/aaaa</Grid>
-        <Grid className={classes.idAvaliacao}>
-          ID_AVALIAÇÃO
-          {/* Aqui vai ser retornado o ID_Avaliacao guardado no banco de dados */}
-        </Grid>
-        <Grid className={classes.textInfoHosp}>
-          <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
-          <Grid className={classes.textNomeResp}>Nome do Hospital</Grid>
-          <Grid className={classes.textSiglaLabel}>Sigla:</Grid>
-          <Grid className={classes.textSiglaResp}>Sigla</Grid>
-        </Grid>
-        <Grid className={classes.textResponsavel}>
-          <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
-          <Grid className={classes.textResponsavelResp}>Lista de responsáveis</Grid>
-        </Grid>
-        <Grid className={classes.gridbotao}>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            A
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            B
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            C
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            D
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            E
-          </Button>
-          <Button className={classes.botaodesign} size='medium' onClick={funcBotao}>
-            F
-          </Button>
-        </Grid>
-
-        <Grid className={classes.tabelaGeral}>
-          <Grid className={classes.GeralNumero}>
-            <Grid className={classes.textNumerobordasuperior}>Nº</Grid>
-            <Grid className={classes.textNumero2}>1</Grid>
-            <Grid className={classes.textNumero2}>2</Grid>
-            <Grid className={classes.textNumero2}>3</Grid>
-            <Grid className={classes.textNumero3bordainferior}>4</Grid>
+        <Grid className='App'>
+          <Grid className={classes.gridButton}>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
+              A
+            </Button>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
+              B
+            </Button>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
+              C
+            </Button>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
+              D
+            </Button>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
+              E
+            </Button>
+            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
+              F
+            </Button>
           </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>
-              Núcleo de Segurança do Paciente (NSP)
-            </Grid>
-            <Grid className={classes.TextoEscrito}>
-              O PSP está disponível para todos...
-            </Grid>
-            <Grid className={classes.TextoEscrito}>
-              O serviço de saúde possui Plano de...
-            </Grid>
-            <Grid className={classes.TextoEscrito}>Total</Grid>
-            <Grid className={classes.TextoEscrito}>Percentual</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>C</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>PC</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>NC</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>NA</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscrito}>PT</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-          </Grid>
-
-          <Grid className={classes.GeralTexto}>
-            <Grid className={classes.TextoEscritoBordaSuperior}>Comentários</Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscrito}>
-              Lorem ipsum dolor sit amet, consectetur...
-            </Grid>
-            <Grid className={classes.TextoEscrito}>-</Grid>
-            <Grid className={classes.TextoEscritoBordaInferior}>-</Grid>
-          </Grid>
+          <MaterialTable
+            title='Subtópicos'
+            columns={state.columns}
+            data={state.data}
+            editable={{
+              onRowAdd: (newData) =>
+                new Promise((resolve) => {
+                  setTimeout(() => {
+                    resolve(null)
+                    setState((prevState) => {
+                      const data = [...prevState.data]
+                      data.push(newData)
+                      return { ...prevState, data }
+                    })
+                  }, 500)
+                }),
+              onRowUpdate: (newData, oldData) =>
+                new Promise((resolve) => {
+                  setTimeout(() => {
+                    resolve(null)
+                    if (oldData) {
+                      setState((prevState) => {
+                        const data = [...prevState.data]
+                        data[data.indexOf(oldData)] = newData
+                        return { ...prevState, data }
+                      })
+                    }
+                  }, 500)
+                }),
+              onRowDelete: (oldData) =>
+                new Promise((resolve) => {
+                  setTimeout(() => {
+                    resolve(null)
+                    setState((prevState) => {
+                      const data = [...prevState.data]
+                      data.splice(data.indexOf(oldData), 1)
+                      return { ...prevState, data }
+                    })
+                  }, 500)
+                }),
+            }}
+            options={{
+              searchFieldAlignment: 'left',
+              actionsColumnIndex: -1,
+              pageSizeOptions: [2, 5, 10, 20, 25, 50, 100],
+              pageSize: 20,
+              headerStyle: {
+                backgroundColor: '#175215',
+                color: '#FFFFFF',
+                fontFamily: 'OpenSans',
+                fontSize: '23px',
+              },
+            }}
+            style={{
+              backgroundColor: '#FFFFF2',
+              color: '#000000',
+              fontSize: '20px',
+            }}
+            localization={{
+              header: {
+                actions: 'Ações',
+              },
+              toolbar: {
+                searchPlaceholder: 'Pesquisar',
+              },
+              body: {
+                addTooltip: 'Adicionar',
+                editTooltip: 'Editar',
+                deleteTooltip: 'Deletar',
+                editRow: { deleteText: 'Tem certeza que deseja excluir essa linha?' },
+              },
+              pagination: {
+                labelRowsSelect: 'itens',
+                firstTooltip: 'Primeira Página',
+                previousTooltip: 'Página Anterior',
+                labelDisplayedRows: '{from}-{to} de {count}',
+                nextTooltip: 'Próxima Página',
+                lastTooltip: 'Última Página',
+              },
+            }}
+          />
         </Grid>
       </Grid>
     </Grid>
