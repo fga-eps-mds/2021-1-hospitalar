@@ -72,7 +72,7 @@ export function EditarItem(): React.ReactElement {
     columns: [
       {
         title: 'Nº',
-        field: 'n',
+        field: 'id',
         editable: never,
       },
       {
@@ -81,6 +81,10 @@ export function EditarItem(): React.ReactElement {
       },
     ],
   })
+
+  function refreshPage() {
+    window.location.reload()
+  }
 
   /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -143,7 +147,7 @@ export function EditarItem(): React.ReactElement {
                       `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
                       avaliacao
                     )
-                    handleSubmmit()
+                    refreshPage()
                   }, 500)
                 }),
               onRowUpdate: (newData, oldData) =>
@@ -157,7 +161,7 @@ export function EditarItem(): React.ReactElement {
                         `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
                         avaliacao
                       )
-                      handleSubmmit()
+                      refreshPage()
                     }
                   }, 500)
                 }),
@@ -171,7 +175,7 @@ export function EditarItem(): React.ReactElement {
                       `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
                       avaliacao
                     )
-                    handleSubmmit()
+                    refreshPage()
                   }, 500)
                 }),
             }}
@@ -189,7 +193,7 @@ export function EditarItem(): React.ReactElement {
             }}
             style={{
               backgroundColor: '#FFFFF2',
-              color: '#000000',
+              color: '#175215',
               fontSize: '20px',
             }}
             localization={{
