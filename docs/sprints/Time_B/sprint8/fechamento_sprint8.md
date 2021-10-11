@@ -4,32 +4,29 @@
 
 | **Data**   | **Versão** | **Modificação**       | **Autor**                              |
 | :--------- | :--------- | :-------------------- | :------------------------------------- |
-| 22/09/2021 | 0.1        | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
+| 30/09/2021 | 0.1        | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
 | 11/10/2021 | 1.0        | Adição das pontuações | [@SwampTG](https://github.com/SwampTG) |
 
 ## Backlog da Sprint
 
-| ID   | Descrição                                                                                                                                         | Status  |
-| :--- | :------------------------------------------------------------------------------------------------------------------------------------------------ | :------ |
-| #62  | <!-- 13 - Débito -->[União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                    | Aberta  |
-| #150 | <!-- 10 - Débito -->[H16 - Componente Gráfico das Sessões - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/150)                  | Fechada |
-| #140 | <!-- 1 -->[Reunião Geral - 15/09/2021](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/140)                                               | Fechada |
-| #144 | <!-- 8 -->[Alinhar e decidir como será feito o Protótipo de Alta Fidelidade - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/144) | Fechada |
-| #146 | <!-- 8 -->[Melhoria do documento de Identidade Visual - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/146)                       | Fechada |
-| #145 | <!-- 5 -->[Pesquisar Testes com Git Actions - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/145)                                | Fechada |
-| #142 | <!--10-->[Protótipo de Alta Fidelidade - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/142)                                     | Fechada |
-| #158 | <!--5-->[H06/H18/H29 Verificar Banco de Dados para o Relatório - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/158)             | Aberta  |
-| #159 | <!--5-->[H18/H29 - Modelo Básico de Relatório (ReportLabs) - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/159)                 | Aberta  |
-| #160 | <!--5-->[Refatoração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/160)                                 | Fechada |
-| #161 | <!--8-->[Refatoração da Modelagem de Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/160)                         | Fechada |
+| ID   | Descrição                                                                                                                             | Status  |
+| :--- | :------------------------------------------------------------------------------------------------------------------------------------ | :------ |
+| #62  | <!-- 13 - Débito -->[União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)        | Aberta  |
+| #150 | <!-- 10 - Débito -->[H16 - Componente Gráfico das Sessões - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/150)      | Fechada |
+| #145 | <!-- 5 -->[Pesquisar Testes com Git Actions - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/145)                    | Fechada |
+| #142 | <!--10-->[Protótipo de Alta Fidelidade - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/142)                         | Fechada |
+| #158 | <!--5-->[H06/H18/H29 Verificar Banco de Dados para o Relatório - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/158) | Aberta  |
+| #159 | <!--5-->[H18/H29 - Modelo Básico de Relatório (ReportLabs) - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/159)     | Aberta  |
+| #160 | <!--5-->[Refatoração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/160)                     | Fechada |
+| #161 | <!--8-->[Refatoração da Modelagem de Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/160)             | Fechada |
 
 ## Pontuação Final<!--+ 5 + 3 + 10 + 3 + 5 + 3 | -13 -10 -8 -13 -10 -10 -10 -->
 
 **Pontuação Total:** 61 Pontos Planejados
 
-**Débitos Técnicos Adicionados:** 23 Pontos
+**Débitos Técnicos Adicionados:** 18 Pontos
 
-**Pontos Concluídos:** 37 Pontos Concluídos
+**Pontos Concluídos:** 43 Pontos Concluídos
 
 ## Débitos Técnicos de Sprints Anteriores
 
