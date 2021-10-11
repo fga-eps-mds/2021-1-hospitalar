@@ -1,11 +1,14 @@
 /* eslint-disable react/self-closing-comp */
 
+import React, { useEffect, useState } from 'react'
+
+import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
 import MaterialTable from 'material-table'
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { api } from '../../api'
+import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function EditarItem(): React.ReactElement {
@@ -16,7 +19,27 @@ export function EditarItem(): React.ReactElement {
    * É necessario inicializar o history.
    */
 
-  const history = useHistory()
+  type Props = {
+    idAvaliacao: string
+  }
+
+  const { idAvaliacao } = useParams<Props>()
+
+  const [avaliacao, setAvaliacao] = useState([])
+
+  const handleSubmmit = () => {
+    fetch(`http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`)
+      .then((resp) => resp.json())
+      .then((resp) => {
+        console.log(resp)
+        setAvaliacao(resp)
+      })
+    // eslint-disable-next-line no-console
+  }
+
+  useEffect(() => {
+    handleSubmmit()
+  }, [])
 
   const funcBotao = () => {
     console.log('testeBotao')
@@ -32,24 +55,11 @@ export function EditarItem(): React.ReactElement {
         editable: never,
       },
       {
-        title: 'Núcleo de Segurança do Paciente (NSP)',
-        field: 'nsp',
+        title: 'Teste',
+        field: 'nome',
       },
     ],
-    data: [
-      {
-        n: 1,
-        nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
-      },
-      {
-        n: 2,
-        nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
-      },
-      {
-        n: 3,
-        nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
-      },
-    ],
+    data: avaliacao,
   })
 
   /*
