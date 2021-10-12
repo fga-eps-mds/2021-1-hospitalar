@@ -1,56 +1,149 @@
 /* eslint-disable react/self-closing-comp */
 
-import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Grid } from '@material-ui/core'
+import { Box, Grid, Tab, Tabs } from '@material-ui/core'
+import React, { useEffect, useState } from 'react'
+
+import { Avaliacao } from '../../types/Avaliacao'
 import { Header } from '../../components/GlobalComponents/Header'
 import MaterialTable from 'material-table'
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { api } from '../../api'
+import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
+type Props = {
+  idAvaliacao: string
+}
+
 export function EditarItem(): React.ReactElement {
+  const [idSecao, setIdSecao] = useState(0)
+  const { idAvaliacao } = useParams<Props>()
+  const avaliacaoNula: Avaliacao = {
+    id: 0,
+    codigo: '',
+    nomeHospital: '',
+    idsAvaliadores: '',
+    data: new Date().toISOString(),
+    secoes: [
+      {
+        id: 0,
+        topico: '',
+        subtopicos: [
+          {
+            id: 0,
+            nome: 'testando',
+            status: '',
+            comentario: '',
+            pontuacao: 0,
+          },
+          {
+            id: 0,
+            nome: 'testando2',
+            status: '',
+            comentario: '',
+            pontuacao: 0,
+          },
+        ],
+      },
+    ],
+  }
+  const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
 
   /*
-   * Vai fazer a transição de páginas para a próxima página
-   * É necessario inicializar o history.
+   *  Função para ter o "get" do banco de dados
    */
+  const bancoGet = () => {
+    api
+      .get<Avaliacao>(`avaliacao/${idAvaliacao}/`)
 
-  const history = useHistory()
-
-  const funcBotao = () => {
-    console.log('testeBotao')
+      .then(({ data }) => setAvaliacao(data))
+      // eslint-disable-next-line no-console
+      .catch(console.log)
+    console.log('GET')
   }
+  const bancoPut = () => {
+    api.put<Avaliacao, Avaliacao>(`avaliacao/${idAvaliacao}/`, avaliacao)
+    console.log('PUT')
+  }
+
+  useEffect(() => {
+    bancoGet()
+  }, [])
 
   const never: 'never' = 'never'
 
-  const [state, setState] = React.useState({
+  /*
+   *  Declaração do título do material table
+   */
+  const [state] = React.useState({
     columns: [
       {
         title: 'Nº',
-        field: 'n',
+        field: 'id',
         editable: never,
       },
       {
-        title: 'Núcleo de Segurança do Paciente (NSP)',
-        field: 'nsp',
-      },
-    ],
-    data: [
-      {
-        n: 1,
-        nsp: 'O serviço de saúde possui Núcleo de Segurança do Paciente (NSP) nomeado pela direção da OMS.',
-      },
-      {
-        n: 2,
-        nsp: 'Há um profissional responsável pelo NSP com suas atribuições estabelecidas.',
-      },
-      {
-        n: 3,
-        nsp: 'A direção do serviço de saúde disponibiliza pessoal, ...',
+        title: 'Requisitos em análise',
+        field: 'nome',
       },
     ],
   })
+
+  /*
+   *  Função para recarregar a página
+   */
+  function refreshPage() {
+    window.location.reload()
+  }
+
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 0
+   */
+  const funcBotaoA = () => {
+    setIdSecao(0)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 1
+   */
+  const funcBotaoB = () => {
+    setIdSecao(1)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 2
+   */
+  const funcBotaoC = () => {
+    setIdSecao(3)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 4
+   */
+  const funcBotaoD = () => {
+    setIdSecao(4)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 5
+   */
+  const funcBotaoE = () => {
+    setIdSecao(5)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 6
+   */
+  const funcBotaoF = () => {
+    setIdSecao(6)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 7
+   */
+  const funcBotaoG = () => {
+    setIdSecao(7)
+  }
+
+  const [value, setValue] = React.useState(0)
+
+  const handleChange = (newValue: number) => {
+    setValue(newValue)
+  }
 
   /*
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -80,64 +173,66 @@ export function EditarItem(): React.ReactElement {
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className='App'>
           <Grid className={classes.gridButton}>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              A
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              B
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              C
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              D
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              E
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              F
-            </Button>
+            <Box sx={{ maxWidth: '80%', bgcolor: '#175215' }}>
+              <Tabs
+                value={value}
+                onChange={(_, newValue) => handleChange(newValue)}
+                variant='scrollable'
+                scrollButtons='auto'
+                aria-label='scrollable auto tabs example'
+              >
+                <Tab label='Seção A' onClick={funcBotaoA} />
+                <Tab label='Seção B' onClick={funcBotaoB} />
+                <Tab label='Seção C' onClick={funcBotaoC} />
+                <Tab label='Seção D' onClick={funcBotaoD} />
+                <Tab label='Seção E' onClick={funcBotaoE} />
+                <Tab label='Seção F' onClick={funcBotaoF} />
+                <Tab label='Seção G' onClick={funcBotaoG} />
+              </Tabs>
+            </Box>
           </Grid>
+
           <MaterialTable
             title='Subtópicos'
             columns={state.columns}
-            data={state.data}
+            data={avaliacao.secoes[idSecao].subtopicos}
             editable={{
               onRowAdd: (newData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
-                    setState((prevState) => {
-                      const data = [...prevState.data]
-                      data.push(newData)
-                      return { ...prevState, data }
-                    })
-                  }, 500)
+                    avaliacao.secoes[idSecao].subtopicos.push(newData)
+                    bancoPut()
+                  }, 100)
+                  setTimeout(() => {
+                    bancoGet()
+                  }, 100)
                 }),
               onRowUpdate: (newData, oldData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
                     if (oldData) {
-                      setState((prevState) => {
-                        const data = [...prevState.data]
-                        data[data.indexOf(oldData)] = newData
-                        return { ...prevState, data }
-                      })
+                      const data = avaliacao.secoes[idSecao].subtopicos
+                      data[data.indexOf(oldData)] = newData
+                      bancoPut()
                     }
-                  }, 500)
+                  }, 100)
+                  setTimeout(() => {
+                    bancoGet()
+                  }, 100)
                 }),
               onRowDelete: (oldData) =>
                 new Promise((resolve) => {
                   setTimeout(() => {
                     resolve(null)
-                    setState((prevState) => {
-                      const data = [...prevState.data]
-                      data.splice(data.indexOf(oldData), 1)
-                      return { ...prevState, data }
-                    })
-                  }, 500)
+                    const data = avaliacao.secoes[idSecao].subtopicos
+                    data.splice(data.indexOf(oldData), 1)
+                    bancoPut()
+                  }, 100)
+                  setTimeout(() => {
+                    bancoGet()
+                  }, 100)
                 }),
             }}
             options={{
@@ -154,9 +249,17 @@ export function EditarItem(): React.ReactElement {
             }}
             style={{
               backgroundColor: '#FFFFF2',
-              color: '#000000',
+              color: '#175215',
               fontSize: '20px',
             }}
+            actions={[
+              {
+                icon: 'refresh',
+                tooltip: 'Refresh Data',
+                isFreeAction: true,
+                onClick: () => bancoGet(),
+              },
+            ]}
             localization={{
               header: {
                 actions: 'Ações',
