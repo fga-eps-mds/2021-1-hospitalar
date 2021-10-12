@@ -4,7 +4,6 @@ import { Box, Grid, Tab, Tabs } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 
 import { Avaliacao } from '../../types/Avaliacao'
-import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Header } from '../../components/GlobalComponents/Header'
 import MaterialTable from 'material-table'
 import { api } from '../../api'
@@ -98,13 +97,46 @@ export function EditarItem(): React.ReactElement {
   }
 
   /*
-   *  Função para paginação, alternado o valor de secao
+   *  Função para paginação, alternado o valor de IdSecao = 0
    */
   const funcBotaoA = () => {
     setIdSecao(0)
   }
-  const funcBotao = () => {
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 1
+   */
+  const funcBotaoB = () => {
     setIdSecao(1)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 2
+   */
+  const funcBotaoC = () => {
+    setIdSecao(3)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 4
+   */
+  const funcBotaoD = () => {
+    setIdSecao(4)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 5
+   */
+  const funcBotaoE = () => {
+    setIdSecao(5)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 6
+   */
+  const funcBotaoF = () => {
+    setIdSecao(6)
+  }
+  /*
+   *  Função para paginação, alternado o valor de IdSecao = 7
+   */
+  const funcBotaoG = () => {
+    setIdSecao(7)
   }
 
   const [value, setValue] = React.useState(0)
@@ -141,7 +173,7 @@ export function EditarItem(): React.ReactElement {
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className='App'>
           <Grid className={classes.gridButton}>
-            <Box sx={{ maxWidth: 1000, bgcolor: '#175215' }}>
+            <Box sx={{ maxWidth: '80%', bgcolor: '#175215' }}>
               <Tabs
                 value={value}
                 onChange={(_, newValue) => handleChange(newValue)}
@@ -150,12 +182,12 @@ export function EditarItem(): React.ReactElement {
                 aria-label='scrollable auto tabs example'
               >
                 <Tab label='Seção A' onClick={funcBotaoA} />
-                <Tab label='Seção B' onClick={funcBotao} />
-                <Tab label='Seção C' />
-                <Tab label='Seção D' />
-                <Tab label='Seção E' />
-                <Tab label='Seção F' />
-                <Tab label='Seção G' />
+                <Tab label='Seção B' onClick={funcBotaoB} />
+                <Tab label='Seção C' onClick={funcBotaoC} />
+                <Tab label='Seção D' onClick={funcBotaoD} />
+                <Tab label='Seção E' onClick={funcBotaoE} />
+                <Tab label='Seção F' onClick={funcBotaoF} />
+                <Tab label='Seção G' onClick={funcBotaoG} />
               </Tabs>
             </Box>
           </Grid>
