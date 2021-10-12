@@ -35,6 +35,12 @@ export function PaginaAvaliacao(): React.ReactElement {
         ],
       },
     ],
+    configuracao: {
+      id: 0,
+      NV1: 0,
+      NV2: 0,
+      NV3: 0,
+    },
   }
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
@@ -79,7 +85,7 @@ export function PaginaAvaliacao(): React.ReactElement {
       {/* corpo */}
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className={classes.textData}>
-          {new Date(avaliacao.data).toLocaleDateString('pt-BR')}
+          {avaliacao.data && new Date(avaliacao.data).toLocaleDateString('pt-BR')}
         </Grid>
         <Grid className={classes.idAvaliacao}>{avaliacao.codigo}</Grid>
         <Grid className={classes.textInfoHosp}>

@@ -2,6 +2,7 @@ import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import Autocomplete from '@material-ui/lab/Autocomplete'
+import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { DatePicker } from '../../components/GlobalComponents/DatePicker'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
@@ -9,12 +10,32 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import Logo from '../../assets/logo-2021-v2.png'
 import { Template } from '../../components/GlobalComponents/Template'
 import TextField from '@material-ui/core/TextField'
+import { api } from '../../api'
 import { useStyles } from './styles'
 
 export function NovaAvaliacao(): React.ReactElement {
   const classes = useStyles()
 
+  const [nomeHospital, setNomeHospital] = useState('')
+  const [sigla, setSigla] = useState('')
+  const [codigo, setCodigo] = useState('')
   const [data, setData] = useState<Date | null>(new Date())
+
+  const handleSave = () => {
+    const avaliacao: Avaliacao = {
+      codigo,
+      nomeHospital: `${nomeHospital},${sigla}`,
+      idsAvaliadores: '',
+      data: data?.toISOString(),
+      configuracao: {},
+      secoes: [],
+    }
+
+    api
+      .post('avaliacao/', avaliacao)
+      // eslint-disable-next-line no-console
+      .catch(console.log)
+  }
 
   const generateForm = () => {
     const users = [
@@ -31,13 +52,11 @@ export function NovaAvaliacao(): React.ReactElement {
           justifyContent='space-between'
           alignContent='center'
           className={classes.formContainer}
-          xs={12}
         >
           <Grid item container direction='column' xs={12} md={6} lg={4}>
             <Typography className={classes.avaliadorTitle}> Avaliadores </Typography>
             <Autocomplete
               multiple
-              id='tags-standard'
               options={users}
               getOptionLabel={(option: any) => option.name}
               renderInput={(params: any) => (
@@ -51,14 +70,14 @@ export function NovaAvaliacao(): React.ReactElement {
               )}
             />
             <Button
-              onClick={() => null}
+              onClick={handleSave}
               color='secondary'
               className={classes.generateBtn}
             >
               GERAR
             </Button>
           </Grid>
-          <Grid item direction='column' xs={12} md={6} lg={4} alignItems='center'>
+          <Grid item xs={12} md={6} lg={4}>
             <Grid>
               <Typography className={classes.avaliadorTitle}> Hospital </Typography>
               <TextField
@@ -66,6 +85,11 @@ export function NovaAvaliacao(): React.ReactElement {
                 variant='standard'
                 label='Digite o Hospital'
                 placeholder='Nome'
+                value={nomeHospital}
+                onChange={(event) => {
+                  event.preventDefault()
+                  setNomeHospital(event.target.value)
+                }}
               />
             </Grid>
             <Grid>
@@ -75,6 +99,11 @@ export function NovaAvaliacao(): React.ReactElement {
                 variant='standard'
                 label='Digite a Sigla do Hospital'
                 placeholder='Sigla'
+                value={sigla}
+                onChange={(event) => {
+                  event.preventDefault()
+                  setSigla(event.target.value)
+                }}
               />
             </Grid>
             <Grid>
@@ -82,14 +111,7 @@ export function NovaAvaliacao(): React.ReactElement {
               <DatePicker data={data} setData={setData} />
             </Grid>
           </Grid>
-          <Grid
-            item
-            direction='column'
-            xs={12}
-            md={6}
-            lg={4}
-            justifyContent='space-evenly'
-          >
+          <Grid item xs={12} md={6} lg={4}>
             <Grid>
               <img alt='Logo FAMil' src={Logo} className={classes.imgLogo} />
             </Grid>
@@ -100,12 +122,17 @@ export function NovaAvaliacao(): React.ReactElement {
                 variant='standard'
                 label='Código da Avaliação'
                 placeholder='Código'
+                value={codigo}
+                onChange={(event) => {
+                  event.preventDefault()
+                  setCodigo(event.target.value)
+                }}
               />
             </Grid>
           </Grid>
-          <Grid item container direction='row' xs={12} justifyContent='center'>
+          <Grid item container direction='row' xs={12}>
             <Button
-              onClick={() => null}
+              onClick={handleSave}
               color='secondary'
               className={classes.generateBtn2}
               size='large'
@@ -133,7 +160,7 @@ export function NovaAvaliacao(): React.ReactElement {
           className={classes.titleContainer}
           justifyContent='space-between'
         >
-          <Grid item xs={6} md={8} lg={8} alignItems='center' direction='row'>
+          <Grid item xs={6} md={8} lg={8}>
             <Typography variant='h5' className={classes.title}>
               {' '}
               Gerar Novo Relatório{' '}
