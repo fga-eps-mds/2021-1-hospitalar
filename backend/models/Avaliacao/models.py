@@ -34,8 +34,12 @@ class Subtopico(models.Model):
     secao = models.ForeignKey(Secao, on_delete=models.CASCADE)
 
     nome = models.TextField(blank=True)
+    conforme = models.BooleanField(blank=True, default=False)
+    parcialConforme = models.BooleanField(blank=True, default=False)
+    naoConforme = models.BooleanField(blank=True, default=False)
+    naoAplicavel = models.BooleanField(blank=True, default=False)
     status = models.CharField(max_length=2, blank=True)
-    pontuacao = models.FloatField(blank=True, default=0)
+    pontuacao = models.FloatField(blank=True, default=0.0)
     comentario = models.TextField(blank=True)
 
     def __str__(self):

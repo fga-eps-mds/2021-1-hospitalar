@@ -62,6 +62,7 @@ export function PaginaAvaliacao(): React.ReactElement {
   }, [])
 
   const never: 'never' = 'never'
+  const boolean: 'boolean' = 'boolean'
 
   /*
    *  Declaração do título do material table
@@ -76,6 +77,34 @@ export function PaginaAvaliacao(): React.ReactElement {
       {
         title: 'Requisitos em análise',
         field: 'nome',
+      },
+      {
+        title: 'C',
+        field: 'conforme',
+        type: boolean,
+      },
+      {
+        title: 'PC',
+        field: 'parcialConforme',
+        type: boolean,
+      },
+      {
+        title: 'NC',
+        field: 'naoConforme',
+        type: boolean,
+      },
+      {
+        title: 'NA',
+        field: 'naoAplicavel',
+        type: boolean,
+      },
+      {
+        title: 'PT',
+        field: 'pontuacao',
+      },
+      {
+        title: 'Comentário',
+        field: 'comentario',
       },
     ],
   })
@@ -209,7 +238,7 @@ export function PaginaAvaliacao(): React.ReactElement {
                     bancoPut()
                     setTimeout(() => {
                       bancoGet()
-                    }, 600)
+                    }, 1000)
                   }, 500)
                 }),
               onRowUpdate: (newData, oldData) =>
