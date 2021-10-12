@@ -24,11 +24,14 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   gridButton: {
+    justifyContent: 'center',
     display: 'flex',
     marginTop: '2%',
-    marginLeft: '3.8%',
-    marginRight: '2%',
     marginBottom: '2%',
+    backgroundColor: '#D6F0C8',
+    color: '#FFFFF2',
+    fontWeight: 'bold',
+    fontFamily: 'sanserif',
   },
 
   designButton: {

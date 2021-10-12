@@ -1,10 +1,10 @@
 /* eslint-disable react/self-closing-comp */
 
+import { Box, Grid, Tab, Tabs } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 
 import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
 import MaterialTable from 'material-table'
 import { api } from '../../api'
@@ -15,9 +15,8 @@ type Props = {
   idAvaliacao: string
 }
 
-let idSecao = 0
-
 export function EditarItem(): React.ReactElement {
+  const [idSecao, setIdSecao] = useState(0)
   const { idAvaliacao } = useParams<Props>()
   const avaliacaoNula: Avaliacao = {
     id: 0,
@@ -56,7 +55,7 @@ export function EditarItem(): React.ReactElement {
    */
   const bancoGet = () => {
     api
-      .get<Avaliacao>(`http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`)
+      .get<Avaliacao>(`avaliacao/${idAvaliacao}/`)
 
       .then(({ data }) => setAvaliacao(data))
       // eslint-disable-next-line no-console
@@ -64,10 +63,7 @@ export function EditarItem(): React.ReactElement {
     console.log('GET')
   }
   const bancoPut = () => {
-    api.put<Avaliacao, Avaliacao>(
-      `http://127.0.0.1:8000/api/avaliacao/${idAvaliacao}/`,
-      avaliacao
-    )
+    api.put<Avaliacao, Avaliacao>(`avaliacao/${idAvaliacao}/`, avaliacao)
     console.log('PUT')
   }
 
@@ -88,7 +84,7 @@ export function EditarItem(): React.ReactElement {
         editable: never,
       },
       {
-        title: 'Teste',
+        title: 'Requisitos em análise',
         field: 'nome',
       },
     ],
@@ -105,12 +101,16 @@ export function EditarItem(): React.ReactElement {
    *  Função para paginação, alternado o valor de secao
    */
   const funcBotaoA = () => {
-    idSecao = 0
-    bancoGet()
+    setIdSecao(0)
   }
   const funcBotao = () => {
-    idSecao = 1
-    bancoGet()
+    setIdSecao(1)
+  }
+
+  const [value, setValue] = React.useState(0)
+
+  const handleChange = (newValue: number) => {
+    setValue(newValue)
   }
 
   /*
@@ -141,25 +141,25 @@ export function EditarItem(): React.ReactElement {
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className='App'>
           <Grid className={classes.gridButton}>
-            <Button className={classes.designButton} size='medium' onClick={funcBotaoA}>
-              A
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              B
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              C
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              D
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              E
-            </Button>
-            <Button className={classes.designButton} size='medium' onClick={funcBotao}>
-              F
-            </Button>
+            <Box sx={{ maxWidth: 1000, bgcolor: '#175215' }}>
+              <Tabs
+                value={value}
+                onChange={(_, newValue) => handleChange(newValue)}
+                variant='scrollable'
+                scrollButtons='auto'
+                aria-label='scrollable auto tabs example'
+              >
+                <Tab label='Seção A' onClick={funcBotaoA} />
+                <Tab label='Seção B' onClick={funcBotao} />
+                <Tab label='Seção C' />
+                <Tab label='Seção D' />
+                <Tab label='Seção E' />
+                <Tab label='Seção F' />
+                <Tab label='Seção G' />
+              </Tabs>
+            </Box>
           </Grid>
+
           <MaterialTable
             title='Subtópicos'
             columns={state.columns}
@@ -171,10 +171,10 @@ export function EditarItem(): React.ReactElement {
                     resolve(null)
                     avaliacao.secoes[idSecao].subtopicos.push(newData)
                     bancoPut()
-                  }, 10)
+                  }, 100)
                   setTimeout(() => {
                     bancoGet()
-                  }, 10)
+                  }, 100)
                 }),
               onRowUpdate: (newData, oldData) =>
                 new Promise((resolve) => {
@@ -185,10 +185,10 @@ export function EditarItem(): React.ReactElement {
                       data[data.indexOf(oldData)] = newData
                       bancoPut()
                     }
-                  }, 10)
+                  }, 100)
                   setTimeout(() => {
                     bancoGet()
-                  }, 10)
+                  }, 100)
                 }),
               onRowDelete: (oldData) =>
                 new Promise((resolve) => {
@@ -197,10 +197,10 @@ export function EditarItem(): React.ReactElement {
                     const data = avaliacao.secoes[idSecao].subtopicos
                     data.splice(data.indexOf(oldData), 1)
                     bancoPut()
-                  }, 10)
+                  }, 100)
                   setTimeout(() => {
                     bancoGet()
-                  }, 10)
+                  }, 100)
                 }),
             }}
             options={{
