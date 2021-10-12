@@ -90,13 +90,6 @@ export function EditarItem(): React.ReactElement {
   })
 
   /*
-   *  Função para recarregar a página
-   */
-  function refreshPage() {
-    window.location.reload()
-  }
-
-  /*
    *  Função para paginação, alternado o valor de IdSecao = 0
    */
   const funcBotaoA = () => {
@@ -139,6 +132,9 @@ export function EditarItem(): React.ReactElement {
     setIdSecao(7)
   }
 
+  /*
+   *  Interação do botão
+   */
   const [value, setValue] = React.useState(0)
 
   const handleChange = (newValue: number) => {
@@ -203,10 +199,10 @@ export function EditarItem(): React.ReactElement {
                     resolve(null)
                     avaliacao.secoes[idSecao].subtopicos.push(newData)
                     bancoPut()
-                  }, 100)
-                  setTimeout(() => {
-                    bancoGet()
-                  }, 100)
+                    setTimeout(() => {
+                      bancoGet()
+                    }, 600)
+                  }, 500)
                 }),
               onRowUpdate: (newData, oldData) =>
                 new Promise((resolve) => {
@@ -216,11 +212,11 @@ export function EditarItem(): React.ReactElement {
                       const data = avaliacao.secoes[idSecao].subtopicos
                       data[data.indexOf(oldData)] = newData
                       bancoPut()
+                      setTimeout(() => {
+                        bancoGet()
+                      }, 600)
                     }
-                  }, 100)
-                  setTimeout(() => {
-                    bancoGet()
-                  }, 100)
+                  }, 500)
                 }),
               onRowDelete: (oldData) =>
                 new Promise((resolve) => {
@@ -229,10 +225,10 @@ export function EditarItem(): React.ReactElement {
                     const data = avaliacao.secoes[idSecao].subtopicos
                     data.splice(data.indexOf(oldData), 1)
                     bancoPut()
-                  }, 100)
-                  setTimeout(() => {
-                    bancoGet()
-                  }, 100)
+                    setTimeout(() => {
+                      bancoGet()
+                    }, 600)
+                  }, 500)
                 }),
             }}
             options={{

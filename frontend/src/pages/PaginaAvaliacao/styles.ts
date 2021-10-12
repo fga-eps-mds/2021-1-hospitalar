@@ -111,11 +111,24 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: '1%',
   },
 
-  gridbotao: {
+  titleEditarSecao: {
+    textAlign: 'center',
+    marginTop: '1%',
+    fontFamily: 'OpenSans',
+    fontWeight: 'bold',
+    color: '#175215',
+    fontSize: '35px',
+  },
+
+  gridButton: {
+    justifyContent: 'center',
     display: 'flex',
-    marginTop: '5%',
-    marginLeft: '2.8%',
-    marginRight: '1%',
+    marginTop: '2%',
+    marginBottom: '2%',
+    backgroundColor: '#D6F0C8',
+    color: '#FFFFF2',
+    fontWeight: 'bold',
+    fontFamily: 'sanserif',
   },
 
   botaodesign: {
