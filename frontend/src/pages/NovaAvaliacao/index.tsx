@@ -1,10 +1,9 @@
-import { DatePicker, LocalizationProvider } from '@material-ui/pickers'
 import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import Autocomplete from '@material-ui/lab/Autocomplete'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import DateFnsAdapter from '@material-ui/pickers/adapter/date-fns'
+import { DatePicker } from '../../components/GlobalComponents/DatePicker'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import Logo from '../../assets/logo-2021-v2.png'
@@ -15,7 +14,7 @@ import { useStyles } from './styles'
 export function NovaAvaliacao(): React.ReactElement {
   const classes = useStyles()
 
-  const [value, setValue] = useState<Date | null>(new Date())
+  const [data, setData] = useState<Date | null>(new Date())
 
   const generateForm = () => {
     const users = [
@@ -80,22 +79,7 @@ export function NovaAvaliacao(): React.ReactElement {
             </Grid>
             <Grid>
               <Typography className={classes.avaliadorTitle}> Data </Typography>
-              <LocalizationProvider dateAdapter={DateFnsAdapter}>
-                <DatePicker
-                  label='Basic example'
-                  value={value}
-                  onChange={(newValue) => setValue(newValue)}
-                  renderInput={(params: any) => (
-                    <TextField
-                      className={classes.inputText}
-                      {...params}
-                      variant='standard'
-                      label='Data da Avaliação'
-                      placeholder='Data'
-                    />
-                  )}
-                />
-              </LocalizationProvider>
+              <DatePicker data={data} setData={setData} />
             </Grid>
           </Grid>
           <Grid

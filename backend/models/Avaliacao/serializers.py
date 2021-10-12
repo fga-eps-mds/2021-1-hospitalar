@@ -1,5 +1,11 @@
 from rest_framework import serializers
-from .models import Avaliacao, Secao, Subtopico
+from .models import Avaliacao, Configuracao, Secao, Subtopico
+
+
+class ConfiguracaoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Configuracao
+        fields = ('id', 'NV1', 'NV2', 'NV3')
 
 
 class SubtopicoSerializer(serializers.ModelSerializer):
@@ -21,16 +27,21 @@ class SecaoSerializer(serializers.ModelSerializer):
 
 class AvaliacaoSerializer (serializers.ModelSerializer):
     secoes = SecaoSerializer(many=True)
+    configuracao = ConfiguracaoSerializer()
 
     class Meta:
         model = Avaliacao
         fields = ('id', 'codigo', 'nomeHospital',
-                  'idsAvaliadores', 'data', 'secoes')
+                  'idsAvaliadores', 'data', 'configuracao', 'secoes')
 
     def create(self, validated_data):
         secoes = validated_data.pop('secoes')
 
-        avaliacao = Avaliacao.objects.create(**validated_data)
+        configuracao = validated_data.pop('configuracao')
+        configOBJ = Configuracao.objects.create(**configuracao)
+
+        avaliacao = Avaliacao.objects.create(configuracao=configOBJ,
+                                             **validated_data)
 
         for secao in secoes:
             subtopicos = secao.pop('subtopicos')
@@ -55,6 +66,14 @@ class AvaliacaoSerializer (serializers.ModelSerializer):
             "idsAvaliadores", instance.idsAvaliadores)
         instance.data = validated_data.get("data", instance.data)
 
+        configuracao = validated_data.pop('configuracao')
+        instanceConfig = instance.configuracao
+
+        instanceConfig.NV1 = configuracao.get("NV1", instanceConfig.NV1)
+        instanceConfig.NV2 = configuracao.get("NV2", instanceConfig.NV2)
+        instanceConfig.NV3 = configuracao.get("NV3", instanceConfig.NV3)
+
+        instanceConfig.save()
         instance.save()
 
         keep_secoes = []
