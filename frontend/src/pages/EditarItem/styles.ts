@@ -4,9 +4,8 @@ import { sortAndDeduplicateDiagnostics } from 'typescript'
 
 export const useStyles = makeStyles((theme) => ({
   backgroundAvaliacao: {
-    paddingBottom: '5%',
     borderRadius: '12px',
-    marginBottom: '10%',
+    marginBottom: '3%',
     marginTop: '3%',
     marginLeft: '5%',
     marginRight: '5%',
