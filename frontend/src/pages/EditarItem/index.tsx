@@ -169,7 +169,7 @@ export function EditarItem(): React.ReactElement {
       <Grid className={classes.backgroundAvaliacao}>
         <Grid className='App'>
           <Grid className={classes.gridButton}>
-            <Box sx={{ maxWidth: '80%', bgcolor: '#175215' }}>
+            <Box sx={{ maxWidth: '80%', bgcolor: '#175215', borderRadius: '12px 12px' }}>
               <Tabs
                 value={value}
                 onChange={(_, newValue) => handleChange(newValue)}
@@ -201,8 +201,8 @@ export function EditarItem(): React.ReactElement {
                     bancoPut()
                     setTimeout(() => {
                       bancoGet()
-                    }, 600)
-                  }, 500)
+                    }, 1000)
+                  }, 1000)
                 }),
               onRowUpdate: (newData, oldData) =>
                 new Promise((resolve) => {
@@ -214,9 +214,9 @@ export function EditarItem(): React.ReactElement {
                       bancoPut()
                       setTimeout(() => {
                         bancoGet()
-                      }, 600)
+                      }, 1000)
                     }
-                  }, 500)
+                  }, 1000)
                 }),
               onRowDelete: (oldData) =>
                 new Promise((resolve) => {
@@ -227,8 +227,8 @@ export function EditarItem(): React.ReactElement {
                     bancoPut()
                     setTimeout(() => {
                       bancoGet()
-                    }, 600)
-                  }, 500)
+                    }, 1000)
+                  }, 1000)
                 }),
             }}
             options={{

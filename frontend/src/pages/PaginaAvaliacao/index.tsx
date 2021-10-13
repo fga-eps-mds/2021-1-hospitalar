@@ -1,5 +1,6 @@
+import { AddCircle, CheckBox, CheckBoxOutlineBlank } from '@material-ui/icons'
 import { Box, Grid, Tab, Tabs } from '@material-ui/core'
-import React, { useEffect, useState } from 'react'
+import React, { forwardRef, useEffect, useState } from 'react'
 
 import { Avaliacao } from '../../types/Avaliacao'
 import { Header } from '../../components/GlobalComponents/Header'
@@ -62,6 +63,8 @@ export function PaginaAvaliacao(): React.ReactElement {
   }, [])
 
   const never: 'never' = 'never'
+  const center: 'center' = 'center'
+  const justify: 'justify' = 'justify'
   const boolean: 'boolean' = 'boolean'
 
   /*
@@ -73,38 +76,58 @@ export function PaginaAvaliacao(): React.ReactElement {
         title: 'Nº',
         field: 'id',
         editable: never,
+        maxWidth: 55,
       },
       {
         title: 'Requisitos em análise',
         field: 'nome',
+        maxWidth: 400,
+        align: justify,
       },
       {
         title: 'C',
         field: 'conforme',
         type: boolean,
+        maxWidth: 68,
+        sorting: false,
+        align: center,
       },
       {
         title: 'PC',
         field: 'parcialConforme',
         type: boolean,
+        maxWidth: 68,
+        sorting: false,
+        align: center,
       },
       {
         title: 'NC',
         field: 'naoConforme',
         type: boolean,
+        maxWidth: 68,
+        sorting: false,
+        align: center,
       },
       {
         title: 'NA',
         field: 'naoAplicavel',
         type: boolean,
+        maxWidth: 68,
+        sorting: false,
+        align: center,
       },
       {
         title: 'PT',
         field: 'pontuacao',
+        maxWidth: 68,
+        sorting: false,
+        align: center,
       },
       {
         title: 'Comentário',
         field: 'comentario',
+        align: justify,
+        maxWidth: 400,
       },
     ],
   })
@@ -182,18 +205,20 @@ export function PaginaAvaliacao(): React.ReactElement {
         </Grid>
       </Grid>
 
-      <Grid className={classes.titleEditarSecao}>PREENCHIMENTO DA AVALIAÇÃO</Grid>
+      <Grid className={classes.titleEditarAvaliacao}>PREENCHIMENTO DA AVALIAÇÃO</Grid>
       <Grid className={classes.backgroundAvaliacao}>
         {/* corpo */}
         <Grid className={classes.textData}>
           {new Date(avaliacao.data).toLocaleDateString('pt-BR')}
         </Grid>
-        <Grid className={classes.idAvaliacao}>{avaliacao.codigo}</Grid>
+        <Grid className={classes.textNomeResp}>
+          {avaliacao.nomeHospital.split(',')[0]}
+        </Grid>
         <Grid className={classes.textInfoHosp}>
-          <Grid className={classes.textNomeLabel}>Nome do Hospital:</Grid>
-          <Grid className={classes.textNomeResp}>
-            {avaliacao.nomeHospital.split(',')[0]}
-          </Grid>
+          <Grid className={classes.textNomeLabel}>ID:</Grid>
+          <Grid className={classes.idAvaliacao}>{avaliacao.codigo}</Grid>
+        </Grid>
+        <Grid className={classes.textSigla}>
           <Grid className={classes.textSiglaLabel}>Sigla:</Grid>
           <Grid className={classes.textSiglaResp}>
             {avaliacao.nomeHospital.split(',')[1]}
@@ -206,7 +231,7 @@ export function PaginaAvaliacao(): React.ReactElement {
         {/* corpo */}
         <Grid className='App'>
           <Grid className={classes.gridButton}>
-            <Box sx={{ maxWidth: '80%', bgcolor: '#175215' }}>
+            <Box sx={{ maxWidth: '80%', bgcolor: '#175215', borderRadius: '12px 12px' }}>
               <Tabs
                 value={value}
                 onChange={(_, newValue) => handleChange(newValue)}
@@ -239,7 +264,7 @@ export function PaginaAvaliacao(): React.ReactElement {
                     setTimeout(() => {
                       bancoGet()
                     }, 1000)
-                  }, 500)
+                  }, 1000)
                 }),
               onRowUpdate: (newData, oldData) =>
                 new Promise((resolve) => {
@@ -251,21 +276,9 @@ export function PaginaAvaliacao(): React.ReactElement {
                       bancoPut()
                       setTimeout(() => {
                         bancoGet()
-                      }, 600)
+                      }, 1000)
                     }
-                  }, 500)
-                }),
-              onRowDelete: (oldData) =>
-                new Promise((resolve) => {
-                  setTimeout(() => {
-                    resolve(null)
-                    const data = avaliacao.secoes[idSecao].subtopicos
-                    data.splice(data.indexOf(oldData), 1)
-                    bancoPut()
-                    setTimeout(() => {
-                      bancoGet()
-                    }, 600)
-                  }, 500)
+                  }, 1000)
                 }),
             }}
             options={{
@@ -278,6 +291,7 @@ export function PaginaAvaliacao(): React.ReactElement {
                 color: '#FFFFFF',
                 fontFamily: 'OpenSans',
                 fontSize: '23px',
+                textAlign: 'center',
               },
             }}
             style={{
@@ -288,7 +302,8 @@ export function PaginaAvaliacao(): React.ReactElement {
             actions={[
               {
                 icon: 'refresh',
-                tooltip: 'Refresh Data',
+                iconProps: { color: 'secondary' },
+                tooltip: 'Atualizar',
                 isFreeAction: true,
                 onClick: () => bancoGet(),
               },
@@ -314,6 +329,15 @@ export function PaginaAvaliacao(): React.ReactElement {
                 nextTooltip: 'Próxima Página',
                 lastTooltip: 'Última Página',
               },
+            }}
+            icons={{
+              Add: React.forwardRef((props, ref) => (
+                <AddCircle style={{ color: '#2B7B24 ' }} {...props} ref={ref} />
+              )),
+              Check: forwardRef((props, ref) => <CheckBox {...props} ref={ref} />),
+              ThirdStateCheck: forwardRef((props, ref) => (
+                <CheckBoxOutlineBlank {...props} ref={ref} />
+              )),
             }}
           />
         </Grid>
