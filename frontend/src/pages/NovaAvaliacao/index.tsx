@@ -26,15 +26,16 @@ export function NovaAvaliacao(): React.ReactElement {
       codigo,
       nomeHospital: `${nomeHospital},${sigla}`,
       idsAvaliadores: '',
-      data: data?.toISOString(),
+      data: data ? data.toISOString() : new Date().toISOString(),
       configuracao: {},
       secoes: [],
     }
 
-    api
-      .post('avaliacao/', avaliacao)
+    api.post('avaliacao/', avaliacao).catch((error) => {
       // eslint-disable-next-line no-console
-      .catch(console.log)
+      console.log(error)
+      alert('O código dessa avaliação já está sendo usado')
+    })
   }
 
   const generateForm = () => {

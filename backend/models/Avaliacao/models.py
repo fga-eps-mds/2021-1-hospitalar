@@ -23,7 +23,7 @@ class Avaliacao(models.Model):
     codigo = models.TextField(unique=True)
     nomeHospital = models.TextField(blank=True)
     idsAvaliadores = models.TextField(blank=True)
-    data = models.DateTimeField(auto_now=True)
+    data = models.DateTimeField()
     configuracao = models.OneToOneField(Configuracao, on_delete=models.CASCADE)
 
     def __str__(self):

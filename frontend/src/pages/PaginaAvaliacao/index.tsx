@@ -28,7 +28,7 @@ export function PaginaAvaliacao(): React.ReactElement {
           {
             id: 0,
             nome: '',
-            status: '',
+            status: 'NA',
             comentario: '',
             pontuacao: 0,
           },

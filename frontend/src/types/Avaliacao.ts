@@ -1,7 +1,7 @@
 export type Subtopico = {
   id?: number
   nome: string
-  status: string
+  status: 'NA' | 'C' | 'PC' | 'NC'
   comentario: string
   pontuacao: number
 }
@@ -24,7 +24,7 @@ export type Avaliacao = {
   codigo: string
   nomeHospital: string
   idsAvaliadores: string
-  data?: string
+  data: string
   configuracao: Configuracao
   secoes: Secao[]
 }
