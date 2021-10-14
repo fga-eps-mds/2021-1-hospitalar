@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import { generatePDF } from '../../api'
 import icon_3 from '../../assets/logo_3.svg'
 import logo_simples from '../../assets/logo_simples.png'
 import { useStyles } from './styles'
 
 export function GerarRelatorio(): React.ReactElement {
   const classes = useStyles()
+
+  const [selectedHospitalName] = useState('')
+
+  const handleSubmit = () => {
+    generatePDF(selectedHospitalName)
+  }
 
   return (
     <>
@@ -14,17 +22,25 @@ export function GerarRelatorio(): React.ReactElement {
       </div>
       <div className={classes.barraTopo}>
         <div className={classes.btnHome0}>
-          <p className={classes.tituloBarraTopo}>Home</p>
+          <a className={classes.tituloBarraTopo} href='/home'>
+            Home
+          </a>
         </div>
         <div className={classes.btnHome1}>
-          <p className={classes.tituloBarraTopo}>Nova Avaliação</p>
+          <a className={classes.tituloBarraTopo} href='/NovaAvaliacao/Adicao'>
+            Nova Avaliação
+          </a>
         </div>
         <img className={classes.imagem} src={logo_simples} alt='' />
         <div className={classes.btnHome2}>
-          <p className={classes.tituloBarraTopo}>Avaliação</p>
+          <a className={classes.tituloBarraTopo} href='/NovaAvaliacao'>
+            Avaliação
+          </a>
         </div>
         <div className={classes.btnHome3}>
-          <p className={classes.tituloBarraTopo}>Relatório</p>
+          <a className={classes.tituloBarraTopo} href='/relatorio'>
+            Relatório
+          </a>
         </div>
       </div>
       <div className={classes.barraUm} />
@@ -42,7 +58,7 @@ export function GerarRelatorio(): React.ReactElement {
           <button type='button' className={classes.btnUm}>
             Pré-Visualizar
           </button>
-          <button type='button' className={classes.btnDois}>
+          <button type='button' onClick={handleSubmit} className={classes.btnDois}>
             BAIXAR (.PDF)
           </button>
         </div>
