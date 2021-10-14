@@ -52,6 +52,7 @@ class Subtopico(models.Model):
 
     nome = models.TextField(blank=True)
 
+    
     class Status(models.TextChoices):
         Conforme = 'C'
         Parcialmente_conforme = 'PC'

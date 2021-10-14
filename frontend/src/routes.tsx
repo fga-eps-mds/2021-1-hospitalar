@@ -24,7 +24,7 @@ export function Routes(): React.ReactElement {
         <Route exact path='/' component={Login} />
         <Route path='/home' component={Home} />
         <Route exact path='/avaliacao/:idAvaliacao' component={PaginaAvaliacao} />
-        <Route exact path='/editarItem' component={EditarItem} />
+        <Route exact path='/editarItem/:idAvaliacao' component={EditarItem} />
         <Route exact path='/NovaAvaliacao/Adicao' component={PaginaAddItem} />
         <Route exact path='/relatorio' component={GenerateReport} />
         <Route exact path='/gerarRelatorio' component={GerarRelatorio} />

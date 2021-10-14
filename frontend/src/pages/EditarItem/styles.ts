@@ -2,9 +2,8 @@ import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles((theme) => ({
   backgroundAvaliacao: {
-    paddingBottom: '5%',
     borderRadius: '12px',
-    marginBottom: '10%',
+    marginBottom: '3%',
     marginTop: '3%',
     marginLeft: '5%',
     marginRight: '5%',
@@ -22,11 +21,14 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   gridButton: {
+    justifyContent: 'center',
     display: 'flex',
     marginTop: '2%',
-    marginLeft: '3.8%',
-    marginRight: '2%',
     marginBottom: '2%',
+    backgroundColor: '#D6F0C8',
+    color: '#FFFFF2',
+    fontWeight: 'bold',
+    fontFamily: 'sanserif',
   },
 
   designButton: {
