@@ -30,13 +30,19 @@ export function PaginaAvaliacao(): React.ReactElement {
           {
             id: 0,
             nome: '',
-            status: '',
+            status: 'NA',
             comentario: '',
             pontuacao: 0,
           },
         ],
       },
     ],
+    configuracao: {
+      id: 0,
+      NV1: 0,
+      NV2: 0,
+      NV3: 0,
+    },
   }
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const classes = useStyles()
@@ -209,7 +215,7 @@ export function PaginaAvaliacao(): React.ReactElement {
       <Grid className={classes.backgroundAvaliacao}>
         {/* corpo */}
         <Grid className={classes.textData}>
-          {new Date(avaliacao.data).toLocaleDateString('pt-BR')}
+          {avaliacao.data && new Date(avaliacao.data).toLocaleDateString('pt-BR')}
         </Grid>
         <Grid className={classes.textNomeResp}>
           {avaliacao.nomeHospital.split(',')[0]}
