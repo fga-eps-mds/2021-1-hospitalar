@@ -13,8 +13,7 @@ class SubtopicoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Subtopico
-        fields = ('id', 'nome', 'conforme', 'parcialConforme', 'naoConforme', 'naoAplicavel', 'status',
-                  'comentario', 'pontuacao')
+        fields = ('id', 'nome', 'status', 'comentario', 'pontuacao')
 
 
 class SecaoSerializer(serializers.ModelSerializer):
@@ -120,14 +119,6 @@ class AvaliacaoSerializer (serializers.ModelSerializer):
                                     'secao', editarSub.secao)
                                 editarSub.nome = subtopico.get(
                                     'nome', editarSub.nome)
-                                editarSub.conforme = subtopico.get(
-                                    'conforme', editarSub.conforme)
-                                editarSub.parcialConforme = subtopico.get(
-                                    'parcialConforme', editarSub.parcialConforme)
-                                editarSub.naoConforme = subtopico.get(
-                                    'naoConforme', editarSub.naoConforme)
-                                editarSub.naoAplicavel = subtopico.get(
-                                    'naoAplicavel', editarSub.naoAplicavel)
                                 editarSub.status = subtopico.get(
                                     'status', editarSub.status)
                                 editarSub.comentario = subtopico.get(
