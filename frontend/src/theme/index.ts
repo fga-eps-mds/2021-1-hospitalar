@@ -14,6 +14,9 @@ export const theme = createTheme({
     secondary: {
       main: '#2b7b24',
     },
+    background: {
+      default: '#fefef4',
+    },
   },
   typography: {
     fontFamily: 'Open Sans, sans-serif',

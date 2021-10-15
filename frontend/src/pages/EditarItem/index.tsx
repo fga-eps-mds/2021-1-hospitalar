@@ -23,6 +23,7 @@ export function EditarItem(): React.ReactElement {
     nomeHospital: '',
     idsAvaliadores: '',
     data: new Date().toISOString(),
+    configuracao: {},
     secoes: [
       {
         id: 0,
@@ -31,14 +32,14 @@ export function EditarItem(): React.ReactElement {
           {
             id: 0,
             nome: 'testando',
-            status: '',
+            status: 'C',
             comentario: '',
             pontuacao: 0,
           },
           {
             id: 0,
             nome: 'testando2',
-            status: '',
+            status: 'C',
             comentario: '',
             pontuacao: 0,
           },

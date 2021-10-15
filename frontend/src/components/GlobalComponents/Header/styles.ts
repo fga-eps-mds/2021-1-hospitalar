@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   imgLogo: {
     height: 100,
-    width: 90,
+    width: 70,
     position: 'absolute',
     top: 2,
     left: 0,
