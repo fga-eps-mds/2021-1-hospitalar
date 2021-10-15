@@ -20,5 +20,3 @@ export const theme = createTheme({
     fontSize: 15,
   },
 })
-
-

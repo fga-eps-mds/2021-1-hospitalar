@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'models.Secao',
-    'models.Configuracao',
     'models.Avaliacao',
 ]
 
@@ -91,21 +89,6 @@ DATABASES = {
         'NAME': 'projeto-hospitalar',
     }
 }
-
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'projeto-hospitalar',
-        'CLIENT': {
-            'host': 'db-mongo',
-            'port': 27017,
-            'username': 'root',
-            'password': 'example'
-        }
-    }
-}
-'''
 
 '''
 DATABASES = {
