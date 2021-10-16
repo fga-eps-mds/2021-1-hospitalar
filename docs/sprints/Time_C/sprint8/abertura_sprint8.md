@@ -29,6 +29,7 @@ Sprint com objetivos de replanejamento do processo de desenvolvimento para a R2,
 [#167 Pareamento das funcionalidades - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/167)
 <br>
 [#169 Sprint 9 - Reunião - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/169)
+<br>
 [#161 Refatoração da Modelagem de Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/161)
 <br>
 

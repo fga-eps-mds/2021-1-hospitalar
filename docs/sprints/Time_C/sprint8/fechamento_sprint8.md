@@ -4,67 +4,60 @@
 
 | **Data** |  **Versão** | **Modificação**  |  **Autor** |
 |:-:|:-:|:-:|:-:|
-|    23/08/2021   |  0.1 | Criação do documento  | Victor Cabral / Klyssmann Oliveira |
+|    23/08/2021   |  0.1 | Criação do documento  | [Pedro Vieira](https://github.com/Pedro-V8) |
 
 ## Backlog da Sprint 
 
 | **ID** |  **Descrição** | **Status**  |  **Pontos** |
 |:-:|:-:|:-:|:-:|
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    #(nº)   |  [link]() | (status)  | (nº) |
-|    ...   |  [...]() | ...  | ... |
+|    #171   |  [Criar Pasta do Prototipo de Alta Fidelidade - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/171) | Fechada  | 5 |
+|    #172   |  [Criar componente para a tela de Gerenciamento - React - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/172) | Fechada  | 8 |
+|    #170   |  [Centralizar componentes Menu Principal - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/170) | Fechada  | 5 |
+|    #167   |  [Pareamento das funcionalidades - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/167) | Fechada  | 2 |
+|    #169   |  [Sprint 9 - Reunião - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/169) | Fechada  | 2 |
+|    #161   |  [Refatoração da Modelagem de Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/161) | Fechada |13 |
+
 
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 35 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 0 Pontos <br>
+**Pontos Concluídos:** 35 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
 - Não houveram débitos técnicos para pagar nesta sprint
 
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
 
 ## Débitos Técnicos Gerados
 
 - Não foram gerados débitos nesta sprint
 
-OU
-
-#(nº) nome da issue 
-<BR> 
-#(nº) nome da issue 
-
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
--
+- Time voltou a ficar motivado para o andamento do projeto
+- Carga de tarefas mais leve visto que boa parte dos documentos estão feitos.
 
 ### Pontos Negativos
 
--
--
+- Apreensivos quanto ao resultado final
+- Pouco conhecimento das tecnologias que utilizaremos
 
 ### Melhorias
 
--
--
+- Motivação da equipe
+- Começo do desenvolvimento.
 
 ## Burndown
 
-Gráfico gerado pelo ZenHub  
+![BurnDown](/docs/assets/sprints/time_c/sprint_8/burndown8.png)
   
 ## Velocity
 
-Gráfico gerado pelo ZenHub  
+![Velocity](/docs/assets/sprints/time_c/sprint_8/velocity8.png)
   
 ## Práticas ágeis
   
