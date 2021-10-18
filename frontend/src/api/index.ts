@@ -18,7 +18,7 @@ import axios from 'axios'
  * @see https://github.com/axios/axios
  */
 export const api = axios.create({
-  baseURL: 'http://localhost:8000/api/',
+  baseURL: 'http://localhost:3333/auth/',
   xsrfHeaderName: 'X-CSRFTOKEN',
   xsrfCookieName: 'csrftoken',
 })
@@ -44,3 +44,5 @@ export const generatePDF = (hospitalName: string) => {
     // eslint-disable-next-line no-console
     .catch(console.log)
 }
+
+

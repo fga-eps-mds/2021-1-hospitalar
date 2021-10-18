@@ -10,7 +10,7 @@ import { PaginaAddItem } from './pages/PaginaAddItem'
 import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
 import { PreVisualizarRelatorio } from './pages/PreVisualizarRelatorio'
 import React from 'react'
-import { Template } from './components/GlobalComponents/Template'
+//  import { Template } from './components/GlobalComponents/Template'
 
 /**
  * Rotas do browser.

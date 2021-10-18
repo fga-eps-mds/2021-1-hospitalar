@@ -1,15 +1,59 @@
 import { Grid, TextField, Typography } from '@material-ui/core'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import React from 'react'
+import React, { useState  , useEffect } from 'react'
 import logo from '../../assets/logo_cover.png'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
+import { api } from '../../api'
 
 export function Login(): React.ReactElement {
+
+  const [email , setEmail] = useState('')
+  const [senha , setSenha] = useState('')
+  const [user , setUser] = useState('') 
+
+
   const history = useHistory()
 
   const classes = useStyles()
+
+  let status = false
+
+  function teste(){
+    alert("Helow")
+  }
+
+  function loginApi(){
+    useEffect(() => {
+      teste()
+
+    }, [])
+  }
+
+  function emailEsenhaExiste(){
+    if(email && senha){
+      status = true
+    }else{
+      status = false
+    }
+  }
+
+  function verifica(){
+    emailEsenhaExiste()
+    console.log(senha)
+    if(email.match(/@/) &&  email.match(/.com/)){
+      status = true
+    }else{
+      status = false
+    }
+  }
+  function handleSubmit(){
+    verifica()
+    if(status === true){
+      loginApi()
+    }
+  }
 
   return (
     <>
@@ -23,9 +67,7 @@ export function Login(): React.ReactElement {
         >
           <Typography variant='h1'> FAMiL </Typography>
 
-          <Grid item className={classes.line}>
-            .
-          </Grid>
+          <div className={classes.line}></div>
           <Typography variant='h5'> Ferramenta de Acreditação Militar </Typography>
         </Grid>
         <Grid
@@ -49,9 +91,9 @@ export function Login(): React.ReactElement {
                 {' '}
                 LOGIN{' '}
               </Typography>
-              <TextField label='Email' className={classes.emailText} />
-              <TextField label='Senha' type='password' className={classes.senhaText} />
-              <Button onClick={() => history.push('Home')}> ENTRAR </Button>
+              <TextField label='Email' className={classes.emailText}  onChange={(e) => setEmail(e.target.value)}/>
+              <TextField label='Senha' type='password' className={classes.senhaText} onChange={(e) => setSenha(e.target.value)}/>
+              <Button onClick={() => handleSubmit()}> ENTRAR </Button>
             </Grid>
           </Grid>
         </Grid>

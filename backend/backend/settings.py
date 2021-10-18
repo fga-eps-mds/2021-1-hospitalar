@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'models.Avaliacao',
+    'models.Usuario'
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'projeto-hospitalar',
+        'NAME': 'datatest2',
+        'CLIENT': {
+            'host': 'mongodb+srv://deploy:JryTADr3QAghyD4k@cluster0.uekop.mongodb.net/datatest2?retryWrites=true&w=majority',
+            'name': 'datatest2',
+            'authMechanism': 'SCRAM-SHA-1'
+        }
     }
 }
 
