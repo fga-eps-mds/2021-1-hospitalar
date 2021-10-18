@@ -170,6 +170,92 @@ class MyPrint:
 
         return final_data
 
+    '''
+    Construção da tabela de pontos
+    '''
+
+    def tabela_graph_pontos(self, relatorio, styles):
+        table_data = []
+
+        # Headers
+        table_data.append([
+            Paragraph("Seção", styles),
+            Paragraph("NR", styles),
+            Paragraph("C", styles),
+            Paragraph("PC", styles),
+            Paragraph("NC", styles),
+            Paragraph("NA", styles),
+            Paragraph("PT", styles),
+            Paragraph("OBS", styles),
+            Paragraph("ME", styles),
+        ])
+
+        count_totals = [0, 0, 0, 0, 0, 0, 0]
+
+        for secao in relatorio.secoes:
+            count_NR = 0
+            count_C = 0
+            count_PC = 0
+            count_NC = 0
+            count_NA = 0
+            count_total = 0
+            count_comments = 0
+            media = 0
+
+            # Contagens dos pontos
+            for sub in secao.subtopicos:
+                count_NR += 1
+                count_totals[0] += 1
+
+                if sub.status == 'NA':
+                    count_NR -= 1
+                    count_NA += 1
+                    count_totals[4] += 1
+                elif sub.status == 'NC':
+                    count_NC += 1
+                    count_totals[3] += 1
+                elif sub.status == 'PC':
+                    count_PC += 1
+                    count_totals[2] += 1
+                elif sub.status == 'C':
+                    count_C += 1
+                    count_totals[1] += 1
+
+                if sub.comentario:
+                    count_comments += 1
+                    count_totals[6] += 1
+
+                count_total += sub.pontuacao
+                count_totals[5] += sub.pontuacao
+
+            # Organização dos dados
+            datas = [count_NR, count_C, count_PC, count_NC, count_NA]
+            # Cálculo das médias
+            media = (count_total / count_NR) if (count_NR) else 0
+            # Adição dos dados nas linhas
+            # Colunas
+            paragraph_columns = [secao.topico] + \
+                [Paragraph(str(data)) for data in datas]
+            paragraph_columns.append(count_total)
+            paragraph_columns.append(count_comments)
+            paragraph_columns.append(media)
+            # Adição da linha
+            table_data.append(paragraph_columns)
+        # Linha TOTAIS
+        table_data.append(
+            [Paragraph('TOTAIS')] +
+            [(nums) for nums in count_totals] + ['-']
+        )
+        # Linha PERCENTUAIS
+        table_data.append(
+            [Paragraph('PERCENTUAIS')] +
+            [("{0:.2f}%".format((nums / count_totals[0]) * 100) if count_totals[0] else 0) for nums in count_totals] +
+            ['-']
+        )
+
+        return table_data
+
+
 
     def printReport(self):
         # Utilizamos o buffer do init
