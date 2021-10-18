@@ -29,6 +29,7 @@ export const useStyles = makeStyles((theme) => ({
   line: {
     width: '11vw',
     outline: '0',
+    marginBottom: '7px',
     borderTop: `1px solid ${theme.palette.primary.main}`,
   },
   loginContainer: {

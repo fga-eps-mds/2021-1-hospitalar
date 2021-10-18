@@ -11,25 +11,22 @@ export function Login(): React.ReactElement {
 
   const [email , setEmail] = useState('')
   const [senha , setSenha] = useState('')
-  const [user , setUser] = useState('') 
+  const [usuario, setUsuario] = useState({ "name": "" , "email": "" , "tipo": "" , "funcao": "" , "organizacao": ""}) 
 
 
   const history = useHistory()
 
   const classes = useStyles()
 
-  let status = false
+  let status = true
 
-  function teste(){
-    alert("Helow")
-  }
+ 
 
-  function loginApi(){
-    useEffect(() => {
-      teste()
+  //  function loginApi(){
+  //  useEffect(() => {
+    //  teste()
+    //  }, [])
 
-    }, [])
-  }
 
   function emailEsenhaExiste(){
     if(email && senha){
@@ -37,23 +34,37 @@ export function Login(): React.ReactElement {
     }else{
       status = false
     }
-  }
+  } 
 
   function verifica(){
     emailEsenhaExiste()
-    console.log(senha)
-    if(email.match(/@/) &&  email.match(/.com/)){
-      status = true
+    if(status === true)
+    {
+      if(email.match(/@/) &&  email.match(/.com/)){
+        status = true
+      }else{
+        status = false
+      }
     }else{
-      status = false
+      status = false 
     }
   }
+
   function handleSubmit(){
     verifica()
     if(status === true){
-      loginApi()
+    api.post("authenticate", {
+        email,
+        password:senha
+      })
+      .then((response) => setUsuario(response.data.user))
+      .catch((err) => console.log(err))
     }
   }
+  
+  useEffect(() => {
+    console.log(`Bem-Vindo ${usuario.name}`)
+  }, [usuario])
 
   return (
     <>
