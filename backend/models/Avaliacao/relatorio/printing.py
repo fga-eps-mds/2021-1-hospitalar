@@ -97,6 +97,80 @@ class MyPrint:
         return text
 
 
+    @staticmethod
+    def _footer(canvas, doc):
+        # Save the state of our canvas so we can draw on it
+        canvas.saveState()
+        styles = getSampleStyleSheet()
+
+        # Footer
+        footer = Paragraph(
+            'Relatório da Avaliação Hospitalar do {}, de {}'.format(
+                0, 0
+            ), styles['Normal'])
+        w, h = footer.wrap(doc.width, doc.bottomMargin)
+        footer.drawOn(canvas, doc.leftMargin, h + 1.7 * cm)
+
+        # Release the canvas
+        canvas.restoreState()
+
+    '''
+    Organização dos dados do gráfico
+    '''
+
+    def get_pontos(self):
+        relatorio = Avaliacao.objects.get(codigo=self.cod_relatorio)
+        final_data = {
+            'count_totals': [0, 0, 0, 0, 0, 0, 0],
+            'datas': []
+        }
+
+        for secao in relatorio.secoes:
+            count_NR = 0
+            count_C = 0
+            count_PC = 0
+            count_NC = 0
+            count_NA = 0
+            count_total = 0
+            count_comments = 0
+            media = 0
+
+            for sub in secao.subtopicos:
+                count_NR += 1
+                final_data['count_totals'][0] += 1
+
+                if sub.status == 'NA':
+                    count_NR -= 1
+                    count_NA += 1
+                    final_data['count_totals'][4] += 1
+                elif sub.status == 'NC':
+                    count_NC += 1
+                    final_data['count_totals'][3] += 1
+                elif sub.status == 'PC':
+                    count_PC += 1
+                    final_data['count_totals'][2] += 1
+                elif sub.status == 'C':
+                    count_C += 1
+                    final_data['count_totals'][1] += 1
+
+                if sub.comentario:
+                    count_comments += 1
+                    final_data['count_totals'][6] += 1
+
+                count_total += sub.pontuacao
+                final_data['count_totals'][5] += sub.pontuacao
+
+            datas = [count_NR, count_C, count_PC, count_NC, count_NA]
+
+            media = (count_total / count_NR) if (count_NR) else 0
+
+            datas = datas + [count_total, count_comments, media]
+
+            final_data['datas'].append(datas)
+
+        return final_data
+
+
     def printReport(self):
         # Utilizamos o buffer do init
         buffer = self.buffer
