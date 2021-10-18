@@ -255,7 +255,60 @@ class MyPrint:
 
         return table_data
 
+    '''
+    Legendas do gráfico
+    '''
+    @staticmethod
+    def add_legend(draw_obj, chart, data):
+        legend = Legend()
+        legend.alignment = 'right'
+        legend.x = 0
+        legend.y = 70
+        legend.colorNamePairs = Auto(obj=chart)
+        draw_obj.add(legend)
 
+    def pie_chart_with_legend(self):
+        data = self.get_pontos()
+        # Espaço de renderização
+        drawing = Drawing(width=400, height=200)
+        # Propriedades do gráfico
+        my_title = String(170, 40, 'Proporções das Pontuações', fontSize=14)
+        pie = Pie()
+        pie.sideLabels = True
+        pie.x = 150
+        pie.y = 65
+        pie.data = data['count_totals'][1:5]
+        pie.labels = ['C', 'PC', 'NC', 'NA']
+        pie.slices.strokeWidth = 0.5
+        # Adição do gráfico para renderização
+        drawing.add(my_title)
+        drawing.add(pie)
+        self.add_legend(drawing, pie, data)
+        return drawing
+
+    def draw_graph(self):
+        d = Drawing(280, 250)
+        graph_data = self.get_pontos()
+        labels = ['C', 'PC', 'NC', 'NA']
+
+        graph = VerticalBarChart()
+        graph.data = graph_data['count_totals']
+        graph.barLabels = labels
+
+        d.add(graph)
+        d.save()
+
+        return d
+    
+    '''
+    É feita a Query através do código passado para o criador do Relatório.
+    '''
+
+    def paragraph_space(self):
+        return Spacer(1, 0.9*cm)
+
+    def section_space(self):
+        return Spacer(1, 1.7*cm)
 
     def printReport(self):
         # Utilizamos o buffer do init
