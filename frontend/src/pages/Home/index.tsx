@@ -1,6 +1,6 @@
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
-import { Header } from '../../components/GlobalComponents/Header'
+import { MPHeader } from '../../components/GlobalComponents/MPHeader'
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
@@ -22,23 +22,34 @@ export function Home(): React.ReactElement {
   return (
     <><Grid container direction='column' spacing={2}>
       <Grid item>
-        <Header
-          links={[
-            { texto: 'Home', link: '/' },
-            { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
-            { texto: 'Avaliações', link: '/avaliacao' },
-            { texto: 'Relatórios', link: '/relatorio' },
-          ]} />
+        <MPHeader />
       </Grid>
 
     </Grid>
     <Grid container direction='column' className={classes.centralizar} spacing={1} >
         <Grid item>
-          <Button onClick={() => history.push('relatorio')}>Página gerar relatorio</Button>
+          <Button variant="contained" className={classes.botao} onClick={() => history.push('NovaAvaliacao')}>
+            Nova Avaliação
+          </Button>
         </Grid>
+
+
         <Grid item>
-          <Button onClick={() => history.push('NovaAvaliacao')}>
-            Página nova avaliação
+          <Button variant="contained" className={classes.botao} onClick={() => history.push('relatorio')}>
+            Avaliações
+          </Button>
+        </Grid>
+
+
+        <Grid item>
+          <Button variant="contained" className={classes.botao} onClick={() => history.push('relatorio')}>
+            Relatório
+          </Button>
+        </Grid>
+
+        <Grid item>
+          <Button variant="contained" className={classes.botao} onClick={() => history.push('gerenciador')}>
+            Gerenciador
           </Button>
         </Grid>
       </Grid></>

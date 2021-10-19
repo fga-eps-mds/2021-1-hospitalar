@@ -10,7 +10,7 @@ export function GerarRelatorio(): React.ReactElement {
       <div className={classes.barraFundo} />
       <Header
         links={[
-          { texto: 'Home', link: '/' },
+          { texto: 'Home', link: '/Home' },
           { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
           { texto: 'Avaliações', link: '/avaliacao' },
           { texto: 'Relatórios', link: '/relatorio' },

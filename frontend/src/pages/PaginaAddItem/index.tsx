@@ -108,7 +108,7 @@ export function PaginaAddItem(): React.ReactElement {
         <Grid item>
           <Header
             links={[
-              { texto: 'Home', link: '/' },
+              { texto: 'Home', link: '/Home' },
               { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
               { texto: 'Avaliações', link: '/avaliacao' },
               { texto: 'Relatórios', link: '/relatorio' },
