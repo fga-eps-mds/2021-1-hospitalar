@@ -6,12 +6,11 @@ from django.db import models
 # Create your models here.
 
 class Usuario(User):
-    nome = models.TextField()
-    tipo = models.TextField()
-    funcao = models.TextField()
-    organizacao = models.TextField()
+    nome = models.TextField(max_length=100)
+    tipo = models.TextField(max_length=50)
+    funcao = models.TextField(max_length=50)
+    organizacao = models.TextField(max_length=50)
 
-    USERNAME_FIELD = 'email' 
 
     def __str__(self):
         return self.nome
