@@ -8,7 +8,7 @@ import { api } from '../../api'
 import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
-/*
+/**
  *[tipagem] Transformando idAvaliacao em um tipo para ser um argumento
  */
 type Props = {
@@ -16,7 +16,7 @@ type Props = {
 }
 
 export function PaginaAvaliacao(): React.ReactElement {
-  /*
+  /**
    * Criando constantes (respectivamente)
    *  classes pega o styles.ts
    *  useState substitui o uso de class component para criar uma variavel de estado-idSeção é criado para trocar de seção
@@ -26,7 +26,7 @@ export function PaginaAvaliacao(): React.ReactElement {
   const [idSecao, setIdSecao] = useState(0)
   const { idAvaliacao } = useParams<Props>()
 
-  /*
+  /**
    * Constroi um "objeto" do tipo Avaliação com todos os itens nulos
    */
   const avaliacaoNula: Avaliacao = {
@@ -44,12 +44,12 @@ export function PaginaAvaliacao(): React.ReactElement {
       },
     ],
   }
-  /*
+  /**
    * Cria uma variável de estado de avaliações
    */
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
 
-  /*
+  /**
    *  Função para ter o "get" do banco de dados
    */
   const bancoGet = () => {
@@ -60,14 +60,14 @@ export function PaginaAvaliacao(): React.ReactElement {
       // eslint-disable-next-line no-console
       .catch(console.log)
   }
-  /*
+  /**
    * Constante para mudar de seção
    */
   const mudarSecao = (numeroSecao: number) => {
     setIdSecao(numeroSecao)
   }
 
-  /*
+  /**
    * useEffect para pegar os dados do banco
    */
   useEffect(() => {
