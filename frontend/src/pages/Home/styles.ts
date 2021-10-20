@@ -11,4 +11,18 @@ import { makeStyles } from '@material-ui/core'
  * @see https://material-ui.com/styles/api/#makestyles-styles-options-hook
  */
 // eslint-disable-next-line no-unused-vars
-export const useStyles = makeStyles((theme) => ({}))
+export const useStyles = makeStyles((theme) => ({
+
+    centralizar: {
+        alignItems: 'center',  
+        height: '50vh',
+        width: '100%',
+        justifyContent: 'center',
+
+    },
+
+    botao: {
+        width: '15vw',
+        textTransform: 'none',
+    }
+}))

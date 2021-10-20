@@ -23,6 +23,9 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/self-closing-comp': 'off',
+    'jsx-a11y/label-has-associated-control':'off',
+    'no-alert': 'off',
   },
   ignorePatterns: ['.eslintrc.js', 'prettier.config.js'],
 }

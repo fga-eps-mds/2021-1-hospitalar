@@ -1,33 +1,116 @@
 import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles((theme) => ({
-  title: {
-    width: '80%',
-  },
-  text: {
-    width: '75%',
-  },
-  form: {
-    margin: 'auto',
-    marginTop: '40px',
-    width: '35%',
-    backgroundColor: theme.palette.primary.main,
-    height: '300px',
-    borderRadius: '10px',
-    paddingTop: '15px',
-  },
-  textContainer: {
-    margin: 'auto',
-    width: '80%',
-    backgroundColor: '#f7f7e8',
-    paddingTop: '25px',
-    paddingBottom: '50px',
-    borderRadius: '10px',
-    marginBottom: '40px',
+  backgroundAvaliacao: {
+    borderRadius: '12px',
+    marginBottom: '3%',
+    marginTop: '3%',
+    marginLeft: '5%',
+    marginRight: '5%',
+    backgroundColor: '#D6F0C8',
+    border: '6px solid #175215',
   },
 
-  botaovoltar: {
-    height: '20px',
-    marginTop: '400px',
+  textData: {
+    backgroundColor: '#D6F0C8',
+    fontFamily: 'OpenSans',
+    color: '#175215',
+    marginTop: '2%',
+    marginLeft: '4%',
+    fontSize: '20px',
+  },
+
+  textNomeResp: {
+    backgroundColor: '#D6F0C8',
+    textAlign: 'center',
+    marginTop: '1%',
+    fontFamily: 'OpenSans',
+    fontWeight: 'bold',
+    color: '#175215',
+    fontSize: '35px',
+  },
+
+  textNomeLabel: {
+    marginLeft: '1%',
+    fontWeight: 'bold',
+    fontSize: '20px',
+  },
+
+  idAvaliacao: {
+    marginLeft: '1%',
+    fontSize: '20px',
+  },
+
+  textInfoHosp: {
+    display: 'flex',
+    backgroundColor: '#D6F0C8',
+    fontFamily: 'OpenSans',
+    color: '#175215',
+    marginTop: '2%',
+    marginLeft: '3%',
+    fontSize: '20px',
+  },
+
+  textSigla: {
+    display: 'flex',
+    backgroundColor: '#D6F0C8',
+    fontFamily: 'OpenSans',
+    color: '#175215',
+    marginTop: '2%',
+    marginLeft: '3%',
+    fontSize: '20px',
+  },
+
+  textSiglaLabel: {
+    marginLeft: '1%',
+    fontWeight: 'bold',
+    fontSize: '20px',
+  },
+
+  textSiglaResp: {
+    marginLeft: '1%',
+    marginRight: '1%',
+    fontSize: '20px',
+  },
+
+  textResponsavel: {
+    display: 'flex',
+    backgroundColor: '#D6F0C8',
+    fontFamily: 'OpenSans',
+    color: '#175215',
+    marginTop: '2%',
+    marginLeft: '3%',
+    fontSize: '20px',
+  },
+
+  textResponsavelLabel: {
+    marginLeft: '1%',
+    fontWeight: 'bold',
+    fontSize: '20px',
+  },
+
+  textResponsavelResp: {
+    marginLeft: '1%',
+    fontSize: '20px',
+  },
+
+  titleEditarAvaliacao: {
+    textAlign: 'center',
+    marginTop: '1%',
+    fontFamily: 'OpenSans',
+    fontWeight: 'bold',
+    color: '#175215',
+    fontSize: '35px',
+  },
+
+  gridButton: {
+    justifyContent: 'center',
+    display: 'flex',
+    marginTop: '2%',
+    marginBottom: '2%',
+    backgroundColor: '#D6F0C8',
+    color: '#FFFFF2',
+    fontWeight: 'bold',
+    fontFamily: 'sanserif',
   },
 }))

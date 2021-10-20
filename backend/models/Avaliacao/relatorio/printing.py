@@ -18,6 +18,8 @@ from reportlab.graphics.charts.barcharts import BarChart, VerticalBarChart
 from reportlab.graphics.charts.piecharts import Pie
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
+
+from reportlab.lib.pagesizes import letter, A4
 from reportlab.lib import colors
 from ..models import Avaliacao
 
@@ -48,7 +50,6 @@ class NumberedCanvas(canvas.Canvas):
                              "Page %d of %d" % (self._pageNumber, page_count))
 
 class MyPrint:
-
 
     '''
     É passado um Buffer para armazenar os dados em bytes do PDF.
