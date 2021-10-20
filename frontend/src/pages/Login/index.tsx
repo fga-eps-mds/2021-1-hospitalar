@@ -13,6 +13,7 @@ export function Login(): React.ReactElement {
   const [senha , setSenha] = useState('')
   const [erroStatus , setErroStatus] = useState(false)
   const [usuario, setUsuario] = useState({ "name": "" , "email": "" , "tipo": "" , "funcao": "" , "organizacao": ""}) 
+  const userContext = React.createContext({})
 
 
   const history = useHistory()
