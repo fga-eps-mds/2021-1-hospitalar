@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 
+
 /**
  * Um componente funcional React compatível com React Hooks.
  * Siga o padrão descrito no markdown do frontend.
@@ -24,14 +25,28 @@ export function Gerenciador(): React.ReactElement {
     <>
         <Grid container>
             <Grid container>
-            <Header
-              links={[
-                { texto: 'Home', link: '/Home' },
-                { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
-                { texto: 'Avaliações', link: '/avaliacao' },
-                { texto: 'Relatórios', link: '/relatorio' },
+             <Header
+                links={[
+                  { texto: 'Home', link: '/Home' },
+                  { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+                  { texto: 'Avaliações', link: '/avaliacao' },
+                  { texto: 'Relatórios', link: '/relatorio' },
                 ]}
               />
+            </Grid>
+            
+            <Grid container>
+              <Grid item>
+                <Button onClick={() => alert("Usuarios")}>
+                  Usuarios
+                </Button>
+              </Grid>
+
+              <Grid item>
+                <Button onClick={() => alert("Avaliacoes")}>
+                  Avaliacoes
+                </Button>
+              </Grid>
             </Grid>
         </Grid>
     </>
