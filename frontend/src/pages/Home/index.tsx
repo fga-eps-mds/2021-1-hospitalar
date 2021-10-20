@@ -35,7 +35,7 @@ export function Home(): React.ReactElement {
 
 
         <Grid item>
-          <Button variant="contained" className={classes.botao} onClick={() => history.push('relatorio')}>
+          <Button variant="contained" className={classes.botao} onClick={() => history.push('avaliacao')}>
             Avaliações
           </Button>
         </Grid>
