@@ -94,6 +94,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -103,6 +105,14 @@ DATABASES = {
             'name': 'datatest2',
             'authMechanism': 'SCRAM-SHA-1'
         }
+    }
+}
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'projeto-hospitalar',
     }
 }
 
