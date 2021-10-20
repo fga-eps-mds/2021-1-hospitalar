@@ -11,6 +11,7 @@ export function Login(): React.ReactElement {
 
   const [email , setEmail] = useState('')
   const [senha , setSenha] = useState('')
+  const [erroStatus , setErroStatus] = useState(false)
   const [usuario, setUsuario] = useState({ "name": "" , "email": "" , "tipo": "" , "funcao": "" , "organizacao": ""}) 
 
 
@@ -31,8 +32,10 @@ export function Login(): React.ReactElement {
   function emailEsenhaExiste(){
     if(email && senha){
       status = true
+      setErroStatus(false)
     }else{
       status = false
+      setErroStatus(true)
     }
   } 
 
@@ -42,23 +45,31 @@ export function Login(): React.ReactElement {
     {
       if(email.match(/@/) &&  email.match(/.com/)){
         status = true
+        setErroStatus(false)
       }else{
         status = false
+        setErroStatus(true)
       }
     }else{
       status = false 
+      setErroStatus(true)
     }
   }
 
   function handleSubmit(){
     verifica()
     if(status === true){
-    api.post("authenticate", {
-        email,
-        password:senha
-      })
-      .then((response) => setUsuario(response.data.user))
-      .catch((err) => console.log(err))
+      api.post("authenticate", {
+          email,
+          password:senha
+        })
+        .then((response) => setUsuario(response.data.user))
+        .catch((err) => console.log(err))
+    }else{
+      status = false
+      setErroStatus(true)
+      alert("Dados inválidos, tente novamente")
+      console.log(erroStatus)
     }
   }
   
@@ -102,8 +113,8 @@ export function Login(): React.ReactElement {
                 {' '}
                 LOGIN{' '}
               </Typography>
-              <TextField label='Email' className={classes.emailText}  onChange={(e) => setEmail(e.target.value)}/>
-              <TextField label='Senha' type='password' className={classes.senhaText} onChange={(e) => setSenha(e.target.value)}/>
+              <TextField label='Email' error={erroStatus} className={classes.emailText}  onChange={(e) => setEmail(e.target.value)}/>
+              <TextField label='Senha' error={erroStatus} type='password' className={classes.senhaText} onChange={(e) => setSenha(e.target.value)}/>
               <Button onClick={() => handleSubmit()}> ENTRAR </Button>
             </Grid>
           </Grid>

@@ -16,7 +16,7 @@ export const useStyles = makeStyles((theme) => ({
     botao: {
         margin: '0px',
     },
-    teste: {backgroundColor: 'black',},
+    teste: {backgroundColor: 'black',   display:' none',},
     teste1: {backgroundColor: 'blue',},
     teste2: {backgroundColor: 'red',},
 }))
