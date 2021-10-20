@@ -22,8 +22,17 @@ export function Gerenciador(): React.ReactElement {
    */
   return (
     <>
-        <Grid item>
-            <h1> Hello World</h1>
+        <Grid container>
+            <Grid container>
+            <Header
+              links={[
+                { texto: 'Home', link: '/Home' },
+                { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+                { texto: 'Avaliações', link: '/avaliacao' },
+                { texto: 'Relatórios', link: '/relatorio' },
+                ]}
+              />
+            </Grid>
         </Grid>
     </>
 
