@@ -1,7 +1,7 @@
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
-import React from 'react'
+import React , { useState , useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
@@ -15,7 +15,11 @@ import { useStyles } from './styles'
  * @see https://pt-br.reactjs.org/docs/hooks-reference.html#basic-hooks
  */
 export function Gerenciador(): React.ReactElement {
+  const [toggleState, setToggleState] = useState(1);
+
   const history = useHistory()
+  const classes = useStyles()
+
 
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -37,16 +41,26 @@ export function Gerenciador(): React.ReactElement {
             
             <Grid container>
               <Grid item>
-                <Button onClick={() => alert("Usuarios")}>
+                <Button className={classes.botao} onClick={() => setToggleState(1)}>
                   Usuarios
                 </Button>
               </Grid>
 
+
               <Grid item>
-                <Button onClick={() => alert("Avaliacoes")}>
+                <Button className={classes.botao} onClick={() => {setToggleState(2)} }>
                   Avaliacoes
                 </Button>
               </Grid>
+            </Grid>
+
+
+            <Grid container className={toggleState === 1 ? classes.teste1 : classes.teste}>
+              <h1>Conteúdo 1</h1>
+            </Grid>
+
+            <Grid container className={toggleState === 2 ? classes.teste2 : classes.teste}>
+              <h1> Conteúdo 2</h1>
             </Grid>
         </Grid>
     </>
