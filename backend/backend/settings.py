@@ -101,11 +101,8 @@ if os.getenv('DOCKER') == 'FALSE':
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('DATABASE_NAME'),
-            'USER': os.getenv('USER_NAME'),
-            'HOST': os.getenv('HOST'),
-            'PORT': os.getenv('PORT'),
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'database/dev_db.sqlite'
         }
     }
 
