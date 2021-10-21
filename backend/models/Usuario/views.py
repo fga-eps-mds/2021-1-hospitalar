@@ -30,24 +30,6 @@ class UsuarioView(viewsets.ModelViewSet):
                 return JsonResponse(serializer.data, safe=False)
 
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
-
-class LoginView(APIView):
-    permission_classes = [AllowAny]
-    serializer_class = UsuarioSerializer
-    queryset = Usuario.objects.all()
-
-
-    def post(self , request , format=None):
-        user = authenticate(username=request.data['email'], password=request.data['password'])
-        if user is not None:
-            return Response({'nome': user.nome})
-
-    @classmethod
-    def get_extra_actions(cls):
-        return []
-
 
 
 

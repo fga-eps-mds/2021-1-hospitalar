@@ -1,28 +1,26 @@
 import { Grid, TextField, Typography } from '@material-ui/core'
-
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import React, { useState  , useEffect } from 'react'
+import React, { useState  , useEffect , useContext } from 'react'
 import logo from '../../assets/logo_cover.png'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 import { api } from '../../api'
+import AuthContext from '../../context/auth'
 
 export function Login(): React.ReactElement {
-
   const [email , setEmail] = useState('')
   const [senha , setSenha] = useState('')
   const [erroStatus , setErroStatus] = useState(false)
   const [usuario, setUsuario] = useState({ "name": "" , "email": "" , "tipo": "" , "funcao": "" , "organizacao": ""}) 
-  const userContext = React.createContext({})
+  
+  const loginData = useContext(AuthContext)
 
-
+  // console.log(signed)
   const history = useHistory()
 
   const classes = useStyles()
 
   let status = true
-
- 
 
   //  function loginApi(){
   //  useEffect(() => {
@@ -60,12 +58,7 @@ export function Login(): React.ReactElement {
   function handleSubmit(){
     verifica()
     if(status === true){
-      api.post("authenticate", {
-          email,
-          password:senha
-        })
-        .then((response) => setUsuario(response.data.user))
-        .catch((err) => console.log(err))
+      loginData.signIn(email , senha)
     }else{
       status = false
       setErroStatus(true)
@@ -73,10 +66,9 @@ export function Login(): React.ReactElement {
       console.log(erroStatus)
     }
   }
+
+   console.log(loginData.user)
   
-  useEffect(() => {
-    console.log(`Bem-Vindo ${usuario.name}`)
-  }, [usuario])
 
   return (
     <>

@@ -1,9 +1,10 @@
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { MPHeader } from '../../components/GlobalComponents/MPHeader'
-import React from 'react'
+import React , {  useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
+import AuthContext from '../../context/auth'
 
 /**
  * Um componente funcional React compatível com React Hooks.
@@ -15,6 +16,10 @@ import { useStyles } from './styles'
 export function Home(): React.ReactElement {
   const history = useHistory()
   const classes = useStyles()
+  const loginData = useContext(AuthContext)
+  
+ 
+  console.log(loginData.user)
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/

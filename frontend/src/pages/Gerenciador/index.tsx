@@ -1,9 +1,10 @@
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { Header } from '../../components/GlobalComponents/Header'
-import React , { useState , useEffect } from 'react'
+import React , { useState , useEffect , useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
+import AuthContext from '../../context/auth'
 
 
 
@@ -16,6 +17,7 @@ import { useStyles } from './styles'
  */
 export function Gerenciador(): React.ReactElement {
   const [toggleState, setToggleState] = useState(1);
+
 
   const history = useHistory()
   const classes = useStyles()
