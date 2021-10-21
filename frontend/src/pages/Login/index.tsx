@@ -67,7 +67,12 @@ export function Login(): React.ReactElement {
     }
   }
 
-   console.log(loginData.user)
+  useEffect(() => {
+
+    // console.log(loginData.user)
+  if ( loginData.user !== null) history.push('/home')
+  }, [loginData])
+  //  console.log(localStorage.getItem('usuario'))
   
 
   return (

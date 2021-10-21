@@ -9,13 +9,17 @@ import { AuthProvider } from './context/auth'
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <AuthProvider>
+
+  <AuthProvider>
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+
         <Routes />
-      </AuthProvider>
-    </ThemeProvider>
-  </React.StrictMode>,
+
+      </ThemeProvider>
+    </React.StrictMode>
+  </AuthProvider>,
+
   document.getElementById('root')
 )
 

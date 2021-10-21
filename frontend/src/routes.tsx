@@ -10,7 +10,7 @@ import { PaginaAddItem } from './pages/PaginaAddItem'
 import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
 import { PreVisualizarRelatorio } from './pages/PreVisualizarRelatorio'
 import { Gerenciador } from './pages/Gerenciador'
-import React from 'react'
+import React , { useContext } from 'react'
 //  import { Template } from './components/GlobalComponents/Template'
 
 /**

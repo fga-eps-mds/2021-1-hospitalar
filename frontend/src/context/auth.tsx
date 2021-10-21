@@ -1,9 +1,9 @@
-import React , { createContext, useState } from "react";
+import React , { createContext, useState , useEffect } from "react";
 import { api } from "../api"
 
 interface AuthContextData {
     signed: boolean;
-    user: object;
+    user: object | null;
     signIn(email:string , senha:string): Promise<void>
 }
 
@@ -11,22 +11,28 @@ interface AuthContextData {
 const AuthContext = createContext<AuthContextData>({} as AuthContextData)
 
 export const AuthProvider: React.FC = ({children}) => {
-    const [ usuario , setUser] = useState<object>({})
+    const [ user , setUser] = useState<object | null>(null)
 
     async function signIn(email:string , senha:string) {
-        const response = await api.post("authenticate", {
-            email,
-            password:senha
-        })
-        .then(({ data }) => data)
-        .catch((err) => console.log(err))
-        setUser(response.user)
+        try {
+            const response = await api.post("authenticate", {
+                email,
+                password:senha
+            })
+
+            setUser(response.data) 
+        } catch (err) {
+            console.log(err)
+        }
     }
+
+    // localStorage.setItem('usuario' , JSON.stringify(user))
+
 
     // console.log(user)
 
     return(
-        <AuthContext.Provider value={{ signed: false , user: usuario , signIn }}>
+        <AuthContext.Provider value={{ signed: !!user , user , signIn }}>
             {children}
         </AuthContext.Provider>
     )
