@@ -1,4 +1,4 @@
-# Fechamento da Sprint (nº)
+# Fechamento da Sprint 8
 
 ## Histórico de revisão
 
@@ -127,4 +127,4 @@
 
 ## Análise pelo Scrum Master
 
-...
+
