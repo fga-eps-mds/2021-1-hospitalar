@@ -8,7 +8,7 @@ from .serializers import LoginSerializer, UsuarioSerializer, RegistroSerializer,
 class RegistrarView(generics.GenericAPIView):
     serializer_class = RegistroSerializer
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         serializer = self.get_serializer(data=request.data)
 
         serializer.is_valid(raise_exception=True)
@@ -20,12 +20,7 @@ class RegistrarView(generics.GenericAPIView):
             context=self.get_serializer_context()
         )
 
-        token = AuthToken.objects.create(user)[1]
-
-        return Response({
-            'user': userJSON.data,
-            'token': token
-        })
+        return Response(userJSON.data)
 
 
 class RegistrarAdminView(generics.GenericAPIView):
@@ -43,18 +38,13 @@ class RegistrarAdminView(generics.GenericAPIView):
             context=self.get_serializer_context()
         )
 
-        token = AuthToken.objects.create(user)[1]
-
-        return Response({
-            'user': userJSON.data,
-            'token': token
-        })
+        return Response(userJSON.data)
 
 
 class LoginView(generics.GenericAPIView):
     serializer_class = LoginSerializer
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         serializer = self.get_serializer(data=request.data)
 
         serializer.is_valid(raise_exception=True)
