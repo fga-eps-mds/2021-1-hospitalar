@@ -46,10 +46,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'knox',
     'corsheaders',
     'rest_framework',
     'models.Avaliacao',
+    'models.Usuario'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',)
+}
+
+AUTH_USER_MODEL = 'Usuario.User'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -87,15 +95,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-if os.getenv('DOCKER') == 'FALSE':
+if os.getenv('DOCKER') == 'TRUE':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('LOCAL_DATABASE_NAME'),
-            'USER': os.getenv('LOCAL_USER_NAME'),
-            'PASSWORD': os.getenv('LOCAL_PASSWORD'),
-            'HOST': os.getenv('LOCAL_HOST'),
-            'PORT': os.getenv('LOCAL_PORT'),
+            'NAME': os.getenv('DATABASE_NAME'),
+            'USER': os.getenv('USER_NAME'),
+            'HOST': os.getenv('HOST'),
+            'PORT': os.getenv('PORT'),
         }
     }
 else:
