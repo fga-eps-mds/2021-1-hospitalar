@@ -1,8 +1,10 @@
 import { Checkbox, IconButton, TableCell, TableRow } from '@material-ui/core'
+import { DeleteRounded, DoneRounded, EditRounded } from '@material-ui/icons'
 import React, { useState } from 'react'
+
 import { Subtopico } from '../../../types/Avaliacao'
 import { TextField } from '../../GlobalComponents/Inputs/TextField'
-import { EditRounded, DoneRounded, DeleteRounded } from '@material-ui/icons'
+import { useStyles } from './styles'
 
 type Props = {
   index: number
@@ -12,6 +14,7 @@ type Props = {
 type Status = 'C' | 'PC' | 'NC' | 'NA'
 
 export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
+  const classes = useStyles()
   const [botaoEscolhido, setBotaoEscolhido] = useState<Status>(subtopico.status)
   const [nome, setNome] = useState<string>(subtopico.nome)
   const [pontuacao, setPontuacao] = useState<number>(subtopico.pontuacao)
@@ -53,9 +56,17 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
 
   return (
     <TableRow>
-      <TableCell align='center'> {index + 1}</TableCell>
-      <TableCell align='center'>
-        <TextField name='Nome' label='' value={nome} onChange={handleChange} />
+      <TableCell className={classes.designNumber}> {index + 1}</TableCell>
+      <TableCell className={classes.configTextFieldName}>
+        <TextField
+          fullWidth
+          multiline
+          inputProps={{ style: { textAlign: 'justify', fontFamily: 'OpenSans' } }}
+          name='Nome'
+          label=''
+          value={nome}
+          onChange={handleChange}
+        />
       </TableCell>
       <TableCell align='center'>
         <Checkbox id='C' checked={botaoEscolhido === 'C'} onChange={handleCheck} />
@@ -69,16 +80,24 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
       <TableCell align='center'>
         <Checkbox id='NA' checked={botaoEscolhido === 'NA'} onChange={handleCheck} />
       </TableCell>
-      <TableCell align='center'>
+      <TableCell className={classes.configPunctuation}>
         <TextField
+          fullWidth
+          multiline
+          inputProps={{ style: { textAlign: 'center' } }}
           name='PT'
           label=''
           value={pontuacao.toString()}
           onChange={handleChange}
         />
       </TableCell>
-      <TableCell align='center'>
+      <TableCell className={classes.configComentary}>
         <TextField
+          fullWidth
+          multiline
+          inputProps={{
+            style: { textAlign: 'justify', fontFamily: 'OpenSans' },
+          }}
           name='Comentario'
           label=''
           value={comentario}
@@ -87,19 +106,27 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
       </TableCell>
       {!isEditing ? (
         <TableCell>
-          <IconButton color='inherit' onClick={handleEdit}>
+          <IconButton
+            color='inherit'
+            style={{ display: 'block', margin: 'auto' }}
+            onClick={handleEdit}
+          >
             <EditRounded />
           </IconButton>
         </TableCell>
       ) : (
         <TableCell>
-          <IconButton color='inherit' onClick={handleEdit}>
+          <IconButton
+            color='inherit'
+            style={{ display: 'block', margin: 'auto' }}
+            onClick={handleEdit}
+          >
             <DoneRounded />
           </IconButton>
         </TableCell>
       )}
       <TableCell>
-        <IconButton color='inherit' >
+        <IconButton color='inherit' style={{ display: 'block', margin: 'auto' }}>
           <DeleteRounded />
         </IconButton>
       </TableCell>

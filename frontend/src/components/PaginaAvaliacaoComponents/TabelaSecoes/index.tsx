@@ -1,37 +1,40 @@
 import {
+  Checkbox,
   Paper,
   Table,
+  TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
-  TableBody,
-  Checkbox,
 } from '@material-ui/core'
 import React, { useState } from 'react'
-import { Secao } from '../../../types/Avaliacao'
+
 import { LinhaTabela } from '../LinhaTabela'
+import { Secao } from '../../../types/Avaliacao'
+import { useStyles } from './styles'
 
 type Props = {
   secao: Secao
 }
 
 export function TabelaSecoes({ secao }: Props): React.ReactElement {
+  const classes = useStyles()
   return (
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell align='center'>Nª</TableCell>
-            <TableCell align='center'>Nome</TableCell>
-            <TableCell align='center'>C</TableCell>
-            <TableCell align='center'>PC</TableCell>
-            <TableCell align='center'>NC</TableCell>
-            <TableCell align='center'>NA</TableCell>
-            <TableCell align='center'>PT</TableCell>
-            <TableCell align='center'>Comentário</TableCell>
-            <TableCell align='center'>Editar</TableCell>
-            <TableCell align='center'>Remover</TableCell>
+            <TableCell className={classes.designHeader}>Nº</TableCell>
+            <TableCell className={classes.designHeader}>Nome</TableCell>
+            <TableCell className={classes.designHeader}>C</TableCell>
+            <TableCell className={classes.designHeader}>PC</TableCell>
+            <TableCell className={classes.designHeader}>NC</TableCell>
+            <TableCell className={classes.designHeader}>NA</TableCell>
+            <TableCell className={classes.designHeader}>PT</TableCell>
+            <TableCell className={classes.designHeader}>Comentário</TableCell>
+            <TableCell className={classes.designHeader}>Editar</TableCell>
+            <TableCell className={classes.designHeader}>Excluir</TableCell>
           </TableRow>
         </TableHead>
 

@@ -4,10 +4,10 @@ export const useStyles = makeStyles((theme) => ({
   /* background geral */
   backgroundAvaliacao: {
     borderRadius: '12px',
-    marginBottom: '3%',
     marginTop: '3%',
     marginLeft: '5%',
     marginRight: '5%',
+    marginBottom: '3%',
     backgroundColor: '#D6F0C8',
     border: '6px solid #175215',
   },
@@ -109,7 +109,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: '35px',
   },
 
-  /* syle dos botoes */
+  /* style dos botoes */
   gridButton: {
     justifyContent: 'center',
     display: 'flex',
@@ -118,6 +118,12 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: '#D6F0C8',
     color: '#FFFFF2',
     fontWeight: 'bold',
-    fontFamily: 'sanserif',
+    fontFamily: 'OpenSans',
+  },
+
+  /* style do botão de adicionar */
+  addBotton: {
+    textAlign: 'left',
+    color: theme.palette.primary.main,
   },
 }))

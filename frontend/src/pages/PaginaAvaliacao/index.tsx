@@ -1,6 +1,7 @@
-import { Box, Grid, Tab, Tabs } from '@material-ui/core'
+import { Box, Button, Grid, IconButton, Tab, Tabs } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 
+import { AddCircleRounded } from '@material-ui/icons'
 import { Avaliacao } from '../../types/Avaliacao'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TabelaSecoes } from '../../components/PaginaAvaliacaoComponents/TabelaSecoes'
@@ -74,6 +75,10 @@ export function PaginaAvaliacao(): React.ReactElement {
     bancoGet()
   }, [])
 
+  const handleAdd = () => {
+    console.log('Teste')
+  }
+
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
@@ -141,6 +146,17 @@ export function PaginaAvaliacao(): React.ReactElement {
                 ))}
               </Tabs>
             </Box>
+          </Grid>
+          {/* Botão de adicionar */}
+          <Grid className={classes.addBotton}>
+            <Button
+              color='inherit'
+              variant='outlined'
+              startIcon={<AddCircleRounded />}
+              onClick={handleAdd}
+            >
+              Adicionar
+            </Button>
           </Grid>
           {/* a própria tabela */}
           <TabelaSecoes secao={avaliacao.secoes[idSecao]} />
