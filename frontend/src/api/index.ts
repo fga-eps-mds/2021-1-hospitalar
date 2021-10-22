@@ -24,7 +24,7 @@ export const api = axios.create({
 })
 
 export const authApi = axios.create({
-  baseURL: process.env.REACT_APP_AUTH_API_URL,
+  baseURL: process.env.REACT_APP_AUTH_API_URL,  // 'http://localhost:3333/auth/',
   xsrfHeaderName: 'X-CSRFTOKEN',
   xsrfCookieName: 'csrftoken',
 })

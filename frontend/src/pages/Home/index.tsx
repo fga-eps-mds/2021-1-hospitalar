@@ -37,31 +37,33 @@ export function Home(): React.ReactElement {
         },
       })
 
-      console.log(response.data)
+      if(response.data.admin === true) history.push('/gerenciador')
+
+      // console.log(response.data.admin)
     } catch (error) {
       console.error(error)
     }
   }
 
   //  async function handleLogout() {
-  //    try {
-  //      const response = await authApi.post('logout/', {
-  //        headers: {
-  //          Authorization: `Token ${token}`,
-  //        },
-  //      })
-  // console.log(response.data)
-  // setTeste('Hello')
-  //    } catch (error) {
-  //      console.error(error)
-  //    }
-  //  }
+    //  try {
+      //  const response = await authApi.get('logout')// , {
+          // headers: {
+            // Authorization: `Token ${token}`,
+          // },
+        // })
+
+      //  if(response.data !== null) history.push('/')
+  
+     // } catch (error) {
+      //  console.error(error)
+     // }
+    // }
 
   function handleLogout() {
     logout()
     if (user === null) history.push('/')
   }
-  // console.log(teste)
 
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
