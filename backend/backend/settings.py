@@ -86,18 +86,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if os.getenv('DOCKER') == 'FALSE':
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('LOCAL_DATABASE_NAME'),
-            'USER': os.getenv('LOCAL_USER_NAME'),
-            'PASSWORD': os.getenv('LOCAL_PASSWORD'),
-            'HOST': os.getenv('LOCAL_HOST'),
-            'PORT': os.getenv('LOCAL_PORT'),
-        }
-    }
-else:
+if os.getenv('DOCKER') == 'TRUE':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -107,6 +96,15 @@ else:
             'PORT': os.getenv('PORT'),
         }
     }
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'database/dev_db.sqlite',
+        }
+    }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
