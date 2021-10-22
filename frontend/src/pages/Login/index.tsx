@@ -1,6 +1,6 @@
 import { Grid, TextField, Typography } from '@material-ui/core'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import React, { useState  , useEffect , useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import logo from '../../assets/logo_cover.png'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
@@ -8,11 +8,17 @@ import { api } from '../../api'
 import AuthContext from '../../context/auth'
 
 export function Login(): React.ReactElement {
-  const [email , setEmail] = useState('')
-  const [senha , setSenha] = useState('')
-  const [erroStatus , setErroStatus] = useState(false)
-  const [usuario, setUsuario] = useState({ "name": "" , "email": "" , "tipo": "" , "funcao": "" , "organizacao": ""}) 
-  
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [erroStatus, setErroStatus] = useState(false)
+  const [usuario, setUsuario] = useState({
+    name: '',
+    email: '',
+    tipo: '',
+    funcao: '',
+    organizacao: '',
+  })
+
   const loginData = useContext(AuthContext)
 
   // console.log(signed)
@@ -24,56 +30,51 @@ export function Login(): React.ReactElement {
 
   //  function loginApi(){
   //  useEffect(() => {
-    //  teste()
-    //  }, [])
+  //  teste()
+  //  }, [])
 
-
-  function emailEsenhaExiste(){
-    if(email && senha){
+  function emailEsenhaExiste() {
+    if (email && senha) {
       status = true
       setErroStatus(false)
-    }else{
+    } else {
       status = false
-      setErroStatus(true)
-    }
-  } 
-
-  function verifica(){
-    emailEsenhaExiste()
-    if(status === true)
-    {
-      if(email.match(/@/) &&  email.match(/.com/)){
-        status = true
-        setErroStatus(false)
-      }else{
-        status = false
-        setErroStatus(true)
-      }
-    }else{
-      status = false 
       setErroStatus(true)
     }
   }
 
-  function handleSubmit(){
-    verifica()
-    if(status === true){
-      loginData.signIn(email , senha)
-    }else{
+  function verifica() {
+    emailEsenhaExiste()
+    if (status === true) {
+      if (email.match(/@/) && email.match(/.com/)) {
+        status = true
+        setErroStatus(false)
+      } else {
+        status = false
+        setErroStatus(true)
+      }
+    } else {
       status = false
       setErroStatus(true)
-      alert("Dados inválidos, tente novamente")
-      console.log(erroStatus)
+    }
+  }
+
+  function handleSubmit() {
+    verifica()
+    if (status === true) {
+      loginData.signIn(email, senha)
+    } else {
+      status = false
+      setErroStatus(true)
+      alert('Dados inválidos, tente novamente')
     }
   }
 
   useEffect(() => {
-
     // console.log(loginData.user)
-  if ( loginData.user !== null) history.push('/home')
+    if (loginData.user !== null) history.push('/home')
   }, [loginData])
   //  console.log(localStorage.getItem('usuario'))
-  
 
   return (
     <>
@@ -111,8 +112,19 @@ export function Login(): React.ReactElement {
                 {' '}
                 LOGIN{' '}
               </Typography>
-              <TextField label='Email' error={erroStatus} className={classes.emailText}  onChange={(e) => setEmail(e.target.value)}/>
-              <TextField label='Senha' error={erroStatus} type='password' className={classes.senhaText} onChange={(e) => setSenha(e.target.value)}/>
+              <TextField
+                label='Email'
+                error={erroStatus}
+                className={classes.emailText}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <TextField
+                label='Senha'
+                error={erroStatus}
+                type='password'
+                className={classes.senhaText}
+                onChange={(e) => setSenha(e.target.value)}
+              />
               <Button onClick={() => handleSubmit()}> ENTRAR </Button>
             </Grid>
           </Grid>

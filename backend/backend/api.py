@@ -13,6 +13,5 @@ from models.Usuario.views import UsuarioView
 def create_api():
     router = routers.DefaultRouter()
     router.register(r'avaliacao', AvaliacaoView)
-    router.register(r'usuario', UsuarioView)
-    # router.register(r'auth', LoginView)
+    
     return router

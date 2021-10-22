@@ -23,6 +23,14 @@ export const api = axios.create({
   xsrfCookieName: 'csrftoken',
 })
 
+export const authApi = axios.create({
+  baseURL: process.env.REACT_APP_AUTH_API_URL,
+  xsrfHeaderName: 'X-CSRFTOKEN',
+  xsrfCookieName: 'csrftoken',
+})
+
+
+
 /**
  * Função que faz uma requisição ao backend para gerar um pdf e retorna ao front como um download
  * @param hospitalName O nome do hospital para nomear o pdf
