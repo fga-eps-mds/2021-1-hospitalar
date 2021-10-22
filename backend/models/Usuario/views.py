@@ -1,36 +1,72 @@
-from django.http import request, response
-from rest_framework import serializers, viewsets
-from rest_framework.decorators import permission_classes
-from .models import Usuario
-from django.shortcuts import render , HttpResponse
-from .serializers import UsuarioSerializer
-from django.http import JsonResponse
-from rest_framework.parsers import JSONParser
-from rest_framework.permissions import AllowAny
-from django.contrib.auth import authenticate
+from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from knox.models import AuthToken
+from .serializers import LoginSerializer, UsuarioSerializer, RegistroSerializer, RegistroAdminSerializer
 
 
-# Create your views here
+class RegistrarView(generics.GenericAPIView):
+    serializer_class = RegistroSerializer
 
-class UsuarioView(viewsets.ModelViewSet):
+    def post(self, request):
+        serializer = self.get_serializer(data=request.data)
+
+        serializer.is_valid(raise_exception=True)
+
+        user = serializer.save()
+
+        userJSON = UsuarioSerializer(
+            user,
+            context=self.get_serializer_context()
+        )
+
+        return Response(userJSON.data)
+
+
+class RegistrarAdminView(generics.GenericAPIView):
+    serializer_class = RegistroAdminSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+
+        serializer.is_valid(raise_exception=True)
+
+        user = serializer.save()
+
+        userJSON = UsuarioSerializer(
+            user,
+            context=self.get_serializer_context()
+        )
+
+        return Response(userJSON.data)
+
+
+class LoginView(generics.GenericAPIView):
+    serializer_class = LoginSerializer
+
+    def post(self, request):
+        serializer = self.get_serializer(data=request.data)
+
+        serializer.is_valid(raise_exception=True)
+
+        user = serializer.validated_data
+
+        userJSON = UsuarioSerializer(
+            user,
+            context=self.get_serializer_context()
+        )
+
+        token = AuthToken.objects.create(user)[1]
+
+        return Response({
+            'user': userJSON.data,
+            'token': token
+        })
+
+
+class UsuarioView(generics.RetrieveAPIView):
+    permission_classes = (IsAuthenticated,)
     serializer_class = UsuarioSerializer
-    queryset = Usuario.objects.all()
 
-    def usuarios_list(request):
-
-        if request.method == 'GET':
-            usuario = Usuario.objects.all()
-            serializer = UsuarioSerializer(usuario, many=True)
-            return JsonResponse(serializer.data, safe=False)
-        elif request.method == 'POST':
-            data = JSONParser().parse(request)
-            serializer = UsuarioSerializer(data=data)
-            if serializer.is_valid():
-                serializer.save()
-                return JsonResponse(serializer.data, safe=False)
-
-
-
-
-
-
+    def get_object(self):
+        return self.request.user

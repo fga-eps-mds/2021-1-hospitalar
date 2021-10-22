@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: 'postgres:11'
+    environment:
+      - 'POSTGRES_HOST_AUTH_METHOD=trust'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+  web:
+    build: .
+    command: bash scripts/docker_start_web.sh
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
