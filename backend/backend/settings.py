@@ -46,19 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'models.Avaliacao',
-    'models.Usuario'
+    'models.Avaliacao'
 ]
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
-    ],
-      'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ]
-}
-
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -94,42 +83,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-'''
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'datatest2',
-        'CLIENT': {
-            'host': 'mongodb+srv://deploy:JryTADr3QAghyD4k@cluster0.uekop.mongodb.net/datatest2?retryWrites=true&w=majority',
-            'name': 'datatest2',
-            'authMechanism': 'SCRAM-SHA-1'
-        }
-    }
-}
-'''
-
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'projeto-hospitalar',
     }
 }
-
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'projeto-hospitalar',
-        'CLIENT': {
-            'host': 'db-mongo',
-            'port': 27017,
-            'username': 'root',
-            'password': 'example'
-        }
-    }
-}
-'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
