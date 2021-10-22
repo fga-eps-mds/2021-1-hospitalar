@@ -10,9 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from djongo.operations import DatabaseOperations
-from djongo.base import DatabaseWrapper
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=$k*7pjbc3pb@9eg7258e!*#&gue@li!_d7au)mla$uu8$#8+3'
+SECRET_KEY = os.getenv('DEVELOP_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,12 +85,28 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'projeto-hospitalar',
+
+if os.getenv('DOCKER') == 'FALSE':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('LOCAL_DATABASE_NAME'),
+            'USER': os.getenv('LOCAL_USER_NAME'),
+            'PASSWORD': os.getenv('LOCAL_PASSWORD'),
+            'HOST': os.getenv('LOCAL_HOST'),
+            'PORT': os.getenv('LOCAL_PORT'),
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('DATABASE_NAME'),
+            'USER': os.getenv('USER_NAME'),
+            'HOST': os.getenv('HOST'),
+            'PORT': os.getenv('PORT'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -136,14 +154,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
+    os.getenv('REACT_APP_URL')
 ]
-
-
-class PatchedDatabaseOperations(DatabaseOperations):
-
-    def conditional_expression_supported_in_where_clause(self, expression):
-        return False
-
-
-DatabaseWrapper.ops_class = PatchedDatabaseOperations
