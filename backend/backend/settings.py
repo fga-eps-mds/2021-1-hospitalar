@@ -93,34 +93,6 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-<< << << < HEAD
-
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'datatest2',
-        'CLIENT': {
-            'host': 'mongodb+srv://deploy:JryTADr3QAghyD4k@cluster0.uekop.mongodb.net/datatest2?retryWrites=true&w=majority',
-            'name': 'datatest2',
-            'authMechanism': 'SCRAM-SHA-1'
-        }
-    }
-}
-
-'''
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'projeto-hospitalar',
-    }
-}
-'''
-== == == =
->>>>>> > study/testando-implementação-postgreesql
-
-
 if os.getenv('DOCKER') == 'TRUE':
     DATABASES = {
         'default': {
