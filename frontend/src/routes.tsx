@@ -9,8 +9,9 @@ import { NovaAvaliacao } from './pages/NovaAvaliacao'
 import { PaginaAddItem } from './pages/PaginaAddItem'
 import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
 import { PreVisualizarRelatorio } from './pages/PreVisualizarRelatorio'
+import { Gerenciador } from './pages/Gerenciador'
 import React from 'react'
-import { Template } from './components/GlobalComponents/Template'
+//  import { Template } from './components/GlobalComponents/Template'
 
 /**
  * Rotas do browser.
@@ -31,6 +32,7 @@ export function Routes(): React.ReactElement {
         <Route exact path='/gerarRelatorio' component={GerarRelatorio} />
         <Route exact path='/NovaAvaliacao' component={NovaAvaliacao} />
         <Route exact path='/PreVisualizar' component={PreVisualizarRelatorio} />
+        <Route exact path='/Gerenciador' component={Gerenciador} />
       </Switch>
     </BrowserRouter>
   )

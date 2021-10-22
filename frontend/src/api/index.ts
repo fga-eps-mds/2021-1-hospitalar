@@ -18,7 +18,7 @@ import axios from 'axios'
  * @see https://github.com/axios/axios
  */
 export const api = axios.create({
-  baseURL: 'http://localhost:8000/api/',
+  baseURL: process.env.REACT_APP_API_URL,
   xsrfHeaderName: 'X-CSRFTOKEN',
   xsrfCookieName: 'csrftoken',
 })
@@ -29,7 +29,7 @@ export const api = axios.create({
  */
 export const generatePDF = (hospitalName: string) => {
   axios({
-    url: 'http://localhost:8000/api/secao/generatePDF/ ',
+    url: `${process.env.REACT_APP_API_URL}secao/generatePDF/`,
     method: 'GET',
     responseType: 'blob',
   })

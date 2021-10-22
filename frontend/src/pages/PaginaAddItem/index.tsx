@@ -10,6 +10,9 @@ import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function PaginaAddItem(): React.ReactElement {
+  /**
+   * classes usa o styles.ts
+   */
   const classes = useStyles()
 
   /**
@@ -18,6 +21,11 @@ export function PaginaAddItem(): React.ReactElement {
    */
   const history = useHistory()
 
+  /**
+   * Criando constantes (respectivamente)
+   *  useState substitui o uso de class component para criar uma variavel de estado para
+   *  Qualificacao, Avaliacao, Pontuacao, Comentarios, status e uma lista
+   */
   const [digitacaoQualificacao, setDigitacaoQualificacao] = useState('')
   const [digitacaoAvaliacao, setDigitacaoAvaliacao] = useState('')
   const [digitacaoPontuacao, setDigitacaoPontuacao] = useState('')
@@ -105,10 +113,12 @@ export function PaginaAddItem(): React.ReactElement {
   return (
     <Grid>
       <Grid container direction='column' spacing={2}>
+        {' '}
+        {/* cabeçalho */}
         <Grid item>
           <Header
             links={[
-              { texto: 'Home', link: '/' },
+              { texto: 'Home', link: '/Home' },
               { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
               { texto: 'Avaliações', link: '/avaliacao' },
               { texto: 'Relatórios', link: '/relatorio' },

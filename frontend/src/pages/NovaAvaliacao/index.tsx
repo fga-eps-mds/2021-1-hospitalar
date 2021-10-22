@@ -5,6 +5,7 @@ import Autocomplete from '@material-ui/lab/Autocomplete'
 import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { DatePicker } from '../../components/GlobalComponents/DatePicker'
+import { Header } from '../../components/GlobalComponents/Header'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import Logo from '../../assets/logo-2021-v2.png'
@@ -143,17 +144,20 @@ export function NovaAvaliacao(): React.ReactElement {
           </Grid>
         </Grid>
       </FormGroup>
+
     )
   }
 
   return (
     <Template>
+
       <Grid
         container
         direction='column'
         alignItems='flex-start'
         className={classes.container}
       >
+
         <Grid
           item
           container

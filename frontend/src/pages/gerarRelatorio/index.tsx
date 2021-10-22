@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
-
-import { generatePDF } from '../../api'
-import icon_3 from '../../assets/logo_3.svg'
-import logo_simples from '../../assets/logo_simples.png'
+import { Header } from '../../components/GlobalComponents/Header'
+import React from 'react'
 import { useStyles } from './styles'
 
 export function GerarRelatorio(): React.ReactElement {
@@ -17,32 +14,14 @@ export function GerarRelatorio(): React.ReactElement {
   return (
     <>
       <div className={classes.barraFundo} />
-      <div className={classes.iconSpace}>
-        <img className={classes.iconPerfil} src={icon_3} alt='' />
-      </div>
-      <div className={classes.barraTopo}>
-        <div className={classes.btnHome0}>
-          <a className={classes.tituloBarraTopo} href='/home'>
-            Home
-          </a>
-        </div>
-        <div className={classes.btnHome1}>
-          <a className={classes.tituloBarraTopo} href='/NovaAvaliacao/Adicao'>
-            Nova Avaliação
-          </a>
-        </div>
-        <img className={classes.imagem} src={logo_simples} alt='' />
-        <div className={classes.btnHome2}>
-          <a className={classes.tituloBarraTopo} href='/NovaAvaliacao'>
-            Avaliação
-          </a>
-        </div>
-        <div className={classes.btnHome3}>
-          <a className={classes.tituloBarraTopo} href='/relatorio'>
-            Relatório
-          </a>
-        </div>
-      </div>
+      <Header
+        links={[
+          { texto: 'Home', link: '/Home' },
+          { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+          { texto: 'Avaliações', link: '/avaliacao' },
+          { texto: 'Relatórios', link: '/relatorio' },
+        ]}
+      />
       <div className={classes.barraUm} />
       <div className={classes.barraDois}>
         <p className={classes.nomeTrab}>FAMil</p>
