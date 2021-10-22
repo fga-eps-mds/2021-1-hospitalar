@@ -1,8 +1,8 @@
-import { Box, Button, Grid, IconButton, Tab, Tabs } from '@material-ui/core'
+import { Avaliacao, Subtopico } from '../../types/Avaliacao'
+import { Box, Button, Grid, Tab, Tabs } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 
 import { AddCircleRounded } from '@material-ui/icons'
-import { Avaliacao } from '../../types/Avaliacao'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TabelaSecoes } from '../../components/PaginaAvaliacaoComponents/TabelaSecoes'
 import { api } from '../../api'
@@ -49,6 +49,7 @@ export function PaginaAvaliacao(): React.ReactElement {
    * Cria uma variável de estado de avaliações
    */
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
+  const [isEditableArray, setIsEditableArray] = useState<boolean[]>([])
 
   /**
    *  Função para ter o "get" do banco de dados
@@ -57,7 +58,10 @@ export function PaginaAvaliacao(): React.ReactElement {
     api
       .get<Avaliacao>(`avaliacao/${idAvaliacao}/`)
 
-      .then(({ data }) => setAvaliacao(data))
+      .then(({ data }) => {
+        setIsEditableArray(data.secoes[idSecao].subtopicos.map(() => false))
+        setAvaliacao(data)
+      })
       // eslint-disable-next-line no-console
       .catch(console.log)
   }
@@ -66,6 +70,54 @@ export function PaginaAvaliacao(): React.ReactElement {
    */
   const mudarSecao = (numeroSecao: number) => {
     setIdSecao(numeroSecao)
+    setIsEditableArray(avaliacao.secoes[idSecao].subtopicos.map(() => false))
+  }
+
+  const adicionarSubtopico = () => {
+    const aux = avaliacao
+    aux.secoes[idSecao].subtopicos.push({
+      nome: '',
+      status: 'NA',
+      comentario: '',
+      pontuacao: 0,
+    })
+    setAvaliacao(aux)
+    setIsEditableArray([...isEditableArray, true])
+  }
+
+  const cancelarEdicao = () => {
+    const aux = avaliacao
+    aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
+      ({ id }) => id !== undefined
+    )
+    setAvaliacao(aux)
+    setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
+  }
+
+  const handleUpdateDB = (subtopico: Subtopico) => {
+    const aux = avaliacao
+
+    aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.map((value) => {
+      if (value.id === subtopico.id) {
+        return subtopico
+      }
+      return value
+    })
+
+    // eslint-disable-next-line no-console
+    api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
+  }
+
+  const removerSubtopico = (idEscolhido: number) => {
+    const aux = avaliacao
+    aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
+      ({ id }) => id !== idEscolhido
+    )
+
+    setAvaliacao(aux)
+    setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
+    // eslint-disable-next-line no-console
+    api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
   }
 
   /**
@@ -74,10 +126,6 @@ export function PaginaAvaliacao(): React.ReactElement {
   useEffect(() => {
     bancoGet()
   }, [])
-
-  const handleAdd = () => {
-    console.log('Teste')
-  }
 
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -92,23 +140,9 @@ export function PaginaAvaliacao(): React.ReactElement {
             { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
             { texto: 'Avaliações', link: '/avaliacao' },
             { texto: 'Relatórios', link: '/relatorio' },
-          ]} />
+          ]}
+        />
       </Grid>
-      <Grid container direction='column' spacing={2}>
-        {' '}
-        {/* cabeçalho */}
-        <Grid item>
-          <Header
-            links={[
-              { texto: 'Home', link: '/Home' },
-              { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
-              { texto: 'Avaliações', link: '/avaliacao' },
-              { texto: 'Relatórios', link: '/relatorio' },
-            ]}
-          />
-        </Grid>
-      </Grid>
-
       {/* Título */}
       <Grid className={classes.titleEditarAvaliacao}>PREENCHIMENTO DA AVALIAÇÃO</Grid>
       <Grid className={classes.backgroundAvaliacao}>
@@ -150,7 +184,7 @@ export function PaginaAvaliacao(): React.ReactElement {
                 scrollButtons='auto'
                 aria-label='scrollable auto tabs example'
               >
-                {avaliacao.secoes.map((value, index) => (
+                {avaliacao.secoes.map((_, index) => (
                   <Tab label={`Seção ${index + 1}`} />
                 ))}
               </Tabs>
@@ -162,13 +196,23 @@ export function PaginaAvaliacao(): React.ReactElement {
               color='inherit'
               variant='outlined'
               startIcon={<AddCircleRounded />}
-              onClick={handleAdd}
+              onClick={adicionarSubtopico}
             >
               Adicionar
             </Button>
           </Grid>
           {/* a própria tabela */}
-          <TabelaSecoes secao={avaliacao.secoes[idSecao]} />
+          {avaliacao.secoes.map((value, index) =>
+            index === idSecao ? (
+              <TabelaSecoes
+                secao={value}
+                isEditableArray={isEditableArray}
+                handleUpdateDB={handleUpdateDB}
+                removerSubtopico={removerSubtopico}
+                cancelarEdicao={cancelarEdicao}
+              />
+            ) : null
+          )}
         </Grid>
       </Grid>
     </Grid>

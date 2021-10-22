@@ -1,5 +1,10 @@
+import {
+  CancelRounded,
+  DeleteRounded,
+  DoneRounded,
+  EditRounded,
+} from '@material-ui/icons'
 import { Checkbox, IconButton, TableCell, TableRow } from '@material-ui/core'
-import { DeleteRounded, DoneRounded, EditRounded } from '@material-ui/icons'
 import React, { useState } from 'react'
 
 import { Subtopico } from '../../../types/Avaliacao'
@@ -9,21 +14,52 @@ import { useStyles } from './styles'
 type Props = {
   index: number
   subtopico: Subtopico
+  editable: boolean
+  handleUpdateDB: (subtopico: Subtopico) => void
+  removerSubtopico: (idEscolhido: number) => void
+  cancelarEdicao: () => void
 }
 
 type Status = 'C' | 'PC' | 'NC' | 'NA'
 
-export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
+export function LinhaTabela({
+  index,
+  subtopico,
+  editable,
+  handleUpdateDB,
+  removerSubtopico,
+  cancelarEdicao,
+}: Props): React.ReactElement {
   const classes = useStyles()
   const [botaoEscolhido, setBotaoEscolhido] = useState<Status>(subtopico.status)
   const [nome, setNome] = useState<string>(subtopico.nome)
   const [pontuacao, setPontuacao] = useState<number>(subtopico.pontuacao)
   const [comentario, setComentario] = useState<string>(subtopico.comentario)
 
-  const [isEditing, setIsEditing] = useState<boolean>(false)
+  const [isEditing, setIsEditing] = useState<boolean>(editable)
 
-  const handleEdit = () => {
+  const [oldState, setOldState] = useState({
+    botaoEscolhido,
+    nome,
+    pontuacao,
+    comentario,
+  })
+
+  const toggle = () => {
+    setOldState({
+      botaoEscolhido,
+      nome,
+      pontuacao,
+      comentario,
+    })
     setIsEditing(!isEditing)
+  }
+
+  const returnState = () => {
+    setBotaoEscolhido(oldState.botaoEscolhido)
+    setNome(oldState.nome)
+    setPontuacao(oldState.pontuacao)
+    setComentario(oldState.comentario)
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -59,6 +95,7 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
       <TableCell className={classes.designNumber}> {index + 1}</TableCell>
       <TableCell className={classes.configTextFieldName}>
         <TextField
+          disabled={!isEditing}
           fullWidth
           multiline
           inputProps={{ style: { textAlign: 'justify', fontFamily: 'OpenSans' } }}
@@ -69,19 +106,40 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
         />
       </TableCell>
       <TableCell align='center'>
-        <Checkbox id='C' checked={botaoEscolhido === 'C'} onChange={handleCheck} />
+        <Checkbox
+          disabled={!isEditing}
+          id='C'
+          checked={botaoEscolhido === 'C'}
+          onChange={handleCheck}
+        />
       </TableCell>
       <TableCell align='center'>
-        <Checkbox id='PC' checked={botaoEscolhido === 'PC'} onChange={handleCheck} />
+        <Checkbox
+          disabled={!isEditing}
+          id='PC'
+          checked={botaoEscolhido === 'PC'}
+          onChange={handleCheck}
+        />
       </TableCell>
       <TableCell align='center'>
-        <Checkbox id='NC' checked={botaoEscolhido === 'NC'} onChange={handleCheck} />
+        <Checkbox
+          disabled={!isEditing}
+          id='NC'
+          checked={botaoEscolhido === 'NC'}
+          onChange={handleCheck}
+        />
       </TableCell>
       <TableCell align='center'>
-        <Checkbox id='NA' checked={botaoEscolhido === 'NA'} onChange={handleCheck} />
+        <Checkbox
+          disabled={!isEditing}
+          id='NA'
+          checked={botaoEscolhido === 'NA'}
+          onChange={handleCheck}
+        />
       </TableCell>
       <TableCell className={classes.configPunctuation}>
         <TextField
+          disabled={!isEditing}
           fullWidth
           multiline
           inputProps={{ style: { textAlign: 'center' } }}
@@ -93,6 +151,7 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
       </TableCell>
       <TableCell className={classes.configComentary}>
         <TextField
+          disabled={!isEditing}
           fullWidth
           multiline
           inputProps={{
@@ -104,14 +163,36 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
           onChange={handleChange}
         />
       </TableCell>
-      {!isEditing ? (
+      {isEditing ? (
         <TableCell>
           <IconButton
             color='inherit'
             style={{ display: 'block', margin: 'auto' }}
-            onClick={handleEdit}
+            onClick={() => {
+              handleUpdateDB({
+                id: subtopico.id,
+                nome,
+                pontuacao,
+                comentario,
+                status: botaoEscolhido,
+              })
+              toggle()
+            }}
           >
-            <EditRounded />
+            <DoneRounded />
+          </IconButton>
+          <IconButton
+            color='inherit'
+            style={{ display: 'block', margin: 'auto' }}
+            onClick={() => {
+              if (subtopico.id === undefined) {
+                cancelarEdicao()
+              }
+              returnState()
+              toggle()
+            }}
+          >
+            <CancelRounded />
           </IconButton>
         </TableCell>
       ) : (
@@ -119,14 +200,18 @@ export function LinhaTabela({ index, subtopico }: Props): React.ReactElement {
           <IconButton
             color='inherit'
             style={{ display: 'block', margin: 'auto' }}
-            onClick={handleEdit}
+            onClick={toggle}
           >
-            <DoneRounded />
+            <EditRounded />
           </IconButton>
         </TableCell>
       )}
       <TableCell>
-        <IconButton color='inherit' style={{ display: 'block', margin: 'auto' }}>
+        <IconButton
+          color='inherit'
+          style={{ display: 'block', margin: 'auto' }}
+          onClick={() => (subtopico.id ? removerSubtopico(subtopico.id) : () => {})}
+        >
           <DeleteRounded />
         </IconButton>
       </TableCell>
