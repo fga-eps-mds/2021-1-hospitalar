@@ -231,4 +231,5 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     marginTop: '0.5vh',
   },
+  grafico: {},
 }))

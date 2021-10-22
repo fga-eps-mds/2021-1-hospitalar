@@ -1,5 +1,7 @@
+import React, { useState } from 'react'
+
 import { Header } from '../../components/GlobalComponents/Header'
-import React from 'react'
+import { generatePDF } from '../../api'
 import { useStyles } from './styles'
 
 export function GerarRelatorio(): React.ReactElement {

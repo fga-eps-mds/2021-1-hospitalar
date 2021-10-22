@@ -6,7 +6,9 @@ from rest_framework.decorators import action
 from rest_framework import viewsets
 from .relatorio.printing import MyPrint
 from io import BytesIO
-
+from .geracaoGraficos.grafico import Grafico
+from rest_framework.response import Response
+from rest_framework.status import *
 # Create your views here.
 
 
@@ -37,4 +39,19 @@ class AvaliacaoView(viewsets.ModelViewSet):
         # Armazenando o PDF na resposta do servidor
         response.write(pdf)
 
+        return response
+
+    @action(methods=['get'], detail=True)
+    def geraGrafico(self, request, pk):
+        try:
+            obj_avaliacao = Avaliacao.objects.get(id=pk)
+        except:
+            return Response(status=HTTP_404_NOT_FOUND)
+
+        avaliacao_json = self.get_serializer(obj_avaliacao)
+        gerador = Grafico(avaliacao_json.data)
+        dados = gerador.gerarDados()
+        plot = gerador.gerarGrafico(dados)
+        response = HttpResponse(plot)
+        response['Content-Type'] = 'image/png'
         return response

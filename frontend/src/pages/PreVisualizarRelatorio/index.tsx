@@ -1,10 +1,15 @@
 import { Header } from '../../components/GlobalComponents/Header'
 import React from 'react'
+import { api } from '../../api'
 import { useStyles } from './styles'
 
 export function PreVisualizarRelatorio(): React.ReactElement {
   const classes = useStyles()
 
+  const generateGrafico = (path: string) => {
+    api.get('avaliacao/1/')
+    return <div />
+  }
   return (
     <>
       <div className={classes.barraFundo} />
@@ -43,6 +48,7 @@ export function PreVisualizarRelatorio(): React.ReactElement {
                   <input className={classes.entrada} />
                 </div>
               </div>
+
               <div className={classes.miniInput}>
                 <div className={classes.miniInputAcima}>
                   <p className={classes.titulo}>Código</p>
@@ -60,8 +66,11 @@ export function PreVisualizarRelatorio(): React.ReactElement {
                 </div>
               </div>
             </div>
+
             <div className={classes.coluna2}>
-              <div className={classes.plots} />
+              <div className={classes.plots}>
+                {generateGrafico('avaliacao/1/geraGrafico/')}
+              </div>
               <button type='submit' className={classes.btn}>
                 <p className={classes.textoBtn}>GERAR</p>
               </button>
