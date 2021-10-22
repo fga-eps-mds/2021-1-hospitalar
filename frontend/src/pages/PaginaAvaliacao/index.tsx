@@ -85,13 +85,22 @@ export function PaginaAvaliacao(): React.ReactElement {
    */
   return (
     <Grid>
+      <Grid item>
+        <Header
+          links={[
+            { texto: 'Home', link: '/home' },
+            { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
+            { texto: 'Avaliações', link: '/avaliacao' },
+            { texto: 'Relatórios', link: '/relatorio' },
+          ]} />
+      </Grid>
       <Grid container direction='column' spacing={2}>
         {' '}
         {/* cabeçalho */}
         <Grid item>
           <Header
             links={[
-              { texto: 'Home', link: '/' },
+              { texto: 'Home', link: '/Home' },
               { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
               { texto: 'Avaliações', link: '/avaliacao' },
               { texto: 'Relatórios', link: '/relatorio' },

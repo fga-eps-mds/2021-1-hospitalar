@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'models.Avaliacao',
+    'models.Avaliacao'
 ]
 
 MIDDLEWARE = [
@@ -86,7 +86,6 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
 if os.getenv('DOCKER') == 'FALSE':
     DATABASES = {
         'default': {
@@ -109,7 +108,6 @@ else:
         }
     }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -131,6 +129,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
+
+# AUTH_USER_MODEL = 'Usuario'
 
 LANGUAGE_CODE = 'en-us'
 
