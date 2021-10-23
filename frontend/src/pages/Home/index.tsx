@@ -20,39 +20,53 @@ export function Home(): React.ReactElement {
    * @see https://material-ui.com/components/grid/
    */
   return (
-    <><Grid container direction='column' spacing={2}>
-      <Grid item>
-        <MPHeader />
-      </Grid>
-
-    </Grid>
-    <Grid container direction='column' className={classes.centralizar} spacing={1} >
+    <>
+      <Grid container direction='column' spacing={2}>
         <Grid item>
-          <Button variant="contained" className={classes.botao} onClick={() => history.push('NovaAvaliacao')}>
+          <MPHeader />
+        </Grid>
+      </Grid>
+      <Grid container direction='column' className={classes.centralizar} spacing={1}>
+        <Grid item>
+          <Button
+            variant='contained'
+            className={classes.botao}
+            onClick={() => history.push('NovaAvaliacao')}
+          >
             Nova Avaliação
           </Button>
         </Grid>
 
-
         <Grid item>
-          <Button variant="contained" className={classes.botao} onClick={() => history.push('avaliacao')}>
+          <Button
+            variant='contained'
+            className={classes.botao}
+            onClick={() => history.push('avaliacao/1')}
+          >
             Avaliações
           </Button>
         </Grid>
 
-
         <Grid item>
-          <Button variant="contained" className={classes.botao} onClick={() => history.push('relatorio')}>
+          <Button
+            variant='contained'
+            className={classes.botao}
+            onClick={() => history.push('relatorio')}
+          >
             Relatório
           </Button>
         </Grid>
 
         <Grid item>
-          <Button variant="contained" className={classes.botao} onClick={() => history.push('gerenciador')}>
+          <Button
+            variant='contained'
+            className={classes.botao}
+            onClick={() => history.push('gerenciador')}
+          >
             Gerenciador
           </Button>
         </Grid>
-      </Grid></>
-
+      </Grid>
+    </>
   )
 }

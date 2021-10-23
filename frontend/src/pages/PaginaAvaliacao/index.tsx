@@ -61,6 +61,7 @@ export function PaginaAvaliacao(): React.ReactElement {
   }
   /**
    * Cria uma variável de estado de avaliações
+   * e uma para edição
    */
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
   const [isEditableArray, setIsEditableArray] = useState<boolean[]>([])
@@ -86,7 +87,9 @@ export function PaginaAvaliacao(): React.ReactElement {
     setIdSecao(numeroSecao)
     setIsEditableArray(avaliacao.secoes[idSecao].subtopicos.map(() => false))
   }
-
+  /**
+   * Função usada no botão de adicionar linha para adicionar um subtópico à seção
+   */
   const adicionarSubtopico = () => {
     const aux = avaliacao
     aux.secoes[idSecao].subtopicos.push({
@@ -98,12 +101,16 @@ export function PaginaAvaliacao(): React.ReactElement {
     setAvaliacao(aux)
     setIsEditableArray([...isEditableArray, true])
   }
-
+  /**
+   * função usada no botão de Salvar que salva a avaliação e manda para a home
+   */
   const salvarAvaliacao = () => {
     alert('A avaliação foi salva.')
     history.push('/Home')
   }
-
+  /**
+   * função usada para cancelar a ediçao de um subtopico
+   */
   const cancelarEdicao = () => {
     const aux = avaliacao
     aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
@@ -112,7 +119,9 @@ export function PaginaAvaliacao(): React.ReactElement {
     setAvaliacao(aux)
     setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
   }
-
+  /**
+   * função que atualiza o banco de dados
+   */
   const handleUpdateDB = (subtopico: Subtopico) => {
     const aux = avaliacao
 
@@ -126,7 +135,9 @@ export function PaginaAvaliacao(): React.ReactElement {
     // eslint-disable-next-line no-console
     api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
   }
-
+  /**
+   * função usada para remover/deletar subtopico da avaliação
+   */
   const removerSubtopico = (idEscolhido: number) => {
     const aux = avaliacao
     aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
@@ -138,7 +149,9 @@ export function PaginaAvaliacao(): React.ReactElement {
     // eslint-disable-next-line no-console
     api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
   }
-
+  /**
+   * função para adicionar seção à avaliação
+   */
   const adicionarSecao = () => {
     const aux = avaliacao
     const novaSecao: Secao = {
@@ -155,7 +168,9 @@ export function PaginaAvaliacao(): React.ReactElement {
     aux.secoes.push(novaSecao)
     api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
   }
-
+  /**
+   * função para remover seçõa de avaliação
+   */
   const removerSecao = () => {
     const aux = avaliacao
     if (aux.secoes.length === 1) {
@@ -197,6 +212,7 @@ export function PaginaAvaliacao(): React.ReactElement {
         <Grid className={classes.textData}>
           {/* data */}
           {avaliacao.data && new Date(avaliacao.data).toLocaleDateString('pt-BR')}
+          {/* botão de salvar avaliação */}
           <Button
             className={classes.salveBotton}
             color='inherit'
@@ -246,6 +262,7 @@ export function PaginaAvaliacao(): React.ReactElement {
               </Tabs>
             </Box>
           </Grid>
+          {/* botão para adicionar seção */}
           <Grid item container alignItems='center' direction='row'>
             <IconButton color='primary' onClick={adicionarSecao}>
               <AddCircleRounded />
@@ -270,7 +287,7 @@ export function PaginaAvaliacao(): React.ReactElement {
             ) : null
           )}
         </Grid>
-        {/* Botão de adicionar */}
+        {/* Botão de adicionar subtopico */}
         <Grid>
           <Box textAlign='center'>
             <Button

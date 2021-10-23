@@ -124,20 +124,20 @@ export const useStyles = makeStyles((theme) => ({
     fontFamily: 'OpenSans',
   },
 
-  /* style do botão de adicionar */
+  /* style do botão de adicionar subtopico */
   addButton: {
     marginTop: '1%',
     marginBottom: '1%',
     padding: '1%',
   },
-
+  /* style do botão de salvar avaliação */
   salveBotton: {
     padding: '1%',
     marginRight: '2%',
     border: '3.5px solid #175215',
   },
 
-  /* style botão de adicionar */
+  /* style do titulo da seção */
   titleSection: {
     fontWeight: 'bold',
     fontSize: '17.5px',
