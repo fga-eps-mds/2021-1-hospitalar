@@ -13,6 +13,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   /* texto da data */
   textData: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     backgroundColor: '#D6F0C8',
     fontFamily: 'OpenSans',
     color: '#175215',
@@ -122,15 +125,21 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   /* style do botão de adicionar */
-  addBotton: {
+  addButton: {
     marginTop: '1%',
+    marginBottom: '1%',
     padding: '1%',
-    backgroundColor: theme.palette.primary.main,
-    color: '#FFFFFF',
   },
 
-  /* style do grid: botão de adicionar */
-  gridAddBotton: {
-    backgroundColor: '#FFFFFF',
+  salveBotton: {
+    padding: '1%',
+    marginRight: '2%',
+    border: '3.5px solid #175215',
+  },
+
+  /* style botão de adicionar */
+  titleSection: {
+    fontWeight: 'bold',
+    fontSize: '17.5px',
   },
 }))

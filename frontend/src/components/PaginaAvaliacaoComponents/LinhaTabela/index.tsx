@@ -179,6 +179,12 @@ export function LinhaTabela({
             color='inherit'
             style={{ display: 'block', margin: 'auto' }}
             onClick={() => {
+              if (botaoEscolhido === 'PC' || botaoEscolhido === 'NC') {
+                if (comentario === '') {
+                  alert('Necessário preencher campo de comentário!')
+                  return
+                }
+              }
               handleUpdateDB({
                 id: subtopico.id,
                 nome,

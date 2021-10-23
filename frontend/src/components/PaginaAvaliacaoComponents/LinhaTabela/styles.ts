@@ -17,8 +17,4 @@ export const useStyles = makeStyles((theme) => ({
   configComentary: {
     width: 340,
   },
-
-  disabledButton: {
-    backgroundColor: '#000000',
-  },
 }))

@@ -1,12 +1,25 @@
-import { Avaliacao, Subtopico } from '../../types/Avaliacao'
-import { Box, Button, Grid, Tab, Tabs } from '@material-ui/core'
+import {
+  AddCircleRounded,
+  CheckCircleOutlineRounded,
+  DeleteRounded,
+} from '@material-ui/icons'
+import { Avaliacao, Secao, Subtopico } from '../../types/Avaliacao'
+import {
+  Box,
+  Button,
+  Grid,
+  IconButton,
+  Modal,
+  Tab,
+  Tabs,
+  Typography,
+} from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
+import { useHistory, useParams } from 'react-router-dom'
 
-import { AddCircleRounded } from '@material-ui/icons'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TabelaSecoes } from '../../components/PaginaAvaliacaoComponents/TabelaSecoes'
 import { api } from '../../api'
-import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
 /**
@@ -24,6 +37,7 @@ export function PaginaAvaliacao(): React.ReactElement {
    *  transforma idAvaliacao em paramentro
    */
   const classes = useStyles()
+  const history = useHistory()
   const [idSecao, setIdSecao] = useState(0)
   const { idAvaliacao } = useParams<Props>()
 
@@ -85,10 +99,15 @@ export function PaginaAvaliacao(): React.ReactElement {
     setIsEditableArray([...isEditableArray, true])
   }
 
+  const salvarAvaliacao = () => {
+    alert('A avaliação foi salva.')
+    history.push('/Home')
+  }
+
   const cancelarEdicao = () => {
     const aux = avaliacao
     aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
-      ({ id }) => id !== undefined
+      (value) => value.id !== undefined
     )
     setAvaliacao(aux)
     setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
@@ -111,13 +130,41 @@ export function PaginaAvaliacao(): React.ReactElement {
   const removerSubtopico = (idEscolhido: number) => {
     const aux = avaliacao
     aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
-      ({ id }) => id !== idEscolhido
+      (value) => value.id !== idEscolhido
     )
 
     setAvaliacao(aux)
     setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
     // eslint-disable-next-line no-console
     api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
+  }
+
+  const adicionarSecao = () => {
+    const aux = avaliacao
+    const novaSecao: Secao = {
+      topico: '',
+      subtopicos: [
+        {
+          nome: '',
+          status: 'NA',
+          comentario: '',
+          pontuacao: 0,
+        },
+      ],
+    }
+    aux.secoes.push(novaSecao)
+    api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
+  }
+
+  const removerSecao = () => {
+    const aux = avaliacao
+    if (aux.secoes.length === 1) {
+      alert('A avaliação deve possuir ao menos uma seção!')
+      return
+    }
+    aux.secoes = aux.secoes.filter((_, index) => index !== idSecao)
+    setIdSecao(0)
+    api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
   }
 
   /**
@@ -150,6 +197,15 @@ export function PaginaAvaliacao(): React.ReactElement {
         <Grid className={classes.textData}>
           {/* data */}
           {avaliacao.data && new Date(avaliacao.data).toLocaleDateString('pt-BR')}
+          <Button
+            className={classes.salveBotton}
+            color='inherit'
+            variant='outlined'
+            startIcon={<CheckCircleOutlineRounded />}
+            onClick={salvarAvaliacao}
+          >
+            Salvar
+          </Button>
         </Grid>
         <Grid className={classes.textNomeResp}>
           {/* Nome do hospital */}
@@ -190,6 +246,17 @@ export function PaginaAvaliacao(): React.ReactElement {
               </Tabs>
             </Box>
           </Grid>
+          <Grid item container alignItems='center' direction='row'>
+            <IconButton color='primary' onClick={adicionarSecao}>
+              <AddCircleRounded />
+            </IconButton>
+            <IconButton color='primary' onClick={removerSecao}>
+              <DeleteRounded />
+            </IconButton>
+            <Typography className={classes.titleSection}>
+              {avaliacao.secoes[idSecao].topico}
+            </Typography>
+          </Grid>
           {/* a própria tabela */}
           {avaliacao.secoes.map((value, index) =>
             index === idSecao ? (
@@ -204,12 +271,12 @@ export function PaginaAvaliacao(): React.ReactElement {
           )}
         </Grid>
         {/* Botão de adicionar */}
-        <Grid className={classes.gridAddBotton}>
+        <Grid>
           <Box textAlign='center'>
             <Button
-              className={classes.addBotton}
-              color='inherit'
-              variant='outlined'
+              className={classes.addButton}
+              color='primary'
+              variant='contained'
               startIcon={<AddCircleRounded />}
               onClick={adicionarSubtopico}
             >
