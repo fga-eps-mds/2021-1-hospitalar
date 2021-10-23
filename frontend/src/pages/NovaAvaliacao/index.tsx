@@ -144,20 +144,17 @@ export function NovaAvaliacao(): React.ReactElement {
           </Grid>
         </Grid>
       </FormGroup>
-
     )
   }
 
   return (
     <Template>
-
       <Grid
         container
         direction='column'
         alignItems='flex-start'
         className={classes.container}
       >
-
         <Grid
           item
           container

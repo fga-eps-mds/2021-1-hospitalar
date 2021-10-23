@@ -12,11 +12,19 @@ import { makeStyles } from '@material-ui/core'
  */
 // eslint-disable-next-line no-unused-vars
 export const useStyles = makeStyles((theme) => ({
-
-    botao: {
-        margin: '0px',
-    },
-    teste: {backgroundColor: 'black',   display:' none',},
-    teste1: {backgroundColor: 'blue',},
-    teste2: {backgroundColor: 'red',},
+  botao: {
+    margin: '0px',
+  },
+  teste: { backgroundColor: 'black', display: ' none' },
+  teste1: { backgroundColor: 'blue' },
+  teste2: { backgroundColor: 'red' },
+  input: {
+    paddingLeft: '20px',
+    paddingRight: '20px',
+    marginTop: '5px',
+    marginBottom: '5px',
+  },
+  icon: {
+    height: '30px',
+  },
 }))
