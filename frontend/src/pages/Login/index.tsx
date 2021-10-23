@@ -1,4 +1,5 @@
-import { Grid, TextField, Typography } from '@material-ui/core'
+import { Grid, TextField, Typography} from '@material-ui/core'
+import Alert from '@material-ui/lab/Alert';
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import React, { useState, useEffect, useContext } from 'react'
 import logo from '../../assets/logo_cover.png'
@@ -66,7 +67,7 @@ export function Login(): React.ReactElement {
     } else {
       status = false
       setErroStatus(true)
-      alert('Dados inválidos, tente novamente')
+       alert('Dados inválidos, tente novamente')
     }
   }
 
@@ -124,6 +125,7 @@ export function Login(): React.ReactElement {
                 onChange={(e) => setSenha(e.target.value)}
               />
               <Button onClick={() => handleSubmit()}> ENTRAR </Button>
+              
             </Grid>
           </Grid>
         </Grid>

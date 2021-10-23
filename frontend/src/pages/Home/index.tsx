@@ -37,7 +37,11 @@ export function Home(): React.ReactElement {
         },
       })
 
-      if(response.data.admin === true) history.push('/gerenciador')
+      if(response.data.admin === true){ 
+        history.push('/gerenciador')
+      }else{
+        alert("Você não tem permissão para entrar")
+      }
 
       // console.log(response.data.admin)
     } catch (error) {
