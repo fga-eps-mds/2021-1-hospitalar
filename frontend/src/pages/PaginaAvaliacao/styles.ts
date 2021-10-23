@@ -1,16 +1,17 @@
 import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles((theme) => ({
+  /* background geral */
   backgroundAvaliacao: {
     borderRadius: '12px',
-    marginBottom: '3%',
     marginTop: '3%',
     marginLeft: '5%',
     marginRight: '5%',
+    marginBottom: '3%',
     backgroundColor: '#D6F0C8',
     border: '6px solid #175215',
   },
-
+  /* texto da data */
   textData: {
     backgroundColor: '#D6F0C8',
     fontFamily: 'OpenSans',
@@ -20,6 +21,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: '20px',
   },
 
+  /* styles do nome do hospital */
   textNomeResp: {
     backgroundColor: '#D6F0C8',
     textAlign: 'center',
@@ -30,17 +32,18 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: '35px',
   },
 
+  /* label da nome */
   textNomeLabel: {
     marginLeft: '1%',
     fontWeight: 'bold',
     fontSize: '20px',
   },
-
+  /* texto da id */
   idAvaliacao: {
     marginLeft: '1%',
     fontSize: '20px',
   },
-
+  /* styles para as informações do id do hospital */
   textInfoHosp: {
     display: 'flex',
     backgroundColor: '#D6F0C8',
@@ -50,7 +53,7 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: '3%',
     fontSize: '20px',
   },
-
+  /* texto da sigla */
   textSigla: {
     display: 'flex',
     backgroundColor: '#D6F0C8',
@@ -60,19 +63,20 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: '3%',
     fontSize: '20px',
   },
-
+  /* texto da label da sigla */
   textSiglaLabel: {
     marginLeft: '1%',
     fontWeight: 'bold',
     fontSize: '20px',
   },
-
+  /* texto da sigla do hospital */
   textSiglaResp: {
     marginLeft: '1%',
     marginRight: '1%',
     fontSize: '20px',
   },
 
+  /* texto da lista de responsaveis */
   textResponsavel: {
     display: 'flex',
     backgroundColor: '#D6F0C8',
@@ -82,18 +86,20 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: '3%',
     fontSize: '20px',
   },
-
+  /* styles da label de responsaveis */
   textResponsavelLabel: {
     marginLeft: '1%',
     fontWeight: 'bold',
     fontSize: '20px',
   },
 
+  /* texto da label de responsaveis */
   textResponsavelResp: {
     marginLeft: '1%',
     fontSize: '20px',
   },
 
+  /* titulo de editar avaliação */
   titleEditarAvaliacao: {
     textAlign: 'center',
     marginTop: '1%',
@@ -103,6 +109,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: '35px',
   },
 
+  /* style dos botoes */
   gridButton: {
     justifyContent: 'center',
     display: 'flex',
@@ -111,6 +118,12 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: '#D6F0C8',
     color: '#FFFFF2',
     fontWeight: 'bold',
-    fontFamily: 'sanserif',
+    fontFamily: 'OpenSans',
+  },
+
+  /* style do botão de adicionar */
+  addBotton: {
+    textAlign: 'left',
+    color: theme.palette.primary.main,
   },
 }))
