@@ -123,7 +123,14 @@ export const useStyles = makeStyles((theme) => ({
 
   /* style do botão de adicionar */
   addBotton: {
-    textAlign: 'left',
-    color: theme.palette.primary.main,
+    marginTop: '1%',
+    padding: '1%',
+    backgroundColor: theme.palette.primary.main,
+    color: '#FFFFFF',
+  },
+
+  /* style do grid: botão de adicionar */
+  gridAddBotton: {
+    backgroundColor: '#FFFFFF',
   },
 }))

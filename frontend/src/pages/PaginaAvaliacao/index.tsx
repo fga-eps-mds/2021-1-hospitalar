@@ -190,17 +190,6 @@ export function PaginaAvaliacao(): React.ReactElement {
               </Tabs>
             </Box>
           </Grid>
-          {/* Botão de adicionar */}
-          <Grid className={classes.addBotton}>
-            <Button
-              color='inherit'
-              variant='outlined'
-              startIcon={<AddCircleRounded />}
-              onClick={adicionarSubtopico}
-            >
-              Adicionar
-            </Button>
-          </Grid>
           {/* a própria tabela */}
           {avaliacao.secoes.map((value, index) =>
             index === idSecao ? (
@@ -213,6 +202,20 @@ export function PaginaAvaliacao(): React.ReactElement {
               />
             ) : null
           )}
+        </Grid>
+        {/* Botão de adicionar */}
+        <Grid className={classes.gridAddBotton}>
+          <Box textAlign='center'>
+            <Button
+              className={classes.addBotton}
+              color='inherit'
+              variant='outlined'
+              startIcon={<AddCircleRounded />}
+              onClick={adicionarSubtopico}
+            >
+              Adicionar Linha
+            </Button>
+          </Box>
         </Grid>
       </Grid>
     </Grid>

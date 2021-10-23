@@ -88,6 +88,16 @@ export function LinhaTabela({
     ) {
       setBotaoEscolhido(event.target.id)
     }
+
+    if (event.target.id === 'C') {
+      setPontuacao(10)
+    } else if (event.target.id === 'PC') {
+      setPontuacao(5)
+    } else if (event.target.id === 'NC') {
+      setPontuacao(0)
+    } else if (event.target.id === 'NA') {
+      setPontuacao(0)
+    }
   }
 
   return (
