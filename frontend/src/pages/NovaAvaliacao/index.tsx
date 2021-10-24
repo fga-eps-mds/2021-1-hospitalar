@@ -1,5 +1,5 @@
 import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Autocomplete from '@material-ui/lab/Autocomplete'
 import { Avaliacao } from '../../types/Avaliacao'
@@ -10,22 +10,35 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import Logo from '../../assets/logo-2021-v2.png'
 import { Template } from '../../components/GlobalComponents/Template'
 import TextField from '@material-ui/core/TextField'
+import { Usuario } from '../../types/Usuario'
 import { api } from '../../api'
 import { useStyles } from './styles'
 
 export function NovaAvaliacao(): React.ReactElement {
   const classes = useStyles()
 
+  const blankUser: Usuario = {
+    username: 'null',
+    email: 'null',
+    tipo: 'null',
+    funcao: 'null',
+    organizacao: 'null',
+  }
+
   const [nomeHospital, setNomeHospital] = useState('')
   const [sigla, setSigla] = useState('')
   const [codigo, setCodigo] = useState('')
   const [data, setData] = useState<Date | null>(new Date())
+  const [users, setUsers] = useState<Usuario[]>([blankUser])
+  const [idsAvaliadores, setIdsAvaliadores] = useState('')
+
+  // Caso não precise, deletar após testes!
 
   const handleSave = () => {
     const avaliacao: Avaliacao = {
       codigo,
       nomeHospital: `${nomeHospital},${sigla}`,
-      idsAvaliadores: '',
+      idsAvaliadores,
       data: data ? data.toISOString() : new Date().toISOString(),
       configuracao: {},
       secoes: [],
@@ -39,10 +52,19 @@ export function NovaAvaliacao(): React.ReactElement {
   }
 
   const generateForm = () => {
-    const users = [
-      { name: 'User 1', id: 1994 },
-      { name: 'User 2', id: 1972 },
-    ]
+    useEffect(() => {
+      api
+        .get<Usuario[]>('usuario/')
+        .then((response) => {
+          setUsers([...response.data])
+          // eslint-disable-next-line no-console
+          console.log(response.data)
+        })
+        .catch((error) => {
+          // eslint-disable-next-line no-console
+          console.log(error)
+        })
+    }, [])
 
     return (
       <FormGroup>
@@ -59,7 +81,8 @@ export function NovaAvaliacao(): React.ReactElement {
             <Autocomplete
               multiple
               options={users}
-              getOptionLabel={(option: any) => option.name}
+              getOptionLabel={(option: any) => option.username}
+              getOptionSelected={(option: any, value) => option.id === value.id}
               renderInput={(params: any) => (
                 <TextField
                   className={classes.inputText}
@@ -69,6 +92,21 @@ export function NovaAvaliacao(): React.ReactElement {
                   placeholder='Avaliadores'
                 />
               )}
+              onChange={(event, values) => {
+                event.preventDefault()
+                let concatIds = ''
+                values.forEach((val, index) => {
+                  if (index === 0) {
+                    concatIds = concatIds.concat(val.id.toString())
+                  } else {
+                    concatIds = concatIds.concat(',', val.id.toString())
+                  }
+                })
+                setIdsAvaliadores(concatIds)
+
+                // eslint-disable-next-line no-console
+                console.log(values)
+              }}
             />
             <Button
               onClick={handleSave}

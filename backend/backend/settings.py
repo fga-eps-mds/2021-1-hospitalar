@@ -100,8 +100,12 @@ if os.getenv('DOCKER') == 'TRUE':
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'database/dev_db.sqlite',
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'mds-hospitalar',
+            'USER': 'postgres',
+            'PASSWORD': '54622',
+            'HOST': 'localhost',
+            'PORT': '5432',
         }
     }
 
