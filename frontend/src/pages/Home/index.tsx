@@ -1,10 +1,9 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 
 import AuthContext from '../../context/auth'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { MPHeader } from '../../components/GlobalComponents/MPHeader'
-import { authApi } from '../../api'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
@@ -20,27 +19,9 @@ export function Home(): React.ReactElement {
   const classes = useStyles()
   const context = useContext(AuthContext)
 
-  async function handleTeste() {
-    try {
-      const response = await authApi.get('user/', {
-        headers: {
-          Authorization: `Token ${context.token}`,
-        },
-      })
-
-      if (response.data.admin === true) {
-        history.push('/gerenciador')
-      } else {
-        alert('Você não tem permissão para entrar')
-      }
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
   async function handleLogout() {
     await context.logout()
-    history.replace('/')
+    history.replace('/login')
   }
 
   return (
@@ -86,7 +67,7 @@ export function Home(): React.ReactElement {
             variant='contained'
             className={classes.botao}
             // onClick={() => history.push('gerenciador')}
-            onClick={() => handleTeste()}
+            onClick={() => history.push('gerenciador')}
           >
             Gerenciador
           </Button>
@@ -96,7 +77,6 @@ export function Home(): React.ReactElement {
           <Button
             variant='contained'
             className={classes.botao}
-            // onClick={() => history.push('gerenciador')}
             onClick={() => handleLogout()}
           >
             Deslogar

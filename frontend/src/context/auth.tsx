@@ -7,8 +7,8 @@ interface AuthContextData {
   signed: boolean
   user: Usuario | null
   token: string | null
-  logIn(email: string, senha: string): void
-  logout(): void
+  logIn(email: string, senha: string): Promise<void>
+  logout(): Promise<void>
 }
 
 type Props = {

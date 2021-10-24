@@ -48,18 +48,13 @@ export function Login(): React.ReactElement {
     verifica()
     if (status === true) {
       await loginData.logIn(email, senha)
+      history.push('/home')
     } else {
       status = false
       setErroStatus(true)
       alert('Dados inválidos, tente novamente')
     }
   }
-
-  useEffect(() => {
-    if (loginData.user !== null) {
-      history.push('/home')
-    }
-  }, [loginData])
 
   return (
     <>
