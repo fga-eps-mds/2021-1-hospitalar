@@ -17,32 +17,4 @@ export const useStyles = makeStyles((theme) => ({
   configComentary: {
     width: 340,
   },
-
-  designDialog: {
-    border: '6px solid #175215',
-  },
-
-  textDialogTitle: {
-    fontFamily: 'OpenSans',
-  },
-
-  textDialogBox: {
-    fontFamily: 'OpenSans',
-    fontSize: '19px',
-  },
-
-  /* style do botão de adicionar subtopico */
-  dialogCancelDesign: {
-    fontFamily: 'OpenSans',
-    '&:hover': {
-      background: '#B72C2C',
-    },
-  },
-
-  dialogConfirmDesign: {
-    fontFamily: 'OpenSans',
-    '&:hover': {
-      background: '#65B639',
-    },
-  },
 }))
