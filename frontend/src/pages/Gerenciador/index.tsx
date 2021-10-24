@@ -68,11 +68,11 @@ export function Gerenciador(): React.ReactElement {
         </Grid>
 
         <Grid container className={toggleState === 1 ? classes.teste1 : classes.teste}>
-          <h1>Conteúdo 1</h1>
+          <h1> Usuários </h1>
         </Grid>
 
         <Grid container className={toggleState === 2 ? classes.teste2 : classes.teste}>
-          <h1> Conteúdo 2</h1>
+          <h1> Avaliações </h1>
         </Grid>
       </Grid>
     </>

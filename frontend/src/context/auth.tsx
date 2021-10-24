@@ -5,7 +5,7 @@ import { UserResponse, Usuario } from '../types/Usuario'
 interface AuthContextData {
   signed: boolean
   user: Usuario | null
-  token: string | ''
+  token: string | null
   signIn(email: string, senha: string): Promise<void>
   logout(): void
 }
@@ -14,7 +14,7 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData)
 
 export const AuthProvider: React.FC = ({ children }) => {
   const [user, setUser] = useState<Usuario | null>(null)
-  const [token, setToken] = useState<string>('')
+  const [token, setToken] = useState<string | null>(null)
   async function signIn(email: string, senha: string) {
     try {
       const response = await authApi.post<UserResponse>('login/', {
@@ -31,6 +31,7 @@ export const AuthProvider: React.FC = ({ children }) => {
 
   function logout() {
     setUser(null)
+    setToken(null)
   }
 
   useEffect(() => {

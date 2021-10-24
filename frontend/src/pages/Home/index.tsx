@@ -37,10 +37,10 @@ export function Home(): React.ReactElement {
         },
       })
 
-      if(response.data.admin === true){ 
+      if (response.data.admin === true) {
         history.push('/gerenciador')
-      }else{
-        alert("Você não tem permissão para entrar")
+      } else {
+        alert('Você não tem permissão para entrar')
       }
 
       // console.log(response.data.admin)
@@ -50,23 +50,41 @@ export function Home(): React.ReactElement {
   }
 
   //  async function handleLogout() {
-    //  try {
-      //  const response = await authApi.get('logout')// , {
-          // headers: {
-            // Authorization: `Token ${token}`,
-          // },
-        // })
+  //  try {
+  //  const response = await authApi.get('logout')// , {
+  // headers: {
+  // Authorization: `Token ${token}`,
+  // },
+  // })
 
-      //  if(response.data !== null) history.push('/')
-  
-     // } catch (error) {
-      //  console.error(error)
-     // }
-    // }
+  //  if(response.data !== null) history.push('/')
 
-  function handleLogout() {
-    logout()
-    if (user === null) history.push('/')
+  // } catch (error) {
+  //  console.error(error)
+  // }
+  // }
+
+  async function handleLogout() {
+    // logout()
+    // if (user === null) history.push('/')
+    try {
+      const response = await authApi.post(
+        'logout/',
+        {},
+        {
+          headers: {
+            Authorization: `Token ${token}`,
+          },
+        }
+      )
+
+      if (response.status === 204) {
+        logout()
+      }
+      // console.log(response.data.admin)
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   /**
