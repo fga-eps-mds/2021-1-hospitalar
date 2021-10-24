@@ -11,6 +11,7 @@ import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
 import { PreVisualizarRelatorio } from './pages/PreVisualizarRelatorio'
 import { Gerenciador } from './pages/Gerenciador'
 import React from 'react'
+import { BuscarAvaliacao } from './pages/BuscarAvaliacao'
 //  import { Template } from './components/GlobalComponents/Template'
 
 /**
@@ -33,6 +34,7 @@ export function Routes(): React.ReactElement {
         <Route exact path='/NovaAvaliacao' component={NovaAvaliacao} />
         <Route exact path='/PreVisualizar' component={PreVisualizarRelatorio} />
         <Route exact path='/Gerenciador' component={Gerenciador} />
+        <Route exact path='/avaliacao' component={BuscarAvaliacao} />
       </Switch>
     </BrowserRouter>
   )
