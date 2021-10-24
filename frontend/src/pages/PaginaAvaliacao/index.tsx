@@ -7,6 +7,11 @@ import { Avaliacao, Secao, Subtopico } from '../../types/Avaliacao'
 import {
   Box,
   Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
   Grid,
   IconButton,
   Tab,
@@ -26,7 +31,7 @@ import { useStyles } from './styles'
  *[tipagem] Transformando idAvaliacao em um tipo para ser um argumento
  */
 type Props = {
-  idAvaliacao: string
+  idCodigo: string
 }
 
 export function PaginaAvaliacao(): React.ReactElement {
@@ -39,7 +44,8 @@ export function PaginaAvaliacao(): React.ReactElement {
   const classes = useStyles()
   const history = useHistory()
   const [idSecao, setIdSecao] = useState(0)
-  const { idAvaliacao } = useParams<Props>()
+  const [open, setOpen] = React.useState(false)
+  const { idCodigo } = useParams<Props>()
 
   /**
    * Constroi um "objeto" do tipo Avaliação com todos os itens nulos
@@ -71,7 +77,7 @@ export function PaginaAvaliacao(): React.ReactElement {
    */
   const bancoGet = () => {
     api
-      .get<Avaliacao>(`avaliacao/${idAvaliacao}/`)
+      .get<Avaliacao>(`avaliacao/${idCodigo}/`)
 
       .then(({ data }) => {
         setIsEditableArray(data.secoes[idSecao].subtopicos.map(() => false))
@@ -108,6 +114,15 @@ export function PaginaAvaliacao(): React.ReactElement {
     alert('A avaliação foi salva.')
     history.push('/Home')
   }
+
+  const handleClickOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+  }
+
   /**
    * função usada para cancelar a ediçao de um subtopico
    */
@@ -133,7 +148,7 @@ export function PaginaAvaliacao(): React.ReactElement {
     })
 
     // eslint-disable-next-line no-console
-    api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
+    api.put(`avaliacao/${idCodigo}/`, aux).then(bancoGet).catch(console.log)
   }
   /**
    * função usada para remover/deletar subtopico da avaliação
@@ -147,7 +162,7 @@ export function PaginaAvaliacao(): React.ReactElement {
     setAvaliacao(aux)
     setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
     // eslint-disable-next-line no-console
-    api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
+    api.put(`avaliacao/${idCodigo}/`, aux).then(bancoGet).catch(console.log)
   }
   /**
    * função para adicionar seção à avaliação
@@ -180,6 +195,7 @@ export function PaginaAvaliacao(): React.ReactElement {
     aux.secoes = aux.secoes.filter((_, index) => index !== idSecao)
     setIdSecao(0)
     api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
+    setOpen(false)
   }
 
   /**
@@ -212,6 +228,19 @@ export function PaginaAvaliacao(): React.ReactElement {
         <Grid className={classes.textData}>
           {/* data */}
           {avaliacao.data && new Date(avaliacao.data).toLocaleDateString('pt-BR')}
+          {/* botão de salvar avaliação */}
+          <Grid className={classes.gridButtonSalvar}>
+            <Tooltip title='Salvar alterações e retornar' placement='top'>
+              <Button
+                className={classes.salveBotton}
+                variant='contained'
+                startIcon={<CheckCircleOutlineRounded />}
+                onClick={salvarAvaliacao}
+              >
+                Salvar
+              </Button>
+            </Tooltip>
+          </Grid>
         </Grid>
         <Grid className={classes.textNomeResp}>
           {/* Nome do hospital */}
@@ -262,31 +291,53 @@ export function PaginaAvaliacao(): React.ReactElement {
               </Tooltip>
             </Grid>
             {/* botão para remover seção */}
-            <Grid>
-              <Tooltip title='Excluir seção atual' placement='top'>
-                <IconButton color='primary' onClick={removerSecao}>
-                  <DeleteRounded />
-                </IconButton>
-              </Tooltip>
-            </Grid>
+            <Tooltip title='Excluir seção atual' placement='top'>
+              <IconButton color='primary' onClick={handleClickOpen}>
+                <DeleteRounded />
+              </IconButton>
+            </Tooltip>
+            {/* caixa de dialogo na qual pergunta se deseja confirmar ou não a exclusão da seção */}
+            <Dialog
+              open={open}
+              onClose={handleClose}
+              aria-labelledby='alert-dialog-title'
+              aria-describedby='alert-dialog-description'
+            >
+              <DialogTitle className={classes.textDialogTitle} id='alert-dialog-title'>
+                Você deseja excluir a atual seção?
+              </DialogTitle>
+              <DialogContent>
+                <DialogContentText
+                  className={classes.textDialogBox}
+                  id='alert-dialog-description'
+                >
+                  Apagando a seção você perderá todas as notas e comentários atribuídos
+                  para cada requisito.
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button
+                  className={classes.dialogCancelDesign}
+                  variant='outlined'
+                  onClick={handleClose}
+                >
+                  Cancelar
+                </Button>
+                <Button
+                  className={classes.dialogConfirmDesign}
+                  variant='outlined'
+                  onClick={removerSecao}
+                  autoFocus
+                >
+                  Confirmar
+                </Button>
+              </DialogActions>
+            </Dialog>
             {/* título da seção */}
             <Grid>
               <Typography className={classes.titleSection}>
                 {avaliacao.secoes[idSecao].topico}
               </Typography>
-            </Grid>
-            {/* botão de salvar avaliação */}
-            <Grid className={classes.gridButtonSalvarAval}>
-              <Tooltip title='Salvar alterações e retornar' placement='top'>
-                <Button
-                  className={classes.salveBotton}
-                  variant='contained'
-                  startIcon={<CheckCircleOutlineRounded />}
-                  onClick={salvarAvaliacao}
-                >
-                  Salvar
-                </Button>
-              </Tooltip>
             </Grid>
           </Grid>
           {/* a própria tabela */}
