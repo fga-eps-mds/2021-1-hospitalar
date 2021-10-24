@@ -3,12 +3,12 @@ import { makeStyles } from '@material-ui/core'
 export const useStyles = makeStyles((theme) => ({
   /* background geral */
   backgroundAvaliacao: {
+    backgroundColor: '#FFFFFF',
     borderRadius: '12px',
     marginTop: '3%',
     marginLeft: '5%',
     marginRight: '5%',
     marginBottom: '3%',
-    backgroundColor: '#D6F0C8',
     border: '6px solid #175215',
   },
   /* texto da data */
@@ -16,7 +16,6 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#D6F0C8',
     fontFamily: 'OpenSans',
     color: '#175215',
     marginTop: '2%',
@@ -26,7 +25,6 @@ export const useStyles = makeStyles((theme) => ({
 
   /* styles do nome do hospital */
   textNomeResp: {
-    backgroundColor: '#D6F0C8',
     textAlign: 'center',
     marginTop: '1%',
     fontFamily: 'OpenSans',
@@ -49,7 +47,6 @@ export const useStyles = makeStyles((theme) => ({
   /* styles para as informações do id do hospital */
   textInfoHosp: {
     display: 'flex',
-    backgroundColor: '#D6F0C8',
     fontFamily: 'OpenSans',
     color: '#175215',
     marginTop: '2%',
@@ -59,7 +56,6 @@ export const useStyles = makeStyles((theme) => ({
   /* texto da sigla */
   textSigla: {
     display: 'flex',
-    backgroundColor: '#D6F0C8',
     fontFamily: 'OpenSans',
     color: '#175215',
     marginTop: '2%',
@@ -82,7 +78,6 @@ export const useStyles = makeStyles((theme) => ({
   /* texto da lista de responsaveis */
   textResponsavel: {
     display: 'flex',
-    backgroundColor: '#D6F0C8',
     fontFamily: 'OpenSans',
     color: '#175215',
     marginTop: '2%',
@@ -114,27 +109,42 @@ export const useStyles = makeStyles((theme) => ({
 
   /* style dos botoes */
   gridButton: {
-    justifyContent: 'center',
+    justifyContent: 'left',
     display: 'flex',
     marginTop: '2%',
     marginBottom: '2%',
-    backgroundColor: '#D6F0C8',
+    marginLeft: '1%',
     color: '#FFFFF2',
     fontWeight: 'bold',
     fontFamily: 'OpenSans',
   },
 
+  /* style dos botoes */
+  gridButtonSalvarAval: {
+    marginRight: '10%',
+
+    display: 'flex',
+    color: '#175215',
+    fontSize: '20px',
+  },
+
+  /* style do botão de salvar avaliação */
+  salveBotton: {
+    borderRadius: '12px',
+    cursor: 'pointer',
+    backgroundColor: '#ADFF98',
+    fontWeight: 'bold',
+    '&:hover': {
+      background: '#E4FFDD',
+    },
+  },
+
   /* style do botão de adicionar subtopico */
   addButton: {
+    borderRadius: '12px',
     marginTop: '1%',
     marginBottom: '1%',
     padding: '1%',
-  },
-  /* style do botão de salvar avaliação */
-  salveBotton: {
-    padding: '1%',
-    marginRight: '2%',
-    border: '3.5px solid #175215',
   },
 
   /* style do titulo da seção */

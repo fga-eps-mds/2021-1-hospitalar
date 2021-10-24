@@ -9,9 +9,9 @@ import {
   Button,
   Grid,
   IconButton,
-  Modal,
   Tab,
   Tabs,
+  Tooltip,
   Typography,
 } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
@@ -212,16 +212,6 @@ export function PaginaAvaliacao(): React.ReactElement {
         <Grid className={classes.textData}>
           {/* data */}
           {avaliacao.data && new Date(avaliacao.data).toLocaleDateString('pt-BR')}
-          {/* botão de salvar avaliação */}
-          <Button
-            className={classes.salveBotton}
-            color='inherit'
-            variant='outlined'
-            startIcon={<CheckCircleOutlineRounded />}
-            onClick={salvarAvaliacao}
-          >
-            Salvar
-          </Button>
         </Grid>
         <Grid className={classes.textNomeResp}>
           {/* Nome do hospital */}
@@ -245,7 +235,7 @@ export function PaginaAvaliacao(): React.ReactElement {
           <Grid className={classes.textResponsavelResp}>{avaliacao.idsAvaliadores}</Grid>
         </Grid>
         {/* Tabela e seus componentes */}
-        <Grid className='App'>
+        <Grid>
           {/* botões para mudar de seção */}
           <Grid className={classes.gridButton}>
             <Box sx={{ maxWidth: '80%', bgcolor: '#175215', borderRadius: '12px 12px' }}>
@@ -264,15 +254,40 @@ export function PaginaAvaliacao(): React.ReactElement {
           </Grid>
           {/* botão para adicionar seção */}
           <Grid item container alignItems='center' direction='row'>
-            <IconButton color='primary' onClick={adicionarSecao}>
-              <AddCircleRounded />
-            </IconButton>
-            <IconButton color='primary' onClick={removerSecao}>
-              <DeleteRounded />
-            </IconButton>
-            <Typography className={classes.titleSection}>
-              {avaliacao.secoes[idSecao].topico}
-            </Typography>
+            <Grid>
+              <Tooltip title='Adicionar seção' placement='top'>
+                <IconButton color='primary' onClick={adicionarSecao}>
+                  <AddCircleRounded />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+            {/* botão para remover seção */}
+            <Grid>
+              <Tooltip title='Excluir seção atual' placement='top'>
+                <IconButton color='primary' onClick={removerSecao}>
+                  <DeleteRounded />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+            {/* título da seção */}
+            <Grid>
+              <Typography className={classes.titleSection}>
+                {avaliacao.secoes[idSecao].topico}
+              </Typography>
+            </Grid>
+            {/* botão de salvar avaliação */}
+            <Grid className={classes.gridButtonSalvarAval}>
+              <Tooltip title='Salvar alterações e retornar' placement='top'>
+                <Button
+                  className={classes.salveBotton}
+                  variant='contained'
+                  startIcon={<CheckCircleOutlineRounded />}
+                  onClick={salvarAvaliacao}
+                >
+                  Salvar
+                </Button>
+              </Tooltip>
+            </Grid>
           </Grid>
           {/* a própria tabela */}
           {avaliacao.secoes.map((value, index) =>
