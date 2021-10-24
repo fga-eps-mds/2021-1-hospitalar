@@ -1,11 +1,12 @@
+import React, { useContext, useEffect } from 'react'
+
+import AuthContext from '../../context/auth'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { MPHeader } from '../../components/GlobalComponents/MPHeader'
-import React, { useContext, useEffect, useState } from 'react'
+import { authApi } from '../../api'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
-import AuthContext from '../../context/auth'
-import { authApi } from '../../api'
 
 /**
  * Um componente funcional React compatível com React Hooks.
@@ -17,23 +18,13 @@ import { authApi } from '../../api'
 export function Home(): React.ReactElement {
   const history = useHistory()
   const classes = useStyles()
-  const { user, token, logout } = useContext(AuthContext)
-  const [teste, setTeste] = useState<any>()
-
-  // console.log(loginData.user)
-
-  // useEffect(() => {
-  //  const teste = user
-  //  const teste2 = token
-  //  console.log(teste)
-  //  console.log(token)
-  // }, [user])
+  const context = useContext(AuthContext)
 
   async function handleTeste() {
     try {
       const response = await authApi.get('user/', {
         headers: {
-          Authorization: `Token ${token}`,
+          Authorization: `Token ${context.token}`,
         },
       })
 
@@ -42,55 +33,16 @@ export function Home(): React.ReactElement {
       } else {
         alert('Você não tem permissão para entrar')
       }
-
-      // console.log(response.data.admin)
     } catch (error) {
       console.error(error)
     }
   }
-
-  //  async function handleLogout() {
-  //  try {
-  //  const response = await authApi.get('logout')// , {
-  // headers: {
-  // Authorization: `Token ${token}`,
-  // },
-  // })
-
-  //  if(response.data !== null) history.push('/')
-
-  // } catch (error) {
-  //  console.error(error)
-  // }
-  // }
 
   async function handleLogout() {
-    // logout()
-    // if (user === null) history.push('/')
-    try {
-      const response = await authApi.post(
-        'logout/',
-        {},
-        {
-          headers: {
-            Authorization: `Token ${token}`,
-          },
-        }
-      )
-
-      if (response.status === 204) {
-        logout()
-      }
-      // console.log(response.data.admin)
-    } catch (error) {
-      console.error(error)
-    }
+    await context.logout()
+    history.replace('/')
   }
 
-  /**
-   * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
-   * @see https://material-ui.com/components/grid/
-   */
   return (
     <>
       <Grid container direction='column' spacing={2}>

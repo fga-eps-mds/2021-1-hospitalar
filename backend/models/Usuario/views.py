@@ -3,6 +3,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from knox.models import AuthToken
 from .serializers import LoginSerializer, UsuarioSerializer, RegistroSerializer, RegistroAdminSerializer
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 
 class RegistrarView(generics.GenericAPIView):
@@ -70,3 +72,15 @@ class UsuarioView(generics.RetrieveAPIView):
 
     def get_object(self):
         return self.request.user
+
+
+class UsuarioListView(generics.ListAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = UsuarioSerializer
+    queryset = User.objects.all()
+
+
+class UsuarioDetailView(generics.RetrieveAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = UsuarioSerializer
+    queryset = User.objects.all()

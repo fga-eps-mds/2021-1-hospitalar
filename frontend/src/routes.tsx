@@ -3,14 +3,15 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { EditarItem } from './pages/EditarItem'
 import { GenerateReport } from './pages/GenerateReport'
 import { GerarRelatorio } from './pages/gerarRelatorio'
+import { Gerenciador } from './pages/Gerenciador'
 import { Home } from './pages/Home'
 import { Login } from './pages/Login'
 import { NovaAvaliacao } from './pages/NovaAvaliacao'
 import { PaginaAddItem } from './pages/PaginaAddItem'
 import { PaginaAvaliacao } from './pages/PaginaAvaliacao'
 import { PreVisualizarRelatorio } from './pages/PreVisualizarRelatorio'
-import { Gerenciador } from './pages/Gerenciador'
-import React , { useContext } from 'react'
+import React from 'react'
+
 //  import { Template } from './components/GlobalComponents/Template'
 
 /**

@@ -57,11 +57,9 @@ export function PaginaAvaliacao(): React.ReactElement {
       .then(({ data }) => setAvaliacao(data))
       // eslint-disable-next-line no-console
       .catch(console.log)
-    console.log('GET')
   }
   const bancoPut = () => {
     api.put<Avaliacao, Avaliacao>(`avaliacao/${idAvaliacao}/`, avaliacao)
-    console.log('PUT')
   }
 
   useEffect(() => {
@@ -203,7 +201,8 @@ export function PaginaAvaliacao(): React.ReactElement {
             { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
             { texto: 'Avaliações', link: '/avaliacao' },
             { texto: 'Relatórios', link: '/relatorio' },
-          ]} />
+          ]}
+        />
       </Grid>
       <Grid container direction='column' spacing={2}>
         {' '}

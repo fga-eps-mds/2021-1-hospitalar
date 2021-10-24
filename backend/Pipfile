@@ -11,7 +11,6 @@ django-rest-knox = "*"
 django-cors-headers = "*"
 psycopg2-binary = "*"
 django = "*"
-requests = "*"
 
 [dev-packages]
 autopep8 = "*"
