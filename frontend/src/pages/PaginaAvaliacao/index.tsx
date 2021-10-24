@@ -1,12 +1,25 @@
-import { Box, Button, Grid, IconButton, Tab, Tabs } from '@material-ui/core'
+import {
+  AddCircleRounded,
+  CheckCircleOutlineRounded,
+  DeleteRounded,
+} from '@material-ui/icons'
+import { Avaliacao, Secao, Subtopico } from '../../types/Avaliacao'
+import {
+  Box,
+  Button,
+  Grid,
+  IconButton,
+  Tab,
+  Tabs,
+  Tooltip,
+  Typography,
+} from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
+import { useHistory, useParams } from 'react-router-dom'
 
-import { AddCircleRounded } from '@material-ui/icons'
-import { Avaliacao } from '../../types/Avaliacao'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TabelaSecoes } from '../../components/PaginaAvaliacaoComponents/TabelaSecoes'
 import { api } from '../../api'
-import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
 /**
@@ -24,6 +37,7 @@ export function PaginaAvaliacao(): React.ReactElement {
    *  transforma idAvaliacao em paramentro
    */
   const classes = useStyles()
+  const history = useHistory()
   const [idSecao, setIdSecao] = useState(0)
   const { idAvaliacao } = useParams<Props>()
 
@@ -47,8 +61,10 @@ export function PaginaAvaliacao(): React.ReactElement {
   }
   /**
    * Cria uma variável de estado de avaliações
+   * e uma para edição
    */
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
+  const [isEditableArray, setIsEditableArray] = useState<boolean[]>([])
 
   /**
    *  Função para ter o "get" do banco de dados
@@ -57,7 +73,10 @@ export function PaginaAvaliacao(): React.ReactElement {
     api
       .get<Avaliacao>(`avaliacao/${idAvaliacao}/`)
 
-      .then(({ data }) => setAvaliacao(data))
+      .then(({ data }) => {
+        setIsEditableArray(data.secoes[idSecao].subtopicos.map(() => false))
+        setAvaliacao(data)
+      })
       // eslint-disable-next-line no-console
       .catch(console.log)
   }
@@ -66,6 +85,101 @@ export function PaginaAvaliacao(): React.ReactElement {
    */
   const mudarSecao = (numeroSecao: number) => {
     setIdSecao(numeroSecao)
+    setIsEditableArray(avaliacao.secoes[idSecao].subtopicos.map(() => false))
+  }
+  /**
+   * Função usada no botão de adicionar linha para adicionar um subtópico à seção
+   */
+  const adicionarSubtopico = () => {
+    const aux = avaliacao
+    aux.secoes[idSecao].subtopicos.push({
+      nome: '',
+      status: 'NA',
+      comentario: '',
+      pontuacao: 0,
+    })
+    setAvaliacao(aux)
+    setIsEditableArray([...isEditableArray, true])
+  }
+  /**
+   * função usada no botão de Salvar que salva a avaliação e manda para a home
+   */
+  const salvarAvaliacao = () => {
+    alert('A avaliação foi salva.')
+    history.push('/Home')
+  }
+  /**
+   * função usada para cancelar a ediçao de um subtopico
+   */
+  const cancelarEdicao = () => {
+    const aux = avaliacao
+    aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
+      (value) => value.id !== undefined
+    )
+    setAvaliacao(aux)
+    setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
+  }
+  /**
+   * função que atualiza o banco de dados
+   */
+  const handleUpdateDB = (subtopico: Subtopico) => {
+    const aux = avaliacao
+
+    aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.map((value) => {
+      if (value.id === subtopico.id) {
+        return subtopico
+      }
+      return value
+    })
+
+    // eslint-disable-next-line no-console
+    api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
+  }
+  /**
+   * função usada para remover/deletar subtopico da avaliação
+   */
+  const removerSubtopico = (idEscolhido: number) => {
+    const aux = avaliacao
+    aux.secoes[idSecao].subtopicos = aux.secoes[idSecao].subtopicos.filter(
+      (value) => value.id !== idEscolhido
+    )
+
+    setAvaliacao(aux)
+    setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
+    // eslint-disable-next-line no-console
+    api.put(`avaliacao/${idAvaliacao}/`, aux).then(bancoGet).catch(console.log)
+  }
+  /**
+   * função para adicionar seção à avaliação
+   */
+  const adicionarSecao = () => {
+    const aux = avaliacao
+    const novaSecao: Secao = {
+      topico: '',
+      subtopicos: [
+        {
+          nome: '',
+          status: 'NA',
+          comentario: '',
+          pontuacao: 0,
+        },
+      ],
+    }
+    aux.secoes.push(novaSecao)
+    api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
+  }
+  /**
+   * função para remover seçõa de avaliação
+   */
+  const removerSecao = () => {
+    const aux = avaliacao
+    if (aux.secoes.length === 1) {
+      alert('A avaliação deve possuir ao menos uma seção!')
+      return
+    }
+    aux.secoes = aux.secoes.filter((_, index) => index !== idSecao)
+    setIdSecao(0)
+    api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
   }
 
   /**
@@ -74,10 +188,6 @@ export function PaginaAvaliacao(): React.ReactElement {
   useEffect(() => {
     bancoGet()
   }, [])
-
-  const handleAdd = () => {
-    console.log('Teste')
-  }
 
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -92,23 +202,9 @@ export function PaginaAvaliacao(): React.ReactElement {
             { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
             { texto: 'Avaliações', link: '/avaliacao' },
             { texto: 'Relatórios', link: '/relatorio' },
-          ]} />
+          ]}
+        />
       </Grid>
-      <Grid container direction='column' spacing={2}>
-        {' '}
-        {/* cabeçalho */}
-        <Grid item>
-          <Header
-            links={[
-              { texto: 'Home', link: '/Home' },
-              { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
-              { texto: 'Avaliações', link: '/avaliacao' },
-              { texto: 'Relatórios', link: '/relatorio' },
-            ]}
-          />
-        </Grid>
-      </Grid>
-
       {/* Título */}
       <Grid className={classes.titleEditarAvaliacao}>PREENCHIMENTO DA AVALIAÇÃO</Grid>
       <Grid className={classes.backgroundAvaliacao}>
@@ -139,7 +235,7 @@ export function PaginaAvaliacao(): React.ReactElement {
           <Grid className={classes.textResponsavelResp}>{avaliacao.idsAvaliadores}</Grid>
         </Grid>
         {/* Tabela e seus componentes */}
-        <Grid className='App'>
+        <Grid>
           {/* botões para mudar de seção */}
           <Grid className={classes.gridButton}>
             <Box sx={{ maxWidth: '80%', bgcolor: '#175215', borderRadius: '12px 12px' }}>
@@ -150,25 +246,75 @@ export function PaginaAvaliacao(): React.ReactElement {
                 scrollButtons='auto'
                 aria-label='scrollable auto tabs example'
               >
-                {avaliacao.secoes.map((value, index) => (
+                {avaliacao.secoes.map((_, index) => (
                   <Tab label={`Seção ${index + 1}`} />
                 ))}
               </Tabs>
             </Box>
           </Grid>
-          {/* Botão de adicionar */}
-          <Grid className={classes.addBotton}>
-            <Button
-              color='inherit'
-              variant='outlined'
-              startIcon={<AddCircleRounded />}
-              onClick={handleAdd}
-            >
-              Adicionar
-            </Button>
+          {/* botão para adicionar seção */}
+          <Grid item container alignItems='center' direction='row'>
+            <Grid>
+              <Tooltip title='Adicionar seção' placement='top'>
+                <IconButton color='primary' onClick={adicionarSecao}>
+                  <AddCircleRounded />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+            {/* botão para remover seção */}
+            <Grid>
+              <Tooltip title='Excluir seção atual' placement='top'>
+                <IconButton color='primary' onClick={removerSecao}>
+                  <DeleteRounded />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+            {/* título da seção */}
+            <Grid>
+              <Typography className={classes.titleSection}>
+                {avaliacao.secoes[idSecao].topico}
+              </Typography>
+            </Grid>
+            {/* botão de salvar avaliação */}
+            <Grid className={classes.gridButtonSalvarAval}>
+              <Tooltip title='Salvar alterações e retornar' placement='top'>
+                <Button
+                  className={classes.salveBotton}
+                  variant='contained'
+                  startIcon={<CheckCircleOutlineRounded />}
+                  onClick={salvarAvaliacao}
+                >
+                  Salvar
+                </Button>
+              </Tooltip>
+            </Grid>
           </Grid>
           {/* a própria tabela */}
-          <TabelaSecoes secao={avaliacao.secoes[idSecao]} />
+          {avaliacao.secoes.map((value, index) =>
+            index === idSecao ? (
+              <TabelaSecoes
+                secao={value}
+                isEditableArray={isEditableArray}
+                handleUpdateDB={handleUpdateDB}
+                removerSubtopico={removerSubtopico}
+                cancelarEdicao={cancelarEdicao}
+              />
+            ) : null
+          )}
+        </Grid>
+        {/* Botão de adicionar subtopico */}
+        <Grid>
+          <Box textAlign='center'>
+            <Button
+              className={classes.addButton}
+              color='primary'
+              variant='contained'
+              startIcon={<AddCircleRounded />}
+              onClick={adicionarSubtopico}
+            >
+              Adicionar Linha
+            </Button>
+          </Box>
         </Grid>
       </Grid>
     </Grid>

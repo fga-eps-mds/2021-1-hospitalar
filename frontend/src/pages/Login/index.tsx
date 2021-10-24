@@ -1,67 +1,66 @@
 import { Grid, TextField, Typography } from '@material-ui/core'
+import React, { useEffect, useState } from 'react'
 
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import React, { useState  , useEffect } from 'react'
-import logo from '../../assets/logo_cover.png'
-import { useHistory } from 'react-router-dom'
-import { useStyles } from './styles'
 import { api } from '../../api'
+import logo from '../../assets/logo_cover.png'
+import { useStyles } from './styles'
 
 export function Login(): React.ReactElement {
-
-  const [email , setEmail] = useState('')
-  const [senha , setSenha] = useState('')
-  const [usuario, setUsuario] = useState({ "name": "" , "email": "" , "tipo": "" , "funcao": "" , "organizacao": ""}) 
-
-
-  const history = useHistory()
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [usuario, setUsuario] = useState({
+    name: '',
+    email: '',
+    tipo: '',
+    funcao: '',
+    organizacao: '',
+  })
 
   const classes = useStyles()
 
   let status = true
 
- 
-
   //  function loginApi(){
   //  useEffect(() => {
-    //  teste()
-    //  }, [])
+  //  teste()
+  //  }, [])
 
-
-  function emailEsenhaExiste(){
-    if(email && senha){
+  function emailEsenhaExiste() {
+    if (email && senha) {
       status = true
-    }else{
+    } else {
       status = false
     }
-  } 
+  }
 
-  function verifica(){
+  function verifica() {
     emailEsenhaExiste()
-    if(status === true)
-    {
-      if(email.match(/@/) &&  email.match(/.com/)){
+    if (status === true) {
+      if (email.match(/@/) && email.match(/.com/)) {
         status = true
-      }else{
+      } else {
         status = false
       }
-    }else{
-      status = false 
+    } else {
+      status = false
     }
   }
 
-  function handleSubmit(){
+  function handleSubmit() {
     verifica()
-    if(status === true){
-    api.post("authenticate", {
-        email,
-        password:senha
-      })
-      .then((response) => setUsuario(response.data.user))
-      .catch((err) => console.log(err))
+    if (status === true) {
+      api
+        .post('authenticate', {
+          email,
+          password: senha,
+        })
+        .then((response) => setUsuario(response.data.user))
+        // eslint-disable-next-line no-console
+        .catch((err) => console.log(err))
     }
   }
-  
+
   useEffect(() => {
     console.log(`Bem-Vindo ${usuario.name}`)
   }, [usuario])
@@ -102,8 +101,17 @@ export function Login(): React.ReactElement {
                 {' '}
                 LOGIN{' '}
               </Typography>
-              <TextField label='Email' className={classes.emailText}  onChange={(e) => setEmail(e.target.value)}/>
-              <TextField label='Senha' type='password' className={classes.senhaText} onChange={(e) => setSenha(e.target.value)}/>
+              <TextField
+                label='Email'
+                className={classes.emailText}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <TextField
+                label='Senha'
+                type='password'
+                className={classes.senhaText}
+                onChange={(e) => setSenha(e.target.value)}
+              />
               <Button onClick={() => handleSubmit()}> ENTRAR </Button>
             </Grid>
           </Grid>

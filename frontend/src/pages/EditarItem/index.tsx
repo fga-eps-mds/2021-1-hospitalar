@@ -60,11 +60,12 @@ export function EditarItem(): React.ReactElement {
       .then(({ data }) => setAvaliacao(data))
       // eslint-disable-next-line no-console
       .catch(console.log)
-    console.log('GET')
   }
   const bancoPut = () => {
-    api.put<Avaliacao, Avaliacao>(`avaliacao/${idAvaliacao}/`, avaliacao)
-    console.log('PUT')
+    api
+      .put<Avaliacao, Avaliacao>(`avaliacao/${idAvaliacao}/`, avaliacao)
+      // eslint-disable-next-line no-console
+      .catch(console.log)
   }
 
   useEffect(() => {
