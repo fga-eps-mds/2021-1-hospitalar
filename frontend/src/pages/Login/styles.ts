@@ -50,5 +50,5 @@ export const useStyles = makeStyles((theme) => ({
   senhaText: {
     width: '18vw',
     paddingBottom: '30px',
-  },
+  }
 }))
