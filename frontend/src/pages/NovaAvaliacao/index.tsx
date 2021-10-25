@@ -1,6 +1,8 @@
+import { CONFIG, api } from '../../api'
 import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
+import AuthContext from '../../context/auth'
 import Autocomplete from '@material-ui/lab/Autocomplete'
 import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
@@ -10,11 +12,11 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import Logo from '../../assets/logo-2021-v2.png'
 import { Template } from '../../components/GlobalComponents/Template'
 import TextField from '@material-ui/core/TextField'
-import { api } from '../../api'
 import { useStyles } from './styles'
 
 export function NovaAvaliacao(): React.ReactElement {
   const classes = useStyles()
+  const context = useContext(AuthContext)
 
   const [nomeHospital, setNomeHospital] = useState('')
   const [sigla, setSigla] = useState('')
@@ -31,7 +33,7 @@ export function NovaAvaliacao(): React.ReactElement {
       secoes: [],
     }
 
-    api.post('avaliacao/', avaliacao).catch((error) => {
+    api.post('avaliacao/', avaliacao, CONFIG(context.token)).catch((error) => {
       // eslint-disable-next-line no-console
       console.log(error)
       alert('O código dessa avaliação já está sendo usado')

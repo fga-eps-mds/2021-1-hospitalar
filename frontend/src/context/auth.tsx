@@ -31,20 +31,23 @@ export function AuthProvider({ children }: Props): React.ReactElement {
   const [token, setToken] = useState<string | null>(localStorage.getItem('token'))
 
   const logIn = async (email: string, senha: string) => {
-    const response = await authApi
-      .post<UserResponse>('login/', {
-        email,
-        password: senha,
-      })
-      .then(({ data, status }) => {
-        const obj = { data, status }
-        return obj
-      })
-      .catch((error) => {
-        alert(`Erro ao fazer login, email ou senha incorretos... \nLog: ${error}`)
-      })
+    let response
 
-    if (response?.status === 200) {
+    try {
+      response = await authApi
+        .post<UserResponse>('login/', {
+          email,
+          password: senha,
+        })
+        .then(({ data, status }) => {
+          const obj = { data, status }
+          return obj
+        })
+    } catch (error) {
+      throw new Error(`Erro ao fazer login, email ou senha incorretos... \nLog: ${error}`)
+    }
+
+    if (response && response.status === 200) {
       localStorage.setItem('user', JSON.stringify(response.data.user))
       localStorage.setItem('token', response.data.token)
 
@@ -63,8 +66,13 @@ export function AuthProvider({ children }: Props): React.ReactElement {
   }
 
   const logout = async () => {
-    const ResponseStatus = await authApi
-      .post(
+    localStorage.removeItem('user')
+    localStorage.removeItem('token')
+    setUser(null)
+    setToken(null)
+
+    try {
+      await authApi.post(
         'logout/',
         {},
         {
@@ -73,14 +81,8 @@ export function AuthProvider({ children }: Props): React.ReactElement {
           },
         }
       )
-      .then(({ status }) => status)
-      .catch((error) => `Erro ao fazer logout... \nLog: ${error}`)
-
-    if (ResponseStatus === 204) {
-      localStorage.removeItem('user')
-      localStorage.removeItem('token')
-      setUser(null)
-      setToken(null)
+    } catch (error) {
+      throw new Error(`Erro ao fazer logout... \nLog: ${error}`)
     }
   }
 

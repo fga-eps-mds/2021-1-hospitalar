@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'knox',
     'corsheaders',
     'rest_framework',
-    'models.Avaliacao'
+    'models.Avaliacao',
     'models.Usuario'
 ]
 

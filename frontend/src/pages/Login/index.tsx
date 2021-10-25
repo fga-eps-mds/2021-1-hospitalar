@@ -47,8 +47,12 @@ export function Login(): React.ReactElement {
   const handleSubmit = async () => {
     verifica()
     if (status === true) {
-      await loginData.logIn(email, senha)
-      history.push('/home')
+      try {
+        await loginData.logIn(email, senha)
+        history.push('/home')
+      } catch (error) {
+        alert(error)
+      }
     } else {
       status = false
       setErroStatus(true)

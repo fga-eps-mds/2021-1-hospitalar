@@ -20,8 +20,12 @@ export function Home(): React.ReactElement {
   const context = useContext(AuthContext)
 
   async function handleLogout() {
-    await context.logout()
-    history.replace('/login')
+    try {
+      await context.logout()
+      history.replace('/login')
+    } catch (error) {
+      alert(error)
+    }
   }
 
   return (

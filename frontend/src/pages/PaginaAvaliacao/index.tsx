@@ -19,19 +19,20 @@ import {
   Tooltip,
   Typography,
 } from '@material-ui/core'
-import React, { useEffect, useState } from 'react'
+import { CONFIG, api } from '../../api'
+import React, { useContext, useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 
+import AuthContext from '../../context/auth'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TabelaSecoes } from '../../components/PaginaAvaliacaoComponents/TabelaSecoes'
-import { api } from '../../api'
 import { useStyles } from './styles'
 
 /**
  *[tipagem] Transformando idAvaliacao em um tipo para ser um argumento
  */
 type Props = {
-  idCodigo: string
+  idAvaliacao: string
 }
 
 export function PaginaAvaliacao(): React.ReactElement {
@@ -43,9 +44,11 @@ export function PaginaAvaliacao(): React.ReactElement {
    */
   const classes = useStyles()
   const history = useHistory()
+  const context = useContext(AuthContext)
+
   const [idSecao, setIdSecao] = useState(0)
   const [open, setOpen] = React.useState(false)
-  const { idCodigo } = useParams<Props>()
+  const { idAvaliacao } = useParams<Props>()
 
   /**
    * Constroi um "objeto" do tipo Avaliação com todos os itens nulos
@@ -77,7 +80,7 @@ export function PaginaAvaliacao(): React.ReactElement {
    */
   const bancoGet = () => {
     api
-      .get<Avaliacao>(`avaliacao/${idCodigo}/`)
+      .get<Avaliacao>(`avaliacao/${idAvaliacao}/`, CONFIG(context.token))
 
       .then(({ data }) => {
         setIsEditableArray(data.secoes[idSecao].subtopicos.map(() => false))
@@ -147,8 +150,11 @@ export function PaginaAvaliacao(): React.ReactElement {
       return value
     })
 
-    // eslint-disable-next-line no-console
-    api.put(`avaliacao/${idCodigo}/`, aux).then(bancoGet).catch(console.log)
+    api
+      .put(`avaliacao/${idAvaliacao}/`, aux, CONFIG(context.token))
+      .then(bancoGet)
+      // eslint-disable-next-line no-console
+      .catch(console.log)
   }
   /**
    * função usada para remover/deletar subtopico da avaliação
@@ -161,8 +167,11 @@ export function PaginaAvaliacao(): React.ReactElement {
 
     setAvaliacao(aux)
     setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
-    // eslint-disable-next-line no-console
-    api.put(`avaliacao/${idCodigo}/`, aux).then(bancoGet).catch(console.log)
+    api
+      .put(`avaliacao/${idAvaliacao}/`, aux, CONFIG(context.token))
+      .then(bancoGet)
+      // eslint-disable-next-line no-console
+      .catch(console.log)
   }
   /**
    * função para adicionar seção à avaliação
@@ -181,7 +190,11 @@ export function PaginaAvaliacao(): React.ReactElement {
       ],
     }
     aux.secoes.push(novaSecao)
-    api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
+    api
+      .put(`avaliacao/${aux.id}/`, aux, CONFIG(context.token))
+      .then(bancoGet)
+      // eslint-disable-next-line no-console
+      .catch(console.log)
   }
   /**
    * função para remover seçõa de avaliação
@@ -194,7 +207,11 @@ export function PaginaAvaliacao(): React.ReactElement {
     }
     aux.secoes = aux.secoes.filter((_, index) => index !== idSecao)
     setIdSecao(0)
-    api.put(`avaliacao/${aux.id}/`, aux).then(bancoGet).catch(console.log)
+    api
+      .put(`avaliacao/${aux.id}/`, aux, CONFIG(context.token))
+      .then(bancoGet)
+      // eslint-disable-next-line no-console
+      .catch(console.log)
     setOpen(false)
   }
 
@@ -276,7 +293,7 @@ export function PaginaAvaliacao(): React.ReactElement {
                 aria-label='scrollable auto tabs example'
               >
                 {avaliacao.secoes.map((_, index) => (
-                  <Tab label={`Seção ${index + 1}`} />
+                  <Tab key={index} label={`Seção ${index + 1}`} />
                 ))}
               </Tabs>
             </Box>
@@ -344,6 +361,7 @@ export function PaginaAvaliacao(): React.ReactElement {
           {avaliacao.secoes.map((value, index) =>
             index === idSecao ? (
               <TabelaSecoes
+                key={index}
                 secao={value}
                 isEditableArray={isEditableArray}
                 handleUpdateDB={handleUpdateDB}
