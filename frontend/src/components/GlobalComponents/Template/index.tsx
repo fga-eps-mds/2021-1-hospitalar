@@ -20,7 +20,7 @@ export function Template({ children }: PropsTemplate): React.ReactElement {
     >
       <Header
         links={[
-          { texto: 'Home', link: '/' },
+          { texto: 'Home', link: '/Home' },
           { texto: 'Nova Avaliação', link: '/NovaAvaliacao' },
           { texto: 'Avaliações', link: '/avaliacao' },
           { texto: 'Relatórios', link: '/relatorio' },

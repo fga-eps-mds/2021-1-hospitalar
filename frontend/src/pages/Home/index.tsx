@@ -1,7 +1,9 @@
+import React, { useContext } from 'react'
+
+import AuthContext from '../../context/auth'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Grid } from '@material-ui/core'
 import { MPHeader } from '../../components/GlobalComponents/MPHeader'
-import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
@@ -15,10 +17,17 @@ import { useStyles } from './styles'
 export function Home(): React.ReactElement {
   const history = useHistory()
   const classes = useStyles()
-  /**
-   * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
-   * @see https://material-ui.com/components/grid/
-   */
+  const context = useContext(AuthContext)
+
+  async function handleLogout() {
+    try {
+      await context.logout()
+      history.replace('/login')
+    } catch (error) {
+      alert(error)
+    }
+  }
+
   return (
     <>
       <Grid container direction='column' spacing={2}>
@@ -64,6 +73,16 @@ export function Home(): React.ReactElement {
             onClick={() => history.push('gerenciador')}
           >
             Gerenciador
+          </Button>
+        </Grid>
+
+        <Grid item>
+          <Button
+            variant='contained'
+            className={classes.botao}
+            onClick={() => handleLogout()}
+          >
+            Deslogar
           </Button>
         </Grid>
       </Grid>

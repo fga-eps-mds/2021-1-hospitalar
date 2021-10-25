@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles((theme) => ({
   container: {
-    marginBottom: '8vh',
+   // marginBottom: '8vh',
     width: '100%',
   },
   imgLogo: {

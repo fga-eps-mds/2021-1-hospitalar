@@ -1,69 +1,64 @@
 import { Grid, TextField, Typography } from '@material-ui/core'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 
+import AuthContext from '../../context/auth'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { api } from '../../api'
 import logo from '../../assets/logo_cover.png'
+import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function Login(): React.ReactElement {
+  const classes = useStyles()
+  const loginData = useContext(AuthContext)
+  const history = useHistory()
+
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
-  const [usuario, setUsuario] = useState({
-    name: '',
-    email: '',
-    tipo: '',
-    funcao: '',
-    organizacao: '',
-  })
-
-  const classes = useStyles()
+  const [erroStatus, setErroStatus] = useState(false)
 
   let status = true
 
-  //  function loginApi(){
-  //  useEffect(() => {
-  //  teste()
-  //  }, [])
-
-  function emailEsenhaExiste() {
+  const emailEsenhaExiste = () => {
     if (email && senha) {
       status = true
+      setErroStatus(false)
     } else {
       status = false
+      setErroStatus(true)
     }
   }
 
-  function verifica() {
+  const verifica = () => {
     emailEsenhaExiste()
     if (status === true) {
       if (email.match(/@/) && email.match(/.com/)) {
         status = true
+        setErroStatus(false)
       } else {
         status = false
+        setErroStatus(true)
       }
     } else {
       status = false
+      setErroStatus(true)
     }
   }
 
-  function handleSubmit() {
+  const handleSubmit = async () => {
     verifica()
     if (status === true) {
-      api
-        .post('authenticate', {
-          email,
-          password: senha,
-        })
-        .then((response) => setUsuario(response.data.user))
-        // eslint-disable-next-line no-console
-        .catch((err) => console.log(err))
+      try {
+        await loginData.logIn(email, senha)
+        history.push('/home')
+      } catch (error) {
+        alert(error)
+      }
+    } else {
+      status = false
+      setErroStatus(true)
+      alert('Dados inválidos, tente novamente')
     }
   }
-
-  useEffect(() => {
-    console.log(`Bem-Vindo ${usuario.name}`)
-  }, [usuario])
 
   return (
     <>
@@ -103,16 +98,24 @@ export function Login(): React.ReactElement {
               </Typography>
               <TextField
                 label='Email'
+                error={erroStatus}
                 className={classes.emailText}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  e.preventDefault()
+                  setEmail(e.target.value)
+                }}
               />
               <TextField
                 label='Senha'
+                error={erroStatus}
                 type='password'
                 className={classes.senhaText}
-                onChange={(e) => setSenha(e.target.value)}
+                onChange={(e) => {
+                  e.preventDefault()
+                  setSenha(e.target.value)
+                }}
               />
-              <Button onClick={() => handleSubmit()}> ENTRAR </Button>
+              <Button onClick={handleSubmit}> ENTRAR </Button>
             </Grid>
           </Grid>
         </Grid>

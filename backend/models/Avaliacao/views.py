@@ -1,14 +1,16 @@
-from rest_framework import viewsets
-from rest_framework.generics import get_object_or_404
-from .models import Avaliacao
-from rest_framework.decorators import action
-from django.http import HttpResponse
-from .serializers import AvaliacaoSerializer
-from django.http import HttpResponse
-from rest_framework.decorators import action
-from rest_framework import viewsets
-from .relatorio.printing import MyPrint
 from io import BytesIO
+
+from django.http import HttpResponse
+from rest_framework import viewsets
+from rest_framework.decorators import action
+from rest_framework.generics import get_object_or_404
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.status import *
+
+from .models import Avaliacao
+from .relatorio.printing import MyPrint
+from .serializers import AvaliacaoSerializer
 
 # Create your views here.
 
@@ -17,6 +19,8 @@ from io import BytesIO
 
 class AvaliacaoView(viewsets.ModelViewSet):
 
+    permission_classes = (IsAuthenticated,)
+
     serializer_class = AvaliacaoSerializer
     queryset = Avaliacao.objects.all()
 
@@ -24,8 +28,7 @@ class AvaliacaoView(viewsets.ModelViewSet):
     def generatePDF(self, request):
         # Create the HttpResponse object with the appropriate PDF headers.
         response = HttpResponse(content_type='application/pdf')
-        response[
-            'Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
+        response['Content-Disposition'] = 'attachment; filename="#HAG_2021.pdf"'
 
         # buffer armazena os bytes para o PDF (PDF é arquivo compilável)
         buffer = BytesIO()
