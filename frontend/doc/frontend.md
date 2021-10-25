@@ -1,7 +1,7 @@
 # Padrões de projeto
 
 ### Importante:
->O padrão de escrita adotado é o Airbnb, por favor [leia](https://airbnb.io/javascript/react/) a respeito. Caso você não concorde com alguma regra do eslint é só pedir para o eslintrc.js ignora-lo, mas por favor enforme ao PO do seu grupo para avisar o Eduardo Rodrigues do time B.
+>O padrão de escrita adotado é o Airbnb, por favor [leia](https://airbnb.io/javascript/react/) a respeito. Caso você não concorde com alguma regra do eslint é só pedir para o eslintrc.js ignora-lo.
 
 - Todo código fonte deve obrigatóriamente estar na pasta src
 - Utilize a extensão .ts para arquivos typescript e a extensão .tsx para arquivos typescript react (onde existe algum comando no modelo html)
@@ -33,8 +33,19 @@
 - Crie uma pasta como manda os padrões de projeto
 - Importe sua página no arquivo routes.tsx e Adicione no componente switch o seguinte código:
   ```
-  <Route path='(o caminho url do componente)' component={(Nome)} />
+  <PrivateRoute path='(o caminho url do componente)' isAuthenticated={context.signed}>
+    <Nome/>
+  </PrivateRoute>
   ```
+
+# Logando na plataforma
+- Existem dois usuários cadastrados para testes
+  - admin:
+    - email: admin@email.com
+    - senha: senha
+  - user:
+    - email: user@email.com
+    - senha: senha
 
 # Documentação útil
 
