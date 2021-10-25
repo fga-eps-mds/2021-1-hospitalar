@@ -1,11 +1,11 @@
+import { Grid, TextField } from '@material-ui/core'
+import React, { useState } from 'react'
+
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import { Grid, Input, InputBase, TextField } from '@material-ui/core'
-import { SearchRounded } from '@material-ui/icons'
 import { Header } from '../../components/GlobalComponents/Header'
-import React, { useState, useEffect, useContext } from 'react'
-import { useHistory } from 'react-router-dom'
+import { SearchRounded } from '@material-ui/icons'
 import { useStyles } from './styles'
-import AuthContext from '../../context/auth'
+
 /**
  * Um componente funcional React compatível com React Hooks.
  * Siga o padrão descrito no markdown do frontend.
@@ -15,9 +15,6 @@ import AuthContext from '../../context/auth'
  */
 export function Gerenciador(): React.ReactElement {
   const [toggleState, setToggleState] = useState(1)
-  const [select, setSelect] = useState<boolean>(true)
-
-  const history = useHistory()
   const classes = useStyles()
 
   /**

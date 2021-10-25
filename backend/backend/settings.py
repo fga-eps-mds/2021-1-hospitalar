@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'knox',
     'corsheaders',
     'rest_framework',
-    'models.Avaliacao',
+    'models.Avaliacao'
     'models.Usuario'
 ]
 
@@ -103,11 +103,12 @@ if os.getenv('DOCKER') == 'TRUE':
             'PORT': os.getenv('PORT'),
         }
     }
+
 else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'database/dev_db.sqlite'
+            'NAME': 'database/dev_db.sqlite',
         }
     }
 
