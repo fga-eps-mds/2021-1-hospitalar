@@ -1,4 +1,4 @@
-# Abertura da Sprint (nº)
+# Abertura da Sprint 9
 
 ## Histórico de revisão
 
@@ -31,4 +31,4 @@
 
 ## Débito Técnico Adicionado
 
--
+- 0 Débitos Técnicos Adicionados
