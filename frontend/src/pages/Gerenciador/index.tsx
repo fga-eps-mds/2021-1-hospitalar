@@ -5,6 +5,7 @@ import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Header } from '../../components/GlobalComponents/Header'
 import { SearchRounded } from '@material-ui/icons'
 import { useStyles } from './styles'
+import { UsuarioGerenciador } from '../../components/UsuarioGerenciador'
 
 /**
  * Um componente funcional React compatível com React Hooks.
@@ -16,6 +17,7 @@ import { useStyles } from './styles'
 export function Gerenciador(): React.ReactElement {
   const [toggleState, setToggleState] = useState(1)
   const classes = useStyles()
+  const teste = [1 , 2 , 3]
 
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -65,7 +67,7 @@ export function Gerenciador(): React.ReactElement {
         </Grid>
 
         <Grid container className={toggleState === 1 ? classes.teste1 : classes.teste}>
-          <h1> Usuários </h1>
+          <UsuarioGerenciador />
         </Grid>
 
         <Grid container className={toggleState === 2 ? classes.teste2 : classes.teste}>
