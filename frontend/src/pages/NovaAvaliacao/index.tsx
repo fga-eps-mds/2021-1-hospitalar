@@ -52,10 +52,19 @@ export function NovaAvaliacao(): React.ReactElement {
   }
 
   const generateForm = () => {
-    const users = [
-      { name: 'User 1', id: 1994 },
-      { name: 'User 2', id: 1972 },
-    ]
+    useEffect(() => {
+      api
+        .get<Usuario[]>('usuario/')
+        .then((response) => {
+          setUsers([...response.data])
+          // eslint-disable-next-line no-console
+          console.log(response.data)
+        })
+        .catch((error) => {
+          // eslint-disable-next-line no-console
+          console.log(error)
+        })
+    }, [])
 
     return (
       <FormGroup>
