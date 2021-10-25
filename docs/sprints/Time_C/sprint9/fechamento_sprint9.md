@@ -100,25 +100,16 @@
 | Pessoa 3 | &#128532; | &#128567; | &#129314; |
 | Pessoa 4 | &#129395; | &#128547; | &#129321; |
 
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** |  **Nota** |
-|:-:|:-:|
-|    Descrição do Objetivo   |  (nº) |
-|    Descrição do Objetivo   |  (nº) | 
-|    ...   |  ... |
-
 ## Riscos
 
 |  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
 |:-:|:-:|:-:|
-| ... | ... | ... |
-| ... | ... | ... |
+| Integrantes Desfocados | Mensagens diretas para relembrar das tarefas | Relembrando das tarefas nas issues |
+| Dificuldades em Implementação | Assistir tutoria feita pelos times | Estudar documentação, tutoriais, artigos e etc |
+| Desmotivação |  Realizar tarefas em conjunto | Divir entre tarefas mais simples |
   
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
 
-Apesar de apresentar pouca movimentação no Github, ficamos muito tempo estudando sobre as tecnologias e como poderíamos implementar as funcionalidades aos quais ficamos responsáveis. Como boa parte já tinha alguma noção no Frontend, decidimos foca boa parte nos estudos na implementação do Backend no Django Rest Framework. No decorrer da semana tivemos,e ainda estamos tendo, muitos problemas quanto à autenticação dos usuários. Mesmo procurando muitos modelos implementados na Internet, dificilmente ele se encaixa no nosso modelo. Poderia até dizer que pelo fato dos mais experientes virem da stack JavaScript, NodeJs e etc., ficamos um pouco confusos sobre a stack do python, então a adaptação de um padrão de projeto para outro está ocorrendo de forma gradual, e isso afetou um pouco a disposição do tempo e produtividade, como poucas issues , commits s etc. Ainda estmos estudando bastante mas até o momento sem sucesso na realização da tarefa, porém estamos esperançosos e motivados para implementar a funcionalidade.
+Apesar de apresentar pouca movimentação no Github, ficamos muito tempo estudando sobre as tecnologias e como poderíamos implementar as funcionalidades aos quais ficamos responsáveis. Como boa parte já tinha alguma noção no Frontend, decidimos foca boa parte nos estudos na implementação do Backend no Django Rest Framework. No decorrer da semana tivemos,e ainda estamos tendo, muitos problemas quanto à autenticação dos usuários, mesmo procurando muitos modelos implementados na Internet, dificilmente ele se encaixa no nosso modelo. Poderia até dizer que pelo fato dos mais experientes virem da stack JavaScript, NodeJs e etc., ficamos um pouco confusos sobre a stack do python, então a adaptação de um padrão de projeto para outro está ocorrendo de forma gradual, e isso afetou um pouco a disposição do tempo e produtividade, como poucas issues , commits s etc. Ainda estmos estudando bastante mas até o momento sem sucesso na realização da tarefa, porém estamos esperançosos e motivados para implementar a funcionalidade.
