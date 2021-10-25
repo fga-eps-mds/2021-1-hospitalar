@@ -75,18 +75,7 @@ class MyPrint:
         self.list_items_relat = {
             '1': 'FINALIDADE DA AVALIAÇÃO',
             '2': 'OBJETIVOS DA AVALIAÇÃO',
-            '3': 'REFERÊNCIAS',
-            '4': 'CONDIÇÕES DE EXECUÇÃO',
-            '5': 'RESULTADOS DA AVALIAÇÃO',
-        }
-
-        self.list_subitems_relat = {
-            'OBJETIVOS DA AVALIAÇÃO': [
-
-            ],
-            'CONDIÇÕES DE EXECUÇÃO': [
-
-            ],
+            '3': 'RESULTADOS DA AVALIAÇÃO',
         }
 
     def finalidade_aval(self, codigo):
@@ -97,6 +86,32 @@ class MyPrint:
         Paciente naquela Organização Militar de Saúde (OMS), identificar os pontos fortes, oportunidades 
         de melhoria e promover a cooperação interna entre as pessoas e os processos.
         '''.format(relatorio.nomeHospital)
+
+        return text
+
+    def objetivos_aval(self, codigo):
+        relatorio = Avaliacao.objects.get(codigo=codigo)
+        text = '''
+        a. Fornecer um diagnóstico organizacional do {}, aplicando a metodologia 
+        da Acreditação da Saúde Assistencial Militar (ASAM).
+
+        b. Aprimorar o Caderno de Orientação da Acreditação da Saúde Assistencial Militar
+        e possibilitar a sua validação.
+        '''.format(relatorio.nomeHospital)
+
+        return text
+
+    def aval_sucinta(self, table_data):
+        conformes = table_data[-1][2].split('%')
+        conformes_val = float(conformes[0])
+        nao_conformes = table_data[-1][3].split('%')
+        nao_conformes_val = float(nao_conformes[0])
+        text = '''
+        a. Avaliação Sucinta: o HOSP_SIGLA foi avaliado dentro dos critérios de avaliação 
+        para a Acreditação Hospitalar, que foram revistos e que ainda estão em desenvolvimento. A OMS 
+        obteve apenas {}% de itens conformes e totalizou {}% em itens conformes e parcialmente 
+        conformes em todas as áreas.
+        '''.format(conformes_val, conformes_val + nao_conformes_val)
 
         return text
 
@@ -272,6 +287,10 @@ class MyPrint:
 
     def pie_chart_with_legend(self):
         data = self.get_pontos()
+        sum_pontos = 0
+        for x in data['count_totals'][1:5]:
+            sum_pontos += x
+
         # Espaço de renderização
         drawing = Drawing(width=400, height=200)
         # Propriedades do gráfico
@@ -282,8 +301,16 @@ class MyPrint:
         pie.x = 150
         pie.y = 65
         pie.data = data['count_totals'][1:5]
-        pie.labels = ['C: Conforme', 'PC: Parcialmente Conforme',
-                      'NC: Não Conforme', 'NA: Não se Aplica']
+        pie.labels = [
+            'C: Conforme {}%'.format(
+                (data['count_totals'][1]/sum_pontos) * 100 if sum_pontos > 0 else 0),
+            'PC: Parcialmente Conforme {}%'.format(
+                data['count_totals'][2]/sum_pontos * 100 if sum_pontos > 0 else 0),
+            'NC: Não Conforme {}%'.format(
+                data['count_totals'][3]/sum_pontos * 100 if sum_pontos > 0 else 0),
+            'NA: Não se Aplica {}%'.format(
+                data['count_totals'][4]/sum_pontos * 100 if sum_pontos > 0 else 0)
+        ]
         pie.slices.strokeWidth = 0.5
         # Adição do gráfico para renderização
         drawing.add(my_title)
@@ -362,7 +389,7 @@ class MyPrint:
 
         # Logo Famil
         elements.append(
-            Image('C:/Users/Adrian/UnB/MDS/2021-1-hospitalar/frontend/src/assets/logo-2021-v2.png', width=1.5*cm, height=2.2*cm, x=-5*cm))
+            Image('C:/Users/Adrian/UnB/MDS/2021-1-hospitalar/frontend/src/assets/logo-2021-v2.png', width=1.5*cm, height=2.2*cm))
 
         elements.append(self.paragraph_space())
 
@@ -387,28 +414,28 @@ class MyPrint:
         elements.append(Paragraph(self.finalidade_aval(self.cod_relatorio)))
 
         elements.append(self.section_space())
+
         # Seção 2
         elements.append(Paragraph("{}. {}".format(
             "2", self.list_items_relat["2"]), styles['Heading2']))
+        elements.append(Paragraph(self.objetivos_aval(self.cod_relatorio)))
 
         elements.append(self.section_space())
+
         # Seção 3
         elements.append(Paragraph("{}. {}".format(
             "3", self.list_items_relat["3"]), styles['Heading2']))
 
-        elements.append(self.section_space())
-        # Seção 4
-        elements.append(Paragraph("{}. {}".format(
-            "4", self.list_items_relat["4"]), styles['Heading2']))
-
-        elements.append(self.section_space())
-        # Seção 5
-        elements.append(Paragraph("{}. {}".format(
-            "5", self.list_items_relat["5"]), styles['Heading2']))
-
         # Tabela com resumo dos dados + Gráfico
         table_data = self.tabela_graph_pontos(
             relatorio, styles['TableHeader'])
+
+        aval_sucinta = self.aval_sucinta(table_data)
+
+        elements.append(Paragraph(aval_sucinta))
+
+        elements.append(self.paragraph_space())
+
         wh_table = Table(table_data)
 
         # Estilização da Tabela - Seleciona as células por um range
