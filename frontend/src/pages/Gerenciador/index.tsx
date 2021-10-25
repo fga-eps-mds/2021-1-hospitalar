@@ -66,8 +66,20 @@ export function Gerenciador(): React.ReactElement {
           </Grid>
         </Grid>
 
-        <Grid container className={toggleState === 1 ? classes.teste1 : classes.teste}>
+        <Grid
+          container 
+          className={toggleState === 1 ? classes.teste1 : classes.teste}
+          direction="row"
+          alignItems="center"
+          justifyContent="center"
+        >
           <UsuarioGerenciador />
+          <UsuarioGerenciador />
+          <UsuarioGerenciador />
+          <UsuarioGerenciador />
+          <UsuarioGerenciador />
+          <UsuarioGerenciador />
+
         </Grid>
 
         <Grid container className={toggleState === 2 ? classes.teste2 : classes.teste}>
