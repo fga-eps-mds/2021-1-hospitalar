@@ -1,3 +1,4 @@
+import os
 from reportlab.graphics.charts.legends import Legend
 from reportlab.graphics.shapes import Drawing, String
 from reportlab.lib.validators import Auto
@@ -6,7 +7,8 @@ from reportlab.platypus import SimpleDocTemplate,\
     Spacer,\
     Table,\
     TableStyle,\
-    PageBreak
+    PageBreak,\
+    Image
 
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch, cm
@@ -48,6 +50,7 @@ class NumberedCanvas(canvas.Canvas):
         # Change the position of this to wherever you want the page number to be
         self.drawRightString(202 * mm, 15 * mm + (0.2 * inch),
                              "Page %d of %d" % (self._pageNumber, page_count))
+
 
 class MyPrint:
 
@@ -96,7 +99,6 @@ class MyPrint:
         '''.format(relatorio.nomeHospital)
 
         return text
-
 
     @staticmethod
     def _footer(canvas, doc):
@@ -250,8 +252,8 @@ class MyPrint:
         # Linha PERCENTUAIS
         table_data.append(
             [Paragraph('PERCENTUAIS')] +
-            [("{0:.2f}%".format((nums / count_totals[0]) * 100) if count_totals[0] else 0) for nums in count_totals] +
-            ['-']
+            [("{0:.2f}%".format((nums / count_totals[0]) * 100) if count_totals[0] else 0)
+             for nums in count_totals[1:6]] + ['-', '-', '-']
         )
 
         return table_data
@@ -263,8 +265,8 @@ class MyPrint:
     def add_legend(draw_obj, chart, data):
         legend = Legend()
         legend.alignment = 'right'
-        legend.x = 0
-        legend.y = 70
+        legend.x = 90
+        legend.y = 20
         legend.colorNamePairs = Auto(obj=chart)
         draw_obj.add(legend)
 
@@ -273,13 +275,15 @@ class MyPrint:
         # Espaço de renderização
         drawing = Drawing(width=400, height=200)
         # Propriedades do gráfico
-        my_title = String(170, 40, 'Proporções das Pontuações', fontSize=14)
+        my_title = String(
+            TA_CENTER, 200, 'Proporções das Pontuações', fontSize=14)
         pie = Pie()
         pie.sideLabels = True
         pie.x = 150
         pie.y = 65
         pie.data = data['count_totals'][1:5]
-        pie.labels = ['C', 'PC', 'NC', 'NA']
+        pie.labels = ['C: Conforme', 'PC: Parcialmente Conforme',
+                      'NC: Não Conforme', 'NA: Não se Aplica']
         pie.slices.strokeWidth = 0.5
         # Adição do gráfico para renderização
         drawing.add(my_title)
@@ -300,7 +304,7 @@ class MyPrint:
         d.save()
 
         return d
-    
+
     '''
     É feita a Query através do código passado para o criador do Relatório.
     '''
@@ -355,6 +359,12 @@ class MyPrint:
         styles.add(ParagraphStyle(
             name="TableHeader", fontSize=11, alignment=TA_LEFT)
         )
+
+        # Logo Famil
+        elements.append(
+            Image('C:/Users/Adrian/UnB/MDS/2021-1-hospitalar/frontend/src/assets/logo-2021-v2.png', width=1.5*cm, height=2.2*cm, x=-5*cm))
+
+        elements.append(self.paragraph_space())
 
         elements.append(
             Paragraph('PROGRAMA DE ACREDITAÇÃO DA SAÚDE ASSISTENCIAL MILITAR (PASAM)',
@@ -413,6 +423,7 @@ class MyPrint:
         )
 
         elements.append(wh_table)
+        elements.append(self.section_space())
 
         # Gráfico
 
@@ -434,13 +445,13 @@ class MyPrint:
 
             index += 1
 
-            titulo = secs.topico
+            titulo = "{}. {}".format(secs.id, secs.topico)
             # Tópicos
             elements.append(Paragraph(titulo, styles['Heading1']))
 
             for sub in secs.subtopicos:
                 # Subtópicos
-                subtitulo = sub.nome
+                subtitulo = "{}.{}. {}".format(secs.id, sub.id, sub.nome)
                 elements.append(Paragraph(subtitulo, styles['Heading2']))
 
                 elements.append(Paragraph("Status: {}".format(sub.status)))
