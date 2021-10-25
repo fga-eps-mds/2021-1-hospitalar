@@ -1,16 +1,20 @@
-import reportWebVitals from './reportWebVitals'
-import { ThemeProvider } from '@material-ui/core'
-import { theme } from './theme'
-import { Routes } from './routes'
-import ReactDOM from 'react-dom'
+import { AuthProvider } from './context/auth'
 import React from 'react'
+import ReactDOM from 'react-dom'
+import { Routes } from './routes'
+import { ThemeProvider } from '@material-ui/core'
+import reportWebVitals from './reportWebVitals'
+import { theme } from './theme'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Routes />
-    </ThemeProvider>
-  </React.StrictMode>,
+  <AuthProvider>
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <Routes />
+      </ThemeProvider>
+    </React.StrictMode>
+  </AuthProvider>,
+
   document.getElementById('root')
 )
 

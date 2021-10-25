@@ -1,10 +1,21 @@
 import {
+  Button,
+  Checkbox,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  IconButton,
+  TableCell,
+  TableRow,
+} from '@material-ui/core'
+import {
   CancelRounded,
   DeleteRounded,
   DoneRounded,
   EditRounded,
 } from '@material-ui/icons'
-import { Checkbox, IconButton, TableCell, TableRow } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { Subtopico } from '../../../types/Avaliacao'
@@ -35,6 +46,7 @@ export function LinhaTabela({
   const [nome, setNome] = useState<string>(subtopico.nome)
   const [pontuacao, setPontuacao] = useState<number>(subtopico.pontuacao)
   const [comentario, setComentario] = useState<string>(subtopico.comentario)
+  const [open, setOpen] = React.useState(false)
 
   const [isEditing, setIsEditing] = useState<boolean>(editable)
 
@@ -98,6 +110,14 @@ export function LinhaTabela({
     } else if (event.target.id === 'NA') {
       setPontuacao(0)
     }
+  }
+
+  const handleClickOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
   }
 
   return (
@@ -226,10 +246,53 @@ export function LinhaTabela({
         <IconButton
           color='inherit'
           style={{ display: 'block', margin: 'auto' }}
-          onClick={() => (subtopico.id ? removerSubtopico(subtopico.id) : () => {})}
+          onClick={handleClickOpen}
         >
           <DeleteRounded />
         </IconButton>
+
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          aria-labelledby='alert-dialog-title'
+          aria-describedby='alert-dialog-description'
+        >
+          <DialogTitle className={classes.textDialogTitle} id='alert-dialog-title'>
+            Você deseja excluir este requisito?
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText
+              className={classes.textDialogBox}
+              id='alert-dialog-description'
+            >
+              Apagando este requisito você perderá a nota e comentário atribuídos para
+              ele.
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button
+              className={classes.dialogCancelDesign}
+              variant='outlined'
+              onClick={handleClose}
+            >
+              Cancelar
+            </Button>
+            <Button
+              className={classes.dialogConfirmDesign}
+              variant='outlined'
+              onClick={() =>
+                subtopico.id
+                  ? removerSubtopico(subtopico.id)
+                  : () => {
+                      setOpen(false)
+                    }
+              }
+              autoFocus
+            >
+              Confirmar
+            </Button>
+          </DialogActions>
+        </Dialog>
       </TableCell>
     </TableRow>
   )

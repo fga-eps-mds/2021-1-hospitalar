@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios, { AxiosRequestConfig } from 'axios'
 
 /**
  * Objeto baseado no axios que nós usaremos para fazer requisições http
@@ -22,6 +22,22 @@ export const api = axios.create({
   xsrfHeaderName: 'X-CSRFTOKEN',
   xsrfCookieName: 'csrftoken',
 })
+
+export const authApi = axios.create({
+  baseURL: process.env.REACT_APP_AUTH_API_URL, // 'http://localhost:3333/auth/',
+  xsrfHeaderName: 'X-CSRFTOKEN',
+  xsrfCookieName: 'csrftoken',
+})
+
+export const CONFIG = (token: string | null) => {
+  const auth: AxiosRequestConfig = {
+    headers: {
+      Authorization: `Token ${token}`,
+    },
+  }
+
+  return auth
+}
 
 /**
  * Função que faz uma requisição ao backend para gerar um pdf e retorna ao front como um download

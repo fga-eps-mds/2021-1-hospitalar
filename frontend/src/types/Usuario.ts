@@ -1,8 +1,13 @@
 export type Usuario = {
-  id?: number
-  username: string
+  id: number
   email: string
-  tipo: string
+  nome: string
   funcao: string
   organizacao: string
+  admin: boolean
+}
+
+export type UserResponse = {
+  user: Usuario
+  token: string
 }

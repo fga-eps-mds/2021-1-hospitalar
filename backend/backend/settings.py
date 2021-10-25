@@ -46,10 +46,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'knox',
     'corsheaders',
     'rest_framework',
-    'models.Avaliacao'
+    'models.Avaliacao',
+    'models.Usuario'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',)
+}
+
+AUTH_USER_MODEL = 'Usuario.User'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -85,7 +93,6 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 if os.getenv('DOCKER') == 'TRUE':
     DATABASES = {
         'default': {
