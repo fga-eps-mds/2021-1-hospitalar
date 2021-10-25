@@ -1,32 +1,44 @@
 import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Autocomplete from '@material-ui/lab/Autocomplete'
 import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { DatePicker } from '../../components/GlobalComponents/DatePicker'
-import { Header } from '../../components/GlobalComponents/Header'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import Logo from '../../assets/logo-2021-v2.png'
 import { Template } from '../../components/GlobalComponents/Template'
 import TextField from '@material-ui/core/TextField'
+import { Usuario } from '../../types/Usuario'
 import { api } from '../../api'
 import { useStyles } from './styles'
 
 export function NovaAvaliacao(): React.ReactElement {
   const classes = useStyles()
 
+  const blankUser: Usuario = {
+    username: 'null',
+    email: 'null',
+    tipo: 'null',
+    funcao: 'null',
+    organizacao: 'null',
+  }
+
   const [nomeHospital, setNomeHospital] = useState('')
   const [sigla, setSigla] = useState('')
   const [codigo, setCodigo] = useState('')
   const [data, setData] = useState<Date | null>(new Date())
+  const [users, setUsers] = useState<Usuario[]>([blankUser])
+  const [idsAvaliadores, setIdsAvaliadores] = useState('')
+
+  // Caso não precise, deletar após testes!
 
   const handleSave = () => {
     const avaliacao: Avaliacao = {
       codigo,
       nomeHospital: `${nomeHospital},${sigla}`,
-      idsAvaliadores: '',
+      idsAvaliadores,
       data: data ? data.toISOString() : new Date().toISOString(),
       configuracao: {},
       secoes: [],
@@ -144,20 +156,17 @@ export function NovaAvaliacao(): React.ReactElement {
           </Grid>
         </Grid>
       </FormGroup>
-
     )
   }
 
   return (
     <Template>
-
       <Grid
         container
         direction='column'
         alignItems='flex-start'
         className={classes.container}
       >
-
         <Grid
           item
           container
