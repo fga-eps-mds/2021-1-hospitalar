@@ -24,6 +24,7 @@ from reportlab.lib.units import mm
 from reportlab.lib.pagesizes import letter, A4
 from reportlab.lib import colors
 from ..models import Avaliacao
+from ...Usuario.models import User
 
 from .utils import TestData
 
@@ -111,7 +112,7 @@ class MyPrint:
         nao_conformes_val = float(nao_conformes[0])
 
         text = '''
-        a. Avaliação Sucinta: o Hospital {} foi avaliado dentro dos critérios de avaliação 
+        a. Avaliação Sucinta: o {} foi avaliado dentro dos critérios de avaliação 
         para a Acreditação Hospitalar, que foram revistos e que ainda estão em desenvolvimento. A OMS 
         obteve apenas {}% de itens conformes e totalizou {}% em itens conformes e parcialmente 
         conformes em todas as áreas.
@@ -137,6 +138,36 @@ class MyPrint:
     '''
     Organização dos dados do gráfico
     '''
+
+    def get_users(self):
+        relatorio = Avaliacao.objects.get(codigo=self.cod_relatorio)
+        usersids = relatorio.idsAvaliadores.split(',')
+        print(usersids)
+
+        users = [User.objects.get(id=userid) for userid in usersids if userid]
+
+        return users
+
+    def tabela_users(self, styles):
+        users = self.get_users()
+
+        table_data = []
+
+        # Headers
+        table_data.append([
+            Paragraph("Pessoal", styles),
+            Paragraph("Função", styles),
+            Paragraph("Organização", styles),
+        ])
+
+        for user in users:
+            nome = user.nome
+            funcao = user.funcao
+            organizacao = user.organizacao
+
+            table_data.append([nome, funcao, organizacao])
+
+        return table_data
 
     def get_pontos(self):
         relatorio = Avaliacao.objects.get(codigo=self.cod_relatorio)
@@ -258,7 +289,7 @@ class MyPrint:
                 [Paragraph(str(data)) for data in datas]
             paragraph_columns.append(count_total)
             paragraph_columns.append(count_comments)
-            paragraph_columns.append(media)
+            paragraph_columns.append("{0:.2f}".format(media))
             # Adição da linha
             table_data.append(paragraph_columns)
         # Linha TOTAIS
@@ -304,13 +335,13 @@ class MyPrint:
         pie.y = 65
         pie.data = data['count_totals'][1:5]
         pie.labels = [
-            'C: Conforme {}%'.format(
+            'C: Conforme {0:.2f}%'.format(
                 (data['count_totals'][1]/sum_pontos) * 100 if sum_pontos > 0 else 0),
-            'PC: Parcialmente Conforme {}%'.format(
+            'PC: Parcialmente Conforme {0:.2f}%'.format(
                 data['count_totals'][2]/sum_pontos * 100 if sum_pontos > 0 else 0),
-            'NC: Não Conforme {}%'.format(
+            'NC: Não Conforme {0:.2f}%'.format(
                 data['count_totals'][3]/sum_pontos * 100 if sum_pontos > 0 else 0),
-            'NA: Não se Aplica {}%'.format(
+            'NA: Não se Aplica {0:.2f}%'.format(
                 data['count_totals'][4]/sum_pontos * 100 if sum_pontos > 0 else 0)
         ]
         pie.slices.strokeWidth = 0.5
@@ -390,8 +421,15 @@ class MyPrint:
         )
 
         # Logo Famil
+
+        basedir = os.getcwd()
+        # Base directory
+
+        go_to_dir = os.path.dirname(basedir)
+        pathname = os.path.join(go_to_dir, "frontend",
+                                "src", "assets", "logo-2021-v2.png")
         elements.append(
-            Image('C:/Users/Adrian/UnB/MDS/2021-1-hospitalar/frontend/src/assets/logo-2021-v2.png', width=1.5*cm, height=2.2*cm))
+            Image(pathname, width=1.5*cm, height=2.2*cm))
 
         elements.append(self.paragraph_space())
 
@@ -406,10 +444,30 @@ class MyPrint:
 
         # Título
         elements.append(
-            Paragraph("AVALIAÇÃO DO HOSPITAL {}".format(relatorio.nomeHospital),
+            Paragraph("AVALIAÇÃO DO {}".format(relatorio.nomeHospital),
                       styles['centered_title']))
 
         elements.append(self.section_space())
+
+        # Avaliadores
+        table_data = self.tabela_users(styles['TableHeader'])
+
+        wh_table = Table(table_data)
+
+        # Estilização da Tabela - Seleciona as células por um range
+        # (x1, y1), (x2, y2)
+        wh_table.setStyle(
+            TableStyle([
+                ('INNERGRID', (0, 0), (-1, -1), 0.25, colors.black),
+                ('BOX', (0, 0), (-1, -1), 0.5, colors.black),
+                ('VALIGN', (0, 0), (-1, 0), 'MIDDLE'),
+                ('BACKGROUND', (0, 0), (-1, 0), colors.gray)
+            ])
+        )
+
+        elements.append(wh_table)
+        elements.append(self.section_space())
+
         # Seção 1
         elements.append(Paragraph("{}. {}".format(
             "1", self.list_items_relat["1"]), styles['Heading2']))
