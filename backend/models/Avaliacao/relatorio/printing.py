@@ -477,16 +477,17 @@ class MyPrint:
             elements.append(Paragraph(titulo, styles['Heading1']))
 
             for sub in secs.subtopicos:
-                # Subtópicos
-                subtitulo = "{}.{}. {}".format(secs.id, sub.id, sub.nome)
-                elements.append(Paragraph(subtitulo, styles['Heading2']))
+                if sub.status != 'NA':
+                    # Subtópicos
+                    subtitulo = "{}.{}. {}".format(secs.id, sub.id, sub.nome)
+                    elements.append(Paragraph(subtitulo, styles['Heading2']))
 
-                elements.append(Paragraph("Status: {}".format(sub.status)))
-                elements.append(
-                    Paragraph("Pontuação: {}".format(sub.pontuacao)))
-                elements.append(Paragraph(
-                    "Comentários: {}".format(sub.comentario)
-                ))
+                    elements.append(Paragraph("Status: {}".format(sub.status)))
+                    elements.append(
+                        Paragraph("Pontuação: {}".format(sub.pontuacao)))
+                    elements.append(Paragraph(
+                        "Comentários: {}".format(sub.comentario)
+                    ))
 
             elements.append(PageBreak())
 
