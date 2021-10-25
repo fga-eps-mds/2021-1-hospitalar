@@ -47,6 +47,30 @@
     - email: user@email.com
     - senha: senha
 
+# Fazendo requisições com o axios
+- Para fazer alguma requisição que seja protegida por autenticação, você precisa passar as configurações do axios manualmente. exemplo:
+```
+import React, { useContext } from 'react'
+import AuthContext from '../../context/auth'
+import { CONFIG, api } from '../../api'
+
+const context = useContext(AuthContext)
+
+// eslint-disable-next-line no-console
+api.get('avaliacao/', CONFIG(context.token)).catch(console.log)
+```
+ou
+```
+import React, { useContext } from 'react'
+import AuthContext from '../../context/auth'
+import { CONFIG, api } from '../../api'
+
+const context = useContext(AuthContext)
+
+// eslint-disable-next-line no-console
+api.post('avaliacao/', avaliacao, CONFIG(context.token)).catch(console.log)
+```
+
 # Documentação útil
 
 - [Material-UI](https://material-ui.com/)

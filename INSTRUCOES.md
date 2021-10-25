@@ -26,6 +26,7 @@ Para melhor visualização leia esse arquivo como um markdown
 
 Para rodar o backend (incluindo um banco de dados PostgreSQL) em um container Docker execute os seguintes comandos dentro da pasta backend:
 
+- na pasta backend, arquivo .env mude DOCKER de FALSE para TRUE
 - docker-compose build
 - docker-compose up
 
@@ -43,10 +44,10 @@ Não esqueça de desligar o container ao terminar o trabalho:
   - (certifique-se que seu venv ou anaconda esteja ativado)
   - pip install (nome do pacote)
 
-## Adicionando app ao Django:
+## Comandos específicos do Backend:
 
 - Leia o markdown na pasta backend
 
-## Adicionando página ao Frontend
+## Comandos específicos do Frontend
 
 - Leia o markdown na pasta frontend
