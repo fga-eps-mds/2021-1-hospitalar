@@ -21,6 +21,7 @@
 | 13/09/2021 | 1.3    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 13/09/2021 | 1.4    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 18/09/2021 | 1.5    | Correções nos markdowns dos assets                                                                           | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
+| 25/10/2021 | 1.6    | Evolução das primeiras versões do documento                                                                  | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
 
 ## Sumário
 
@@ -160,6 +161,12 @@ O Typescript está ligado a área de desenvolvimento, principalmente ao Desenvol
 
 Foi a linguagem de programação escolhida para o projeto devido a aplicação, se encaixa perfeitamente num dos requisitos propostos, relacionado a ser uma aplicação web; e possui vasto material de apoio - sua popularidade promove seu desenvolvimento. Além do retorno educacional, como uma linguagem escolhida para desenvolver as skills em programação voltada a WEB.
 
+#### 2.3.7 Material UI (MUI)
+
+O MUI é uma biblioteca React que provê robustez, possibilidades de customização e componentes acessíveis, possibilitando construção e design de sistemas e aplicações mais rápidas. Essa biblioteca conta com uma boa e bem escrita <a href="https://mui.com/pt/">documentação</a>, que auxilia bastante no projeto do sistema. Também conta com <a href="https://github.com/mui-org/material-ui">repositório</a> no Github.
+
+Para o projeto, esta biblioteca atua constantemente na criação das páginas do sistema, desde os botões e campos de texto, até a construção de tabelas completas. Como vantagens obtidas, tem-se a padronização do sistema, visto que os componentes (botões, campos de texto, e outros) foram igualmente configurados e padronizados; além de que a comunicação entre componentes se facilita.
+
 ## 3. Metas e Restrições da Arquitetura
 
 ### 3.1 Metas
@@ -185,6 +192,7 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 <li><b>MongoDB</b>: Sistema responsável pelo armazenamento e gerência dos dados apresentados à aplicação. Trabalhará em conjunto ao Django API</li>
 <li><b>JavaScript</b>: Linguagem de programação específica para desenvolvimento WEB FrontEnd. Trabalhará juntamente do React.Js</li>
 <li><b>React.js</b>: FrameWork específico para o FrontEnd da aplicação, vai simplificar a execução do FrontEnd da aplicação.</li>
+<li><b>Material UI</b>: Biblioteca React que vai facilitar a construção do design da página</li>
 
 </ul>
 
@@ -257,4 +265,4 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 ### 5.3.3 Diagrama unificado
 
-![DiagramaBackEndPacotes](/docs/assets/produtos/arquitetura/diagrama_de_classes_unificado_0.2.png)
+![DiagramaBackEndPacotes](/docs/assets/produtos/arquitetura/diagrama_de_classes_unificado_3.png)
