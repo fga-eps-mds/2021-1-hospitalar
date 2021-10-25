@@ -261,7 +261,11 @@ export function PaginaAvaliacao(): React.ReactElement {
         <Grid className={classes.textResponsavel}>
           {/* lista de responsaveis */}
           <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
-          <Grid className={classes.textResponsavelResp}>{avaliacao.idsAvaliadores}</Grid>
+          <Grid className={classes.textResponsavelResp}>
+            {avaliacao.idsAvaliadores.split(',').map((val) => (
+              <Grid>{val}</Grid>
+            ))}
+          </Grid>
         </Grid>
         {/* Tabela e seus componentes */}
         <Grid>
