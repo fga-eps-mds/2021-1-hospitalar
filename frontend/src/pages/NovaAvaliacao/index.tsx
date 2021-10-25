@@ -81,7 +81,8 @@ export function NovaAvaliacao(): React.ReactElement {
             <Autocomplete
               multiple
               options={users}
-              getOptionLabel={(option: any) => option.name}
+              getOptionLabel={(option: any) => option.username}
+              getOptionSelected={(option: any, value) => option.id === value.id}
               renderInput={(params: any) => (
                 <TextField
                   className={classes.inputText}
@@ -91,6 +92,21 @@ export function NovaAvaliacao(): React.ReactElement {
                   placeholder='Avaliadores'
                 />
               )}
+              onChange={(event, values) => {
+                event.preventDefault()
+                let concatIds = ''
+                values.forEach((val, index) => {
+                  if (index === 0) {
+                    concatIds = concatIds.concat(val.id.toString())
+                  } else {
+                    concatIds = concatIds.concat(',', val.id.toString())
+                  }
+                })
+                setIdsAvaliadores(concatIds)
+
+                // eslint-disable-next-line no-console
+                console.log(values)
+              }}
             />
             <Button
               onClick={handleSave}
