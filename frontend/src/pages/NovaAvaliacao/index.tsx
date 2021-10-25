@@ -1,6 +1,6 @@
-import { CONFIG, api } from '../../api'
+import { CONFIG, api, authApi } from '../../api'
 import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import AuthContext from '../../context/auth'
 import Autocomplete from '@material-ui/lab/Autocomplete'
@@ -20,9 +20,10 @@ export function NovaAvaliacao(): React.ReactElement {
   const context = useContext(AuthContext)
 
   const blankUser: Usuario = {
-    username: 'null',
+    id: 0,
+    nome: 'null',
     email: 'null',
-    tipo: 'null',
+    admin: false,
     funcao: 'null',
     organizacao: 'null',
   }
@@ -55,8 +56,8 @@ export function NovaAvaliacao(): React.ReactElement {
 
   const generateForm = () => {
     useEffect(() => {
-      api
-        .get<Usuario[]>('usuario/')
+      authApi
+        .get<Usuario[]>('user_list/', CONFIG(context.token))
         .then((response) => {
           setUsers([...response.data])
           // eslint-disable-next-line no-console
@@ -83,7 +84,7 @@ export function NovaAvaliacao(): React.ReactElement {
             <Autocomplete
               multiple
               options={users}
-              getOptionLabel={(option: any) => option.username}
+              getOptionLabel={(option: any) => option.nome}
               getOptionSelected={(option: any, value) => option.id === value.id}
               renderInput={(params: any) => (
                 <TextField
