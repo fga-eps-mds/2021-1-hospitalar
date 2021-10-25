@@ -102,16 +102,20 @@ class MyPrint:
         return text
 
     def aval_sucinta(self, table_data):
+        relatorio = Avaliacao.objects.get(codigo=self.cod_relatorio)
+
         conformes = table_data[-1][2].split('%')
         conformes_val = float(conformes[0])
+
         nao_conformes = table_data[-1][3].split('%')
         nao_conformes_val = float(nao_conformes[0])
+
         text = '''
-        a. Avaliação Sucinta: o HOSP_SIGLA foi avaliado dentro dos critérios de avaliação 
+        a. Avaliação Sucinta: o Hospital {} foi avaliado dentro dos critérios de avaliação 
         para a Acreditação Hospitalar, que foram revistos e que ainda estão em desenvolvimento. A OMS 
         obteve apenas {}% de itens conformes e totalizou {}% em itens conformes e parcialmente 
         conformes em todas as áreas.
-        '''.format(conformes_val, conformes_val + nao_conformes_val)
+        '''.format(relatorio.nomeHospital, conformes_val, conformes_val + nao_conformes_val)
 
         return text
 
@@ -123,9 +127,7 @@ class MyPrint:
 
         # Footer
         footer = Paragraph(
-            'Relatório da Avaliação Hospitalar do {}, de {}'.format(
-                0, 0
-            ), styles['Normal'])
+            'Relatório de Avaliação Hospitalar', styles['Normal'])
         w, h = footer.wrap(doc.width, doc.bottomMargin)
         footer.drawOn(canvas, doc.leftMargin, h + 1.7 * cm)
 
@@ -268,7 +270,7 @@ class MyPrint:
         table_data.append(
             [Paragraph('PERCENTUAIS')] +
             [("{0:.2f}%".format((nums / count_totals[0]) * 100) if count_totals[0] else 0)
-             for nums in count_totals[1:6]] + ['-', '-', '-']
+             for nums in count_totals[0:5]] + ['-', '-', '-']
         )
 
         return table_data
@@ -295,7 +297,7 @@ class MyPrint:
         drawing = Drawing(width=400, height=200)
         # Propriedades do gráfico
         my_title = String(
-            TA_CENTER, 200, 'Proporções das Pontuações', fontSize=14)
+            self.width/4, 200, 'Proporções das Pontuações', fontSize=14)
         pie = Pie()
         pie.sideLabels = True
         pie.x = 150
@@ -471,6 +473,9 @@ class MyPrint:
             )
 
             index += 1
+
+            elements.append(Paragraph("Fatos Observados em {}".format(
+                secs.topico), styles['centered_title']))
 
             titulo = "{}. {}".format(secs.id, secs.topico)
             # Tópicos
