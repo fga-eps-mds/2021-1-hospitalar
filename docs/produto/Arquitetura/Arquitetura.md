@@ -22,7 +22,7 @@
 | 13/09/2021 | 1.4    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 18/09/2021 | 1.5    | Correções nos markdowns dos assets                                                                           | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
 | 25/10/2021 | 1.6    | Evolução das primeiras versões do documento                                                                  | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
-| 26/10/2021 | 2.0    | Alteração nos diagramas                                                                                      | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
+| 26/10/2021 | 2.0    | Alteração nos diagramas                                                                                      | [@pedrohelias](https://github.com/pedrohelias)    , [@magnluiz](https://github.com/magnluiz)                                                                                                                                   |
 
 ## Sumário
 
@@ -174,7 +174,7 @@ O SonarCloud é uma plataforma em nuvem específica para exibir processos de ins
 
 #### 2.3.9 Heroku
 
-Heroku é uma plataforma em nuvem com suporte para várias linguagens de programação, que disponibiliza o ambiente para rodar, construir e operar sistemas na nuvem. Bastante útil para fazer o deploy de sistemas, bem como testa-los num ambiente web. A plataforma aceita deploys, seja para hospedagem ou para testes na aplicação.
+Heroku é uma plataforma em nuvem com suporte para várias linguagens de programação, que disponibiliza o ambiente para rodar, construir e operar sistemas na nuvem. Bastante útil para fazer o deploy de sistemas, bem como testá-los num ambiente web. A plataforma aceita deploys, seja para hospedagem ou para testes na aplicação.
 
 #### 2.3.10 GitActions
 
@@ -262,7 +262,7 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Back-End e como o mesmo se divide:
 
-![DiagramaBackEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes(Back_end).png>)
+![DiagramaBackEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes(BackEnd2).png>)
 
 ### 5.3 Visão da Implantação
 
@@ -273,12 +273,10 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 ### 5.3.2 Back-end
 
-- Diagrama de Classes - Relatório
-  ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_time_b.png)
+- Diagrama de Classes - BackEnd
+  ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_relatorio_unificado4.png)
 
 - Diagrama de Classe - Banco de Dados
   ![diagramaClasses_TimeA](/docs/assets/produtos/arquitetura/diagrama_front.jpg)
 
-### 5.3.3 Diagrama unificado
 
-![DiagramaBackEndPacotes](/docs/assets/produtos/arquitetura/diagrama_de_classes_unificado_3.png)
