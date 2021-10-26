@@ -12,7 +12,7 @@ Continuidade nos estudos e implementação do sistema de cadastro e autenticaç�
 
 ## Duração
 
-**Duração:** (nº) dias
+**Duração:** 8 dias
 <br>
 **Início:** 05/10/2021
 <br>
