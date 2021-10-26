@@ -47,3 +47,24 @@ class AvaliacaoView(viewsets.ModelViewSet):
         response.write(pdf)
 
         return response
+
+    @action(methods=['post'], detail=False)
+    def get_by_code(self, request):
+        try:
+            avaliacao = Avaliacao.objects.get(
+                codigo=request.data['codigo'])
+        except:
+            return Response(status=HTTP_404_NOT_FOUND)
+
+        avaliacaoJSON = AvaliacaoSerializer(avaliacao)
+        return Response(avaliacaoJSON.data)
+
+    @action(methods=['post'], detail=False)
+    def confereAvaliacao(self, request):
+        try:
+            avaliacao = Avaliacao.objects.get(
+                codigo=request.data['codigo'])
+        except:
+            return Response(status=HTTP_404_NOT_FOUND)
+
+        return Response(status=HTTP_200_OK)

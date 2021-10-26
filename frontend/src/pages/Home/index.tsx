@@ -50,7 +50,7 @@ export function Home(): React.ReactElement {
           <Button
             variant='contained'
             className={classes.botao}
-            onClick={() => history.push('avaliacao/1')}
+            onClick={() => history.push('avaliacao')}
           >
             Avaliações
           </Button>

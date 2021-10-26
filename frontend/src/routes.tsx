@@ -1,9 +1,8 @@
-
-
 import { BrowserRouter, Redirect, Route, RouteProps, Switch } from 'react-router-dom'
 import React, { useContext } from 'react'
 
 import AuthContext from './context/auth'
+import { BuscarAvaliacao } from './pages/BuscarAvaliacao'
 import { GenerateReport } from './pages/GenerateReport'
 import { GerarRelatorio } from './pages/gerarRelatorio'
 import { Gerenciador } from './pages/Gerenciador'
@@ -88,11 +87,7 @@ export function Routes(): React.ReactElement {
           <Home />
         </PrivateRoute>
 
-        <PrivateRoute
-          exact
-          path='/avaliacao/:idAvaliacao'
-          isAuthenticated={context.signed}
-        >
+        <PrivateRoute exact path='/avaliacao/:codigo' isAuthenticated={context.signed}>
           <PaginaAvaliacao />
         </PrivateRoute>
 
@@ -110,6 +105,10 @@ export function Routes(): React.ReactElement {
 
         <PrivateRoute exact path='/PreVisualizar' isAuthenticated={context.signed}>
           <PreVisualizarRelatorio />
+        </PrivateRoute>
+
+        <PrivateRoute exact path='/avaliacao' isAuthenticated={context.signed}>
+          <BuscarAvaliacao />
         </PrivateRoute>
 
         <AdminPrivateRoute
