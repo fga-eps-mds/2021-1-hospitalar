@@ -10,9 +10,9 @@
 
 | **ID** |                                                   **Descrição**                                                   | **Status** | **Pontos** |
 | :----: | :---------------------------------------------------------------------------------------------------------------: | :--------: | :--------: |
-|  #188  | [Anexar Imagens ao arquivo e realizar o PR - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/188) |  Fechada   |    (nº)    |
-|  #187  |         [Criar pastas da sprint 7 - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/187)          |  Fechada   |    (nº)    |
-|  #62   |    [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)     |  Fechada   |    ...     |
+|  #188  | [Anexar Imagens ao arquivo e realizar o PR - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/188) |  Fechada   |     3      |
+|  #187  |         [Criar pastas da sprint 7 - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/187)          |  Fechada   |     1      |
+|  #62   |    [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)     |  Fechada   |     8      |
 
 ## Pontuação Final
 
