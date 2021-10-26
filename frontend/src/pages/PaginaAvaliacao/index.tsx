@@ -7,6 +7,7 @@ import { Avaliacao, Secao, Subtopico } from '../../types/Avaliacao'
 import {
   Box,
   Button,
+  CircularProgress,
   Dialog,
   DialogActions,
   DialogContent,
@@ -19,20 +20,22 @@ import {
   Tooltip,
   Typography,
 } from '@material-ui/core'
-import { CONFIG, api } from '../../api'
+import { CONFIG, api, authApi } from '../../api'
 import React, { useContext, useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 
 import AuthContext from '../../context/auth'
 import { Header } from '../../components/GlobalComponents/Header'
 import { TabelaSecoes } from '../../components/PaginaAvaliacaoComponents/TabelaSecoes'
+import { Usuario } from '../../types/Usuario'
+import axios from 'axios'
 import { useStyles } from './styles'
 
 /**
- *[tipagem] Transformando idAvaliacao em um tipo para ser um argumento
+ *[tipagem] Transformando codigo em um tipo para ser um argumento
  */
 type Props = {
-  idAvaliacao: string
+  codigo: string
 }
 
 export function PaginaAvaliacao(): React.ReactElement {
@@ -40,7 +43,7 @@ export function PaginaAvaliacao(): React.ReactElement {
    * Criando constantes (respectivamente)
    *  classes pega o styles.ts
    *  useState substitui o uso de class component para criar uma variavel de estado-idSeção é criado para trocar de seção
-   *  transforma idAvaliacao em paramentro
+   *  transforma codigo em paramentro
    */
   const classes = useStyles()
   const history = useHistory()
@@ -48,7 +51,7 @@ export function PaginaAvaliacao(): React.ReactElement {
 
   const [idSecao, setIdSecao] = useState(0)
   const [open, setOpen] = React.useState(false)
-  const { idAvaliacao } = useParams<Props>()
+  const { codigo } = useParams<Props>()
 
   /**
    * Constroi um "objeto" do tipo Avaliação com todos os itens nulos
@@ -73,22 +76,28 @@ export function PaginaAvaliacao(): React.ReactElement {
    * e uma para edição
    */
   const [avaliacao, setAvaliacao] = useState<Avaliacao>(avaliacaoNula)
+  const [avaliadores, setAvaliadores] = useState<Usuario[]>([])
   const [isEditableArray, setIsEditableArray] = useState<boolean[]>([])
+  const [loading, setLoading] = useState(true)
 
   /**
    *  Função para ter o "get" do banco de dados
    */
-  const bancoGet = () => {
-    api
-      .get<Avaliacao>(`avaliacao/${idAvaliacao}/`, CONFIG(context.token))
+  const bancoGet = async () => {
+    const response = await api
+      .post<Avaliacao>(`avaliacao/get_by_code/`, { codigo }, CONFIG(context.token))
 
-      .then(({ data }) => {
-        setIsEditableArray(data.secoes[idSecao].subtopicos.map(() => false))
-        setAvaliacao(data)
-      })
       // eslint-disable-next-line no-console
       .catch(console.log)
+
+    if (response) {
+      setIsEditableArray(response.data.secoes[idSecao].subtopicos.map(() => false))
+      setAvaliacao(response.data)
+      return response.data
+    }
+    return null
   }
+
   /**
    * Constante para mudar de seção
    */
@@ -151,7 +160,7 @@ export function PaginaAvaliacao(): React.ReactElement {
     })
 
     api
-      .put(`avaliacao/${idAvaliacao}/`, aux, CONFIG(context.token))
+      .put(`avaliacao/${codigo}/`, aux, CONFIG(context.token))
       .then(bancoGet)
       // eslint-disable-next-line no-console
       .catch(console.log)
@@ -168,7 +177,7 @@ export function PaginaAvaliacao(): React.ReactElement {
     setAvaliacao(aux)
     setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
     api
-      .put(`avaliacao/${idAvaliacao}/`, aux, CONFIG(context.token))
+      .put(`avaliacao/${codigo}/`, aux, CONFIG(context.token))
       .then(bancoGet)
       // eslint-disable-next-line no-console
       .catch(console.log)
@@ -215,18 +224,43 @@ export function PaginaAvaliacao(): React.ReactElement {
     setOpen(false)
   }
 
+  const getAvaliadores = async (avaliacaoRecebida: Avaliacao) => {
+    const idsAvaliadoresString = avaliacaoRecebida.idsAvaliadores
+    const idsAvaliadores = idsAvaliadoresString.split(',')
+    const avaliadoresRecebidos = await axios.all(
+      idsAvaliadores.map((id) =>
+        authApi
+          .get(`user/${id}/`, CONFIG(context.token))
+          .then(({ data }) => data)
+          // eslint-disable-next-line no-console
+          .catch(console.log)
+      )
+    )
+    setAvaliadores(avaliadoresRecebidos)
+  }
+
   /**
    * useEffect para pegar os dados do banco
    */
   useEffect(() => {
-    bancoGet()
+    const gambiarra = async () => {
+      const avaliacaoRecebida = await bancoGet()
+      if (avaliacaoRecebida) {
+        getAvaliadores(avaliacaoRecebida)
+      }
+      setLoading(false)
+      return 'gambiarra'
+    }
+    gambiarra()
   }, [])
 
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
    * @see https://material-ui.com/components/grid/
    */
-  return (
+  return loading ? (
+    <CircularProgress />
+  ) : (
     <Grid>
       <Grid item>
         <Header
@@ -279,8 +313,8 @@ export function PaginaAvaliacao(): React.ReactElement {
           {/* lista de responsaveis */}
           <Grid className={classes.textResponsavelLabel}>Responsáveis:</Grid>
           <Grid className={classes.textResponsavelResp}>
-            {avaliacao.idsAvaliadores.split(',').map((val) => (
-              <Grid>{val}</Grid>
+            {avaliadores.map((val, index) => (
+              <Grid key={index}>{val.nome}</Grid>
             ))}
           </Grid>
         </Grid>

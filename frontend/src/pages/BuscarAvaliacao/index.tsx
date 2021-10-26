@@ -1,24 +1,26 @@
-import { Header } from '../../components/GlobalComponents/Header'
-import React, { useEffect, useState } from 'react'
-import { useStyles } from './styles'
-import { SearchRounded } from '@material-ui/icons'
-import { Box, Button, Grid, IconButton } from '@material-ui/core'
-import { useHistory, useParams } from 'react-router-dom'
-import { Avaliacao } from '../../types/Avaliacao'
-import { api } from '../../api'
+import { Box, Button, Grid } from '@material-ui/core'
+import { CONFIG, api } from '../../api'
+import React, { useContext, useState } from 'react'
 
-type Props = {
-  idAvaliacao: string
-}
+import AuthContext from '../../context/auth'
+import { Header } from '../../components/GlobalComponents/Header'
+import { SearchRounded } from '@material-ui/icons'
+import { useHistory } from 'react-router-dom'
+import { useStyles } from './styles'
 
 export function BuscarAvaliacao(): React.ReactElement {
   const classes = useStyles()
   const history = useHistory()
-  const [id, setId] = useState('')
-  const { idAvaliacao } = useParams<Props>()
+  const context = useContext(AuthContext)
+  const [codigo, setCodigo] = useState('')
 
   const buscarAvaliacao = () => {
-    history.push(`/avaliacao/${id}`)
+    api
+      .post('avaliacao/confereAvaliacao/', { codigo }, CONFIG(context.token))
+      .then(() => history.push(`/avaliacao/${codigo}`))
+      .catch((error) => {
+        alert(`Essa avaliação não existe... \nlog: ${error}`)
+      })
   }
 
   return (
@@ -37,7 +39,7 @@ export function BuscarAvaliacao(): React.ReactElement {
         <h1 className={classes.tituloEntradaCodigo}>BUSCAR AVALIAÇÃO</h1>
         <input
           className={classes.entradaCodigo}
-          onChange={(event) => setId(event.target.value)}
+          onChange={(event) => setCodigo(event.target.value)}
           placeholder='Digite o ID da avaliação'
         />
         <div className={classes.botoes}>
