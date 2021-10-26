@@ -2,9 +2,9 @@
 
 ## Histórico de revisão
 
-|  **Data**  | **Versão** |   **Modificação**    |             **Autor**              |
-| :--------: | :--------: | :------------------: | :--------------------------------: |
-| 23/08/2021 |    0.1     | Criação do documento | Victor Cabral / Klyssmann Oliveira |
+|  **Data**  | **Versão** |   **Modificação**    |    **Autor**     |
+| :--------: | :--------: | :------------------: | :--------------: |
+| 25/10/2021 |    0.1     | Criação do documento | [Pedro Vieira]() |
 
 ## Backlog da Sprint
 
