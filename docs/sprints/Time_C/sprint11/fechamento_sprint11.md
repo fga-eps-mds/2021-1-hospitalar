@@ -35,18 +35,19 @@
 
 ### Pontos Positivos
 
--
--
+- Estudos do frameword com um bom progresso.
+- Implementação do Login por parte do Frontend quase finalizada
 
 ### Pontos Negativos
 
--
--
+- Cansaço acumulado por parte dos integrantes
+- Tempo cada vez mais curto para a entrega das implementações
+- Apreensão quanto ao resultado final do projeto.
 
 ### Melhorias
 
--
--
+- Conhecimento do framework.
+- Posspiveis soluções encontradas quanto à autenticação de Usuário
 
 ## Burndown
 
@@ -111,25 +112,15 @@
 | &#128529; | Indiferente/Neutro |
 | &#128554; | Desanimado/triste  |
 
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** | **Nota** |
-| :--------------------: | :------: |
-| Descrição do Objetivo  |   (nº)   |
-| Descrição do Objetivo  |   (nº)   |
-|          ...           |   ...    |
-
 ## Riscos
 
-| **Risco** | **Ação Preventiva** | **Ação Reativa** |
-| :-------: | :-----------------: | :--------------: |
-|    ...    |         ...         |       ...        |
-|    ...    |         ...         |       ...        |
+|   **Risco**    |            **Ação Preventiva**            |           **Ação Reativa**           |
+| :------------: | :---------------------------------------: | :----------------------------------: |
+| Falta de tempo | Passando tarefas para quem tem mais tempo |     Realizar Tarefas em conjunto     |
+|  Erros e bugs  |            Pesquisas em Fóruns            | Integrantes de outros times ajudando |
 
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
 
-...
+Visto que o Time C estava com muitos problemas na implementação da autenticação (muito se deve ao fato que a maioria estava começando), integrantes mais experientes de outros Times se disponibilizaram ajudar na implementação da funcionalidade de login, autenticação e etc. Estamos animados para ver a funcionalidade em execução e aprender bastante com os mais experientes do por quê tivemos tanta dificuldade de resolver os problemas gerados.
