@@ -35,7 +35,7 @@ export function TabelaSecoes({
         <TableHead>
           <TableRow>
             <TableCell className={classes.designHeader}>Nº</TableCell>
-            <TableCell className={classes.designHeader}>Nome</TableCell>
+            <TableCell className={classes.designHeader}>Requisito</TableCell>
             <TableCell className={classes.designHeader}>C</TableCell>
             <TableCell className={classes.designHeader}>PC</TableCell>
             <TableCell className={classes.designHeader}>NC</TableCell>

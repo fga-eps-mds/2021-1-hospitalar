@@ -4,15 +4,15 @@ Para melhor visualização leia esse arquivo como um markdown
 
 ## Preparando tecnologias:
 
-- backend django usando python 3.8 (venv ou anaconda)
+- backend django usando python 3.8 e orquestrador de pacotes PipEnv
 - frontend react usando node 14 lts
-- Banco de dados MongoDB community
+- Banco de dados PostgreSQL
 - Comandos para preparar o node (dentro da pasta frontend):
   - yarn
 - Comandos para preparar o python (dentro da pasta backend):
-  - (ative seu venv ou anaconda)
-  - pip install -r requirements.txt
-  - python ./manage.py makemigrations
+  - pip install pipenv
+  - pipenv install
+  - pipenv shell
   - python ./manage.py migrate
 
 ## Compilando:
@@ -21,6 +21,18 @@ Para melhor visualização leia esse arquivo como um markdown
   - yarn start
 - Backend:
   - python ./manage.py runserver
+
+## Docker
+
+Para rodar o backend (incluindo um banco de dados PostgreSQL) em um container Docker execute os seguintes comandos dentro da pasta backend:
+
+- na pasta backend, arquivo .env mude DOCKER de FALSE para TRUE
+- docker-compose build
+- docker-compose up
+
+Não esqueça de desligar o container ao terminar o trabalho:
+
+- docker-compose down
 
 ## Adicionando dependências
 
@@ -32,10 +44,10 @@ Para melhor visualização leia esse arquivo como um markdown
   - (certifique-se que seu venv ou anaconda esteja ativado)
   - pip install (nome do pacote)
 
-## Adicionando app ao Django:
+## Comandos específicos do Backend:
 
 - Leia o markdown na pasta backend
 
-## Adicionando página ao Frontend
+## Comandos específicos do Frontend
 
 - Leia o markdown na pasta frontend
