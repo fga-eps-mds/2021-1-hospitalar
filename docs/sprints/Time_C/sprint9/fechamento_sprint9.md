@@ -2,18 +2,17 @@
 
 ## Histórico de revisão
 
-| **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    25/10/2021   |  0.1 | Criação do documento  | [Pedro ](https://github.com/Pedro-V8) |
+|  **Data**  | **Versão** |   **Modificação**    |               **Autor**               |
+| :--------: | :--------: | :------------------: | :-----------------------------------: |
+| 25/10/2021 |    0.1     | Criação do documento | [Pedro ](https://github.com/Pedro-V8) |
 
-## Backlog da Sprint 
+## Backlog da Sprint
 
-| **ID** |  **Descrição** | **Status**  |  **Pontos** |
-|:-:|:-:|:-:|:-:|
-|    #188   |  [Anexar Imagens ao arquivo e realizar o PR - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/188) | Fechada  | (nº) |
-|    #187   |  [Criar pastas da sprint 7 - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/187) | Fechada  | (nº) |
-|    #62   |  [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62) | Fechada  | ... |
-
+| **ID** |                                                   **Descrição**                                                   | **Status** | **Pontos** |
+| :----: | :---------------------------------------------------------------------------------------------------------------: | :--------: | :--------: |
+|  #188  | [Anexar Imagens ao arquivo e realizar o PR - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/188) |  Fechada   |    (nº)    |
+|  #187  |         [Criar pastas da sprint 7 - Time C](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/187)          |  Fechada   |    (nº)    |
+|  #62   |    [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)     |  Fechada   |    ...     |
 
 ## Pontuação Final
 
@@ -24,7 +23,6 @@
 ## Débitos Técnicos de Sprints Anteriores
 
 - Não houveram débitos técnicos para pagar nesta sprint
-
 
 ## Débitos Técnicos Gerados
 
@@ -51,63 +49,74 @@
 ## Burndown
 
 ![Burndown](/docs/assets/sprints/time_c/sprint_9/burndown09.png)
-  
+
 ## Velocity
 
 ![Velocity](/docs/assets/sprints/time_c/sprint_9/velocity09.png)
-  
+
 ## Práticas ágeis
-  
-|ID    | Nome de prática ágil    | Sprint nº |
-| :-: | :-: | :-: |
-| 1    | Priorização do Backlog pelo PO | &#10004; |
-| 2    | Desenvolvimento de processos e práticas facilitadas pelo SM | &#10004; |
-| 3    | Reunião de planejamento de Sprint | &#10060; |
-| 4    | Planning Poker | &#10004; |
-| 5    | Comprometimento do time e do PO com o backlog do produto | &#10004; |
-| 6    | Os membros da equipe são voluntários para tarefas | &#10004; |
-| 7    | Restrospectiva da Sprint | &#10060; |
-| 8    | Acompanhamento do Velocity | &#10060; |
-| 9    | User Stories | &#10004; |
-| 10 |    Refatorar quando e onde for possível | &#10004; |
-| 11 | Todo código deve ter códigos unitários | &#10060; |
-| 12 |    Todo código deve passar por testes unitários antes de ser liberado | &#10060; |
-| 13 |     Acompanhamento do Squad Health Check | &#10004; |
-| 14 |    Quadro de conhecimentos| &#10004; |
-  
+
+| ID  |                        Nome de prática ágil                        | Sprint nº |
+| :-: | :----------------------------------------------------------------: | :-------: |
+|  1  |                   Priorização do Backlog pelo PO                   | &#10004;  |
+|  2  |    Desenvolvimento de processos e práticas facilitadas pelo SM     | &#10004;  |
+|  3  |                 Reunião de planejamento de Sprint                  | &#10060;  |
+|  4  |                           Planning Poker                           | &#10004;  |
+|  5  |      Comprometimento do time e do PO com o backlog do produto      | &#10004;  |
+|  6  |         Os membros da equipe são voluntários para tarefas          | &#10004;  |
+|  7  |                      Restrospectiva da Sprint                      | &#10060;  |
+|  8  |                     Acompanhamento do Velocity                     | &#10060;  |
+|  9  |                            User Stories                            | &#10004;  |
+| 10  |                Refatorar quando e onde for possível                | &#10004;  |
+| 11  |               Todo código deve ter códigos unitários               | &#10060;  |
+| 12  | Todo código deve passar por testes unitários antes de ser liberado | &#10060;  |
+| 13  |                Acompanhamento do Squad Health Check                | &#10004;  |
+| 14  |                      Quadro de conhecimentos                       | &#10004;  |
+
 ## Quadro de Conhecimento
 
-| Nome | Github | HTML | Javascript | Metodologia ágeis | Docker | Django | Mongodb |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
-| Pessoa 2 | &#128997; | &#129000; | &#129001; | &#128999; | &#128998; | &#128997; | &#128997; | 
+|      Nome      |  Github   |   HTML    | Javascript | Metodologia ágeis |  Docker   |  Django   |  Mongodb  |
+| :------------: | :-------: | :-------: | :--------: | :---------------: | :-------: | :-------: | :-------: |
+| Pedro Caldeira | &#129001; | &#128999; | &#129000;  |     &#128999;     | &#128999; | &#129000; | &#129000; |
+|  Pedro Vieira  | &#129001; | &#129001; | &#128998;  |     &#129001;     | &#128999; | &#129000; | &#129001; |
+|  Gabriel Luiz  | &#129001; | &#129000; | &#129000;  |     &#129001;     | &#129000; | &#129000; | &#129000; |
+|  Igor Thiago   | &#128999; | &#128999; | &#129001;  |     &#128999;     | &#129001; | &#129001; | &#129001; |
+|  Thiago Vivan  | &#128999; | &#129000; | &#129001;  |     &#128999;     | &#129000; | &#129000; | &#128997; |
+|     Bruno      | &#129000; | &#129001; | &#128999;  |     &#129000;     | &#129001; | &#128997; | &#128997; |
 
+|    Cor    |      Legenda      |
+| :-------: | :---------------: |
+| &#128998; |     Sou brabo     |
+| &#129001; | Consigo me virar  |
+| &#128999; | Sei mais ou menos |
+| &#129000; |     Então...      |
+| &#128997; |     Socorro!      |
 
-| Cor | Legenda |
-| :-: | :-: |
-| &#128998; | Sou brabo |
-| &#129001;| Consigo me virar |
-| &#128999; | Sei mais ou menos|
-| &#129000;  | Então... |
-| &#128997; | Socorro!|
-  
 ## Squad Health Check
-  
-| Nome | Sprint 1 | Sprint 2 | Sprint 3 |
-| :-: | :-: | :-: | :-: |
-| Pessoa 1 | &#128512; | &#128516; | &#128521; |
-| Pessoa 2 | &#128529; | &#129320; | &#128530; |
-| Pessoa 3 | &#128532; | &#128567; | &#129314; |
-| Pessoa 4 | &#129395; | &#128547; | &#129321; |
+
+|      Nome      | Sprint 0  | Sprint 1  | Sprint 2  | Sprint 3  | Sprint 4  | Sprint 5  | Sprint 6  | Sprint 7  | Sprint 8  | Sprint 9  |
+| :------------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Pedro Caldeira | &#128521; | &#128529; | &#128554; | &#128521; | &#128529; | &#128521; | &#128521; | &#128529; | &#128529; | &#128529; |
+|  Pedro Vieira  | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529; | &#128529; | &#128521; | &#128521; |
+|  Gabriel Luiz  | &#128521; | &#128529; | &#128521; | &#128521; | &#128521; | &#128529; | &#128529; | &#128529; | &#128521; | &#128554; |
+|  Igor Thiago   | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128554; | &#128521; | &#128521; | &#128529; |
+|  Thiago Vivan  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; |
+|     Bruno      | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529; | &#128529; | &#128554; | &#128521; | &#128529; |
+
+|   Emote   |    Significados    |
+| :-------: | :----------------: |
+| &#128521; |   Alegre/Animado   |
+| &#128529; | Indiferente/Neutro |
+| &#128554; | Desanimado/triste  |
 
 ## Riscos
 
-|  **Risco**  | **Ação Preventiva** |	**Ação Reativa** |
-|:-:|:-:|:-:|
-| Integrantes Desfocados | Mensagens diretas para relembrar das tarefas | Relembrando das tarefas nas issues |
-| Dificuldades em Implementação | Assistir tutoria feita pelos times | Estudar documentação, tutoriais, artigos e etc |
-| Desmotivação |  Realizar tarefas em conjunto | Divir entre tarefas mais simples |
-  
+|           **Risco**           |             **Ação Preventiva**              |                **Ação Reativa**                |
+| :---------------------------: | :------------------------------------------: | :--------------------------------------------: |
+|    Integrantes Desfocados     | Mensagens diretas para relembrar das tarefas |       Relembrando das tarefas nas issues       |
+| Dificuldades em Implementação |      Assistir tutoria feita pelos times      | Estudar documentação, tutoriais, artigos e etc |
+|         Desmotivação          |         Realizar tarefas em conjunto         |        Divir entre tarefas mais simples        |
+
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
