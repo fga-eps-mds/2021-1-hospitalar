@@ -48,7 +48,7 @@
 
 ## Velocity
 
-![Velocity](/docs/assets/sprints/time_c/sprint10/velocity09.png)
+![Velocity](/docs/assets/sprints/time_c/sprint10/velocity10.png)
 
 ## Práticas ágeis
 
