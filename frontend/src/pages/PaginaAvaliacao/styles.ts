@@ -158,24 +158,24 @@ export const useStyles = makeStyles((theme) => ({
   designDialog: {
     border: '6px solid #175215',
   },
-
+  /* texto do titulo da caixa de dialogo de delete */
   textDialogTitle: {
     fontFamily: 'OpenSans',
   },
-
+  /* texto da caixa de dialogo de delete */
   textDialogBox: {
     fontFamily: 'OpenSans',
     fontSize: '19px',
   },
 
-  /* style do botão de adicionar subtopico */
+  /* style do botão de cancelar o delete do subtopico */
   dialogCancelDesign: {
     fontFamily: 'OpenSans',
     '&:hover': {
       background: '#B72C2C',
     },
   },
-
+  /* style do botão de confirmar o delete do subtopico */
   dialogConfirmDesign: {
     fontFamily: 'OpenSans',
     '&:hover': {

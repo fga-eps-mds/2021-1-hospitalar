@@ -39,7 +39,11 @@ export function PaginaAvaliacao(): React.ReactElement {
   /**
    * Criando constantes (respectivamente)
    *  classes pega o styles.ts
-   *  useState substitui o uso de class component para criar uma variavel de estado-idSeção é criado para trocar de seção
+   *  history é usado para trocar de página
+   *  context é um hook para saber o tipo do usuario
+   *
+   *  idSeção é usado como constante para identificar seção
+   *  open é usada nos Dialogs para fechar ou abrir janelas de confirmação de ações
    *  transforma idAvaliacao em paramentro
    */
   const classes = useStyles()
@@ -111,17 +115,21 @@ export function PaginaAvaliacao(): React.ReactElement {
     setIsEditableArray([...isEditableArray, true])
   }
   /**
-   * função usada no botão de Salvar que salva a avaliação e manda para a home
+   * função usada no botão de Salvar que salva a avaliação e mandar para a home
    */
   const salvarAvaliacao = () => {
     alert('A avaliação foi salva.')
     history.push('/Home')
   }
-
+  /**
+   * função usada para abrir uma janela para confirmar o delete do tópico
+   */
   const handleClickOpen = () => {
     setOpen(true)
   }
-
+  /**
+   * função usada para fechar uma janela para confirmar o delete do tópico
+   */
   const handleClose = () => {
     setOpen(false)
   }
@@ -229,6 +237,7 @@ export function PaginaAvaliacao(): React.ReactElement {
   return (
     <Grid>
       <Grid item>
+        {/* cabeçalho */}
         <Header
           links={[
             { texto: 'Home', link: '/home' },
