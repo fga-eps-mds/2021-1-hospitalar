@@ -167,6 +167,18 @@ O MUI é uma biblioteca React que provê robustez, possibilidades de customizaç
 
 Para o projeto, esta biblioteca atua constantemente na criação das páginas do sistema, desde os botões e campos de texto, até a construção de tabelas completas. Como vantagens obtidas, tem-se a padronização do sistema, visto que os componentes (botões, campos de texto, e outros) foram igualmente configurados e padronizados; além de que a comunicação entre componentes se facilita.
 
+#### 2.3.8 SonarCloud
+
+O SonarCloud é uma plataforma em nuvem específica para exibir processos de inspeção em código, a partir de varreduras e assim encontrar possíveis vunerabilidades no código, além de detectar possíveis "code smells".
+
+#### 2.3.9 Heroku
+
+Heroku é uma plataforma em nuvem com suporte para várias linguagens de programação, que disponibiliza o ambiente para rodar, construir e operar sistemas na nuvem. Bastante útil para fazer o deploy de sistemas, bem como testa-los num ambiente web. A plataforma aceita deploys, seja para hospedagem ou para testes na aplicação.
+
+#### 2.3.10 GitActions
+
+O Git Actions é um orquestrador de fluxo de trabalho, e com ele é possível descrever os passos específicos para compilar, fazer testes, criar releasaes e até realizar o deploy do sistema criado.
+
 ## 3. Metas e Restrições da Arquitetura
 
 ### 3.1 Metas
@@ -193,6 +205,9 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 <li><b>JavaScript</b>: Linguagem de programação específica para desenvolvimento WEB FrontEnd. Trabalhará juntamente do React.Js</li>
 <li><b>React.js</b>: FrameWork específico para o FrontEnd da aplicação, vai simplificar a execução do FrontEnd da aplicação.</li>
 <li><b>Material UI</b>: Biblioteca React que vai facilitar a construção do design da página</li>
+<li><b>SonarCloud</b>: Plataforma utilizada para testes</li>
+<li><b>Heroku</b>: Plataforma utilizada para testes e deploy</li>
+<li><b>Git Actions</b>: Sistema utilizado para criação de fluxos de trabalho</li>
 
 </ul>
 
