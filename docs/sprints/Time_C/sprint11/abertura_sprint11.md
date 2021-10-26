@@ -14,9 +14,9 @@ Finalização das autenticações e desenvolvimento e inicio dos teste unitarios
 
 **Duração:** 7 dias
 <br>
-**Início:** (data)
+**Início:** 12/10/2021
 <br>
-**Fim:** (data)
+**Fim:** 18/10/2021
 
 ## Sprint BackLog
 
