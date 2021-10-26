@@ -71,23 +71,23 @@
 
 ### Pontos Positivos
 
-- Os documentos estão encaminhados para versão final e o código foi começado, gerando uma satisfação em por a mão na massa
-- Feriado no dia 07/09 possibilitou um descanso para toda a equipe
-- O projeto foi melhor organizado e está progredindo bem, finalizando-se quase todos os documentos e adentrando na programação do software mais a fundo
+- Os documentos estão encaminhados para versão final e o código foi começado, gerando uma satisfação em por a mão na massa.
+- Feriado no dia 07/09 possibilitou um descanso para toda a equipe.
+- O projeto foi melhor organizado e está progredindo bem, finalizando-se quase todos os documentos e adentrando na programação do software mais a fundo.
 
 ### Pontos Negativos
 
-- A preparação para começar o código (Dojos, ambiente de desenvolvimento e amplitude dos assuntos) demorou mais do que o esperado, gerando um atraso e sobrecarga para entrega do código
-- O feriado, apesar de bom, acabou postergando muitas das atividades planejadas
-- O crud foi inciado e está em bom andamento, mas não se gerou commit do trabalho realizado. Dessa forma as issues de Crud foram alocadas para a Sprint 06, causando um grande aumento no débito pela quantidade de pontos dessas issues
-- O calor nessa semana foi insuportável, causando desânimo e indisposição em todos os integrantes da equipe
+- A preparação para começar o código (Dojos, ambiente de desenvolvimento e amplitude dos assuntos) demorou mais do que o esperado, gerando um atraso e sobrecarga para entrega do código.
+- O feriado, apesar de bom, acabou postergando muitas das atividades planejadas.
+- O crud foi inciado e está em bom andamento, mas não se gerou commit do trabalho realizado. Dessa forma as issues de Crud foram alocadas para a Sprint 06, causando um grande aumento no débito pela quantidade de pontos dessas issues.
+- O calor nessa semana foi insuportável, causando desânimo e indisposição em todos os integrantes da equipe.
 
 ### Melhorias
 
-- Realizar os Dojos em horário mais cedo, para que todo conteúdo planejado seja entregue em um prazo aceitável
-- Devido ao feriado, seria ideal ter realizado o planejamento para execução das atividades presentes na Sprint mais cedo
-- Reforçar que o trabalho realizado pode ir sendo postado constantemente (nas suas devidas branchs), mesmo que não tenha sido completamento finalizado
-- Se mudar de Brasília, invocar chuvas magicamente e reuniões em clubes (moral da história: não há o que fazer)
+- Realizar os Dojos em horário mais cedo, para que todo conteúdo planejado seja entregue em um prazo aceitável.
+- Devido ao feriado, seria ideal ter realizado o planejamento para execução das atividades presentes na Sprint mais cedo.
+- Reforçar que o trabalho realizado pode ir sendo postado constantemente (nas suas devidas branchs), mesmo que não tenha sido completamento finalizado.
+- Se mudar de Brasília, invocar chuvas magicamente e reuniões em clubes (moral da história: não há o que fazer).
 
 ## Burndown
 

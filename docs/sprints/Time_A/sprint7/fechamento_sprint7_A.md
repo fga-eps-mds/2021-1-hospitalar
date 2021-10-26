@@ -49,26 +49,26 @@
 
 ### Pontos Positivos
 
-- A sprint foi bem planejada: quantidade de pontos, issues e carga de atividades
-- A sensação de ter entregue algo na Release 1 deixou a equipe bem animada
-- O projeto foi melhor padronizado em vários aspectos
-- A visão do que será implementado no produto está bem concreta, o que facilita bastante na implementação do código
+- A sprint foi bem planejada: quantidade de pontos, issues e carga de atividades.
+- A sensação de ter entregue algo na Release 1 deixou a equipe bem animada.
+- O projeto foi melhor padronizado em vários aspectos.
+- A visão do que será implementado no produto está bem concreta, o que facilita bastante na implementação do código.
 
 ### Pontos Negativos
 
-- Sobrecarga por parte de outras matérias
-- Mesmo que constado no planejamento, não foi feito tanto código quanto esperado
-- Alguns membros do time tiveram problemas pessoais nessa sprint, o que alterou o rendimento
+- Sobrecarga por parte de outras matérias.
+- Mesmo que constado no planejamento, não foi feito tanto código quanto esperado.
+- Alguns membros do time tiveram problemas pessoais nessa sprint, o que alterou o rendimento.
 
 ### Melhorias
 
-- Time se reunir e parear sempre tendo algúem com mais experiência nas tecnologias a frente, ensinando e "tirando o medo" da equipe
-- Conversar com todos os membros e entender melhor suas dificuldades pessoais para planejar com base nisso
-- Levando em conta as considerações da professora, a partir da próxima sprint haverá uma nova aba no fechamento constando se a melhorias propostas anteriormente foram executadas
+- Time se reunir e parear sempre tendo algúem com mais experiência nas tecnologias a frente, ensinando e "tirando o medo" da equipe.
+- Conversar com todos os membros e entender melhor suas dificuldades pessoais para planejar com base nisso.
+- Levando em conta as considerações da professora, a partir da próxima sprint haverá uma nova aba no fechamento constando se a melhorias propostas anteriormente foram executadas.
 
 ## Burndown
 
-![burndown](/docs/assets/sprints/time_a/sprint_7/burndown_7.png)
+![burndown](/docs/assets/sprints/time_a/sprint_7/burndown_7.jpeg)
 
 ## Velocity
 
