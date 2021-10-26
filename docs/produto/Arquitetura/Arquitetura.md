@@ -42,7 +42,7 @@
 - 2.3 Tecnologias
 - 2.3.1 Python
 - 2.3.2 Django API
-- 2.3.3 MongoDB
+- 2.3.3 PostgreSQL
 - 2.3.4 JavaScript
 - 2.3.5 React.js
 
@@ -130,9 +130,9 @@ A imagem acima mostra um levantamento realizado pelo StackOverflow em 2020 expli
 
 O Django é um framework especifico para aplicações em Back-End, sendo programado na linguagem Python. Especificamente para esse Projeto, será utilizado o Django REST API. Uma API, do inglês Application Programming Interface, são um conjunto de rotinas de processos especificos para aplicações voltadas a sistema WEB. Essas rotinas são especificas para atender as requisições exercidas pelo Front-End, e a partir do que foi solicitado, a API executará alguma coisa, e retornará a resposta solicitada. Um bom exemplo seria a requisição da matrícula do Usuário X. A API buscará acessar os dados solicitados, em um banco de dados, por exemplo, e entregará a quem requisitou.
 
-#### 2.3.3 MongoDB
+#### 2.3.3 PostgreSQL
 
-O MongoDB trata-se de um banco de dados não relacional que além de possuir baixo custo, por tratar-se de um software livre, possui um ótimo desempenho e é orientado a documentos, facilitando a consulta de dados.
+O PostgreSQL é sistema de banco de dados objeto relacional gratuito e *open source*, em que se caracteriza por ter recursos extremamente úteis, principalmente em relação a consulta de dados, integridade, facilidade de acesso e o controle de concorrência multi-versão.
 
 #### 2.3.4 JavaScript
 
@@ -202,7 +202,7 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 <ul>
 <li><b>Python</b>: Linguagem de programação a ser utilizada no BackEnd da aplicação, juntamente do Django</li>
 <li><b>Django API</b>: FrameWork utilizada no BackEnd da aplicação, responsável pelas conexões com o banco e pelas regras de negócio</li>
-<li><b>MongoDB</b>: Sistema responsável pelo armazenamento e gerência dos dados apresentados à aplicação. Trabalhará em conjunto ao Django API</li>
+<li><b>PostgreSQL</b>: Sistema responsável pelo armazenamento e gerência dos dados apresentados à aplicação. Trabalhará em conjunto ao Django API</li>
 <li><b>JavaScript</b>: Linguagem de programação específica para desenvolvimento WEB FrontEnd. Trabalhará juntamente do React.Js</li>
 <li><b>React.js</b>: FrameWork específico para o FrontEnd da aplicação, vai simplificar a execução do FrontEnd da aplicação.</li>
 <li><b>Material UI</b>: Biblioteca React que vai facilitar a construção do design da página</li>
