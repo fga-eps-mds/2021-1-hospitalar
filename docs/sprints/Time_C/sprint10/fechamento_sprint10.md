@@ -44,11 +44,11 @@
 
 ## Burndown
 
-Gráfico gerado pelo ZenHub
+![Burndown](/docs/assets/sprints/time_c/sprint_10/Burndown10.png)
 
 ## Velocity
 
-Gráfico gerado pelo ZenHub
+![Velocity](/docs/assets/sprints/time_c/sprint_10/velocity09.png)
 
 ## Práticas ágeis
 
@@ -56,7 +56,7 @@ Gráfico gerado pelo ZenHub
 | :-: | :----------------------------------------------------------------: | :-------: |
 |  1  |                   Priorização do Backlog pelo PO                   | &#10004;  |
 |  2  |    Desenvolvimento de processos e práticas facilitadas pelo SM     | &#10004;  |
-|  3  |                 Reunião de planejamento de Sprint                  | &#10060;  |
+|  3  |                 Reunião de planejamento de Sprint                  | &#10004;  |
 |  4  |                           Planning Poker                           | &#10060;  |
 |  5  |      Comprometimento do time e do PO com o backlog do produto      | &#10004;  |
 |  6  |         Os membros da equipe são voluntários para tarefas          | &#10004;  |
@@ -71,10 +71,14 @@ Gráfico gerado pelo ZenHub
 
 ## Quadro de Conhecimento
 
-|   Nome   |  Github   |   HTML    | Javascript | Metodologia ágeis |  Docker   |  Django   |  Mongodb  |
-| :------: | :-------: | :-------: | :--------: | :---------------: | :-------: | :-------: | :-------: |
-| Pessoa 1 | &#128997; | &#129000; | &#129001;  |     &#128999;     | &#128998; | &#128997; | &#128997; |
-| Pessoa 2 | &#128997; | &#129000; | &#129001;  |     &#128999;     | &#128998; | &#128997; | &#128997; |
+|      Nome      |  Github   |   HTML    | Javascript | Metodologia ágeis |  Docker   |  Django   |  Mongodb  |
+| :------------: | :-------: | :-------: | :--------: | :---------------: | :-------: | :-------: | :-------: |
+| Pedro Caldeira | &#129001; | &#128999; | &#128999;  |     &#129001;     | &#128999; | &#129000; | &#129000; |
+|  Pedro Vieira  | &#129001; | &#129001; | &#128998;  |     &#129001;     | &#128999; | &#128999; | &#129001; |
+|  Gabriel Luiz  | &#129001; | &#129000; | &#129000;  |     &#129001;     | &#129000; | &#129000; | &#129000; |
+|  Igor Thiago   | &#129001; | &#128999; | &#129001;  |     &#128999;     | &#129001; | &#129001; | &#129001; |
+|  Thiago Vivan  | &#128999; | &#129000; | &#129001;  |     &#128999;     | &#128999; | &#129000; | &#128997; |
+|     Bruno      | &#128999; | &#129001; | &#128999;  |     &#129000;     | &#129001; | &#129000; | &#128997; |
 
 |    Cor    |      Legenda      |
 | :-------: | :---------------: |
@@ -86,32 +90,31 @@ Gráfico gerado pelo ZenHub
 
 ## Squad Health Check
 
-|   Nome   | Sprint 1  | Sprint 2  | Sprint 3  |
-| :------: | :-------: | :-------: | :-------: |
-| Pessoa 1 | &#128512; | &#128516; | &#128521; |
-| Pessoa 2 | &#128529; | &#129320; | &#128530; |
-| Pessoa 3 | &#128532; | &#128567; | &#129314; |
-| Pessoa 4 | &#129395; | &#128547; | &#129321; |
+|      Nome      | Sprint 0  | Sprint 1  | Sprint 2  | Sprint 3  | Sprint 4  | Sprint 5  | Sprint 6  | Sprint 7  | Sprint 8  | Sprint 9  | Sprint 10 |
+| :------------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Pedro Caldeira | &#128521; | &#128529; | &#128554; | &#128521; | &#128529; | &#128521; | &#128521; | &#128529; | &#128529; | &#128529; | &#128521; |
+|  Pedro Vieira  | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529; | &#128529; | &#128521; | &#128521; | &#128529; |
+|  Gabriel Luiz  | &#128521; | &#128529; | &#128521; | &#128521; | &#128521; | &#128529; | &#128529; | &#128529; | &#128521; | &#128554; | &#128529; |
+|  Igor Thiago   | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128554; | &#128521; | &#128521; | &#128529; | &#128554; |
+|  Thiago Vivan  | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128529; | &#128521; | &#128529; | &#128554; |
+|     Bruno      | &#128521; | &#128529; | &#128521; | &#128529; | &#128529; | &#128529; | &#128529; | &#128554; | &#128521; | &#128529; | &#128529; |
 
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1 a 5.
-
-| **Objetivo da Sprint** | **Nota** |
-| :--------------------: | :------: |
-| Descrição do Objetivo  |   (nº)   |
-| Descrição do Objetivo  |   (nº)   |
-|          ...           |   ...    |
+|   Emote   |    Significados    |
+| :-------: | :----------------: |
+| &#128521; |   Alegre/Animado   |
+| &#128529; | Indiferente/Neutro |
+| &#128554; | Desanimado/triste  |
 
 ## Riscos
 
-| **Risco** | **Ação Preventiva** | **Ação Reativa** |
-| :-------: | :-----------------: | :--------------: |
-|    ...    |         ...         |       ...        |
-|    ...    |         ...         |       ...        |
+|          **Risco**           |                  **Ação Preventiva**                   |                       **Ação Reativa**                       |
+| :--------------------------: | :----------------------------------------------------: | :----------------------------------------------------------: |
+|           Estresse           |              Dividir Tarefas em conjunto               |                    Pedir ajuda de tutoria                    |
+|         Desmotivação         |              Realizar tarefas em conjunto              | Reuniões com todos para descontrair e realizar as atividades |
+| Dificuldade na implementação | Ler e estudar DOcumentação, ver vídeos e artigos, etc. |       Estudar projetos feitos em django rest framework       |
 
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master
 
-...
+Foi uma semana bastante corrida e estressante visto que não foram encontradas nehuma solução sólida para a implementaçã da autenticação. Mesmo se baseando no projeto do monitor (que usa um sistema de autenticação do Django Rest Framework), não tivemos sucesso ao adaptar para o nosso ambiente. Lendo documentação do framework (no qual tem muito a desejar), foi possível realizar o CRUD de usuário porém a autenticação ainda não está concluída. Apesar do cansaço e estresse da semana, estamos nos esforçando para o andamento da conclusão da tarefa. Enquanto o backend está "parado", usamos um projeto pessoal feito em nodeJs que simula muito bem uma autenticação. Foi onde integramos no Frontend de forma provisória para que pudéssemos adiantar o processo de implementação do client-side, e obtivemos um bom progrsso no Frontend graças ao projeto em nodeJs.
