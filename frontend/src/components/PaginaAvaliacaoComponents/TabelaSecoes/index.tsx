@@ -13,6 +13,9 @@ import { LinhaTabela } from '../LinhaTabela'
 import React from 'react'
 import { useStyles } from './styles'
 
+/**
+ * criando um tipo Props para o crud da seção
+ */
 type Props = {
   secao: Secao
   isEditableArray: boolean[]
@@ -28,8 +31,12 @@ export function TabelaSecoes({
   removerSubtopico,
   cancelarEdicao,
 }: Props): React.ReactElement {
+  /**
+   * classes pega o styles
+   */
   const classes = useStyles()
   return (
+    /* cabeçalho da tabela */
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
@@ -46,7 +53,7 @@ export function TabelaSecoes({
             <TableCell className={classes.designHeader}>Excluir</TableCell>
           </TableRow>
         </TableHead>
-
+        {/* body da tabela */}
         <TableBody>
           {secao.subtopicos.map((value, index) => (
             <LinhaTabela
