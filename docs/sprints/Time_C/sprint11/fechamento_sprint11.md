@@ -51,7 +51,7 @@
 
 ## Burndown
 
-![Burndown](/docs/assets/sprints/time_c/sprint_11/burndown11.png)
+![Burndown](/docs/assets/sprints/time_c/sprint_11/Burndown11.png)
 
 ## Velocity
 
