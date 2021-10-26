@@ -2,60 +2,45 @@
 
 ## Histórico de revisão
 
-|  **Data**  | **Versão** |   **Modificação**    |             **Autor**              |
-| :--------: | :--------: | :------------------: | :--------------------------------: |
-| 23/08/2021 |    0.1     | Criação do documento | Victor Cabral / Klyssmann Oliveira |
+|  **Data**  | **Versão** |   **Modificação**    |                  **Autor**                  |
+| :--------: | :--------: | :------------------: | :-----------------------------------------: |
+| 25/10/2021 |    0.1     | Criação do documento | [Pedro Vieira](https://github.com/Pedro-V8) |
 
 ## Backlog da Sprint
 
-| **ID** | **Descrição** | **Status** | **Pontos** |
-| :----: | :-----------: | :--------: | :--------: |
-| #(nº)  |   [link]()    |  (status)  |    (nº)    |
-| #(nº)  |   [link]()    |  (status)  |    (nº)    |
-|  ...   |    [...]()    |    ...     |    ...     |
+| **ID** |                                      **Descrição**                                       | **Status** | **Pontos** |
+| :----: | :--------------------------------------------------------------------------------------: | :--------: | :--------: |
+|  #226  | [Protótipo Alta Fidelidade C](https://github.com/fga-eps-mds/2021-1-hospitalar/pull/226) |  Fechada   |     13     |
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 13 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 0 Pontos <br>
+**Pontos Concluídos:** 13 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
 - Não houveram débitos técnicos para pagar nesta sprint
 
-OU
-
-#(nº) nome da issue
-<BR>
-#(nº) nome da issue
-
 ## Débitos Técnicos Gerados
 
 - Não foram gerados débitos nesta sprint
-
-OU
-
-#(nº) nome da issue
-<BR>
-#(nº) nome da issue
 
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
+- Aprendizado em desenvolvimento backend com Django Rest Framework
 -
 
 ### Pontos Negativos
 
--
--
+- Estresse durante a implementação, muitos erros, bugs e nenhum resultado como esperado
+- Pouco tempo e muita funcionalidade a ser implementada tanto no Backend e Frontend.
 
 ### Melhorias
 
--
--
+- Monitor ajudou a entender alguns pontos do framework, ajdando no entendimento do mesmo.
 
 ## Burndown
 

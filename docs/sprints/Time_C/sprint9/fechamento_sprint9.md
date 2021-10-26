@@ -16,9 +16,9 @@
 
 ## Pontuação Final
 
-**Pontuação Total:** (nº) Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** (nº) Pontos <br>
-**Pontos Concluídos:** (nº) Pontos Concluídos <br>
+**Pontuação Total:** 12 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 0 Pontos <br>
+**Pontos Concluídos:** 12 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
