@@ -26,28 +26,21 @@
 
 - Não foram gerados débitos nesta sprint
 
-OU
-
-#(nº) nome da issue
-<BR>
-#(nº) nome da issue
-
 ## Retrospectiva
 
 ### Pontos Positivos
 
--
+- Aprendizado em desenvolvimento backend com Django Rest Framework
 -
 
 ### Pontos Negativos
 
--
--
+- Estresse durante a implementação, muitos erros, bugs e nenhum resultado como esperado
+- Pouco tempo e muita funcionalidade a ser implementada tanto no Backend e Frontend.
 
 ### Melhorias
 
--
--
+- Monitor ajudou a entender alguns pontos do framework, ajdando no entendimento do mesmo.
 
 ## Burndown
 
