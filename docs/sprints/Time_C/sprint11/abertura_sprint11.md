@@ -16,7 +16,7 @@ Finalização das autenticações e desenvolvimento e inicio dos teste unitarios
 <br>
 **Início:** 12/10/2021
 <br>
-**Fim:** 18/10/2021
+**Fim:** 19/10/2021
 
 ## Sprint BackLog
 
