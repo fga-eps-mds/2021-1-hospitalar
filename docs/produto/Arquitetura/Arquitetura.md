@@ -22,6 +22,7 @@
 | 13/09/2021 | 1.4    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 18/09/2021 | 1.5    | Correções nos markdowns dos assets                                                                           | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
 | 25/10/2021 | 1.6    | Evolução das primeiras versões do documento                                                                  | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
+| 26/10/2021 | 2.0    | Alteração nos diagramas                                                                                      | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
 
 ## Sumário
 
@@ -257,7 +258,7 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Front-End e como o mesmo se divide:
 
-![DiagramaFrontEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes_(Front_end).png>)
+![DiagramaFrontEndPacotes](/docs/assets/produtos/arquitetura/diagrama_frontend_pacotes.png)
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Back-End e como o mesmo se divide:
 
