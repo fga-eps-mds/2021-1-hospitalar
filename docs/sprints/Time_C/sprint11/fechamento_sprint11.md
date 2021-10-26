@@ -51,11 +51,11 @@
 
 ## Burndown
 
-![Burndown](/docs/assets/sprints/time_c/sprint_11/Burndown11.png)
+![Burndown](/docs/assets/sprints/time_c/sprint11/Burndown11.png)
 
 ## Velocity
 
-![Velocity](/docs/assets/sprints/time_c/sprint_11/velocity11.png)
+![Velocity](/docs/assets/sprints/time_c/sprint11/velocity11.png)
 
 ## Práticas ágeis
 
