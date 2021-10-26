@@ -1,10 +1,10 @@
+import { Avaliacao, Secao, Subtopico } from '../../types/Avaliacao'
 import { CONFIG, api, authApi } from '../../api'
 import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
 import React, { useContext, useEffect, useState } from 'react'
 
 import AuthContext from '../../context/auth'
 import Autocomplete from '@material-ui/lab/Autocomplete'
-import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { DatePicker } from '../../components/GlobalComponents/DatePicker'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
@@ -34,9 +34,9 @@ export function NovaAvaliacao(): React.ReactElement {
   const [data, setData] = useState<Date | null>(new Date())
   const [users, setUsers] = useState<Usuario[]>([blankUser])
   const [idsAvaliadores, setIdsAvaliadores] = useState('')
+  const [secoes, setSecoes] = useState<Secao[]>([])
 
   // Caso não precise, deletar após testes!
-
   const handleSave = () => {
     const avaliacao: Avaliacao = {
       codigo,
@@ -44,7 +44,7 @@ export function NovaAvaliacao(): React.ReactElement {
       idsAvaliadores,
       data: data ? data.toISOString() : new Date().toISOString(),
       configuracao: {},
-      secoes: [],
+      secoes,
     }
 
     api.post('avaliacao/', avaliacao, CONFIG(context.token)).catch((error) => {
@@ -67,6 +67,36 @@ export function NovaAvaliacao(): React.ReactElement {
           // eslint-disable-next-line no-console
           console.log(error)
         })
+
+      api.get<Avaliacao>('/avaliacao/1', CONFIG(context.token)).then((response) => {
+        // eslint-disable-next-line no-console
+        console.log(response.data.secoes)
+
+        const newsec = response.data.secoes.map((sec) => {
+          const newsub = sec.subtopicos.map((sub: Subtopico) => {
+            const pickedSubAttributes = (subtop: Subtopico) => {
+              const { nome, status, comentario, pontuacao } = subtop
+
+              return { nome, status, comentario, pontuacao }
+            }
+
+            return pickedSubAttributes(sub)
+          })
+          // eslint-disable-next-line no-console
+          console.log(newsub)
+
+          const pickedSecAttributes = (secpicked: Secao, subpicked: Subtopico[]) => ({
+            topico: secpicked.topico,
+            subtopicos: subpicked,
+          })
+
+          // eslint-disable-next-line no-console
+          console.log(pickedSecAttributes(sec, newsub))
+          return pickedSecAttributes(sec, newsub)
+        })
+
+        setSecoes(newsec)
+      })
     }, [])
 
     return (
