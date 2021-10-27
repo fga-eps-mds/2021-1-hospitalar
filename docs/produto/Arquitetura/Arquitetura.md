@@ -102,7 +102,7 @@ Partindo deste documento, o leitor ou usuário do projeto Checklist Hospitalar t
 
 ### 2.1 Diagrama de Relações
 
-![Diagrama de relações](/docs/assets/produtos/arquitetura/diagrama_de_relações.png)
+![Diagrama de relações](/docs/assets/produtos/arquitetura/diagrama_de_relações1.png)
 
 ### 2.2 Representação dos Serviços
 
