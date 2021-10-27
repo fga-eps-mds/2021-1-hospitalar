@@ -1,3 +1,4 @@
+from matplotlib import pyplot
 from rest_framework import viewsets
 from .models import Avaliacao
 from .serializers import AvaliacaoSerializer
@@ -6,9 +7,11 @@ from rest_framework.decorators import action
 from rest_framework import viewsets
 from .relatorio.printing import MyPrint
 from io import BytesIO
-from .geracaoGraficos.grafico import Grafico
 from rest_framework.response import Response
 from rest_framework.status import *
+from matplotlib import pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 # Create your views here.
 
 
@@ -49,9 +52,21 @@ class AvaliacaoView(viewsets.ModelViewSet):
             return Response(status=HTTP_404_NOT_FOUND)
 
         avaliacao_json = self.get_serializer(obj_avaliacao)
-        gerador = Grafico(avaliacao_json.data)
-        dados = gerador.gerarDados()
-        plot = gerador.gerarGrafico(dados)
-        response = HttpResponse(plot)
-        response['Content-Type'] = 'image/png'
-        return response
+
+        dados_plot = {'C': 0, 'PC': 0, 'NC': 0, 'NA': 0}
+        secoes = avaliacao_json.data["secoes"]
+
+        for secao in secoes:
+            for sub in secao['subtopicos']:
+                status = sub['status']
+                dados_plot[status] += 1
+
+        keys = dados_plot.keys()
+        values = dados_plot.values()
+
+        buffer = BytesIO()
+
+        plt.bar(keys, values, color=['cyan'])
+        plt.savefig(buffer, dpi=100)
+
+        return HttpResponse(buffer.getbuffer(), content_type='image/png')

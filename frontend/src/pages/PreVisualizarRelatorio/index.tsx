@@ -1,15 +1,13 @@
+import React, { useEffect, useState } from 'react'
+
 import { Header } from '../../components/GlobalComponents/Header'
-import React from 'react'
 import { api } from '../../api'
+import { useParams } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function PreVisualizarRelatorio(): React.ReactElement {
   const classes = useStyles()
 
-  const generateGrafico = (path: string) => {
-    api.get('avaliacao/1/')
-    return <div />
-  }
   return (
     <>
       <div className={classes.barraFundo} />
@@ -69,11 +67,12 @@ export function PreVisualizarRelatorio(): React.ReactElement {
 
             <div className={classes.coluna2}>
               <div className={classes.plots}>
-                {generateGrafico('avaliacao/1/geraGrafico/')}
+                <img
+                  className={classes.imgPlot}
+                  src={`${process.env.REACT_APP_API_URL}avaliacao/${1}/geraGrafico/`}
+                  alt=''
+                />
               </div>
-              <button type='submit' className={classes.btn}>
-                <p className={classes.textoBtn}>GERAR</p>
-              </button>
             </div>
           </div>
         </div>
