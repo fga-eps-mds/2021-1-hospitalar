@@ -9,17 +9,7 @@
    <img src="./docs/assets/logo-2021.jpg"></img>
 </p>
 
-<br/>
-
-## :hammer_and_wrench: Status do Projeto
-
-<p align="center"> 
- <h1 align="center"> 
-     🚧  Em construção... 🚀 🚧
- </h1>
-</p>
-
-<br/>
+<br>
 
 ## 📄 Sobre o projeto
 
