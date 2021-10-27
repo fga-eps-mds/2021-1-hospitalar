@@ -4,7 +4,7 @@
 
 | **Data**   | **Versão** | **Modificação**      | **Autor**                                            |
 | :--------- | :--------- | :------------------- | :--------------------------------------------------- |
-| 28/09/2021 | 1.0        | Criação do documento | [@victordscabral](https://github.com/victordscabral) |
+| 28/09/2021 | 2.0        | Criação do documento | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 

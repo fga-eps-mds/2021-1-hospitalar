@@ -4,8 +4,8 @@
 
 | **Data**   | **Versão** | **Modificação**          | **Autor**                                            |
 | :--------- | :--------- | :----------------------- | :--------------------------------------------------- |
-| 21/09/2021 | 1.0        | Criação do documento     | [@victordscabral](https://github.com/victordscabral) |
-| 23/10/2021 | 1.1        | Postagem do documento | [@victordscabral](https://github.com/victordscabral) |
+| 21/09/2021 | 2.0        | Criação do documento     | [@victordscabral](https://github.com/victordscabral) |
+| 23/10/2021 | 2.1        | Postagem do documento | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
