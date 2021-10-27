@@ -276,7 +276,6 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 - Diagrama de Classes - BackEnd
   ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_relatorio_unificado4.png)
 
-- Diagrama de Classe - Banco de Dados
-  ![diagramaClasses_TimeA](/docs/assets/produtos/arquitetura/diagrama_front.jpg)
+
 
 
