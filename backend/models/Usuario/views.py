@@ -58,11 +58,11 @@ class LoginView(generics.GenericAPIView):
             context=self.get_serializer_context()
         )
 
-        #token = AuthToken.objects.create(user)[1]
+        token = AuthToken.objects.create(user)[1]
 
         return Response({
             'user': userJSON.data,
-            # 'token': token
+            'token': token
         })
 
 
