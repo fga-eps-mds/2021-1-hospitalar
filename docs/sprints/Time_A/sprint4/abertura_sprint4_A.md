@@ -10,10 +10,10 @@
 ## Objetivos
 
 Essa Sprint tem como principais objetivos: 
-- Continuar com a documentação (tentando finalizar ao máximo todas primeiras versões)
-- Realizar mais dojos para treinamento da equipe 
-- Ajustar a Identidade Visual do produto
-- Iniciar a programação em seus estágios iniciais
+- Continuar com a documentação (tentando finalizar ao máximo todas primeiras versões).
+- Realizar mais dojos para treinamento da equipe.
+- Ajustar a Identidade Visual do produto.
+- Iniciar a programação em seus estágios iniciais.
  
 ## Duração
 

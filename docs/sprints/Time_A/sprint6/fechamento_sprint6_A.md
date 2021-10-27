@@ -63,24 +63,24 @@
 
 ### Pontos Positivos
 
-- O entrega da Release 1 gerou um alívio no Time, vendo o que foi produzido ser finalmente apresentado, entregue e recebendo feedback
-- A realização do código de Crud gerou uma satisfação nos membros da equipe 
-- Acreditamos que as considerações da professora e monitores irão melhorar o rumo do projeto para a próxima Release 
-- A documentação foi basicamente toda finalizada, necessidando somente de alguns ajustes, o que gera um alívio no time
-- Não muitos débitos para a próxima sprint
-- Amadurecimento da equipe ao decorrer do projeto é notável
+- O entrega da Release 1 gerou um alívio no Time, vendo o que foi produzido ser finalmente apresentado, entregue e recebendo feedback.
+- A realização do código de Crud gerou uma satisfação nos membros da equipe.
+- Acreditamos que as considerações da professora e monitores irão melhorar o rumo do projeto para a próxima Release.
+- A documentação foi basicamente toda finalizada, necessidando somente de alguns ajustes, o que gera um alívio no time.
+- Não muitos débitos para a próxima sprint.
+- Amadurecimento da equipe ao decorrer do projeto é notável.
 
 ### Pontos Negativos
 
-- Preocupação com Release 1 gerou muita ansiedade e estresse no membros 
-- A maior parte das issues que foram adicionadas como débito já vieram da sprint passada, e pelo como os outros times ainda não as realizaram, um atraso nessas issues e notável
-- Muitos documentos tiveram que ser revisados e padronizados para serem suficientes pra Release 1, o que gerou uma enorme demanda no Scrum Mater e PO
+- Preocupação com Release 1 gerou muita ansiedade e estresse no membros.
+- A maior parte das issues que foram adicionadas como débito já vieram da sprint passada, e pelo como os outros times ainda não as realizaram, um atraso nessas issues e notável.
+- Muitos documentos tiveram que ser revisados e padronizados para serem suficientes pra Release 1, o que gerou uma enorme demanda no Scrum Mater e PO.
 
 ### Melhorias
 
-- Realizar as issues de maneira mais constante no decorrer da sprint 
-- Dividir melhor as issues criadas, de forma que a meta de pontos não seja irreal
-- Se mais rígido na padronização de documentos, dessa forma não será necessário tantas correções na revisão
+- Realizar as issues de maneira mais constante no decorrer da sprint.
+- Dividir melhor as issues criadas, de forma que a meta de pontos não seja irreal.
+- Se mais rígido na padronização de documentos, dessa forma não será necessário tantas correções na revisão.
 
 ## Burndown
 

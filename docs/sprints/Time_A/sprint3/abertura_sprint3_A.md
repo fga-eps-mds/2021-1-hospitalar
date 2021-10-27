@@ -11,11 +11,11 @@
 ## Objetivos
 
 Essa Sprint tem como principais objetivos: 
-- Elaboração e continuação dos documentos (EAP, Documento de Visão, Arquitetura, Diagrama de Classes, BackLog, RoadMap, Metodologia, Ferramentas)
-- Criação do protótipo de baixa fidelidade
-- Reunião quanto a modelagem do banco de dados
-- Estudos quanto ao banco de dados (MongoDB)
-- Configurações relacionadas ao Docker
+- Elaboração e continuação dos documentos (EAP, Documento de Visão, Arquitetura, Diagrama de Classes, BackLog, RoadMap, Metodologia, Ferramentas).
+- Criação do protótipo de baixa fidelidade.
+- Reunião quanto a modelagem do banco de dados.
+- Estudos quanto ao banco de dados (MongoDB).
+- Configurações relacionadas ao Docker.
 
 ## Duração
 

@@ -63,22 +63,22 @@
 
 ### Pontos Positivos
 
-- Tarafas foram mais espaçadas entre as sprints devido ao adiamento da Release 1, possibilitando melhoras gerais no projeto
-- Primeira versão dos documentos quase toda finalizada
-- Práticas ágeis foram mais adotadas
+- Tarafas foram mais espaçadas entre as sprints devido ao adiamento da Release 1, possibilitando melhoras gerais no projeto.
+- Primeira versão dos documentos quase toda finalizada.
+- Práticas ágeis foram mais adotadas.
 
 ### Pontos Negativos
 
-- Tempo de Sprint mais curto, devido a organização e preparação da sprint ter sido tardia, o que atrasou a reunião com outros grupos e criação de issues
+- Tempo de Sprint mais curto, devido a organização e preparação da sprint ter sido tardia, o que atrasou a reunião com outros grupos e criação de issues.
 - Complexidade de assustos referentes a programação maior do que se imaginava, demandando muito tempo para estudo e preparação
-- Cobrança quanto a realização das issues muito branda
-- Muitos débitos gerados
+- Cobrança quanto a realização das issues muito branda.
+- Muitos débitos gerados.
 
 ### Melhorias
 
-- Melhora na organização das reuniões, conversando constantemente com outros grupos
-- Melhor utilização dos monitores, marcando encontros para revisões e solução de dúvidas
-- Monitoramento mais intenso por parte do Scrum Master para que issues sejam realizadas
+- Melhora na organização das reuniões, conversando constantemente com outros grupos.
+- Melhor utilização dos monitores, marcando encontros para revisões e solução de dúvidas.
+- Monitoramento mais intenso por parte do Scrum Master para que issues sejam realizadas.
 
 ## Burndown
 
