@@ -5,26 +5,26 @@ on:
     branches:
       - main
   pull_request:
-      types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened]
 name: Main Workflow
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: BuildDocker
-      run: | 
-       cd ./backend
-       docker-compose up -d --build
-    - name: front
-      run: | 
-        cd ./frontend
-        yarn
-        yarn test
-    - name: SonarCloud Scan
-      uses: sonarsource/sonarcloud-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: BuildDocker
+        run: |
+          cd ./backend
+          docker-compose up -d --build
+      - name: front
+        run: |
+          cd ./frontend
+          yarn
+          yarn test -- --coverage --testResultsProcessor=jest-sonar-reporter
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
