@@ -3,7 +3,6 @@ import React, { useContext } from 'react'
 
 import AuthContext from './context/auth'
 import { BuscarAvaliacao } from './pages/BuscarAvaliacao'
-import { GenerateReport } from './pages/GenerateReport'
 import { GerarRelatorio } from './pages/gerarRelatorio'
 import { Gerenciador } from './pages/Gerenciador'
 import { Home } from './pages/Home'
@@ -92,10 +91,6 @@ export function Routes(): React.ReactElement {
         </PrivateRoute>
 
         <PrivateRoute exact path='/relatorio' isAuthenticated={context.signed}>
-          <GenerateReport />
-        </PrivateRoute>
-
-        <PrivateRoute exact path='/gerarRelatorio' isAuthenticated={context.signed}>
           <GerarRelatorio />
         </PrivateRoute>
 
