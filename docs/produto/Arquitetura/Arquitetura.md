@@ -104,6 +104,8 @@ Partindo deste documento, o leitor ou usuário do projeto Checklist Hospitalar t
 
 ![Diagrama de relações](/docs/assets/produtos/arquitetura/diagramaDeRelações1.png)
 
+<img width="460" height="300" src="/docs/assets/produtos/arquitetura/diagramaDeRelações1.png">
+
 ### 2.2 Representação dos Serviços
 
 #### 2.2.1 Front-end
