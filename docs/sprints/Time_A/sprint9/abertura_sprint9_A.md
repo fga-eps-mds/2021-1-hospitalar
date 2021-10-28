@@ -1,4 +1,4 @@
-# Abertura da Sprint 08
+# Abertura da Sprint 09
 
 ## Histórico de versão
 

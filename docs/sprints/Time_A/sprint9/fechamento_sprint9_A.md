@@ -8,19 +8,6 @@
 
 ## Backlog da Sprint
 
-[#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
-[#193 Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)
-[#194 Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)
-[#196 Editar a seção: implementar o esqueleto da página (parte 1) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/196)
-[#197 Editar a seção: implementar função adicionar (frontend) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/197)
-[#198 Preenchimento da avaliação: Implementar o Header - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/198)
-[#199 Editar a seção: Implementar o Header - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/199)
-[#200 Estudar como pegar dados do banco de dados - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/200)
-[#213 Configurar método get no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/213)
-[#214 Configurar método update no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/214)
-[#215 Configurar método post no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/215)
-[#216 Configurar método delete no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/216)
-
 | **ID** | **Descrição**                                                                                                                       | **Status** | **Pontos** |
 | :----- | :---------------------------------------------------------------------------------------------------------------------------------- | :--------- | :--------: |
 | #62    | [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                          | Fechada    |     13     |
