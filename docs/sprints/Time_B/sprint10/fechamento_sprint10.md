@@ -62,27 +62,27 @@ OU-->
 
 ## Burndown
 
-![burn](/docs/assets/sprints/time_b/sprint_10/burndown_sprint_10.png)
+![burn](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_10/burndown_sprint_10.png?raw=true)
 
 Burndown melhor que o da sprint anterior.
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_b/sprint_10/velocity_sprint_10.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_10/velocity_sprint_10.png?raw=true)
 
 Média geral se mantendo. Não podemos forçar um aumento de produtividade ao final do projeto. Foco em manter o velocity
 
 ## Cumulative Flow
 
-![cumuflow](/docs/assets/sprints/time_b/sprint_10/cumu_flow_sprint_10.png)
+![cumuflow](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_10/cumu_flow_sprint_10.png?raw=true)
 
 ## Quadro de Conhecimentos
 
-![knowledge](/docs/assets/sprints/time_b/sprint_10/quadro_de_conhecimento_sprint_10.png)
+![knowledge](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_10/quadro_de_conhecimento_sprint_10.png?raw=true)
 
 ## Squad Health Check
 
-![health](/docs/assets/sprints/time_b/sprint_10/health_check_sprint_10.png)
+![health](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_10/health_check_sprint_10.png?raw=true)
 
 ## Práticas ágeis
 
@@ -93,7 +93,7 @@ Média geral se mantendo. Não podemos forçar um aumento de produtividade ao fi
 |  3  |                 Reunião de planejamento de Sprint                  | &#10004; |
 |  4  |                           Planning Poker                           | &#10004; |
 |  5  |      Comprometimento do time e do PO com o backlog do produto      | &#10004; |
-|  6  |         Os membros da equipe são voluntários para tarefas          | &#10004; |
+|  6  |         Os membros da equipe são voluntários para tarefas          | &#10060; |
 |  7  |                      Restrospectiva da Sprint                      | &#10004; |
 |  8  |                     Acompanhamento do Velocity                     | &#10004; |
 |  9  |                            User Stories                            | &#10004; |

@@ -68,23 +68,23 @@ OU-->
 
 ## Burndown
 
-![burn](/docs/assets/sprints/time_b/sprint_11/burndown_sprint_11.png)
+![burn](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_11/burndown_sprint_11.png?raw=true)
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_b/sprint_11/velocity_sprint_11.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_11/velocity_sprint_11.png?raw=true)
 
 ## Cumulative Flow
 
-![cumuflow](/docs/assets/sprints/time_b/sprint_11/cumu_flow_sprint_11.png)
+![cumuflow](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_11/cumu_flow_sprint_11.png?raw=true)
 
 ## Quadro de Conhecimentos
 
-![knowledge](/docs/assets/sprints/time_b/sprint_11/quadro_de_conhecimento_sprint_11.png)
+![knowledge](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_11/quadro_de_conhecimento_sprint_11.png?raw=true)
 
 ## Squad Health Check
 
-![health](/docs/assets/sprints/time_b/sprint_11/health_check_sprint_11.png)
+![health](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_11/health_check_sprint_11.png?raw=true)
 
 ## Práticas ágeis
 
