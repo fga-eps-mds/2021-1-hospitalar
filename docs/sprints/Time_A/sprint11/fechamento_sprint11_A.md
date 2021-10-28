@@ -65,15 +65,14 @@
 
 ## Burndown
 
-![burndown](/docs/assets/sprints/time_a/sprint_11/burndown_11.png)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_11/burndown_11.png?raw=true)
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_a/sprint_11/velocity_11.png)
-
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_11/velocity_11.jpeg?raw=true)
 ## Cumulative Flow
 
-![cumulative](/docs/assets/sprints/time_a/sprint_11/cumulative_11.png)
+![cumulative](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_11/cumulative_11.png?raw=true)
 
 ## Práticas ágeis
 
@@ -134,11 +133,10 @@
 
 ## Análise pelo Scrum Master
 
-Essa sprint foi intensa. A preparação de todos os documentos e código para a Release 1 gerou bastante demanda e estresse em todos os times, além de um alto número de issues a serem fechadas. Entretanto conseguimos realizar um bom trabalho e apresentação para a Release 1, ainda mais considerando o atraso que tivemos nas primeiras sprints por ainda estarmos muito perdido.
-As considerações e críticas feitas pela professora e monitores eram em sua maioria já conhecidas por toda a equipe do projeto, algo que considero bom, pois a execução de alguns ajustes já resolveria os problemas analisados, estes que não são tão complexos de se corrigir.
-Ademais, estou bem feliz e satisfeito com o trabalho entregue para a Release 1. Todo o time parece empolgado e animado para as próximas sprints e algumas mudanças serão analisadas e planejadas para que nossas práticas ágeis sejam aprimoradas até a Release 2.
+Essa sprint foi bem turbulenta. Tivemos que mudar de uma biblioteca pilar das nossas tela para outra. Isso ocasionou em uma sprint com muito serviço, implementações e modificações para todo o time fazer. Felizmente tivemos bastante ajuda dos outros times para realizar as atividades, o que facilitou o serviço da equipe. Vale lembrar que a nova biblioteca também permite uma maior customização no código então, apesar de toda confusão gerada pela troca, foi uma boa escolha. Também alteramos o banco de dados MongoDB para o postgreSQL pois muitos problemas estavam ocorrendo. Na prática essa segunda mudança facilitou o serviço de todos, pois os erros e problemas com o banco foram resolvidos. Agora também temos duas maneiras de rodar o backend: o docker e de forma local. Isso permite máquinas mais fracas conseguirem também rodar o backend. Foi uma sprint pesada para todos os membros, mas conseguimos melhorar e otimizar bastante nossas telas.
 
 Outros pontos a serem destacados são:
 
-- A maior parte dos débitos gerados no até o fechamento já veio da sprint passada, o que gera um incômodo e atraso percepitível nessas issues.
-- Há um medo do Scrum Master e PO de que a próxima sprint seja pouco produtiva devido a um desfoque do time pós Release 1. Para que isso não ocorra as metas de pontos serão bem planejadas para que haja poucos débitos e o trabalho seja de preferência interiamente reaalizado. Acredito que, caso isso ocorra, toda a equipe ficará bem animada para as próximas sprints.
+- Por conta de todo caos gerado pelas mudanças no código o Scrum Master e todos acabaram por focar muito na programação, abrindo poucas issues para todo trabalho realizado. Apesar desse erro vários commits foram feitos por toda a equipe.
+- Houve um aumento gigante no conhecimento de todo o time por conta das várias mudanças e aprendizados.
+- Equipe está bem cansada e ansiosa pelas férias.

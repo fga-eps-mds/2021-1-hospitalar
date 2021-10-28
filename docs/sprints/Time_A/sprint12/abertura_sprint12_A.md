@@ -1,4 +1,4 @@
-# Abertura da Sprint 10
+# Abertura da Sprint 12
 
 ## Histórico de versão
 
