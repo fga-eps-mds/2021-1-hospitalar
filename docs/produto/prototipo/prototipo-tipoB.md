@@ -10,4 +10,4 @@
 
 ### Tela de gerar relatório:
 
-![Tela-Relatório](/docs/assets/produtos/prototipos/prototipo_time_b/tela_de_gerar_relatorio.png)
+![Tela-Relatório](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/prototipos/prototipo_time_b/tela_de_gerar_relatorio.png?raw=true)

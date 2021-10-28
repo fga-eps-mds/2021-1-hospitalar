@@ -21,20 +21,20 @@
 [#215 Configurar método post no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/215)
 [#216 Configurar método delete no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/216)
 
-| **ID** | **Descrição**                                                                                                                           | **Status** | **Pontos** |
-| :----- | :-------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :--------: |
-| #62    | [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                              | Fechada    |     13     |
-| #193   | [Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)                | Aberta     |     13      |
-| #194   | [Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)              | Aberta     |     13      |
-| #196   | [Editar a seção: implementar o esqueleto da página (parte 1) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/196)     | Fechada    |     10      |
-| #197   | [Editar a seção: implementar função adicionar (frontend) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/197)         | Fechada    |     5      |
-| #198   | [Preenchimento da avaliação: Implementar o Header - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/198)                | Fechada    |     5      |
-| #199   | [Editar a seção: Implementar o Header - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/199)                            | Fechada    |     5      |
-| #200   | [Estudar como pegar dados do banco de dados - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/200)                      | Fechada    |     5      |
-| #213   | [Configurar método get no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/213)            | Fechada    |     9      |
-| #214   | [Configurar método update no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/214)         | Fechada    |     9      |
-| #215   | [Configurar método post no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/215)           | Fechada    |     9      |
-| #216   | [Configurar método delete no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/216)         | Fechada    |     9      |
+| **ID** | **Descrição**                                                                                                                       | **Status** | **Pontos** |
+| :----- | :---------------------------------------------------------------------------------------------------------------------------------- | :--------- | :--------: |
+| #62    | [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                          | Fechada    |     13     |
+| #193   | [Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)            | Aberta     |     13     |
+| #194   | [Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)          | Aberta     |     13     |
+| #196   | [Editar a seção: implementar o esqueleto da página (parte 1) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/196) | Fechada    |     10     |
+| #197   | [Editar a seção: implementar função adicionar (frontend) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/197)     | Fechada    |     5      |
+| #198   | [Preenchimento da avaliação: Implementar o Header - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/198)            | Fechada    |     5      |
+| #199   | [Editar a seção: Implementar o Header - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/199)                        | Fechada    |     5      |
+| #200   | [Estudar como pegar dados do banco de dados - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/200)                  | Fechada    |     5      |
+| #213   | [Configurar método get no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/213)        | Fechada    |     9      |
+| #214   | [Configurar método update no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/214)     | Fechada    |     9      |
+| #215   | [Configurar método post no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/215)       | Fechada    |     9      |
+| #216   | [Configurar método delete no backend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/216)     | Fechada    |     9      |
 
 ## Pontuação Final
 
@@ -127,7 +127,7 @@
 | &#128998; |     Sou brabo     |
 | &#129001; | Consigo me virar  |
 | &#129000; | Sei mais ou menos |
-| &#128999; |      Então...     |
+| &#128999; |     Então...      |
 | &#128997; |     Socorro!      |
 
 ## Squad Health Check
@@ -144,9 +144,9 @@
 |   Emote   |                  Legenda                  |
 | :-------: | :---------------------------------------: |
 | &#128529; | Sem expressão, indiferente com a situação |
-| &#128534; |            Problemas familiares           |
-| &#128526; |           Bem de boas e relaxado          |
-| &#128187; |             Problemas técnicos            |
+| &#128534; |           Problemas familiares            |
+| &#128526; |          Bem de boas e relaxado           |
+| &#128187; |            Problemas técnicos             |
 
 ## Análise pelo Scrum Master
 
