@@ -270,7 +270,7 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 - Diagrama para o FrontEnd
 
-<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/diagrama_front_end.jpg?raw=true">
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/diagrama_pacote_frontend_novo.png?raw=true">
 
 ### 5.3.2 Back-end
 
