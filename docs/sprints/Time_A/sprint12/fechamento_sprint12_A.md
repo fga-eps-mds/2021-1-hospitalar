@@ -55,22 +55,24 @@
 
 ### Pontos Positivos
 
-- O projeto começou a dar muito certo, gerando satisfação e motivação em toda a equipe
-- Final do semestre chegando
-- Novamente aprendemos bastante
-- Muita interação com outros times.
-- É possível observar todo o aumento de maturidade e melhora no no fluxo de serviço de todo o time.
-- Projeto bem consolidado
+- O projeto começou a dar muito certo, gerando satisfação e motivação em toda a equipe.
+- Final do semestre chegando alegrou o time.
+- Novamente aprendemos bastante na parte de programação.
+- Muita interação/comunicação com outros times.
+- É possível observar todo o aumento de maturidade e melhora no fluxo de serviço de todo o time.
+- Projeto bem consolidado.
+- O caminho até as férias está sendo recompensador.
 
 ### Pontos Negativos
 
-- Muita correria por estar perto da Release 2
-- O caminho até as férias está sendo sofrido
+- Muita correria por estar perto da Release 2.
+- O caminho até as férias está sendo sofrido.
+- Carga de trabalho maior devido à dívidas de outras sprints.
 
 ### Melhorias
 
-- Ter feito a parte de revisão na documentação anteriormente
-- Algumas das atividades mais simples que geraram uma carga de trabalho nessa sprint poderiam ter sido feitas antes
+- Ter feito a parte de revisão na documentação anteriormente.
+- Algumas das atividades mais simples que geraram uma carga de trabalho maior nessa sprint poderiam ter sido feitas antes.
 
 ## Burndown
 

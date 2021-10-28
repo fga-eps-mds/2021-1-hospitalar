@@ -55,21 +55,22 @@
 
 ### Pontos Positivos
 
-- Foi a sprint que mais trabalhamos e aprendemos
+- Foi a sprint que mais trabalhamos e aprendemos.
 - Chegando perto do final.
-- A troca para o material ui permitiu maior personalização nas páginas.
+- A troca para o material-ui permitiu maior personalização nas páginas.
 - Conseguimos lidar bem com a situação de divergências criativas entre os times e houve um bom planejamento para lidar com a situação.
 
 ### Pontos Negativos
 
-- Houve mudanças e trocas grandes em como fazemos os códigos
-- Passamos 3x o limite da hora semanal para a disciplina (final de semana...)
-- Houve discordâncias criativas entre os membros dos times
+- Houve mudanças e trocas grandes em como fazemos os códigos.
+- Passamos 3x o limite da hora semanal para a disciplina (final de semana, madrugadas, manhãs, tardes...).
+- Houve discordâncias criativas entre os membros dos times.
 
 ### Melhorias
 
-- Ter discutido melhor com os outros times o requisitos técnicos que provocaram a mudança de bibliotecas na tela
-- Ter utilizado mais o github nessa sprint, focamos mais em programação
+- Ter discutido melhor com os outros times os requisitos técnicos que provocaram a mudança de bibliotecas na tela
+- Ter utilizado mais o github nessa sprint.
+- Focamos mais em programação
 
 ## Burndown
 
