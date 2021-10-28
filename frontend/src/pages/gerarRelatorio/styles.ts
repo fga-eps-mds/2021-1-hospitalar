@@ -70,6 +70,11 @@ export const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     verticalAlign: 'middle',
     marginTop: '3vh',
+    textDecoration: 'none',
+    '&:hover:': {
+      color: 'blue',
+      textDecoration: 'underline',
+    },
   },
   imagem: {
     height: '15vh',

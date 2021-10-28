@@ -4,31 +4,39 @@ import JestAdapter from 'axios/lib/adapters/http'
 import { api } from '../api'
 
 export const apiTest = {
-  get: (path: string): Promise<AxiosResponse<Avaliacao[]>> => {
+  get: (path: string, config: any): Promise<AxiosResponse<Avaliacao[]>> => {
     if (typeof process !== 'undefined') {
       api.defaults.adapter = JestAdapter
     }
-    return api.get<Avaliacao[]>(path)
+    return api.get<Avaliacao[]>(path, config)
   },
 
-  post: (path: string, object: Avaliacao): Promise<AxiosResponse<Avaliacao>> => {
+  post: (
+    path: string,
+    object: Avaliacao,
+    config: any
+  ): Promise<AxiosResponse<Avaliacao>> => {
     if (typeof process !== 'undefined') {
       api.defaults.adapter = JestAdapter
     }
-    return api.post<Avaliacao>(path, object)
+    return api.post<Avaliacao>(path, object, config)
   },
 
-  put: (path: string, object: Avaliacao): Promise<AxiosResponse<Avaliacao>> => {
+  put: (
+    path: string,
+    object: Avaliacao,
+    config: any
+  ): Promise<AxiosResponse<Avaliacao>> => {
     if (typeof process !== 'undefined') {
       api.defaults.adapter = JestAdapter
     }
-    return api.put<Avaliacao>(path, object)
+    return api.put<Avaliacao>(path, object, config)
   },
 
-  delete: (path: string) => {
+  delete: (path: string, config: any) => {
     if (typeof process !== 'undefined') {
       api.defaults.adapter = JestAdapter
     }
-    return api.delete(path)
+    return api.delete(path, config)
   },
 }

@@ -52,24 +52,24 @@
 
 ### Pontos Positivos
 
-- Melhora na comunicação entre os integrantes do time
-- Melhora na organização entre os integrantes do time, issues e commits
-- Medo de utilizar o GitHub foi reduzido entre os integrantes, ainda que continue
+- Melhora na comunicação entre os integrantes do time.
+- Melhora na organização entre os integrantes do time, issues e commits.
+- Medo de utilizar o GitHub foi reduzido entre os integrantes, ainda que continue.
 
 ### Pontos Negativos
 
-- Feedback de evolução das atividades não foi feito de forma constante
-- Organização e comunicação entre os times ainda não está perfeita
-- Duração das reuniões
-- O trabalho realizado pelo time não está sendo adicionado constantemente no repositório
+- Feedback de evolução das atividades não foi feito de forma constante.
+- Organização e comunicação entre os times ainda não está perfeita.
+- Duração das reuniões.
+- O trabalho realizado pelo time não está sendo adicionado constantemente no repositório.
 
 ### Melhorias
 
-- Atualizar sempre, tanto em versão de documento quanto nos comentários de issues, quando houver evolução das atividades sendo realizadas
-- Conversar com POs e Scrum Masters de todos os times quanto a organização e comunicação
-- Aproveitar melhor o segundo dia de reunião para diminuir o tempo gasto
-- Realizar um pré-preenchimento dos documentos de Sprints e Issues antes das reuniões
-- Reforçar a criação de branchs para que os trabalhos sejam adicionados constantemente
+- Atualizar sempre, tanto em versão de documento quanto nos comentários de issues, quando houver evolução das atividades sendo realizadas.
+- Conversar com POs e Scrum Masters de todos os times quanto a organização e comunicação.
+- Aproveitar melhor o segundo dia de reunião para diminuir o tempo gasto.
+- Realizar um pré-preenchimento dos documentos de Sprints e Issues antes das reuniões.
+- Reforçar a criação de branchs para que os trabalhos sejam adicionados constantemente.
 
 ## Burndown
 

@@ -7,23 +7,24 @@
 | 16/08/2021 |  0.1   |                Documento elaborado no google docs                | @klyssmannoliveira, @victordscabral e @gpersijn |
 | 07/09/2021 |  0.2   |                        Revisão e correção                        |               @klyssmannoliveira                |
 | 12/09/2021 |  0.3   | Revisão e correção do documento em função da atualização do nome |               @klyssmannoliveira                |
+| 26/10/2021 |  0.4   |                 Revisão e correção do documento                  |        @gpersijn e @DanielViniciusAlves         |
 
 ## 1. Introdução
 
-O presente documento tem como objetivo informar os propósitos, objetivos e requisitos de alto nível para o processamento de melhoria da saúde assistencial do setor militar.
-Além disso, apresenta uma visão inicial do projeto de certificação hospitalar.
+O presente documento tem como objetivo informar os propósitos, objetivos e requisitos de alto nível para o processamento de melhoria da saúde assistencial dos hospitais baseando no método de avaliação dos hospitais militares.
+Além disso, apresenta as principais demandas do projeto de certificação hospitalar.
 
 ## 2. Descrição
 
 A FAMil (Ferramenta de Acreditação Militar) tem como principal intuito auxiliar a avaliação de acreditação da saúde
-assistencial militar. Desta forma, o projeto consiste em uma página na web que reunirá todas
+assistencial militar. Desta forma, o projeto consiste em um sistema web que reunirá todas
 as informações e análises dos avaliadores, bem como a apresentação dos resultados da avaliação
-hospitalar. Preliminarmente, o site desprende-se de uma tela de login para os avaliadores,
-da qual dá acesso a um menu principal que abarca, dentre as opções, um checklist hospitalar,
-onde possui todos os critérios qualitativos para a realização da avaliação, de uma forma mais
+hospitalar. O site desprende-se de uma tela de login para os avaliadores,
+da qual dá acesso a um menu principal que abarca, dentre as opções o preenchimento de uma Nova Avaliação,
+onde possui todos os critérios qualitativos para a realização desse processo, de uma forma mais
 dinâmica e facilitadora. Além disso, possui uma área para a efetivação de comentários explicativos
 para o desfecho de cada nota atribuída. Por fim, a página gera um relatório com todos os resultados
-obtidos após o processo avaliativo, com a demonstração através de gráficos e relatórios conclusivos.
+obtidos após o processo avaliativo, com a demonstração através de gráficos e relatórios conclusivos. Além também do sistema possuir algumas funcionalidades especiais para os administradores como poder de controle e edição.
 
 ## 3. Propósito e Justificativa
 
@@ -36,16 +37,16 @@ verifica como a OMS desenvolve a saúde assistencial militar com base nos relat�
 Tais critérios têm por objetivo identificar os pontos fortes e as oportunidades de melhoria, complementar a
 capacitação dos novos avaliadores, atualizar a governança de saúde e sincronizar os esforços de minimização das
 não-conformidades. A Avaliação de Acreditação verifica o nível de compliance da OMS segundo parâmetros da
-ASAM - Acreditação de Saúde Assistencial Militar, atribuindo uma certificação correspondente aos resultados adquiridos.
+ASAM - Acreditação de Saúde Assistencial Militar, atribuindo uma certificação correspondente aos resultados adquiridos. Tais classificações podem ser utilizadas como parâmetros não só para os hospitais militares, como também pode para qualquer instituição assistencial de saúde, tendo o projeto como um facilitador para essas avaliações.
 
 ## 4. Objetivos
 
 O principal objetivo da Ferramenta de Acreditação Militar (FAM) é facilitar o preenchimento e armazenamento das avaliações coletadas
-pelos analistas. Além disso, busca-se automatização da geração do relatório e modernização do preenchimento,
+pelos avaliadores que serão direcionados. Além disso, busca-se automatização da geração do relatório e modernização do preenchimento,
 como também a demonstração em gráficos, apresentado em um sistema web e integrado, evitando a quantidade excessiva
 de arquivos em um único computador. Ademais, tem-se por finalidade, a compactação do processo de avaliação através
 do melhor armazenamento dos dados, a padronização dos relatórios, unificação da metodologia e tecnologia e a
-diminuição de riscos de perda de dados.
+diminuição de riscos de perda de dados. Dessa forma, o FAMil impacta diretamente na organização e evolução desse processo.
 
 ## 5. Requisitos de Alto Nível
 
@@ -56,7 +57,7 @@ Estão entre os requisitos de alto nível:
 - Reproduzir, em uma página web, o preenchimento do checklist, com a divisão da página em tópicos de avaliação e seus itens.
   Exibindo demonstrações gráficas conforme é realizado atualmente;
 - Interação através de linguagem natural para uma melhor usabilidade;
-- Gerar um relatório em diferentes formatos (pdf, .doc e etc) nos moldes do relatório que é utilizado atualmente;
+- Gerar um relatório (pdf) nos moldes do relatório que é utilizado atualmente;
 
 ## 6. Riscos
 
@@ -68,16 +69,17 @@ Estão entre os requisitos de alto nível:
 | Dificuldades da equipe com as novas tecnologias inseridas                                                      | Seleção de alunos experientes para aplicação de treinamento.                                                                                              | Realização de treinamento sobre tecnologias                                                                                                          |
 | Ausência ou instabilidade da energia elétrica / Problemas com a Internet ou com o funcionamento do computador. | Conferir, de forma prévia às reuniões e entregas, o nível de estabilidade da conexão via Internet. Evitar, se possível, ficar longe do roteador de sinal. | Em caso de ausência inesperada de energia, remarcar o compromisso e avisar imediatamente ao time.                                                    |
 | Pandemia                                                                                                       | Seguir as orientações da Organização Mundial da Saúde para a prevenção da COVID-19                                                                        | Em caso de infecção ou luto, redistribuir a função do envolvido para não sobrecarregá-lo respeitando seu tempo de recuperação.                       |
+| Dependência dos alunos que possuem maior conhecimento                                                          | Realização de treinamento técnico dessas pessoas                                                                                                          | Estudar por conta própria em plataformas auxiliares                                                                                                  |
 
 ## 7. Estimativa de Custo
 
 ### 7.1 Custo de aquisição
 
-| **Equipamento**  | **Quantidade**                 | **Finalidade**                 | **Valor unitário** | **Preço**    |
-| ---------------- | ------------------------------ | ------------------------------ | ------------------ | ------------ |
-| Notebooks        | 19 unidades                    | Desenvolvimento e planejamento | R$ 3.000           | R$ 57.000,00 |
-| Energia elétrica | 5 horas por semana cada membro | Desenvolvimento e planejamento | 0,728 \* R$/KWh    | R$ 107,89    |
-| Internet         | 3 meses                        | Desenvolvimento e planejamento | R$ 100 \*\*        | R$ 300       |
+| **Equipamento**  | **Quantidade**                 | **Finalidade**                 | **Valor unitário** | **Preço**     |
+| ---------------- | ------------------------------ | ------------------------------ | ------------------ | ------------- |
+| Notebooks        | 19 unidades                    | Desenvolvimento e planejamento | R\$ 3.000          | R\$ 57.000,00 |
+| Energia elétrica | 5 horas por semana cada membro | Desenvolvimento e planejamento | 0,728 \* R\$/KWh   | R\$ 107,89    |
+| Internet         | 3 meses                        | Desenvolvimento e planejamento | R\$ 100 \*\*       | R\$ 300       |
 
 \* Fonte: http://www.aneel.gov.br/ranking-das-tarifas, acesso: 07/08/2021 <br>
 \*\* Valor médio de um plano de internet na região do DF
@@ -86,30 +88,31 @@ Estão entre os requisitos de alto nível:
 
 | **Ferramenta**         | **Finalidade**                              | **Preço tota** |
 | ---------------------- | ------------------------------------------- | -------------- |
-| Telegram               | Comunicação entre os membros                | R$ 0           |
-| Discord                | Comunicação entre os membros                | R$ 0           |
-| Editor de Texto        | Elaboração de documentos e código           | R$ 0           |
-| Git e GitHub           | Versionamento de arquivos                   | R$ 0           |
-| Google Drive           | Compartilhamento de arquivos                | R$ 0           |
-| Linux                  | Ambiente de desenvolvimento                 | R$ 0           |
-| React, Django, MongoDB | Tecnologias utilizadas para desenvolvimento | R$ 0           |
+| Telegram               | Comunicação entre os membros                | R\$ 0          |
+| Discord                | Comunicação entre os membros                | R\$ 0          |
+| Editor de Texto        | Elaboração de documentos e código           | R\$ 0          |
+| Git e GitHub           | Versionamento de arquivos                   | R\$ 0          |
+| Google Drive           | Compartilhamento de arquivos                | R\$ 0          |
+| Linux                  | Ambiente de desenvolvimento                 | R\$ 0          |
+| React, Django, MongoDB | Tecnologias utilizadas para desenvolvimento | R\$ 0          |
+| Pacote Office          | Auxílio na organização e gestão dos membros | R\$ 0          |
 
 ### 7.3 Custo total
 
 | **Custo**   | **Valor total** |
 | ----------- | --------------- |
-| Aquisição   | R$ 57.407,89    |
-| Ferramentas | R$0             |
+| Aquisição   | R\$ 57.407,89   |
+| Ferramentas | R\$0            |
 
 ## 8. Partes Interessadas
 
 ### 8.1. Usuários
 
-Os usuários serão os avaliadores de cada área do processo de avaliação de saúde assistencial militar na Organização Militar de Saúde, sendo credenciados pelo Exército a exercerem tais funções.
+A princípio, os usuários serão os avaliadores de cada área do processo de avaliação de saúde assistencial militar na Organização Militar de Saúde, sendo credenciados pelo Exército a exercerem tais funções, como também pode ser qualquer avaliador direcionado por qualquer hospital que queira avaliar as qualificações de um hospital.
 
-### 8.2. Hospitais Militares
+### 8.2. Hospitais (Militares)
 
-São aqueles que terão as suas dependências hospitalares avaliadas durante o processo. Os hospitais participam como os principais destinos dos avaliadores credenciados. Há em torno de 31 hospitais militares que integram o setor Militar.
+São aqueles que terão as suas dependências hospitalares avaliadas durante o processo. Os hospitais participam como os principais destinos dos avaliadores credenciados. Há em torno de 31 hospitais militares que integram o setor Militar. Além dos hosptais que tenham interessse em utilizar do mesmo processo para realizar suas avaliações.
 
 ### 8.3. Equipe
 

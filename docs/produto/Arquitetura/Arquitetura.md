@@ -21,6 +21,8 @@
 | 13/09/2021 | 1.3    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 13/09/2021 | 1.4    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 18/09/2021 | 1.5    | Correções nos markdowns dos assets                                                                           | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
+| 25/10/2021 | 1.6    | Evolução das primeiras versões do documento                                                                  | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
+| 26/10/2021 | 2.0    | Alteração nos diagramas                                                                                      | [@pedrohelias](https://github.com/pedrohelias)    , [@magnluiz](https://github.com/magnluiz)                                                                                                                                   |
 
 ## Sumário
 
@@ -40,7 +42,7 @@
 - 2.3 Tecnologias
 - 2.3.1 Python
 - 2.3.2 Django API
-- 2.3.3 MongoDB
+- 2.3.3 PostgreSQL
 - 2.3.4 JavaScript
 - 2.3.5 React.js
 
@@ -100,7 +102,7 @@ Partindo deste documento, o leitor ou usuário do projeto Checklist Hospitalar t
 
 ### 2.1 Diagrama de Relações
 
-![Diagrama de relações](/docs/assets/produtos/arquitetura/diagrama_de_relações.png)
+![Diagrama de relações](/docs/assets/produtos/arquitetura/diagrama_de_relações1.png)
 
 ### 2.2 Representação dos Serviços
 
@@ -128,9 +130,9 @@ A imagem acima mostra um levantamento realizado pelo StackOverflow em 2020 expli
 
 O Django é um framework especifico para aplicações em Back-End, sendo programado na linguagem Python. Especificamente para esse Projeto, será utilizado o Django REST API. Uma API, do inglês Application Programming Interface, são um conjunto de rotinas de processos especificos para aplicações voltadas a sistema WEB. Essas rotinas são especificas para atender as requisições exercidas pelo Front-End, e a partir do que foi solicitado, a API executará alguma coisa, e retornará a resposta solicitada. Um bom exemplo seria a requisição da matrícula do Usuário X. A API buscará acessar os dados solicitados, em um banco de dados, por exemplo, e entregará a quem requisitou.
 
-#### 2.3.3 MongoDB
+#### 2.3.3 PostgreSQL
 
-O MongoDB trata-se de um banco de dados não relacional que além de possuir baixo custo, por tratar-se de um software livre, possui um ótimo desempenho e é orientado a documentos, facilitando a consulta de dados.
+O PostgreSQL é sistema de banco de dados objeto relacional gratuito e *open source*, em que se caracteriza por ter recursos extremamente úteis, principalmente em relação a consulta de dados, integridade, facilidade de acesso e o controle de concorrência multi-versão.
 
 #### 2.3.4 JavaScript
 
@@ -160,6 +162,24 @@ O Typescript está ligado a área de desenvolvimento, principalmente ao Desenvol
 
 Foi a linguagem de programação escolhida para o projeto devido a aplicação, se encaixa perfeitamente num dos requisitos propostos, relacionado a ser uma aplicação web; e possui vasto material de apoio - sua popularidade promove seu desenvolvimento. Além do retorno educacional, como uma linguagem escolhida para desenvolver as skills em programação voltada a WEB.
 
+#### 2.3.7 Material UI (MUI)
+
+O MUI é uma biblioteca React que provê robustez, possibilidades de customização e componentes acessíveis, possibilitando construção e design de sistemas e aplicações mais rápidas. Essa biblioteca conta com uma boa e bem escrita <a href="https://mui.com/pt/">documentação</a>, que auxilia bastante no projeto do sistema. Também conta com <a href="https://github.com/mui-org/material-ui">repositório</a> no Github.
+
+Para o projeto, esta biblioteca atua constantemente na criação das páginas do sistema, desde os botões e campos de texto, até a construção de tabelas completas. Como vantagens obtidas, tem-se a padronização do sistema, visto que os componentes (botões, campos de texto, e outros) foram igualmente configurados e padronizados; além de que a comunicação entre componentes se facilita.
+
+#### 2.3.8 SonarCloud
+
+O SonarCloud é uma plataforma em nuvem específica para exibir processos de inspeção em código, a partir de varreduras e assim encontrar possíveis vunerabilidades no código, além de detectar possíveis "code smells".
+
+#### 2.3.9 Heroku
+
+Heroku é uma plataforma em nuvem com suporte para várias linguagens de programação, que disponibiliza o ambiente para rodar, construir e operar sistemas na nuvem. Bastante útil para fazer o deploy de sistemas, bem como testá-los num ambiente web. A plataforma aceita deploys, seja para hospedagem ou para testes na aplicação.
+
+#### 2.3.10 GitActions
+
+O Git Actions é um orquestrador de fluxo de trabalho, e com ele é possível descrever os passos específicos para compilar, fazer testes, criar releasaes e até realizar o deploy do sistema criado.
+
 ## 3. Metas e Restrições da Arquitetura
 
 ### 3.1 Metas
@@ -182,9 +202,13 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 <ul>
 <li><b>Python</b>: Linguagem de programação a ser utilizada no BackEnd da aplicação, juntamente do Django</li>
 <li><b>Django API</b>: FrameWork utilizada no BackEnd da aplicação, responsável pelas conexões com o banco e pelas regras de negócio</li>
-<li><b>MongoDB</b>: Sistema responsável pelo armazenamento e gerência dos dados apresentados à aplicação. Trabalhará em conjunto ao Django API</li>
+<li><b>PostgreSQL</b>: Sistema responsável pelo armazenamento e gerência dos dados apresentados à aplicação. Trabalhará em conjunto ao Django API</li>
 <li><b>JavaScript</b>: Linguagem de programação específica para desenvolvimento WEB FrontEnd. Trabalhará juntamente do React.Js</li>
 <li><b>React.js</b>: FrameWork específico para o FrontEnd da aplicação, vai simplificar a execução do FrontEnd da aplicação.</li>
+<li><b>Material UI</b>: Biblioteca React que vai facilitar a construção do design da página</li>
+<li><b>SonarCloud</b>: Plataforma utilizada para testes</li>
+<li><b>Heroku</b>: Plataforma utilizada para testes e deploy</li>
+<li><b>Git Actions</b>: Sistema utilizado para criação de fluxos de trabalho</li>
 
 </ul>
 
@@ -234,11 +258,11 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Front-End e como o mesmo se divide:
 
-![DiagramaFrontEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes_(Front_end).png>)
+![DiagramaFrontEndPacotes](/docs/assets/produtos/arquitetura/diagrama_frontend_pacotes.png)
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Back-End e como o mesmo se divide:
 
-![DiagramaBackEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes(Back_end).png>)
+![DiagramaBackEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes(BackEnd2).png>)
 
 ### 5.3 Visão da Implantação
 
@@ -249,12 +273,9 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 ### 5.3.2 Back-end
 
-- Diagrama de Classes - Relatório
-  ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_time_b.png)
+- Diagrama de Classes - BackEnd
+  ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_relatorio_unificado4.png)
 
-- Diagrama de Classe - Banco de Dados
-  ![diagramaClasses_TimeA](/docs/assets/produtos/arquitetura/diagrama_front.jpg)
 
-### 5.3.3 Diagrama unificado
 
-![DiagramaBackEndPacotes](/docs/assets/produtos/arquitetura/diagrama_de_classes_unificado_0.2.png)
+

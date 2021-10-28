@@ -22,6 +22,9 @@ import { Subtopico } from '../../../types/Avaliacao'
 import { TextField } from '../../GlobalComponents/Inputs/TextField'
 import { useStyles } from './styles'
 
+/**
+ * criando um tipo Props para o crud do subtopico
+ */
 type Props = {
   index: number
   subtopico: Subtopico
@@ -30,7 +33,9 @@ type Props = {
   removerSubtopico: (idEscolhido: number) => void
   cancelarEdicao: () => void
 }
-
+/**
+ * criando um tipo chamado status (para o status do subtópico)
+ */
 type Status = 'C' | 'PC' | 'NC' | 'NA'
 
 export function LinhaTabela({
@@ -41,6 +46,18 @@ export function LinhaTabela({
   removerSubtopico,
   cancelarEdicao,
 }: Props): React.ReactElement {
+  /**
+   * classes pega o styles.ts
+   * useState para os checkboxes do status
+   * useState para o requisito do subtopico
+   * useState para pontualçao do subtopico
+   * useState para os comentarios do subtopico
+   * useState usado em botões
+   *
+   * useState para saber se os botoes estao sendo editados
+   *
+   * oldState é o estado anterior do subtopico antes de ser alterado
+   */
   const classes = useStyles()
   const [botaoEscolhido, setBotaoEscolhido] = useState<Status>(subtopico.status)
   const [nome, setNome] = useState<string>(subtopico.nome)
@@ -57,6 +74,9 @@ export function LinhaTabela({
     comentario,
   })
 
+  /**
+   * quando for editar seta o subtopico como oldstate e verifica se está em estado de edição
+   */
   const toggle = () => {
     setOldState({
       botaoEscolhido,
@@ -66,7 +86,9 @@ export function LinhaTabela({
     })
     setIsEditing(!isEditing)
   }
-
+  /**
+   * retorna o estado anterior do subtopico
+   */
   const returnState = () => {
     setBotaoEscolhido(oldState.botaoEscolhido)
     setNome(oldState.nome)
@@ -74,6 +96,9 @@ export function LinhaTabela({
     setComentario(oldState.comentario)
   }
 
+  /**
+   * muda o estado do campo selecionado
+   */
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
     if (e.target.name === 'Nome') {
@@ -89,7 +114,9 @@ export function LinhaTabela({
       setComentario(e.target.value)
     }
   }
-
+  /**
+   * verifica o estado do checkbox selecionado
+   */
   const handleCheck = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault()
     if (
@@ -111,16 +138,21 @@ export function LinhaTabela({
       setPontuacao(0)
     }
   }
-
+  /**
+   * abre a opção de edição
+   */
   const handleClickOpen = () => {
     setOpen(true)
   }
-
+  /**
+   * fecha a opção de edição
+   */
   const handleClose = () => {
     setOpen(false)
   }
 
   return (
+    /* colunas e linhas da tabela */
     <TableRow>
       <TableCell className={classes.designNumber}> {index + 1}</TableCell>
       <TableCell className={classes.configTextFieldName}>
@@ -193,8 +225,11 @@ export function LinhaTabela({
           onChange={handleChange}
         />
       </TableCell>
+      {/* botões da tabela */}
+      {/* botão de editar */}
       {isEditing ? (
         <TableCell>
+          {/* checkboxes do status */}
           <IconButton
             color='inherit'
             style={{ display: 'block', margin: 'auto' }}
@@ -217,6 +252,7 @@ export function LinhaTabela({
           >
             <DoneRounded />
           </IconButton>
+          {/* botão de cancelar a edicao */}
           <IconButton
             color='inherit'
             style={{ display: 'block', margin: 'auto' }}
@@ -242,6 +278,7 @@ export function LinhaTabela({
           </IconButton>
         </TableCell>
       )}
+      {/* botão de deletar */}
       <TableCell>
         <IconButton
           color='inherit'
@@ -280,13 +317,12 @@ export function LinhaTabela({
             <Button
               className={classes.dialogConfirmDesign}
               variant='outlined'
-              onClick={() =>
-                subtopico.id
-                  ? removerSubtopico(subtopico.id)
-                  : () => {
-                      setOpen(false)
-                    }
-              }
+              onClick={() => {
+                if (subtopico.id) {
+                  removerSubtopico(subtopico.id)
+                }
+                setOpen(false)
+              }}
               autoFocus
             >
               Confirmar

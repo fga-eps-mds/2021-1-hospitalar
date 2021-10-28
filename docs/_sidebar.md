@@ -209,7 +209,7 @@
       <summary>Sprint 04 </summary>
       <ul>
       <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/abertura_sprint4">Abertura</a></li> 
-      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/fechamento_sprint4">Fechamento</a></li>
+      <li> <a href="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/sprints/Time_C/sprint4/fechamento_sprint4.md">Fechamento</a></li>
       </ul>
       </details>
       <details>

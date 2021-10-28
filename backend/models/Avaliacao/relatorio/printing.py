@@ -1,3 +1,4 @@
+import os
 from reportlab.graphics.charts.legends import Legend
 from reportlab.graphics.shapes import Drawing, String
 from reportlab.lib.validators import Auto
@@ -6,7 +7,8 @@ from reportlab.platypus import SimpleDocTemplate,\
     Spacer,\
     Table,\
     TableStyle,\
-    PageBreak
+    PageBreak,\
+    Image
 
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch, cm
@@ -22,6 +24,7 @@ from reportlab.lib.units import mm
 from reportlab.lib.pagesizes import letter, A4
 from reportlab.lib import colors
 from ..models import Avaliacao
+from ...Usuario.models import User
 
 from .utils import TestData
 
@@ -49,6 +52,7 @@ class NumberedCanvas(canvas.Canvas):
         self.drawRightString(202 * mm, 15 * mm + (0.2 * inch),
                              "Page %d of %d" % (self._pageNumber, page_count))
 
+
 class MyPrint:
 
     '''
@@ -72,18 +76,7 @@ class MyPrint:
         self.list_items_relat = {
             '1': 'FINALIDADE DA AVALIAÇÃO',
             '2': 'OBJETIVOS DA AVALIAÇÃO',
-            '3': 'REFERÊNCIAS',
-            '4': 'CONDIÇÕES DE EXECUÇÃO',
-            '5': 'RESULTADOS DA AVALIAÇÃO',
-        }
-
-        self.list_subitems_relat = {
-            'OBJETIVOS DA AVALIAÇÃO': [
-
-            ],
-            'CONDIÇÕES DE EXECUÇÃO': [
-
-            ],
+            '3': 'RESULTADOS DA AVALIAÇÃO',
         }
 
     def finalidade_aval(self, codigo):
@@ -97,6 +90,35 @@ class MyPrint:
 
         return text
 
+    def objetivos_aval(self, codigo):
+        relatorio = Avaliacao.objects.get(codigo=codigo)
+        text = '''
+        a. Fornecer um diagnóstico organizacional do {}, aplicando a metodologia 
+        da Acreditação da Saúde Assistencial Militar (ASAM).
+
+        b. Aprimorar o Caderno de Orientação da Acreditação da Saúde Assistencial Militar
+        e possibilitar a sua validação.
+        '''.format(relatorio.nomeHospital)
+
+        return text
+
+    def aval_sucinta(self, table_data):
+        relatorio = Avaliacao.objects.get(codigo=self.cod_relatorio)
+
+        conformes = table_data[-1][2].split('%')
+        conformes_val = float(conformes[0])
+
+        nao_conformes = table_data[-1][3].split('%')
+        nao_conformes_val = float(nao_conformes[0])
+
+        text = '''
+        a. Avaliação Sucinta: o {} foi avaliado dentro dos critérios de avaliação 
+        para a Acreditação Hospitalar, que foram revistos e que ainda estão em desenvolvimento. A OMS 
+        obteve apenas {}% de itens conformes e totalizou {}% em itens conformes e parcialmente 
+        conformes em todas as áreas.
+        '''.format(relatorio.nomeHospital, conformes_val, conformes_val + nao_conformes_val)
+
+        return text
 
     @staticmethod
     def _footer(canvas, doc):
@@ -106,9 +128,7 @@ class MyPrint:
 
         # Footer
         footer = Paragraph(
-            'Relatório da Avaliação Hospitalar do {}, de {}'.format(
-                0, 0
-            ), styles['Normal'])
+            'Relatório de Avaliação Hospitalar', styles['Normal'])
         w, h = footer.wrap(doc.width, doc.bottomMargin)
         footer.drawOn(canvas, doc.leftMargin, h + 1.7 * cm)
 
@@ -118,6 +138,36 @@ class MyPrint:
     '''
     Organização dos dados do gráfico
     '''
+
+    def get_users(self):
+        relatorio = Avaliacao.objects.get(codigo=self.cod_relatorio)
+        usersids = relatorio.idsAvaliadores.split(',')
+        print(usersids)
+
+        users = [User.objects.get(id=userid) for userid in usersids if userid]
+
+        return users
+
+    def tabela_users(self, styles):
+        users = self.get_users()
+
+        table_data = []
+
+        # Headers
+        table_data.append([
+            Paragraph("Pessoal", styles),
+            Paragraph("Função", styles),
+            Paragraph("Organização", styles),
+        ])
+
+        for user in users:
+            nome = user.nome
+            funcao = user.funcao
+            organizacao = user.organizacao
+
+            table_data.append([nome, funcao, organizacao])
+
+        return table_data
 
     def get_pontos(self):
         relatorio = Avaliacao.objects.get(codigo=self.cod_relatorio)
@@ -239,7 +289,7 @@ class MyPrint:
                 [Paragraph(str(data)) for data in datas]
             paragraph_columns.append(count_total)
             paragraph_columns.append(count_comments)
-            paragraph_columns.append(media)
+            paragraph_columns.append("{0:.2f}".format(media))
             # Adição da linha
             table_data.append(paragraph_columns)
         # Linha TOTAIS
@@ -250,8 +300,8 @@ class MyPrint:
         # Linha PERCENTUAIS
         table_data.append(
             [Paragraph('PERCENTUAIS')] +
-            [("{0:.2f}%".format((nums / count_totals[0]) * 100) if count_totals[0] else 0) for nums in count_totals] +
-            ['-']
+            [("{0:.2f}%".format((nums / count_totals[0]) * 100) if count_totals[0] else 0)
+             for nums in count_totals[0:5]] + ['-', '-', '-']
         )
 
         return table_data
@@ -263,23 +313,37 @@ class MyPrint:
     def add_legend(draw_obj, chart, data):
         legend = Legend()
         legend.alignment = 'right'
-        legend.x = 0
-        legend.y = 70
+        legend.x = 90
+        legend.y = 20
         legend.colorNamePairs = Auto(obj=chart)
         draw_obj.add(legend)
 
     def pie_chart_with_legend(self):
         data = self.get_pontos()
+        sum_pontos = 0
+        for x in data['count_totals'][1:5]:
+            sum_pontos += x
+
         # Espaço de renderização
         drawing = Drawing(width=400, height=200)
         # Propriedades do gráfico
-        my_title = String(170, 40, 'Proporções das Pontuações', fontSize=14)
+        my_title = String(
+            self.width/4, 200, 'Proporções das Pontuações', fontSize=14)
         pie = Pie()
         pie.sideLabels = True
         pie.x = 150
         pie.y = 65
         pie.data = data['count_totals'][1:5]
-        pie.labels = ['C', 'PC', 'NC', 'NA']
+        pie.labels = [
+            'C: Conforme {0:.2f}%'.format(
+                (data['count_totals'][1]/sum_pontos) * 100 if sum_pontos > 0 else 0),
+            'PC: Parcialmente Conforme {0:.2f}%'.format(
+                data['count_totals'][2]/sum_pontos * 100 if sum_pontos > 0 else 0),
+            'NC: Não Conforme {0:.2f}%'.format(
+                data['count_totals'][3]/sum_pontos * 100 if sum_pontos > 0 else 0),
+            'NA: Não se Aplica {0:.2f}%'.format(
+                data['count_totals'][4]/sum_pontos * 100 if sum_pontos > 0 else 0)
+        ]
         pie.slices.strokeWidth = 0.5
         # Adição do gráfico para renderização
         drawing.add(my_title)
@@ -300,7 +364,7 @@ class MyPrint:
         d.save()
 
         return d
-    
+
     '''
     É feita a Query através do código passado para o criador do Relatório.
     '''
@@ -356,6 +420,19 @@ class MyPrint:
             name="TableHeader", fontSize=11, alignment=TA_LEFT)
         )
 
+        # Logo Famil
+
+        basedir = os.getcwd()
+        # Base directory
+
+        go_to_dir = os.path.dirname(basedir)
+        # pathname = os.path.join(go_to_dir, "frontend",
+        #                         "src", "assets", "logo-2021-v2.png")
+        # elements.append(
+        #     Image(pathname, width=1.5*cm, height=2.2*cm))
+
+        elements.append(self.paragraph_space())
+
         elements.append(
             Paragraph('PROGRAMA DE ACREDITAÇÃO DA SAÚDE ASSISTENCIAL MILITAR (PASAM)',
                       styles['centered_title'])
@@ -367,38 +444,14 @@ class MyPrint:
 
         # Título
         elements.append(
-            Paragraph("AVALIAÇÃO DO HOSPITAL {}".format(relatorio.nomeHospital),
+            Paragraph("AVALIAÇÃO DO {}".format(relatorio.nomeHospital),
                       styles['centered_title']))
 
         elements.append(self.section_space())
-        # Seção 1
-        elements.append(Paragraph("{}. {}".format(
-            "1", self.list_items_relat["1"]), styles['Heading2']))
-        elements.append(Paragraph(self.finalidade_aval(self.cod_relatorio)))
 
-        elements.append(self.section_space())
-        # Seção 2
-        elements.append(Paragraph("{}. {}".format(
-            "2", self.list_items_relat["2"]), styles['Heading2']))
+        # Avaliadores
+        table_data = self.tabela_users(styles['TableHeader'])
 
-        elements.append(self.section_space())
-        # Seção 3
-        elements.append(Paragraph("{}. {}".format(
-            "3", self.list_items_relat["3"]), styles['Heading2']))
-
-        elements.append(self.section_space())
-        # Seção 4
-        elements.append(Paragraph("{}. {}".format(
-            "4", self.list_items_relat["4"]), styles['Heading2']))
-
-        elements.append(self.section_space())
-        # Seção 5
-        elements.append(Paragraph("{}. {}".format(
-            "5", self.list_items_relat["5"]), styles['Heading2']))
-
-        # Tabela com resumo dos dados + Gráfico
-        table_data = self.tabela_graph_pontos(
-            relatorio, styles['TableHeader'])
         wh_table = Table(table_data)
 
         # Estilização da Tabela - Seleciona as células por um range
@@ -413,6 +466,51 @@ class MyPrint:
         )
 
         elements.append(wh_table)
+        elements.append(self.section_space())
+
+        # Seção 1
+        elements.append(Paragraph("{}. {}".format(
+            "1", self.list_items_relat["1"]), styles['Heading2']))
+        elements.append(Paragraph(self.finalidade_aval(self.cod_relatorio)))
+
+        elements.append(self.section_space())
+
+        # Seção 2
+        elements.append(Paragraph("{}. {}".format(
+            "2", self.list_items_relat["2"]), styles['Heading2']))
+        elements.append(Paragraph(self.objetivos_aval(self.cod_relatorio)))
+
+        elements.append(self.section_space())
+
+        # Seção 3
+        elements.append(Paragraph("{}. {}".format(
+            "3", self.list_items_relat["3"]), styles['Heading2']))
+
+        # Tabela com resumo dos dados + Gráfico
+        table_data = self.tabela_graph_pontos(
+            relatorio, styles['TableHeader'])
+
+        aval_sucinta = self.aval_sucinta(table_data)
+
+        elements.append(Paragraph(aval_sucinta))
+
+        elements.append(self.paragraph_space())
+
+        wh_table = Table(table_data)
+
+        # Estilização da Tabela - Seleciona as células por um range
+        # (x1, y1), (x2, y2)
+        wh_table.setStyle(
+            TableStyle([
+                ('INNERGRID', (0, 0), (-1, -1), 0.25, colors.black),
+                ('BOX', (0, 0), (-1, -1), 0.5, colors.black),
+                ('VALIGN', (0, 0), (-1, 0), 'MIDDLE'),
+                ('BACKGROUND', (0, 0), (-1, 0), colors.gray)
+            ])
+        )
+
+        elements.append(wh_table)
+        elements.append(self.section_space())
 
         # Gráfico
 
@@ -434,21 +532,25 @@ class MyPrint:
 
             index += 1
 
-            titulo = secs.topico
+            elements.append(Paragraph("Fatos Observados em {}".format(
+                secs.topico), styles['centered_title']))
+
+            titulo = "{}. {}".format(secs.id, secs.topico)
             # Tópicos
             elements.append(Paragraph(titulo, styles['Heading1']))
 
             for sub in secs.subtopicos:
-                # Subtópicos
-                subtitulo = sub.nome
-                elements.append(Paragraph(subtitulo, styles['Heading2']))
+                if sub.status != 'NA':
+                    # Subtópicos
+                    subtitulo = "{}.{}. {}".format(secs.id, sub.id, sub.nome)
+                    elements.append(Paragraph(subtitulo, styles['Heading2']))
 
-                elements.append(Paragraph("Status: {}".format(sub.status)))
-                elements.append(
-                    Paragraph("Pontuação: {}".format(sub.pontuacao)))
-                elements.append(Paragraph(
-                    "Comentários: {}".format(sub.comentario)
-                ))
+                    elements.append(Paragraph("Status: {}".format(sub.status)))
+                    elements.append(
+                        Paragraph("Pontuação: {}".format(sub.pontuacao)))
+                    elements.append(Paragraph(
+                        "Comentários: {}".format(sub.comentario)
+                    ))
 
             elements.append(PageBreak())
 
