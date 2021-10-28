@@ -81,7 +81,7 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     padding: '0',
     margin: '0',
-    height: '14vh',
+    height: '8vh',
     width: '100%',
     backgroundColor: '#FFFEF2',
   },
@@ -202,12 +202,16 @@ export const useStyles = makeStyles((theme) => ({
     height: '50vh',
   },
   plots: {
-    textAlign: 'center',
-    marginLeft: 'auto',
+    marginLeft: '4vh',
     marginRight: 'auto',
-    backgroundColor: '#D6F0C8',
-    width: '50vw',
-    height: '43vh',
+    backgroundColor: 'none',
+    width: '40vw',
+    height: '47vh',
+  },
+  imgPlot: {
+    width: 'auto',
+    height: '47vh',
+    marginLeft: '0vh',
   },
   btn: {
     padding: 0,
@@ -231,4 +235,5 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     marginTop: '0.5vh',
   },
+  grafico: {},
 }))

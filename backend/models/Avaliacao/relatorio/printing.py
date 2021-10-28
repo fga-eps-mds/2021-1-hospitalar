@@ -426,10 +426,10 @@ class MyPrint:
         # Base directory
 
         go_to_dir = os.path.dirname(basedir)
-        pathname = os.path.join(go_to_dir, "frontend",
-                                "src", "assets", "logo-2021-v2.png")
-        elements.append(
-            Image(pathname, width=1.5*cm, height=2.2*cm))
+        # pathname = os.path.join(go_to_dir, "frontend",
+        #                         "src", "assets", "logo-2021-v2.png")
+        # elements.append(
+        #     Image(pathname, width=1.5*cm, height=2.2*cm))
 
         elements.append(self.paragraph_space())
 

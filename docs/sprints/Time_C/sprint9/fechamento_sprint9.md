@@ -48,11 +48,11 @@
 
 ## Burndown
 
-![Burndown](/docs/assets/sprints/time_c/sprint_9/burndown09.png)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_c/sprint_9/burndown09.png?raw=true)
 
 ## Velocity
 
-![Velocity](/docs/assets/sprints/time_c/sprint_9/velocity09.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_c/sprint_9/velocity09.png?raw=true)
 
 ## Práticas ágeis
 

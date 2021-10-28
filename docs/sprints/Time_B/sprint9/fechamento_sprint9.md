@@ -68,7 +68,7 @@ O Burndown está prejudicado pois tivemos que reabrir issues que estavam sem pon
 
 ## Velocity
 
-![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_8/velocity_sprint_8.png?raw=true)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_9/velocity_sprint_9.png?raw=true)
 
 Menor pontuação relativa a média. Possivelmente até o final do projeto, a média irá diminuir, porém com menos débitos entre sprints e maior satisfação dos membros com as entregas.
 

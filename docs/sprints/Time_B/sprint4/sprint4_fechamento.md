@@ -88,7 +88,7 @@ Podemos observar que, praticamente, não houve o fechamento de issues, foram def
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_b/sprint_4/velocity_sprint_4.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_4/velocity_sprint_4.png?raw=true)
 
 A média. A média de 40 parece estar se confirmando, não conseguimos superar essa produtividade ainda, talvez tenhamos que planejar melhor para reduzir a complexidade das issues entre as sprints, mesmo tendo mais membros. Precisamos melhorar a distribuição e a definição da complexidade da issue.
 

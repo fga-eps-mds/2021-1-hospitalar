@@ -1,9 +1,13 @@
+import { CONFIG, authApi } from '../../api'
 import { Grid, TextField } from '@material-ui/core'
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
+import AuthContext from '../../context/auth'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { Header } from '../../components/GlobalComponents/Header'
 import { SearchRounded } from '@material-ui/icons'
+import { Usuario } from '../../types/Usuario'
+import { UsuarioGerenciador } from '../../components/UsuarioGerenciador'
 import { useStyles } from './styles'
 
 /**
@@ -16,6 +20,17 @@ import { useStyles } from './styles'
 export function Gerenciador(): React.ReactElement {
   const [toggleState, setToggleState] = useState(1)
   const classes = useStyles()
+  const context = useContext(AuthContext)
+
+  const [users, setUsers] = useState<Usuario[]>([])
+
+  useEffect(() => {
+    authApi
+      .get<Usuario[]>('user_list/', CONFIG(context.token))
+      .then(({ data }) => setUsers(data))
+      // eslint-disable-next-line no-console
+      .catch(console.log)
+  }, [])
 
   /**
    * A página foi criada utilizando a ferramenta de layout responsivo do material-ui
@@ -64,8 +79,16 @@ export function Gerenciador(): React.ReactElement {
           </Grid>
         </Grid>
 
-        <Grid container className={toggleState === 1 ? classes.teste1 : classes.teste}>
-          <h1> Usuários </h1>
+        <Grid
+          container
+          className={toggleState === 1 ? classes.teste1 : classes.teste}
+          direction='row'
+          alignItems='center'
+          justifyContent='center'
+        >
+          {users.map((user) => (
+            <UsuarioGerenciador user={user} />
+          ))}
         </Grid>
 
         <Grid container className={toggleState === 2 ? classes.teste2 : classes.teste}>

@@ -12,9 +12,9 @@
 ## Objetivos
 
 Essa Sprint tem como principais objetivos: 
-- Refatoramento dos documentos da Release 1. 
-- Iniciar o BackEnd do projeto (crud). 
-- Iniciar o FrontEnd do projeto (crud).
+- Terminar o refatoramento dos documentos da Release 1. 
+- Continuar o BackEnd do projeto (crud). 
+- Continuar o FrontEnd do projeto (crud).
 
 ## Duração
 

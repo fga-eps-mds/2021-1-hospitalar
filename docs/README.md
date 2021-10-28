@@ -15,16 +15,6 @@
 
 <br/>
 
-## 🛠️ Status do Projeto
-
-<p align="center"> 
- <h1 align="center"> 
-     🚧  Em construção... 🚀 🚧
- </h1>
-</p>
-
-<br/>
-
 ## 📄 Sobre o projeto
 
 > O FAMil tem como principal intuito auxiliar no processo de avaliação hospitalar do PASAM - Programa de Acreditação da Saúde Assistencial Militar. O projeto consiste em uma página web que proporciona uma avaliação mais dinâmica e padronizada acerca do processo avaliativo, bem como a apresentação dos resultados por meio de relatórios gerados pelos avaliadores credenciados da OMS (Organização Militar da Saúde).
@@ -38,13 +28,13 @@ As tecnologias foram determinadas de acordo com a necessidade das atividades a s
 | Frontend                                            |                                                                                                                    Backend                                                                                                                    |
 | :-------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | [ReactJs](https://reactjs.org/) (JavaScript Libary) |                                                                                    [DjangoRest](https://www.django-rest-framework.org/) (Python FrameWork)                                                                                    |
-| [TypeScript](https://www.typescriptlang.org/)       | [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) (NoSql Database) |
+| [TypeScript](https://www.typescriptlang.org/)       | [PostgreSQL](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) |
 
 <br>
 <p align="left"> 
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-  <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
+  <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg">
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg">
     <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg">
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">

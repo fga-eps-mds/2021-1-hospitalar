@@ -317,13 +317,12 @@ export function LinhaTabela({
             <Button
               className={classes.dialogConfirmDesign}
               variant='outlined'
-              onClick={() =>
-                subtopico.id
-                  ? removerSubtopico(subtopico.id)
-                  : () => {
-                      setOpen(false)
-                    }
-              }
+              onClick={() => {
+                if (subtopico.id) {
+                  removerSubtopico(subtopico.id)
+                }
+                setOpen(false)
+              }}
               autoFocus
             >
               Confirmar

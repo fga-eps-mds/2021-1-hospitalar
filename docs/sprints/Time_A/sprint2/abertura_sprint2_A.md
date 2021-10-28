@@ -11,11 +11,11 @@
 ## Objetivos
 
 Essa Sprint tem como principais objetivos: 
-- Elaboração da redação do Termo de Abertura de Projeto (TAP) 
-- Conhecimento das linguagens e tecnologias escolhidas 
-- Definição dos escopos de cada time
-- Desenho do protótipo de baixa fidelidade
-- Estudo da linguagem MarkDown e configuração do git pages
+- Elaboração da redação do Termo de Abertura de Projeto (TAP).
+- Conhecimento das linguagens e tecnologias escolhidas.
+- Definição dos escopos de cada time.
+- Desenho do protótipo de baixa fidelidade.
+- Estudo da linguagem MarkDown e configuração do git pages.
 
 ## Duração
 

@@ -1,10 +1,10 @@
-import { CONFIG, api } from '../../api'
+import { Avaliacao, Secao, Subtopico } from '../../types/Avaliacao'
+import { CONFIG, api, authApi } from '../../api'
 import { FormGroup, Grid, IconButton, Typography } from '@material-ui/core'
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import AuthContext from '../../context/auth'
 import Autocomplete from '@material-ui/lab/Autocomplete'
-import { Avaliacao } from '../../types/Avaliacao'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
 import { DatePicker } from '../../components/GlobalComponents/DatePicker'
 import { Form } from '../../components/GlobalComponents/Forms/Form'
@@ -12,25 +12,41 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import Logo from '../../assets/logo-2021-v2.png'
 import { Template } from '../../components/GlobalComponents/Template'
 import TextField from '@material-ui/core/TextField'
+import { Usuario } from '../../types/Usuario'
+import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function NovaAvaliacao(): React.ReactElement {
   const classes = useStyles()
   const context = useContext(AuthContext)
+  const history = useHistory()
+
+  const blankUser: Usuario = {
+    id: 0,
+    nome: 'null',
+    email: 'null',
+    admin: false,
+    funcao: 'null',
+    organizacao: 'null',
+  }
 
   const [nomeHospital, setNomeHospital] = useState('')
   const [sigla, setSigla] = useState('')
   const [codigo, setCodigo] = useState('')
   const [data, setData] = useState<Date | null>(new Date())
+  const [users, setUsers] = useState<Usuario[]>([blankUser])
+  const [idsAvaliadores, setIdsAvaliadores] = useState('')
+  const [secoes, setSecoes] = useState<Secao[]>([])
 
+  // Caso não precise, deletar após testes!
   const handleSave = () => {
     const avaliacao: Avaliacao = {
       codigo,
       nomeHospital: `${nomeHospital},${sigla}`,
-      idsAvaliadores: '',
+      idsAvaliadores,
       data: data ? data.toISOString() : new Date().toISOString(),
       configuracao: {},
-      secoes: [],
+      secoes,
     }
 
     api.post('avaliacao/', avaliacao, CONFIG(context.token)).catch((error) => {
@@ -38,13 +54,55 @@ export function NovaAvaliacao(): React.ReactElement {
       console.log(error)
       alert('O código dessa avaliação já está sendo usado')
     })
+
+    alert('A avaliação foi criada')
+    history.push('/home')
   }
 
   const generateForm = () => {
-    const users = [
-      { name: 'User 1', id: 1994 },
-      { name: 'User 2', id: 1972 },
-    ]
+    useEffect(() => {
+      authApi
+        .get<Usuario[]>('user_list/', CONFIG(context.token))
+        .then((response) => {
+          setUsers([...response.data])
+          // eslint-disable-next-line no-console
+          console.log(response.data)
+        })
+        .catch((error) => {
+          // eslint-disable-next-line no-console
+          console.log(error)
+        })
+
+      api.get<Avaliacao>('/avaliacao/1', CONFIG(context.token)).then((response) => {
+        // eslint-disable-next-line no-console
+        console.log(response.data.secoes)
+
+        const newsec = response.data.secoes.map((sec) => {
+          const newsub = sec.subtopicos.map((sub: Subtopico) => {
+            const pickedSubAttributes = (subtop: Subtopico) => {
+              const { nome, status, comentario, pontuacao } = subtop
+
+              return { nome, status, comentario, pontuacao }
+            }
+
+            return pickedSubAttributes(sub)
+          })
+          // eslint-disable-next-line no-console
+          console.log(newsub)
+
+          const pickedSecAttributes = (secpicked: Secao, subpicked: Subtopico[]) => ({
+            topico: secpicked.topico,
+            subtopicos: subpicked,
+          })
+
+          // eslint-disable-next-line no-console
+          console.log(pickedSecAttributes(sec, newsub))
+          return pickedSecAttributes(sec, newsub)
+        })
+
+        setSecoes(newsec)
+      })
+    }, [])
 
     return (
       <FormGroup>
@@ -61,7 +119,8 @@ export function NovaAvaliacao(): React.ReactElement {
             <Autocomplete
               multiple
               options={users}
-              getOptionLabel={(option: any) => option.name}
+              getOptionLabel={(option: any) => option.nome}
+              getOptionSelected={(option: any, value) => option.id === value.id}
               renderInput={(params: any) => (
                 <TextField
                   className={classes.inputText}
@@ -71,6 +130,21 @@ export function NovaAvaliacao(): React.ReactElement {
                   placeholder='Avaliadores'
                 />
               )}
+              onChange={(event, values) => {
+                event.preventDefault()
+                let concatIds = ''
+                values.forEach((val, index) => {
+                  if (index === 0) {
+                    concatIds = concatIds.concat(val.id.toString())
+                  } else {
+                    concatIds = concatIds.concat(',', val.id.toString())
+                  }
+                })
+                setIdsAvaliadores(concatIds)
+
+                // eslint-disable-next-line no-console
+                console.log(values)
+              }}
             />
             <Button
               onClick={handleSave}
