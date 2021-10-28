@@ -4,7 +4,7 @@
 
 | **Data**   | **Versão** | **Modificação**      | **Autor**                                            |
 | :--------- | :--------- | :------------------- | :--------------------------------------------------- |
-| 12/10/2021 | 1.0        | Criação do documento | [@victordscabral](https://github.com/victordscabral) |
+| 12/10/2021 | 2.0        | Criação do documento | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 
@@ -18,14 +18,16 @@ Essa Sprint tem como principais objetivos:
 
 ## Duração
 
-**Duração:** 7 dias
+**Duração:** 9 dias
 <br>
-**Início:** 05/10/2021
+**Início:** 19/10/2021
 <br>
-**Fim:** 12/10/2021
+**Fim:** 28/10/2021
 
 ## Sprint BackLog
 
+[#195 Preenchimento da avaliação: Botões de salvar e cancelar - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/195)
+<br>
 [#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
 <br>
 [#245 Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)
@@ -44,9 +46,13 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#267 Atualizar comentários nos códigos (Tela 1) Parte 2 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/267)
 <br>
+[#268 Atualizar documentos de Abertura e Fechamento de Sprints passadas - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/268)
+<br>
 [#270 Finalizar Tela de Busca de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/270)
 <br>
 [#274 Ajustar disposição/chamada dos responsáveis na Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/274)
+<br>
+[#278 Revisão no Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/278)
 <br>
 [#280 Atualizar comentários nos códigos (Telas do Time A) Parte 3 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/280)
 <br>
@@ -54,8 +60,3 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#292 Revisão no Documento de EAP - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/292)
 
-## Débito Técnico Adicionado
-
-- [#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A] (https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
-- [#245 Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)
-  <br>

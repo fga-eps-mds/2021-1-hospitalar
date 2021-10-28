@@ -1,4 +1,4 @@
-# Fechamento da Sprint 05
+# Fechamento da Sprint 06
 
 ## Histórico de versão
 

@@ -8,18 +8,6 @@
 
 ## Backlog da Sprint
 
-[#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
-[#193 Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)
-[#194 Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)
-[#217 Configurar método get no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/217)
-[#218 Configurar método update no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/218)
-[#219 Configurar método post no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/219)
-[#220 Configurar método delete no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/220)
-[#221 Ajustar o design do frontend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/221)
-[#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
-[#228 Ajustar o design do frontend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/228)
-[#232 Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)
-
 | **ID** | **Descrição**                                                                                                                                         | **Status** | **Pontos** |
 | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :--------: |
 | #62    | [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                                            | Fechada    |     13     |
@@ -68,19 +56,23 @@
 
 - Nessa reta final, realizar um planejamento quanto ao pareamento muito bem feito, com o intuito tanto de acelerar a produtividade quanto de difundir mais conhecimento para toda equipe.
 - Afim de evitar uma sobrecarga em toda a equipe, conversar com os membros e dividir melhor o tempo para MDS em toda a semana.
+### Resultados: propostas de melhorias da Sprint passada
+
+- Houve uma melhora na constância dos commits. Mas as vezes ainda esqueçemos de postar constantemente as atualizações e fazemos só um "grande commit".
+- Separamos muitos horários para MDS nessa Sprint.
+- O preparo para a Release 2 está sendo feito, mas não estamos focando tanto em revisão de documentos ainda por estarmos bem ocupados com os códigos.
+- Fechamento de issue foi feito tardiamente por divergência nos horários dos membros.
 
 ## Burndown
 
-![burndown](/docs/assets/sprints/time_a/sprint_10/burndown_10.jpeg)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_10/burndown_10.png?raw=true)
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_a/sprint_10/velocity_10.jpeg)
-
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_10/velocity_10.jpeg?raw=true)
 ## Cumulative Flow
 
-![cumulative](/docs/assets/sprints/time_a/sprint_10/cumulative_10.jpeg)
-
+![cumulative](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_10/cumulative_10.png?raw=true)
 ## Práticas ágeis
 
 | ID  |                        Nome de prática ágil                        | Sprint 10 |

@@ -1,62 +1,47 @@
-# Fechamento da Sprint 10
+# Fechamento da Sprint 11
 
 ## Histórico de versão
 
 | **Data**   | **Versão** | **Modificação**      | **Autor**                                            |
 | :--------- | :--------- | :------------------- | :--------------------------------------------------- |
-| 14/10/2021 | 1.0        | Criação do documento | [@victordscabral](https://github.com/victordscabral) |
+| 19/10/2021 | 2.0        | Criação do documento | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
-[#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
-[#193 Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)
-[#194 Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)
-[#217 Configurar método get no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/217)
-[#218 Configurar método update no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/218)
-[#219 Configurar método post no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/219)
-[#220 Configurar método delete no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/220)
-[#221 Ajustar o design do frontend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/221)
-[#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
-[#228 Ajustar o design do frontend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/228)
-[#232 Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)
-
 | **ID** | **Descrição**                                                                                                                                         | **Status** | **Pontos** |
 | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :--------: |
-| #62    | [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                                            | Aberta     |     13     |
-| #193   | Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)                               | Fechada    |     13     |
-| #194   | [Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)                            | Fechada    |     13     |
-| #217   | [Configurar método get no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/217)                       | Fechada    |     9      |
-| #218   | [Configurar método update no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/218)                    | Aberta     |     9      |
-| #219   | [Configurar método post no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/219)                      | Fechada    |     9      |
-| #220   | [Configurar método delete no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/220)                    | Fechada    |     9      |
-| #221   | [Ajustar o design do frontend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/221)                              | Fechada    |     10     |
-| #222   | [Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222) | Aberta     |     8      |
-| #228   | [Ajustar o design do frontend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/228)                           | Fechada    |     10     |
-| #232   | [Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)                                                         | Aberta     |     6      |
+| #222    | [Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)           | Fechada     |     8     |
+| #224   | [Deploy Heroku - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/224)                               | Fechadaa    |     9     |
+| #232   | [Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)                            | Fechada    |     6     |
+| #245   | [Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)                       | Aberta    |     15      |
+| #247   | [Atualizar comentários nos códigos (Tela 1) Parte 1 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/247)       | Fechada     |     5      |
+| #248   | [Implementar o esqueleto da página (Tela de Busca de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/248)    | Fechada    |     8      |
+| #249   | [Configurar método get no backend (Tela de Busca de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/249)                    | Fechada    |     10      |
+| #251   | [Primeira reunião geral Sprint 11 - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/251)                              | Fechada    |     3     |
+| #254   | [Segunda reunião geral Sprint 11 - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/254) | Fechada     |     3      |
+
 
 ## Pontuação Final
 
-**Pontuação Total:** Pontos Planejados <br>
-**Débitos Técnicos Adicionados:** Pontos <br>
-**Pontos Concluídos:** Pontos Concluídos <br>
+**Pontuação Total:** 67 Pontos Planejados <br>
+**Débitos Técnicos Adicionados:** 15 Pontos <br>
+**Pontos Concluídos:** 52 Pontos Concluídos <br>
 
 ## Débitos Técnicos de Sprints Anteriores
 
-[#193 Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)
-<br>
-[#194 Preenchimento da avaliação: Paginação da avaliação - Time A ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)
+[#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
+
+[#232 Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)
 
 ## Débitos Técnicos Gerados
 
-[#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
-<br>
-
+[#245 Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)
 ## Retrospectiva
 
 ### Pontos Positivos
 
 - Foi a sprint que mais trabalhamos e aprendemos.
-- Chegando perto do final.
+- Chegando perto do final do semestre.
 - A troca para o material-ui permitiu maior personalização nas páginas.
 - Conseguimos lidar bem com a situação de divergências criativas entre os times e houve um bom planejamento para lidar com a situação.
 
@@ -65,24 +50,30 @@
 - Houve mudanças e trocas grandes em como fazemos os códigos.
 - Passamos 3x o limite da hora semanal para a disciplina (final de semana, madrugadas, manhãs, tardes...).
 - Houve discordâncias criativas entre os membros dos times.
+- Poucas issues criadas para o tanto de trabalho que fizemos.
 
 ### Melhorias
 
-- Ter discutido melhor com os outros times os requisitos técnicos que provocaram a mudança de bibliotecas na tela
+- Ter discutido melhor com os outros times os requisitos técnicos que provocaram a mudança de bibliotecas na tela.
 - Ter utilizado mais o github nessa sprint.
-- Focamos mais em programação
+- Criar mais issues.
+  
+### Resultados: propostas de melhorias da Sprint passada
+
+- Não houve um bom planejamento da sprint por conta do turbilhão de mudanças que tivemos que fazer no código. Foi uma sprint bem cheia, o Scrum Master ficou a maior parte do tempo fazendo código e por descuido o planejamento da sprint foi basicamente refazer muitas coisas das páginas, não sendo gerada tantas issues para essas atividades.
+- Mesmo conversando com a equipe não foi possível evitar sobrecarga. Isso por conta das várias mudanças que tivemos que fazer nos códigos.
 
 ## Burndown
 
-![burndown](/docs/assets/sprints/time_a/sprint_8/burndown_8.png)
+![burndown](/docs/assets/sprints/time_a/sprint_11/burndown_11.png)
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_a/sprint_8/velocity_8.png)
+![velocity](/docs/assets/sprints/time_a/sprint_11/velocity_11.png)
 
 ## Cumulative Flow
 
-![cumulative](/docs/assets/sprints/time_a/sprint_8/cumulative_8.png)
+![cumulative](/docs/assets/sprints/time_a/sprint_11/cumulative_11.png)
 
 ## Práticas ágeis
 
@@ -140,16 +131,6 @@
 | &#129301; |               Resfriado                |
 | &#128547; | Chateação ou decepção com alguma coisa |
 | &#129321; |               Apaixonado               |
-
-## Riscos
-
-|                              **Risco**                              |                      **Ação Preventiva**                       |                                **Ação Reativa**                                 |
-| :-----------------------------------------------------------------: | :------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
-|                     Não utilizar práticas ágeis                     |            Reapresentar as práticas a cada reunião             |                         Buscar novos meios de aplicação                         |
-| Pela próxima sprint ser focada em código, não há um costume do time |       Realizar uma próxima sprint com metas condizentes        |                   Melhor planejamento do Scrum Master e time                    |
-|                Falta de conhecimento das tecnologias                |             Tutoriais e estudos sobre a ferramenta             |    Pareamento com alguém mais experiente ou entrar em contato com o monitor     |
-|              Desfoque da equipe para a próxima Sprint               | Iniciar com metas condizentes e mais simples, porém essenciais |                  Realizar bom planejamento para próxima sprint                  |
-|                   Falta de colaboração no código                    |                  Propor atividades em duplas                   | Realizar constantes conversas com todo o time para ver progresso das atividades |
 
 ## Análise pelo Scrum Master
 

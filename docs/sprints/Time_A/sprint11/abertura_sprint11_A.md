@@ -1,4 +1,4 @@
-# Abertura da Sprint 10
+# Abertura da Sprint 11
 
 ## Histórico de versão
 
@@ -10,11 +10,9 @@
 
 Essa Sprint tem como principais objetivos:
 
-- Continuar codificação da Tela de Avaliação com objetivo de chegar numa versão próxima da final.
-- Continuar codificação da Tela de Editar Seção com objetivo de chegar numa versão próxima da final.
-- Implementar funções relacionadas ao banco de dados nas duas telas.
-- Atualizar alguns documentos do projeto.
-- Realizar testes unitários em ambas as telas.
+- Alterar funções, métodos e frontend para se adequarem a troca da biblioteca material-table para material ui.
+- Continuar codificação da Tela de Avaliação.
+- Implementar o máximo possível para as tarefas não ficarem muito próximas da Release 2.
 
 ## Duração
 
@@ -26,29 +24,28 @@ Essa Sprint tem como principais objetivos:
 
 ## Sprint BackLog
 
-[#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
-<br>
-[#193 Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)
-<br>
-[#194 Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)
-<br>
-[#217 Configurar método get no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/217)
-<br>
-[#218 Configurar método update no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/218)
-<br>
-[#219 Configurar método post no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/219)
-<br>
-[#220 Configurar método delete no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/220)
-<br>
-[#221 Ajustar o design do frontend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/221)
-<br>
 [#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
 <br>
-[#228 Ajustar o design do frontend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/228)
+[#224 Deploy Heroku - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/224)
 <br>
 [#232 Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)
+<br>
+[#245 Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)
+<br>
+[#247 Atualizar comentários nos códigos (Tela 1) Parte 1 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/247)
+<br>
+[#248 Implementar o esqueleto da página (Tela de Busca de Avaliação) - Time A   ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/248)
+<br>
+[#249 Configurar método get no backend (Tela de Busca de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/249)
+<br>
+[#251 Primeira reunião geral Sprint 11 - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/251)
+<br>
+[#254 Segunda reunião geral Sprint 11 - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/254)
 
 ## Débito Técnico Adicionado
 
-- [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
--
+- [#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
+- [#224 Deploy Heroku - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/224)
+- [#245 Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)
+
+
