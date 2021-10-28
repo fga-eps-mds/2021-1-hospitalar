@@ -10,16 +10,16 @@
 
 ### Tela de Login
 
-![Tela-Login](/docs/assets/produtos/prototipos/prototipo_time_c/tela_de_login.png)
+![Tela-Login](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/prototipos/prototipo_time_c/tela_de_login.png?raw=true)
 
 ### Tela do Menu Principal
 
-![Tela-Principal](/docs/assets/produtos/prototipos/prototipo_time_c/tela_do_menu_principal.png)
+![Tela-Principal](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/prototipos/prototipo_time_c/tela_do_menu_principal.png?raw=true)
 
 ### Tela de Gerenciamento de Usuarios
 
-![Tela-Gerenciamento-](/docs/assets/produtos/prototipos/prototipo_time_c/tela_de_gerenciamento_de_usuarios.png)
+![Tela-Gerenciamento-](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/prototipos/prototipo_time_c/tela_de_gerenciamento_de_usuarios.png?raw=true)
 
 ### Tela de Gerenciamento de Avaliações
 
-![Tela-Gerenciamento-Avaliações](/docs/assets/produtos/prototipos/prototipo_time_c/tela_de_gerenciamento_de_avaliacoes.png)
+![Tela-Gerenciamento-Avaliações](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/prototipos/prototipo_time_c/tela_de_gerenciamento_de_avaliacoes.png?raw=true)
