@@ -2,29 +2,29 @@
 
 ## Histórico de revisão
 
-| **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-|:-|:-|:-|
-|    24/08/2021   |  0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
-|    13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
-| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
+| **Data**   | **Versão** | **Modificação**               | **Autor**                                            |
+| :--------- | :--------- | :---------------------------- | :--------------------------------------------------- |
+| 24/08/2021 | 0.1        | Criação do documento          | [@SwampTG](https://github.com/SwampTG)               |
+| 13/09/2021 | 1.0        | Revisão do documento          | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1        | Alteração no path das imagens | [@victordscabral](https://github.com/victordscabral) |
 
-## Backlog da Sprint 
+## Backlog da Sprint
 
-|ID|Descrição|Status|Pontos|
-|:-|:-|:-|:-:|
-|#29|[Estudo do Relatório para prototipagem](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/29)|Fechada|2|
-|#16|[Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)|Fechada|8|
-|#18|[Organizar treinamento de tecnologias](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/18)|Fechada|13|
-|#37|[Preparar e Fazer um Treinamento com o Grupo](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/37)|Aberta|5|
-|#24|[Abertura do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/24)|Fechada|13|
-|#20|[Elaboração do RoadMap](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)|Aberta|5|
-|#22|[Elaboração do Documento de Visão](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/22)|Fechada|8|
-|#34|[Atualizar template e descrição de Issues passadas e presentes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/34)|Fechada|5|
-|#33|[Políticas do Repositório](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/33)|Fechada|2|
-|#38|[Configuração do Docker File e Docker Compose](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/38)|Fechada|8|
-|#36|[Elaboração do Diagrama de Classes - Parte do Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)|Aberta|8|
-|#46|[Elaboração do Diagrama de Classes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/46)|Aberta|8|
-|#23|[Modelar Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/46)|Aberta|5|
+| ID  | Descrição                                                                                                                   | Status  | Pontos |
+| :-- | :-------------------------------------------------------------------------------------------------------------------------- | :------ | :----: |
+| #29 | [Estudo do Relatório para prototipagem](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/29)                         | Fechada |   2    |
+| #16 | [Criar Protótipo de Baixa Fidelidade](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/16)                           | Fechada |   8    |
+| #18 | [Organizar treinamento de tecnologias](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/18)                          | Fechada |   13   |
+| #37 | [Preparar e Fazer um Treinamento com o Grupo](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/37)                   | Aberta  |   5    |
+| #24 | [Abertura do Documento de Arquitetura](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/24)                          | Fechada |   13   |
+| #20 | [Elaboração do RoadMap](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)                                         | Aberta  |   5    |
+| #22 | [Elaboração do Documento de Visão](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/22)                              | Fechada |   8    |
+| #34 | [Atualizar template e descrição de Issues passadas e presentes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/34) | Fechada |   5    |
+| #33 | [Políticas do Repositório](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/33)                                      | Fechada |   2    |
+| #38 | [Configuração do Docker File e Docker Compose](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/38)                  | Fechada |   8    |
+| #36 | [Elaboração do Diagrama de Classes - Parte do Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)           | Aberta  |   8    |
+| #46 | [Elaboração do Diagrama de Classes](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/46)                             | Aberta  |   8    |
+| #23 | [Modelar Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/46)                                        | Aberta  |   5    |
 
 ## Pontuação Final
 
@@ -39,7 +39,7 @@
 <!--OU
 
 (#nº) nome da issue
-<BR> 
+<BR>
 (#nº) nome da issue-->
 
 ## Débitos Técnicos Gerados
@@ -75,44 +75,44 @@ OU-->
 
 ## Burndown
 
-![burn](/docs/assets/sprints/time_b/sprint_3/burndown_sprint_3.png)
+![burn](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_3/burndown_sprint_3.png?raw=true)
 
- Podemos observar a demora no fechamento das sprints, mesmo quando já estavam finalizadas, Kanban deve ser melhor utilizado e melhorado para melhor compreensão do time.
-  
+Podemos observar a demora no fechamento das sprints, mesmo quando já estavam finalizadas, Kanban deve ser melhor utilizado e melhorado para melhor compreensão do time.
+
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_b/sprint_3/velocity_sprint_3.png) 
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_3/velocity_sprint_3.png?raw=true)
 
 A média. Acredito que ainda não seja um valor confiável devido ao início da disciplina, com menos issues e menor entendimento das práticas.
 
 ## Cumulative Flow
 
-![cumuflow](/docs/assets/sprints/time_b/sprint_3/cumu_flow_sprint_3.png)
+![cumuflow](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_3/cumu_flow_sprint_3.png?raw=true)
 
 Novamente, menor movimentação das issues no campos do Kanban
 
 ## Quadro de Conhecimentos
 
-![knowledge](/docs/assets/sprints/time_b/sprint_3/quadro_de_conhecimento_sprint_3.png)
-  
+![knowledge](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_3/quadro_de_conhecimento_sprint_3.png?raw=true)
+
 ## Práticas ágeis
-  
-|ID    | Nome de prática ágil    | Sprint nº |
-| :-: | :-: | :-: |
-| 1    | Priorização do Backlog pelo PO | &#10004; |
-| 2    | Desenvolvimento de processos e práticas facilitadas pelo SM | &#10060; |
-| 3    | Reunião de planejamento de Sprint | &#10004; |
-| 4    | Planning Poker | &#10060; |
-| 5    | Comprometimento do time e do PO com o backlog do produto | &#10004; |
-| 6    | Os membros da equipe são voluntários para tarefas | &#10004; |
-| 7    | Restrospectiva da Sprint | &#10004; |
-| 8    | Acompanhamento do Velocity | &#10004; |
-| 9    | User Stories | &#10060; |
-| 10 |    Refatorar quando e onde for possível | &#10060; |
-| 11 | Todo código deve ter códigos unitários | &#10060; |
-| 12 |    Todo código deve passar por testes unitários antes de ser liberado | &#10060; |
-| 13 |     Acompanhamento do Squad Health Check | &#10060; |
-| 14 |    Quadro de conhecimentos| &#10004; |
+
+| ID  |                        Nome de prática ágil                        | Sprint nº |
+| :-: | :----------------------------------------------------------------: | :-------: |
+|  1  |                   Priorização do Backlog pelo PO                   | &#10004;  |
+|  2  |    Desenvolvimento de processos e práticas facilitadas pelo SM     | &#10060;  |
+|  3  |                 Reunião de planejamento de Sprint                  | &#10004;  |
+|  4  |                           Planning Poker                           | &#10060;  |
+|  5  |      Comprometimento do time e do PO com o backlog do produto      | &#10004;  |
+|  6  |         Os membros da equipe são voluntários para tarefas          | &#10004;  |
+|  7  |                      Restrospectiva da Sprint                      | &#10004;  |
+|  8  |                     Acompanhamento do Velocity                     | &#10004;  |
+|  9  |                            User Stories                            | &#10060;  |
+| 10  |                Refatorar quando e onde for possível                | &#10060;  |
+| 11  |               Todo código deve ter códigos unitários               | &#10060;  |
+| 12  | Todo código deve passar por testes unitários antes de ser liberado | &#10060;  |
+| 13  |                Acompanhamento do Squad Health Check                | &#10060;  |
+| 14  |                      Quadro de conhecimentos                       | &#10004;  |
 
 <!--
 ## Qualidade do Trabalho Entregue
@@ -128,14 +128,14 @@ Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1
 
 ## Riscos
 
-|  **Risco**  | **Ação Preventiva** |**Ação Reativa** |
-|:-:|:-:|:-:|
-| Desmotivação para o trabalho | Comunicação constante e construção de confiança | Redistribuir tarefas |
-| Não utilizar práticas ágeis | Reforço constante das Práticas | Modificar as práticas |
-| Não entendimento dos problemas e requisitos | Reuniões de Sprint bem elaboradas, revisando o backlog | Marcar novas reuniões |
-| Falta de conhecimento sobre as tecnologias | Pesquisas e Criação de Tutoriais | Ajuda dos monitores e da professora |
-| Atrasos para a release | Reforçar trabalho contínuo e distribuído | Comunicação com a professora |
-  
+|                  **Risco**                  |                  **Ação Preventiva**                   |          **Ação Reativa**           |
+| :-----------------------------------------: | :----------------------------------------------------: | :---------------------------------: |
+|        Desmotivação para o trabalho         |    Comunicação constante e construção de confiança     |        Redistribuir tarefas         |
+|         Não utilizar práticas ágeis         |             Reforço constante das Práticas             |        Modificar as práticas        |
+| Não entendimento dos problemas e requisitos | Reuniões de Sprint bem elaboradas, revisando o backlog |        Marcar novas reuniões        |
+| Falta de conhecimento sobre as tecnologias  |            Pesquisas e Criação de Tutoriais            | Ajuda dos monitores e da professora |
+|           Atrasos para a release            |        Reforçar trabalho contínuo e distribuído        |    Comunicação com a professora     |
+
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master

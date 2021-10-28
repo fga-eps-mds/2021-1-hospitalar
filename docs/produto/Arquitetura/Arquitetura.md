@@ -102,7 +102,7 @@ Partindo deste documento, o leitor ou usuário do projeto Checklist Hospitalar t
 
 ### 2.1 Diagrama de Relações
 
-![Diagrama de relações](/docs/assets/produtos/arquitetura/diagramaDeRelações1.png)
+<img width="460" height="300" src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/diagramaDeRelações1.png?raw=true">
 
 ### 2.2 Representação dos Serviços
 
@@ -120,7 +120,7 @@ O Backend ficará responsável pelas manipulações dos dados, tais como valida�
 
 O Python é uma linguagem de programação interpretada e pouco tipada - não sendo necessária a declaração do tipo da variável. Seu potencial se encontra em seu propósito geral, aplicando-se em sistemas Desktop, sistemas Web (com enomes aplicações no Back-End) e até aplicações Mobile. Outro campo onde há bastante destaque da linguagem se encontra nas Aplicações Científica/Matemáticas, tais como Ciência de Dados e Inteligência Artificial. Pode ser desenvolvido em diversas IDE's a gosto do desenvolvedor, além de possuir bastante recursos e uma comunidade crescente. O Python pode ser utilizado em diversas frameworks, para usos em geral, e neste projeto será utilizado a partir do Django API.
 
-![Gostaria de aprender Python](</docs/assets/produtos/arquitetura/tecnologas(percetagem_de_uso).png>)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/tecnologas(percetagem_de_uso).png?raw=true">
 
 > Fonte: <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages">StackOverflow Developer Survey </a>
 
@@ -138,13 +138,13 @@ O PostgreSQL é sistema de banco de dados objeto relacional gratuito e _open sou
 
 O JavaScript é uma linguagem interpretada, bastante conhecida como a linguagem de scripts para Web, recorrentemente utilizada no React, por exemplo. Este voltado para o FrontEnd. Também usada em ambientes independentes de Browser, como NodeJs, esse mais voltado para o BackEnd da aplicação.
 
-![Curva de popularidade do JavaScript durante o ano de 2020](/docs/assets/produtos/arquitetura/tecnologias_populares_em_2020.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/tecnologias_populares_em_2020.png?raw=true">
 
 > Fonte: <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages">StackOverflow Developer Survey </a>
 
 A imagem acima é um levantamento feito pelo StackOverflow a respeito das linguagens de programação mais populares em 2020 utilizadas por desenvolvedores. É interessante citar que a curva de popularidade do JavaScript é tamanha, que o desenvolvimento de novos Frameworks é algo recorrente.
 
-![Framework](/docs/assets/produtos/arquitetura/framerworks_populares_em_JS.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/framerworks_populares_em_JS.png?raw=true">
 
 > Fonte: CodersRank.io
 
@@ -214,7 +214,7 @@ As restrições se aplicam as tecnologias a serem utilizadas no sistema WEB dese
 
 ## 4. Visão de Casos de Uso
 
-![Visões de Caso de uso](/docs/assets/produtos/arquitetura/visoes_de_caso_de_uso.jpg)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/visoes_de_caso_de_uso.jpg?raw=true">
 
 ### 4.1. Realização de Casos de Uso
 
@@ -258,20 +258,22 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Front-End e como o mesmo se divide:
 
-![DiagramaFrontEndPacotes](/docs/assets/produtos/arquitetura/diagrama_frontend_pacotes.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/diagrama_frontend_pacotes.png?raw=true">
 
 - O Diagrama abaixo mostra a estrutura padrão dos pacotes referentes ao Back-End e como o mesmo se divide:
 
-![DiagramaBackEndPacotes](</docs/assets/produtos/arquitetura/diagrama_dos_pacotes(BackEnd2).png>)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/diagrama_dos_pacotes(BackEnd2).png?raw=true">
 
 ### 5.3 Visão da Implantação
 
 ### 5.3.1 Front-end
 
 - Diagrama para o FrontEnd
-  ![DiagramaFrontEnd](/docs/assets/produtos/arquitetura/diagrama_front_end.jpg)
+
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/diagrama_front_end.jpg?raw=true">
 
 ### 5.3.2 Back-end
 
 - Diagrama de Classes - BackEnd
-  ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_relatorio_unificado4.png)
+
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/arquitetura/diagrama_de_classes_relatorio_unificado4.png?raw=true">

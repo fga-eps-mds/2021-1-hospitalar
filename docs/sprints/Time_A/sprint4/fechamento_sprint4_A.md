@@ -2,34 +2,34 @@
 
 ## Histórico de versão
 
-|  **Data**  | **Versão** |                    **Modificação**                    |     **Autor**      |
-| :-------- | :-------- | :--------------------------------------------------- | :---------------- |
-| 11/09/2021 |    0.1     | Adição do documento no repositório já no novo formato |   [@victordscabral](https://github.com/victordscabral)   |
-| 12/09/2021 |    0.2     | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
-| 12/09/2021 |    0.3     | Melhor organização nas abas de débitos técnicos       |   [@victordscabral](https://github.com/victordscabral)    |
-| 13/09/2021   |  1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
-| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
+| **Data**   | **Versão** | **Modificação**                                       | **Autor**                                                  |
+| :--------- | :--------- | :---------------------------------------------------- | :--------------------------------------------------------- |
+| 11/09/2021 | 0.1        | Adição do documento no repositório já no novo formato | [@victordscabral](https://github.com/victordscabral)       |
+| 12/09/2021 | 0.2        | Legendas do Health Check, tabela de riscos e revisão  | [@klyssmannoliveira](https://github.com/klyssmannoliveira) |
+| 12/09/2021 | 0.3        | Melhor organização nas abas de débitos técnicos       | [@victordscabral](https://github.com/victordscabral)       |
+| 13/09/2021 | 1.0        | Revisão do documento                                  | [@victordscabral](https://github.com/victordscabral)       |
+| 16/09/2021 | 1.1        | Alteração no path das imagens                         | [@victordscabral](https://github.com/victordscabral)       |
 
 ## Backlog da Sprint
 
-| **ID** |                                                     **Descrição**                                                      | **Status** | **Pontos** |
-| :---- | :-------------------------------------------------------------------------------------------------------------------- | :-------- | :--------: |
-|  #20   |         [Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)         |  Fechada   |     5      |
-|  #23   |   [Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)   |  Fechada   |     1      |
-|  #36   |        [Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)         |   Aberta   |     8      |
-|  #56   |       [Redação do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)        |  Fechada   |     8      |
-|  #62   |       [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)       |   Aberta   |     13     |
-|  #67   |         [União da Implementação do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/67)         |  Fechada   |     8      |
-|  #68   |     [Organizar reunião para separar Features - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68)      |  Fechada   |     2      |
-|  #69   |           [Modelagem do Banco de Dados - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/69)           |  Fechada   |     13     |
-|  #70   |               [Definir Pareamento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/70)                |   Aberta   |     3      |
-|  #71   |        [Revisão e continuação do Backlog - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/71)         |  Fechada   |     5      |
-|  #72   |     [Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)      |   Aberta   |     10     |
-|  #73   | [Correção e revisão do Documento de Metodologia - Time A ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/73) |  Fechada   |     5      |
-|  #74   |              [Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)               |   Aberta   |     10     |
-|  #75   |                 [Dojo de MongoDB - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/75)                  |  Fechada   |     8      |
-|  #76   |           [Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)            |  Fechada   |     10     |
-|  #77   |           [Modelo de Identidade Visual - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/77)            |  Fechada   |     5      |
+| **ID** | **Descrição**                                                                                                          | **Status** | **Pontos** |
+| :----- | :--------------------------------------------------------------------------------------------------------------------- | :--------- | :--------: |
+| #20    | [Elaboração do RoadMap (Primeira reunião)](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/20)                 | Fechada    |     5      |
+| #23    | [Reunião inicial quanto a Modelagem do Banco de Dados](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/23)     | Fechada    |     1      |
+| #36    | [Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)                | Aberta     |     8      |
+| #56    | [Redação do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)              | Fechada    |     8      |
+| #62    | [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)             | Aberta     |     13     |
+| #67    | [União da Implementação do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/67)                 | Fechada    |     8      |
+| #68    | [Organizar reunião para separar Features - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68)          | Fechada    |     2      |
+| #69    | [Modelagem do Banco de Dados - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/69)                     | Fechada    |     13     |
+| #70    | [Definir Pareamento - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/70)                              | Aberta     |     3      |
+| #71    | [Revisão e continuação do Backlog - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/71)                | Fechada    |     5      |
+| #72    | [Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)          | Aberta     |     10     |
+| #73    | [Correção e revisão do Documento de Metodologia - Time A ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/73) | Fechada    |     5      |
+| #74    | [Dojo de Python/Django - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/74)                            | Aberta     |     10     |
+| #75    | [Dojo de MongoDB - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/75)                                  | Fechada    |     8      |
+| #76    | [Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)                      | Fechada    |     10     |
+| #77    | [Modelo de Identidade Visual - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/77)                      | Fechada    |     5      |
 
 ## Pontuação Final
 
@@ -82,15 +82,15 @@
 
 ## Burndown
 
-![burndown](/docs/assets/sprints/time_a/sprint_4/burndown4_A.png)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/burndown4_A.png?raw=true)
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_a/sprint_4/velocity4_A.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/velocity4_A.png?raw=true)
 
 ## Cumulative Flow
 
-![cumulativeflow](/docs/assets/sprints/time_a/sprint_4/cumulative4_A.png)
+![cumulative](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/cumulative4_A.png?raw=true)
 
 ## Práticas ágeis
 

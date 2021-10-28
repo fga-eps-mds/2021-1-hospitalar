@@ -14,12 +14,12 @@ Este documento mostra um diagrama de classes unificado do time A, B e C que usar
 
 ### Versão 1
 
-![diagrama1](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_1.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_1.png?raw=true">
 
 ### Versão 2
 
-![diagrama2](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_2.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_2.png?raw=true">
 
 ### Versão 3
 
-![diagrama3](/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_3.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/diagramas/diagrama_de_classes_unificado_3.png?raw=true">

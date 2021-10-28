@@ -36,9 +36,15 @@
 - Prototipos
 
   - Baixa Fidelidade
+
     - [Time A](/produto/prototipo/prototipo)
     - [Time B](/produto/prototipo/prototipo-tipoB)
     - [Time C](/produto/prototipo/prototipo-timeC)
+
+  - Alta Fidelidade
+    - [Time A](/produto/protótipo_alta_fidelidade/protótipo_avaliação_timeA)
+    - [Time B](/produto/protótipo_alta_fidelidade/protótipo_relatorio_timeB)
+    - [Time C](/produto/protótipo_alta_fidelidade/protótipo_alta_fidelidade_timeC)
 
 ---
 

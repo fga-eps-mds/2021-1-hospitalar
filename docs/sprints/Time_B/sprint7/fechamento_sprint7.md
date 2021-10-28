@@ -70,29 +70,29 @@ OU-->
 
 ## Burndown
 
-![burn](/docs/assets/sprints/time_b/sprint_7/burndown_sprint_7.png)
+![burn](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_7/burndown_sprint_7.png?raw=true)
 
 O burndown ainda não alcançou a evolução ideal, porém, houve evolução no fechamento contínuo.
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_b/sprint_7/velocity_sprint_7.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_7/velocity_sprint_7.png?raw=true)
 
 Velocity evoluiu graças a um equilíbrio de trabalho de todos os times. Devemos manter essa média até o final da sprint. Entre 30 e 35 para cada time.
 
 ## Cumulative Flow
 
-![cumuflow](/docs/assets/sprints/time_b/sprint_7/cumu_flow_sprint_7.png)
+![cumuflow](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_7/cumu_flow_sprint_7.png?raw=true)
 
 Paralização maior esperada (como avisado pela professora) com uma queda de produtividade. Porém, ainda reversível. Temos que nos concentrar em melhorar o flow. Estamos reforçando que a produtividade continue durante a Semana Universitária.
 
 ## Quadro de Conhecimentos
 
-![knowledge](/docs/assets/sprints/time_b/sprint_7/quadro_de_conhecimento_sprint_7.png)
+![knowledge](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_7/quadro_de_conhecimento_sprint_7.png?raw=true)
 
 ## Squad Health Check
 
-![health](/docs/assets/sprints/time_b/sprint_7/health_check_sprint_7.png)
+![health](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_7/health_check_sprint_7.png?raw=true)
 
 ## Práticas ágeis
 

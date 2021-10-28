@@ -2,9 +2,9 @@
 
 ## Histórico de versão
 
-| **Data**   | **Versão** | **Modificação**          | **Autor**                                            |
-| :--------- | :--------- | :----------------------- | :--------------------------------------------------- |
-| 21/09/2021 | 2.0        | Criação do documento     | [@victordscabral](https://github.com/victordscabral) |
+| **Data**   | **Versão** | **Modificação**       | **Autor**                                            |
+| :--------- | :--------- | :-------------------- | :--------------------------------------------------- |
+| 21/09/2021 | 2.0        | Criação do documento  | [@victordscabral](https://github.com/victordscabral) |
 | 23/10/2021 | 2.1        | Postagem do documento | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
@@ -20,7 +20,7 @@
 | #146   | [Melhoria do documento de Identidade Visual - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/146)                      | Fechada    |     8      |
 | #147   | [Protótipo de Alta Fidelidade (Parte 1) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/147)                          | Fechada    |     8      |
 | #148   | [Abertura e Fechamento da Sprint 06 e 07 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/148)                         | Fechada    |     5      |
-| #149   | [[H23/H15] Gerar e Armazenar Hash - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/149)                                | Aberta     |     5     |
+| #149   | [[H23/H15] Gerar e Armazenar Hash - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/149)                                | Aberta     |     5      |
 | #160   | [Refatoração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/160)                               | Fechada    |     5      |
 
 ## Pontuação Final
@@ -68,15 +68,15 @@
 
 ## Burndown
 
-![burndown](/docs/assets/sprints/time_a/sprint_7/burndown_7.jpeg)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_7/burndown_7.jpeg?raw=true)
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_a/sprint_7/velocity_7.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_7/velocity_7.png?raw=true)
 
 ## Cumulative Flow
 
-![cumulative](/docs/assets/sprints/time_a/sprint_7/cumulative_7.png)
+![cumulative](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_7/cumulative_7.png?raw=true)
 
 ## Práticas ágeis
 
@@ -108,15 +108,14 @@
 |    Pedro Lucas     | &#129001; |   &#129001;   |     &#129001;     | &#128997;  | &#128997; | &#128997; | &#129001; | &#128997; |
 |   Victor Cabral    | &#128998; |   &#129001;   |     &#129001;     | &#128997;  | &#128997; | &#128997; | &#128997; | &#128997; |
 
-
-Obs.: Haverá uma troca na cor entre o amarelo e laranja, pois a nova ordem de tonalidade faz mais sentido. 
-|    Cor    |      Legenda      |
+Obs.: Haverá uma troca na cor entre o amarelo e laranja, pois a nova ordem de tonalidade faz mais sentido.
+| Cor | Legenda |
 | :-------: | :---------------: |
-| &#128998; |     Sou brabo     |
-| &#129001; | Consigo me virar  |
+| &#128998; | Sou brabo |
+| &#129001; | Consigo me virar |
 | &#129000; | Sei mais ou menos |
-| &#128999; |     Então...      |
-| &#128997; |     Socorro!      |
+| &#128999; | Então... |
+| &#128997; | Socorro! |
 
 ## Squad Health Check
 
@@ -138,11 +137,11 @@ Obs.: Haverá uma troca na cor entre o amarelo e laranja, pois a nova ordem de t
 
 ## Riscos
 
-|                              **Risco**                              |                      **Ação Preventiva**                       |                                **Ação Reativa**                                 |
-| :-----------------------------------------------------------------: | :------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
-|Sobrecarga por parte de outras matérias e problemas pessoais                     |            Organização da próxima sprint baseada nas condições de cada integrante |             Conversar com toda equipe constantemente e entender a situação de cada um    |
-|Demorar muito para entramos em um bom ritmo de produção de código | Um planejamento bem feito com base na experiência e vontade de cada integrante|Realizar um pareamento bem feito, colocando aqueles com mais experiência na liderança e ensinando os outros membros|
-|Desânimo por parte da equipe|Pontuação total para a próxima sprint bem pensada|Realizar atividades para descontração de toda a equipe|
+|                             **Risco**                             |                              **Ação Preventiva**                               |                                                  **Ação Reativa**                                                   |
+| :---------------------------------------------------------------: | :----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
+|   Sobrecarga por parte de outras matérias e problemas pessoais    |     Organização da próxima sprint baseada nas condições de cada integrante     |                      Conversar com toda equipe constantemente e entender a situação de cada um                      |
+| Demorar muito para entramos em um bom ritmo de produção de código | Um planejamento bem feito com base na experiência e vontade de cada integrante | Realizar um pareamento bem feito, colocando aqueles com mais experiência na liderança e ensinando os outros membros |
+|                   Desânimo por parte da equipe                    |               Pontuação total para a próxima sprint bem pensada                |                               Realizar atividades para descontração de toda a equipe                                |
 
 ## Análise pelo Scrum Master
 

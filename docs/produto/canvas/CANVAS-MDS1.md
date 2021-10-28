@@ -12,4 +12,4 @@ O Business Model Canvas ou "Quadro de modelo de negócios" é uma ferramenta de 
 
 Assim, o modelo de negócios do FAMil (Ferramenta de Acreditação Militar) está apresentado abaixo.
 
-![canvas1](/docs/assets/produtos/canvas/modelo_de_negócios_CANVAS.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/canvas/modelo_de_negócios_CANVAS.png?raw=true">

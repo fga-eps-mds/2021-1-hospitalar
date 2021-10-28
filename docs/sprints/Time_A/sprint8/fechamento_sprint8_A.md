@@ -17,7 +17,7 @@
 | #173   | [Protótipo de Alta Fidelidade (Parte 2) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/173)                          | Fechada    |     8      |
 | #174   | [Armazenar exemplos no Banco de Dados - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/174)                            | Fechada    |     5      |
 | #175   | [Imprimir dados da tela: de preenchimento da avaliação (Parte 1) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/175) | Fechada    |     5      |
-| #176   | [Imprimir esqueleto do CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/176)                                  | Fechada     |     5      |
+| #176   | [Imprimir esqueleto do CheckList - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/176)                                 | Fechada    |     5      |
 
 ## Pontuação Final
 
@@ -63,15 +63,15 @@
 
 ## Burndown
 
-![burndown](/docs/assets/sprints/time_a/sprint_9/burndown_9.png)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_8/burndown_8.png?raw=true)
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_a/sprint_9/velocity_9.jpeg)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_8/velocity_8.jpeg?raw=true)
 
 ## Cumulative Flow
 
-![cumulative](/docs/assets/sprints/time_a/sprint_9/cumulative_9.png)
+![cumulative](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_8/cumulative_8.png?raw=true)
 
 ## Práticas ágeis
 
@@ -108,7 +108,7 @@
 | &#128998; |     Sou brabo     |
 | &#129001; | Consigo me virar  |
 | &#129000; | Sei mais ou menos |
-| &#128999; |    Então...       |
+| &#128999; |     Então...      |
 | &#128997; |     Socorro!      |
 
 ## Squad Health Check

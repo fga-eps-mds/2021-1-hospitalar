@@ -2,40 +2,41 @@
 
 ## Histórico de revisão
 
-| **Data** |  **Versão** | **Modificação**  |  **Autor** |
-|:-:|:-:|:-:|:-:|
-|    09/09/2021   |  0.0.1 | Criação do documento  | [@SwampTG](https://github.com/SwampTG) |
-|    13/09/2021   |  0.1 | Adição do Knowledge e HealthCheck  | [@SwampTG](https://github.com/SwampTG) |
-| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
+|  **Data**  | **Versão** |          **Modificação**          |                      **Autor**                       |
+| :--------: | :--------: | :-------------------------------: | :--------------------------------------------------: |
+| 09/09/2021 |   0.0.1    |       Criação do documento        |        [@SwampTG](https://github.com/SwampTG)        |
+| 13/09/2021 |    0.1     | Adição do Knowledge e HealthCheck |        [@SwampTG](https://github.com/SwampTG)        |
+| 16/09/2021 |    1.1     |   Alteração no path das imagens   | [@victordscabral](https://github.com/victordscabral) |
 
 ## Backlog da Sprint
 
-|ID|Descrição|Status|
-|:-|:-|:-|
-|#60|[Revisar o BackLog do Produto - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/60)|Fechada|
-|#62|[União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)|Aberta|
-|#68| [Organizar reunião para separar Features - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68)|Fechada|
-|#91| [Análise de documentos do projeto - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/91) |Fechada|
-|#92| [Revisão dos documentos do projeto - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/92) | Fechada |
-|#98| [Modelo de Identidade Visual (logotipo e melhorias) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/98) | Fechada |
-|#100| [Implementação visual do Protótipo - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/100) | Aberta |
-|#101| [Implementação protótipo da API Django - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/101) | Aberta |
-|#102| [Implementar geração de PDF - TIme B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/102) | Aberta |
-|#88| [Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88) | Aberta |
-|#59| [Modelagem da API do banco de dados - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/59) |Aberta|
-|#72|[Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)|Fechada|
-|#61|[Definir Pareamento - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/61)|Fechada|
-|#56|[Redação e revisão do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)|Fechada|
-|#36|[Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)|[@magnluiz](https://github.com/magnluiz)|Fechada|
-|#83|[Atualizar documentos de Abertura e Fechamento de Sprints passadas - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/83)|Fechada|
-|#76|[Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)|Fechada|
+| ID   | Descrição                                                                                                                                | Status                                   |
+| :--- | :--------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | ------- |
+| #60  | [Revisar o BackLog do Produto - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/60)                                      | Fechada                                  |
+| #62  | [União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)                               | Aberta                                   |
+| #68  | [Organizar reunião para separar Features - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/68)                            | Fechada                                  |
+| #91  | [Análise de documentos do projeto - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/91)                                   | Fechada                                  |
+| #92  | [Revisão dos documentos do projeto - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/92)                                  | Fechada                                  |
+| #98  | [Modelo de Identidade Visual (logotipo e melhorias) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/98)                 | Fechada                                  |
+| #100 | [Implementação visual do Protótipo - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/100)                                | Aberta                                   |
+| #101 | [Implementação protótipo da API Django - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/101)                            | Aberta                                   |
+| #102 | [Implementar geração de PDF - TIme B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/102)                                       | Aberta                                   |
+| #88  | [Teste do Docker - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/88)                                                    | Aberta                                   |
+| #59  | [Modelagem da API do banco de dados - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/59)                                | Aberta                                   |
+| #72  | [Elaboração do RoadMap (Segunda reunião) - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/72)                            | Fechada                                  |
+| #61  | [Definir Pareamento - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/61)                                                | Fechada                                  |
+| #56  | [Redação e revisão do Documento de Arquitetura - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/56)                      | Fechada                                  |
+| #36  | [Elaboração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/36)                                  | [@magnluiz](https://github.com/magnluiz) | Fechada |
+| #83  | [Atualizar documentos de Abertura e Fechamento de Sprints passadas - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/83) | Fechada                                  |
+| #76  | [Dojo de JavaScript/React.js - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/76)                                        | Fechada                                  |
 
 ## Pontuação Final
+
 <!-- 5 + 13 + 2 + 3 + 3 + 8 + 10 + 10 + 10 + 8 + 13 + 10 + 5 + 8 + 8 + 5 + 10 -->
 
 **Pontuação Total:** 131 Pontos Planejados
 
-**Débitos Técnicos Adicionados:** <!--13 + 10 + 10 + 10 + 8 + 13--> Pontos 64 
+**Débitos Técnicos Adicionados:** <!--13 + 10 + 10 + 10 + 8 + 13--> Pontos 64
 
 **Pontos Concluídos:** 67 Pontos Concluídos
 
@@ -89,48 +90,48 @@ OU-->
 
 ## Burndown
 
-![burn](/docs/assets/sprints/time_b/sprint_5/burndown_sprint_5.png)
+![burn](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_5/burndown_sprint_5.png?raw=true)
 
 A issues demoraram a ser trabalhadas, passamos muito tempo planejando para a R1, fazendo várias reuniões e isso deve ter atrasado a entrega das issues.
-  
+
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_b/sprint_5/velocity_sprint_5.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_5/velocity_sprint_5.png?raw=true)
 
 A média de produtividade aumentou, ainda pode não ser a ideal, mas os times tem se empenhado mais continuamente para cumprir a release 1.
 
 ## Cumulative Flow
 
-![cumuflow](/docs/assets/sprints/time_b/sprint_5/cumu_flow_sprint_5.png)
+![cumuflow](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_5/cumu_flow_sprint_5.png?raw=true)
 
 Observamos uma parada na movimentaçãode issues quase contínua ao longo da semana. Novamente, muito planejamento e pouca ação.
 
 ## Quadro de Conhecimentos
 
-![knowledge](/docs/assets/sprints/time_b/sprint_5/quadro_de_conhecimento_sprint_5.png)
+![knowledge](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_5/quadro_de_conhecimento_sprint_5.png?raw=true)
 
 ## Squad Health Check
 
-![health](/docs/assets/sprints/time_b/sprint_5/health_check_sprint_5.png)
-  
+![health](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_5/health_check_sprint_5.png?raw=true)
+
 ## Práticas ágeis
-  
-|ID    | Nome de prática ágil    | Sprint nº |
-| :-: | :-: | :-: |
-| 1    | Priorização do Backlog pelo PO | &#10004; |
-| 2    | Desenvolvimento de processos e práticas facilitadas pelo SM | &#10004; |
-| 3    | Reunião de planejamento de Sprint | &#10004; |
-| 4    | Planning Poker | &#10060; |
-| 5    | Comprometimento do time e do PO com o backlog do produto | &#10004; |
-| 6    | Os membros da equipe são voluntários para tarefas | &#10004; |
-| 7    | Restrospectiva da Sprint | &#10004; |
-| 8    | Acompanhamento do Velocity | &#10004; |
-| 9    | User Stories | &#10004; |
-| 10 |    Refatorar quando e onde for possível | &#10060; |
-| 11 | Todo código deve ter códigos unitários | &#10060; |
-| 12 |    Todo código deve passar por testes unitários antes de ser liberado | &#10060; |
-| 13 |     Acompanhamento do Squad Health Check | &#10004; |
-| 14 |    Quadro de conhecimentos| &#10004; |
+
+| ID  |                        Nome de prática ágil                        | Sprint nº |
+| :-: | :----------------------------------------------------------------: | :-------: |
+|  1  |                   Priorização do Backlog pelo PO                   | &#10004;  |
+|  2  |    Desenvolvimento de processos e práticas facilitadas pelo SM     | &#10004;  |
+|  3  |                 Reunião de planejamento de Sprint                  | &#10004;  |
+|  4  |                           Planning Poker                           | &#10060;  |
+|  5  |      Comprometimento do time e do PO com o backlog do produto      | &#10004;  |
+|  6  |         Os membros da equipe são voluntários para tarefas          | &#10004;  |
+|  7  |                      Restrospectiva da Sprint                      | &#10004;  |
+|  8  |                     Acompanhamento do Velocity                     | &#10004;  |
+|  9  |                            User Stories                            | &#10004;  |
+| 10  |                Refatorar quando e onde for possível                | &#10060;  |
+| 11  |               Todo código deve ter códigos unitários               | &#10060;  |
+| 12  | Todo código deve passar por testes unitários antes de ser liberado | &#10060;  |
+| 13  |                Acompanhamento do Squad Health Check                | &#10004;  |
+| 14  |                      Quadro de conhecimentos                       | &#10004;  |
 
 <!--
 ## Qualidade do Trabalho Entregue
@@ -146,14 +147,14 @@ Segundo a equipe a qualidade entregue foi de (nº). A escala dos valores é de 1
 
 ## Riscos
 
-|  **Risco**  | **Ação Preventiva** |**Ação Reativa** |
-|:-:|:-:|:-:|
-| Desmotivação para o trabalho | Comunicação constante e construção de confiança | Redistribuir tarefas |
-| Não utilizar práticas ágeis | Reforço constante das Práticas | Modificar as práticas para serem aplicadas melhor |
-| Não entendimento dos problemas e requisitos | Reuniões de Sprint bem elaboradas, revisando o backlog | Marcar novas reuniões |
-| Falta de conhecimento sobre as tecnologias | Dojos feitos pelos desenvolvedores | Ajuda dos monitores e da professora |
-| Atrasos para a release | Reforçar trabalho contínuo e distribuído | Comunicação com a professora |
-  
+|                  **Risco**                  |                  **Ação Preventiva**                   |                 **Ação Reativa**                  |
+| :-----------------------------------------: | :----------------------------------------------------: | :-----------------------------------------------: |
+|        Desmotivação para o trabalho         |    Comunicação constante e construção de confiança     |               Redistribuir tarefas                |
+|         Não utilizar práticas ágeis         |             Reforço constante das Práticas             | Modificar as práticas para serem aplicadas melhor |
+| Não entendimento dos problemas e requisitos | Reuniões de Sprint bem elaboradas, revisando o backlog |               Marcar novas reuniões               |
+| Falta de conhecimento sobre as tecnologias  |           Dojos feitos pelos desenvolvedores           |        Ajuda dos monitores e da professora        |
+|           Atrasos para a release            |        Reforçar trabalho contínuo e distribuído        |           Comunicação com a professora            |
+
 <!-- ## Burndown de Riscos (???) -->
 
 ## Análise pelo Scrum Master

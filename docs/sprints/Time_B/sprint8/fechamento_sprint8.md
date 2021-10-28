@@ -67,29 +67,29 @@ OU-->
 
 ## Burndown
 
-![burn](/docs/assets/sprints/time_b/sprint_8/burndown_sprint_8.png)
+![burn](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_8/burndown_sprint_8.png?raw=true)
 
 Produtividade se manteve.
 
 ## Velocity
 
-![velocity](/docs/assets/sprints/time_b/sprint_8/velocity_sprint_8.png)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_8/velocity_sprint_8.png?raw=true)
 
 Quantidade de pontos reduzida. Tentamos criar menos issues com omplexidade condizente com o velocity do time.
 
 ## Cumulative Flow
 
-![cumuflow](/docs/assets/sprints/time_b/sprint_8/cumu_flow_sprint_8.png)
+![cumuflow](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_8/cumu_flow_sprint_8.png?raw=true)
 
 Houve um desequilíbrio maior na movimentação dos pipelines em relação a última sprint. Problemas de comunicação com alguns não interagindo pelo telegram e a correria do fim do semestre estão afetando o trabalho contínuo. provavelmente.
 
 ## Quadro de Conhecimentos
 
-![knowledge](/docs/assets/sprints/time_b/sprint_8/quadro_de_conhecimento_sprint_8.png)
+![knowledge](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_8/quadro_de_conhecimento_sprint_8.png?raw=true)
 
 ## Squad Health Check
 
-![health](/docs/assets/sprints/time_b/sprint_8/health_check_sprint_8.png)
+![health](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_b/sprint_8/health_check_sprint_8.png?raw=true)
 
 ## Práticas ágeis
 
