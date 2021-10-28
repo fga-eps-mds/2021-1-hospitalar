@@ -26,6 +26,11 @@
   - [Metodologias/Produtividade](https://youtu.be/l0WToWh4Jr8)
   - [Projeto e Produto](https://youtu.be/UhlYSezmaUU)
   
+  Release 2 - 28 de outubro
+  - [Apresentação e Demonstração do Funcionamento](https://youtu.be/IJ-G1vu_kbM)
+  - [Visão da Disciplina e do Projeto](https://youtu.be/Dgtwoyon82o)
+  
+  
   
 ## ⚙️ Tecnologias utilizadas
 
