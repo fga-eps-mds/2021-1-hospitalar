@@ -51,7 +51,7 @@ Além disso, após testes realizados sobre a responsividade do projeto, a fonte 
 # Paleta de cores
 
 <p align="center">
-  <img src="/docs/assets/produtos/identidade_visual/paleta_de_cores.png">
+  <img src="2021-1-hospitalar/docs/assets/produtos/identidade_visual/paleta_de_cores.png">
 </p>
 
 **#FFFEF2** - Utilizada no background.
