@@ -2,7 +2,7 @@ import {
   AccountCircleRounded as AccIcon,
   MenuRounded as MenuIcon,
 } from '@material-ui/icons'
-import { AppBar, Box, Container, Drawer, IconButton, Toolbar } from '@material-ui/core'
+import { AppBar, Box, Drawer, IconButton, Toolbar } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { Button } from '../Inputs/Button'
@@ -52,7 +52,7 @@ export function Header({ links }: Props): React.ReactElement {
 
         {/* Aqui são criados os botões do header. 
         Eles somem quando a tela é pequena demais */}
-       <div className={classes.linksContainer}>
+        <div className={classes.linksContainer}>
           <Button
             variant='text'
             color='inherit'

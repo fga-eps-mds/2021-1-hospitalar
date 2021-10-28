@@ -1,21 +1,28 @@
-from matplotlib import pyplot
-from rest_framework import viewsets
-from .models import Avaliacao
 from .serializers import AvaliacaoSerializer
-from django.http import HttpResponse
+from .relatorio.printing import MyPrint
+from .models import Avaliacao
+from rest_framework.status import *
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.generics import get_object_or_404
 from rest_framework.decorators import action
 from rest_framework import viewsets
-from .relatorio.printing import MyPrint
-from io import BytesIO
-from rest_framework.response import Response
-from rest_framework.status import *
+from django.http import HttpResponse
 from matplotlib import pyplot as plt
+from io import BytesIO
+
 import matplotlib
 matplotlib.use('Agg')
+
+
+# Create your views here.
+
 # Create your views here.
 
 
 class AvaliacaoView(viewsets.ModelViewSet):
+
+    permission_classes = (IsAuthenticated,)
 
     serializer_class = AvaliacaoSerializer
     queryset = Avaliacao.objects.all()
@@ -24,13 +31,13 @@ class AvaliacaoView(viewsets.ModelViewSet):
     def generatePDF(self, request):
         # Create the HttpResponse object with the appropriate PDF headers.
         response = HttpResponse(content_type='application/pdf')
-        response['Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
+        response['Content-Disposition'] = 'attachment; filename="#HAG_2021.pdf"'
 
         # buffer armazena os bytes para o PDF (PDF é arquivo compilável)
         buffer = BytesIO()
 
         # exemplo para a avaliação cadastrada com código fgvgrad
-        getAval2 = Avaliacao.objects.get(codigo="fgvgrad")
+        getAval2 = get_object_or_404(codigo=request.data['codigo'])
 
         # Utilizando o construtor para o Relatório
         # buffer, Formato e Código da Aval.
@@ -70,3 +77,24 @@ class AvaliacaoView(viewsets.ModelViewSet):
         plt.savefig(buffer, dpi=100)
 
         return HttpResponse(buffer.getbuffer(), content_type='image/png')
+
+    @action(methods=['post'], detail=False)
+    def get_by_code(self, request):
+        try:
+            avaliacao = Avaliacao.objects.get(
+                codigo=request.data['codigo'])
+        except:
+            return Response(status=HTTP_404_NOT_FOUND)
+
+        avaliacaoJSON = AvaliacaoSerializer(avaliacao)
+        return Response(avaliacaoJSON.data)
+
+    @action(methods=['post'], detail=False)
+    def confereAvaliacao(self, request):
+        try:
+            avaliacao = Avaliacao.objects.get(
+                codigo=request.data['codigo'])
+        except:
+            return Response(status=HTTP_404_NOT_FOUND)
+
+        return Response(status=HTTP_200_OK)

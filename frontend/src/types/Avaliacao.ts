@@ -28,3 +28,12 @@ export type Avaliacao = {
   configuracao: Configuracao
   secoes: Secao[]
 }
+
+export type Usuario = {
+  id?: number
+  username: string
+  email: string
+  tipo: string
+  funcao: string
+  organizacao: string
+}

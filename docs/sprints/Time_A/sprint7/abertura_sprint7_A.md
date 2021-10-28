@@ -2,9 +2,10 @@
 
 ## Histórico de versão
 
-| **Data**   | **Versão** | **Modificação**      | **Autor**                                            |
-| :--------- | :--------- | :------------------- | :--------------------------------------------------- |
-| 20/09/2021 | 1.0        | Criação do documento | [@victordscabral](https://github.com/victordscabral) |
+| **Data**   | **Versão** | **Modificação**          | **Autor**                                            |
+| :--------- | :--------- | :----------------------- | :--------------------------------------------------- |
+| 20/09/2021 | 2.0        | Criação do documento     | [@victordscabral](https://github.com/victordscabral) |
+| 28/09/2021 | 2.1        | Atualização no documento | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivos
 
@@ -40,10 +41,16 @@ Essa Sprint tem como principais objetivos:
 <br>
 [#146 Melhoria do documento de Identidade Visual - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/146)
 <br>
-[#147 Protótipo de Alta Fidelidade - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/147)
+[#147 Protótipo de Alta Fidelidade (Parte 1) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/147)
 <br>
 [#148 Abertura e Fechamento da Sprint 06 e 07 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/148)
 <br>
 [#149 [H23/H15] Gerar e Armazenar Hash - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/149)
+<br>
+[#160 Refatoração do Diagrama de Classes - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/160)
 
 ## Débito Técnico Adicionado
+
+- [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
+
+- [#149 [H23/H15] Gerar e Armazenar Hash - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/149)

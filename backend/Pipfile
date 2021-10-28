@@ -13,6 +13,7 @@ django = "3.2"
 setuptools = "*"
 matplotlib = "*"
 plotly = "*"
+django-rest-knox = "*"
 
 [dev-packages]
 autopep8 = "*"

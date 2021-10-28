@@ -5,18 +5,12 @@
    <img alt="pr-badge" src="https://img.shields.io/github/issues-pr/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
 </div>
 
+<div align="center">
+   <h1> 2021-1-FAMil </h1>
+</div>
+
 <p align="center">
-   <img src="./docs/assets/logo-2021.jpg"></img>
-</p>
-
-<br/>
-
-## :hammer_and_wrench: Status do Projeto
-
-<p align="center"> 
- <h1 align="center"> 
-     🚧  Em construção... 🚀 🚧
- </h1>
+   <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/logo-2021.jpg?raw=true"></img>
 </p>
 
 <br/>
@@ -34,13 +28,13 @@ As tecnologias foram determinadas de acordo com a necessidade das atividades a s
 | Frontend                                            |                                                                                                                    Backend                                                                                                                    |
 | :-------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | [ReactJs](https://reactjs.org/) (JavaScript Libary) |                                                                                    [DjangoRest](https://www.django-rest-framework.org/) (Python FrameWork)                                                                                    |
-| [TypeScript](https://www.typescriptlang.org/)       | [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) (NoSql Database) |
+| [TypeScript](https://www.typescriptlang.org/)       | [PostgreSQL](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511) |
 
 <br>
 <p align="left"> 
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-  <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
+  <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg">
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg">
     <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg">
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
