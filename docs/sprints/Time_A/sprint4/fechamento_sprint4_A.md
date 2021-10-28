@@ -82,15 +82,15 @@
 
 ## Burndown
 
-![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/burndown_4.png?raw=true)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/burndown4_A.png?raw=true)
 
 ## Velocity
 
-![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/velocity_4.jpeg?raw=true)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/velocity4_A.png?raw=true)
 
 ## Cumulative Flow
 
-![cumulative](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/cumulative_4.png?raw=true)
+![cumulative](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_4/cumulative4_A.png?raw=true)
 
 ## Práticas ágeis
 

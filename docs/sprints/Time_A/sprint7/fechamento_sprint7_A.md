@@ -68,11 +68,11 @@
 
 ## Burndown
 
-![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_7/burndown_7.png?raw=true)
+![burndown](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_7/burndown_7.jpeg?raw=true)
 
 ## Velocity
 
-![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_7/velocity_7.jpeg?raw=true)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_7/velocity_7.png?raw=true)
 
 ## Cumulative Flow
 

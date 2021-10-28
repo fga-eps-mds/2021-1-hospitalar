@@ -88,7 +88,7 @@
 
 ## Velocity
 
-![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_6/velocity_6.jpeg?raw=true)
+![velocity](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/sprints/time_a/sprint_6/velocity_6.png?raw=true)
 
 ## Cumulative Flow
 
