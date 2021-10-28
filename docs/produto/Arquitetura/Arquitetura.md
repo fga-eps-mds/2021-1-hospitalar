@@ -22,7 +22,7 @@
 | 13/09/2021 | 1.4    | Alteração em títulos e histórico de versão                                                                   | [@victordscabral](https://github.com/victordscabral)                                                                                                                                    |
 | 18/09/2021 | 1.5    | Correções nos markdowns dos assets                                                                           | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
 | 25/10/2021 | 1.6    | Evolução das primeiras versões do documento                                                                  | [@pedrohelias](https://github.com/pedrohelias)                                                                                                                                          |
-| 26/10/2021 | 2.0    | Alteração nos diagramas                                                                                      | [@pedrohelias](https://github.com/pedrohelias)    , [@magnluiz](https://github.com/magnluiz)                                                                                                                                   |
+| 26/10/2021 | 2.0    | Alteração nos diagramas                                                                                      | [@pedrohelias](https://github.com/pedrohelias) , [@magnluiz](https://github.com/magnluiz)                                                                                               |
 
 ## Sumário
 
@@ -102,7 +102,7 @@ Partindo deste documento, o leitor ou usuário do projeto Checklist Hospitalar t
 
 ### 2.1 Diagrama de Relações
 
-![Diagrama de relações](/docs/assets/produtos/arquitetura/diagrama_de_relações1.png)
+![Diagrama de relações](/docs/assets/produtos/arquitetura/diagramaDeRelações1.png)
 
 ### 2.2 Representação dos Serviços
 
@@ -132,7 +132,7 @@ O Django é um framework especifico para aplicações em Back-End, sendo program
 
 #### 2.3.3 PostgreSQL
 
-O PostgreSQL é sistema de banco de dados objeto relacional gratuito e *open source*, em que se caracteriza por ter recursos extremamente úteis, principalmente em relação a consulta de dados, integridade, facilidade de acesso e o controle de concorrência multi-versão.
+O PostgreSQL é sistema de banco de dados objeto relacional gratuito e _open source_, em que se caracteriza por ter recursos extremamente úteis, principalmente em relação a consulta de dados, integridade, facilidade de acesso e o controle de concorrência multi-versão.
 
 #### 2.3.4 JavaScript
 
@@ -275,7 +275,3 @@ O Sistema WEB estrutura-se em uma arquitetura de objetos determinados no modelo 
 
 - Diagrama de Classes - BackEnd
   ![diagramaClasses_TimeB_Relatorio](/docs/assets/produtos/arquitetura/diagrama_de_classes_relatorio_unificado4.png)
-
-
-
-
