@@ -11,7 +11,7 @@
 | ID   | Descrição                                                                                                                                                     | Status  |
 | :--- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------ |
 | #207 | <!-- 3 - Add Débito -->[[H18/H29] View para Nova Avaliação (Back-end) - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/207)                  | Fechada |
-| #232 | <!-- Past Débito 6 -->[Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)                                           | Fechada |
+| #232 | <!-- Past Débito 6 -->[Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)                                           | Aberta  |
 | #233 | <!-- Débito 8 -->[Teste Unitário - Header Global - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/233)                                       | Aberta  |
 | #243 | <!-- Débito 8 -->[[H18/H29] - Relatório v1.0 (ReportLabs) - Time B](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/243)                              | Fechada |
 | #239 | <!-- 8 -->[[H18/H29] Tela Visualizar Relatório (back-end redirecionamento e download) - Time B ](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/239) | Aberta  |
@@ -23,9 +23,9 @@
 
 **Pontuação Total:** 51 Pontos Planejados
 
-**Débitos Técnicos Adicionados:** 34 Pontos
+**Débitos Técnicos Adicionados:** 40 Pontos
 
-**Pontos Concluídos:** 17 Pontos Concluídos
+**Pontos Concluídos:** 11 Pontos Concluídos
 
 ## Débitos Técnicos de Sprints Anteriores
 
