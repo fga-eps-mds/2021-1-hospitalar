@@ -15,9 +15,15 @@ export const useStyles = makeStyles((theme) => ({
   botao: {
     margin: '0px',
   },
-  teste: { display: ' none' },
-  teste1: { backgroundColor: 'blue' },
-  teste2: { backgroundColor: 'red' },
+  teste: {
+    display: ' none' 
+  },
+  teste1: { 
+    backgroundColor: 'whrite' 
+  },
+  teste2: { 
+    backgroundColor: 'red' 
+  },
   input: {
     paddingLeft: '20px',
     paddingRight: '20px',
