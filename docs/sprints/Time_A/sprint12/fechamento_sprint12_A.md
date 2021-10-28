@@ -1,4 +1,4 @@
-# Fechamento da Sprint 10
+# Fechamento da Sprint 12
 
 ## Histórico de versão
 
@@ -139,11 +139,11 @@ Nenhum.
 
 ## Análise pelo Scrum Master
 
-Essa sprint foi intensa. A preparação de todos os documentos e código para a Release 1 gerou bastante demanda e estresse em todos os times, além de um alto número de issues a serem fechadas. Entretanto conseguimos realizar um bom trabalho e apresentação para a Release 1, ainda mais considerando o atraso que tivemos nas primeiras sprints por ainda estarmos muito perdido.
-As considerações e críticas feitas pela professora e monitores eram em sua maioria já conhecidas por toda a equipe do projeto, algo que considero bom, pois a execução de alguns ajustes já resolveria os problemas analisados, estes que não são tão complexos de se corrigir.
-Ademais, estou bem feliz e satisfeito com o trabalho entregue para a Release 1. Todo o time parece empolgado e animado para as próximas sprints e algumas mudanças serão analisadas e planejadas para que nossas práticas ágeis sejam aprimoradas até a Release 2.
+Essa última sprint foi produtiva, pesada e cheia de novos aprendizados para todos. Por ser a última Sprint todas as pendências tiveram que ser resolvidas até a Release 2 e muito teve que ser feito. Desde revisão na documentação, até a finalização das issues pendentes e término das telas. O banco de dados foi a maior fonte de aprendizados e dificuldade para a equipe nessa semana, mas conseguimos resolver os problemas que surgiram da implementação. Conseguimos revitalizar o gitpages e preparar o projeto para a Release 2, além de nos reunirmos para gravar os vídeos a serem enviados. Aprendemos muito com o decorrer do semestre, muitas dificuldades e desafio foram surgindo, mas toda a equipe está bem satisfeita com o produto entregue e o trabalho realizado.
 
-Outros pontos a serem destacados são:
+Outros pontos a serem destacados:
 
-- A maior parte dos débitos gerados no até o fechamento já veio da sprint passada, o que gera um incômodo e atraso percepitível nessas issues.
-- Há um medo do Scrum Master e PO de que a próxima sprint seja pouco produtiva devido a um desfoque do time pós Release 1. Para que isso não ocorra as metas de pontos serão bem planejadas para que haja poucos débitos e o trabalho seja de preferência interiamente reaalizado. Acredito que, caso isso ocorra, toda a equipe ficará bem animada para as próximas sprints.
+- Foi a Sprint na qual tivemos o melhor Burnout.
+- O amadurecimento de toda equipe é muito perceptível.
+- O cansaço em toda equipe também é muito perceptível.
+- Estamos muito orgulhosos com o resultado de todo esse semestre.
