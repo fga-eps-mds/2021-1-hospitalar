@@ -27,7 +27,7 @@ class AvaliacaoView(viewsets.ModelViewSet):
     serializer_class = AvaliacaoSerializer
     queryset = Avaliacao.objects.all()
 
-    @action(methods=['get'], detail=False)
+    @action(methods=['post'], detail=False)
     def generatePDF(self, request):
         # Create the HttpResponse object with the appropriate PDF headers.
         response = HttpResponse(content_type='application/pdf')
@@ -37,7 +37,10 @@ class AvaliacaoView(viewsets.ModelViewSet):
         buffer = BytesIO()
 
         # exemplo para a avaliação cadastrada com código fgvgrad
-        getAval2 = get_object_or_404(codigo=request.data['codigo'])
+        try:
+            getAval2 = Avaliacao.objects.get(codigo=request.data['codigo'])
+        except:
+            return Response(status=HTTP_404_NOT_FOUND)
 
         # Utilizando o construtor para o Relatório
         # buffer, Formato e Código da Aval.

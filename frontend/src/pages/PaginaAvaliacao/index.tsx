@@ -170,7 +170,7 @@ export function PaginaAvaliacao(): React.ReactElement {
     })
 
     api
-      .put(`avaliacao/${codigo}/`, aux, CONFIG(context.token))
+      .put(`avaliacao/${avaliacao.id}/`, aux, CONFIG(context.token))
       .then(bancoGet)
       // eslint-disable-next-line no-console
       .catch(console.log)
@@ -187,8 +187,10 @@ export function PaginaAvaliacao(): React.ReactElement {
     setAvaliacao(aux)
     setIsEditableArray(aux.secoes[idSecao].subtopicos.map(() => false))
     api
-      .put(`avaliacao/${codigo}/`, aux, CONFIG(context.token))
-      .then(bancoGet)
+      .put(`avaliacao/${avaliacao.id}/`, aux, CONFIG(context.token))
+      .then(() => {
+        history.go(0)
+      })
       // eslint-disable-next-line no-console
       .catch(console.log)
   }
@@ -231,7 +233,6 @@ export function PaginaAvaliacao(): React.ReactElement {
       .then(bancoGet)
       // eslint-disable-next-line no-console
       .catch(console.log)
-    setOpen(false)
   }
 
   const getAvaliadores = async (avaliacaoRecebida: Avaliacao) => {
@@ -392,7 +393,10 @@ export function PaginaAvaliacao(): React.ReactElement {
                 <Button
                   className={classes.dialogConfirmDesign}
                   variant='outlined'
-                  onClick={removerSecao}
+                  onClick={() => {
+                    removerSecao()
+                    handleClose()
+                  }}
                   autoFocus
                 >
                   Confirmar
