@@ -4,9 +4,10 @@
 
 | Data       | Versão | Modificação                                | Autor                                                |
 | :--------- | :----- | :----------------------------------------- | :--------------------------------------------------- |
-| 24/08/2021 | 0.1    | Primeira Versão do Documento               | [@victordscabral](https://github.com/victordscabral) |
+| 24/08/2021 | 0.1    | Primeira versão do documento               | [@victordscabral](https://github.com/victordscabral) |
 | 13/09/2021 | 1.1    | Alteração em títulos e histórico de versão | [@victordscabral](https://github.com/victordscabral) |
 | 18/09/2021 | 1.2    | Alteração no markdown dos assets           | [@pedrohelias](https://github.com/pedrohelias)       |
+| 26/10/2021 | 2.0    | Segunda versão do documento                | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivo:
 
@@ -14,4 +15,8 @@ Este documento tem como objetivo a presentação da Estrutura Analítica do Proj
 
 ## EAP - Release 1
 
-![EAP](/docs/assets/produtos/eap/eap_versão_0.1.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/eap/eap_versão_1.0.png?raw=true">
+
+## EAP - Release 2
+
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/eap/eap_versão_2.0.png?raw=true">

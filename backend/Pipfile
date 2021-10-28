@@ -10,8 +10,13 @@ djangorestframework = "3.12"
 django-cors-headers = "3.10"
 psycopg2-binary = "2.9"
 django = "3.2"
+setuptools = "*"
+matplotlib = "*"
+plotly = "*"
+django-rest-knox = "*"
 
 [dev-packages]
+autopep8 = "*"
 
 [requires]
 python_version = "3.8"

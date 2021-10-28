@@ -43,6 +43,7 @@ export function PreVisualizarRelatorio(): React.ReactElement {
                   <input className={classes.entrada} />
                 </div>
               </div>
+
               <div className={classes.miniInput}>
                 <div className={classes.miniInputAcima}>
                   <p className={classes.titulo}>Código</p>
@@ -60,11 +61,15 @@ export function PreVisualizarRelatorio(): React.ReactElement {
                 </div>
               </div>
             </div>
+
             <div className={classes.coluna2}>
-              <div className={classes.plots} />
-              <button type='submit' className={classes.btn}>
-                <p className={classes.textoBtn}>GERAR</p>
-              </button>
+              <div className={classes.plots}>
+                <img
+                  className={classes.imgPlot}
+                  src={`${process.env.REACT_APP_API_URL}avaliacao/${1}/geraGrafico/`}
+                  alt=''
+                />
+              </div>
             </div>
           </div>
         </div>

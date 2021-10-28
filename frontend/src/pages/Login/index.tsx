@@ -1,70 +1,64 @@
 import { Grid, TextField, Typography } from '@material-ui/core'
+import React, { useContext, useState } from 'react'
 
+import AuthContext from '../../context/auth'
 import { Button } from '../../components/GlobalComponents/Inputs/Button'
-import React, { useState  , useEffect } from 'react'
 import logo from '../../assets/logo_cover.png'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
-import { api } from '../../api'
 
 export function Login(): React.ReactElement {
-
-  const [email , setEmail] = useState('')
-  const [senha , setSenha] = useState('')
-  const [usuario, setUsuario] = useState({ "name": "" , "email": "" , "tipo": "" , "funcao": "" , "organizacao": ""}) 
-
-
+  const classes = useStyles()
+  const loginData = useContext(AuthContext)
   const history = useHistory()
 
-  const classes = useStyles()
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [erroStatus, setErroStatus] = useState(false)
 
   let status = true
 
- 
-
-  //  function loginApi(){
-  //  useEffect(() => {
-    //  teste()
-    //  }, [])
-
-
-  function emailEsenhaExiste(){
-    if(email && senha){
+  const emailEsenhaExiste = () => {
+    if (email && senha) {
       status = true
-    }else{
+      setErroStatus(false)
+    } else {
       status = false
+      setErroStatus(true)
     }
-  } 
+  }
 
-  function verifica(){
+  const verifica = () => {
     emailEsenhaExiste()
-    if(status === true)
-    {
-      if(email.match(/@/) &&  email.match(/.com/)){
+    if (status === true) {
+      if (email.match(/@/) && email.match(/.com/)) {
         status = true
-      }else{
+        setErroStatus(false)
+      } else {
         status = false
+        setErroStatus(true)
       }
-    }else{
-      status = false 
+    } else {
+      status = false
+      setErroStatus(true)
     }
   }
 
-  function handleSubmit(){
+  const handleSubmit = async () => {
     verifica()
-    if(status === true){
-    api.post("authenticate", {
-        email,
-        password:senha
-      })
-      .then((response) => setUsuario(response.data.user))
-      .catch((err) => console.log(err))
+    if (status === true) {
+      try {
+        await loginData.logIn(email, senha)
+        history.push('/home')
+      } catch (error) {
+        alert(error)
+      }
+    } else {
+      status = false
+      setErroStatus(true)
+      alert('Dados inválidos, tente novamente')
     }
   }
-  
-  useEffect(() => {
-    console.log(`Bem-Vindo ${usuario.name}`)
-  }, [usuario])
 
   return (
     <>
@@ -102,9 +96,26 @@ export function Login(): React.ReactElement {
                 {' '}
                 LOGIN{' '}
               </Typography>
-              <TextField label='Email' className={classes.emailText}  onChange={(e) => setEmail(e.target.value)}/>
-              <TextField label='Senha' type='password' className={classes.senhaText} onChange={(e) => setSenha(e.target.value)}/>
-              <Button onClick={() => handleSubmit()}> ENTRAR </Button>
+              <TextField
+                label='Email'
+                error={erroStatus}
+                className={classes.emailText}
+                onChange={(e) => {
+                  e.preventDefault()
+                  setEmail(e.target.value)
+                }}
+              />
+              <TextField
+                label='Senha'
+                error={erroStatus}
+                type='password'
+                className={classes.senhaText}
+                onChange={(e) => {
+                  e.preventDefault()
+                  setSenha(e.target.value)
+                }}
+              />
+              <Button onClick={handleSubmit}> ENTRAR </Button>
             </Grid>
           </Grid>
         </Grid>

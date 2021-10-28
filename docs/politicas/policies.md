@@ -2,12 +2,12 @@
 
 ## Histórico de versão
 
-| Data | Versão | Modificação | Autor |
-| :- | :- | :- | :- |
-| 17/08/2021 | 0.1 | Criação da primeira versão do documento | [@SwampTG](https://github.com/SwampTG) |
-| 31/08/2021 | 0.2 | Remoção, tags e PR  | [@SwampTG](https://github.com/SwampTG) |
-| 13/09/2021 | 1.0 | Revisão do documento  | [@victordscabral](https://github.com/victordscabral) |
-| 16/09/2021 | 1.1 | Alteração no path das imagens  | [@victordscabral](https://github.com/victordscabral) |
+| Data       | Versão | Modificação                             | Autor                                                |
+| :--------- | :----- | :-------------------------------------- | :--------------------------------------------------- |
+| 17/08/2021 | 0.1    | Criação da primeira versão do documento | [@SwampTG](https://github.com/SwampTG)               |
+| 31/08/2021 | 0.2    | Remoção, tags e PR                      | [@SwampTG](https://github.com/SwampTG)               |
+| 13/09/2021 | 1.0    | Revisão do documento                    | [@victordscabral](https://github.com/victordscabral) |
+| 16/09/2021 | 1.1    | Alteração no path das imagens           | [@victordscabral](https://github.com/victordscabral) |
 
 ## Objetivo:
 
@@ -47,7 +47,7 @@ Deverão ser utilizadas tags, o que eliminará a necessidade de criação de bra
 
 - **Para criar tags:**
 
-``` git
+```git
 git tag -a v1.1 -m "Descrição da tag"
 ```
 
@@ -55,19 +55,19 @@ Substitua os números dentro do seu contexto de versão
 
 - **Para transferir tags para o rep:**
 
-``` git
+```git
 git push origin --tags
 ```
 
 - **Para associar tags com commits:**
 
-``` git
+```git
 git tag -a nomedatag hashcode-do-commit
 ```
 
 - **Para listar tags:**
 
-``` git
+```git
 git tag
 ```
 
@@ -122,7 +122,7 @@ git checkout -b doc/indice-nome-da-issue
 
 ## Política de Commits
 
-Os commits são essenciais para acompanharmos as alterações e adições ao projeto. 
+Os commits são essenciais para acompanharmos as alterações e adições ao projeto.
 
 Deve ser usado o modo imperativo (ações e ordens assertivas) para mencionar o que foi feito.
 
@@ -134,7 +134,7 @@ git commit -m "#IdIssue - Mensagem"
 
 Devido à importância, caso o commit trate de algo mais complexo, use o seguinte template para padronização, substituindo o texto dos comentários '# não será lido no commit':
 
-``` txt
+```txt
 . #Id-da-Issue - Título do commit: comece com  letra maiúscula, objetivo
 #Não mais que 50 chars,Essa linha possui   50                   #
 #Pular linha
@@ -166,28 +166,28 @@ A remoção será feita logo após um PR revisado, aceito e já fundido na branc
 
 Acesse a lista completa de branches do repositório:
 
-![branch_list_delete_1](/docs/assets/politicas/branch_list_delete_1.png)
+![branch_list_delete_1](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/politicas/branch_list_delete_1.png?raw=true)
 
 Certifique-se que a branch já foi unida a main e clique no símbolo de lixo:
 
-![branch_list_delete_2](/docs/assets/politicas/branch_list_delete_2.png)
+![branch_list_delete_2](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/politicas/branch_list_delete_2.png?raw=true)
 
 ## Política de Pull Request
 
 Para unir branches a main, devemos fazer um PR, indicando sobre o que é, o que foi feito, revisores e qual issue(s) será cumprida através do Merge.
 
 **Primeiro abra o PR:**
-![p-r_fim](/docs/assets/politicas/p-r_open.png)
+![p-r_fim](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/politicas/p-r_open.png?raw=true)
 
 **Abra o PR interligando com a issue usando `Closes #NumIssue` indique os revisores e os assignees**
 
 Lembre de descrever bem o PR:
 
-![p-r_fim](/docs/assets/politicas/p-r_fim.png)
+![p-r_fim](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/politicas/p-r_fim.png?raw=true)
 
 **Para um PR mais completo, principalmente para features e hotfix, deve-se utilizar o template:**
 
-``` markdown
+```markdown
 # Descrição
 
 Por favor inclua o resumo das mudanças e a issue de referência. Também inclua motivação e contexto. Liste qualquer outra dependência que precise ser concluída para que este PR seja finalizado.
@@ -221,5 +221,4 @@ Descreva os testes rodados. Coloque instruções para serem rodados pelos reviso
 - [ ] Minhas mudanças não geram Warnings para o compilador/editor.
 - [ ] Realizei testes que comprovam o funcionamento da nova funcionalidade/fix.
 - [ ] Testes unitários necessários/criados foram feitos e o código passou.
-
 ```

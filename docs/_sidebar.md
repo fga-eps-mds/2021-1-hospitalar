@@ -36,9 +36,15 @@
 - Prototipos
 
   - Baixa Fidelidade
+
     - [Time A](/produto/prototipo/prototipo)
     - [Time B](/produto/prototipo/prototipo-tipoB)
     - [Time C](/produto/prototipo/prototipo-timeC)
+
+  - Alta Fidelidade
+    - [Time A](/produto/protótipo_alta_fidelidade/protótipo_avaliação_timeA)
+    - [Time B](/produto/protótipo_alta_fidelidade/protótipo_relatorio_timeB)
+    - [Time C](/produto/protótipo_alta_fidelidade/protótipo_alta_fidelidade_timeC)
 
 ---
 
@@ -209,7 +215,7 @@
       <summary>Sprint 04 </summary>
       <ul>
       <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/abertura_sprint4">Abertura</a></li> 
-      <li> <a href="https://fga-eps-mds.github.io/2021-1-hospitalar/#/sprints/Time_C/sprint4/fechamento_sprint4">Fechamento</a></li>
+      <li> <a href="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/sprints/Time_C/sprint4/fechamento_sprint4.md">Fechamento</a></li>
       </ul>
       </details>
       <details>

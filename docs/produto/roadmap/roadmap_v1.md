@@ -17,4 +17,4 @@ Desta forma, esse documento tem como objetivo a apresentação do RoadMap do Pro
 
 ## RoadMap do Produto (Versão 1)
 
-![RoadMap](/docs/assets/produtos/road_map/roadmap.png)
+![RoadMap](https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/road_map/roadmap.png?raw=true)
