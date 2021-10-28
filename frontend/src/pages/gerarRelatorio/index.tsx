@@ -1,9 +1,17 @@
+import React, { useState } from 'react'
+
 import { Header } from '../../components/GlobalComponents/Header'
-import React from 'react'
+import { generatePDF } from '../../api'
 import { useStyles } from './styles'
 
 export function GerarRelatorio(): React.ReactElement {
   const classes = useStyles()
+
+  const [selectedHospitalName] = useState('')
+
+  const handleSubmit = () => {
+    generatePDF(selectedHospitalName)
+  }
 
   return (
     <>
@@ -31,7 +39,7 @@ export function GerarRelatorio(): React.ReactElement {
           <button type='button' className={classes.btnUm}>
             Pré-Visualizar
           </button>
-          <button type='button' className={classes.btnDois}>
+          <button type='button' onClick={handleSubmit} className={classes.btnDois}>
             BAIXAR (.PDF)
           </button>
         </div>

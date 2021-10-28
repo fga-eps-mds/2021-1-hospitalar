@@ -1,16 +1,19 @@
+from .serializers import AvaliacaoSerializer
+from .relatorio.printing import MyPrint
+from .models import Avaliacao
+from rest_framework.status import *
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.generics import get_object_or_404
+from rest_framework.decorators import action
+from rest_framework import viewsets
+from django.http import HttpResponse
+from matplotlib import pyplot as plt
 from io import BytesIO
 
-from django.http import HttpResponse
-from rest_framework import viewsets
-from rest_framework.decorators import action
-from rest_framework.generics import get_object_or_404
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from rest_framework.status import *
+import matplotlib
+matplotlib.use('Agg')
 
-from .models import Avaliacao
-from .relatorio.printing import MyPrint
-from .serializers import AvaliacaoSerializer
 
 # Create your views here.
 
@@ -47,6 +50,33 @@ class AvaliacaoView(viewsets.ModelViewSet):
         response.write(pdf)
 
         return response
+
+    @action(methods=['get'], detail=True)
+    def geraGrafico(self, request, pk):
+        try:
+            obj_avaliacao = Avaliacao.objects.get(id=pk)
+        except:
+            return Response(status=HTTP_404_NOT_FOUND)
+
+        avaliacao_json = self.get_serializer(obj_avaliacao)
+
+        dados_plot = {'C': 0, 'PC': 0, 'NC': 0, 'NA': 0}
+        secoes = avaliacao_json.data["secoes"]
+
+        for secao in secoes:
+            for sub in secao['subtopicos']:
+                status = sub['status']
+                dados_plot[status] += 1
+
+        keys = dados_plot.keys()
+        values = dados_plot.values()
+
+        buffer = BytesIO()
+
+        plt.bar(keys, values, color=['cyan'])
+        plt.savefig(buffer, dpi=100)
+
+        return HttpResponse(buffer.getbuffer(), content_type='image/png')
 
     @action(methods=['post'], detail=False)
     def get_by_code(self, request):

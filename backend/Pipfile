@@ -4,13 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-reportlab = "*"
-python-dotenv = "*"
-djangorestframework = "*"
+reportlab = "3.6"
+python-dotenv = "0.19"
+djangorestframework = "3.12"
+django-cors-headers = "3.10"
+psycopg2-binary = "2.9"
+django = "3.2"
+setuptools = "*"
+matplotlib = "*"
+plotly = "*"
 django-rest-knox = "*"
-django-cors-headers = "*"
-psycopg2-binary = "*"
-django = "*"
 
 [dev-packages]
 autopep8 = "*"
