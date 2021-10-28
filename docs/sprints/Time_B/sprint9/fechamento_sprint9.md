@@ -93,7 +93,7 @@ Menor pontuação relativa a média. Possivelmente até o final do projeto, a m�
 |  3  |                 Reunião de planejamento de Sprint                  | &#10004; |
 |  4  |                           Planning Poker                           | &#10004; |
 |  5  |      Comprometimento do time e do PO com o backlog do produto      | &#10004; |
-|  6  |         Os membros da equipe são voluntários para tarefas          | &#10004; |
+|  6  |         Os membros da equipe são voluntários para tarefas          | &#10060; |
 |  7  |                      Restrospectiva da Sprint                      | &#10004; |
 |  8  |                     Acompanhamento do Velocity                     | &#10004; |
 |  9  |                            User Stories                            | &#10004; |
