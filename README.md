@@ -21,6 +21,12 @@
 
 <br/>
 
+## 📦 Releases
+  Release 1 - 14 de setembro
+  - [Metodologias/Produtividade](https://youtu.be/l0WToWh4Jr8)
+  - [Projeto e Produto](https://youtu.be/UhlYSezmaUU)
+  
+  
 ## ⚙️ Tecnologias utilizadas
 
 As tecnologias foram determinadas de acordo com a necessidade das atividades a serem desenvolvidas.
