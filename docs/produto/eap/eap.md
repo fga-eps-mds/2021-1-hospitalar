@@ -15,8 +15,8 @@ Este documento tem como objetivo a presentação da Estrutura Analítica do Proj
 
 ## EAP - Release 1
 
-![EAP](/docs/assets/produtos/eap/eap_versão_1.0.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/eap/eap_versão_1.0.png?raw=true">
 
 ## EAP - Release 2
 
-![EAP](/docs/assets/produtos/eap/eap_versão_2.0.png)
+<img src="https://github.com/fga-eps-mds/2021-1-hospitalar/blob/main/docs/assets/produtos/eap/eap_versão_2.0.png?raw=true">
