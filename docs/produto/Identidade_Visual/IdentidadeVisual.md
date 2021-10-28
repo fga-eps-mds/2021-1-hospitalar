@@ -89,5 +89,5 @@ A cor utilizada no background do campo foi a #FFFFFF. Já no texto decidiu utili
 A cor que será utilizada na borda do contêiner é a #175215, com o background #D6F0C8, da qual serão alocados os outros componentes.  O valor do raio da borda é de 12px e a espessura da borda é de tamanho 6px.
 
 <p align="center">
-  <img width="460" height="300" src="/docs/assets/produtos/identidade_visual/botao.png">
+  <img width="460" height="300" src="docs/assets/produtos/identidade_visual/botao.png">
 </p>
