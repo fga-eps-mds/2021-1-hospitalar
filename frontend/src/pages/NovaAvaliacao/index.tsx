@@ -13,11 +13,13 @@ import Logo from '../../assets/logo-2021-v2.png'
 import { Template } from '../../components/GlobalComponents/Template'
 import TextField from '@material-ui/core/TextField'
 import { Usuario } from '../../types/Usuario'
+import { useHistory } from 'react-router-dom'
 import { useStyles } from './styles'
 
 export function NovaAvaliacao(): React.ReactElement {
   const classes = useStyles()
   const context = useContext(AuthContext)
+  const history = useHistory()
 
   const blankUser: Usuario = {
     id: 0,
@@ -52,6 +54,9 @@ export function NovaAvaliacao(): React.ReactElement {
       console.log(error)
       alert('O código dessa avaliação já está sendo usado')
     })
+
+    alert('A avaliação foi criada')
+    history.push('/home')
   }
 
   const generateForm = () => {

@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react'
-
 import { Header } from '../../components/GlobalComponents/Header'
-import { api } from '../../api'
-import { useParams } from 'react-router-dom'
+import React from 'react'
 import { useStyles } from './styles'
 
 export function PreVisualizarRelatorio(): React.ReactElement {
