@@ -1,7 +1,3 @@
-<style>
-body { text-align: justify}
-</style>
-
 # Documento de visão
 
 ## Histórico de versão
