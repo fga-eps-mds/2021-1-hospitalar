@@ -26,29 +26,36 @@ Essa Sprint tem como principais objetivos:
 
 ## Sprint BackLog
 
-[#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
-<br>
-[#193 Preenchimento da avaliação: Implementar CheckBox - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/193)
-<br>
-[#194 Preenchimento da avaliação: Paginação da avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/194)
-<br>
-[#217 Configurar método get no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/217)
-<br>
-[#218 Configurar método update no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/218)
-<br>
-[#219 Configurar método post no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/219)
-<br>
-[#220 Configurar método delete no backend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/220)
-<br>
-[#221 Ajustar o design do frontend (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/221)
-<br>
 [#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
 <br>
-[#228 Ajustar o design do frontend (Tela de Editar Seção) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/228)
+[#245 Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)
 <br>
-[#232 Pareamento dos Dev-ops - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/232)
+[#261 Implementar função salvar (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/261)
+<br>
+[#262 Implementar função adicionar (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/262)
+<br>
+[#263 Implementar função editar (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/263)
+<br>
+[#264 Implementar função remover (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/264)
+<br>
+[#265 Implementar funções do banco de dados (Tela de Avaliação) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/265)
+<br>
+[#266 Alterações e mudanças na Tela de Avaliação (frontend) - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/266)
+<br>
+[#267 Atualizar comentários nos códigos (Tela 1) Parte 2 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/267)
+<br>
+[#270 Finalizar Tela de Busca de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/270)
+<br>
+[#274 Ajustar disposição/chamada dos responsáveis na Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/274)
+<br>
+[#280 Atualizar comentários nos códigos (Telas do Time A) Parte 3 - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/280)
+<br>
+[#285 Ajuste nas rotas e detalhes da página - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/285)
+<br>
+[#292 Revisão no Documento de EAP - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/292)
 
 ## Débito Técnico Adicionado
 
-- [#62 União da Modelagem do Banco de Dados - Geral](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/62)
--
+- [#222 Carregar banco de dados com o modelo da planilha disponibilizada pelo cliente - Time A] (https://github.com/fga-eps-mds/2021-1-hospitalar/issues/222)
+- [#245 Finalizar Tela de Avaliação - Time A](https://github.com/fga-eps-mds/2021-1-hospitalar/issues/245)
+  <br>
