@@ -14,6 +14,8 @@ setuptools = "*"
 matplotlib = "*"
 plotly = "*"
 django-rest-knox = "*"
+gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 autopep8 = "*"

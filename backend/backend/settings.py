@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from dj_database_url import config as herokuDB
 
 load_dotenv()
 
@@ -24,12 +25,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DEVELOP_SECRET_KEY')
+dev_secret_key = os.getenv('DEVELOP_SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', default=dev_secret_key)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG') == 'TRUE'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'famil-backend.herokuapp.com']
 
 
 # Application definition
@@ -93,23 +95,31 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-if os.getenv('DOCKER') == 'TRUE':
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('DATABASE_NAME'),
-            'USER': os.getenv('USER_NAME'),
-            'HOST': os.getenv('HOST'),
-            'PORT': os.getenv('PORT'),
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'database/dev_db.sqlite',
     }
+}
 
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'database/dev_db.sqlite',
-        }
+if os.getenv('DEPLOY') == 'TRUE':
+
+    database_url = os.environ.get('DATABASE_URL')
+
+    db_from_env = herokuDB(
+        default=database_url,
+        conn_max_age=500,
+        ssl_require=True)
+
+    DATABASES['default'].update(db_from_env)
+
+elif os.getenv('DOCKER') == 'TRUE':
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DATABASE_NAME'),
+        'USER': os.getenv('USER_NAME'),
+        'HOST': os.getenv('HOST'),
+        'PORT': os.getenv('PORT'),
     }
 
 

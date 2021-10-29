@@ -10,3 +10,8 @@ COPY Pipfile Pipfile.lock /code/
 RUN pipenv install --system
 
 COPY . /code/
+
+RUN adduser -disabled-password myuser
+USER myuser
+
+CMD gunicorn backend.wsgi:application --bind 0.0.0.0:$PORT
